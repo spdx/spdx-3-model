@@ -23,7 +23,7 @@ A Document is a container for a grouping of SPDX-3.0 content with no presumption
   - minCount: 1
   - maxCount: 1
 - externalMap
-  - type; ExternalMap
+  - type: ExternalMap
 - element
   - type: Element
   - minCount: 1
