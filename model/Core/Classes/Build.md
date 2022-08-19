@@ -42,13 +42,13 @@ details of the builder if needed.
 - buildType
   - type: xsd:string
   - minCount: 0
-- configSoureEntrypoint
+- configSourceEntrypoint
   - type: xsd:string
   - minCount: 0
-- configSoureUri
+- configSourceUri
   - type: xsd:string
   - minCount: 0
-- configSoureDigest
+- configSourceDigest
   - type: xsd:string
   - minCount: 0
 - parameters
