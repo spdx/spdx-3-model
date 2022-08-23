@@ -102,7 +102,7 @@
         <mxCell id="5FtSzHESpUjzpo75bhwH-1" value="+ algorithm: HashAlgorithm" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5FtSzHESpUjzpo75bhwH-0" vertex="1">
           <mxGeometry y="26" width="165" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="5FtSzHESpUjzpo75bhwH-2" value="+ hashValue: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5FtSzHESpUjzpo75bhwH-0" vertex="1">
+        <mxCell id="5FtSzHESpUjzpo75bhwH-2" value="+ hashValue: Binary" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5FtSzHESpUjzpo75bhwH-0" vertex="1">
           <mxGeometry y="52" width="165" height="26" as="geometry" />
         </mxCell>
         <mxCell id="oqmSebOzuupvJpAGgmBN-3" value="ExternalReference" style="swimlane;fontStyle=7;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="oqmSebOzuupvJpAGgmBN-24" vertex="1">
