@@ -17,6 +17,19 @@ identities, etc.).
 Definitions of "BuildType", "ConfigSource", "Parameters" and "Environment" follow
 those defined in [SLSA provenance](https://slsa.dev/provenance/v0.2).
 
+ExternalReferences:
+- buildInvocationId
+- logReference
+- logFile
+
+<!-- 
+
+At the moment, logs wil be refered to via logReference and logFile via external references,
+and if/when external references become referencable SPDX elements, we can create the relationship
+"LOG_TO" to link them together.
+
+-->
+
 <!--
 The build will include relationships such as:
 
@@ -29,35 +42,32 @@ For BUILT_BY:
 At the moment it can point to an artifact to signify a builder, but can point
 to a "Provider/Service" element in the future which can encapsulate more
 details of the builder if needed.
+
 -->
 
 ## Metadata
 
 - name: Build
-- SubclassOf: Element
+- SubclassOf: Core:Element
 - Instantiability: Concrete
 
 ## Properties
 
 - buildType
-  - type: xsd:string
+  - type: buildType
   - minCount: 0
 - configSourceEntrypoint
-  - type: xsd:string
+  - type: string
   - minCount: 0
 - configSourceUri
-  - type: xsd:string
+  - type: string
   - minCount: 0
 - configSourceDigest
   - type: xsd:string
   - minCount: 0
 - parameters
-  - type: xsd:map<string>string
+  - type: map<string>string
   - minCount: 0
-- buildInvocationId
-  - type: xsd:string
-  - minCount:0
-  - maxCount:1
 - startTime
   - type: xsd:DateTime
   - minCount:0
@@ -66,9 +76,6 @@ details of the builder if needed.
   - type: xsd:DateTime
   - minCount:0
   - maxCount:1
-- logReference
-  - type: ExternalReference
-  - minCount: 0
 - environment
   - type: xsd:map<string>string
   - minCount: 0
