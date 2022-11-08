@@ -50,7 +50,8 @@ Examples could be the requirement of a different hash algorithm to be present.
 
 ### Validate
 
-### Union - Gary
+### Union
+Gary
 
 ### Canonicalization
 A process that takes abstract model data and generates a deterministic (string) representation (Serialization)
@@ -61,4 +62,5 @@ See also https://spdx.github.io/canonical-serialisation/
 representation of SPDX data as a byte stream
 
 ## Footnotes
-[^1] [UML](https://www.omg.org/spec/UML/2.5.1/PDF) Section 10.2.1
+[^1]:
+    [UML](https://www.omg.org/spec/UML/2.5.1/PDF) Section 10.2.1
