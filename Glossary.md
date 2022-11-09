@@ -20,7 +20,7 @@ Types whose instances are distinguished by an instance identifier (primary key /
 
 |            DataType | value                                                                  |
 |--------------------:|------------------------------------------------------------------------|
-|          Coordinate | {"latitude": 38.88980, "longitude": -77.03523}                         |
+|      GPS_Coordinate | {"latitude": 38.88980, "longitude": -77.03523}                         |
 | Weather_Observation | {"location": "DCA", "time": "2022-11-01T20:44:39Z", "temperature": 48} |
 |              Person | {"name": "John Doe", "weight": 152, date_of_birth": "1983-04-01"}      |
 
