@@ -25,7 +25,7 @@ Types whose instances are distinguished by an instance identifier (primary key /
 |              Person | {"name": "John Doe", "weight": 152, date_of_birth": "1983-04-01"}      |
 
 **Datatype:** Three different values of the same DataType are three separate instances.
-No property is treated as an instance identifier even if it has a name such as "id", "uuid", etc.
+No property is an instance identifier even if it has a name such as "id", "uuid", etc.
 
 | DataType | value                                                                              |
 |---------:|------------------------------------------------------------------------------------|
