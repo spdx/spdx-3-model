@@ -24,8 +24,9 @@ Types whose instances are distinguished by an instance identifier (primary key /
 | Weather_Observation | {"location": "DCA", "time": "2022-11-01T20:44:39Z", "temperature": 48} |
 |              Person | {"name": "John Doe", "weight": 152, date_of_birth": "1983-04-01"}      |
 
-**Datatype:** Three different values of the same DataType are three separate instances.
-No property is an instance identifier even if it has a name such as "id", "uuid", etc.
+**Datatype:** No property is an instance identifier, even if it has a name such as
+"id", "uuid", etc. Three unequal values are three separate instances, three equal values
+are a single instance.
 
 | DataType | value                                                                              |
 |---------:|------------------------------------------------------------------------------------|
@@ -33,7 +34,7 @@ No property is an instance identifier even if it has a name such as "id", "uuid"
 |   Person | {"id": 123456, "name": "John Doe", "weight": 240, date_of_birth": "1983-04-01"}    |
 |   Person | {"id": 123456, "name": "John Q. Doe", "weight": 152, date_of_birth": "1983-04-01"} |
 
-**Class:** For non-DataType types, three different values with the same primary key (**id**)
+**Class:** For non-DataType types, three unequal values with the same primary key (**id**)
 generally result in either a single instance being retained or an error.
 
 |  Class | value                                                                              |
