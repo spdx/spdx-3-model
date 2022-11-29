@@ -4,14 +4,27 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Description
 
-This is about the Snippet class.
+TODO
 
 ## Metadata
 
 SubclassOf: Core:Artifact
 
-## Data Properties
+## Properties
 
-- location
-  - type: SnippetLocation
+- contentIdentifier
+  - type: anyURI
+  - minCount: 0
+  - maxCount: 1
+- snippetPurpose
+  - type: softwarePurposeVocab
+  - minCount: 0
+- byteRange
+  - type: positiveIntegerRange
+  - minCount: 0
+  - maxCount: 1
+- lineRange
+  - type: positiveIntegerRange
+  - minCount: 0
+  - maxCount: 1
 

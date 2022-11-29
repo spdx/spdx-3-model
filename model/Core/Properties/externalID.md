@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# externalID
+# externalId
 
 ## Summary
 
@@ -12,7 +12,7 @@ A externalID is TODO
 
 ## Metadata
 
-- name: externalID
+- name: externalId
 - Nature: DataProperty
-- Range: IDString
+- Range: anyURI
 

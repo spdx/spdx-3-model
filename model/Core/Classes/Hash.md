@@ -22,8 +22,8 @@ This is commonly used for integrity checking of data.
 
 ## Properties
 
-- hashAlgorithm
-  - type: HashAlgorithmVocab
+- algorithm
+  - type: hashAlgorithmVocab
   - minCount: 1
   - maxCount: 1
 - hashValue

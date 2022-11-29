@@ -14,5 +14,5 @@ A specVersion is TODO
 
 - name: specVersion
 - Nature: DataProperty
-- Range: xsd:string
+- Range: SemVer
 

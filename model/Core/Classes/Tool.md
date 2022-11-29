@@ -14,13 +14,8 @@ A Tool is an element of hardware and/or software utilized to carry out a particu
 ## Metadata
 
 - name: Tool
-- SubclassOf: Agent
+- SubclassOf: Identity
 - Instantiability: Concrete
 
 ## Properties
-
-- name
-  - type: xsd:string
-  - minCount: 1
-  - maxCount: 1
 

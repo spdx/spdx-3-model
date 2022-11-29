@@ -13,13 +13,8 @@ An Identity is a grouping of identifying characteristics unique to an individual
 ## Metadata
 
 - name: Identity
-- SubclassOf: Agent
-- Instantiability: Concrete
+- SubclassOf: Element
+- Instantiability: Abstract
 
 ## Properties
-
-- name
-  - type: xsd:string
-  - minCount: 1
-  - maxCount: 1
 
