@@ -4,18 +4,22 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Description
 
-This is about the File class.
+TODO This is about the File class.
 
 ## Metadata
 
-SubclassOf: Core:Artifact
+- name: File
+- SubclassOf: Core:Artifact
 
-## Data Properties
+## Properties
 
-- fileType
-  - type: FileType
+- contentIdentifier
+  - type: anyURI
   - minCount: 0
   - maxCount: 1
+- filePurpose
+  - type: softwarePurposeVocab
+  - minCount: 0
 - contentType
   - type: MediaType
   - minCount: 0

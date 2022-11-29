@@ -18,8 +18,3 @@ A Person is an individual human being.
 
 ## Properties
 
-- name
-  - type: xsd:string
-  - minCount: 1
-  - maxCount: 1
-

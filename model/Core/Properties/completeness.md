@@ -14,5 +14,5 @@ A completeness is TODO
 
 - name: completeness
 - Nature: DataProperty
-- Range: RelationshipCompletenessVocab
+- Range: relationshipCompletenessVocab
 

@@ -2,7 +2,22 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 # IntegrityMethod
 
+## Summary
+
+TODO
+
 ## Description
 
-This is about the IntegrityMethod class.
+TODO
+
+## Metadata
+
+- name: IntegrityMethod
+- Instantiability: Abstract
+
+## Properties
+
+- comment
+  - type: xsd:string
+  - maxCount: 1
 

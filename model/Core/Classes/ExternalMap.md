@@ -23,18 +23,13 @@ such as its provenance, where to retrieve it, and how to verify its integrity.
 
 ## Properties
 
-- externalID
-  - type: IDString
+- externalId
+  - type: anyURI
   - minCount: 1
   - maxCount: 1
-- verfifiedUsing
+- verifiedUsing
   - type: IntegrityMethod
-- createdBy
-  - type: Identity
-  - minCount: 0
-  - maxCount: 1
-- definingDocument
-  - type: IDString
-  - minCount: 0
+- locationHint
+  - type: anyURI
   - maxCount: 1
 
