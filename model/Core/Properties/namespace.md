@@ -14,5 +14,5 @@ A namespace is TODO
 
 - name: namespace
 - Nature: DataProperty
-- Range: URI
+- Range: anyURI
 

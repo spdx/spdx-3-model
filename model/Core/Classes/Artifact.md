@@ -14,19 +14,13 @@ such as an electronic file, a software package, a device or an element of data.
 ## Metadata
 
 - name: Artifact
-- SubclassOf: Element; Agent
+- SubclassOf: Element
 - Instantiability: Abstract
-- Status: unstable
 
 
 ## Properties
 
-- artifactURL
-  - type: ArtifactURL
-  - minCount: 0
-  - maxCount: 1
 - originatedBy
-  - type: Identity
+  - type: Actor
   - minCount: 0
-  - maxCount: 1
 

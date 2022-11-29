@@ -14,5 +14,5 @@ A annotationType is TODO
 
 - name: annotationType
 - Nature: DataProperty
-- Range: AnnotationTypeVocab
+- Range: annotationTypeVocab
 

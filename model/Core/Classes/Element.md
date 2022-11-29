@@ -18,13 +18,13 @@ and inter-relatable content objects.
 ## Metadata
 
 - name: Element
-- SubclassOf: none
+- SubclassOf: Payload
 - Instantiability: Abstract
 
 ## Properties
 
-- id
-  - type: idString
+- spdxId
+  - type: anyURI
   - minCount: 1
   - maxCount: 1
 - name
@@ -39,21 +39,16 @@ and inter-relatable content objects.
 - comment
   - type: xsd:string
   - maxCount: 1
-- specVersion
-  - type: xsd:string
-- createdTime
-  - type: xsd:dateTime
-- createdBy
-  - type: Identity
-- profile
-  - type: ProfileIdentifier
+- creationInfo
+  - type: CreationInformation
   - minCount: 1
-- dataLicense
-  - type: xsd:string
-- externalReference
-  - type: ExternalReference
-- extension
-  - type: Extension
+  - maxCount: 1
 - verifiedUsing
   - type: IntegrityMethod
+- externalReferences
+  - type: ExternalReference
+- externalIdentifiers
+  - type: ExternalIdentifier
+- extensions
+  - type: Extension
 
