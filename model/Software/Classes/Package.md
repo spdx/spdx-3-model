@@ -8,7 +8,7 @@ TODO
 
 ## Metadata
 
-SubclassOf: Core:Artifact
+- SubclassOf: Core:Artifact
 
 ## Properties
 

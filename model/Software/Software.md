@@ -12,6 +12,5 @@ The Software namespace defines concepts related to software artifacts.
 
 ## Metadata
 
-id: https://rdf.spdx.org/v3#Software
-name: Software
-
+- id: https://rdf.spdx.org/v3#Software
+- name: Software

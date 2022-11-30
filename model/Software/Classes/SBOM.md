@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# File
+# SBOM
 
 ## Description
 
@@ -8,8 +8,8 @@ TODO
 
 ## Metadata
 
-- name: Sbom
-- SubclassOf: Core:Bom
+- name: SBOM
+- SubclassOf: Core:BOM
 
 ## Properties
 

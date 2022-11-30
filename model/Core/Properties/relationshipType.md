@@ -14,5 +14,4 @@ A relationshipType is TODO
 
 - name: relationshipType
 - Nature: DataProperty
-- Range: relationshipTypeVocab
-
+- Range: RelationshipTypeVocab
