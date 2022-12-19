@@ -1,0 +1,258 @@
+       title: "SPDX v3"
+     package: "http://spdx.org/spdx/v3/document"
+     version: "spdx-3-model 2022-09-20"
+ description: "This information model defines the serialized structure of SPDXv3 logical model types"
+     license: "CC0-1.0"
+     exports: ["Payload", "Elements"]
+      config: {"$FieldName": "^[a-zA-Z@][_A-Za-z0-9]{0,63}$"}
+
+Elements = ArrayOf(Element){1..*} unique          // Serialized set of independent Element values
+
+Payload = Record                                  // Serialized file (or equivalent) for transferring Elements
+   1 namespace        IRI                         // Default namespace for Element ids in this file (rdf BASE)
+   2 prefixes         NamespaceMap optional       // Namespace abbreviations used in this file (rdf PREFIX)
+   3 created          DateTime                    // File creation info and element defaults
+   4 creator          Link(Element) [1..*]        // File creation info and element defaults - Link(Identity)
+   5 specVersion      SemVer                      // File creation info and element defaults
+   6 profile          ProfileIdentifier [1..*]    // File creation info and element defaults
+   7 dataLicense      LicenseId                   // File creation info and element defaults
+   8 elements         Element unique [1..*]       // Element values, defined in this file or copied
+   9 spdxDocumentId   Link(Element) optional      // Optional SpdxDocument element that describes this file
+
+NamespaceMap = MapOf(Prefix, IRI){1..*}
+
+Element = Record
+   1 id               Key(IRI)                    // Element unique identifier: local, prefix:local, or absolute-IRI
+   2 type             ElementType                 // Element type and type-specific properties
+   3 created          DateTime optional           // required: explicit or default
+   4 creator          Link(Element) [0..*]        // required: explicit or default - Link(Identity)
+   5 specVersion      SemVer optional             // required: explicit or default
+   6 profile          ProfileIdentifier [0..*]    // required: explicit or default
+   7 dataLicense      LicenseId optional          // required: explicit or default
+   8 name             String optional
+   9 summary          String optional
+  10 description      String optional
+  11 comment          String optional
+  12 verifiedUsing    IntegrityMethod [0..*]      // Applies only to Artifacts
+  13 externalReference ExternalReference [0..*]
+  14 externalIdentifier ExternalIdentifier [0..*]
+  15 extensions       Extensions optional
+
+ElementType = Choice
+   1 annotation       Annotation
+   2 relationship     Relationship
+   3 identity         Identity                    // concrete, unspecified subtype
+   4 person           Person                      // <- Identity
+   5 organization     Organization                // <- Identity
+   6 process          Process                     // <- Identity
+   7 spdxDocument     SpdxDocument                // <- Collection: A file containing serialized element values
+   8 bom              Bom                         // <- Collection
+  10 package          Package                     // <- Artifact: pkg:Software
+  11 file             File                        // <- Artifact: pkg:Software
+  12 snippet          Snippet                     // <- Artifact: pkg:Software
+  13 sbom             Sbom                        // <- BOM: pkg:Software
+  14 license          License                     // pkg:License
+
+Annotation = Record
+   1 annotationType   AnnotationType
+   2 subject          Link(Element)
+   3 statement        String optional
+
+Relationship = Record
+   1 relationshipType RelationshipType            // just 'type'
+   2 from             Link(Element)
+   3 to               Link(Element) [1..*]
+   4 completeness     RelationshipCompleteness optional
+
+Identity = Record                                 // Principal identity, unspecified type
+   1 identifiedBy     Identifier [1..*]
+
+Person = Record                                   // Extends Identity
+   1 identifiedBy     Identifier [1..*]
+
+Organization = Record                             // Extends Identity
+   1 identifiedBy     Identifier [1..*]
+
+Process = Record                                  // Tool as principal (under discussion)
+   1 identifiedBy     Identifier [1..*]
+
+SpdxDocument = Record                             // Statements about a serialized file. "verifiedUsing" is required.
+   1 namespace        IRI optional                // Default namespace for Element ids in the SPDX file (rdf BASE)
+   2 prefixes         NamespaceMap optional       // Namespace abbreviations used in the SPDX file (rdf PREFIX)
+   3 elements         Link(Element) [1..*]        // Elements contained in the payload
+   4 documentRefs     Link(Element) [0..*]        // SpdxDocuments containing elements referenced by the payload
+   5 downloadLocation URL optional                // Unique ID or Location of the payload
+   6 import           ExternalMap [0..*]          // IRI assignment to non-element hashable data entities
+
+Bom = Record
+   1 elements         Link(Element) [1..*]        // <-Collection
+   2 rootElements     Link(Element) [0..*]        // <-Collection  This element is a root. Other containers that it contains?
+
+Snippet = Record
+   1 location         SnippetLocation
+   2 snippetPurpose   SoftwarePurpose [0..*]
+   3 originator       Link(Element) [0..*]        // <-Artifact:  Link(Identity)
+
+File = Record
+   1 contentType      MediaType optional
+   2 filePurpose      SoftwarePurpose [0..*]
+   3 originator       Link(Element) [0..*]        // <-Artifact:  Link(Identity)
+
+Package = Record
+   1 packagePurpose   SoftwarePurpose [0..*]
+   2 downloadLocation URL optional
+   3 homePage         URL optional
+   4 originator       Link(Element) [0..*]        // <-Artifact:  Link(Identity)
+
+Sbom = Record
+   1 elements         Link(Element) [1..*]        // <-Collection
+   2 rootElements     Link(Element) [0..*]        // <-Collection
+
+License = Record
+   1 licenseId        String
+   2 source           URL [1..*]
+   3 isOsiApproved    Boolean
+   4 isFsfLibre       Boolean
+   5 isDeprecatedLicenseId Boolean
+   6 reference        URL optional
+   7 detailsUrl       URL optional
+
+Identifier = Choice
+    1 email           Email                       // rfc2822 address syntax, not necessarily active
+    2 account         Account
+
+IntegrityMethod = Choice
+   1 hash             Hashes
+   2 signature        PublicKeySignature          // A public key by itself is not a checksum
+
+Hashes = Map{1..*}
+   1 md5              Binary{16..16} /x optional
+   2 sha1             Binary{20..20} /x optional
+   3 sha256           Binary{32..32} /x optional
+
+PublicKeySignature = Record
+
+Extensions = MapOf(IRI, String)                   // Extensions are opaque strings
+
+DateTime = String                                 // implement Integer /datetime_ms
+
+Email = String /email
+
+Account = Record
+   1 authority        String
+   2 localId          String
+
+MediaType = String
+
+Prefix = String{1..16}                            // Abbreviation for document namespace
+
+SemVer = String{pattern="^(\d{1,4})\.(\d{1,6})$"} // m.n: "3.141592" is valid, "3.14159262" is not.
+
+SnippetLocation = Record
+
+IRI = String /iri
+
+URL = String /uri                                 // IRI, must be a locator
+
+AnnotationType = Enumerated
+   0 other
+   1 review
+
+ExternalIdentifier = Record
+   1 type             ExternalIdentifierType
+   2 identifier       String
+   3 comment          String optional
+
+ExternalMap = Record
+   1 externalId       IRI
+   2 verifiedUsing    IntegrityMethod
+   3 locationHint     URL optional
+
+ExternalReference = Record
+   1 type             ExternalReferenceType
+   2 locator          IRI                         // URL - must be a locator
+   3 contentType      MediaType optional
+   4 comment          String optional
+
+ExternalIdentifierType = Enumerated
+   0 other
+   1 cpe_2.2
+   2 cpe_2.3
+   3 purl
+   4 swid
+   5 swhid
+   6 gitoid
+
+ExternalReferenceType = Enumerated
+   0 other
+   1 altDownloadLocation
+   2 altWebPage
+   3 securityAdvisory
+   4 securityFix
+   5 securityOther
+
+LicenseId = Enumerated                            // From license list: referenceNumber, licenseId  // name
+ 451 Apache-2.0                                   // Apache License 2.0
+ 457 CC0-1.0                                      // Creative Commons Zero v1.0 Universal
+
+ProfileIdentifier = Enumerated                    // Shown as "pkg" on logical model diagram, use upper case names?
+   1 core
+   2 software
+   3 license                                      // TBSL
+
+RelationshipCompleteness = Enumerated
+   1 complete
+   2 incomplete
+   3 noAssertion
+
+RelationshipType = Enumerated
+   0 other
+   1 describes
+   2 amends
+   3 contains
+   4 ancestor           // Need both?
+   5 descendent         // Need both?
+   6 variant            // *
+   7 dependsOn
+  13 dependencyManifest
+  17 buildTool
+  18 devTool
+  19 testTool
+  20 generates
+  21 distributionArtifact
+  22 example
+  23 dataFile
+  24 testCase
+  25 documentation
+  26 metafile
+  27 test
+  28 optionalComponent
+  29 packages
+  30 patch
+  31 copy           //* May or may not be directional?
+  32 expandedFromArchive
+  33 fileAdded
+  34 fileDeleted
+  35 fileModified
+  36 suppliedBy                                  // New in 3.0
+
+SoftwarePurpose = Enumerated
+   0 other
+   1 application
+   2 archive
+   3 bom
+   4 configuration
+   5 container
+   6 data
+   7 device
+   8 documentation
+   9 executable
+  10 file
+  11 firmware
+  12 framework
+  13 install
+  14 library
+  15 module
+  16 operatingSystem
+  17 patch
+  18 source

@@ -1,0 +1,18 @@
+{
+  "id": "urn:spdx.dev:null-sbom",
+  "type": {
+    "sbom": {
+      "elements": [
+        "urn:spdx.dev:iamwillbar",
+        "urn:spdx.dev:spdx-tools-3.0.1",
+        "urn:spdx.dev:project",
+        "urn:spdx.dev:doc"
+      ]
+    }
+  },
+  "creator": ["urn:spdx.dev:iamwillbar"],
+  "created": "2022-05-02T20:28:00.000Z",
+  "specVersion": "3.0",
+  "profile": ["core", "software"],
+  "dataLicense": "CC0-1.0"
+}

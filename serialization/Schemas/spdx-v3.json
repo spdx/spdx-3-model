@@ -1,0 +1,997 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://spdx.org/spdx/v3/document",
+  "title": "SPDX v3",
+  "version": "spdx-3-model 2022-09-20",
+  "description": "This information model defines the serialized structure of SPDXv3 logical model types",
+  "comment": "Generated from spdx-v3.jidl - do not edit",
+  "license": "CC0-1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "payload": {
+      "$ref": "#/definitions/Payload"
+    },
+    "elements": {
+      "$ref": "#/definitions/Elements"
+    }
+  },
+  "definitions": {
+    "Payload": {
+      "title": "Payload",
+      "type": "object",
+      "description": "Serialized file (or equivalent) for transferring Elements",
+      "additionalProperties": false,
+      "required": [
+        "namespace",
+        "created",
+        "creator",
+        "specVersion",
+        "profile",
+        "dataLicense",
+        "elements"
+      ],
+      "maxProperties": 100,
+      "properties": {
+        "namespace": {
+          "$ref": "#/definitions/IRI",
+          "description": "Default namespace for Element ids in this file (rdf BASE)"
+        },
+        "prefixes": {
+          "$ref": "#/definitions/NamespaceMap",
+          "description": "Namespace abbreviations used in this file (rdf PREFIX)"
+        },
+        "created": {
+          "$ref": "#/definitions/DateTime",
+          "description": "File creation info and element defaults"
+        },
+        "creator": {
+          "type": "array",
+          "description": "File creation info and element defaults - Link(Identity)",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/Element",
+            "description": "File creation info and element defaults - Link(Identity)"
+          }
+        },
+        "specVersion": {
+          "$ref": "#/definitions/SemVer",
+          "description": "File creation info and element defaults"
+        },
+        "profile": {
+          "type": "array",
+          "description": "File creation info and element defaults",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/ProfileIdentifier",
+            "description": "File creation info and element defaults"
+          }
+        },
+        "dataLicense": {
+          "$ref": "#/definitions/LicenseId",
+          "description": "File creation info and element defaults"
+        },
+        "elements": {
+          "type": "array",
+          "description": "Element values, defined in this file or copied",
+          "uniqueItems": true,
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/Element",
+            "description": "Element values, defined in this file or copied"
+          }
+        },
+        "spdxDocumentId": {
+          "$ref": "#/definitions/Element",
+          "description": "Optional SpdxDocument element that describes this file"
+        }
+      }
+    },
+    "Elements": {
+      "title": "Elements",
+      "type": "array",
+      "description": "Serialized set of independent Element values",
+      "uniqueItems": true,
+      "minItems": 1,
+      "maxItems": 100,
+      "items": {
+        "$ref": "#/definitions/Element"
+      }
+    },
+    "NamespaceMap": {
+      "title": "NamespaceMap",
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "maxProperties": 100
+    },
+    "Element": {
+      "title": "Element",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "type"
+      ],
+      "maxProperties": 100,
+      "properties": {
+        "id": {
+          "$ref": "#/definitions/IRI",
+          "description": "Element unique identifier: local, prefix:local, or absolute-IRI"
+        },
+        "type": {
+          "$ref": "#/definitions/ElementType",
+          "description": "Element type and type-specific properties"
+        },
+        "created": {
+          "$ref": "#/definitions/DateTime",
+          "description": "required: explicit or default"
+        },
+        "creator": {
+          "type": "array",
+          "description": "required: explicit or default - Link(Identity)",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/Element",
+            "description": "required: explicit or default - Link(Identity)"
+          }
+        },
+        "specVersion": {
+          "$ref": "#/definitions/SemVer",
+          "description": "required: explicit or default"
+        },
+        "profile": {
+          "type": "array",
+          "description": "required: explicit or default",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/ProfileIdentifier",
+            "description": "required: explicit or default"
+          }
+        },
+        "dataLicense": {
+          "$ref": "#/definitions/LicenseId",
+          "description": "required: explicit or default"
+        },
+        "name": {
+          "type": "string",
+          "maxLength": 255
+        },
+        "summary": {
+          "type": "string",
+          "maxLength": 255
+        },
+        "description": {
+          "type": "string",
+          "maxLength": 255
+        },
+        "comment": {
+          "type": "string",
+          "maxLength": 255
+        },
+        "verifiedUsing": {
+          "type": "array",
+          "description": "Applies only to Artifacts",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/IntegrityMethod",
+            "description": "Applies only to Artifacts"
+          }
+        },
+        "externalReference": {
+          "type": "array",
+          "description": "",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/ExternalReference",
+            "description": ""
+          }
+        },
+        "externalIdentifier": {
+          "type": "array",
+          "description": "",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/ExternalIdentifier",
+            "description": ""
+          }
+        },
+        "extensions": {
+          "$ref": "#/definitions/Extensions",
+          "description": ""
+        }
+      }
+    },
+    "ElementType": {
+      "title": "ElementType",
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "maxProperties": 1,
+      "properties": {
+        "annotation": {
+          "$ref": "#/definitions/Annotation",
+          "description": ""
+        },
+        "relationship": {
+          "$ref": "#/definitions/Relationship",
+          "description": ""
+        },
+        "identity": {
+          "$ref": "#/definitions/Identity",
+          "description": "concrete, unspecified subtype"
+        },
+        "person": {
+          "$ref": "#/definitions/Person",
+          "description": "<- Identity"
+        },
+        "organization": {
+          "$ref": "#/definitions/Organization",
+          "description": "<- Identity"
+        },
+        "process": {
+          "$ref": "#/definitions/Process",
+          "description": "<- Identity"
+        },
+        "spdxDocument": {
+          "$ref": "#/definitions/SpdxDocument",
+          "description": "<- Collection: A file containing serialized element values"
+        },
+        "bom": {
+          "$ref": "#/definitions/Bom",
+          "description": "<- Collection"
+        },
+        "package": {
+          "$ref": "#/definitions/Package",
+          "description": "<- Artifact: pkg:Software"
+        },
+        "file": {
+          "$ref": "#/definitions/File",
+          "description": "<- Artifact: pkg:Software"
+        },
+        "snippet": {
+          "$ref": "#/definitions/Snippet",
+          "description": "<- Artifact: pkg:Software"
+        },
+        "sbom": {
+          "$ref": "#/definitions/Sbom",
+          "description": "<- BOM: pkg:Software"
+        },
+        "license": {
+          "$ref": "#/definitions/License",
+          "description": "pkg:License"
+        }
+      }
+    },
+    "Annotation": {
+      "title": "Annotation",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "annotationType",
+        "subject"
+      ],
+      "maxProperties": 100,
+      "properties": {
+        "annotationType": {
+          "$ref": "#/definitions/AnnotationType",
+          "description": ""
+        },
+        "subject": {
+          "$ref": "#/definitions/Element",
+          "description": ""
+        },
+        "statement": {
+          "type": "string",
+          "maxLength": 255
+        }
+      }
+    },
+    "Relationship": {
+      "title": "Relationship",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "relationshipType",
+        "from",
+        "to"
+      ],
+      "maxProperties": 100,
+      "properties": {
+        "relationshipType": {
+          "$ref": "#/definitions/RelationshipType",
+          "description": "just 'type'"
+        },
+        "from": {
+          "$ref": "#/definitions/Element",
+          "description": ""
+        },
+        "to": {
+          "type": "array",
+          "description": "",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/Element",
+            "description": ""
+          }
+        },
+        "completeness": {
+          "$ref": "#/definitions/RelationshipCompleteness",
+          "description": ""
+        }
+      }
+    },
+    "Identity": {
+      "title": "Identity",
+      "type": "object",
+      "description": "Principal identity, unspecified type",
+      "additionalProperties": false,
+      "required": [
+        "identifiedBy"
+      ],
+      "maxProperties": 100,
+      "properties": {
+        "identifiedBy": {
+          "type": "array",
+          "description": "",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/Identifier",
+            "description": ""
+          }
+        }
+      }
+    },
+    "Person": {
+      "title": "Person",
+      "type": "object",
+      "description": "Extends Identity",
+      "additionalProperties": false,
+      "required": [
+        "identifiedBy"
+      ],
+      "maxProperties": 100,
+      "properties": {
+        "identifiedBy": {
+          "type": "array",
+          "description": "",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/Identifier",
+            "description": ""
+          }
+        }
+      }
+    },
+    "Organization": {
+      "title": "Organization",
+      "type": "object",
+      "description": "Extends Identity",
+      "additionalProperties": false,
+      "required": [
+        "identifiedBy"
+      ],
+      "maxProperties": 100,
+      "properties": {
+        "identifiedBy": {
+          "type": "array",
+          "description": "",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/Identifier",
+            "description": ""
+          }
+        }
+      }
+    },
+    "Process": {
+      "title": "Process",
+      "type": "object",
+      "description": "Tool as principal (under discussion)",
+      "additionalProperties": false,
+      "required": [
+        "identifiedBy"
+      ],
+      "maxProperties": 100,
+      "properties": {
+        "identifiedBy": {
+          "type": "array",
+          "description": "",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/Identifier",
+            "description": ""
+          }
+        }
+      }
+    },
+    "SpdxDocument": {
+      "title": "SpdxDocument",
+      "type": "object",
+      "description": "Statements about a serialized file. \"verifiedUsing\" is required.",
+      "additionalProperties": false,
+      "required": [
+        "elements"
+      ],
+      "maxProperties": 100,
+      "properties": {
+        "namespace": {
+          "$ref": "#/definitions/IRI",
+          "description": "Default namespace for Element ids in the SPDX file (rdf BASE)"
+        },
+        "prefixes": {
+          "$ref": "#/definitions/NamespaceMap",
+          "description": "Namespace abbreviations used in the SPDX file (rdf PREFIX)"
+        },
+        "elements": {
+          "type": "array",
+          "description": "Elements contained in the payload",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/Element",
+            "description": "Elements contained in the payload"
+          }
+        },
+        "documentRefs": {
+          "type": "array",
+          "description": "SpdxDocuments containing elements referenced by the payload",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/Element",
+            "description": "SpdxDocuments containing elements referenced by the payload"
+          }
+        },
+        "downloadLocation": {
+          "$ref": "#/definitions/URL",
+          "description": "Unique ID or Location of the payload"
+        },
+        "import": {
+          "type": "array",
+          "description": "IRI assignment to non-element hashable data entities",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/ExternalMap",
+            "description": "IRI assignment to non-element hashable data entities"
+          }
+        }
+      }
+    },
+    "Bom": {
+      "title": "Bom",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "elements"
+      ],
+      "maxProperties": 100,
+      "properties": {
+        "elements": {
+          "type": "array",
+          "description": "<-Collection",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/Element",
+            "description": "<-Collection"
+          }
+        },
+        "rootElements": {
+          "type": "array",
+          "description": "<-Collection  This element is a root. Other containers that it contains?",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/Element",
+            "description": "<-Collection  This element is a root. Other containers that it contains?"
+          }
+        }
+      }
+    },
+    "Snippet": {
+      "title": "Snippet",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "location"
+      ],
+      "maxProperties": 100,
+      "properties": {
+        "location": {
+          "$ref": "#/definitions/SnippetLocation",
+          "description": ""
+        },
+        "snippetPurpose": {
+          "type": "array",
+          "description": "",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/SoftwarePurpose",
+            "description": ""
+          }
+        },
+        "originator": {
+          "type": "array",
+          "description": "<-Artifact:  Link(Identity)",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/Element",
+            "description": "<-Artifact:  Link(Identity)"
+          }
+        }
+      }
+    },
+    "File": {
+      "title": "File",
+      "type": "object",
+      "additionalProperties": false,
+      "maxProperties": 100,
+      "properties": {
+        "contentType": {
+          "$ref": "#/definitions/MediaType",
+          "description": ""
+        },
+        "filePurpose": {
+          "type": "array",
+          "description": "",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/SoftwarePurpose",
+            "description": ""
+          }
+        },
+        "originator": {
+          "type": "array",
+          "description": "<-Artifact:  Link(Identity)",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/Element",
+            "description": "<-Artifact:  Link(Identity)"
+          }
+        }
+      }
+    },
+    "Package": {
+      "title": "Package",
+      "type": "object",
+      "additionalProperties": false,
+      "maxProperties": 100,
+      "properties": {
+        "packagePurpose": {
+          "type": "array",
+          "description": "",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/SoftwarePurpose",
+            "description": ""
+          }
+        },
+        "downloadLocation": {
+          "$ref": "#/definitions/URL",
+          "description": ""
+        },
+        "homePage": {
+          "$ref": "#/definitions/URL",
+          "description": ""
+        },
+        "originator": {
+          "type": "array",
+          "description": "<-Artifact:  Link(Identity)",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/Element",
+            "description": "<-Artifact:  Link(Identity)"
+          }
+        }
+      }
+    },
+    "Sbom": {
+      "title": "Sbom",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "elements"
+      ],
+      "maxProperties": 100,
+      "properties": {
+        "elements": {
+          "type": "array",
+          "description": "<-Collection",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/Element",
+            "description": "<-Collection"
+          }
+        },
+        "rootElements": {
+          "type": "array",
+          "description": "<-Collection",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/Element",
+            "description": "<-Collection"
+          }
+        }
+      }
+    },
+    "License": {
+      "title": "License",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "licenseId",
+        "source",
+        "isOsiApproved",
+        "isFsfLibre",
+        "isDeprecatedLicenseId"
+      ],
+      "maxProperties": 100,
+      "properties": {
+        "licenseId": {
+          "type": "string",
+          "maxLength": 255
+        },
+        "source": {
+          "type": "array",
+          "description": "",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/URL",
+            "description": ""
+          }
+        },
+        "isOsiApproved": {
+          "type": "boolean"
+        },
+        "isFsfLibre": {
+          "type": "boolean"
+        },
+        "isDeprecatedLicenseId": {
+          "type": "boolean"
+        },
+        "reference": {
+          "$ref": "#/definitions/URL",
+          "description": ""
+        },
+        "detailsUrl": {
+          "$ref": "#/definitions/URL",
+          "description": ""
+        }
+      }
+    },
+    "Identifier": {
+      "title": "Identifier",
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "maxProperties": 1,
+      "properties": {
+        "email": {
+          "$ref": "#/definitions/Email",
+          "description": "rfc2822 address syntax, not necessarily active"
+        },
+        "account": {
+          "$ref": "#/definitions/Account",
+          "description": ""
+        }
+      }
+    },
+    "IntegrityMethod": {
+      "title": "IntegrityMethod",
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "maxProperties": 1,
+      "properties": {
+        "hash": {
+          "$ref": "#/definitions/Hashes",
+          "description": ""
+        },
+        "signature": {
+          "$ref": "#/definitions/PublicKeySignature",
+          "description": "A public key by itself is not a checksum"
+        }
+      }
+    },
+    "Hashes": {
+      "title": "Hashes",
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "maxProperties": 100,
+      "properties": {
+        "md5": {
+          "type": "string",
+          "contentEncoding": "base16"
+        },
+        "sha1": {
+          "type": "string",
+          "contentEncoding": "base16"
+        },
+        "sha256": {
+          "type": "string",
+          "contentEncoding": "base16"
+        }
+      }
+    },
+    "PublicKeySignature": {
+      "title": "PublicKeySignature",
+      "type": "object",
+      "additionalProperties": false,
+      "maxProperties": 100,
+      "properties": {}
+    },
+    "Extensions": {
+      "title": "Extensions",
+      "type": "object",
+      "description": "Extensions are opaque strings",
+      "additionalProperties": false,
+      "maxProperties": 100
+    },
+    "DateTime": {
+      "title": "DateTime",
+      "type": "string",
+      "description": "implement Integer /datetime_ms",
+      "maxLength": 255
+    },
+    "Email": {
+      "title": "Email",
+      "type": "string",
+      "format": "email",
+      "maxLength": 255
+    },
+    "Account": {
+      "title": "Account",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "authority",
+        "localId"
+      ],
+      "maxProperties": 100,
+      "properties": {
+        "authority": {
+          "type": "string",
+          "maxLength": 255
+        },
+        "localId": {
+          "type": "string",
+          "maxLength": 255
+        }
+      }
+    },
+    "MediaType": {
+      "title": "MediaType",
+      "type": "string",
+      "maxLength": 255
+    },
+    "Prefix": {
+      "title": "Prefix",
+      "type": "string",
+      "description": "Abbreviation for document namespace",
+      "minLength": 1,
+      "maxLength": 16
+    },
+    "SemVer": {
+      "title": "SemVer",
+      "type": "string",
+      "description": "m.n: \"3.141592\" is valid, \"3.14159262\" is not.",
+      "maxLength": 255,
+      "pattern": "^(\\d{1,4})\\.(\\d{1,6})$"
+    },
+    "SnippetLocation": {
+      "title": "SnippetLocation",
+      "type": "object",
+      "additionalProperties": false,
+      "maxProperties": 100,
+      "properties": {}
+    },
+    "IRI": {
+      "title": "IRI",
+      "type": "string",
+      "format": "iri",
+      "maxLength": 255
+    },
+    "URL": {
+      "title": "URL",
+      "type": "string",
+      "description": "IRI, must be a locator",
+      "format": "uri",
+      "maxLength": 255
+    },
+    "AnnotationType": {
+      "title": "AnnotationType",
+      "type": "string",
+      "enum": [
+        "other",
+        "review"
+      ]
+    },
+    "ExternalIdentifier": {
+      "title": "ExternalIdentifier",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "identifier"
+      ],
+      "maxProperties": 100,
+      "properties": {
+        "type": {
+          "$ref": "#/definitions/ExternalIdentifierType",
+          "description": ""
+        },
+        "identifier": {
+          "type": "string",
+          "maxLength": 255
+        },
+        "comment": {
+          "type": "string",
+          "maxLength": 255
+        }
+      }
+    },
+    "ExternalMap": {
+      "title": "ExternalMap",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "externalId",
+        "verifiedUsing"
+      ],
+      "maxProperties": 100,
+      "properties": {
+        "externalId": {
+          "$ref": "#/definitions/IRI",
+          "description": ""
+        },
+        "verifiedUsing": {
+          "$ref": "#/definitions/IntegrityMethod",
+          "description": ""
+        },
+        "locationHint": {
+          "$ref": "#/definitions/URL",
+          "description": ""
+        }
+      }
+    },
+    "ExternalReference": {
+      "title": "ExternalReference",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "locator"
+      ],
+      "maxProperties": 100,
+      "properties": {
+        "type": {
+          "$ref": "#/definitions/ExternalReferenceType",
+          "description": ""
+        },
+        "locator": {
+          "$ref": "#/definitions/IRI",
+          "description": "URL - must be a locator"
+        },
+        "contentType": {
+          "$ref": "#/definitions/MediaType",
+          "description": ""
+        },
+        "comment": {
+          "type": "string",
+          "maxLength": 255
+        }
+      }
+    },
+    "ExternalIdentifierType": {
+      "title": "ExternalIdentifierType",
+      "type": "string",
+      "enum": [
+        "other",
+        "cpe_2.2",
+        "cpe_2.3",
+        "purl",
+        "swid",
+        "swhid",
+        "gitoid"
+      ]
+    },
+    "ExternalReferenceType": {
+      "title": "ExternalReferenceType",
+      "type": "string",
+      "enum": [
+        "other",
+        "altDownloadLocation",
+        "altWebPage",
+        "securityAdvisory",
+        "securityFix",
+        "securityOther"
+      ]
+    },
+    "LicenseId": {
+      "title": "LicenseId",
+      "type": "string",
+      "description": "From license list: referenceNumber, licenseId  // name",
+      "enum": [
+        "Apache-2.0",
+        "CC0-1.0"
+      ]
+    },
+    "ProfileIdentifier": {
+      "title": "ProfileIdentifier",
+      "type": "string",
+      "description": "Shown as \"pkg\" on logical model diagram, use upper case names?",
+      "enum": [
+        "core",
+        "software",
+        "license"
+      ]
+    },
+    "RelationshipCompleteness": {
+      "title": "RelationshipCompleteness",
+      "type": "string",
+      "enum": [
+        "complete",
+        "incomplete",
+        "noAssertion"
+      ]
+    },
+    "RelationshipType": {
+      "title": "RelationshipType",
+      "type": "string",
+      "enum": [
+        "other",
+        "describes",
+        "amends",
+        "contains",
+        "ancestor",
+        "descendent",
+        "variant",
+        "dependsOn",
+        "dependencyManifest",
+        "buildTool",
+        "devTool",
+        "testTool",
+        "generates",
+        "distributionArtifact",
+        "example",
+        "dataFile",
+        "testCase",
+        "documentation",
+        "metafile",
+        "test",
+        "optionalComponent",
+        "packages",
+        "patch",
+        "copy",
+        "expandedFromArchive",
+        "fileAdded",
+        "fileDeleted",
+        "fileModified",
+        "suppliedBy"
+      ]
+    },
+    "SoftwarePurpose": {
+      "title": "SoftwarePurpose",
+      "type": "string",
+      "enum": [
+        "other",
+        "application",
+        "archive",
+        "bom",
+        "configuration",
+        "container",
+        "data",
+        "device",
+        "documentation",
+        "executable",
+        "file",
+        "firmware",
+        "framework",
+        "install",
+        "library",
+        "module",
+        "operatingSystem",
+        "patch",
+        "source"
+      ]
+    }
+  }
+}

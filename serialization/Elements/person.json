@@ -1,0 +1,17 @@
+{
+  "id": "urn:spdx.dev:iamwillbar",
+  "type": {
+    "person": {
+      "identifiedBy": [
+        {"email": "willbar@microsoft.com"},
+        {"account": {"authority": "github.com", "localId": "iamwillbar"}}
+      ]
+    }
+  },
+  "name": "William Bartholomew",
+  "creator": ["urn:spdx.dev:iamwillbar"],
+  "created": "2022-05-02T20:28:00.000Z",
+  "specVersion": "3.0",
+  "profile": ["core"],
+  "dataLicense": "CC0-1.0"
+}
