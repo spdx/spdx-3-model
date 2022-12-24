@@ -123,12 +123,28 @@ Identifier = Choice
 
 IntegrityMethod = Choice
    1 hash             Hashes
-   2 signature        PublicKeySignature          // A public key by itself is not a checksum
+   2 signature        PublicKeySignature          // A public key by itself is not an integrity check
 
 Hashes = Map{1..*}
-   1 md5              Binary{16..16} /x optional
-   2 sha1             Binary{20..20} /x optional
+   1 sha1             Binary{20..20} /x optional
+   2 sha224           Binary{28..28} /x optional
    3 sha256           Binary{32..32} /x optional
+   4 sha384           Binary{48..48} /x optional
+   5 sha512           Binary{64..64} /x optional
+   6 sha3_224         Binary{28..28} /x optional
+   7 sha3_256         Binary{32..32} /x optional
+   8 sha3_384         Binary{48..48} /x optional
+   9 sha3_512         Binary{64..64} /x optional
+  10 md2              Binary{16..16} /x optional
+  11 md4              Binary{16..16} /x optional
+  12 md5              Binary{16..16} /x optional
+  13 md6_128          Binary{16..16} /x optional // Digest length?
+  20 spdx_pvc_sha1    Binary{20..20} /x optional
+  21 spdx_pvc_sha256  Binary{32..32} /x optional
+  22 blake2b_256      Binary{32..32} /x optional
+  23 blak32b_384      Binary{48..48} /x optional
+  24 blake2b_512      Binary{64..64} /x optional
+  25 blake3           Binary{32..32} /x optional
 
 PublicKeySignature = Record
 

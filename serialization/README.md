@@ -6,9 +6,27 @@ specifies logical element serialization using a specific data format, while an i
 (abstract schema) specifies logical element serialization using any data format,
 allowing data in one format to be compared with and converted to other formats.
 
+## Serialization Concepts
+
+Information exists in the minds of users (analysts and consumers), in applications running on the systems they use,
+and in the data exchanged between systems. Serialization converts system / application information into data bytes
+("payload" or "information exchage package") used for communication and storage. Deserialization
+parses an IEP back into applications. Serialization is not a goal in and of itself, it is the mechanism by
+which applications exchange information in order to make it available to users.
+
+Serialization should be:
+1) lossless, so that information is not modified in transit and all users have the identical information
+2) transparent, so that information is not affected by how it is serialized 
+
+
+![Information](images/interoperability.jpg)
+
+
+
+
 The SPDX v3 model diagram includes some JSON examples, but they are used to illustrate and
-develop the logical model. The examples do not specify how to construct and validate a byte sequence
-to represent a set of SPDX logical values.
+develop the logical model, not specify how to construct and validate a byte sequence
+to represent a set of logical values.
 Figure 1 shows a JSON example from the logical model diagram as of 12/19/2022:
 
 ![Figure 1](images/diagram-sbom.jpg)
@@ -50,3 +68,7 @@ objects for which no elements exist.
 ![Figure 4](images/person.jpg)
 
 Figure 4 shows the example Person element.
+
+## References
+
+[iepd](https://niem.github.io/reference/iepd/)
