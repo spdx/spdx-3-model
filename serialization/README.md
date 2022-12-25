@@ -8,16 +8,22 @@ allowing data in one format to be compared with and converted to other formats.
 
 ## Serialization Concepts
 
-Information exists in the minds of users (analysts and consumers), in applications running on the systems they use,
-and in the data exchanged between systems. Serialization converts system / application information into data bytes
-("payload" or "information exchage package") used for communication and storage. Deserialization
-parses an IEP back into applications. Serialization is not a goal in and of itself, it is the mechanism by
+Information exists in the minds of users (producers and consumers), in applications running on the systems they use,
+and in the data exchanged among systems. Serialization converts application information into byte sequences
+(messages, payloads, information exchage packages) that can be communicated and stored. De-serialization
+parses payloads back into application state. Serialization is not a goal in and of itself, it is the mechanism by
 which applications exchange information in order to make it available to users.
 
 Serialization should be:
-1) lossless, so that information is not modified in transit and all users have the identical information
-2) transparent, so that information is not affected by how it is serialized 
+1) **lossless**, so that information is not modified in transit and all applications have the identical information
+2) **transparent**, so that information is unaffected by how or if it has been serialized; users should not know or care.
 
+Shannon's information theory defines the relationship between information and serialization (coding).
+Mathematicians characterize conditions applied to a mechanism as *necessary* and/or *sufficient*:
+a serialization that omits necessary data loses information, one that uses more data than sufficient
+conveys no extra information.
+Thespian bartender and philosopher Ted Danson put it most succinctly: a necessary and sufficient serialization
+mechanism includes "everything you need and nothing you don't."
 
 ![Information](images/interoperability.jpg)
 
@@ -72,3 +78,5 @@ Figure 4 shows the example Person element.
 ## References
 
 [iepd](https://niem.github.io/reference/iepd/)
+
+[danson](https://www.youtube.com/watch?v=BjeLEoc8Kjg)
