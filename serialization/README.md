@@ -32,8 +32,21 @@ mechanism has "everything you need and nothing you don't."
 
 ### SPDX v3 Information
 
-SPDX v3 organizes information into a single uniform "Element" class - every bit of logical state modeled by SPDX
-exists as instances of element subclasses (element itself is abstract), and each element exists
+The classes of a logical model are either referenceable or datatypes.
+* A **datatype** class is known only by its value.
+Two instances of the class are equivalent if and only if every property in the class is equal.
+* A **referenceable** class has a unique identifier (primary key) and each instance is known by its id.
+Two instances of the class are considered equivalent if and only if their ids are equal.
+If only a single value can correspond to an id, the class is a *mapping* and colliding values
+are treated as an error.
+
+All classes in an information model are datatypes. Referenceable classes in a logical model are translated
+to equivalent data structures where ids have no particular significance other than as values to be serialized.
+Referenceable logical classes can be serialized as lists where each list item has an id, or as maps from ids
+to values. Both serializations convey the identical information but their byte sequences are different.
+
+SPDX v3 organizes all of its information into a single referenceable "Element" class - every bit of logical
+state in SPDX exists as instances of element subclasses (element itself is abstract), and each element exists
 independently of all other elements. Figure 2 illustrates a set of elements from the information perspective:
 1) Each element (black dot) has a unique id, type, and creation information. Serialization examples should show 
 realistic unique ids; current examples do not.
@@ -42,8 +55,9 @@ elements can be created at the same time, shown in a horizontal row.  Position w
 3) Although elements are logically related by graph edges, at the information layer relationships are just property
 values within each element.
 4) Elements can exist in an application without ever being serialized. But to communicate between applications,
-one or more elements are serialized into *payloads*, illustrated as the red horizontal bar at t=5.
-5) Serialization must be causal; the payload created at t=5 cannot contain any elements created after it (t>5).
+one or more elements are serialized into *payloads*, illustrated as the red horizontal bar at t=5. The payload
+is not an element, it is serialized data carrying a set of elements, analogous to a zip file.
+5) Serialization is causal; the payload created at t=5 cannot contain any elements created after it (t>5).
 6) A payload may contain elements with the same creation time as the payload, and may also contain
 previously-created elements such as the red element created at t=3 and two red elements created at t=1.
 In the figure, the payload created at t=5 contains seven elements with three different timestamps.
@@ -52,6 +66,7 @@ such as the IDs of the green elements created at t=2 and t=4. Those properties h
 information layer, they are just ID values to be serialized.
 
 ![Element Timeline](images/elements-timeline.jpg)
+
 
 ### SPDX Serialization Examples
 
