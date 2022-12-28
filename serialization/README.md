@@ -9,10 +9,10 @@ allows it to be converted between formats without loss.
 
 ### Serialization Concepts
 
-Information exists in the minds of users (producers and consumers), in applications running on the systems they use,
-and in the data exchanged among systems.
-Serialization converts application information into byte sequences (messages, payloads, information exchage packages)
-that can be validated, communicated and stored.
+Information exists in the minds of users (producers and consumers), in the *state* of applications running
+on systems, and in the data exchanged among applications.
+Serialization converts application information into byte sequences (a.k.a. protocol data units, messages,
+payloads, information exchage packages) that can be validated, communicated and stored.
 De-serialization parses payloads back into application state.
 Serialization is not a goal in and of itself, it is the mechanism by which applications exchange information
 in order to make it available to users.
@@ -42,31 +42,30 @@ are treated as an error.
 
 All classes in an information model are datatypes. Referenceable classes in a logical model are translated
 to equivalent data structures where ids have no particular significance other than as values to be serialized.
-Referenceable logical classes can be serialized as lists where each list item has an id, or as maps from ids
-to values. Both serializations convey the identical information but their byte sequences are different.
+They can be serialized as lists where each list item has an id, or as maps from ids to values.
+Both serializations convey the same information but their byte sequences are different.
 
 SPDX v3 organizes all of its information into a single referenceable "Element" class - every bit of logical
 state in SPDX exists as instances of element subclasses (element itself is abstract), and each element exists
 independently of all other elements. Figure 2 illustrates a set of elements from the information perspective:
+
+![Element Timeline](images/elements-timeline.jpg)
+
 1) Each element (black dot) has a unique id, type, and creation information. Serialization examples should show 
 realistic unique ids; current examples do not.
 2) Individual elements are ordered by creation date from oldest at the bottom to newest at the top.  One or more
 elements can be created at the same time, shown in a horizontal row.  Position within a row does not signify anything.
-3) Although elements are logically related by graph edges, at the information layer relationships are just property
+3) Although elements are logically related by graph edges, at the information layer references are just property
 values within each element.
 4) Elements can exist in an application without ever being serialized. But to communicate between applications,
-one or more elements are serialized into *payloads*, illustrated as the red horizontal bar at t=5. The payload
-is not an element, it is serialized data carrying a set of elements, analogous to a zip file.
+one or more elements are serialized into *payloads*, illustrated as the red horizontal bar at t=5. The payload is
+not an element, it is serialized data carrying a set of elements equivalent to carrying the elements in a zip file.
 5) Serialization is causal; the payload created at t=5 cannot contain any elements created after it (t>5).
 6) A payload may contain elements with the same creation time as the payload, and may also contain
 previously-created elements such as the red element created at t=3 and two red elements created at t=1.
 In the figure, the payload created at t=5 contains seven elements with three different timestamps.
-7) Elements in a payload may have properties that are unique IDs of elements not contained in the payload,
-such as the IDs of the green elements created at t=2 and t=4. Those properties have no special meaning at the
-information layer, they are just ID values to be serialized.
-
-![Element Timeline](images/elements-timeline.jpg)
-
+7) Elements in a payload may have properties that are unique IDs of elements not carried in the payload,
+such as the IDs of the green elements created at t=2 and t=4.
 
 ### SPDX Serialization Examples
 
