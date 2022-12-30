@@ -16,7 +16,7 @@ Payload = Record                                  // Serialized file (or equival
    5 specVersion      SemVer                      // File creation info and element defaults
    6 profile          ProfileIdentifier [1..*]    // File creation info and element defaults
    7 dataLicense      LicenseId                   // File creation info and element defaults
-   8 elements         Element unique [1..*]       // Element values, defined in this file or copied
+   8 element          Element unique [1..*]       // Element values, defined in this file or copied
    9 spdxDocumentId   Link(Element) optional      // Optional SpdxDocument element that describes this file
 
 NamespaceMap = MapOf(Prefix, IRI){1..*}
@@ -79,14 +79,14 @@ Process = Record                                  // Tool as principal (under di
 SpdxDocument = Record                             // Statements about a serialized file. "verifiedUsing" is required.
    1 namespace        IRI optional                // Default namespace for Element ids in the SPDX file (rdf BASE)
    2 prefixes         NamespaceMap optional       // Namespace abbreviations used in the SPDX file (rdf PREFIX)
-   3 elements         Link(Element) [1..*]        // Elements contained in the payload
-   4 documentRefs     Link(Element) [0..*]        // SpdxDocuments containing elements referenced by the payload
+   3 element          Link(Element) [1..*]        // Elements contained in the payload
+   4 documentRef      Link(Element) [0..*]        // SpdxDocuments containing elements referenced by the payload
    5 downloadLocation URL optional                // Unique ID or Location of the payload
    6 import           ExternalMap [0..*]          // IRI assignment to non-element hashable data entities
 
 Bom = Record
-   1 elements         Link(Element) [1..*]        // <-Collection
-   2 rootElements     Link(Element) [0..*]        // <-Collection  This element is a root. Other containers that it contains?
+   1 element          Link(Element) [1..*]        // <-Collection
+   2 rootElement      Link(Element) [0..*]        // <-Collection  This element is a root. Other containers that it contains?
 
 Snippet = Record
    1 location         SnippetLocation
@@ -105,8 +105,8 @@ Package = Record
    4 originator       Link(Element) [0..*]        // <-Artifact:  Link(Identity)
 
 Sbom = Record
-   1 elements         Link(Element) [1..*]        // <-Collection
-   2 rootElements     Link(Element) [0..*]        // <-Collection
+   1 element          Link(Element) [1..*]        // <-Collection
+   2 rootElement      Link(Element) [0..*]        // <-Collection
 
 License = Record
    1 licenseId        String

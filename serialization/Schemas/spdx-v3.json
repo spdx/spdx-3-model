@@ -4,7 +4,6 @@
   "title": "SPDX v3",
   "version": "spdx-3-model 2022-09-20",
   "description": "This information model defines the serialized structure of SPDXv3 logical model types",
-  "comment": "Generated from spdx-v3.jidl - do not edit",
   "license": "CC0-1.0",
   "type": "object",
   "additionalProperties": false,
@@ -29,7 +28,7 @@
         "specVersion",
         "profile",
         "dataLicense",
-        "elements"
+        "element"
       ],
       "maxProperties": 100,
       "properties": {
@@ -71,7 +70,7 @@
           "$ref": "#/definitions/LicenseId",
           "description": "File creation info and element defaults"
         },
-        "elements": {
+        "element": {
           "type": "array",
           "description": "Element values, defined in this file or copied",
           "uniqueItems": true,
@@ -411,7 +410,7 @@
       "description": "Statements about a serialized file. \"verifiedUsing\" is required.",
       "additionalProperties": false,
       "required": [
-        "elements"
+        "element"
       ],
       "maxProperties": 100,
       "properties": {
@@ -423,7 +422,7 @@
           "$ref": "#/definitions/NamespaceMap",
           "description": "Namespace abbreviations used in the SPDX file (rdf PREFIX)"
         },
-        "elements": {
+        "element": {
           "type": "array",
           "description": "Elements contained in the payload",
           "minItems": 1,
@@ -432,7 +431,7 @@
             "description": "Elements contained in the payload"
           }
         },
-        "documentRefs": {
+        "documentRef": {
           "type": "array",
           "description": "SpdxDocuments containing elements referenced by the payload",
           "minItems": 1,
@@ -461,11 +460,11 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "elements"
+        "element"
       ],
       "maxProperties": 100,
       "properties": {
-        "elements": {
+        "element": {
           "type": "array",
           "description": "<-Collection",
           "minItems": 1,
@@ -474,7 +473,7 @@
             "description": "<-Collection"
           }
         },
-        "rootElements": {
+        "rootElement": {
           "type": "array",
           "description": "<-Collection  This element is a root. Other containers that it contains?",
           "minItems": 1,
@@ -587,11 +586,11 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "elements"
+        "element"
       ],
       "maxProperties": 100,
       "properties": {
-        "elements": {
+        "element": {
           "type": "array",
           "description": "<-Collection",
           "minItems": 1,
@@ -600,7 +599,7 @@
             "description": "<-Collection"
           }
         },
-        "rootElements": {
+        "rootElement": {
           "type": "array",
           "description": "<-Collection",
           "minItems": 1,
@@ -686,7 +685,7 @@
         },
         "signature": {
           "$ref": "#/definitions/PublicKeySignature",
-          "description": "A public key by itself is not a checksum"
+          "description": "A public key by itself is not an integrity check"
         }
       }
     },
@@ -697,15 +696,80 @@
       "minProperties": 1,
       "maxProperties": 100,
       "properties": {
-        "md5": {
-          "type": "string",
-          "contentEncoding": "base16"
-        },
         "sha1": {
           "type": "string",
           "contentEncoding": "base16"
         },
+        "sha224": {
+          "type": "string",
+          "contentEncoding": "base16"
+        },
         "sha256": {
+          "type": "string",
+          "contentEncoding": "base16"
+        },
+        "sha384": {
+          "type": "string",
+          "contentEncoding": "base16"
+        },
+        "sha512": {
+          "type": "string",
+          "contentEncoding": "base16"
+        },
+        "sha3_224": {
+          "type": "string",
+          "contentEncoding": "base16"
+        },
+        "sha3_256": {
+          "type": "string",
+          "contentEncoding": "base16"
+        },
+        "sha3_384": {
+          "type": "string",
+          "contentEncoding": "base16"
+        },
+        "sha3_512": {
+          "type": "string",
+          "contentEncoding": "base16"
+        },
+        "md2": {
+          "type": "string",
+          "contentEncoding": "base16"
+        },
+        "md4": {
+          "type": "string",
+          "contentEncoding": "base16"
+        },
+        "md5": {
+          "type": "string",
+          "contentEncoding": "base16"
+        },
+        "md6_128": {
+          "type": "string",
+          "description": "Digest length?",
+          "contentEncoding": "base16"
+        },
+        "spdx_pvc_sha1": {
+          "type": "string",
+          "contentEncoding": "base16"
+        },
+        "spdx_pvc_sha256": {
+          "type": "string",
+          "contentEncoding": "base16"
+        },
+        "blake2b_256": {
+          "type": "string",
+          "contentEncoding": "base16"
+        },
+        "blak32b_384": {
+          "type": "string",
+          "contentEncoding": "base16"
+        },
+        "blake2b_512": {
+          "type": "string",
+          "contentEncoding": "base16"
+        },
+        "blake3": {
           "type": "string",
           "contentEncoding": "base16"
         }

@@ -9,7 +9,7 @@ allows it to be converted between formats without loss.
 
 ### Serialization Concepts
 
-Information exists in the minds of users (producers and consumers), in the *state* of applications running
+Information exists in the minds of users (producers and consumers), in the state of applications running
 on systems, and in the data exchanged among applications.
 Serialization converts application information into byte sequences (a.k.a. protocol data units, messages,
 payloads, information exchage packages) that can be validated, communicated and stored.
@@ -59,7 +59,8 @@ elements can be created at the same time, shown in a horizontal row.  Position w
 values within each element.
 4) Elements can exist in an application without ever being serialized. But to communicate between applications,
 one or more elements are serialized into *payloads*, illustrated as the red horizontal bar at t=5. The payload is
-not an element, it is serialized data carrying a set of elements equivalent to carrying the elements in a zip file.
+not an element, it is just a sequence of bytes carrying an arbitrary set of elements, equivalent to the
+identical elements carried in a zip file.
 5) Serialization is causal; the payload created at t=5 cannot contain any elements created after it (t>5).
 6) A payload may contain elements with the same creation time as the payload, and may also contain
 previously-created elements such as the red element created at t=3 and two red elements created at t=1.
@@ -67,11 +68,25 @@ In the figure, the payload created at t=5 contains seven elements with three dif
 7) Elements in a payload may have properties that are unique IDs of elements not carried in the payload,
 such as the IDs of the green elements created at t=2 and t=4.
 
+Although it is possible to define nested serialization structures, there are practical disadvantages to doing so:
+1) nesting can be arbitrarily deep
+2) if a nesting limit (e.g., max 1 level deep) is declared, the identical element has a different value
+when serialized at level 1 than at level 2
+3) if one element is nested within multiple other elements, multiple copies of the data are carried in the payload 
+4) if elements are nested, they have different serialized values than when serialized individually
+5) if elements are nested, rules for property inheritance must be defined, resulting in even more serialized
+variants of the same element
+
+For these reasons, it is both simpler and more efficient to serialize all elements in a payload independently,
+without nesting or alternate representations.
+
 ### SPDX Serialization Examples
 
 The SPDX v3 model diagram includes some JSON examples, but they are used to illustrate and
 develop the logical model, not specify how to construct and validate a byte sequence
-to represent a set of logical values.
+to represent a set of logical values. When serialization specifications are defined, examples will be
+needed to illustrate and develop those specifications.
+
 Figure 3 shows a JSON example from the diagram as of 12/19/2022:
 
 ![Figure 3](images/diagram-sbom.jpg)
@@ -83,17 +98,103 @@ three elements. Note that "logical value" is an "interface" - an answer to the q
 answers to those questions are displayed as data, so the distinction between logical values and
 physical data must be kept in mind.
 
-Figure 4 shows the logical value of each of the elements from the example:
+The logical values of these elements are:
 
-![Figure 4](images/elements.jpg)
+**Package:**
+```json
+{
+  "id": "urn:spdx.dev:spdx-tools-3.0.1",
+  "type": {
+    "package": {
+      "packagePurpose": ["application"],
+      "downloadLocation": "https://spdx.dev/downloads/spdx-tools-3.0.1.tgz",
+      "homePage": "https://spdx.dev/tools.3.0",
+      "originator": ["urn:spdx.dev:project"]
+    }
+  },
+  "externalIdentifier": [
+    {"type": "purl", "identifier": ""},
+    {"type": "cpe_2.2", "identifier": ""}
+  ],
+  "verifiedUsing": [{"hash": {"sha256": "14a657a7118a333cc1fdc6af05071a59cda067fd11130d4ee5d6d47c26e7863f"}}],
+  "creator": ["urn:spdx.dev:iamwillbar"],
+  "created": "2022-05-02T20:28:00.000Z",
+  "specVersion": "3.0",
+  "profile": ["core", "software"],
+  "dataLicense": "CC0-1.0"
+}
+```
+**Person:**
+```json
+{
+  "id": "urn:spdx.dev:iamwillbar",
+  "type": {
+    "person": {
+      "identifiedBy": [
+        {"email": "willbar@microsoft.com"},
+        {"account": {"authority": "github.com", "localId": "iamwillbar"}}
+      ]
+    }
+  },
+  "name": "William Bartholomew",
+  "creator": ["urn:spdx.dev:iamwillbar"],
+  "created": "2022-05-02T20:28:00.000Z",
+  "specVersion": "3.0",
+  "profile": ["core"],
+  "dataLicense": "CC0-1.0"
+}
+```
+**Sbom:**
+```json
+{
+  "id": "urn:spdx.dev:null-sbom",
+  "type": {
+    "sbom": {
+      "element": [
+        "urn:spdx.dev:iamwillbar",
+        "urn:spdx.dev:spdx-tools-3.0.1",
+        "urn:spdx.dev:project",
+        "urn:spdx.dev:doc"
+      ]
+    }
+  },
+  "creator": ["urn:spdx.dev:iamwillbar"],
+  "created": "2022-05-02T20:28:00.000Z",
+  "specVersion": "3.0",
+  "profile": ["core", "software"],
+  "dataLicense": "CC0-1.0"
+}
+```
+Note that every JSON structure has both leaf-path (RFC 6901) and hierarchical representions. The two represent
+identical values and can be converted back and forth without any semantic knowledge.
+For example, the path representation of the Sbom element is:
+
+**Sbom (path):**
+```json
+{
+  "id": "urn:spdx.dev:null-sbom",
+  "type/sbom/element/0": "urn:spdx.dev:iamwillbar",
+  "type/sbom/element/1": "urn:spdx.dev:spdx-tools-3.0.1",
+  "type/sbom/element/2": "urn:spdx.dev:project",
+  "type/sbom/element/3": "urn:spdx.dev:doc",
+  "creator/0": "urn:spdx.dev:iamwillbar",
+  "created": "2022-05-02T20:28:00.000Z",
+  "specVersion": "3.0",
+  "profile/0": "core",
+  "profile/1": "software",
+  "dataLicense": "CC0-1.0"
+}
+```
+Because they represent identical logical values, choosing a represenation is a matter of taste and personal preference;
+one or the other should be chosen for documentation purposes. The logical representation does not affect
+the serialization format, although the same choices can be used the serialization spec.
+
 
 The `person` element illustrates a problem with the logical model that can be resolved by adding
-an `identifiedBy` property to the Identity type. For serialization purposes, assume that the
-problem has been resolved in some manner.
+an `identifiedBy` property to the Identity type. For the purpose of illustrating serialization, assume that the
+problem has been resolved in this manner.
 
-
-
-![Figure 5](images/payload.jpg)
+**Payload:**
 
 Figure 5 shows the same three elements serialized individually without nesting, along with an
 SpdxDocument containing information about the serialized payload.
@@ -101,6 +202,10 @@ On the left is the expanded version of the payload with no space optimization, a
 is the same payload optimized using namespace-relative element IDs and creation property defaults.
 The payload structure is simple, containing just a set of optimization-related properties and the
 set of independent (non-nested) element values.
+
+![Figure 5](images/payload.jpg)
+
+
 
 ![Figure 6](images/sbom.jpg)
 
