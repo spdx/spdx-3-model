@@ -187,8 +187,7 @@ For example, the path representation of the Sbom element is:
 ```
 Because they represent identical logical values, choosing a represenation is a matter of taste and personal preference;
 one or the other should be chosen for documentation purposes. The logical representation does not affect
-the serialization format, although the same choices can be used the serialization spec.
-
+the serialization format, although the same choices can be used for the serialization spec.
 
 The `person` element illustrates a problem with the logical model that can be resolved by adding
 an `identifiedBy` property to the Identity type. For the purpose of illustrating serialization, assume that the
@@ -196,28 +195,13 @@ problem has been resolved in this manner.
 
 **Payload:**
 
-Figure 5 shows the same three elements serialized individually without nesting, along with an
+Figure 4 shows the three elements serialized individually without nesting, along with an
 SpdxDocument containing information about the serialized payload.
-On the left is the expanded version of the payload with no space optimization, and on the right
-is the same payload optimized using namespace-relative element IDs and creation property defaults.
-The payload structure is simple, containing just a set of optimization-related properties and the
-set of independent (non-nested) element values.
+On the left is the full payload with elements as shown, and on the right is the same structure compressed
+using namespace-relative element IDs and creation property defaults.
 
-![Figure 5](images/payload.jpg)
+![Figure 4](images/payload.jpg)
 
-
-
-![Figure 6](images/sbom.jpg)
-
-Figure 4 shows the example SBOM element (null-sbom), greatly simplified from the nested version.
-It includes just the element IDs of the SBOM and a profile list that overrides the default.
-Two IDs (Person "iamwillbar" and Package "spdx-tools-3.0.1") are actual elements included
-in the payload, and the other two ("project" and "doc") are IDs assigned to external data
-objects for which no elements exist.
-
-![Figure 6](images/person.jpg)
-
-Figure 6 shows the example Person element.
 
 ## References
 
