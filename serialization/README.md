@@ -1,6 +1,6 @@
 # SPDX v3 Serialization
 
-The SPDX logical model defines meaning, relationships and shape of the SPDX element graph, but the same
+The SPDX logical model defines meaning, relationships and shapes of the SPDX element graph, but the same
 information can be serialized into many different byte sequences.  A physical data model (concrete schema)
 specifies logical element serialization using a specific data format, while an information model
 (abstract schema) specifies logical element serialization using any data format.  Reading information
@@ -17,9 +17,12 @@ De-serialization parses payloads back into application state.
 Serialization is not a goal in and of itself, it is the mechanism by which applications exchange information
 in order to make it available to users.
 
+![Information](images/interoperability.jpg)
+
 Serialization should be:
 1) **lossless**, so that information is not modified in transit and all applications have the identical information
-2) **transparent**, so that information is unaffected by how or if it has been serialized; users should not know or care.
+2) **transparent**, so that information is unaffected by whether or how it has been serialized;
+users should not know or care.
 
 Shannon's information theory defines the relationship between information and serialization (coding).
 Mathematicians characterize conditions applied to a mechanism as *necessary* and/or *sufficient*:
@@ -27,8 +30,6 @@ a serialization that omits necessary data loses information, one that uses more 
 conveys no extra information.
 TV bartender/philosopher Ted Danson put it most succinctly: a necessary and sufficient serialization
 mechanism has "everything you need and nothing you don't."
-
-![Information](images/interoperability.jpg)
 
 ### SPDX v3 Information
 
@@ -40,14 +41,18 @@ Two instances of the class are considered equivalent if and only if their ids ar
 If only a single value can correspond to an id, the class is a *mapping* and colliding values
 are treated as an error.
 
-All classes in an information model are datatypes. Referenceable classes in a logical model are translated
-to equivalent data structures where ids have no particular significance other than as values to be serialized.
-They can be serialized as lists where each list item has an id, or as maps from ids to values.
-Both serializations convey the same information but their byte sequences are different.
+SPDX v3 organizes all of its information into a single referenceable "Element" class - all logical
+state in SPDX exists as element values, and each element exists independently of all other elements.
 
-SPDX v3 organizes all of its information into a single referenceable "Element" class - every bit of logical
-state in SPDX exists as instances of element subclasses (element itself is abstract), and each element exists
-independently of all other elements. Figure 2 illustrates a set of elements from the information perspective:
+Every information model consists solely of datatype classes, where properties have syntax but not behavior,
+and no special significance is attached to property names such as "id" and "type".
+Referenceable classes in the SPDX logical model are translated to datatypes where "id" is nothing more
+than a property of type IRI. SPDX elements can be serialized as:
+* lists where each element has an IRI property, or
+* maps where each element has an IRI key.
+Both serializations convey the identical information; the information model specifies which serialization to use.
+
+Figure 2 illustrates a set of elements from the information perspective:
 
 ![Element Timeline](images/elements-timeline.jpg)
 
