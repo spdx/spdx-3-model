@@ -1,13 +1,9 @@
 {
   "namespace": "urn:spdx.dev:",
   "created": "2022-05-02T20:28:00.000Z",
-  "creator": [
-    "urn:spdx.dev:iamwillbar"
-  ],
+  "creator": ["urn:spdx.dev:iamwillbar"],
   "specVersion": "3.0",
-  "profile": [
-    "core"
-  ],
+  "profile": ["core"],
   "dataLicense": "CC0-1.0",
   "element": [
     {
@@ -43,14 +39,9 @@
         }
       },
       "created": "2022-05-02T20:28:00.000Z",
-      "creator": [
-        "urn:spdx.dev:iamwillbar"
-      ],
+      "creator": ["urn:spdx.dev:iamwillbar"],
       "specVersion": "3.0",
-      "profile": [
-        "core",
-        "software"
-      ],
+      "profile": ["core", "software"],
       "dataLicense": "CC0-1.0"
     },
     {
@@ -58,26 +49,15 @@
       "type": {
         "person": {
           "identifiedBy": [
-            {
-              "email": "willbar@microsoft.com"
-            },
-            {
-              "account": {
-                "authority": "github.com",
-                "localId": "iamwillbar"
-              }
-            }
+            {"email": "willbar@microsoft.com"},
+            {"account": {"authority": "github.com", "localId": "iamwillbar"}}
           ]
         }
       },
       "created": "2022-05-02T20:28:00.000Z",
-      "creator": [
-        "urn:spdx.dev:iamwillbar"
-      ],
+      "creator": ["urn:spdx.dev:iamwillbar"],
       "specVersion": "3.0",
-      "profile": [
-        "core"
-      ],
+      "profile": ["core"],
       "dataLicense": "CC0-1.0",
       "name": "William Bartholomew"
     },
@@ -85,25 +65,16 @@
       "id": "urn:spdx.dev:spdx-tools-3.0.1",
       "type": {
         "package": {
-          "packagePurpose": [
-            "application"
-          ],
+          "packagePurpose": ["application"],
           "downloadLocation": "https://spdx.dev/downloads/spdx-tools-3.0.1.tgz",
           "homePage": "https://spdx.dev/tools.3.0",
-          "originator": [
-            "urn:spdx.dev:project"
-          ]
+          "originator": ["urn:spdx.dev:project"]
         }
       },
       "created": "2022-05-02T20:28:00.000Z",
-      "creator": [
-        "urn:spdx.dev:iamwillbar"
-      ],
+      "creator": ["urn:spdx.dev:iamwillbar"],
       "specVersion": "3.0",
-      "profile": [
-        "core",
-        "software"
-      ],
+      "profile": ["core", "software"],
       "dataLicense": "CC0-1.0",
       "verifiedUsing": [
         {
@@ -113,14 +84,8 @@
         }
       ],
       "externalIdentifier": [
-        {
-          "type": "purl",
-          "identifier": ""
-        },
-        {
-          "type": "cpe_2.2",
-          "identifier": ""
-        }
+        {"type": "purl", "identifier": ""},
+        {"type": "cpe_2.2", "identifier": ""}
       ]
     },
     {
@@ -138,13 +103,9 @@
         }
       },
       "created": "2022-05-02T20:28:00.000Z",
-      "creator": [
-        "urn:spdx.dev:iamwillbar"
-      ],
+      "creator": ["urn:spdx.dev:iamwillbar"],
       "specVersion": "3.0",
-      "profile": [
-        "core"
-      ],
+      "profile": ["core"],
       "dataLicense": "CC0-1.0",
       "verifiedUsing": [
         {

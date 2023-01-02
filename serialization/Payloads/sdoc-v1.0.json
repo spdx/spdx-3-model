@@ -1,25 +1,16 @@
 {
   "namespace": "urn:spdx.dev:",
   "created": "2022-05-02T20:28:00.000Z",
-  "creator": [
-    "iamwillbar"
-  ],
+  "creator": ["iamwillbar"],
   "specVersion": "3.0",
-  "profile": [
-    "core"
-  ],
+  "profile": ["core"],
   "dataLicense": "CC0-1.0",
   "element": [
     {
       "id": "null-sbom",
       "type": {
         "sbom": {
-          "element": [
-            "iamwillbar",
-            "spdx-tools-3.0.1",
-            "project",
-            "doc"
-          ],
+          "element": ["iamwillbar", "spdx-tools-3.0.1", "project", "doc"],
           "import": [
             {
               "externalId": "urn:spdx.dev:project",
@@ -42,25 +33,15 @@
           ]
         }
       },
-      "profile": [
-        "core",
-        "software"
-      ]
+      "profile": ["core", "software"]
     },
     {
       "id": "iamwillbar",
       "type": {
         "person": {
           "identifiedBy": [
-            {
-              "email": "willbar@microsoft.com"
-            },
-            {
-              "account": {
-                "authority": "github.com",
-                "localId": "iamwillbar"
-              }
-            }
+            {"email": "willbar@microsoft.com"},
+            {"account": {"authority": "github.com", "localId": "iamwillbar"}}
           ]
         }
       },
@@ -70,20 +51,13 @@
       "id": "spdx-tools-3.0.1",
       "type": {
         "package": {
-          "packagePurpose": [
-            "application"
-          ],
+          "packagePurpose": ["application"],
           "downloadLocation": "https://spdx.dev/downloads/spdx-tools-3.0.1.tgz",
           "homePage": "https://spdx.dev/tools.3.0",
-          "originator": [
-            "project"
-          ]
+          "originator": ["project"]
         }
       },
-      "profile": [
-        "core",
-        "software"
-      ],
+      "profile": ["core", "software"],
       "verifiedUsing": [
         {
           "hash": {
@@ -92,14 +66,8 @@
         }
       ],
       "externalIdentifier": [
-        {
-          "type": "purl",
-          "identifier": ""
-        },
-        {
-          "type": "cpe_2.2",
-          "identifier": ""
-        }
+        {"type": "purl", "identifier": ""},
+        {"type": "cpe_2.2", "identifier": ""}
       ]
     },
     {
