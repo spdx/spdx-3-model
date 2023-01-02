@@ -170,6 +170,10 @@ The logical values of these elements are:
   "dataLicense": "CC0-1.0"
 }
 ```
+The `person` element illustrates a problem with the logical model that can be resolved by adding
+an `identifiedBy` property to the Identity type. For the purpose of illustrating serialization, assume that the
+problem has been resolved in this manner.
+
 **Sbom:**
 ```json
 {
@@ -181,6 +185,18 @@ The logical values of these elements are:
         "urn:spdx.dev:spdx-tools-3.0.1",
         "urn:spdx.dev:project",
         "urn:spdx.dev:doc"
+      ],
+      "import": [
+        {
+          "externalId": "urn:spdx.dev:project",
+          "verifiedUsing": {"hash": {"sha256": "14a657a7118a333cc1fdc6af05071a59cda067fd11130d4ee5d6d47c26e7863f"}},
+          "locationHint": "https://spdx.dev/projects/v1.0.json"
+        },
+        {
+          "externalId": "urn:spdx.dev:doc",
+          "verifiedUsing": {"hash": {"sha256": "14a657a7118a333cc1fdc6af05071a59cda067fd11130d4ee5d6d47c26e7863f"}},
+          "locationHint": "https://spdx.dev/docs/v1.0.json"
+        }
       ]
     }
   },
@@ -190,6 +206,7 @@ The logical values of these elements are:
   "profile": ["core", "software"],
   "dataLicense": "CC0-1.0"
 }
+
 ```
 Note that every JSON structure has both leaf-path (RFC 6901) and hierarchical representions. The two represent
 identical values and can be converted back and forth without any semantic knowledge.
@@ -203,6 +220,12 @@ For example, the path representation of the Sbom element is:
   "type/sbom/element/1": "urn:spdx.dev:spdx-tools-3.0.1",
   "type/sbom/element/2": "urn:spdx.dev:project",
   "type/sbom/element/3": "urn:spdx.dev:doc",
+  "type/sbom/import/0/externalId": "urn:spdx.dev:project",
+  "type/sbom/import/0/verifiedUsing/hash/sha256": "14a657a7118a333cc1fdc6af05071a59cda067fd11130d4ee5d6d47c26e7863f",
+  "type/sbom/import/0/locationHint": "https://spdx.dev/projects/v1.0.json",
+  "type/sbom/import/1/externalId": "urn:spdx.dev:doc",
+  "type/sbom/import/1/verifiedUsing/hash/sha256": "14a657a7118a333cc1fdc6af05071a59cda067fd11130d4ee5d6d47c26e7863f",
+  "type/sbom/import/1/locationHint": "https://spdx.dev/docs/v1.0.json",
   "creator/0": "urn:spdx.dev:iamwillbar",
   "created": "2022-05-02T20:28:00.000Z",
   "specVersion": "3.0",
@@ -214,10 +237,6 @@ For example, the path representation of the Sbom element is:
 Because they represent identical values, choosing a logical represenation is a matter of taste;
 one or the other should be chosen for documentation purposes. The logical representation does not affect
 the serialization format, although the same alternatives are available for the serialization spec.
-
-The `person` element illustrates a problem with the logical model that can be resolved by adding
-an `identifiedBy` property to the Identity type. For the purpose of illustrating serialization, assume that the
-problem has been resolved in this manner.
 
 **Payload:**
 
