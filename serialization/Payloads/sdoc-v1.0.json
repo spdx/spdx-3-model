@@ -1,27 +1,66 @@
 {
   "namespace": "urn:spdx.dev:",
   "created": "2022-05-02T20:28:00.000Z",
-  "creator": ["iamwillbar"],
+  "creator": [
+    "iamwillbar"
+  ],
   "specVersion": "3.0",
-  "profile": ["core"],
+  "profile": [
+    "core"
+  ],
   "dataLicense": "CC0-1.0",
-  "elements": [
+  "element": [
     {
       "id": "null-sbom",
       "type": {
         "sbom": {
-          "elements": ["iamwillbar", "spdx-tools-3.0.1", "project", "doc"]
+          "element": [
+            "iamwillbar",
+            "spdx-tools-3.0.1",
+            "project",
+            "doc"
+          ],
+          "import": [
+            {
+              "externalId": "urn:spdx.dev:project",
+              "verifiedUsing": {
+                "hash": {
+                  "sha256": "14a657a7118a333cc1fdc6af05071a59cda067fd11130d4ee5d6d47c26e7863f"
+                }
+              },
+              "locationHint": "https://spdx.dev/projects/v1.0.json"
+            },
+            {
+              "externalId": "urn:spdx.dev:doc",
+              "verifiedUsing": {
+                "hash": {
+                  "sha256": "14a657a7118a333cc1fdc6af05071a59cda067fd11130d4ee5d6d47c26e7863f"
+                }
+              },
+              "locationHint": "https://spdx.dev/docs/v1.0.json"
+            }
+          ]
         }
       },
-      "profile": ["core", "software"]
+      "profile": [
+        "core",
+        "software"
+      ]
     },
     {
       "id": "iamwillbar",
       "type": {
         "person": {
           "identifiedBy": [
-            {"email": "willbar@microsoft.com"},
-            {"account": {"authority": "github.com", "localId": "iamwillbar"}}
+            {
+              "email": "willbar@microsoft.com"
+            },
+            {
+              "account": {
+                "authority": "github.com",
+                "localId": "iamwillbar"
+              }
+            }
           ]
         }
       },
@@ -31,17 +70,36 @@
       "id": "spdx-tools-3.0.1",
       "type": {
         "package": {
-          "packagePurpose": ["application"],
+          "packagePurpose": [
+            "application"
+          ],
           "downloadLocation": "https://spdx.dev/downloads/spdx-tools-3.0.1.tgz",
           "homePage": "https://spdx.dev/tools.3.0",
-          "originator": ["project"]
+          "originator": [
+            "project"
+          ]
         }
       },
-      "profile": ["core", "software"],
-      "verifiedUsing": [{"hash": {"sha256": "14a657a7118a333cc1fdc6af05071a59cda067fd11130d4ee5d6d47c26e7863f"}}],
+      "profile": [
+        "core",
+        "software"
+      ],
+      "verifiedUsing": [
+        {
+          "hash": {
+            "sha256": "14a657a7118a333cc1fdc6af05071a59cda067fd11130d4ee5d6d47c26e7863f"
+          }
+        }
+      ],
       "externalIdentifier": [
-        {"type": "purl", "identifier": ""},
-        {"type": "cpe_2.2", "identifier": ""}
+        {
+          "type": "purl",
+          "identifier": ""
+        },
+        {
+          "type": "cpe_2.2",
+          "identifier": ""
+        }
       ]
     },
     {
@@ -49,28 +107,22 @@
       "type": {
         "spdxDocument": {
           "namespace": "urn:spdx.dev:",
-          "elements": [
+          "element": [
             "null-sbom",
             "iamwillbar",
             "spdx-tools-3.0.1",
             "docs/sdoc"
           ],
-          "downloadLocation": "https://spdx.dev/docs/sdoc-v1.0.json",
-          "import": [
-            {
-              "externalId": "urn:spdx.dev:project",
-              "verifiedUsing": {"hash": {"sha256": "14a657a7118a333cc1fdc6af05071a59cda067fd11130d4ee5d6d47c26e7863f"}},
-              "locationHint": "https://spdx.dev/projects/v1.0.json"
-            },
-            {
-              "externalId": "urn:spdx.dev:doc",
-              "verifiedUsing": {"hash": {"sha256": "14a657a7118a333cc1fdc6af05071a59cda067fd11130d4ee5d6d47c26e7863f"}},
-              "locationHint": "https://spdx.dev/docs/v1.0.json"
-            }
-          ]
+          "downloadLocation": "https://spdx.dev/docs/sdoc-v1.0.json"
         }
       },
-      "verifiedUsing": [{"hash": {"sha256": "14a657a7118a333cc1fdc6af05071a59cda067fd11130d4ee5d6d47c26e7863f"}}]
+      "verifiedUsing": [
+        {
+          "hash": {
+            "sha256": "14a657a7118a333cc1fdc6af05071a59cda067fd11130d4ee5d6d47c26e7863f"
+          }
+        }
+      ]
     }
   ],
   "spdxDocumentId": "docs/sdoc"

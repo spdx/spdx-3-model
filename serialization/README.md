@@ -284,7 +284,7 @@ For this example, the payload looks like:
   "specVersion": "3.0",
   "profile": ["core"],
   "dataLicense": "CC0-1.0",
-  "elements": [
+  "element": [
     {"id": "null-sbom", "type": {}},
     {"id": "iamwillbar", "type": {}},
     {"id": "spdx-tools-3.0.1", "type": {}},
