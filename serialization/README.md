@@ -273,7 +273,8 @@ element created at t=3 plus two elements created at t=1.
 
 **Payload:**
 
-The [Payloads](Payloads) folder contains example SPDX files with default properties and element values.
+The [Payloads](Payloads) folder contains example SPDX files compressed using default properties
+and prefixed element IDs, along with the same files uncompressed.
 For this example, the payload looks like:
 
 ```json
