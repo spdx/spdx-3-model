@@ -50,6 +50,7 @@ Referenceable classes in the SPDX logical model are translated to datatypes wher
 than a property of type IRI. SPDX elements can be serialized as:
 * lists where each element has an IRI property, or
 * maps where each element has an IRI key.
+
 Both serializations convey the identical information; the information model specifies which serialization to use.
 
 Figure 2 illustrates a set of elements from the information perspective:
@@ -104,6 +105,7 @@ should also reduce the size of the combined value. Any generic lossless compress
 (e.g., zip, gzip, 7zip) will work, but SPDX defines a trivial element-specific combiner that:
 * performs namespace prefix substitution for element IDs
 * supplies default values for common creation-related properties
+* yields a combined file in the same format (JSON) as the individual elements
 
 ![Serialize Multiple Elements](images/serialize-multiple.jpg)
 
@@ -238,15 +240,59 @@ Because they represent identical values, choosing a logical represenation is a m
 one or the other should be chosen for documentation purposes. The logical representation does not affect
 the serialization format, although the same alternatives are available for the serialization spec.
 
+**SpdxDocument:**
+
+An SpdxDocument element describes the set of elements serialized into a payload. In this example it lists
+the package, person and sbom elements shown above, plus its own element ID if it is included in the payload.
+The SpdxDocument element for the payload in Figure 2 would list the four elements created at t=5 plus one
+element created at t=3 plus two elements created at t=1.
+```json
+{
+  "id": "urn:spdx.dev:docs/sdoc",
+  "type": {
+    "spdxDocument": {
+      "namespace": "urn:spdx.dev:",
+      "element": [
+        "urn:spdx.dev:null-sbom",
+        "urn:spdx.dev:iamwillbar",
+        "urn:spdx.dev:spdx-tools-3.0.1",
+        "urn:spdx.dev:docs/sdoc"
+      ],
+      "downloadLocation": "https://spdx.dev/docs/sdoc-v1.0.json"
+    }
+  },
+  "verifiedUsing": [{"hash": {"sha256": "14a657a7118a333cc1fdc6af05071a59cda067fd11130d4ee5d6d47c26e7863f"}}],
+  "created": "2022-05-02T20:28:00.000Z",
+  "creator": ["urn:spdx.dev:iamwillbar"],
+  "specVersion": "3.0",
+  "profile": ["core"],
+  "dataLicense": "CC0-1.0"
+}
+
+```
+
 **Payload:**
 
-Figure 4 shows the three elements serialized individually without nesting, along with an
-SpdxDocument containing information about the serialized payload.
-On the left is the full payload with elements as shown, and on the right is the same structure compressed
-using namespace-relative element IDs and creation property defaults.
+The [Payloads](Payloads) folder contains example SPDX files with default properties and element values.
+For this example, the payload looks like:
 
-![Figure 4](images/payload.jpg)
-
+```json
+{
+  "namespace": "urn:spdx.dev:",
+  "created": "2022-05-02T20:28:00.000Z",
+  "creator": ["iamwillbar"],
+  "specVersion": "3.0",
+  "profile": ["core"],
+  "dataLicense": "CC0-1.0",
+  "elements": [
+    {"id": "null-sbom", "type": {}},
+    {"id": "iamwillbar", "type": {}},
+    {"id": "spdx-tools-3.0.1", "type": {}},
+    {"id": "docs/sdoc", "type": {}}
+  ],
+  "spdxDocumentId": "docs/sdoc"
+}
+```
 
 ## References
 
