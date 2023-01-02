@@ -73,24 +73,48 @@ In the figure, the payload created at t=5 contains seven elements with three dif
 7) Elements in a payload may have properties that are unique IDs of elements not carried in the payload,
 such as the IDs of the green elements created at t=2 and t=4.
 
-Although it is possible to define nested serialization structures, there are practical disadvantages to doing so:
+Although it is possible to define nested serialization structures, there are practical disadvantages:
 1) nesting can be arbitrarily deep
 2) if a nesting limit (e.g., max 1 level deep) is declared, the identical element has a different value
-when serialized at level 1 than at level 2
-3) if one element is nested within multiple other elements, multiple copies of the data are carried in the payload 
+when serialized at level 1 or 2
+3) if one element is nested within multiple other elements, multiple copies of the same data are carried in the payload 
 4) if elements are nested, they have different serialized values than when serialized individually
 5) if elements are nested, rules for property inheritance must be defined, resulting in even more serialized
 variants of the same element
 
-For these reasons, it is both simpler and more efficient to serialize all elements in a payload independently,
-without nesting or alternate representations.
+For these reasons, it is more scalable, understandable and efficient to serialize all elements in a payload
+separately, without nesting or alternate representations.
+
+### Logical Value Interface
+
+The logical value of an element is an *interface* - an answer to the question "what is the value of each
+property defined in the logical model". For convenience, logical values are displayed as data rather than
+a set of questions and answers, so when looking at examples the distinction between logical values and
+physical data must be kept in mind.
+A serializer produces a single-element payload from the logical value of an element; a de-serializer parses
+an element's logical value from the payload.
+For each supported data format, a serialization specification must define the serialized value of an element
+for each element type in the logical model:
+
+![Serialize Single Element](images/serialize-element.jpg)
+
+To serialize a group of logical elements, each element is serialized individually and the individual data
+items are combined into an "SPDX file". The easiest combining method is concatenation, but combining
+should also reduce the size of the combined value. Any generic lossless compression algorithm
+(e.g., zip, gzip, 7zip) will work, but SPDX defines a trivial element-specific combiner that:
+* performs namespace prefix substitution for element IDs
+* supplies default values for common creation-related properties
+
+![Serialize Multiple Elements](images/serialize-multiple.jpg)
+
+To deserialize an SPDX file, the combined value is decompressed then split into individual
+data items that are parsed into logical element values.
 
 ### SPDX Serialization Examples
 
-The SPDX v3 model diagram includes some JSON examples, but they are used to illustrate and
-develop the logical model, not specify how to construct and validate a byte sequence
-to represent a set of logical values. When serialization specifications are defined, examples will be
-needed to illustrate and develop those specifications.
+The SPDX v3 model diagram includes some JSON examples, but their purpose is to illustrate and
+develop the logical model, not specify how to construct and validate a byte sequence.
+When serialization specifications are defined, examples are needed to illustrate and develop them.
 
 Figure 3 shows a JSON example from the diagram as of 12/19/2022:
 
@@ -98,10 +122,7 @@ Figure 3 shows a JSON example from the diagram as of 12/19/2022:
 
 This example contains three elements in a nested structure: an SBOM (null-sbom), a Package
 (spdx-tools-3.0.1), and a Person (iamwillbar). The first task is to determine the logical values of these
-three elements. Note that "logical value" is an "interface" - an answer to the question
-"what is the value of each property defined in the logical model", not a data structure. But the
-answers to those questions are displayed as data, so the distinction between logical values and
-physical data must be kept in mind.
+three elements. 
 
 The logical values of these elements are:
 
@@ -190,9 +211,9 @@ For example, the path representation of the Sbom element is:
   "dataLicense": "CC0-1.0"
 }
 ```
-Because they represent identical logical values, choosing a represenation is a matter of taste and personal preference;
+Because they represent identical values, choosing a logical represenation is a matter of taste;
 one or the other should be chosen for documentation purposes. The logical representation does not affect
-the serialization format, although the same choices can be used for the serialization spec.
+the serialization format, although the same alternatives are available for the serialization spec.
 
 The `person` element illustrates a problem with the logical model that can be resolved by adding
 an `identifiedBy` property to the Identity type. For the purpose of illustrating serialization, assume that the
@@ -210,6 +231,8 @@ using namespace-relative element IDs and creation property defaults.
 
 ## References
 
-[iepd](https://niem.github.io/reference/iepd/)
+[Information Exchange Context](https://niem.github.io/reference/iepd/)
 
-[danson](https://www.youtube.com/watch?v=BjeLEoc8Kjg)
+[Ted Danson](https://www.youtube.com/watch?v=BjeLEoc8Kjg)
+
+[JSON Pointer](https://datatracker.ietf.org/doc/rfc6901/)
