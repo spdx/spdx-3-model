@@ -12,6 +12,7 @@
       "downloadLocation": "https://spdx.dev/docs/sdoc-v1.0.json"
     }
   },
+  "name": "The Null SBOM",
   "verifiedUsing": [{"hash": {"sha256": "14a657a7118a333cc1fdc6af05071a59cda067fd11130d4ee5d6d47c26e7863f"}}],
   "created": "2022-05-02T20:28:00.000Z",
   "creator": ["urn:spdx.dev:iamwillbar"],
