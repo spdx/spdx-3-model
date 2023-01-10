@@ -12,6 +12,6 @@ The Core namespace defines foundational concepts serving as the basis for all SP
 
 ## Metadata
 
-id: https://rdf.spdx.org/v3#Core
-name: Core
+- id: https://rdf.spdx.org/v3#Core
+- name: Core
 

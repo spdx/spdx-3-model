@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# HashAlgorithmVocab
+# HashAlgorithm
 
 ## Summary
 
@@ -12,7 +12,7 @@ TODO
 
 ## Metadata
 
-- name: HashAlgorithmVocab
+- name: HashAlgorithm
 
 ## Entries
 

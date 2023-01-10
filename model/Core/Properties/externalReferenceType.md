@@ -14,5 +14,5 @@ A externalReferenceType is TODO
 
 - name: externalReferenceType
 - Nature: DataProperty
-- Range: externalReferenceTypeVocab
+- Range: ExternalReferenceType
 

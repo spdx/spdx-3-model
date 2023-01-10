@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# AnnotationTypeVocab
+# AnnotationType
 
 ## Summary
 
@@ -12,7 +12,7 @@ TODO
 
 ## Metadata
 
-- name: AnnotationTypeVocab
+- name: AnnotationType
 
 ## Entries
 
