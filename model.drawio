@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2023-01-11T16:46:59.768Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.3.0 Chrome/104.0.5112.114 Electron/20.1.3 Safari/537.36" etag="3q3vY-tdTh2nwx3ms-ss" compressed="false" version="20.3.0" type="device">
+<mxfile host="Electron" modified="2023-01-11T16:53:39.886Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.3.0 Chrome/104.0.5112.114 Electron/20.1.3 Safari/537.36" etag="UpqCFkpRPUUl32tst7ax" compressed="false" version="20.3.0" type="device">
   <diagram name="Core" id="evL5fLv8r15yFEJPhG0Y">
     <mxGraphModel dx="1222" dy="2917" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
@@ -254,7 +254,7 @@
         <mxCell id="lbw5UqFOsXxO_sbxoh2b-66" value="+ completeness: RelationshipCompleteness[0..1]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="lbw5UqFOsXxO_sbxoh2b-64" vertex="1">
           <mxGeometry y="52" width="271" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="s9GtI_vweYOVL9K8k0TA-0" value="Collection" style="swimlane;fontStyle=3;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#dae8fc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#6c8ebf;" parent="lbw5UqFOsXxO_sbxoh2b-1" vertex="1">
+        <mxCell id="s9GtI_vweYOVL9K8k0TA-0" value="ElementCollection" style="swimlane;fontStyle=3;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#dae8fc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#6c8ebf;" parent="lbw5UqFOsXxO_sbxoh2b-1" vertex="1">
           <mxGeometry x="829" y="-577" width="271" height="78" as="geometry" />
         </mxCell>
         <mxCell id="oqmSebOzuupvJpAGgmBN-7" value="+ namespace: NamespaceMap[0..*]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="s9GtI_vweYOVL9K8k0TA-0" vertex="1">
