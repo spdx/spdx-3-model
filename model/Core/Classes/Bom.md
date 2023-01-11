@@ -9,7 +9,7 @@ A container for a grouping of SPDX-3.0 content characterizing details
 
 ## Description
 
-A BOM is a container for a grouping of SPDX-3.0 content
+A Bill Of Materials (BOM) is a container for a grouping of SPDX-3.0 content
 characterizing details about a product.
 This could include details of the content and composition of the product,
 provenence details of the product and/or

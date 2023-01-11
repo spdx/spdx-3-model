@@ -14,5 +14,5 @@ A snippetPurpose is TODO
 
 - name: snippetPurpose
 - Nature: DataProperty
-- Range: softwarePurposeVocab
+- Range: SoftwarePurpose
 

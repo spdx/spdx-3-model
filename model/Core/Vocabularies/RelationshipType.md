@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# RelationshipTypeVocab
+# RelationshipType
 
 ## Summary
 
@@ -12,7 +12,7 @@ TODO
 
 ## Metadata
 
-- name: RelationshipTypeVocab
+- name: RelationshipType
 
 ## Entries
 

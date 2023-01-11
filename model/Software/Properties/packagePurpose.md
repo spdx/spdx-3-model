@@ -14,5 +14,5 @@ A packagePurpose is TODO
 
 - name: packagePurpose
 - Nature: DataProperty
-- Range: softwarePurposeVocab
+- Range: SoftwarePurpose
 
