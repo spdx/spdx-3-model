@@ -14,5 +14,5 @@ A createdBy is TODO
 
 - name: createdBy
 - Nature: ObjectProperty
-- Range: Actor
+- Range: Entity
 

@@ -22,7 +22,7 @@ TODO
 - created
   - type: xsd:dateTime
 - createdBy
-  - type: Actor
+  - type: Entity
   - minCount: 1
 - profile
   - type: ProfileIdentifier

@@ -13,8 +13,8 @@ An Identity is a grouping of identifying characteristics unique to an individual
 ## Metadata
 
 - name: Identity
-- SubclassOf: Element
-- Instantiability: Abstract
+- SubclassOf: Entity
+- Instantiability: Concrete
 
 ## Properties
 
