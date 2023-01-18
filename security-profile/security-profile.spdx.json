@@ -89,26 +89,29 @@
         ],
         "externalIdentifiers": [
           {
-            "@type": "ExternalIdentifier",
+            "@type": "ExternalSecurityIdentifier",
             "externalIdentifierType": "cve",
-            "identifier": "CVE-2020-2849"
+            "identifier": "CVE-2020-2849",
+            "source": "https://nvd.nist.gov/vuln/detail/CVE-2020-28498"
           },
           {
-            "type": "ExternalIdentifier",
+            "type": "ExternalSecurityIdentifier",
             "externalIdentifierType": "securityOther",
-            "identifier": "GHSA-r9p9-mrjm-926w"
+            "identifier": "GHSA-r9p9-mrjm-926w",
+            "source": "https://github.com/advisories/GHSA-r9p9-mrjm-926w"
           },
           {
-            "type": "ExternalIdentifier",
+            "type": "ExternalSecurityIdentifier",
             "externalIdentifierType": "securityOther",
-            "identifier": "SNYK-JS-ELLIPTIC-1064899"
+            "identifier": "SNYK-JS-ELLIPTIC-1064899",
+            "source": "https://security.snyk.io/vuln/SNYK-JS-ELLIPTIC-1064899"
           }
         ],
         "externalReferences": [
           {
             "@type": "ExternalReference",
             "externalReferenceType": "securityAdvisory",
-            "locator": "https://nvd.nist.gov/vuln/detail/CVE-2020-28498"
+            "locator": "https://ubuntu.com/security/CVE-2020-28498"
           },
           {
             "@type": "ExternalReference",
