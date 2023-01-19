@@ -20,5 +20,5 @@ known to be incomplete or if there is made no assertion either way.
 
 - incomplete: The relationship is known not to be exhaustive.
 - complete: The relationship is known to be exhaustive.
-- unknown: There can be made no assertion about the completeness of the relationship.
+- noAssertion: There can be made no assertion about the completeness of the relationship.
 
