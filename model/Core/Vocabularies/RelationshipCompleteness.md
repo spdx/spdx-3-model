@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# RelationshipCompletenessVocab
+# RelationshipCompleteness
 
 ## Summary
 
@@ -12,7 +12,7 @@ TODO
 
 ## Metadata
 
-- name: RelationshipCompletenessVocab
+- name: RelationshipCompleteness
 
 ## Entries
 

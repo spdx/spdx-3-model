@@ -23,7 +23,7 @@ This is commonly used for integrity checking of data.
 ## Properties
 
 - algorithm
-  - type: hashAlgorithmVocab
+  - type: HashAlgorithm
   - minCount: 1
   - maxCount: 1
 - hashValue

@@ -8,7 +8,7 @@ TODO
 
 ## Description
 
-A externalID is TODO
+A externalId is TODO
 
 ## Metadata
 

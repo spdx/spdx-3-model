@@ -29,10 +29,10 @@ that one Element is related to one or more other Elements in some way.
   - type: Element
   - minCount: 1
 - relationshipType
-  - type: relationshipTypeVocab
+  - type: RelationshipType
   - maxCount: 1
 - completeness
-  - type: relationshipCompletenessVocab
+  - type: RelationshipCompleteness
   - minCount: 0
   - maxCount: 1
 

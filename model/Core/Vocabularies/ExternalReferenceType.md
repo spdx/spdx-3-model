@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# ExternalReferenceTypeVocab
+# ExternalReferenceType
 
 ## Summary
 
@@ -12,7 +12,7 @@ TODO
 
 ## Metadata
 
-- name: ExternalReferenceTypeVocab
+- name: ExternalReferenceType
 
 ## Entries
 

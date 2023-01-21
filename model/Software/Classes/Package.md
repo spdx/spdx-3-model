@@ -8,7 +8,7 @@ TODO
 
 ## Metadata
 
-SubclassOf: Core:Artifact
+- SubclassOf: Core:Artifact
 
 ## Properties
 
@@ -17,7 +17,7 @@ SubclassOf: Core:Artifact
   - minCount: 0
   - maxCount: 1
 - packagePurpose
-  - type: softwarePurposeVocab
+  - type: SoftwarePurpose
   - minCount: 0
 - downloadLocation
   - type: anyURI

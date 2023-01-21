@@ -14,5 +14,5 @@ A filePurpose is TODO
 
 - name: filePurpose
 - Nature: DataProperty
-- Range: softwarePurposeVocab
+- Range: SoftwarePurpose
 

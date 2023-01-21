@@ -14,5 +14,5 @@ A algorithm is TODO
 
 - name: algorithm
 - Nature: DataProperty
-- Range: hashAlgorithmVocab
+- Range: HashAlgorithm
 
