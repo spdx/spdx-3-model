@@ -18,7 +18,7 @@ TODO This is about the File class.
   - minCount: 0
   - maxCount: 1
 - filePurpose
-  - type: softwarePurposeVocab
+  - type: SoftwarePurpose
   - minCount: 0
 - contentType
   - type: MediaType

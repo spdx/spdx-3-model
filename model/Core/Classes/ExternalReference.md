@@ -20,7 +20,7 @@ location and context of a resource outside of the scope of SPDX-3.0 content.
 ## Properties
 
 - externalReferenceType
-  - type: externalReferenceTypeVocab
+  - type: ExternalReferenceType
   - maxCount: 1
 - locator
   - type: anyURI

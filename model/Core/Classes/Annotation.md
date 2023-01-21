@@ -19,11 +19,11 @@ An Annotation is an assertion made in relation to one or more elements.
 ## Properties
 
 - annotationType
-  - type: annotationTypeVocab
+  - type: AnnotationType
   - minCount: 1
   - maxCount: 1
 - contentType
-  - type: mediaType
+  - type: MediaType
 - statement
   - type: xsd:string
   - minCount: 0
