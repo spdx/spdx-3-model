@@ -19,6 +19,10 @@ TODO
 
 - specVersion
   - type: SemVer
+- comment
+  - type: xsd:string
+  - minCount: 0
+  - maxCount: 1
 - created
   - type: xsd:dateTime
 - createdBy
