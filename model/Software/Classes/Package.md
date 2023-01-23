@@ -19,6 +19,10 @@ TODO
 - packagePurpose
   - type: SoftwarePurpose
   - minCount: 0
+- packageVersion
+  - type: xsd:string
+  - minCount: 0
+  - maxCount: 1
 - downloadLocation
   - type: anyURI
   - minCount: 0
