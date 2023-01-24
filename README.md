@@ -22,6 +22,9 @@ People who wish to read the current version of the information
 should be viewing the latter, while anyone wanting to edit
 should be working on the former.
 
+For information about how to contribute to a specific profile,
+please see [Contributing.md](Contributing.md).
+
 ## Contribute!
 
 Feel free to join us and contribute!
