@@ -14,20 +14,20 @@ based on analyzing the license information in the software Package, File
 or Snippet and other information to arrive at a reasonably objective
 conclusion as to what license governs it.
 
-If a concludedLicense has a NONE value, this indicates that the SPDX data
-creator has looked and did not find any license information for this
+If a concludedLicense has a NONE value (NoneLicense), this indicates that the
+SPDX data creator has looked and did not find any license information for this
 software Package, File or Snippet.
 
-If a concludedLicense has a NOASSERTION value, this indicates that one of
-the follows applies:
+If a concludedLicense has a NOASSERTION value (NoAssertionLicense), this
+indicates that one of the following applies:
 * the SPDX data creator has attempted to but cannot reach a reasonable
   objective determination;
 * the SPDX data creator has made no attempt to determine this field; or
 * the SPDX data creator has intentionally provided no information (no
   meaning should be implied by doing so).
 
-A written explanation of a NOASSERTION value MAY be provided in the
-licenseComment field.
+A written explanation of a NOASSERTION value (NoAssertionLicense) MAY be
+provided in the licenseComment field.
 
 If the concludedLicense for a software Package, File or Snippet is not the
 same as its declaredLicense, a written explanation SHOULD be provided in

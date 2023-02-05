@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A license listed on the SPDX License List.
+A license that is listed on the SPDX License List.
 
 ## Description
 

@@ -39,11 +39,12 @@ types of artifacts. For example:
     different File (e.g., comment at top of File if it is not within the
     Snippet, LICENSE file in the top directory of a repository)
 
-If a declaredLicense has a NONE value, this indicates that the corresponding
-Package, File or Snippet contains no license information whatsoever.
+If a declaredLicense has a NONE value (NoneLicense), this indicates that the
+corresponding Package, File or Snippet contains no license information
+whatsoever.
 
-If a declaredLicense has a NOASSERTION value, this indicates that one of
-the following applies:
+If a declaredLicense has a NOASSERTION value (NoAssertionLicense), this
+indicates that one of the following applies:
 * the SPDX data creator has attempted to but cannot reach a reasonable
   objective determination;
 * the SPDX data creator has made no attempt to determine this field; or
