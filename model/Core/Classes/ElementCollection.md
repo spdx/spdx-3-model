@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# SpdxCollection
+# ElementCollection
 
 ## Summary
 
@@ -12,7 +12,7 @@ TODO
 
 ## Metadata
 
-- name: SpdxCollection
+- name: ElementCollection
 - SubclassOf: Element
 - Instantiability: Abstract
 

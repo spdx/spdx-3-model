@@ -14,5 +14,5 @@ A originatedBy is TODO
 
 - name: originatedBy
 - Nature: ObjectProperty
-- Range: Actor
+- Range: Identity
 

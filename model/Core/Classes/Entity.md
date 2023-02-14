@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# Bundle
+# Entity
 
 ## Summary
 
@@ -12,13 +12,9 @@ TODO
 
 ## Metadata
 
-- name: Bundle
-- SubclassOf: ElementCollection
+- name: Entity
+- SubclassOf: Element
 - Instantiability: Concrete
 
 ## Properties
-
-- context
-  - type: xsd:string
-  - maxCount: 1
 
