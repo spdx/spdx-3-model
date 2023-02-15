@@ -28,6 +28,10 @@ those defined in [SLSA provenance](https://slsa.dev/provenance/v0.2).
   - type: anyURI
   - minCount: 1
   - maxCount: 1
+- buildId
+  - type: string
+  - minCount: 0
+  - maxCount: 1
 - configSourceEntrypoint
   - type: string
   - minCount: 0
