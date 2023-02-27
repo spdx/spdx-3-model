@@ -8,13 +8,13 @@ Class that describes a build instance of software/artifacts.
 
 ## Description
 
-A build is a representation of the process in which a piece of software or
-artifact is built. It encapsulates information related to a build process and
+A build is a representation of the process in which a piece of software or artifact is built. It encapsulates information related to a build process and
 provides an element from which relationships can be created to describe the build's inputs, outputs, and related entities (e.g. builders, identities, etc.).
 
 Definitions of "BuildType", "ConfigSource", "Parameters" and "Environment" follow
 those defined in [SLSA provenance](https://slsa.dev/provenance/v0.2).
 
+ExternalIdentifier of type "urlScheme" may be used to identify build logs. Comment should be "LogReference".
 
 ## Metadata
 
@@ -29,11 +29,11 @@ those defined in [SLSA provenance](https://slsa.dev/provenance/v0.2).
   - minCount: 1
   - maxCount: 1
 - buildId
-  - type: string
+  - type: xsd:string
   - minCount: 0
   - maxCount: 1
 - configSourceEntrypoint
-  - type: string
+  - type: xsd:string
   - minCount: 0
 - configSourceUri
   - type: anyURI
@@ -42,7 +42,7 @@ those defined in [SLSA provenance](https://slsa.dev/provenance/v0.2).
   - type: Hash
   - minCount: 0
 - parameters
-  - type: map<string>string
+  - type: xsd:map<string>string
   - minCount: 0
 - startTime
   - type: xsd:DateTime
