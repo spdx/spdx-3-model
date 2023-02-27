@@ -39,7 +39,7 @@ those defined in [SLSA provenance](https://slsa.dev/provenance/v0.2).
   - type: anyURI
   - minCount: 0
 - configSourceDigest
-  - type: xsd:string
+  - type: Hash
   - minCount: 0
 - parameters
   - type: map<string>string
