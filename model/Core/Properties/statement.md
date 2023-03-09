@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Commentary on an assertion that an annotator has made.
 
 ## Description
 
-A statement is TODO
+A statement is a commentary on an assertion that an annotator has made.
 
 ## Metadata
 

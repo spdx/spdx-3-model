@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Specifies the type of an annotation.
 
 ## Description
 
-TODO
+AnnotationType specifies the type of an annotation.
 
 ## Metadata
 
@@ -16,6 +16,5 @@ TODO
 
 ## Entries
 
-- other: TODOdescription
-- review: TODOdescription
-
+- other: Used to store extra information about an Element during creation.
+- review: Used when someone reviews the Element.
