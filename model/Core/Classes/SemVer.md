@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+A String constrained to the SemVer 2.0.0 specification.
 
 ## Description
 
-TODO
+The semantic version is a String constrained to the SemVer 2.0.0 specification.
 
 ## Metadata
 

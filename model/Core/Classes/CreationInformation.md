@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Provides information about the creation of the Element.
 
 ## Description
 
-TODO
+The CreationInformation provides information about who created the Element, and when and how it was created. 
 
 ## Metadata
 

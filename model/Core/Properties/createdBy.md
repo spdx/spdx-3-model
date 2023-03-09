@@ -4,11 +4,13 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Identifies who or what created the Element.
 
 ## Description
 
-A createdBy is TODO
+CreatedBy identifies who or what created the Element.
+The generation method will assist the recipient of the Element in assessing
+the general reliability/accuracy of the analysis information.
 
 ## Metadata
 
