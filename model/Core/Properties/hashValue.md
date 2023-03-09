@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+The result of applying a hash algorithm to an Element.
 
 ## Description
 
-A hashValue is TODO
+HashValue is the result of applying a hash algorithm to an Element.
 
 ## Metadata
 
