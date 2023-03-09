@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Provides information about the primary purpose of the snippet.
 
 ## Description
 
-A snippetPurpose is TODO
+SnippetPurpose provides information about the primary purpose of the snippet.
 
 ## Metadata
 

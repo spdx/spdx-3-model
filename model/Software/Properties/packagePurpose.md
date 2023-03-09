@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Provides information about the primary purpose of the package.
 
 ## Description
 
-A packagePurpose is TODO
+PackagePurpose provides information about the primary purpose of the package.
 
 ## Metadata
 
