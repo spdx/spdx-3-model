@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+A reasonable estimation of the relation between two identified Elements from a developer perspective.
 
 ## Description
 
-TODO
+This field is a reasonable estimation of the relation between two identified Elements from a developer perspective.
 
 ## Metadata
 

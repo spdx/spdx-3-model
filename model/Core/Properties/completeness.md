@@ -4,11 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Provides information about the completeness of relationships.
 
 ## Description
 
-A completeness is TODO
+Completeness gives information about whether the provided relationships are
+complete, incomplete or if no assertion is made either way.
 
 ## Metadata
 

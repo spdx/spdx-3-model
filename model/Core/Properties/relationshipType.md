@@ -4,11 +4,13 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Provides a reasonable estimation of the type of relation
+between two identified Elements from a developer perspective.
 
 ## Description
 
-A relationshipType is TODO
+RelationshipType provides a reasonable estimation of the type of relation
+between two identified Elements from a developer perspective.
 
 ## Metadata
 
