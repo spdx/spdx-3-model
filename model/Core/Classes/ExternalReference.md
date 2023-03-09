@@ -4,12 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A reference to a resource outside of the scope of SPDX-3.0 content.
+A reference to a resource outside the scope of SPDX-3.0 content.
 
 ## Description
 
-An External Reference is a grouping of characteristics unique to the identity,
-location and context of a resource outside of the scope of SPDX-3.0 content.
+An External Reference points to a resource outside the scope of the SPDX-3.0 content
+that provides additional characteristics of an Element.
 
 ## Metadata
 
