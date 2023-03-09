@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Assembles a collection of Elements under a common string, the name of the document.
 
 ## Description
 
-TODO
+An SpdxDocument assembles a collection of Elements under a common string, the name of the document.
 
 ## Metadata
 

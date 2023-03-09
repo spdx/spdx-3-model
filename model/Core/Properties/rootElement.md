@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Top level Element from which all other Elements are reached via relationships.
 
 ## Description
 
-A rootElement is TODO
+A rootElement of a collection is the top level Element from which all other Elements are reached via relationships.
 
 ## Metadata
 

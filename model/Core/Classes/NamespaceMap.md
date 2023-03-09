@@ -4,11 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+A mapping between prefixes and namespace URIs.
 
 ## Description
 
-TODO
+A namespace map allows the creator of a collection of Elements to use
+memorable identifiers ("prefixes") instead of URIs by defining a mapping between them.
 
 ## Metadata
 

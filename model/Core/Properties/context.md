@@ -4,11 +4,13 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Gives information about the circumstances or unifying properties
+that Elements of the bundle have been assembled under.
 
 ## Description
 
-A context is TODO
+A context gives information about the circumstances or unifying properties
+that Elements of the bundle have been assembled under.
 
 ## Metadata
 
