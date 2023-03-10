@@ -9,7 +9,8 @@ A mapping between prefixes and namespace URIs.
 ## Description
 
 A namespace map allows the creator of a collection of Elements to use
-memorable identifiers ("prefixes") instead of URIs by defining a mapping between them.
+shorter identifiers ("prefixes") instead of URIs to provide a more
+human-readable and smaller serialized representation of the Elements.
 
 ## Metadata
 

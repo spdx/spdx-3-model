@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A memorable substitute for a URI.
+A substitute for a URI.
 
 ## Description
 
-A prefix is a memorable substitute for a URI.
+A prefix is a substitute for a URI.
 
 ## Metadata
 

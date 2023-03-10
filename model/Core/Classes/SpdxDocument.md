@@ -9,6 +9,7 @@ Assembles a collection of Elements under a common string, the name of the docume
 ## Description
 
 An SpdxDocument assembles a collection of Elements under a common string, the name of the document.
+Commonly used when representing a unit of transfer of SPDX Elements.
 
 ## Metadata
 
