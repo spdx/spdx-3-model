@@ -4,11 +4,13 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A reasonable estimation of the relation between two identified Elements from a developer perspective.
+Information about the relationship between two Elements.
 
 ## Description
 
-This field is a reasonable estimation of the relation between two identified Elements from a developer perspective.
+Provides information about the relationship between two Elements.
+For example, you can represent a relationship between two different Files,
+between a Package and a File, between two Packages, or between one SPDXDocument and another SPDXDocument.
 
 ## Metadata
 

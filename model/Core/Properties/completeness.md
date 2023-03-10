@@ -9,7 +9,7 @@ Provides information about the completeness of relationships.
 ## Description
 
 Completeness gives information about whether the provided relationships are
-complete, incomplete or if no assertion is made either way.
+complete, known to be incomplete or if no assertion is made either way.
 
 ## Metadata
 

@@ -4,13 +4,13 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Indicates whether a relationship is complete or incomplete or if there
-can be made no assertion either way.
+Indicates whether a relationship is complete or known to be incomplete or if there
+is made no assertion either way.
 
 ## Description
 
-RelationshipCompleteness indicates whether a relationship is complete or incomplete or if there
-can be made no assertion either way.
+RelationshipCompleteness indicates whether a relationship is complete or 
+known to be incomplete or if there is made no assertion either way.
 
 ## Metadata
 
