@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Provides information about which SPDX model profiles the Element belongs to.
+Provides information about which profiles the Element belongs to.
 
 ## Description
 
-This field provides information about which SPDX model profiles the Element belongs to.
+This field provides information about which profiles the Element belongs to.
 
 ## Metadata
 

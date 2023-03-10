@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Identifies when the SPDX document was originally created.
+Identifies when the Element was originally created.
 
 ## Description
 
