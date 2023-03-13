@@ -3,48 +3,40 @@
      version: "spdx-3-model 2022-09-20"
  description: "This information model defines the serialized structure of SPDXv3 logical model types"
      license: "CC0-1.0"
-     exports: ["Payload", "Elements"]
+     exports: ["Elements"]
       config: {"$FieldName": "^[a-zA-Z@][_A-Za-z0-9]{0,63}$"}
 
-Elements = ArrayOf(Element){1..*} unique          // Serialized set of independent Element values
+Elements = ArrayOf(Element){1..*} unique          // Serialized set of Element values
 
 Payload = Record                                  // Serialized file (or equivalent) for transferring Elements
    1 namespace        IRI                         // Default namespace for Element ids in this file (rdf BASE)
    2 prefixes         NamespaceMap optional       // Namespace abbreviations used in this file (rdf PREFIX)
-   3 created          DateTime                    // File creation info and element defaults
-   4 creator          Link(Element) [1..*]        // File creation info and element defaults - Link(Identity)
-   5 specVersion      SemVer                      // File creation info and element defaults
-   6 profile          ProfileIdentifier [1..*]    // File creation info and element defaults
-   7 dataLicense      LicenseId                   // File creation info and element defaults
-   8 element          Element unique [1..*]       // Element values, defined in this file or copied
-   9 spdxDocumentId   Link(Element) optional      // Optional SpdxDocument element that describes this file
+   3 creationInfo     CreationInformation         // File creation info and element defaults
+   4 elementValue     Element unique [1..*]       // Element values, created in this file or copied
+   5 spdxDocumentId   Link(Element) optional      // SpdxDocument element that describes this file
 
 NamespaceMap = MapOf(Prefix, IRI){1..*}
 
 Element = Record
    1 id               Key(IRI)                    // Element unique identifier: local, prefix:local, or absolute-IRI
    2 type             ElementType                 // Element type and type-specific properties
-   3 created          DateTime optional           // required: explicit or default
-   4 creator          Link(Element) [0..*]        // required: explicit or default - Link(Identity)
-   5 specVersion      SemVer optional             // required: explicit or default
-   6 profile          ProfileIdentifier [0..*]    // required: explicit or default
-   7 dataLicense      LicenseId optional          // required: explicit or default
-   8 name             String optional
-   9 summary          String optional
-  10 description      String optional
-  11 comment          String optional
-  12 verifiedUsing    IntegrityMethod [0..*]      // Applies only to Artifacts
-  13 externalReference ExternalReference [0..*]
-  14 externalIdentifier ExternalIdentifier [0..*]
-  15 extensions       Extensions optional
+   3 creationInfo     CreationInformation
+   4 name             String optional
+   5 summary          String optional
+   6 description      String optional
+   7 comment          String optional
+   8 verifiedUsing    IntegrityMethod [0..*]      // Applies only to Artifacts
+   9 externalReference ExternalReference [0..*]
+  10 externalIdentifier ExternalIdentifier [0..*]
+  11 extensions       Extensions optional
 
 ElementType = Choice
    1 annotation       Annotation
    2 relationship     Relationship
-   3 identity         Identity                    // concrete, unspecified subtype
-   4 person           Person                      // <- Identity
-   5 organization     Organization                // <- Identity
-   6 process          Process                     // <- Identity
+   3 agent            Agent                       // concrete, unspecified subtype
+   4 person           Person                      // <- Agent
+   5 organization     Organization                // <- Agent
+   6 softwareAgent    SoftwareAgent               // <- Agent
    7 spdxDocument     SpdxDocument                // <- Collection: A file containing serialized element values
    8 bom              Bom                         // <- Collection
   10 package          Package                     // <- Artifact: pkg:Software
@@ -52,6 +44,14 @@ ElementType = Choice
   12 snippet          Snippet                     // <- Artifact: pkg:Software
   13 sbom             Sbom                        // <- BOM: pkg:Software
   14 license          License                     // pkg:License
+
+CreationInformation = Record
+   1 created          DateTime optional
+   2 createdBy        Link(Element) [1..*]        // Link(Agent)
+   3 createdUsing     Link(Element) [0..*]        // Link(Tool)
+   4 specVersion      SemVer optional
+   5 profile          ProfileIdentifier [0..*]
+   6 dataLicense      LicenseId optional
 
 Annotation = Record
    1 annotationType   AnnotationType
