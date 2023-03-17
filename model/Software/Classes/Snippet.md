@@ -8,6 +8,7 @@ TODO
 
 ## Metadata
 
+- name: Snippet
 - SubclassOf: Core:Artifact
 
 ## Properties
