@@ -31,4 +31,4 @@ left to the consumer of SPDX data to determine for themselves.
 
 - child
   - type: LicenseExpression
-  - mincount: 2
+  - minCount: 2

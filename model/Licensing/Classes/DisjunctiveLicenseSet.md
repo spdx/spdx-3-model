@@ -28,4 +28,4 @@ by the `OR` operator.
 
 - child
   - type: LicenseExpression
-  - mincount: 2
+  - minCount: 2

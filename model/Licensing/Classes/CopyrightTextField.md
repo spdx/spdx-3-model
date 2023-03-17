@@ -24,3 +24,4 @@ or NoneText)
 - SubclassOf: none
 - Instantiability: Abstract
 
+## Properties
