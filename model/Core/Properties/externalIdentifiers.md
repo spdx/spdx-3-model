@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# externalIdentifier
+# externalIdentifiers
 
 ## Summary
 
@@ -14,7 +14,7 @@ that uniquely identifies an Element.
 
 ## Metadata
 
-- name: externalIdentifier
+- name: externalIdentifiers
 - Nature: ObjectProperty
 - Range: ExternalIdentifier
 
