@@ -31,27 +31,20 @@ Element = Record
   11 extensions       Extensions optional
 
 ElementType = Choice
-   1 annotation       Annotation
-   2 relationship     Relationship
-   3 agent            Agent                       // concrete, unspecified subtype
+   1 annotation       Annotation                  // <- Element
+   2 relationship     Relationship                // <- Element
+   3 agent            Agent                       // <- Element: unspecified subtype
    4 person           Person                      // <- Agent
    5 organization     Organization                // <- Agent
    6 softwareAgent    SoftwareAgent               // <- Agent
-   7 spdxDocument     SpdxDocument                // <- Collection: A file containing serialized element values
-   8 bom              Bom                         // <- Collection
+   7 tool             Tool                        // <- Element
+   8 spdxDocument     SpdxDocument                // <- Collection: A file containing serialized element values
+   9 bom              Bom                         // <- Collection
   10 package          Package                     // <- Artifact: pkg:Software
   11 file             File                        // <- Artifact: pkg:Software
   12 snippet          Snippet                     // <- Artifact: pkg:Software
   13 sbom             Sbom                        // <- BOM: pkg:Software
-  14 license          License                     // pkg:License
-
-CreationInformation = Record
-   1 created          DateTime optional
-   2 createdBy        Link(Element) [1..*]        // Link(Agent)
-   3 createdUsing     Link(Element) [0..*]        // Link(Tool)
-   4 specVersion      SemVer optional
-   5 profile          ProfileIdentifier [0..*]
-   6 dataLicense      LicenseId optional
+  14 swdRelationship  SoftwareDependencyRelationship // <- Relationship
 
 Annotation = Record
    1 annotationType   AnnotationType
@@ -64,17 +57,15 @@ Relationship = Record
    3 to               Link(Element) [1..*]
    4 completeness     RelationshipCompleteness optional
 
-Identity = Record                                 // Principal identity, unspecified type
-   1 identifiedBy     Identifier [1..*]
+Agent = Record                                    // Principal identity, unspecified type
 
-Person = Record                                   // Extends Identity
-   1 identifiedBy     Identifier [1..*]
+Person = Record                                   // <-Agent
 
-Organization = Record                             // Extends Identity
-   1 identifiedBy     Identifier [1..*]
+Organization = Record                             // <-Agent
 
-Process = Record                                  // Tool as principal (under discussion)
-   1 identifiedBy     Identifier [1..*]
+SoftwareAgent = Record                            // <-Agent
+
+Tool = Record                                     // <-Element
 
 SpdxDocument = Record                             // Statements about a serialized file. "verifiedUsing" is required.
    1 namespace        IRI optional                // Default namespace for Element ids in the SPDX file (rdf BASE)
@@ -108,18 +99,14 @@ Sbom = Record
    1 element          Link(Element) [1..*]        // <-Collection
    2 rootElement      Link(Element) [0..*]        // <-Collection
 
-License = Record
-   1 licenseId        String
-   2 source           URL [1..*]
-   3 isOsiApproved    Boolean
-   4 isFsfLibre       Boolean
-   5 isDeprecatedLicenseId Boolean
-   6 reference        URL optional
-   7 detailsUrl       URL optional
-
-Identifier = Choice
-    1 email           Email                       // rfc2822 address syntax, not necessarily active
-    2 account         Account
+CreationInformation = Record
+   1 specVersion      SemVer
+   2 profile          ProfileIdentifier [1..*]
+   3 created          DateTime
+   4 dataLicense      LicenseId
+   5 createdBy        Link(Element) [1..*]        // Link(Agent)
+   6 createdUsing     Link(Element) [0..*]        // Link(Tool)
+   7 comment          String optional
 
 IntegrityMethod = Choice
    1 hash             Hashes
@@ -152,12 +139,6 @@ Extensions = MapOf(IRI, String)                   // Extensions are opaque strin
 
 DateTime = String                                 // implement Integer /datetime_ms
 
-Email = String /email
-
-Account = Record
-   1 authority        String
-   2 localId          String
-
 MediaType = String
 
 Prefix = String{1..16}                            // Abbreviation for document namespace
@@ -169,10 +150,6 @@ SnippetLocation = Record
 IRI = String /iri
 
 URL = String /uri                                 // IRI, must be a locator
-
-AnnotationType = Enumerated
-   0 other
-   1 review
 
 ExternalIdentifier = Record
    1 type             ExternalIdentifierType
@@ -190,14 +167,46 @@ ExternalReference = Record
    3 contentType      MediaType optional
    4 comment          String optional
 
+SoftwareDependencyRelationship = Record
+   1 linkType         DependencyLinkType
+   2 scope            DependencyScope
+   3 requirement      DependencyRequirement
+
+AnnotationType = Enumerated
+   0 other
+   1 review
+
+DependencyLinkType = Enumerated
+   0 other
+   1 noAssertion                                  // default
+   2 static
+   3 dynamic
+   4 tool
+
+DependencyRequirement = Enumerated
+   1 noAssertion                                  // default
+   2 optional
+   3 required
+   4 provided
+   5 preRequisite
+
+DependencyScope = Enumerated
+   0 other
+   1 noAssertion                                  // default
+   2 build
+   3 dev
+   4 test
+
 ExternalIdentifierType = Enumerated
    0 other
    1 cpe_2.2
    2 cpe_2.3
-   3 purl
-   4 swid
-   5 swhid
-   6 gitoid
+   3 email
+   4 purl
+   5 uri-scheme
+   6 swid                                         // deprecate
+   7 swhid                                        // deprecate
+   8 gitoid                                       // deprecate
 
 ExternalReferenceType = Enumerated
    0 other
@@ -207,50 +216,42 @@ ExternalReferenceType = Enumerated
    4 securityFix
    5 securityOther
 
-LicenseId = Enumerated                            // From license list: referenceNumber, licenseId  // name
- 451 Apache-2.0                                   // Apache License 2.0
- 457 CC0-1.0                                      // Creative Commons Zero v1.0 Universal
+LicenseId = Enumerated
+   0 CC0-1.0                                      // Fixed value unless others are added
 
 ProfileIdentifier = Enumerated                    // Shown as "pkg" on logical model diagram, use upper case names?
    1 core
    2 software
-   3 license                                      // TBSL
+   3 licensing
+   4 security
+   5 build
+   6 usage
+   7 ai
+   8 dataset
+   9 service
 
 RelationshipCompleteness = Enumerated
-   1 complete
+   1 complete                                     // default
    2 incomplete
    3 noAssertion
 
 RelationshipType = Enumerated
-   0 other
-   1 describes
-   2 amends
-   3 contains
-   4 ancestor           // Need both?
-   5 descendent         // Need both?
-   6 variant            // *
-   7 dependsOn
-  13 dependencyManifest
-  17 buildTool
-  18 devTool
-  19 testTool
-  20 generates
-  21 distributionArtifact
-  22 example
-  23 dataFile
-  24 testCase
-  25 documentation
-  26 metafile
-  27 test
-  28 optionalComponent
-  29 packages
-  30 patch
-  31 copy           //* May or may not be directional?
-  32 expandedFromArchive
-  33 fileAdded
-  34 fileDeleted
-  35 fileModified
-  36 suppliedBy                                  // New in 3.0
+   0 other                      // Meta: element->element comment
+   1 describes                  // Meta: bundle->artifact
+   2 amends                     // Meta: collection->collection
+   3 contains                   // Structure: artifact->artifact
+   4 dependsOn                  // Behavioral: artifact->artifact
+   5 patches                    // Behavioral: artifact->artifact
+   6 tests                      // Behavioral: artifact->artifact
+  10 generates                  // Pedigree: artifact->artifact
+  11 expandedFromArchive        // Pedigree
+  12 fileAdded                  // Pedigree
+  13 fileDeleted                // Pedigree
+  14 fileModified               // Pedigree
+  15 copy                       // Pedigree: artifact->artifact
+  20 ancestor                   // Provenance: artifact->artifact
+  21 suppliedBy                 // Provenance: artifact->artifact
+  22 variant                    // Provenance: artifact->artifact
 
 SoftwarePurpose = Enumerated
    0 other
