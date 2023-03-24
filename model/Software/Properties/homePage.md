@@ -14,5 +14,5 @@ A homePage is TODO
 
 - name: homePage
 - Nature: DataProperty
-- Range: anyURI
+- Range: xsd:anyURI
 

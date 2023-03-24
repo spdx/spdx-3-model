@@ -24,12 +24,12 @@ such as its provenance, where to retrieve it, and how to verify its integrity.
 ## Properties
 
 - externalId
-  - type: anyURI
+  - type: xsd:anyURI
   - minCount: 1
   - maxCount: 1
 - verifiedUsing
   - type: IntegrityMethod
 - locationHint
-  - type: anyURI
+  - type: xsd:anyURI
   - maxCount: 1
 

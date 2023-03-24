@@ -14,5 +14,5 @@ A locationHint is TODO
 
 - name: locationHint
 - Nature: DataProperty
-- Range: anyURI
+- Range: xsd:anyURI
 

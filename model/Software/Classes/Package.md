@@ -13,22 +13,22 @@ TODO
 ## Properties
 
 - contentIdentifier
-  - type: anyURI
+  - type: xsd:anyURI
   - minCount: 0
   - maxCount: 1
 - packagePurpose
   - type: SoftwarePurpose
   - minCount: 0
 - downloadLocation
-  - type: anyURI
+  - type: xsd:anyURI
   - minCount: 0
   - maxCount: 1
 - packageUrl
-  - type: anyURI
+  - type: xsd:anyURI
   - minCount: 0
   - maxCount: 1
 - homePage
-  - type: anyURI
+  - type: xsd:anyURI
   - minCount: 0
   - maxCount: 1
 
