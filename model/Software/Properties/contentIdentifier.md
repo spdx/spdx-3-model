@@ -14,5 +14,5 @@ A contentIdentifier is TODO
 
 - name: contentIdentifier
 - Nature: DataProperty
-- Range: anyURI
+- Range: xsd:anyURI
 

@@ -14,5 +14,5 @@ A spdxId is TODO
 
 - name: spdxId
 - Nature: DataProperty
-- Range: anyURI
+- Range: xsd:anyURI
 

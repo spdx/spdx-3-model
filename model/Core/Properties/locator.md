@@ -14,5 +14,5 @@ A locator is TODO
 
 - name: locator
 - Nature: DataProperty
-- Range: anyURI
+- Range: xsd:anyURI
 

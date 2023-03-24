@@ -13,7 +13,7 @@ TODO
 ## Properties
 
 - contentIdentifier
-  - type: anyURI
+  - type: xsd:anyURI
   - minCount: 0
   - maxCount: 1
 - snippetPurpose

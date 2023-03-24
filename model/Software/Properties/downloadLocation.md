@@ -14,5 +14,5 @@ A downloadLocation is TODO
 
 - name: downloadLocation
 - Nature: DataProperty
-- Range: anyURI
+- Range: xsd:anyURI
 

@@ -23,7 +23,7 @@ location and context of a resource outside of the scope of SPDX-3.0 content.
   - type: ExternalReferenceType
   - maxCount: 1
 - locator
-  - type: anyURI
+  - type: xsd:anyURI
 - contentType
   - type: MediaType
   - maxCount: 1

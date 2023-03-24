@@ -14,5 +14,5 @@ A externalId is TODO
 
 - name: externalId
 - Nature: DataProperty
-- Range: anyURI
+- Range: xsd:anyURI
 

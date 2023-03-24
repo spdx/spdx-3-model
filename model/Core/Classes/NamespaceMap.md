@@ -21,6 +21,6 @@ TODO
   - type: xsd:string
   - maxCount: 1
 - namespace
-  - type: anyURI
+  - type: xsd:anyURI
   - maxCount: 1
 
