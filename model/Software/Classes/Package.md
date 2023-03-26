@@ -8,6 +8,7 @@ TODO
 
 ## Metadata
 
+- name: Package
 - SubclassOf: Core:Artifact
 
 ## Properties
