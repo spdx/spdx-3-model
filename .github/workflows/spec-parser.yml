@@ -29,7 +29,23 @@ jobs:
               --gen-rdf \
               --out-dir /tmp/spec-parser.out \
               ../model
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: tst.ttl
+          path: /tmp/spec-parser.out/tst.ttl
+
       - uses: actions/upload-artifact@v3
         with:
           name: spec-parser.out
           path: /tmp/spec-parser.out
+
+      - uses: cachix/install-nix-action@v19
+        with:
+          nix_path: nixpkgs=channel:nixos-unstable
+      - run: nix-shell '<nixpkgs>' --fallback -p apache-jena --run "riot --out=jsonld /tmp/spec-parser.out/tst.ttl" > /tmp/spec-parser.out/tst.jsonld
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: tst.jsonld
+          path: /tmp/spec-parser.out/tst.jsonld
