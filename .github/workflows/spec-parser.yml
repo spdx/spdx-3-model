@@ -15,7 +15,7 @@ jobs:
           python-version: "3.11"
       - name: get spec-parser
         run: |
-          git clone https://github.com/spdx/spec-parser/
+          git clone --depth=1 --single-branch --branch=main https://github.com/spdx/spec-parser/
           cd spec-parser
           python3 -m pip install -r requirements.txt
           python main.py -h
