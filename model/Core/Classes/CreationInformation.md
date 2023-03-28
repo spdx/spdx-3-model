@@ -24,6 +24,9 @@ TODO
 - createdBy
   - type: Entity
   - minCount: 1
+- createdUsing
+  - type: Tool
+  - minCount: 0
 - profile
   - type: ProfileIdentifier
   - minCount: 1
