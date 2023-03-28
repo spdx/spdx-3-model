@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Provides the location of an external reference.
 
 ## Description
 
-A locator is TODO
+A locator provides the location of an external reference.
 
 ## Metadata
 

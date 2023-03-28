@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Specifies the media type of an Element.
 
 ## Description
 
-A contentType is TODO
+ContentType specifies the media type of an Element.
 
 ## Metadata
 
