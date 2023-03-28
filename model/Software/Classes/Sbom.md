@@ -2,12 +2,15 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 # Sbom
 
+## Summary
+
+A collection of SPDX Elements describing a single package.
+
 ## Description
 
-A Software Bill of Materials (SBOM) is a container for a grouping of SPDX-3.0 content
-characterizing details about a software product.
+A Software Bill of Materials (SBOM) is a collection of SPDX Elements describing a single package.
 This could include details of the content and composition of the product,
-provenence details of the product and/or
+provenance details of the product and/or
 its composition, licensing information, known quality or security issues, etc.
 
 ## Metadata
