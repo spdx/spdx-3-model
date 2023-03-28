@@ -4,11 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+A mathematical algorithm that maps data of arbitrary size to a bit string.
 
 ## Description
 
-TODO
+A HashAlgorithm is a mathematical algorithm that maps data of arbitrary size to a bit string (the hash)
+and is a one-way function, that is, a function which is practically infeasible to invert.
 
 ## Metadata
 
