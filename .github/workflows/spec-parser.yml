@@ -1,0 +1,51 @@
+name: run spec-parser
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+      - name: get spec-parser
+        run: |
+          git clone --depth=1 --single-branch --branch=main https://github.com/spdx/spec-parser/
+          cd spec-parser
+          python3 -m pip install -r requirements.txt
+          python main.py -h
+      - name: run spec-parser
+        run: |
+          cd spec-parser
+          mkdir -p  /tmp/spec-parser.out
+          python main.py \
+              --gen-md \
+              --gen-refs \
+              --gen-rdf \
+              --out-dir /tmp/spec-parser.out \
+              ../model
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: tst.ttl
+          path: /tmp/spec-parser.out/tst.ttl
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: spec-parser.out
+          path: /tmp/spec-parser.out
+
+      - uses: cachix/install-nix-action@v19
+        with:
+          nix_path: nixpkgs=channel:nixos-unstable
+      - run: nix-shell '<nixpkgs>' --fallback -p apache-jena --run "riot --out=jsonld /tmp/spec-parser.out/tst.ttl" > /tmp/spec-parser.out/tst.jsonld
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: tst.jsonld
+          path: /tmp/spec-parser.out/tst.jsonld
