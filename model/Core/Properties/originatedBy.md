@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Identifies from where or whom the Element originally came.
 
 ## Description
 
-A originatedBy is TODO
+OriginatedBy identifies from where or whom the Element originally came.
 
 ## Metadata
 
