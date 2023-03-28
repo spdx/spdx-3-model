@@ -4,11 +4,13 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Information about the relationship between two Elements.
 
 ## Description
 
-TODO
+Provides information about the relationship between two Elements.
+For example, you can represent a relationship between two different Files,
+between a Package and a File, between two Packages, or between one SPDXDocument and another SPDXDocument.
 
 ## Metadata
 
