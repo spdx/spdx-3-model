@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+A collection of Elements, not necessarily with unifying context.
 
 ## Description
 
-TODO
+An SpdxCollection is a collection of Elements, not necessarily with unifying context.
 
 ## Metadata
 

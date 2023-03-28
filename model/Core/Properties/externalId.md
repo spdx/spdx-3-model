@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Identifies an external Element used within a Document but defined external to that Document.
 
 ## Description
 
-A externalId is TODO
+ExternalId identifies an external Element used within a Document but defined external to that Document.
 
 ## Metadata
 

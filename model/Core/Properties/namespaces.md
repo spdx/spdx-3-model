@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Provides a NamespaceMap applicable to an ElementCollection.
 
 ## Description
 
-A namespaces is TODO
+This field provides a NamespaceMap applicable to an ElementCollection.
 
 ## Metadata
 

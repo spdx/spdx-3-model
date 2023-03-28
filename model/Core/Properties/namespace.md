@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Provides an unambiguous mechanism for other documents to reference Elements within this document.
 
 ## Description
 
-A namespace is TODO
+A namespace provides an unambiguous mechanism for other documents to reference Elements within this document.
 
 ## Metadata
 

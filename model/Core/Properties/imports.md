@@ -4,11 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Provides an ExternalMap of Element identifiers.
 
 ## Description
 
-A imports is TODO
+Imports provides an ExternalMap of Element identifiers that are used within a document
+but defined external to that document.
 
 ## Metadata
 
