@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Describes the type of annotation.
 
 ## Description
 
-A annotationType is TODO
+An annotationType describes the type of an annotation.
 
 ## Metadata
 
