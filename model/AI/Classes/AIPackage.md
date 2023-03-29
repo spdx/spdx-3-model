@@ -22,14 +22,14 @@ Metadata information that can be added to a package to describe an AI applicatio
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
- - standardsCompliance
+- standardsCompliance
   - type: xsd:string
   - minCount: 0
- - limitations
+- limitations
   - type: xsd:string
   - minCount: 0
   - maxCount:1
- - typeOfModel
+- typeOfModel
   - type: xsd:string
   - minCount: 0
 - informationAboutTraining
