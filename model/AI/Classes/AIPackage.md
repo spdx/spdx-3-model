@@ -1,7 +1,10 @@
--------
 SPDX-License-Identifier: Community-Spec-1.0
 
 # AIPackage
+
+## Summary
+
+Provides information about the fields in the AI package profile.
 
 ## Description
 
@@ -9,99 +12,63 @@ Metadata information that can be added to a package to describe an AI applicatio
 
 ## Metadata
 
-- SubclassOf: Software/Package
-						Defaults are: 0..*
+- name: AIPackage
+- SubclassOf: Software:Package
+- Instatiability: Concrete
+
 ## Properties
--energyConsumption
+
+- energyConsumption
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
-  
--standardsCompliance
+ - standardsCompliance
   - type: xsd:string
   - minCount: 0
-  
--limitations
+ - limitations
   - type: xsd:string
   - minCount: 0
   - maxCount:1
-
--typeOfModel
+ - typeOfModel
   - type: xsd:string
   - minCount: 0
-
--informationAboutTraining
-  - type: xsd:string
-  - minCount: 0
-  - maxCount: 1
-
--informationAboutApplication
+- informationAboutTraining
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
-
--hyperparameters
-  - type: xsd:string
-  - minCount: 0
-
-
--dataPreprocessingSteps
+- informationAboutApplication
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
-
--modelExplainabilityMechanisms
+- hyperparameters
+  - type: xsd:string
+  - minCount: 0
+- dataPreprocessingSteps
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
-
--sensitivePersonalInformation
+- modelExplainabilityMechanisms
+  - type: xsd:string
+  - minCount: 0
+  - maxCount: 1
+- sensitivePersonalInformation
   - type: PresenceType
   - minCount: 0
   - maxCount: 1
-
--metricsDecisionThresholds
+- metricsDecisionThresholds
   - type: xsd:string
   - minCount: 0
-
--metrics
+- metrics
   - type: xsd:string
   - minCount: 0
-
--domain
+- domain
   - type: xsd:string
   - minCount: 0
-
-
--autonomyType
+- autonomyType
   - type: PresenceType
   - minCount: 0
   - maxCount: 1
-
-
--safetyRiskAssessment
+- safetyRiskAssessment
   - type: SafetyRiskAssessmentType
   - minCount: 0
   - maxCount: 1
-
-- contentIdentifier
-  - type: anyURI
-  - minCount: 0
-  - maxCount: 1
-
-- packagePurpose
-  - type: SoftwarePurpose
-  - minCount: 0
-- downloadLocation
-  - type: anyURI
-  - minCount: 0
-  - maxCount: 1
-- packageUrl
-  - type: anyURI
-  - minCount: 0
-  - maxCount: 1
-- homePage
-  - type: anyURI
-  - minCount: 0
-  - maxCount: 1
-
