@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# autonomy
+# autonomyType
 
 ## Summary
 
