@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Field captures Capture all the preprocessing steps done before the model training
+Field captures all the preprocessing steps done before the model training
 
 ## Description
 
