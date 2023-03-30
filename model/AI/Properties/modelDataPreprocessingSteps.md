@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# dataPreprocessingSteps
+# modelDataPreprocessingSteps
 
 ## Summary
 
@@ -12,6 +12,6 @@ This is a free form text field that describes the preprocessing steps done to th
 
 ## Metadata
 
-- name: dataPreprocessingSteps
+- name: modelDataPreprocessingSteps
 - Nature: DataProperty
 - Range: xsd:string
