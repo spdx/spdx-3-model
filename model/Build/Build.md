@@ -12,5 +12,5 @@ The Build namespace defines concepts related to building of artifacts.
 
 ## Metadata
 
-id: https://rdf.spdx.org/v3#Build
-name: Build
+- id: https://rdf.spdx.org/v3#Build
+- name: Build
