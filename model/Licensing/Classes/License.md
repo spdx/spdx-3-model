@@ -41,7 +41,7 @@ than xsd:string
   - minCount: 1
   - maxCount: 1
 - seeAlso
-  - type: anyURI
+  - type: xsd:anyURI
   - minCount: 0
   - maxCount: 1
 - example
@@ -49,11 +49,11 @@ than xsd:string
   - minCount: 0
   - maxCount: 1
 - isOsiApproved
-  - type: boolean
+  - type: xsd:boolean
   - minCount: 0
   - maxCount: 1
 - isFsfLibre
-  - type: boolean
+  - type: xsd:boolean
   - minCount: 0
   - maxCount: 1
 - standardLicenseHeader
@@ -61,7 +61,7 @@ than xsd:string
   - minCount: 0
   - maxCount: 1
 - isDeprecatedLicenseId
-  - type: boolean
+  - type: xsd:boolean
   - minCount: 0
   - maxCount: 1
 - obsoletedBy
