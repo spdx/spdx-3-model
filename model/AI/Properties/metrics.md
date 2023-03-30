@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-This  field records the measurement of prediction quality including uncertainty, accuracy, characteristics of of tested population, Quality, Fairness, explainability, Robustness etc
+This field records the measurement of prediction quality including uncertainty, accuracy, characteristics of of tested population, Quality, Fairness, explainability, Robustness etc
 
 ## Description
 
