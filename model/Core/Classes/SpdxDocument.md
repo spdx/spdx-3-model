@@ -24,3 +24,8 @@ Commonly used when representing a unit of transfer of SPDX Elements.
   - minCount: 1
   - maxCount: 1
 
+## External properties restrictions
+
+- /Core/Element/name
+  - minCount: 1
+

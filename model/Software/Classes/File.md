@@ -29,3 +29,8 @@ TODO This is about the File class.
   - minCount: 0
   - maxCount: 1
 
+## External properties restrictions
+
+- /Core/Element/name
+  - minCount: 1
+
