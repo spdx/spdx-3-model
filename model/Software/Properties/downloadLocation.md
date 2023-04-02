@@ -4,15 +4,18 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Identifies the download Uniform Resource Identifier for the package at the time that the document was created.
 
 ## Description
 
-A downloadLocation is TODO
+DownloadLocation identifies the download Uniform Resource Identifier 
+for the package at the time that the document was created.
+Where and how to download the exact package being referenced 
+is critical for verification and tracking data.
 
 ## Metadata
 
 - name: downloadLocation
 - Nature: DataProperty
-- Range: anyURI
+- Range: xsd:anyURI
 

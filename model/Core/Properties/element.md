@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Refers to one or more Elements that are part of an ElementCollection.
 
 ## Description
 
-A element is TODO
+This field refers to one or more Elements that are part of an ElementCollection.
 
 ## Metadata
 

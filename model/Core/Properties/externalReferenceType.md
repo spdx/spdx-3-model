@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Specifies the type of the external reference.
 
 ## Description
 
-A externalReferenceType is TODO
+An externalReferenceType specifies the type of the external reference.
 
 ## Metadata
 

@@ -14,5 +14,5 @@ A packageUrl is TODO
 
 - name: packageUrl
 - Nature: DataProperty
-- Range: anyURI
+- Range: xsd:anyURI
 

@@ -4,16 +4,16 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+A collection of Elements that have a shared context.
 
 ## Description
 
-TODO
+A bundle is a collection of Elements that have a shared context.
 
 ## Metadata
 
 - name: Bundle
-- SubclassOf: SpdxCollection
+- SubclassOf: ElementCollection
 - Instantiability: Concrete
 
 ## Properties

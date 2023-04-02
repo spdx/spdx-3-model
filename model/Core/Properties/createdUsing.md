@@ -1,20 +1,20 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# createdBy
+# createdUsing
 
 ## Summary
 
-Identifies who or what created the Element.
+Identifies the tooling that was used during the creation of the Element.
 
 ## Description
 
-CreatedBy identifies who or what created the Element.
+CreatedUsing identifies the tooling that was used during the creation of the Element.
 The generation method will assist the recipient of the Element in assessing
 the general reliability/accuracy of the analysis information.
 
 ## Metadata
 
-- name: createdBy
+- name: createdUsing
 - Nature: ObjectProperty
-- Range: Entity
+- Range: Tool
 

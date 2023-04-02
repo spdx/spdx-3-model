@@ -24,7 +24,7 @@ and inter-relatable content objects.
 ## Properties
 
 - spdxId
-  - type: anyURI
+  - type: xsd:anyURI
   - minCount: 1
   - maxCount: 1
 - name

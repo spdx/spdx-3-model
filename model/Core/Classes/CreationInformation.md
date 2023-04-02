@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Provides information about the creation of the Element.
 
 ## Description
 
-TODO
+The CreationInformation provides information about who created the Element, and when and how it was created. 
 
 ## Metadata
 
@@ -19,11 +19,18 @@ TODO
 
 - specVersion
   - type: SemVer
+- comment
+  - type: xsd:string
+  - minCount: 0
+  - maxCount: 1
 - created
   - type: xsd:dateTime
 - createdBy
-  - type: Actor
+  - type: Entity
   - minCount: 1
+- createdUsing
+  - type: Tool
+  - minCount: 0
 - profile
   - type: ProfileIdentifier
   - minCount: 1

@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+References the Element on the left-hand side of a relationship.
 
 ## Description
 
-A from is TODO
+This field references the Element on the left-hand side of a relationship.
 
 ## Metadata
 

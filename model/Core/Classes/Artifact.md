@@ -21,6 +21,6 @@ such as an electronic file, a software package, a device or an element of data.
 ## Properties
 
 - originatedBy
-  - type: Actor
+  - type: Identity
   - minCount: 0
 

@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Provides the profile that the Element is specified in.
 
 ## Description
 
-TODO
+A profile identifier provides the profile that the Element is specified in.
 
 ## Metadata
 

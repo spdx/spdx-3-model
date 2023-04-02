@@ -1,6 +1,5 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-
 # Tool
 
 ## Summary
@@ -14,7 +13,7 @@ A Tool is an element of hardware and/or software utilized to carry out a particu
 ## Metadata
 
 - name: Tool
-- SubclassOf: Identity
+- SubclassOf: Entity
 - Instantiability: Concrete
 
 ## Properties

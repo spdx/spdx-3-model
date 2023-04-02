@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Provides an IntegrityMethod with which the integrity of an Element can be asserted.
 
 ## Description
 
-A verifiedUsing is TODO
+VerifiedUsing provides an IntegrityMethod with which the integrity of an Element can be asserted.
 
 ## Metadata
 

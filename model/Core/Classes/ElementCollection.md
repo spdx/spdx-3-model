@@ -1,18 +1,18 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# SpdxCollection
+# ElementCollection
 
 ## Summary
 
-TODO
+A collection of Elements, not necessarily with unifying context.
 
 ## Description
 
-TODO
+An SpdxCollection is a collection of Elements, not necessarily with unifying context.
 
 ## Metadata
 
-- name: SpdxCollection
+- name: ElementCollection
 - SubclassOf: Element
 - Instantiability: Abstract
 

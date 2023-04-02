@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Specifies the algorithm used for calculating the hash value.
 
 ## Description
 
-A algorithm is TODO
+An algorithm specifies the algorithm that was used for calculating the hash value.
 
 ## Metadata
 

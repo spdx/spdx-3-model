@@ -4,11 +4,13 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Points to a resource outside the scope of the SPDX-3.0 content
+that provides additional characteristics of an Element.
 
 ## Description
 
-TODO
+This field points to a resource outside the scope of the SPDX-3.0 content
+that provides additional characteristics of an Element.
 
 ## Metadata
 

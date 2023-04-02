@@ -2,6 +2,10 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 # File
 
+## Summary
+
+TODO
+
 ## Description
 
 TODO This is about the File class.
@@ -14,7 +18,7 @@ TODO This is about the File class.
 ## Properties
 
 - contentIdentifier
-  - type: anyURI
+  - type: xsd:anyURI
   - minCount: 0
   - maxCount: 1
 - filePurpose

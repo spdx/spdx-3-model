@@ -4,11 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Identifies the name of an Element as designated by the creator.
 
 ## Description
 
-A name is TODO
+This field identifies the name of an Element as designated by the creator. 
+The name of an Element is an important convention and easier to refer to than the URI.
 
 ## Metadata
 
