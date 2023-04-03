@@ -26,6 +26,6 @@ by the `OR` operator.
 
 ## Properties
 
-- child
+- member
   - type: LicenseExpression
   - minCount: 2
