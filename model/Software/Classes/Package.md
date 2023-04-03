@@ -24,7 +24,7 @@ Note that some of these could be represented in SPDX as a file as well.
 ## Metadata
 
 - name: Package
-- SubclassOf: Core:Artifact
+- SubclassOf: /Core/Artifact
 
 ## Properties
 

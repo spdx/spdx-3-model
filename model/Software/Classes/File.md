@@ -13,7 +13,7 @@ TODO This is about the File class.
 ## Metadata
 
 - name: File
-- SubclassOf: Core:Artifact
+- SubclassOf: /Core/Artifact
 
 ## Properties
 
