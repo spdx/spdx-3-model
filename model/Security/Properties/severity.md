@@ -8,11 +8,12 @@ TODO
 
 ## Description
 
-A severity is TODO
+A severity is TODO  
+TODO: multiple classes contain this, each with a different type
 
 ## Metadata
 
 - name: severity
 - Nature: DataProperty
-- Range: TODO: multiple classes contain this, each with a different type
+- Range: TBD
 
