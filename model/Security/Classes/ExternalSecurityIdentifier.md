@@ -8,7 +8,8 @@ TODO
 
 ## Description
 
-An ExternalSecurityIdentifier is TODO
+An ExternalSecurityIdentifier is TODO  
+TODO: there is already a property of name "source" in VulnerabilityCategorization
 
 ## Metadata
 
@@ -18,6 +19,6 @@ An ExternalSecurityIdentifier is TODO
 
 ## Properties
 
-- source - TODO: there is already a property of that name in VulnerabilityCategorization
+- source
   - type: xsd:string
 

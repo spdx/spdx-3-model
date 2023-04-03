@@ -9,10 +9,12 @@ TODO
 ## Description
 
 A source is TODO
+TODO: multiple possible types, defined by ExternalSecurityIdentifier (xsd:string) and 
+VulnerabilityCategorization (xsd:anyURI)
 
 ## Metadata
 
 - name: source
 - Nature: DataProperty
-- Range: xsd:anyURI - TODO: multiple possible types
+- Range: xsd:anyURI
 
