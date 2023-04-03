@@ -9,10 +9,11 @@ TODO
 ## Description
 
 A locator is TODO
+TODO: there is already a locator property defined in ExternalReference
 
 ## Metadata
 
-- name: locator - TODO: there is already a locator property defined in ExternalReference
+- name: locator
 - Nature: DataProperty
 - Range: xsd:anyURI
 
