@@ -40,7 +40,7 @@ and inter-relatable content objects.
   - type: xsd:string
   - maxCount: 1
 - creationInfo
-  - type: CreationInformation
+  - type: CreationInfo
   - minCount: 1
   - maxCount: 1
 - verifiedUsing
