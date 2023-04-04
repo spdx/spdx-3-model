@@ -16,7 +16,7 @@ its composition, licensing information, known quality or security issues, etc.
 ## Metadata
 
 - name: Sbom
-- SubclassOf: Core:Bom
+- SubclassOf: /Core/Bom
 
 ## Properties
 

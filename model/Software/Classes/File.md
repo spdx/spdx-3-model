@@ -13,7 +13,7 @@ TODO This is about the File class.
 ## Metadata
 
 - name: File
-- SubclassOf: Core:Artifact
+- SubclassOf: /Core/Artifact
 
 ## Properties
 
@@ -28,4 +28,9 @@ TODO This is about the File class.
   - type: MediaType
   - minCount: 0
   - maxCount: 1
+
+## External properties restrictions
+
+- /Core/Element/name
+  - minCount: 1
 

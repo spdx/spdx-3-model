@@ -24,7 +24,7 @@ Note that some of these could be represented in SPDX as a file as well.
 ## Metadata
 
 - name: Package
-- SubclassOf: Core:Artifact
+- SubclassOf: /Core/Artifact
 
 ## Properties
 
@@ -51,4 +51,9 @@ Note that some of these could be represented in SPDX as a file as well.
   - type: xsd:anyURI
   - minCount: 0
   - maxCount: 1
+
+## External properties restrictions
+
+- /Core/Element/name
+  - minCount: 1
 
