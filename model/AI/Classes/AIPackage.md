@@ -13,7 +13,7 @@ Metadata information that can be added to a package to describe an AI applicatio
 ## Metadata
 
 - name: AIPackage
-- SubclassOf: Software:Package
+- SubclassOf: /Software/Package
 - Instatiability: Concrete
 
 ## Properties
