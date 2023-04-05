@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Field captures if a human is in the in the loop  
+Captures if a human is in the loop.
 
 ## Description
 
