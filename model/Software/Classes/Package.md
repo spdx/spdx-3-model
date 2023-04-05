@@ -51,6 +51,10 @@ Note that some of these could be represented in SPDX as a file as well.
   - type: xsd:anyURI
   - minCount: 0
   - maxCount: 1
+- sourceInfo
+  - type: xsd:string
+  - minCount: 0
+  - maxCount: 1
 
 ## External properties restrictions
 
