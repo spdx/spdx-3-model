@@ -14,4 +14,4 @@ The field describes the anonymization methods used. If multiple anonymization me
 
 - name: sensors
 - Nature: DataProperty
-- Range: xsd: string
+- Range: xsd:string
