@@ -21,13 +21,13 @@ Build Profile specific RelationshipType descriptions can be found [here](https:/
 - amends: TODOdescription
 - ancestor: TODOdescription
 - buildDependency: TODOdescription
-- buildTool: TODOdescription
+- buildTool: Build tool used to build an element. This may be used to describe the build tool of a Build instance.
 - contains: TODOdescription
 - copy: TODOdescription
 - dataFile: TODOdescription
 - dependencyManifest: TODOdescription
 - dependsOn: TODOdescription
-- descendant: TODOdescription
+- descendant: This relationship may be used to describe child builds of a Build instance.
 - describes: TODOdescription
 - devDependency: TODOdescription
 - devTool: TODOdescription
@@ -61,9 +61,7 @@ Build Profile specific RelationshipType descriptions can be found [here](https:/
 - buildInputOf: Input to the build instance
 - buildOutputOf: Output of the build instance
 - buildConfigOf: Build configuration of the build instance
-- buildToolOf: Build tool used in the build instance
 - buildInvokedBy: Agent that invoked the build
-- buildOnBehalfOf: Person for which buildInvokedBy is acting on behalf of
+- buildOnBehalfOf: Actor for which buildInvokedBy is acting on behalf of
 - buildHostOf: Element in which the build instance runs on
-- buildChildOf: Build instance that was created from another build instance
 
