@@ -44,11 +44,11 @@ ExternalIdentifier of type "urlScheme" may be used to identify build logs. In th
 - parameters
   - type: xsd:map<string>string
   - minCount: 0
-- startTime
+- buildStart
   - type: xsd:dateTime
   - minCount:0
   - maxCount:1
-- endTime
+- buildEnd
   - type: xsd:dateTime
   - minCount:0
   - maxCount:1
