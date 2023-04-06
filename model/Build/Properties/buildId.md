@@ -14,4 +14,4 @@ A buildId is a locally unique identifier to identify a unique instance of a buil
 
 - name: buildId
 - Nature: DataProperty
-- Range: string
+- Range: xsd:string

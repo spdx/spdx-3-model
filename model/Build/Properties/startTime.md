@@ -14,4 +14,4 @@ startTime is the time at which a build is triggered. The builder typically recor
 
 - name: startTime
 - Nature: DataProperty
-- Range: DateTime
+- Range: xsd:dateTime
