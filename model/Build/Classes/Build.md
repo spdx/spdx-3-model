@@ -25,7 +25,7 @@ ExternalIdentifier of type "urlScheme" may be used to identify build logs. Comme
 ## Properties
 
 - buildType
-  - type: anyURI
+  - type: xsd:anyURI
   - minCount: 1
   - maxCount: 1
 - buildId
@@ -36,7 +36,7 @@ ExternalIdentifier of type "urlScheme" may be used to identify build logs. Comme
   - type: xsd:string
   - minCount: 0
 - configSourceUri
-  - type: anyURI
+  - type: xsd:anyURI
   - minCount: 0
 - configSourceDigest
   - type: Hash
@@ -45,11 +45,11 @@ ExternalIdentifier of type "urlScheme" may be used to identify build logs. Comme
   - type: xsd:map<string>string
   - minCount: 0
 - startTime
-  - type: xsd:DateTime
+  - type: xsd:dateTime
   - minCount:0
   - maxCount:1
 - endTime
-  - type: xsd:DateTime
+  - type: xsd:dateTime
   - minCount:0
   - maxCount:1
 - environment

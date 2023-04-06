@@ -12,6 +12,6 @@ A buildType is a URI expressing the toolchain, platform, or infrastructure that 
 
 ## Metadata
 
-- name: buildId
+- name: buildType
 - Nature: DataProperty
-- Range: anyURI
+- Range: xsd:anyURI

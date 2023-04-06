@@ -14,4 +14,4 @@ The configSourceUri of a build is the URI of the build configuration, if existin
 
 - name: configSourceUri
 - Nature: DataProperty
-- Range: anyURI
+- Range: xsd:anyURI

@@ -14,4 +14,4 @@ endTime describes the time at which a build stops or finishes. This value is typ
 
 - name: endTime
 - Nature: DataProperty
-- Range: DateTime
+- Range: xsd:dateTime

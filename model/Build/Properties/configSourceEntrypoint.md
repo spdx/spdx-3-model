@@ -32,4 +32,4 @@ The entrypoint of the build is `publish`.
 
 - name: configSourceEntrypoint
 - Nature: DataProperty
-- Range: string
+- Range: xsd:string
