@@ -25,7 +25,7 @@ ExternalIdentifier of type "urlScheme" may be used to identify build logs. Comme
 ## Properties
 
 - buildType
-  - type: anyURI
+  - type: xsd:anyURI
   - minCount: 1
   - maxCount: 1
 - buildId
