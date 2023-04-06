@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# endTime
+# buildEnd
 
 ## Summary
 
@@ -8,10 +8,10 @@ Property that describes the time at which a build stops.
 
 ## Description
 
-endTime describes the time at which a build stops or finishes. This value is typically recorded by the builder.
+buildEnd describes the time at which a build stops or finishes. This value is typically recorded by the builder.
 
 ## Metadata
 
-- name: endTime
+- name: buildEnd
 - Nature: DataProperty
 - Range: xsd:dateTime
