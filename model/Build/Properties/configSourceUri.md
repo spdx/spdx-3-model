@@ -8,8 +8,8 @@ Property that describes the URI of the build configuration source file.
 
 ## Description
 
-The configSourceUri of a build is the URI of the build configuration, if existing, used by a toolchain or platform. For example, a build triggered by a github action has a configSourceUri as the URL of the YAML file for the GitHub repository.
-
+If a build configuration exists for the toolchain or platform performing the build, the configSourceUri of a build is the URI of that build configuration. For example, a build triggered by a GitHub action is defined by a build configuration YAML file. In this case, the configSourceUri is the URL of that YAML file. 
+m
 ## Metadata
 
 - name: configSourceUri
