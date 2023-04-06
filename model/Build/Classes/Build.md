@@ -14,7 +14,7 @@ provides an element from which relationships can be created to describe the buil
 Definitions of "BuildType", "ConfigSource", "Parameters" and "Environment" follow
 those defined in [SLSA provenance](https://slsa.dev/provenance/v0.2).
 
-ExternalIdentifier of type "urlScheme" may be used to identify build logs. Comment should be "LogReference".
+ExternalIdentifier of type "urlScheme" may be used to identify build logs. In this case, the comment of the ExternalIdentifier should be "LogReference".
 
 ## Metadata
 
