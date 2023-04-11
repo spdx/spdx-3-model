@@ -8,7 +8,7 @@ The field describes what sensors were used for collecting the data (if any senso
 
 ## Description
 
-Each sensor and their callibration value in form Sensor:calibration is noted.
+The sensor and its calibration value in the form Sensor:calibration is noted.
 
 ## Metadata
 
