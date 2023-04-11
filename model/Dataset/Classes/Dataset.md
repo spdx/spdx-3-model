@@ -8,13 +8,13 @@ Provides information about the fields in the Dataset profile.
 
 ## Description
 
-Metadata information that can be added to a a dataset that maybe used in a software or to train/test an AI package
+Metadata information that can be added to a dataset that may be used in a software or to train/test an AI package.
 
 ## Metadata
 
 - name: Dataset
 - SubclassOf: Software:Package
-- Instatiability: Concrete
+- Instantiability: Concrete
 
 ## Properties
 

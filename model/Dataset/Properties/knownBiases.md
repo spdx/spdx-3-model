@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-The field records that biases that the dataset is known to encompass. 
+Records the biases that the dataset is known to encompasses.
 
 ## Description
 
-Free form text field that describes the different biases that the dataset encompasses. 
+KnownBiases is a free form text field that describes the different biases that the dataset encompasses.
 
 ## Metadata
 

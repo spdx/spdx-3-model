@@ -1,14 +1,14 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# anonymizationnMethodUsed
+# anonymizationMethodUsed
 
 ## Summary
 
-The field describes the methods used to anonymmize the dataset (of fields in the dataset).
+Describes the anonymization methods used.
 
 ## Description
 
-The field describes the anonymization methods used.
+AnonymizationMethodUsed describes the methods used to anonymize the dataset (of fields in the dataset).
 
 ## Metadata
 

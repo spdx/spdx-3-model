@@ -4,11 +4,13 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-The field describes potentially noisy elements of the dataset.
+Describes potentially noisy elements of the dataset.
 
 ## Description
 
-The field describes what kinds of noises that a dataset might encompass. The field uses free form text to specify the fields or the samples that might be noisy. Alternatively, the field can also be used to describe various noises that could impact the whole dataset.
+DatasetNoise describes what kinds of noises a dataset might encompass.
+The field uses free form text to specify the fields or the samples that might be noisy.
+Alternatively, it can also be used to describe various noises that could impact the whole dataset.
 
 ## Metadata
 
