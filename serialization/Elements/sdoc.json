@@ -1,0 +1,22 @@
+{
+  "id": "urn:spdx.dev:docs/sdoc",
+  "type": {
+    "spdxDocument": {
+      "namespace": "urn:spdx.dev:",
+      "element": [
+        "urn:spdx.dev:null-sbom",
+        "urn:spdx.dev:iamwillbar",
+        "urn:spdx.dev:spdx-tools-3.0.1",
+        "urn:spdx.dev:docs/sdoc"
+      ],
+      "downloadLocation": "https://spdx.dev/docs/sdoc-v1.0.json"
+    }
+  },
+  "name": "The Null SBOM",
+  "verifiedUsing": [{"hash": {"sha256": "14a657a7118a333cc1fdc6af05071a59cda067fd11130d4ee5d6d47c26e7863f"}}],
+  "created": "2022-05-02T20:28:00.000Z",
+  "creator": ["urn:spdx.dev:iamwillbar"],
+  "specVersion": "3.0",
+  "profile": ["core"],
+  "dataLicense": "CC0-1.0"
+}
