@@ -8,12 +8,11 @@ The field describes the size of the dataset.
 
 ## Description
 
-The field describes how a large a dataset is. 
-The size can be specified using any unit (e.g., Bytes, MegaBits). 
-The field should be specified as <Value Unit> (e.g., 1000 MB).
+The field describes how large a dataset is. 
+The size is to be measured in bytes.
 
 ## Metadata
 
 - name: datasetSize
 - Nature: DataProperty
-- Range: xsd:string
+- Range: xsd:nonNegativeInteger
