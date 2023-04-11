@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-The field describes what sensors where used for collecting the data (if any sensors were used) 
+The field describes what sensors were used for collecting the data (if any sensors were used).
 
 ## Description
 
