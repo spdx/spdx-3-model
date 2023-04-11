@@ -14,5 +14,4 @@ CreationInfo provides information about the creation of the Element.
 
 - name: creationInfo
 - Nature: DataProperty
-- Range: CreationInformation
-
+- Range: CreationInfo

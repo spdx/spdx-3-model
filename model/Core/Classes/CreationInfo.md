@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# CreationInformation
+# CreationInfo
 
 ## Summary
 
@@ -8,11 +8,11 @@ Provides information about the creation of the Element.
 
 ## Description
 
-The CreationInformation provides information about who created the Element, and when and how it was created. 
+The CreationInfo provides information about who created the Element, and when and how it was created. 
 
 ## Metadata
 
-- name: CreationInformation
+- name: CreationInfo
 - Instantiability: Concrete
 
 ## Properties

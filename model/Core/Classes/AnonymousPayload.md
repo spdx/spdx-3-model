@@ -19,7 +19,7 @@ TODO
 ## Properties
 
 - creationInfo
-  - type: CreationInformation
+  - type: CreationInfo
   - minCount: 0
   - maxCount: 1
 - namespaces
