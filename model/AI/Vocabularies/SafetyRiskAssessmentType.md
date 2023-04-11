@@ -4,11 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Categories of safety risk impact of application ie. serious, high, medium, low.
+Categories of safety risk impact of the application.
 
 ## Description
 
-Describes the different safety risk type values that can be used to describe the safety risk of the AI software
+Lists the different safety risk type values that can be used to describe the safety risk of AI software
+according to [Article 20 of Regulation 765/2008/EC](https://ec.europa.eu/docsroom/documents/17107/attachments/1/translations/en/renditions/pdf).
 
 ## Metadata
 
@@ -16,7 +17,7 @@ Describes the different safety risk type values that can be used to describe the
 
 ## Entries
 
-- serious: The highest level of risk that is contained for a AI software as given by [Article 20 of Regulation 765/2008/EC](https://ec.europa.eu/docsroom/documents/17107/attachments/1/translations/en/renditions/pdf).
-- high: The second highest level of risk posed by the AI software as given by [Article 20 of EC Regulation  No 765/2008](https://ec.europa.eu/docsroom/documents/17107/attachments/1/translations/en/renditions/pdf). 
-- medium: The third highest level of risk as given by [Article 20 of EC Regulation No 765/2008](https://ec.europa.eu/docsroom/documents/17107/attachments/1/translations/en/renditions/pdf). 
-- low: Low/no risk is contained in the AI software.
+- serious: The highest level of risk posed by an AI software.
+- high: The second-highest level of risk posed by an AI software. 
+- medium: The third-highest level of risk posed by an AI software. 
+- low: Low/no risk is posed by the AI software.

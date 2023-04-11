@@ -4,11 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Captures if a human is in the loop.
+States if a human is involved in the decisions of the AI software.
 
 ## Description
 
-It is a field of presence type that indicates if a human is in the loop in the AI software for any of the decisions or if it's fully automatic.
+AutonomyType indicates if a human is involved in any of the decisions of the AI software
+or if that software is fully automatic.
 
 ## Metadata
 
