@@ -8,7 +8,7 @@ The field describes if any sensitive personal (or personally identifiable) infor
 
 ## Description
 
-The field takes either a Yes, None or no assertion value indicating the presence of sentive personal or personally identifiable data. 
+The field takes either a Yes, None or no assertion value indicating the presence of sensitive personal or personally identifiable data.
 
 ## Metadata
 
