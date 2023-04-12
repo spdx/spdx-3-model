@@ -13,6 +13,6 @@ A key-value pair can be used to implement a dictionary which associates a key wi
 
 ## Metadata
 
-- name: key
+- name: value
 - Nature: DataProperty
 - Range: xsd:string
