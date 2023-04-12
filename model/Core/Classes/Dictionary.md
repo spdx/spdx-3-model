@@ -8,7 +8,7 @@ A key with an associated value.
 
 ## Description
 
-The class used for implementing a generic string mapping (also known as associative arrays, dictionaries, and hash maps) in SPDX.  To implement a dictionary, this class would be used in a collection with unique keys. Each DictionaryEntry would contain a key-value pair which maps the key to its associated value.  Both the key and the value are strings.
+The class used for implementing a generic string mapping (also known as associative arrays, dictionaries, and hash maps) in SPDX.  Each DictionaryEntry contains a key-value pair which maps the key to its associated value.  Both the key and the value are strings.  To implement a dictionary, this class is to be used in a collection with unique keys.
 
 ## Metadata
 
