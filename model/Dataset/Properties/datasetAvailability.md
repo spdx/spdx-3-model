@@ -14,4 +14,4 @@ Some datasets are publicly available and can be downloaded directly. Others are 
 
 - name: datasetAvailability
 - Nature: DataProperty
-- Range: xsd:string
+- Range: DatasetAvailabilityType
