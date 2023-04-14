@@ -27,7 +27,7 @@ Metadata information that can be added to a dataset that may be used in a softwa
   - minCount: 0
   - maxCount: 1
 - datasetSize
-  - type: xsd:string
+  - type: xsd:nonNegativeInteger
   - minCount: 0
   - maxCount: 1
 - datasetNoise
