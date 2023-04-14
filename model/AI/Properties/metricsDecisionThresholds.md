@@ -17,4 +17,4 @@ Each decision threshold should match with the metrics field defined in the AI Pa
 
 - name: metricsDecisionThresholds
 - Nature: DataProperty
-- Range: xsd:string
+- Range: /Core/DictionaryEntry

@@ -16,4 +16,4 @@ accuracy, characteristics of the tested population, quality, fairness, explainab
 
 - name: metrics
 - Nature: DataProperty
-- Range: xsd:string
+- Range: /Core/DictionaryEntry

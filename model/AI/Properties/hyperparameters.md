@@ -16,4 +16,4 @@ for example the optimization and learning rate used during the training of the m
 
 - name: hyperparameters
 - Nature: DataProperty
-- Range: xsd:string
+- Range: /Core/DictionaryEntry
