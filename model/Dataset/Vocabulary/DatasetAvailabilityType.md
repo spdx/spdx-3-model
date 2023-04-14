@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# DatasetAvailability
+# DatasetAvailabilityType
 
 ## Summary
 
@@ -8,11 +8,11 @@ Availability of dataset
 
 ## Description
 
-Describes the availability of a dataset, indicating whether the dataset can be directly downloaded, can be assembled using a script for scraping the data, is only available after a clickthrough or a registration form.
+Describes the possible types of availability of a dataset, indicating whether the dataset can be directly downloaded, can be assembled using a script for scraping the data, is only available after a clickthrough or a registration form.
 
 ## Metadata
 
-- name: DatasetAvailability
+- name: DatasetAvailabilityType
 
 ## Entries
 
