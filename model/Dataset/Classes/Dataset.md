@@ -13,7 +13,7 @@ Metadata information that can be added to a dataset that may be used in a softwa
 ## Metadata
 
 - name: Dataset
-- SubclassOf: Software:Package
+- SubclassOf: /Software/Package
 - Instantiability: Concrete
 
 ## Properties
