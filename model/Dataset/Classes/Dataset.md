@@ -39,7 +39,7 @@ Metadata information that can be added to a a dataset that maybe used in a softw
   - minCount: 0
   - maxCount: 1
 - sensors
-  - type: xsd:string
+  - type: /Core/DictionaryEntry
   - minCount: 0
 - knownBiases
   - type: xsd:string
