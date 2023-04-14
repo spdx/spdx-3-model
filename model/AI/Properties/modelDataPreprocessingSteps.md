@@ -4,11 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Field captures all the preprocessing steps done before the model training
+Describes all the preprocessing steps applied to the training data before the model training.
 
 ## Description
 
-This is a free form text field that describes the preprocessing steps done to the data before training the model(s) contained in the AI software
+ModelDataPreprocessingSteps is a free form text that describes the preprocessing steps
+applied to the training data before training of the model(s) contained in the AI software.
 
 ## Metadata
 

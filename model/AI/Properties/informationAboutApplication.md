@@ -4,11 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Field describe the features used and other relevant information about the AI software in addition to the model.
+Provides relevant information about the AI software, not including the model description.
 
 ## Description
 
-A text field that describes any relevant information in free form about how the AI model is used inside the software, any relevant pre-processing steps, third party APIs etc. 
+InformationAboutApplication describes any relevant information in free form text about 
+how the AI model is used inside the software, as well as any relevant pre-processing steps, third party APIs etc. 
 
 ## Metadata
 

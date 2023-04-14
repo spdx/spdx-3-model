@@ -4,11 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Field captures the amount of energy consumed to build this AI package 
+Indicates the amount of energy consumed to build the AI package.
 
 ## Description
 
-Text field that captures the energy consumption during training and operation of the AI model. a.k.a training energy consumption, inference energy consumption
+EnergyConsumption captures the amount of energy needed to train and operate the AI model. 
+This value is also known as training energy consumption or inference energy consumption.
 
 ## Metadata
 

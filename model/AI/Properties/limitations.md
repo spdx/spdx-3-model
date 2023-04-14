@@ -4,11 +4,13 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Text field that captures the limitations of the AI software.
+Captures the limitations of the AI software.
 
 ## Description
 
-Field captures any limitations of the AI Package (or of the AI models present in the AI package) one wishes to note down. For instance, if the AI package cannot be used on datasets from certain demography. The limitations are expressed as free form text.
+Limitations captures limitations of the AI Package (or of the AI models present in the AI package),
+expressed as free form text. Note that this is not guaranteed to be exhaustive.
+For instance, a limitation might be that the AI package cannot be used on datasets from a certain demography.
 
 ## Metadata
 
