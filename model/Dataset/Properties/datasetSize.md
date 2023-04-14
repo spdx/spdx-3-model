@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-The field describes the size of the dataset.
+Captures the size of the dataset.
 
 ## Description
 
-The field describes how large a dataset is. 
+DatasetSize Captures how large a dataset is.
 The size is to be measured in bytes.
 
 ## Metadata

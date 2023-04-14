@@ -4,11 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-The field describes what sensors were used for collecting the data (if any sensors were used).
+Describes what sensors were used for collecting the data.
 
 ## Description
 
-The sensor and its calibration value in the form Sensor:calibration is noted.
+Sensors describes what sensors, if any, were used for collecting the data
+and what their calibration values were.
 
 ## Metadata
 

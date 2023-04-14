@@ -4,11 +4,13 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-The field describes how the dataset was collected.
+Describes how the dataset was collected.
 
 ## Description
 
-The field describes how a dataset was collected (e.g., the sources from which a dataset was scrapped, or the interview protocol used for data collection)
+DataCollectionProcess describes how a dataset was collected.
+Examples include the sources from which a dataset was scrapped or
+the interview protocol that was used for data collection.
 
 ## Metadata
 
