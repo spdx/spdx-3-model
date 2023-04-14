@@ -58,3 +58,7 @@ Metadata information that can be added to a dataset that may be used in a softwa
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
+- datasetAvailability
+  - type: DatasetAvailabilityType
+  - minCount: 0
+  - maxCount: 1
