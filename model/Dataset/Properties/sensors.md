@@ -14,4 +14,4 @@ The sensor and its calibration value in the form Sensor:calibration is noted.
 
 - name: sensors
 - Nature: DataProperty
-- Range: xsd:string
+- Range: /Core/DictionaryEntry
