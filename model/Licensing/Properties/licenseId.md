@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-The ID of the license.
+TODO
 
 ## Description
 
-This field provides the ID of the license.
+TODO
 
 ## Metadata
 
