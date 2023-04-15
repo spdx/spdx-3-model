@@ -29,6 +29,6 @@ left to the consumer of SPDX data to determine for themselves.
 
 ## Properties
 
-- child
+- member
   - type: LicenseExpression
   - minCount: 2
