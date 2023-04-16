@@ -9,8 +9,6 @@ copyright text.
 
 ## Description
 
-**TBD** whether these details should be defined in the copyrightText property instead of here
-
 A NoAssertionText is the primary value that is used by a copyrightText field
 that indicates that the SPDX data creator is making no assertion about whether
 any copyright information is present, or what its contents are if it is

@@ -8,8 +8,6 @@ Concrete class representing an assertion that no copyright text is present.
 
 ## Description
 
-**TBD** whether these details should be defined in the copyrightText property instead of here
-
 A NoneText is the primary value that is used by a copyrightText field that
 indicates that the corresponding software Package, File or Snippet does not
 contain any copyright information.

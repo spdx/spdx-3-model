@@ -11,8 +11,6 @@ A license that is listed on the SPDX License List.
 A ListedLicense represents a License that is listed on the SPDX License List
 at https://spdx.org/licenses.
 
-**TBD** whether to define the meaning and purpose for each of the properties
-
 ## Metadata
 
 - name: ListedLicense

@@ -11,11 +11,6 @@ Abstract class for the portion of a LicenseExpression representing a license.
 A License represents a license text, whether listed on the SPDX License List
 (ListedLicense) or defined by an SPDX data creator (CustomLicense).
 
-**TBD** whether to define the meaning and purpose for each of the properties
-
-**TBD** whether licenseID should be a separately defined property, rather
-than xsd:string
-
 ## Metadata
 
 - name: License
