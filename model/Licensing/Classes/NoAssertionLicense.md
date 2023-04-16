@@ -9,8 +9,6 @@ information.
 
 ## Description
 
-**TBD** whether the meaning of NoAssertionLicense in the context of the concludedLicense and declaredLicense properties should be here rather than in those property definitions
-
 A NoAssertionLicense is the primary value that is used by a concludedLicense
 or declaredLicense field that indicates that the SPDX data creator is making
 no assertion about the license information for the corresponding software

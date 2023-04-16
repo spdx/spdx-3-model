@@ -9,8 +9,6 @@ present, as applicable.
 
 ## Description
 
-**TBD** whether the meaning of NoneLicense in the context of the concludedLicense and declaredLicense properties should be here rather than in those property definitions
-
 A NoneLicense is the primary value that is used by a concludedLicense or
 declaredLicense field that indicates the absence of license information from
 the corresponding software Package, File or Snippet.
