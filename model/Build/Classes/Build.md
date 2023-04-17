@@ -16,6 +16,8 @@ those defined in [SLSA provenance](https://slsa.dev/provenance/v0.2).
 
 ExternalIdentifier of type "urlScheme" may be used to identify build logs. In this case, the comment of the ExternalIdentifier should be "LogReference".
 
+Note that buildStart and buildEnd are optional, and may be omitted to simplify creating reproducible builds.
+
 ## Metadata
 
 - name: Build
