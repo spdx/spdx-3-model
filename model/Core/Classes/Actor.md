@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-An individually-identified Person, Organization or SoftwareAgent
+An individually-identified Person, Organization or SoftwareAgent.
 
 ## Description
 
