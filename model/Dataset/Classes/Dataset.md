@@ -21,7 +21,7 @@ Metadata information that can be added to a dataset that may be used in a softwa
 - dataCollectionProcess
   - type: xsd:string
   - minCount: 0
-  - maxCount:1
+  - maxCount: 1
 - intendedUse
   - type: xsd:string
   - minCount: 0
