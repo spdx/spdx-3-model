@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-An individual identifier in RFC 822 email address format
+An individual identifier in RFC 822 email address format.
 
 ## Description
 
