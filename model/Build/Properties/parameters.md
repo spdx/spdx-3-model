@@ -14,5 +14,5 @@ parameters is a key-value map of all build parameters and their values that were
 
 - name: parameters
 - Nature: DataProperty
-- Range: map<string>string
+- Range: /Core/DictionaryEntry
 
