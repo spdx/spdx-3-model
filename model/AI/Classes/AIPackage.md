@@ -41,7 +41,7 @@ Metadata information that can be added to a package to describe an AI applicatio
   - minCount: 0
   - maxCount: 1
 - hyperparameters
-  - type: xsd:string
+  - type: /Core/DictionaryEntry
   - minCount: 0
 - dataPreprocessingSteps
   - type: xsd:string
@@ -56,10 +56,10 @@ Metadata information that can be added to a package to describe an AI applicatio
   - minCount: 0
   - maxCount: 1
 - metricsDecisionThresholds
-  - type: xsd:string
+  - type: /Core/DictionaryEntry
   - minCount: 0
 - metrics
-  - type: xsd:string
+  - type: /Core/DictionaryEntry
   - minCount: 0
 - domain
   - type: xsd:string
