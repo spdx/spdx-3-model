@@ -45,15 +45,17 @@ Metadata information that can be added to a dataset that may be used in a softwa
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
-- sensitivePersonalInformationType
+- sensitivePersonalInformation
   - type: PresenceType
   - minCount: 0
+  - maxCount: 1
 - anonymizationMethodUsed
   - type: xsd:string
   - minCount: 0
-- confidentialityLevelType
+- confidentialityLevel
   - type: ConfidentialityLevelType
   - minCount: 0
+  - maxCount: 1
 - datasetUpdateMechanism
   - type: xsd:string
   - minCount: 0
