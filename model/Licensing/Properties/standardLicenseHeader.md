@@ -4,13 +4,13 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A standardLicenseHeader provides a License author's preferred text to
-indicate that a file is covered by the License.
+Provides a License author's preferred text to indicate that a file is covered
+by the License.
 
 ## Description
 
 A standardLicenseHeader contains the plain text of the License author's
-preferred language to be used, typically in a source code file's header
+preferred wording to be used, typically in a source code file's header
 comments or similar location, to indicate that the file is subject to
 the specified License.
 

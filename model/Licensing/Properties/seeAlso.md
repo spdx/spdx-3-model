@@ -4,8 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A seeAlso contains a URL where the License or LicenseException can be found
-in use.
+Contains a URL where the License or LicenseException can be found in use.
 
 ## Description
 

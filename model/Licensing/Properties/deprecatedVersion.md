@@ -4,8 +4,8 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-deprecatedVersion specifies the SPDX License List version in which this
-license or exception identifier was deprecated.
+Specifies the SPDX License List version in which this license or exception
+identifier was deprecated.
 
 ## Description
 

@@ -4,15 +4,13 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A member is a license expression participating in a license set.
+A license expression participating in a license set.
 
 ## Description
 
-A member is a license expression participating
-in a conjuctive (of type ConjunctiveLicenseSet)
-or a disjunctive (of type DisjunctiveLicenseSet)
+A member is a license expression participating in a conjuctive (of type
+ConjunctiveLicenseSet) or a disjunctive (of type DisjunctiveLicenseSet)
 license set.
-
 
 ## Metadata
 

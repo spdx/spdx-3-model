@@ -4,8 +4,8 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A licenseComment records any background information or analysis relevant to
-determining the concludedLicense for a software Package, File or Snippet.
+Records any background information or analysis relevant to determining the
+concludedLicense for a software Package, File or Snippet.
 
 ## Description
 

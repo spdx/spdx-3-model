@@ -4,9 +4,8 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A declaredLicense identifies the license information actually found in the
-software Package, File or Snippet, for example as detected by use of
-automated tooling.
+Identifies the license information actually found in the software Package,
+File or Snippet, for example as detected by use of automated tooling.
 
 ## Description
 

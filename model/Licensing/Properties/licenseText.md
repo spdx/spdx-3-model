@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A licenseText identifies the full text of a License.
+Identifies the full text of a License.
 
 ## Description
 

@@ -4,14 +4,14 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-obsoletedBy specifies the licenseId that is preferred to be used in place of a
-deprecated License or LicenseException.
+Specifies the licenseId that is preferred to be used in place of a deprecated
+License or LicenseException.
 
 ## Description
 
 An obsoletedBy value for a deprecated License or LicenseException specifies
 the licenseId of the replacement License or LicenseException that is preferred
-to be used in its place. It should use the same format as is specified for a
+to be used in its place. It should use the same format as specified for a
 licenseId.
 
 The License's or LicenseException's comment value may include more information

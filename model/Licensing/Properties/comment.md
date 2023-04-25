@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A comment identifies general comments about the License or LicenseException.
+Identifies general comments about the License or LicenseException.
 
 ## Description
 
