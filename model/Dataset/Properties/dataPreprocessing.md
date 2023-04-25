@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# dataPreprocessingSteps
+# dataPreprocessing
 
 ## Summary
 
@@ -8,11 +8,11 @@ Describes the preprocessing steps that were applied to the raw data to create th
 
 ## Description
 
-DataPreprocessingSteps describes the various preprocessing steps
+DataPreprocessing describes the various preprocessing steps
 that were applied to the raw data to create the dataset.
 
 ## Metadata
 
-- name: dataPreprocessingSteps
+- name: dataPreprocessing
 - Nature: DataProperty
 - Range: xsd:string
