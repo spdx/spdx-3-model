@@ -26,5 +26,5 @@ components, build process ephemeral data, and other SBOMs.
 of execution behavior in a (potentially simulated) deployment environment.
 - runtime: SBOM generated through instrumenting the system running the software, to capture only components present in the system, as well as external call-outs or dynamically loaded
 components. In some contexts, this may also be referred to as an “Instrumented” or “Dynamic” SBOM.
-- analyzed: SBOM generated through analysis of artifacts (e.g.,cexecutables, packages, containers, and virtual machine images) after its build. Such analysis generally requires a
+- analyzed: SBOM generated through analysis of artifacts (e.g., executables, packages, containers, and virtual machine images) after its build. Such analysis generally requires a
 variety of heuristics. In some contexts, this may also be referred to as a “3rd party” SBOM.
