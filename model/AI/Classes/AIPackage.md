@@ -43,11 +43,11 @@ Metadata information that can be added to a package to describe an AI applicatio
 - hyperparameter
   - type: /Core/DictionaryEntry
   - minCount: 0
-- modelDataPreprocessingSteps
+- modelDataPreprocessing
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
-- modelExplainabilityMechanisms
+- modelExplainability
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
