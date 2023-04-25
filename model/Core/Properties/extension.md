@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# extensions
+# extension
 
 ## Summary
 
@@ -12,5 +12,5 @@ TODO
 
 ## Metadata
 
-- name: extensions
+- name: extension
 
