@@ -19,7 +19,7 @@ ExternalIdentifier of type "urlScheme" may be used to identify build logs. In th
 ## Metadata
 
 - name: Build
-- SubclassOf: Core:Element
+- SubclassOf: /Core/Element
 - Instantiability: Concrete
 
 ## Properties
@@ -39,7 +39,7 @@ ExternalIdentifier of type "urlScheme" may be used to identify build logs. In th
   - type: xsd:anyURI
   - minCount: 0
 - configSourceDigest
-  - type: Hash
+  - type: /Core/Hash
   - minCount: 0
 - parameters
   - type: xsd:map<string>string
