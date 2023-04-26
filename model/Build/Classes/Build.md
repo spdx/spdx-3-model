@@ -44,7 +44,7 @@ Note that buildStart and buildEnd are optional, and may be omitted to simplify c
   - type: Hash
   - minCount: 0
 - parameters
-  - type: xsd:map<string>string
+  - type: /Core/DictionaryEntry
   - minCount: 0
 - buildStart
   - type: xsd:dateTime
@@ -55,5 +55,5 @@ Note that buildStart and buildEnd are optional, and may be omitted to simplify c
   - minCount: 0
   - maxCount: 1
 - environment
-  - type: xsd:map<string>string
+  - type: /Core/DictionaryEntry
   - minCount: 0
