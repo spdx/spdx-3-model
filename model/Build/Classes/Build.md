@@ -21,7 +21,7 @@ Note that buildStart and buildEnd are optional, and may be omitted to simplify c
 ## Metadata
 
 - name: Build
-- SubclassOf: Core:Element
+- SubclassOf: /Core/Element
 - Instantiability: Concrete
 
 ## Properties
@@ -41,7 +41,7 @@ Note that buildStart and buildEnd are optional, and may be omitted to simplify c
   - type: xsd:anyURI
   - minCount: 0
 - configSourceDigest
-  - type: Hash
+  - type: /Core/Hash
   - minCount: 0
 - parameters
   - type: /Core/DictionaryEntry
