@@ -34,14 +34,14 @@ Metadata information that can be added to a dataset that may be used in a softwa
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
-- dataPreprocessingSteps
+- dataPreprocessing
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
-- sensors
+- sensor
   - type: /Core/DictionaryEntry
   - minCount: 0
-- knownBiases
+- knownBias
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
