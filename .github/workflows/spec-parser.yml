@@ -1,6 +1,11 @@
 name: run spec-parser
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   build:
@@ -32,8 +37,8 @@ jobs:
 
       - uses: actions/upload-artifact@v3
         with:
-          name: tst.ttl
-          path: /tmp/spec-parser.out/tst.ttl
+          name: model.ttl
+          path: /tmp/spec-parser.out/model.ttl
 
       - uses: actions/upload-artifact@v3
         with:
@@ -43,9 +48,9 @@ jobs:
       - uses: cachix/install-nix-action@v19
         with:
           nix_path: nixpkgs=channel:nixos-unstable
-      - run: nix-shell '<nixpkgs>' --fallback -p apache-jena --run "riot --out=jsonld /tmp/spec-parser.out/tst.ttl" > /tmp/spec-parser.out/tst.jsonld
+      - run: nix-shell '<nixpkgs>' --fallback -p apache-jena --run "riot --out=jsonld /tmp/spec-parser.out/model.ttl" > /tmp/spec-parser.out/model.jsonld
 
       - uses: actions/upload-artifact@v3
         with:
-          name: tst.jsonld
-          path: /tmp/spec-parser.out/tst.jsonld
+          name: model.jsonld
+          path: /tmp/spec-parser.out/model.jsonld

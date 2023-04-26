@@ -14,7 +14,7 @@ Metadata information that can be added to a package to describe an AI applicatio
 
 - name: AIPackage
 - SubclassOf: /Software/Package
-- Instatiability: Concrete
+- Instantiability: Concrete
 
 ## Properties
 
@@ -28,7 +28,7 @@ Metadata information that can be added to a package to describe an AI applicatio
 - limitations
   - type: xsd:string
   - minCount: 0
-  - maxCount:1
+  - maxCount: 1
 - typeOfModel
   - type: xsd:string
   - minCount: 0
