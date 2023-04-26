@@ -27,11 +27,11 @@ may have been originally created under another license or copied from a place wi
   - type: SoftwarePurpose
   - minCount: 0
 - byteRange
-  - type: positiveIntegerRange
+  - type: /Core/PositiveIntegerRange
   - minCount: 0
   - maxCount: 1
 - lineRange
-  - type: positiveIntegerRange
+  - type: /Core/PositiveIntegerRange
   - minCount: 0
   - maxCount: 1
 
