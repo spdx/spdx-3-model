@@ -25,7 +25,7 @@ TODO This is about the File class.
   - type: SoftwarePurpose
   - minCount: 0
 - contentType
-  - type: MediaType
+  - type: /Core/MediaType
   - minCount: 0
   - maxCount: 1
 

@@ -17,5 +17,5 @@ The choice was made to start the numbering of the lines at 1 to be consistent wi
 
 - name: lineRange
 - Nature: DataProperty
-- Range: positiveIntegerRange
+- Range: /Core/PositiveIntegerRange
 
