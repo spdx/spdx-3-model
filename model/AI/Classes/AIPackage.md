@@ -22,10 +22,10 @@ Metadata information that can be added to a package to describe an AI applicatio
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
-- standardsCompliance
+- standardCompliance
   - type: xsd:string
   - minCount: 0
-- limitations
+- limitation
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
@@ -40,14 +40,14 @@ Metadata information that can be added to a package to describe an AI applicatio
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
-- hyperparameters
+- hyperparameter
   - type: /Core/DictionaryEntry
   - minCount: 0
-- dataPreprocessingSteps
+- modelDataPreprocessing
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
-- modelExplainabilityMechanisms
+- modelExplainability
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
@@ -55,10 +55,10 @@ Metadata information that can be added to a package to describe an AI applicatio
   - type: PresenceType
   - minCount: 0
   - maxCount: 1
-- metricsDecisionThresholds
+- metricDecisionThreshold
   - type: /Core/DictionaryEntry
   - minCount: 0
-- metrics
+- metric
   - type: /Core/DictionaryEntry
   - minCount: 0
 - domain
