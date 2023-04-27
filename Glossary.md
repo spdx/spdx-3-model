@@ -14,11 +14,11 @@ A represention of a scope/set of individual instances of a particular “concept
 
 ## Domain Class
 
-A class representing a concept of primary focus within a given domain. In a graph or serialized set of instance content this would be the granularity of what would be a node in the graph or a top-level object in the serialization set. This is typically similar to the scoping seen in labeled property graphs. In SPDX 3.0, all domain classes are subclasses of Element.
+A class representing a concept of primary focus within a given domain. In a graph or serialized set of instance content this would be the granularity of what would be a node in the graph or a top-level object in the serialization set. This is typically similar to the scoping seen in labeled property graphs.
 
 ## Non-domain Class
 
-A class representing a concept of secondary or tertiary focus within a given domain that is a characterization of some aspect of a domain class. When structuring the graph for a domain use case it is desirable and more practical for the domain graph nodes to only consist of domain class instances and object properties. Any non-domain classes and datatype properties would be considered internal adornments on the domain objects. In SPDX 3.0, all defined classes that are not subclasses of Element are non-domain classes.
+A class representing a concept of secondary or tertiary focus within a given domain that is a characterization of some aspect of a domain class. When structuring the graph for a domain use case it is desirable and more practical for the domain graph nodes to only consist of domain class instances and object properties. Any non-domain classes and datatype properties would be considered internal adornments on the domain objects.
 
 ## Property
 
