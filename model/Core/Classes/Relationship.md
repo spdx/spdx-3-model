@@ -30,6 +30,7 @@ that one Element is related to one or more other Elements in some way.
   - minCount: 1
 - relationshipType
   - type: RelationshipType
+  - minCount: 1
   - maxCount: 1
 - completeness
   - type: RelationshipCompleteness
