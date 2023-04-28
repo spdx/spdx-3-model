@@ -4,8 +4,8 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A copyrightText identifies the text of one or more copyright notices for
-a software Package, File or Snippet, if any.
+Identifies the text of one or more copyright notices for a software Package,
+File or Snippet, if any.
 
 ## Description
 

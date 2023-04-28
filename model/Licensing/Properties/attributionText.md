@@ -4,8 +4,8 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-An attributionText provides a place for the SPDX data creator to record
-acknowledgement text for a software Package, File or Snippet.
+Provides a place for the SPDX data creator to record acknowledgement text for
+a software Package, File or Snippet.
 
 ## Description
 

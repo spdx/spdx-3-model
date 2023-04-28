@@ -4,11 +4,15 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Identifies the full text of a License.
 
 ## Description
 
-TODO
+A licenseText contains the plain text of the License, without templating
+or other similar markup.
+
+Users of the licenseText for a License can apply the SPDX Matching Guidelines
+when comparing it to another text for matching purposes.
 
 ## Metadata
 

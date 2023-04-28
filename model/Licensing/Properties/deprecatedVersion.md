@@ -4,11 +4,14 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Specifies the SPDX License List version in which this license or exception
+identifier was deprecated.
 
 ## Description
 
-TODO
+A deprecatedVersion for a License or LicenseException on the SPDX License List
+specifies which version release of the License List was the first one in which
+it was marked as deprecated.
 
 ## Metadata
 

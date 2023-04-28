@@ -4,8 +4,8 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A concludedLicense identifies the license that that SPDX data creator has
-concluded as governing the software Package, File or Snippet.
+Identifies the license that that SPDX data creator has concluded as governing
+the software Package, File or Snippet.
 
 ## Description
 
