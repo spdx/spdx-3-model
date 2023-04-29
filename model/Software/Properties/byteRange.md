@@ -17,5 +17,5 @@ the byte range at 1 to be consistent with the W3C pointer method vocabulary.
 
 - name: byteRange
 - Nature: DataProperty
-- Range: positiveIntegerRange
+- Range: /Core/PositiveIntegerRange
 

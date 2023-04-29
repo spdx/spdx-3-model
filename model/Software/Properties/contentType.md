@@ -15,5 +15,5 @@ Content type is intrinsic to the Element, independent of how the Element is bein
 
 - name: contentType
 - Nature: DataProperty
-- Range: mediaType
+- Range: /Core/MediaType
 
