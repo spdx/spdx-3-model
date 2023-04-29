@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# SBOMDocumentTypes
+# SBOMDocumentType
 
 ## Summary
 
@@ -13,7 +13,7 @@ An SBOM type describes the most likely type of an SBOM from the producer perspec
 
 ## Metadata
 
-- name: SBOMDocumentTypes
+- name: SBOMDocumentType
 
 ## Entries
 
