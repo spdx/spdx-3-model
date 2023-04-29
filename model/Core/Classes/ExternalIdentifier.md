@@ -31,4 +31,10 @@ that uniquely identifies an Element.
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
-
+- identifierLocator
+  - type: xsd:anyURI
+  - minCount: 0
+- issuingAuthority
+  - type: xsd:anyURI
+  - minCount: 0
+  - maxCount: 1
