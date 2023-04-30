@@ -35,6 +35,7 @@ about the context in which the Element exists.
 - framework: the Element is a software framework
 - install: the Element is used to install software on disk
 - library: the Element is a software library
+- manifest: the Element is a software manifest
 - module: TODOdescription
 - operatingSystem: the Element refers to an operating system
 - other: the Element doesn't fit into any of the other categories
