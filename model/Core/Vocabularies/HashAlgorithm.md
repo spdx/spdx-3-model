@@ -21,8 +21,8 @@ and is a one-way function, that is, a function which is practically infeasible t
 - blake2b384: TODOdescription
 - blake2b512: TODOdescription
 - blake3: TODOdescription
-- crystals_kyber: TODOdescription
-- crystals_dilithium: TODOdescription
+- crystalsKyber: TODOdescription
+- crystalsDilithium: TODOdescription
 - falcon: TODOdescription
 - md2: TODOdescription
 - md4: TODOdescription
@@ -40,5 +40,5 @@ and is a one-way function, that is, a function which is practically infeasible t
 - sha512: TODOdescription
 - spdxPvcSha1: TODOdescription
 - spdxPvcSha256: TODOdescription
-- sphincs+: TODOdescription
+- sphincsPlus: TODOdescription
 
