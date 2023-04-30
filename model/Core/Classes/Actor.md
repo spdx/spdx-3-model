@@ -18,3 +18,7 @@ Actor is a grouping of identifying characteristics unique to an individual perso
 
 ## Properties
 
+- identifier
+  - type: Email
+  - minCount: 0
+  - maxCount: 1
