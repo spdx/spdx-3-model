@@ -18,5 +18,6 @@ Describes the different confidentiality levels as given by the [Traffic Light Pr
 
 - Red: Data points in the dataset are highly confidential and can only be shared with named recipients.
 - Amber: Data points in the dataset can be shared only with specific organizations and their clients on a need to know basis.
-- Green: Dataset can be shared community wide.
+- Green: Dataset can be shared within a community of peers and partners.
+- Clear: Dataset may be distributed freely, without restriction.
 
