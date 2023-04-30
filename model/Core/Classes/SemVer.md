@@ -4,11 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A String constrained to the SemVer 2.0.0 specification.
+A string constrained to the SemVer 2.0.0 specification.
 
 ## Description
 
-The semantic version is a String constrained to the SemVer 2.0.0 specification.
+The semantic version is a string
+that is following the specification of [Semantic Versioning 2.0.0](https://semver.org/).
 
 ## Metadata
 
@@ -16,4 +17,8 @@ The semantic version is a String constrained to the SemVer 2.0.0 specification.
 - SubclassOf: xsd:string
 
 ## Properties
+
+## Format
+
+- pattern: ^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$
 
