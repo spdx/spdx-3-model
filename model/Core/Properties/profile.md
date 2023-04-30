@@ -14,5 +14,5 @@ This field provides information about which profiles the Element belongs to.
 
 - name: profile
 - Nature: DataProperty
-- Range: ProfileIdentifier
+- Range: ProfileIdentifierType
 
