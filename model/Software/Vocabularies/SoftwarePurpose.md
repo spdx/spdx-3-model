@@ -28,15 +28,18 @@ about the context in which the Element exists.
 - data: TODOdescription
 - device: the Element refers to a chipset, processor, or electronic board
 - documentation: TODOdescription
+- evidence: the Element is the evidence that a specification or requirement has been fulfilled
 - executable: TODOdescription
 - file: the Element is a single file which can be independently distributed (configuration file, statically linked binary, Kubernetes deployment, etc)
 - firmware: the Element provides low level control over a device's hardware
 - framework: the Element is a software framework
 - install: the Element is used to install software on disk
 - library: the Element is a software library
+- manifest: the Element is a software manifest
 - module: TODOdescription
 - operatingSystem: the Element refers to an operating system
 - other: the Element doesn't fit into any of the other categories
 - patch: TODOdescription
+- requirement: the Element provides a requirement needed as input for another Element
 - source: the Element is a collection of source files
-
+- specification: the Element is a plan, guideline or strategy how to create, perform or analyse an application
