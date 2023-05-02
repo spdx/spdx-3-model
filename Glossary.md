@@ -32,11 +32,11 @@ A representation of a relationship between a class (definition or instance) and 
 
 A representation of a relationship between a class (definition or instance) and some conceptual (class-based) descriptive characterization of the class. In other words, it is a relationship between one class and another class.
 
-## Domain
+## Property Domain
 
 The class at the root of a property relationship. In other words, the class being characterized.
 
-## Range
+## Property Range
 
 The class or literal datatype of the value of a property relationship.
 
