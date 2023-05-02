@@ -49,6 +49,4 @@ and inter-relatable content objects.
   - type: ExternalReference
 - externalIdentifier
   - type: ExternalIdentifier
-- extension
-  - type: Extension
 
