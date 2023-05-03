@@ -19,13 +19,6 @@ may have been originally created under another license or copied from a place wi
 
 ## Properties
 
-- contentIdentifier
-  - type: xsd:anyURI
-  - minCount: 0
-  - maxCount: 1
-- snippetPurpose
-  - type: SoftwarePurpose
-  - minCount: 0
 - byteRange
   - type: /Core/PositiveIntegerRange
   - minCount: 0

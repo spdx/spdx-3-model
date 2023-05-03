@@ -17,13 +17,6 @@ TODO This is about the File class.
 
 ## Properties
 
-- contentIdentifier
-  - type: xsd:anyURI
-  - minCount: 0
-  - maxCount: 1
-- filePurpose
-  - type: SoftwarePurpose
-  - minCount: 0
 - contentType
   - type: /Core/MediaType
   - minCount: 0
