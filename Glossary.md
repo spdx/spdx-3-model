@@ -72,3 +72,7 @@ The process of translating an abstract logical data structure into a format that
 
 A process that takes data in any valid form (e.g., various serializations of SPDX like json-ld, yaml, xml, turtle, etc.) and transforms it into a single consistent normalized deterministic and reproducible form. Such a canonical form normalizes things like ordering, formatting, choices, etc.
 
+## Agent
+
+A user or organization performing an action. It may also refer to a software agent
+or an identity such as a service account.
