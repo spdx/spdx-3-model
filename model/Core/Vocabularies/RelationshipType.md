@@ -66,6 +66,14 @@ Build Profile specific RelationshipType descriptions can be found [here](https:/
 - buildInvokedBy: Agent that invoked the build
 - buildOnBehalfOf: Actor for which buildInvokedBy is acting on behalf of
 - buildHostOf: Element in which the build instance runs on
+- hasAssociatedVulnerability: (Security) Used to associate a security vulnerability with a software artifact
+- coordinatedBy: (Security) Used to identify the vendor, researcher, or consumer agent performing coordination for a vulnerability
+- exploitCreatedBy: (Security) Designates an agent has created an exploit against a vulnerability
+- fixedBy: (Security) Designates a vulnerability has been fixed by an agent
+- foundBy: (Security) Designates an agent was the original discoverer of a security vulnerability
+- publishedBy: (Security) Designates the agent that made a vulnerability record available for public use or reference
+- reportedBy: (Security) Designates the agent that first reported a vulnerability to the project, vendor, or tracking database for formal identification 
+- republishedBy: (Security) Designates the agent that tracked, aggregated, and/or enriched vulnerability details to improve context (i.e. NVD)
 - affects: (Security/VEX) Designates one or more elements as affected by a vulnerability
 - doesNotAffect: (Security/VEX) Specifies a vulnerability has no impact on one or more elements
 - fixedIn: (Security/VEX) A vulnerability has been fixed in one or more elements
