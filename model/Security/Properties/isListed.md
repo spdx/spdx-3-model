@@ -14,5 +14,5 @@ A listed is TODO
 
 - name: listed
 - Nature: DataProperty
-- Range: ExploitCatalogListedType
+- Range: Boolean
 

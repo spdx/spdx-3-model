@@ -1,0 +1,74 @@
+SPDX-License-Identifier: Community-Spec-1.0
+
+# VexNotAffectedVulnAssessmentRelationship
+
+## Summary
+
+Links a vulnerability and one or more elements designating the latter as products
+not affected by the vulnerability.
+
+## Description
+
+VexNotAffectedVulnAssessmentRelationship connects a vulnerability and a number
+of elements desigating them as products not affected by the vulnerability.
+This relationship corresponds to the VEX not_affected status.
+
+## Constraints
+
+When linking elements using a VexNotVulnAffectedAssessmentRelationship, the
+following requirements must be observed:
+
+* Relating elements with a VexNotAffectedVulnAssessmentRelationship is restricted
+to the doesNotAffect relationship type.
+* The from: end of the relationship must be a /Security/Vulnerability classed
+element.
+* Both impactStatement and justification properties have a cardinality of
+0..1 making them optional. Nevertheless, to produce a valid VEX not_affected
+statement, one of them MUST be defined. This is specfied in the Minimum Elements
+for VEX.
+
+## Metadata
+
+- name: VexNotAffectedVulnAssessmentRelationship
+- SubclassOf:  /Security/VexVulnAssessmentRelationship
+- Instantiability: Concrete
+
+## Properties
+
+- relationshipType
+  - type: relationshipType
+  - value: doesNotAffect
+- justification
+  - type: justification
+  - minCount: 0
+  - maxCount: 1
+- impactStatement
+  - type: xsd:string
+  - minCount: 0
+  - maxCount: 1
+- impactStatementTime
+  - type: xsd:dateTime
+  - minCount: 0
+  - maxCount: 1
+
+## Syntax
+
+=== "JSON"
+
+    ```json
+    {
+      "@type": "VexNotAffectedVulnAssessmentRelationship",
+      "@id": "urn:spdx.dev:vex-not-affected-1",
+      "relationshipType": "doesNotAffect",
+      "from": "urn:spdx.dev:vuln-cve-2020-28498",
+      "to": "urn:product-acme-application-1.3",
+      "assessedElement": "urn:npm-elliptic-6.5.2",
+      "justification": "componentNotPresent",
+      "impactStatement": "Not using this vulnerable part of this library.",
+      "creationInfo": {
+        "@type": "CreationInformation",
+        "created": "2021-03-09T21:02:13Z",
+        "createdBy": ["urn:spdx.dev:agent-jason-doe"]
+      }
+    }
+    ```
