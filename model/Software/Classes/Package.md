@@ -28,13 +28,6 @@ Note that some of these could be represented in SPDX as a file as well.
 
 ## Properties
 
-- contentIdentifier
-  - type: xsd:anyURI
-  - minCount: 0
-  - maxCount: 1
-- packagePurpose
-  - type: SoftwarePurpose
-  - minCount: 0
 - packageVersion
   - type: xsd:string
   - minCount: 0
