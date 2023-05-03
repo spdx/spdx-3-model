@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# VexAffectedVulnerabilityCategorization
+# VexAffectedVulnAssessmentRelationship
 
 ## Summary
 
@@ -12,8 +12,8 @@ An VexAffectedVulnerabilityCategorization is TODO
 
 ## Metadata
 
-- name: VexAffectedVulnerabilityCategorization
-- SubclassOf: VexVulnerabilityCategorization
+- name: VexAffectedVulnAssessmentRelationship
+- SubclassOf: /Security/VexVulnAssessmentRelationship 
 - Instantiability: Concrete
 
 ## Properties
@@ -22,4 +22,3 @@ An VexAffectedVulnerabilityCategorization is TODO
   - type: xsd:string
   - minCount: 1
   - maxCount: 1
-

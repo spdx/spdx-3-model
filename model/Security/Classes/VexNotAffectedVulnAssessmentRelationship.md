@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# VexNotAffectedVulnerabilityCategorization
+# VexNotVulnAffectedAssessmentRelationship
 
 ## Summary
 
@@ -8,12 +8,12 @@ TODO
 
 ## Description
 
-An VexNotAffectedVulnerabilityCategorization is TODO
+An VexNotVulnAffectedAssessment is TODO
 
 ## Metadata
 
-- name: VexNotAffectedVulnerabilityCategorization
-- SubclassOf: VexVulnerabilityCategorization
+- name: VexNotAffectedVulnAssessmentRelationship
+- SubclassOf: /Security/VexVulnAssessmentRelationship
 - Instantiability: Concrete
 
 ## Properties
@@ -26,4 +26,3 @@ An VexNotAffectedVulnerabilityCategorization is TODO
   - type: VexJustificationType
   - minCount: 1
   - maxCount: 1
-
