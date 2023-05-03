@@ -66,7 +66,7 @@ Build Profile specific RelationshipType descriptions can be found [here](https:/
 - buildInvokedBy: Agent that invoked the build
 - buildOnBehalfOf: Actor for which buildInvokedBy is acting on behalf of
 - buildHostOf: Element in which the build instance runs on
-- affected: (Security/VEX) Designates an elemented as affected by a vulnerability
-- notAffected: (Security/VEX) Specifies a vulnerability has no impact on an element
-- fixed: (Security/VEX) A vulnerability has been fixed in an element
-- underInvestigation: (Security/VEX) The impact of a vulnerability is being investigated
+- affects: (Security/VEX) Designates one or more elements as affected by a vulnerability
+- doesNotAffect: (Security/VEX) Specifies a vulnerability has no impact on one or more elements
+- fixedIn: (Security/VEX) A vulnerability has been fixed in one or more elements
+- underInvestigationFor: (Security/VEX) The impact of a vulnerability is being investigated
