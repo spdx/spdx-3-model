@@ -20,5 +20,5 @@ Provides various type of assessment information for a vulnerability.
 
 - assessedElement
   - type: Element
-  - minCount: 1
+  - minCount: 0
   - maxCount: 1
