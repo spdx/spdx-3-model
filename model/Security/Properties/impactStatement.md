@@ -1,18 +1,23 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# impact
+# impactStatement
 
 ## Summary
 
-TODO
+Explains why a VEX product is not affected by a vulnerability. It is an
+alternative in VexNotAffectedVulnAssessmentRelationship to the machine-readable
+justification label.
 
 ## Description
 
-An impact is TODO
+When a VEX product element is related with a VexNotAffectedVulnAssessmentRelationship
+and a machine readable justification label is not provided, then an impactStatement
+that further explains how or why the prouct(s) are not affected by the vulnerability
+must be provided.
 
 ## Metadata
 
-- name: impact
+- name: impactStatement
 - Nature: DataProperty
 - Range: xsd:string
 
