@@ -8,7 +8,10 @@ Provides a CVSS version 3.x assessment for a vulnerability.
 
 ## Description
 
-A CvssV3VulnAssessmentRelationship relationship describes the determined score, severity, and vector of a vulnerability using version 3.1 of the Common Vulnerability Scoring System (CVSS) as defined on [https://www.first.org/cvss/v3.1/specification-document](https://www.first.org/cvss/v3.1/specification-document). It is intented to communicate the results of using a CVSS calculator.
+A CvssV3VulnAssessmentRelationship relationship describes the determined score,
+severity, and vector of a vulnerability using version 3.1 of the Common
+Vulnerability Scoring System (CVSS) as defined on 
+[https://www.first.org/cvss/v3.1/specification-document](https://www.first.org/cvss/v3.1/specification-document). It is intented to communicate the results of using a CVSS calculator.
 
 **Syntax**
 
@@ -18,7 +21,7 @@ A CvssV3VulnAssessmentRelationship relationship describes the determined score, 
   "@id": "urn:spdx.dev:cvssv3-cve-2020-28498",
   "relationshipType": "hasCvssV3AssessmentFor",
   "severity": "medium",
-  "score": "6.8",
+  "score": 6.8,
   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
   "from": "urn:spdx.dev:vuln-cve-2020-28498",
   "to": "urn:product-acme-application-1.3",
