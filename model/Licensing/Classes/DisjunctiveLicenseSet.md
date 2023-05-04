@@ -4,13 +4,13 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Portion of a LicenseExpression representing a set of licensing information
+Portion of an AnyLicenseInfo representing a set of licensing information
 where only any one of the elements applies.
 
 ## Description
 
 A DisjunctiveLicenseSet indicates that _only one_ of its subsidiary
-LicenseExpressions is required to apply. In other words, a
+AnyLicenseInfos is required to apply. In other words, a
 DisjunctiveLicenseSet of two or more licenses represents a licensing
 situation where _only one_ of the specified licenses are to be complied with.
 A consumer of SPDX data would typically understand this to permit the recipient
@@ -21,11 +21,11 @@ by the `OR` operator.
 ## Metadata
 
 - name: DisjunctiveLicenseSet
-- SubclassOf: LicenseExpression
+- SubclassOf: AnyLicenseInfo
 - Instantiability: Concrete
 
 ## Properties
 
 - member
-  - type: LicenseExpression
+  - type: AnyLicenseInfo
   - minCount: 2

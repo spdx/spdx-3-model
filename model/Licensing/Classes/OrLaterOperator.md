@@ -4,12 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Portion of a LicenseExpression representing this version, or any later version,
+Portion of an AnyLicenseInfo representing this version, or any later version,
 of the indicated License.
 
 ## Description
 
-An OrLaterOperator indicates that this portion of the LicenseExpression
+An OrLaterOperator indicates that this portion of the AnyLicenseInfo
 represents either (1) the specified version of the corresponding License, or
 (2) any later version of that License. It is represented in the SPDX License
 Expression Syntax by the `+` operator.
@@ -23,7 +23,7 @@ data will need to determine for themselves what meaning to attribute to a
 ## Metadata
 
 - name: OrLaterOperator
-- SubclassOf: LicenseExpression
+- SubclassOf: AnyLicenseInfo
 - Instantiability: Concrete
 
 ## Properties

@@ -1,16 +1,16 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# LicenseExpression
+# AnyLicenseInfo
 
 ## Summary
 
-Abstract class representing a license expression consisting of one or more
+Abstract class representing a license combination consisting of one or more
 licenses (optionally including exceptions), which may be combined according
 to the SPDX license expression syntax.
 
 ## Description
 
-A LicenseExpression is used by a licensing field for a software package,
+An AnyLicenseInfo is used by a licensing field for a software package,
 file or snippet when its value is not NOASSERTION or NONE. It can be a
 single license (either on the SPDX License List or a custom-defined license);
 a single license with an "or later" operator applied; the foregoing with an
@@ -19,7 +19,7 @@ operators recursively.
 
 ## Metadata
 
-- name: LicenseExpression
+- name: AnyLicenseInfo
 - SubclassOf: LicenseField
 - Instantiability: Abstract
 
