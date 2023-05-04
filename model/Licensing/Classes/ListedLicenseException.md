@@ -4,12 +4,28 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-**TBD** Not to be completed until the Change Proposal at https://github.com/spdx/change-proposal/issues/4 is decided upon. Should be treated as unconfirmed since this class and its name or meaning is subject to change.
+A license exception that is listed on the SPDX Exceptions list.
+
+## Description
+
+A ListedLicenseException represents an exception to a License (in other words,
+an exception to a license condition or an additional permission beyond those
+granted in a License) which is listed on the SPDX Exceptions List at
+https://spdx.org/licenses/exceptions-index.html.
 
 ## Metadata
 
 - name: ListedLicenseException
-- SubclassOf: LicenseException
+- SubclassOf: LicenseAddition
 - Instantiability: Concrete
 
 ## Properties
+
+- listVersionAdded
+  - type: xsd:string
+  - minCount: 0
+  - maxCount: 1
+- deprecatedVersion
+  - type: xsd:string
+  - minCount: 0
+  - maxCount: 1

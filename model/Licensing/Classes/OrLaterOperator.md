@@ -28,7 +28,7 @@ data will need to determine for themselves what meaning to attribute to a
 
 ## Properties
 
-- license
+- subjectLicense
   - type: License
   - minCount: 1
   - maxCount: 1
