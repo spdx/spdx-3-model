@@ -21,5 +21,5 @@ its composition, licensing information, known quality or security issues, etc.
 ## Properties
 
 - sbomType
-  - type: SBOMDocumentType
+  - type: SBOMType
   - minCount: 0
