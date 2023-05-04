@@ -8,7 +8,10 @@ Provides a SSVC assessment for a vulnerability.
 
 ## Description
 
-A SsvcVulnAssessmentRelationship describes the decision made using the Stakeholder-Specific Vulnerability Categorization (SSVC) decision tree as defined on  [https://www.cisa.gov/stakeholder-specific-vulnerability-categorization-ssvc](https://www.cisa.gov/stakeholder-specific-vulnerability-categorization-ssvc). It is intented to communicate the results of using the CISA SSVC Calculator.
+A SsvcVulnAssessmentRelationship describes the decision made using the
+Stakeholder-Specific Vulnerability Categorization (SSVC) decision tree as
+defined on  [https://www.cisa.gov/stakeholder-specific-vulnerability-categorization-ssvc](https://www.cisa.gov/stakeholder-specific-vulnerability-categorization-ssvc).
+It is intented to communicate the results of using the CISA SSVC Calculator.
 
 **Syntax**
 
@@ -28,7 +31,6 @@ A SsvcVulnAssessmentRelationship describes the decision made using the Stakehold
   }
 }
 ```
-
 
 ## Metadata
 
