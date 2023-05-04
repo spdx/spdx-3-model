@@ -44,6 +44,9 @@ or otherwise) which is defined by an SPDX data creator (CustomLicenseAddition).
 - seeAlso
   - type: xsd:anyURI
   - minCount: 0
+- standardAdditionTemplate
+  - minCount: 0
+  - maxCount: 1
 - isDeprecatedAdditionId
   - type: xsd:boolean
   - minCount: 0
