@@ -4,14 +4,14 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Specifies the SPDX License List version in which this License or
-LicenseException identifier was first added.
+Specifies the SPDX License List version in which this ListedLicense or
+ListedLicenseException identifier was first added.
 
 ## Description
 
-A listVersionAdded for a License or LicenseException on the SPDX License List
-specifies which version release of the License List was the first one in which
-it was included.
+A listVersionAdded for a ListedLicense or ListedLicenseException on the SPDX
+License List specifies which version release of the License List was the first
+one in which it was included.
 
 ## Metadata
 

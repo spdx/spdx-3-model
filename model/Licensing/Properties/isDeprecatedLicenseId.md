@@ -4,16 +4,16 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Specifies whether a license or exception identifier has been marked as
+Specifies whether a license or additional text identifier has been marked as
 deprecated.
 
 ## Description
 
 The isDeprecatedLicenseId property specifies whether an identifier for a
-License or LicenseException has been marked as deprecated. If the property
+License or LicenseAddition has been marked as deprecated. If the property
 is not defined, then it is presumed to be false (i.e., not deprecated).
 
-If the License or LicenseException is included on the SPDX License List, then
+If the License or LicenseAddition is included on the SPDX License List, then
 the `deprecatedVersion` property indicates on which version release of the
 License List it was first marked as deprecated.
 
@@ -21,7 +21,7 @@ License List it was first marked as deprecated.
 _identifier_, not the underlying license. In other words, even if a License's
 author or steward has stated that a particular License generally should not be
 used, that would _not_ mean that the License's identifier is "deprecated."
-Rather, a License or LicenseException operator is typically marked as
+Rather, a License or LicenseAddition operator is typically marked as
 "deprecated" when it is determined that use of another identifier is
 preferable.
 
