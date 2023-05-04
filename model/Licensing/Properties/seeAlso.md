@@ -4,12 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Contains a URL where the License or LicenseException can be found in use.
+Contains a URL where the License or LicenseAddition can be found in use.
 
 ## Description
 
 A seeAlso defines a cross-reference with a URL where the License or
-LicenseException can be found in use by one or a few projects.
+LicenseAddition can be found in use by one or a few projects.
 
 If applicable, it should include a URL where the license text is posted by
 the license steward, particularly if the license steward has made available a
@@ -19,7 +19,7 @@ If the license is OSI approved, a seeAlso should be included with the URL for
 the license's listing on the OSI website.
 
 The seeAlso URL may refer to a previously-available URL for the License or
-LicenseException which is no longer active.
+LicenseAddition which is no longer active.
 
 Where applicable, the seeAlso URL should include the license text in its
 native language. seeAlso URLs to English or other translations may be included
