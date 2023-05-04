@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Provides a EPSS assessment for a vulnerability.
+Provides an EPSS assessment for a vulnerability.
 
 ## Description
 
-A EpssVulnAssessmentRelationship relationship describes the likelihood that a vulnerability will be exploited in the wild using the Exploit Prediction Scoring System (EPSS) as defined on [https://www.first.org/epss/model](https://www.first.org/epss/model).
+An EpssVulnAssessmentRelationship relationship describes the likelihood or probability that a vulnerability will be exploited in the wild using the Exploit Prediction Scoring System (EPSS) as defined on [https://www.first.org/epss/model](https://www.first.org/epss/model).
 
 ## Metadata
 
