@@ -9,7 +9,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 ## Metadata
 
 - name: WithExceptionOperator
-- SubclassOf: LicenseExpression
+- SubclassOf: AnyLicenseInfo
 - Instantiability: Concrete
 
 ## Properties

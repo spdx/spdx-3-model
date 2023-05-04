@@ -16,4 +16,4 @@ license set.
 
 - name: member
 - Nature: ObjectProperty
-- Range: LicenseExpression
+- Range: AnyLicenseInfo
