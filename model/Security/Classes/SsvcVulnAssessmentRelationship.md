@@ -8,7 +8,7 @@ Provides a SSVC assessment for a vulnerability.
 
 ## Description
 
-A SsvcVulnAssessmentRelationship relationship can be used to prioritize vulnerability response using the Stakeholder-Specific Vulnerability Categorization (SSVC) as defined in the [CISA SSVC Guide](https://www.cisa.gov/sites/default/files/publications/cisa-ssvc-guide%20508c.pdf).
+A SsvcVulnAssessmentRelationship describes the decision made using the Stakeholder-Specific Vulnerability Categorization (SSVC) decision tree as defined on  [https://www.cisa.gov/stakeholder-specific-vulnerability-categorization-ssvc](https://www.cisa.gov/stakeholder-specific-vulnerability-categorization-ssvc). It is intented to communicate the results of using the CISA SSVC Calculator.
 
 ## Metadata
 
