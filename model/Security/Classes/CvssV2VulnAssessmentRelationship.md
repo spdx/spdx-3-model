@@ -8,8 +8,10 @@ Provides a CVSS version 2.0 assessment for a vulnerability.
 
 ## Description
 
-A CvssV2VulnAssessmentRelationship relationship describes the characteristics and impact of a vulnerability using version 2.0 of the Common Vulnerability Scoring System
-(CVSS) as defined on [https://www.first.org/cvss/v2/guide](https://www.first.org/cvss/v2/guide). 
+A CvssV2VulnAssessmentRelationship relationship describes the characteristics
+and impact of a vulnerability using version 2.0 of the Common Vulnerability
+Scoring System (CVSS) as defined on
+[https://www.first.org/cvss/v2/guide](https://www.first.org/cvss/v2/guide). 
 
 ## Metadata
 
@@ -69,8 +71,8 @@ A CvssV2VulnAssessmentRelationship relationship describes the characteristics an
       "@type": "Relationship",
       "@id": "urn:spdx.dev:vulnAgentRel-1",  
       "relationshipType": "foundBy",  
-      "from": "urn:spdx.dev:agent-snyk",
-      "to": ["urn:spdx.dev:cvssv2-cve-2020-28498"],
+      "from": "urn:spdx.dev:cvssv2-cve-2020-28498",
+      "to": ["urn:spdx.dev:agent-snyk"],
       "startTime": "2021-03-08T16:06:50Z"
     }
     ```
