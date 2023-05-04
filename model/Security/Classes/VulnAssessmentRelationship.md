@@ -11,7 +11,7 @@ Asbtract ancestor class for all VEX relationships
 VexVulnAssessmentRelationship is an abstract subclass that defined the common
 properties shared by all the SPDX-VEX status relationships. 
 
-## Constraints
+**Constraints**
 
 When linking elements using a VexVulnAssessmentRelationship, the following
 requirements must be observed:
@@ -19,7 +19,7 @@ requirements must be observed:
 - The from: end must be a /Security/Vulnerability classed element
 - The to: end must point to elements representing the VEX _products_. To
 specify a different element where the vulnerability was detected, the VEX
-relationship can optionally specify _subcomponents_ using the`assessedElements
+relationship can optionally specify _subcomponents_ using the assessedElements
 property.
 
 VEX inherits information from the document level down to its statements. When a

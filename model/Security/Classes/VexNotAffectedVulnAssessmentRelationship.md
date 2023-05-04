@@ -13,7 +13,7 @@ VexNotAffectedVulnAssessmentRelationship connects a vulnerability and a number
 of elements desigating them as products not affected by the vulnerability.
 This relationship corresponds to the VEX not_affected status.
 
-## Constraints
+**Constraints**
 
 When linking elements using a VexNotVulnAffectedAssessmentRelationship, the
 following requirements must be observed:
