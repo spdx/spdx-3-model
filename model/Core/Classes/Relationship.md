@@ -36,4 +36,11 @@ that one Element is related to one or more other Elements in some way.
   - type: RelationshipCompleteness
   - minCount: 0
   - maxCount: 1
-
+- startTime
+  - type: /Core/DateTime
+  - minCount: 0
+  - maxCount: 1
+- endTime
+  - type: /Core/DateTime
+  - minCount: 0
+  - maxCount: 1
