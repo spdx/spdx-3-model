@@ -19,7 +19,7 @@ A CvssV2VulnAssessmentRelationship relationship describes the determined score, 
   "@id": "urn:spdx.dev:cvssv2-cve-2020-28498",
   "relationshipType": "hasCvssV2AssessmentFor",
   "severity": "medium",
-  "score": "4.3",
+  "score": 4.3,
   "vector": "(AV:N/AC:M/Au:N/C:P/I:N/A:N)",
   "from": "urn:spdx.dev:vuln-cve-2020-28498",
   "to": "urn:product-acme-application-1.3",
@@ -51,7 +51,6 @@ A CvssV2VulnAssessmentRelationship relationship describes the determined score, 
   "startTime": "2021-03-08T16:06:50Z"
 }
 ```
-
 
 ## Metadata
 
