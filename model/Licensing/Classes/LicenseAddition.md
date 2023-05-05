@@ -25,7 +25,7 @@ or otherwise) which is defined by an SPDX data creator (CustomLicenseAddition).
 
 ## Properties
 
-- comment
+- additionComment
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
@@ -33,7 +33,7 @@ or otherwise) which is defined by an SPDX data creator (CustomLicenseAddition).
   - type: xsd:string
   - minCount: 1
   - maxCount: 1
-- name
+- additionName
   - type: xsd:string
   - minCount: 1
   - maxCount: 1

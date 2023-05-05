@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# name
+# licenseName
 
 ## Summary
 
@@ -8,7 +8,7 @@ Identifies the full name of a License.
 
 ## Description
 
-A name contains the full name of a License, preferably using the title found
+A licenseName contains the full name of a License, preferably using the title found
 in the applicable license text or file, or as otherwise specified by the
 License's author or steward.
 
@@ -20,6 +20,6 @@ distinguishing the License from other Licenses.
 
 ## Metadata
 
-- name: name
+- name: licenseName
 - Nature: DataProperty
 - Range: xsd:string
