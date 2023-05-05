@@ -20,7 +20,7 @@ A CvssV2VulnAssessmentRelationship relationship describes the determined score, 
 ## Properties
 
 - score
-  - type: xsd:string
+  - type: xsd:decimal
   - minCount: 1
   - maxCount: 1
 - severity
