@@ -4,17 +4,24 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Records any background information or analysis relevant to determining the
-concludedLicense for a software Package, File or Snippet.
+Identifies general comments about the License.
 
 ## Description
 
-A licenseComment for a software Package, File or Snippet provides a detailed
-explanation of how the concludedLicense was determined, especially if:
-* the concludedLicense does not match the declaredLicense;
-* the concludedLicense is NOASSERTION; or
-* the SPDX data creator wants to provide other helpful information relevant
-  to determining the license of the software Package, File or Snippet.
+A licenseComment describes general factual information about the License. It
+should not contain information (or links to information) that includes any kind
+of interpretation about the meaning or effect of the License, even if written
+by the license's author.
+
+Examples of information for a licenseComment may include the following:
+
+* If the License's identifier is deprecated, it may briefly explain the reason
+  for deprecation.
+* It may include the date of release, if identified, for Licenses with multiple
+  versions.
+* It may include links to other official language translations for the License.
+* For LicenseAdditions, it may include a reference to the License(s) with
+  which this additional text is typically used.
 
 ## Metadata
 
