@@ -14,5 +14,5 @@ Specifies the time when a vulnerability was first published.
 
 - name: publishedTime
 - Nature: DataProperty
-- Range: xsd:datetime
+- Range: /Core/DateTime
 

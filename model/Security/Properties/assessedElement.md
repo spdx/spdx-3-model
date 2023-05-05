@@ -16,4 +16,4 @@ to specify the precise location where a vulnerability was found.
 
 - name: assessedElement
 - Nature: ObjectProperty
-- Range: Element
+- Range: /Core/Element

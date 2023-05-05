@@ -14,4 +14,4 @@ Specifies a time when a vulnerability assessment was last modified.
 
 - name: modifiedTime
 - Nature: DataProperty
-- Range: xsd:datetime
+- Range: /Core/DateTime

@@ -14,5 +14,5 @@ Specified the time and date when a vulnerability was withdrawn.
 
 - name: withdrawnTime
 - Nature: DataProperty
-- Range: xsd:datetime
+- Range: /Core/DateTime
 
