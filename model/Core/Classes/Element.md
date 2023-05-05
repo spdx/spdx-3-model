@@ -41,7 +41,7 @@ and inter-relatable content objects.
   - maxCount: 1
 - creationInfo
   - type: CreationInfo
-  - minCount: 1
+  - minCount: 0
   - maxCount: 1
 - verifiedUsing
   - type: IntegrityMethod
