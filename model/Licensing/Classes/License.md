@@ -52,7 +52,7 @@ A License represents a license text, whether listed on the SPDX License List
   - maxCount: 1
 - standardLicenseTemplate
   - type: xsd:string
-  - mincount: 0
+  - minCount: 0
   - maxCount: 1
 - isDeprecatedLicenseId
   - type: xsd:boolean
