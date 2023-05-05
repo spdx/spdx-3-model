@@ -26,19 +26,19 @@ such as an electronic file, a software package, a device or an element of data.
 - purpose
   - type: SoftwarePurpose
   - minCount: 0
-- /Core/Licensing/concludedLicense
-  - type: /Core/Licensing/LicenseField
+- /Licensing/concludedLicense
+  - type: /Licensing/LicenseField
   - minCount: 0
   - maxCount: 1
-- /Core/Licensing/declaredLicense
-  - type: /Core/Licensing/LicenseField
+- /Licensing/declaredLicense
+  - type: /Licensing/LicenseField
   - minCount: 0
   - maxCount: 1
-- /Core/Licensing/copyrightText
-  - type: /Core/Licensing/CopyrightTextField
+- /Licensing/copyrightText
+  - type: /Licensing/CopyrightTextField
   - minCount: 0
   - maxCount: 1
-- /Core/Licensing/attributionText
+- /Licensing/attributionText
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
