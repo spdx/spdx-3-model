@@ -1,14 +1,17 @@
 SPDX-License-Identifier: Community-Spec-1.0
+<!---
+TODO: update Entries
+---> 
 
 # CvssV2SeverityType
 
 ## Summary
 
-TODO
+Specifies the CVSS version 2 severity type.
 
 ## Description
 
-A CvssV2SeverityType is TODO
+CvssV2SeverityType specifies the type of CVSS version 2 severity.
 
 ## Metadata
 
