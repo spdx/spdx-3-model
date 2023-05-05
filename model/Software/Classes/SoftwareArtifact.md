@@ -4,12 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A distinct article or unit within the digital domain.
+A distinct article or unit related to Software.
 
 ## Description
 
-An artifact is a distinct article or unit within the digital domain,
-such as an electronic file, a software package, a device or an element of data.
+A software artifact is a distinct article or unit related to software
+such as a package, a file, or a snippet.
 
 ## Metadata
 
@@ -26,19 +26,20 @@ such as an electronic file, a software package, a device or an element of data.
 - purpose
   - type: SoftwarePurpose
   - minCount: 0
-- /Licensing/concludedLicense
+- concludedLicense
   - type: /Licensing/LicenseField
   - minCount: 0
   - maxCount: 1
-- /Licensing/declaredLicense
+- declaredLicense
   - type: /Licensing/LicenseField
   - minCount: 0
   - maxCount: 1
-- /Licensing/copyrightText
+- copyrightText
   - type: /Licensing/CopyrightTextField
   - minCount: 0
   - maxCount: 1
-- /Licensing/attributionText
+- attributionText
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
+
