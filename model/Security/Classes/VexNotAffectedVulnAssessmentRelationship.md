@@ -48,13 +48,13 @@ for VEX.
 ## Metadata
 
 - name: VexNotAffectedVulnAssessmentRelationship
-- SubclassOf:  /Security/VexVulnAssessmentRelationship
+- SubclassOf:  VexVulnAssessmentRelationship
 - Instantiability: Concrete
 
 ## Properties
 
 - relationshipType
-  - type: relationshipType
+  - type: /Core/relationshipType
 - justification
   - type: justification
   - minCount: 0

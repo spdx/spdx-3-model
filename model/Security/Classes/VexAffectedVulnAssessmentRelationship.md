@@ -39,12 +39,12 @@ to the affects relationship type.
 
 ## Metadata
 - name: VexAffectedVulnAssessmentRelationship
-- SubclassOf: /Security/VexVulnAssessmentRelationship 
+- SubclassOf: VexVulnAssessmentRelationship 
 - Instantiability: Concrete
 
 ## Properties
 - relationshipType
-  - type: relationshipType
+  - type: /Core/relationshipType
 - actionStatement
   - type: xsd:string
   - minCount: 0

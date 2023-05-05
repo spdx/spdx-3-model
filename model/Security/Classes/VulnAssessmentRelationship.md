@@ -20,7 +20,7 @@ assessment relationships. It factors out the common properties shared by them.
 ## Properties
 
 - assessedElement
-  - type: Element
+  - type: /Core/Element
   - minCount: 0
   - maxCount: 1
 - publishedTime
@@ -28,7 +28,7 @@ assessment relationships. It factors out the common properties shared by them.
   - minCount: 0
   - maxCount: 1
 - suppliedBy
-  - type: Identity
+  - type: /Core/Identity
   - minCount: 0
   - maxCount: 1
 - modifiedTime

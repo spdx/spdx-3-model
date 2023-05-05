@@ -31,7 +31,7 @@ Prediction Scoring System (EPSS) as defined on
 ## Metadata
 
 - name: EpssVulnAssessmentRelationship
-- SubclassOf: /Security/VulnAssessmentRelationship
+- SubclassOf: VulnAssessmentRelationship
 - Instantiability: Concrete
 
 ## Properties

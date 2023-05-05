@@ -33,7 +33,7 @@ the document's date must be considered as authoritative.
 ## Metadata
 
 - name: VexVulnAssessmentRelationship
-- SubclassOf: /Security/VulnAssessmentRelationship
+- SubclassOf: VulnAssessmentRelationship
 - Instantiability: Abstract
 
 ## Properties

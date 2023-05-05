@@ -32,7 +32,7 @@ It is intented to communicate the results of using the CISA SSVC Calculator.
 ## Metadata
 
 - name: SsvcVulnAssessmentRelationship
-- SubclassOf: /Security/VulnAssessmentRelationship
+- SubclassOf: VulnAssessmentRelationship
 - Instantiability: Concrete
 
 ## Properties

@@ -42,9 +42,9 @@ element.
 ## Metadata
 
 - name: VexFixedVulnAssessmentRelationship
-- SubclassOf:  /Security/VulnVexAssessmentRelationship
+- SubclassOf:  VulnVexAssessmentRelationship
 - Instantiability: Concrete
 
 ## Properties
 - relationshipType
-  - type: relationshipType
+  - type: /Core/relationshipType

@@ -61,7 +61,7 @@ The value of severity must be one of 'low', 'medium' or 'high'
 ## Metadata
 
 - name: CvssV2VulnAssessmentRelationship
-- SubclassOf: /Security/VulnAssessmentRelationship
+- SubclassOf: VulnAssessmentRelationship
 - Instantiability: Concrete
 
 ## Properties

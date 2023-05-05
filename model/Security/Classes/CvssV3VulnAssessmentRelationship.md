@@ -64,7 +64,7 @@ Absence of the property shall be interpreted as 'none'.
 ## Metadata
 
 - name: CvssV3VulnAssessmentRelationship
-- SubclassOf: /Security/VulnAssessmentRelationship
+- SubclassOf: VulnAssessmentRelationship
 - Instantiability: Concrete
 
 ## Properties
