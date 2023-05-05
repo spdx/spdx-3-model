@@ -41,14 +41,12 @@ Metadata information that can be added to a dataset that may be used in a softwa
 - dataPreprocessing
   - type: xsd:string
   - minCount: 0
-  - maxCount: 1
 - sensor
   - type: /Core/DictionaryEntry
   - minCount: 0
 - knownBias
   - type: xsd:string
   - minCount: 0
-  - maxCount: 1
 - sensitivePersonalInformation
   - type: PresenceType
   - minCount: 0
@@ -68,3 +66,32 @@ Metadata information that can be added to a dataset that may be used in a softwa
   - type: DatasetAvailabilityType
   - minCount: 0
   - maxCount: 1
+
+## External properties restrictions
+
+- /Core/Element/name
+  - minCount: 1
+- /Core/Properties/originatedBy
+  - minCount: 1
+- /Core/Properties/suppliedBy
+  - minCount: 0
+- /Core/Hash
+  - minCount: 0
+- /Software/Package/downloadLocation
+  - minCount: 1
+- /Software/Package/packageVersion
+  - minCount: 0
+- /Software/Properties/purpose
+  - minCount: 1
+- /Core/Element/comment
+  - minCount: 0
+- /Licensing/Properties/concludedLicense
+  - minCount: 1
+- /Licensing/Properties/declaredLicense
+  - minCount: 1
+- /Core/Properties/releaseTime
+  - minCount: 1
+- /Core/Properties/builtTime
+  - minCount: 1
+- /Core/Properties/validUntilTime
+  - minCount: 0
