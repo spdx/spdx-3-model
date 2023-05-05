@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Specifies the CVSS version 3 severity type.
 
 ## Description
 
-A CvssV3SeverityType is TODO
+CvssV2SeverityType specifies the type of CVSS version 3 severity according to the CVSS version 3 qualitative severity rating scale [https://www.first.org/cvss/v3.1/specification-document#Qualitative-Severity-Rating-Scale](https://www.first.org/cvss/v3.1/specification-document#Qualitative-Severity-Rating-Scale)
 
 ## Metadata
 
@@ -16,10 +16,9 @@ A CvssV3SeverityType is TODO
 
 ## Entries
 
-- critical: TODOdescription
-- high: TODOdescription
-- medium: TODOdescription
-- low: TODOdescription
-- none: TODOdescription
-- noAssertion: TODOdescription
+- critical: CVSS Score 9.0 - 10.0
+- high: CVSS Score 7.0 - 8.9
+- medium: CVSS Score 4.0 - 6.9
+- low: CVSS Score 0.1 - 3.9
+- none: CVSS Score 0.0
 
