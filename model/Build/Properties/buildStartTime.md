@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# buildStart
+# buildStartTime
 
 ## Summary
 
@@ -8,10 +8,10 @@ Property describing the start time of a build.
 
 ## Description
 
-buildStart is the time at which a build is triggered. The builder typically records this value.
+buildStartTime is the time at which a build is triggered. The builder typically records this value.
 
 ## Metadata
 
-- name: buildStart
+- name: buildStartTime
 - Nature: DataProperty
 - Range: /Core/DateTime
