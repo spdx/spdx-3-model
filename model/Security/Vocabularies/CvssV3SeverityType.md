@@ -8,7 +8,7 @@ Specifies the CVSS version 3 severity type.
 
 ## Description
 
-CvssV2SeverityType specifies the type of CVSS version 3 severity according to the CVSS version 3 qualitative severity rating scale [https://www.first.org/cvss/v3.1/specification-document#Qualitative-Severity-Rating-Scale](https://www.first.org/cvss/v3.1/specification-document#Qualitative-Severity-Rating-Scale)
+CvssV3SeverityType specifies the type of CVSS version 3 severity according to the CVSS version 3 qualitative severity rating scale [https://www.first.org/cvss/v3.1/specification-document#Qualitative-Severity-Rating-Scale](https://www.first.org/cvss/v3.1/specification-document#Qualitative-Severity-Rating-Scale).
 
 ## Metadata
 
