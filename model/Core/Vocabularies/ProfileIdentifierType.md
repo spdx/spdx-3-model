@@ -16,12 +16,12 @@ There are a set of profiles that have been defined to be valid for a specific re
 
 ## Entries
 
-- core: TODODescription
-- software: TODODescription
-- licensing: TODODescription
-- security: TODODescription
-- build: TODODescription
-- ai: TODODescription
-- dataset: TODODescription
-- usage: TODODescription
-- extension: TODODescription
+- core: the element follows the Core profile specification
+- software: the element follows the Software profile specification
+- licensing: the element follows the Licensing profile specification
+- security: the element follows the Security profile specification
+- build: the element follows the Build profile specification
+- ai: the element follows the AI profile specification
+- dataset: the element follows the Dataset profile specification
+- usage: the element follows the Usage profile specification
+- extension: the element follows the Extension profile specification
