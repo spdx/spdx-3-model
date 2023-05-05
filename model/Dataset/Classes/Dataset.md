@@ -71,9 +71,9 @@ Metadata information that can be added to a dataset that may be used in a softwa
 
 - /Core/Element/name
   - minCount: 1
-- /Core/Properties/originatedBy
+- /Core/Artifact/originatedBy
   - minCount: 1
-- /Core/Properties/suppliedBy
+- /Core/Artifact/suppliedBy
   - minCount: 0
 - /Core/Hash
   - minCount: 0
@@ -81,17 +81,13 @@ Metadata information that can be added to a dataset that may be used in a softwa
   - minCount: 1
 - /Software/Package/packageVersion
   - minCount: 0
-- /Software/Properties/purpose
+- /Software/SoftwareArtifact/purpose
   - minCount: 1
 - /Core/Element/comment
   - minCount: 0
-- /Licensing/Properties/concludedLicense
-  - minCount: 1
-- /Software/SoftwareArtifact/declaredLicense
-  - minCount: 1
 - /Core/Artifact/releaseTime
   - minCount: 1
-- /Core/Properties/builtTime
+- /Core/Artifact/builtTime
   - minCount: 1
-- /Core/Properties/validUntilTime
+- /Core/Artifact/validUntilTime
   - minCount: 0

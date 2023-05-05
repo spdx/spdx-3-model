@@ -23,6 +23,9 @@ such as an electronic file, a software package, a device or an element of data.
 - originatedBy
   - type: Identity
   - minCount: 0
+- suppliedBy 
+  - type: Identity
+  - minCount: 0
 - builtTime
   - type: xsd:dateTime
   - minCount: 0
