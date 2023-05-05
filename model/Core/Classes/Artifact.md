@@ -38,3 +38,6 @@ such as an electronic file, a software package, a device or an element of data.
   - type: DateTime
   - minCount: 0
   - maxCount: 1
+- standard
+  - type: xsd:string
+  - minCount: 0 
