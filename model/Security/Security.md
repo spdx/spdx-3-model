@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+The Security Profile captures security related information.
 
 ## Description
 
-The Security namespace defines concepts related to security artifacts.
+The Security Profile captures security related information.
 
 ## Metadata
 
