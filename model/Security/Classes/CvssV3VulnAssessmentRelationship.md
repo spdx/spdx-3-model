@@ -68,8 +68,8 @@ A CvssV3VulnAssessmentRelationship relationship describes the determined score, 
       "@type": "Relationship",
       "@id": "urn:spdx.dev:vulnAgentRel-1",
       "relationshipType": "foundBy",
-      "from": "urn:spdx.dev:agent-snyk",
-      "to": ["urn:spdx.dev:cvssv3-cve-2020-28498"],
+      "from": "urn:spdx.dev:cvssv3-cve-2020-28498",
+      "to": "urn:spdx.dev:agent-snyk",
       "startTime": "2021-03-08T16:06:50Z"
     }
     ```
