@@ -45,7 +45,6 @@ to the affects relationship type.
 ## Properties
 - relationshipType
   - type: relationshipType
-  - value: affects
 - actionStatement
   - type: xsd:string
   - minCount: 0

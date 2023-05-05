@@ -49,4 +49,3 @@ element.
 
 - relationshipType
   - type: relationshipType
-  - value: underInvestigationFor

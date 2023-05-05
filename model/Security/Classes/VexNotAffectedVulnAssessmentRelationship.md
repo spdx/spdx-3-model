@@ -55,7 +55,6 @@ for VEX.
 
 - relationshipType
   - type: relationshipType
-  - value: doesNotAffect
 - justification
   - type: justification
   - minCount: 0

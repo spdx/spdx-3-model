@@ -48,4 +48,3 @@ element.
 ## Properties
 - relationshipType
   - type: relationshipType
-  - value: fixedIn
