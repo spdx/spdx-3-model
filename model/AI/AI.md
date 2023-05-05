@@ -12,5 +12,5 @@ The AI profile namespace defines concepts related to AI application and model ar
 
 ## Metadata
 
-- id: https://rdf.spdx.org/v3#AI
+- id: https://rdf.spdx.org/v3/AI
 - name: AI
