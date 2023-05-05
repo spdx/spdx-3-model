@@ -73,8 +73,6 @@ Metadata information that can be added to a package to describe an AI applicatio
 
 ## External properties restrictions
 
-- /Core/Artifact/originatedBy
-  - minCount: 0
 - /Core/Artifact/suppliedBy
   - minCount: 1
 - /Software/Package/downloadLocation
@@ -83,15 +81,9 @@ Metadata information that can be added to a package to describe an AI applicatio
   - minCount: 1
 - /Software/SoftwareArtifact/purpose
   - minCount: 1
-- /Core/Element/comment
-  - minCount: 0
 - /Core/Relationship/relationshipType
   - minCount: 1
 - /Core/Artifact/releaseTime
   - minCount: 1
-- /Core/Artifact/builtTime
-  - minCount: 0
-- /Core/Artifact/validUntilTime
-  - minCount: 0
 
 
