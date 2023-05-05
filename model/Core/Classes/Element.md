@@ -47,6 +47,7 @@ and inter-relatable content objects.
   - type: IntegrityMethod
 - externalReference
   - type: ExternalReference
+  - minCount: 0
 - externalIdentifier
   - type: ExternalIdentifier
 - extension
