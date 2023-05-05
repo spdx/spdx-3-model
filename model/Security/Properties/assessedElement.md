@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# assessedElements
+# assessedElement
 
 ## Summary
 
@@ -14,6 +14,6 @@ to specify the precise location where a vulnerability was found.
 
 ## Metadata
 
-- name: assessedElements
+- name: assessedElement
 - Nature: ObjectProperty
 - Range: Element

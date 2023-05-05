@@ -23,7 +23,7 @@ It is intented to communicate the results of using the CISA SSVC Calculator.
   "decision": "act",
   "from": "urn:spdx.dev:vuln-cve-2020-28498",
   "to": "urn:product-acme-application-1.3",
-  "assessedElements": "urn:npm-elliptic-6.5.2",
+  "assessedElement": "urn:npm-elliptic-6.5.2",
   "creationInfo": {
     "@type": "CreationInformation",
     "created": "2021-03-09T20:05:53Z",
