@@ -4,11 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Specifies the vector string of a vulnerability.
 
 ## Description
 
-A vector is TODO
+Sepcifies the vector string of a vulnerability, a string combining metrics
+from an assessment of its severity.
 
 ## Metadata
 
