@@ -29,7 +29,7 @@ to the affects relationship type.
   "@id": "urn:spdx.dev:vex-affected-1",
   "relationshipType": "affects",
   "from": "urn:spdx.dev:vuln-cve-2020-28498",
-  "to": "urn:product-acme-application-1.3",
+  "to": ["urn:product-acme-application-1.3"],
   "assessedElement": "urn:npm-elliptic-6.5.2",
   "actionStatement": "Upgrade to version 1.4 of ACME application.",
   "suppliedBy": ["urn:spdx.dev:agent-jane-doe"],

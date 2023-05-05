@@ -22,7 +22,7 @@ Prediction Scoring System (EPSS) as defined on
   "relationshipType": "hasEpssAssessmentFor",
   "probability": 80,
   "from": "urn:spdx.dev:vuln-cve-2020-28498",
-  "to": "urn:product-acme-application-1.3",
+  "to": ["urn:product-acme-application-1.3"],
   "suppliedBy": ["urn:spdx.dev:agent-jane-doe"],
   "publishedTime": "2021-03-09T11:04:53Z"
 }

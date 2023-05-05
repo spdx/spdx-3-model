@@ -29,7 +29,7 @@ Absence of the property shall be interpreted as 'none'.
   "score": 6.8,
   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
   "from": "urn:spdx.dev:vuln-cve-2020-28498",
-  "to": "urn:product-acme-application-1.3",
+  "to": ["urn:product-acme-application-1.3"],
   "assessedElement": "urn:npm-elliptic-6.5.2",
   "externalReferences": [
     {
