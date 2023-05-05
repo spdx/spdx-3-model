@@ -15,5 +15,5 @@ The time stamp can serve as an indication as to whether the analysis needs to be
 
 - name: created
 - Nature: DataProperty
-- Range: xsd:dateTime
+- Range: DateTime
 

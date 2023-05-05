@@ -26,7 +26,7 @@ The dateTime created is often the date of last change (e.g., a git commit date),
   - minCount: 0
   - maxCount: 1
 - created
-  - type: xsd:dateTime
+  - type: DateTime
 - createdBy
   - type: Entity
   - minCount: 1

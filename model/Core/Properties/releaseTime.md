@@ -14,5 +14,5 @@ A releaseTime specifies the time an artifact was released.
 
 - name: releaseTime
 - Nature: DataProperty
-- Range: xsd:dateTime
+- Range: DateTime
 

@@ -14,5 +14,5 @@ A builtTime specifies the time an artifact was built.
 
 - name: builtTime
 - Nature: DataProperty
-- Range: xsd:dateTime
+- Range: DateTime
 
