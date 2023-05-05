@@ -23,3 +23,16 @@ assessment relationships. It factors out the common properties shared by them.
   - type: Element
   - minCount: 0
   - maxCount: 1
+- publishedTime
+  - type: DateTime
+  - minCount: 0
+  - maxCount: 1
+- modifiedTime
+  - type: DateTime
+  - minCount: 0
+  - maxCount: 1
+- withdrawnTime
+  - type: DateTime
+  - minCount: 0
+  - maxCount: 1
+

@@ -39,11 +39,8 @@ for VEX.
   "assessedElement": "urn:npm-elliptic-6.5.2",
   "justification": "componentNotPresent",
   "impactStatement": "Not using this vulnerable part of this library.",
-  "creationInfo": {
-    "@type": "CreationInformation",
-    "created": "2021-03-09T21:02:13Z",
-    "createdBy": ["urn:spdx.dev:agent-jason-doe"]
-  }
+  "suppliedBy": ["urn:spdx.dev:agent-jane-doe"],
+  "publishedTime": "2021-03-09T11:04:53Z"
 }
 ```
 
