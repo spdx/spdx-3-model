@@ -46,11 +46,11 @@ Note that buildStart and buildEnd are optional, and may be omitted to simplify c
 - parameters
   - type: /Core/DictionaryEntry
   - minCount: 0
-- buildStart
+- buildStartTime
   - type: /Core/DateTime
   - minCount: 0
   - maxCount: 1
-- buildEnd
+- buildEndTime
   - type: /Core/DateTime
   - minCount: 0
   - maxCount: 1
