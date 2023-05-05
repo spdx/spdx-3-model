@@ -20,5 +20,4 @@ qualifies the numerical score.
 
 - name: severity
 - Nature: DataProperty
-- Range: CvssV3SeverityType
-
+- Range: xsd:string

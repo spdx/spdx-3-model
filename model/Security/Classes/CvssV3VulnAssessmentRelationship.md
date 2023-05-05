@@ -13,6 +13,11 @@ severity, and vector of a vulnerability using version 3.1 of the Common
 Vulnerability Scoring System (CVSS) as defined on 
 [https://www.first.org/cvss/v3.1/specification-document](https://www.first.org/cvss/v3.1/specification-document). It is intented to communicate the results of using a CVSS calculator.
 
+**Constraints**
+
+The value of severity must be one of 'none', 'low', 'medium', 'high' or 'critical'.
+Absence of the property shall be interpreted as 'none'.
+
 **Syntax**
 
 ```json
@@ -67,7 +72,7 @@ Vulnerability Scoring System (CVSS) as defined on
   - minCount: 1
   - maxCount: 1
 - severity
-  - type: CvssV3SeverityType
+  - type: xsd:string
   - minCount: 0
   - maxCount: 1
 - vector
