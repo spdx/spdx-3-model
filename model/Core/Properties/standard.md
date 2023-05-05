@@ -12,6 +12,6 @@ Various standards may be relevant to useful to capture for specific artifacts.
 
 ## Metadata
 
-- name: hashValue
+- name: standard
 - Nature: DataProperty
 - Range: xsd:string
