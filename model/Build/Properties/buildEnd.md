@@ -14,4 +14,4 @@ buildEnd describes the time at which a build stops or finishes. This value is ty
 
 - name: buildEnd
 - Nature: DataProperty
-- Range: xsd:dateTime
+- Range: /Core/DateTime

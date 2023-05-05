@@ -47,11 +47,11 @@ Note that buildStart and buildEnd are optional, and may be omitted to simplify c
   - type: /Core/DictionaryEntry
   - minCount: 0
 - buildStart
-  - type: xsd:dateTime
+  - type: /Core/DateTime
   - minCount: 0
   - maxCount: 1
 - buildEnd
-  - type: xsd:dateTime
+  - type: /Core/DateTime
   - minCount: 0
   - maxCount: 1
 - environment

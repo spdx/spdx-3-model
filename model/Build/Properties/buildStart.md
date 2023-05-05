@@ -14,4 +14,4 @@ buildStart is the time at which a build is triggered. The builder typically reco
 
 - name: buildStart
 - Nature: DataProperty
-- Range: xsd:dateTime
+- Range: /Core/DateTime
