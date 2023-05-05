@@ -27,7 +27,7 @@ that one Element is related to one or more other Elements in some way.
   - maxCount: 1
 - to
   - type: Element
-  - minCount: 1
+  - minCount: 0
 - relationshipType
   - type: RelationshipType
   - minCount: 1
