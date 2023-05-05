@@ -21,6 +21,25 @@ following requirements must be observed:
 - Elements linked with a VulnVexAffectedAssessmentRelationship are constrained
 to the affects relationship type.
 
+**Syntax**
+
+```json
+{
+  "@type": "VexAffectedVulnAssessmentRelationship",
+  "@id": "urn:spdx.dev:vex-affected-1",
+  "relationshipType": "affects",
+  "from": "urn:spdx.dev:vuln-cve-2020-28498",
+  "to": "urn:product-acme-application-1.3",
+  "assessedElements": "urn:npm-elliptic-6.5.2",
+  "actionStatement": "Upgrade to version 1.4 of ACME application.",
+  "creationInfo": {
+    "@type": "CreationInformation",
+    "created": "2021-03-09T21:02:13Z",
+    "createdBy": ["urn:spdx.dev:agent-jason-doe"]
+  }
+}
+```
+
 ## Metadata
 - name: VexAffectedVulnAssessmentRelationship
 - SubclassOf: /Security/VexVulnAssessmentRelationship 
@@ -37,24 +56,3 @@ to the affects relationship type.
 - actionStatementTime
   - type: xsd:dateTime
   - minCount: 0
-
-## Syntax
-
-=== "JSON"
-
-    ```json
-    {
-      "@type": "VexAffectedVulnAssessmentRelationship",
-      "@id": "urn:spdx.dev:vex-affected-1",
-      "relationshipType": "affects",
-      "from": "urn:spdx.dev:vuln-cve-2020-28498",
-      "to": "urn:product-acme-application-1.3",
-      "assessedElements": "urn:npm-elliptic-6.5.2",
-      "actionStatement": "Upgrade to version 1.4 of ACME application.",
-      "creationInfo": {
-        "@type": "CreationInformation",
-        "created": "2021-03-09T21:02:13Z",
-        "createdBy": ["urn:spdx.dev:agent-jason-doe"]
-      }
-    }
-    ```

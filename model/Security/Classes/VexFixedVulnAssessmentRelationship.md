@@ -23,6 +23,25 @@ using the fixedIn relationship type.
 - The from: end of the relationship must ve a /Security/Vulnerability classed
 element.
 
+**Syntax**
+
+```json
+{
+  "@type": "VexFixedVulnAssessmentRelationship",
+  "@id": "urn:spdx.dev:vex-fixed-in-1",
+  "relationshipType": "fixedIn",
+  "from": "urn:spdx.dev:vuln-cve-2020-28498",
+  "to": "urn:product-acme-application-1.3",
+  "assessedElements": "urn:npm-elliptic-6.5.4",
+  "creationInfo": {
+    "@type": "CreationInformation",
+    "created": "2021-03-10T11:05:13Z",
+    "createdBy": ["urn:spdx.dev:agent-jason-doe"]
+  }
+}
+```
+
+
 ## Metadata
 
 - name: VexFixedVulnAssessmentRelationship
@@ -33,23 +52,3 @@ element.
 - relationshipType
   - type: relationshipType
   - value: fixedIn
-
-## Syntax
-
-=== "JSON"
-
-    ```json
-    {
-      "@type": "VexFixedVulnAssessmentRelationship",
-      "@id": "urn:spdx.dev:vex-fixed-in-1",
-      "relationshipType": "fixedIn",
-      "from": "urn:spdx.dev:vuln-cve-2020-28498",
-      "to": "urn:product-acme-application-1.3",
-      "assessedElements": "urn:npm-elliptic-6.5.4",
-      "creationInfo": {
-        "@type": "CreationInformation",
-        "created": "2021-03-10T11:05:13Z",
-        "createdBy": ["urn:spdx.dev:agent-jason-doe"]
-      }
-    }
-    ```

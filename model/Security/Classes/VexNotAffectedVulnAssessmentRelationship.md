@@ -27,6 +27,27 @@ element.
 statement, one of them MUST be defined. This is specfied in the Minimum Elements
 for VEX.
 
+**Syntax**
+
+```json
+{
+  "@type": "VexNotAffectedVulnAssessmentRelationship",
+  "@id": "urn:spdx.dev:vex-not-affected-1",
+  "relationshipType": "doesNotAffect",
+  "from": "urn:spdx.dev:vuln-cve-2020-28498",
+  "to": "urn:product-acme-application-1.3",
+  "assessedElements": "urn:npm-elliptic-6.5.2",
+  "justification": "componentNotPresent",
+  "impactStatement": "Not using this vulnerable part of this library.",
+  "creationInfo": {
+    "@type": "CreationInformation",
+    "created": "2021-03-09T21:02:13Z",
+    "createdBy": ["urn:spdx.dev:agent-jason-doe"]
+  }
+}
+```
+
+
 ## Metadata
 
 - name: VexNotAffectedVulnAssessmentRelationship
@@ -50,25 +71,3 @@ for VEX.
   - type: xsd:dateTime
   - minCount: 0
   - maxCount: 1
-
-## Syntax
-
-=== "JSON"
-
-    ```json
-    {
-      "@type": "VexNotAffectedVulnAssessmentRelationship",
-      "@id": "urn:spdx.dev:vex-not-affected-1",
-      "relationshipType": "doesNotAffect",
-      "from": "urn:spdx.dev:vuln-cve-2020-28498",
-      "to": "urn:product-acme-application-1.3",
-      "assessedElements": "urn:npm-elliptic-6.5.2",
-      "justification": "componentNotPresent",
-      "impactStatement": "Not using this vulnerable part of this library.",
-      "creationInfo": {
-        "@type": "CreationInformation",
-        "created": "2021-03-09T21:02:13Z",
-        "createdBy": ["urn:spdx.dev:agent-jason-doe"]
-      }
-    }
-    ```
