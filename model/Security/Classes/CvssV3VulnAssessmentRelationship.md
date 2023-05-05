@@ -20,11 +20,11 @@ A CvssV3VulnAssessmentRelationship relationship describes the determined score, 
 
 - score
   - type: xsd:string
-  - minCount: 0
+  - minCount: 1
   - maxCount: 1
 - severity
   - type: CvssV3SeverityType
-  - minCount: 1
+  - minCount: 0
   - maxCount: 1
 - vector
   - type: xsd:string
