@@ -28,7 +28,7 @@ assessment relationships. It factors out the common properties shared by them.
   - minCount: 0
   - maxCount: 1
 - suppliedBy
-  - type: Element
+  - type: Identity
   - minCount: 0
   - maxCount: 1
 - modifiedTime
