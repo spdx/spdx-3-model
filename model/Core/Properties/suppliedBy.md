@@ -17,4 +17,4 @@ The name of the Package Supplier shall be an organization or recognized author a
 
 - name: suppliedBy
 - Nature: ObjectProperty
-- Range: Entity
+- Range: Identity
