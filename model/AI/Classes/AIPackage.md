@@ -46,11 +46,9 @@ Metadata information that can be added to a package to describe an AI applicatio
 - modelDataPreprocessing
   - type: xsd:string
   - minCount: 0
-  - maxCount: 1
 - modelExplainability
   - type: xsd:string
   - minCount: 0
-  - maxCount: 1
 - sensitivePersonalInformation
   - type: PresenceType
   - minCount: 0
@@ -72,3 +70,20 @@ Metadata information that can be added to a package to describe an AI applicatio
   - type: SafetyRiskAssessmentType
   - minCount: 0
   - maxCount: 1
+
+## External properties restrictions
+
+- /Core/Artifact/suppliedBy
+  - minCount: 1
+- /Software/Package/downloadLocation
+  - minCount: 1
+- /Software/Package/packageVersion
+  - minCount: 1
+- /Software/SoftwareArtifact/purpose
+  - minCount: 1
+- /Core/Relationship/relationshipType
+  - minCount: 1
+- /Core/Artifact/releaseTime
+  - minCount: 1
+
+
