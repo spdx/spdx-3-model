@@ -87,7 +87,7 @@ Metadata information that can be added to a dataset that may be used in a softwa
   - minCount: 0
 - /Licensing/Properties/concludedLicense
   - minCount: 1
-- /Licensing/Properties/declaredLicense
+- /Software/SoftwareArtifact/declaredLicense
   - minCount: 1
 - /Core/Artifact/releaseTime
   - minCount: 1
