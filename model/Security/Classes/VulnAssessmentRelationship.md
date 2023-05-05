@@ -27,6 +27,10 @@ assessment relationships. It factors out the common properties shared by them.
   - type: /Core/DateTime
   - minCount: 0
   - maxCount: 1
+- suppliedBy
+  - type: Element
+  - minCount: 0
+  - maxCount: 1
 - modifiedTime
   - type: /Core/DateTime
   - minCount: 0
