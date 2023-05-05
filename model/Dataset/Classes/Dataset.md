@@ -69,25 +69,13 @@ Metadata information that can be added to a dataset that may be used in a softwa
 
 ## External properties restrictions
 
-- /Core/Element/name
-  - minCount: 1
 - /Core/Artifact/originatedBy
   - minCount: 1
-- /Core/Artifact/suppliedBy
-  - minCount: 0
-- /Core/Hash
-  - minCount: 0
 - /Software/Package/downloadLocation
   - minCount: 1
-- /Software/Package/packageVersion
-  - minCount: 0
 - /Software/SoftwareArtifact/purpose
   - minCount: 1
-- /Core/Element/comment
-  - minCount: 0
 - /Core/Artifact/releaseTime
   - minCount: 1
 - /Core/Artifact/builtTime
   - minCount: 1
-- /Core/Artifact/validUntilTime
-  - minCount: 0
