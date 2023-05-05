@@ -35,7 +35,7 @@ A SsvcVulnAssessmentRelationship describes the decision made using the Stakehold
       "decision": "act",
       "from": "urn:spdx.dev:vuln-cve-2020-28498",
       "to": "urn:product-acme-application-1.3",
-      "assessedElement": "urn:npm-elliptic-6.5.2",
+      "assessedElements": "urn:npm-elliptic-6.5.2",
       "creationInfo": {
         "@type": "CreationInformation",
         "created": "2021-03-09T20:05:53Z",

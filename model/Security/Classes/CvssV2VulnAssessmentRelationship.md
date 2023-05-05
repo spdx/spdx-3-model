@@ -46,7 +46,7 @@ A CvssV2VulnAssessmentRelationship relationship describes the determined score, 
       "vector": "(AV:N/AC:M/Au:N/C:P/I:N/A:N)",
       "from": "urn:spdx.dev:vuln-cve-2020-28498",
       "to": "urn:product-acme-application-1.3",
-      "assessedElement": "urn:npm-elliptic-6.5.2",
+      "assessedElements": "urn:npm-elliptic-6.5.2",
       "externalReferences": [
         {
           "@type": "ExternalReference",
