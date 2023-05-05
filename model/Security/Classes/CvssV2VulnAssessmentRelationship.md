@@ -44,12 +44,14 @@ The value of severity must be one of 'low', 'medium' or 'high'
       "externalReferenceType": "securityFix",
       "locator": "https://github.com/indutny/elliptic/commit/441b742"
     }
-  ]
+  ],
+  "suppliedBy": ["urn:spdx.dev:agent-my-security-vendor"],
+  "publishedTime": "2023-05-06T10:06:13Z"
 },
 {
   "@type": "Relationship",
   "@id": "urn:spdx.dev:vulnAgentRel-1",  
-  "relationshipType": "foundBy",  
+  "relationshipType": "publishedBy",  
   "from": "urn:spdx.dev:cvssv2-cve-2020-28498",
   "to": ["urn:spdx.dev:agent-snyk"],
   "startTime": "2021-03-08T16:06:50Z"
