@@ -1,4 +1,4 @@
-#SPDX-License-Identifier: Community-Spec-1.0
+SPDX-License-Identifier: Community-Spec-1.0
 
 # isOsiApproved
 
