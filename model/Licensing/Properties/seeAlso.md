@@ -4,12 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Contains a URL where the License or LicenseAddition can be found in use.
+Pointers to where the License or Addition can be found in use.
 
 ## Description
 
 A seeAlso defines a cross-reference with a URL where the License or
-LicenseAddition can be found in use by one or a few projects.
+an Addition can be found in use by one or a few projects.
 
 If applicable, it should include a URL where the license text is posted by
 the license steward, particularly if the license steward has made available a
@@ -30,3 +30,4 @@ where multiple, equivalent official translations exist.
 - name: seeAlso
 - Nature: DataProperty
 - Range: xsd:anyURI
+

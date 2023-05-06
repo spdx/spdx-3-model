@@ -9,11 +9,11 @@ A license expression participating in a license set.
 ## Description
 
 A member is a license expression participating in a conjuctive (of type
-ConjunctiveLicenseSet) or a disjunctive (of type DisjunctiveLicenseSet)
-license set.
+ConjunctiveSet) or a disjunctive (of type DisjunctiveSet) license set.
 
 ## Metadata
 
 - name: member
 - Nature: ObjectProperty
-- Range: AnyLicenseInfo
+- Range: LicenseExpression
+

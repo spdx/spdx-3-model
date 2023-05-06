@@ -9,7 +9,7 @@ identifier was deprecated.
 
 ## Description
 
-A deprecatedVersion for a ListedLicense or ListedLicenseException on the SPDX
+A deprecatedVersion for a ListedLicense or ListedException on the SPDX
 License List specifies which version release of the License List was the first
 one in which it was marked as deprecated.
 
@@ -17,4 +17,5 @@ one in which it was marked as deprecated.
 
 - name: deprecatedVersion
 - Nature: DataProperty
-- Range: xsd:string
+- Range: LicenseListVersion
+
