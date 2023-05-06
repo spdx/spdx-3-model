@@ -12,6 +12,6 @@ The Security Profile captures security related information.
 
 ## Metadata
 
-- id: https://rdf.spdx.org/v3#Security
+- id: https://rdf.spdx.org/v3/Security
 - name: Security
 

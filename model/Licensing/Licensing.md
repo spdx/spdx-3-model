@@ -14,6 +14,6 @@ SPDX License Expression syntax and that relate to the SPDX License List.
 
 ## Metadata
 
-- id: https://rdf.spdx.org/v3#Licensing
+- id: https://rdf.spdx.org/v3/Licensing
 - name: Licensing
 
