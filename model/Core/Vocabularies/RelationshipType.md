@@ -22,6 +22,7 @@ Build Profile specific RelationshipType descriptions can be found [here](https:/
 
 - amends: TODOdescription
 - ancestor: TODOdescription
+- availableFrom:  This relationship is used to identify additional suppliers where an artifact is available from.
 - buildDependency: TODOdescription
 - buildTool: Build tool used to build an element. This may be used to describe the build tool of a Build instance.
 - contains: TODOdescription
@@ -54,7 +55,6 @@ Build Profile specific RelationshipType descriptions can be found [here](https:/
 - runtimeDependency: TODOdescription
 - specificationFor: TODOdescription
 - staticLink: TODOdescription
-- suppliedBy: TODOdescription
 - test: TODOdescription
 - testCase: TODOdescription
 - testDependency: TODOdescription
