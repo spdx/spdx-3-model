@@ -18,5 +18,5 @@ referenced by the SPDX document creator.
 
 - name: homePage
 - Nature: DataProperty
-- Range: xsd:anyURI
+- Range: /usefulinc.com/ns/doap#homepage
 
