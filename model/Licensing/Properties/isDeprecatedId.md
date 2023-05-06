@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# isDeprecated
+# isDeprecatedId
 
 ## Summary
 
@@ -8,7 +8,7 @@ Specifies whether a license or additional text identifier has been marked as dep
 
 ## Description
 
-The isDeprecated property specifies whether an identifier
+The isDeprecatedId property specifies whether an identifier
 for a License or an Addition has been marked as deprecated.
 
 If the property is not defined, then it is presumed to be false (i.e., not deprecated).
@@ -22,6 +22,6 @@ when it is determined that use of another identifier is preferable.
 
 ## Metadata
 
-- name: isDeprecated
+- name: isDeprecatedId
 - Nature: DataProperty
 - Range: xsd:boolean

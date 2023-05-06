@@ -28,7 +28,7 @@ A LicensingText represents a license or addition text.
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
-- isDeprecated
+- isDeprecatedId
   - type: xsd:boolean
   - minCount: 0
   - maxCount: 1

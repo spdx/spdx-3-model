@@ -21,7 +21,7 @@
 	text: xsd:string[1]
 	seeAlso: URI[0..*]
 	standardTemplate: xsd:string[0..1]
-	isDeprecated: bool[0..1]
+	isDeprecatedId: bool[0..1]
 	obsoletedBy: LicensingText[0..1]
   *License*
   	isOsiApproved: bool[0..1]
