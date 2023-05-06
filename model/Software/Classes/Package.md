@@ -40,7 +40,7 @@ Note that some of these could be represented in SPDX as a file as well.
   - type: xsd:anyURI
   - minCount: 0
   - maxCount: 1
-- homePage
+- doap:homepage
   - type: xsd:anyURI
   - minCount: 0
   - maxCount: 1
