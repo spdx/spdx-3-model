@@ -31,4 +31,4 @@ following applies:
 
 - name: copyrightText
 - Nature: ObjectProperty
-- Range: CopyrightTextField
+- Range: xsd:string
