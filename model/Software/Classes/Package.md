@@ -41,7 +41,7 @@ Note that some of these could be represented in SPDX as a file as well.
   - minCount: 0
   - maxCount: 1
 - homePage
-  - type: xsd:anyURI
+  - type: doap:homepage
   - minCount: 0
   - maxCount: 1
 - sourceInfo
