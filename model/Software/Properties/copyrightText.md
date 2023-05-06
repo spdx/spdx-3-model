@@ -16,10 +16,10 @@ If a copyrightText contains text, then it may contain any text related to
 one or more copyright notices (even if not complete) for that software
 Package, File or Snippet.
 
-If a copyrightText has a NONE value, this indicates that the software
+If a copyrightText has a "NONE" value, this indicates that the software
 Package, File or Snippet contains no copyright notice whatsoever.
 
-If a copyrightText has a NOASSERTION value, this indicates that one of the
+If a copyrightText has a "NOASSERTION" value, this indicates that one of the
 following applies:
 * the SPDX data creator has attempted to but cannot reach a reasonable
   objective determination;
