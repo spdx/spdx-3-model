@@ -18,7 +18,7 @@ or what its contents are if it is present.
 - id: NoAssertionCopyrightText
 - type: CopyrightText
 
-## Properties
+## Serialization
 
 - text: "NOASSERTION"
 

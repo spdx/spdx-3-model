@@ -16,7 +16,7 @@ that a software artifact does not contain any copyright information.
 - id: NoneCopyrightText
 - type: CopyrightText
 
-## Properties
+## Serialization
 
 - text: "NONE"
 
