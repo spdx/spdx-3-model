@@ -35,7 +35,7 @@ such as a package, a file, or a snippet.
   - minCount: 0
   - maxCount: 1
 - copyrightText
-  - type: /Licensing/CopyrightTextField
+  - type: xsd:string
   - minCount: 0
   - maxCount: 1
 - attributionText
