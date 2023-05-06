@@ -20,11 +20,11 @@ at https://spdx.org/licenses.
 ## Properties
 
 - listVersionAdded
-  - type: xsd:string
+  - type: LicenseListVersion
   - minCount: 0
   - maxCount: 1
 - deprecatedVersion
-  - type: xsd:string
+  - type: LicenseListVersion
   - minCount: 0
   - maxCount: 1
 

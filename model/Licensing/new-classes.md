@@ -22,11 +22,11 @@
 	seeAlso: URI[0..*]
 	standardTemplate: xsd:string[0..1]
 	isDeprecated: bool[0..1]
-	obsoletedBy: bool[0..1]
+	obsoletedBy: LicensingText[0..1]
   *License*
-  	isOsiApproved:bool[0..1]
-	isFsfLibre:bool[0..1]
-	standardHeader:bool[0..1]
+  	isOsiApproved: bool[0..1]
+	isFsfLibre: bool[0..1]
+	standardHeader: xsd:string[0..1]
     ListedLicense
     	listVersionAdded: LicenseListVersion
 	deprecatedVersion: LicenseListVersion
