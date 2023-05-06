@@ -46,5 +46,3 @@ element.
 - Instantiability: Concrete
 
 ## Properties
-- relationshipType
-  - type: /Core/relationshipType

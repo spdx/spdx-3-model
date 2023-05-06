@@ -43,8 +43,6 @@ to the affects relationship type.
 - Instantiability: Concrete
 
 ## Properties
-- relationshipType
-  - type: /Core/relationshipType
 - actionStatement
   - type: xsd:string
   - minCount: 0

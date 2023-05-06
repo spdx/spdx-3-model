@@ -53,8 +53,6 @@ for VEX.
 
 ## Properties
 
-- relationshipType
-  - type: /Core/relationshipType
 - justification
   - type: justification
   - minCount: 0
