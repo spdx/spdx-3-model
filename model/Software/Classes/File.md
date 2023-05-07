@@ -14,7 +14,7 @@ The type of content can optionally be provieded in the contentType property.
 ## Metadata
 
 - name: File
-- SubclassOf: /Core/Artifact
+- SubclassOf: /Software/SoftwareArtifact
 
 ## Properties
 
