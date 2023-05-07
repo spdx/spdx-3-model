@@ -21,4 +21,4 @@ TODO
 - development: TODOdescription
 - test: TODOdescription
 - runtime: TODOdescription
-- other: TODOdescription
+- other: Used when the type doesn't match any of the other options

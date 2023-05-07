@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Provides information how 
 
 ## Description
 
@@ -19,4 +19,4 @@ TODO
 - static: TODOdescription
 - dynamic: TODOdescription
 - tool: TODOdescription
-- other: TODOdescription
+- other: Used when the linking type doesn't match any of the other options.
