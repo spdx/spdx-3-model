@@ -15,7 +15,7 @@ may have been originally created under another license or copied from a place wi
 ## Metadata
 
 - name: Snippet
-- SubclassOf: /Core/Artifact
+- SubclassOf: /Software/SoftwareArtifact
 
 ## Properties
 
