@@ -9,7 +9,7 @@ Refers to any object that stores content on a computer.
 ## Description
 
 Refers to any object that stores content on a computer.
-The type of content can optionally be provieded in the contentType property.
+The type of content can optionally be provided in the contentType property.
 
 ## Metadata
 
