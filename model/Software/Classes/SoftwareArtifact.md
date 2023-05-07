@@ -23,9 +23,10 @@ such as a package, a file, or a snippet.
   - type: xsd:anyURI
   - minCount: 0
   - maxCount: 1
-- purpose
+- primaryPurpose
   - type: SoftwarePurpose
   - minCount: 0
+  - maxCount: 1
 - concludedLicense
   - type: /Licensing/LicenseField
   - minCount: 0

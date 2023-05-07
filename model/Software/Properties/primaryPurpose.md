@@ -12,7 +12,7 @@ purpose provides information about the primary purpose of the software artifact.
 
 ## Metadata
 
-- name: purpose
+- name: primaryPurpose
 - Nature: DataProperty
 - Range: SoftwarePurpose
 
