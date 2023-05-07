@@ -4,11 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Refers to any object that stores content on a computer.
 
 ## Description
 
-TODO This is about the File class.
+Refers to any object that stores content on a computer.
+The type of content can optionally be provieded in the contentType property.
 
 ## Metadata
 
