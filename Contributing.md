@@ -4,11 +4,11 @@
 SPDX is always welcoming new contributors! The discussions are happening on the spdx-tech mailing list
 and during our weekly meetings. All the details are in: https://spdx.dev/participate/tech/
 
-## Reviewing the SPDX 3.0 Release Candidate
+## Reviewing the SPDX 3.0 Release Candidates
 SPDX recently released the first release candidate for the SPDX 3.0 model.  
 We expect more release candidates prior to general availability and would welcome review and feedback.
 
-This repository consists of markdown files describing the model classes, properties, and vocabularies.
+This repository consists of markdown files describing the model classes, properties, and vocabularies which will be used to automatically create documentation, ontologies, and validation artifacts.
 These are organized by profile.
 
 Please submit a pull request or issue for any suggested changes or issues you find.
