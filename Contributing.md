@@ -4,6 +4,15 @@
 SPDX is always welcoming new contributors! The discussions are happening on the spdx-tech mailing list
 and during our weekly meetings. All the details are in: https://spdx.dev/participate/tech/
 
+## Reviewing the SPDX 3.0 Release Candidate
+SPDX recently released the first release candidate for the SPDX 3.0 model.  
+We expect more release candidates prior to general availability and would welcome review and feedback.
+
+This repository consists of markdown files describing the model classes, properties, and vocabularies.
+These are organized by profile.
+
+Please submit a pull request or issue for any suggested changes or issues you find.
+
 ## Contributing to a specific profile
 There are multiple profiles being developed in parallel for the SPDX 3.0 Model. During this initial phase of development, each profile working group will contribute changes to its own branch in this repository. For example, any changes to the Build Profile should be submitted as a change request to the `build-profile` branch. There will be at least one maintainer per profile in charge of merging any profile development changes to the profile-specific branch. Once the first "complete" version of a profile is ready, the profile maintainer will alert the general SPDX tech group that the profile model is ready for review.
 
