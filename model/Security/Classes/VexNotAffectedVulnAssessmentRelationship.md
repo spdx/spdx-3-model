@@ -48,13 +48,13 @@ for VEX.
 ## Metadata
 
 - name: VexNotAffectedVulnAssessmentRelationship
-- SubclassOf:  VexVulnAssessmentRelationship
+- SubclassOf: VexVulnAssessmentRelationship
 - Instantiability: Concrete
 
 ## Properties
 
 - justification
-  - type: justification
+  - type: VexJustificationType
   - minCount: 0
   - maxCount: 1
 - impactStatement
