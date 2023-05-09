@@ -23,12 +23,12 @@ This method of development was agreed upon by the SPDX Tech team on 2023-01-17.
 ## Profile Maintainers
 In accordance with the development model described above, each profile has at least maintainer in charge of merging profile-specific changes to the profile working branch. To contribute to a specific profile, please open a PR to the profile-specific branch or reach out to the maintainer of the profile (noted below). Each profile also has their own weekly meeting time which can be found [here](https://github.com/spdx/meetings#sub-groups-for-specific-topics).
 
-| Profile | Maintainer |
+| Profile | Maintainer(s) |
 | ----------- | ----------- |
-| AI and Data | TBD |
-| Core | TBD |
-| Build | TBD |
-| Licensing | TBD |
-| Security   | TBD |
-| Software | TBD |
+| AI and Data | Karen Bennet and Gopi Krishnan Rajbahadur (@rgopikrishnan91) |
+| Core | William Bartholomew (@iamwillbar) |
+| Build | Brandon Lum (@lumjjb) |
+| Licensing | Steve Winslow (@swinslow) |
+| Security   | Thomas Steenbergen (@tsteenbe) |
+| Software | Alexios Zavras (@zvr) and Gary O'Neall (@goneall) |
 
