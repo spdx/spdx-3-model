@@ -30,5 +30,5 @@ In accordance with the development model described above, each profile has at le
 | Build | Brandon Lum (@lumjjb) |
 | Licensing | Steve Winslow (@swinslow) |
 | Security   | Thomas Steenbergen (@tsteenbe) |
-| Software | Alexios Zavras (@zvr) and Gary O'Neal (@goneall) |
+| Software | Alexios Zavras (@zvr) and Gary O'Neall (@goneall) |
 
