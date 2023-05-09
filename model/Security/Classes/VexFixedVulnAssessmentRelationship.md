@@ -42,7 +42,7 @@ element.
 ## Metadata
 
 - name: VexFixedVulnAssessmentRelationship
-- SubclassOf: VulnVexAssessmentRelationship
+- SubclassOf: VexVulnAssessmentRelationship
 - Instantiability: Concrete
 
 ## Properties
