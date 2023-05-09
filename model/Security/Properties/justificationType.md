@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# justification
+# justificationType
 
 ## Summary
 
@@ -19,7 +19,7 @@ complementary to the justification label, but one of both MUST be defined.
 
 ## Metadata
 
-- name: justification
+- name: justificationType
 - Nature: DataProperty
 - Range: VexJustificationType
 

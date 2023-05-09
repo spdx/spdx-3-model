@@ -10,7 +10,7 @@ not affected by the vulnerability.
 ## Description
 
 VexNotAffectedVulnAssessmentRelationship connects a vulnerability and a number
-of elements desigating them as products not affected by the vulnerability.
+of elements designating them as products not affected by the vulnerability.
 This relationship corresponds to the VEX not_affected status.
 
 **Constraints**
@@ -22,9 +22,9 @@ following requirements must be observed:
 to the doesNotAffect relationship type.
 * The from: end of the relationship must be a /Security/Vulnerability classed
 element.
-* Both impactStatement and justification properties have a cardinality of
+* Both impactStatement and justificationType properties have a cardinality of
 0..1 making them optional. Nevertheless, to produce a valid VEX not_affected
-statement, one of them MUST be defined. This is specfied in the Minimum Elements
+statement, one of them MUST be defined. This is specified in the Minimum Elements
 for VEX.
 
 **Syntax**
@@ -37,7 +37,7 @@ for VEX.
   "from": "urn:spdx.dev:vuln-cve-2020-28498",
   "to": ["urn:product-acme-application-1.3"],
   "assessedElement": "urn:npm-elliptic-6.5.2",
-  "justification": "componentNotPresent",
+  "justificationType": "componentNotPresent",
   "impactStatement": "Not using this vulnerable part of this library.",
   "suppliedBy": ["urn:spdx.dev:agent-jane-doe"],
   "publishedTime": "2021-03-09T11:04:53Z"
@@ -53,7 +53,7 @@ for VEX.
 
 ## Properties
 
-- justification
+- justificationType
   - type: VexJustificationType
   - minCount: 0
   - maxCount: 1
