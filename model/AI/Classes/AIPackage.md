@@ -81,8 +81,6 @@ Metadata information that can be added to a package to describe an AI applicatio
   - minCount: 1
 - /Software/SoftwareArtifact/purpose
   - minCount: 1
-- /Core/Relationship/relationshipType
-  - minCount: 1
 - /Core/Artifact/releaseTime
   - minCount: 1
 
