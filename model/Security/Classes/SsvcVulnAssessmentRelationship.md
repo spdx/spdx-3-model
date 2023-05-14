@@ -4,14 +4,14 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Provides a SSVC assessment for a vulnerability.
+Provides an SSVC assessment for a vulnerability.
 
 ## Description
 
-A SsvcVulnAssessmentRelationship describes the decision made using the
+An SsvcVulnAssessmentRelationship describes the decision made using the
 Stakeholder-Specific Vulnerability Categorization (SSVC) decision tree as
-defined on  [https://www.cisa.gov/stakeholder-specific-vulnerability-categorization-ssvc](https://www.cisa.gov/stakeholder-specific-vulnerability-categorization-ssvc).
-It is intented to communicate the results of using the CISA SSVC Calculator.
+defined on [https://www.cisa.gov/stakeholder-specific-vulnerability-categorization-ssvc](https://www.cisa.gov/stakeholder-specific-vulnerability-categorization-ssvc).
+It is intended to communicate the results of using the CISA SSVC Calculator.
 
 **Syntax**
 
@@ -20,7 +20,7 @@ It is intented to communicate the results of using the CISA SSVC Calculator.
   "@type": "SsvcVulnAssessmentRelationship",
   "@id": "urn:spdx.dev:ssvc-1",
   "relationshipType": "hasSsvcAssessmentFor",
-  "decision": "act",
+  "decisionType": "act",
   "from": "urn:spdx.dev:vuln-cve-2020-28498",
   "to": ["urn:product-acme-application-1.3"],
   "assessedElement": "urn:npm-elliptic-6.5.2",
@@ -37,7 +37,7 @@ It is intented to communicate the results of using the CISA SSVC Calculator.
 
 ## Properties
 
-- decision
+- decisionType
   - type: SsvcDecisionType
   - minCount: 1
   - maxCount: 1

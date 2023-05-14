@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# decision
+# decisionType
 
 ## Summary
 
@@ -8,11 +8,11 @@ Provide the enumeration of possible decisions in the Stakeholder-Specific Vulner
 
 ## Description
 
-A decision is a mandatory value and must select one of the four entries in the `SsvcDecisionType.md` vocabulary.
+A decisionType is a mandatory value and must select one of the four entries in the `SsvcDecisionType.md` vocabulary.
 
 ## Metadata
 
-- name: decision
+- name: decisionType
 - Nature: DataProperty
 - Range: SsvcDecisionType
 
