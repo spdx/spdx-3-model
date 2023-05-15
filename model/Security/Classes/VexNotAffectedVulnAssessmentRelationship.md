@@ -62,6 +62,6 @@ for VEX.
   - minCount: 0
   - maxCount: 1
 - impactStatementTime
-  - type: xsd:dateTime
+  - type: /Core/DateTime
   - minCount: 0
   - maxCount: 1
