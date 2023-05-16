@@ -25,10 +25,11 @@ In accordance with the development model described above, each profile has at le
 
 | Profile | Maintainer(s) |
 | ----------- | ----------- |
-| AI and Data | Karen Bennet and Gopi Krishnan Rajbahadur (@rgopikrishnan91) |
-| Core | William Bartholomew (@iamwillbar) |
-| Build | Brandon Lum (@lumjjb) |
-| Licensing | Steve Winslow (@swinslow) |
-| Security   | Thomas Steenbergen (@tsteenbe) |
-| Software | Alexios Zavras (@zvr) and Gary O'Neall (@goneall) |
+| AI | Karen Bennet and [Gopi Krishnan Rajbahadur](https://github.com/rgopikrishnan91) |
+| Dataset | Karen Bennet and [Gopi Krishnan Rajbahadur](https://github.com/rgopikrishnan91) |
+| Core | [William Bartholomew](https://github.com/iamwillbar), [Gary O'Neall](https://github.com/goneall), and [Kate Stewart](https://github.com/kestewart) |
+| Build | [Brandon Lum](https://github.com/lumjjb) and [Nisha Kumar](https://github.com/nishakm) |
+| Licensing | [Steve Winslow](https://github.com/swinslow) and [Alexios Zavras](https://github.com/zvr) |
+| Security   | [Thomas Steenbergen](https://github.com/tsteenbe), [Adolfo García Veytia](https://github.com/puerco), and [Rose Judge](https://github.com/rnjudge) |
+| Software | [Alexios Zavras](https://github.com/zvr) and [Gary O'Neall](https://github.com/goneall) |
 
