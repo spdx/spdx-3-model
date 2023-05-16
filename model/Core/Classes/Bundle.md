@@ -24,7 +24,5 @@ A bundle is a collection of Elements that have a shared context.
   
 ## External properties restrictions
 
-- creationInfo
-  - type: CreationInfo
+- /core/Element/creationInfo
   - minCount: 1
-  - maxCount: 1

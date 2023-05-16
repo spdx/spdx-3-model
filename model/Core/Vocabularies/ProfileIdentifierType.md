@@ -25,3 +25,4 @@ There are a set of profiles that have been defined to be valid for a specific re
 - dataset: the element follows the Dataset profile specification
 - usage: the element follows the Usage profile specification
 - extension: the element follows the Extension profile specification
+- individual: the element can be shared individually without being included in a `Bundle`
