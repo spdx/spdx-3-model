@@ -15,8 +15,9 @@ Vulnerability Scoring System (CVSS) as defined on
 
 **Constraints**
 
-The value of severity must be one of 'none', 'low', 'medium', 'high' or 'critical'.
-Absence of the property shall be interpreted as 'none'.
+- The value of severity must be one of 'none', 'low', 'medium', 'high' or 'critical'.
+- Absence of the property shall be interpreted as 'none'.
+- The relationship type must be set to hasAssessmentFor.
 
 **Syntax**
 
@@ -24,7 +25,7 @@ Absence of the property shall be interpreted as 'none'.
 {
   "@type": "CvssV3VulnAssessmentRelationship",
   "@id": "urn:spdx.dev:cvssv3-cve-2020-28498",
-  "relationshipType": "hasCvssV3AssessmentFor",
+  "relationshipType": "hasAssessmentFor",
   "severity": "medium",
   "score": 6.8,
   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",

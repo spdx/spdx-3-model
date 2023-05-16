@@ -13,13 +13,17 @@ probability that a vulnerability will be exploited in the wild using the Exploit
 Prediction Scoring System (EPSS) as defined on 
 [https://www.first.org/epss/model](https://www.first.org/epss/model).
 
+**Constraints**
+
+- The relationship type must be set to hasAssessmentFor.
+
 **Syntax**
 
 ```json
 {
   "@type": "EpssVulnAssessmentRelationship",
   "@id": "urn:spdx.dev:epss-1",
-  "relationshipType": "hasEpssAssessmentFor",
+  "relationshipType": "hasAssessmentFor",
   "probability": 80,
   "from": "urn:spdx.dev:vuln-cve-2020-28498",
   "to": ["urn:product-acme-application-1.3"],
