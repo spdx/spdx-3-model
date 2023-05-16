@@ -21,7 +21,7 @@ A bundle is a collection of Elements that have a shared context.
 - context
   - type: xsd:string
   - maxCount: 1
-  
+
 ## External properties restrictions
 
 - /core/Element/creationInfo
