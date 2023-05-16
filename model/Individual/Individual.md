@@ -15,3 +15,10 @@ In those cases, the `Element` `creationInfo` property would be required to ident
 
 - id: https://rdf.spdx.org/v3/Individual
 - name: Individual
+
+## External properties restrictions
+
+- /Core/creationInfo
+  - type: /Core/Element/CreationInfo
+  - minCount: 1
+  - maxCount: 1
