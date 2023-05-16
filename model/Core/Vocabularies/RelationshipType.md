@@ -68,11 +68,7 @@ Build Profile specific RelationshipType descriptions can be found [here](https:/
 - buildHostOf: Element in which the build instance runs on
 - hasAssociatedVulnerability: (Security) Used to associate a security vulnerability with a software artifact
 - coordinatedBy: (Security) Used to identify the vendor, researcher, or consumer agent performing coordination for a vulnerability
-- hasCvssV2AssessmentFor: (Security) Specifies a CVSS V2 assessment of a vulnerability
-- hasCvssV3AssessmentFor: (Security) Specifies a CVSS V3 assessment of a vulnerability
-- hasEpssAssessmentFor: (Security) Specifies a EPSS assessment of a vulnerability
-- hasExploitCatalogAssessmentFor: (Security) Specifies a exploit catalog assessment of a vulnerability
-- hasSsvcAssessmentFor: (Security) Specifies a SSVC assessment of a vulnerability
+- hasAssessmentFor: (Security) Relates a Vulnerability and an Element with a security assessment.
 - exploitCreatedBy: (Security) Designates an agent has created an exploit against a vulnerability
 - fixedBy: (Security) Designates a vulnerability has been fixed by an agent
 - foundBy: (Security) Designates an agent was the original discoverer of a security vulnerability
