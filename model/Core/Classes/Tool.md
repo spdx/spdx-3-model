@@ -13,7 +13,7 @@ A Tool is an element of hardware and/or software utilized to carry out a particu
 ## Metadata
 
 - name: Tool
-- SubclassOf: Entity
+- SubclassOf: Element
 - Instantiability: Concrete
 
 ## Properties

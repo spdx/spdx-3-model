@@ -13,7 +13,7 @@ A Person is an individual human being.
 ## Metadata
 
 - name: Person
-- SubclassOf: Identity
+- SubclassOf: Agent
 - Instantiability: Concrete
 
 ## Properties
