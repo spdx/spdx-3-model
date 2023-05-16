@@ -9,8 +9,8 @@ Provides a short, unique identifier to refer to a License.
 ## Description
 
 A licenseId contains a human-readable, short-form license identifier for a
-License. It may only include letters, numbers, period (".") and hyphen ("-")
-characters.
+License. It may only include letters, digits, periods (“.”) and hyphens (“-”).
+A letter is an ASCII character from “A” to “Z”, upper and lower case.
 
 For a ListedLicense, the licenseId will be as specified on the
 [SPDX License List](https://spdx.org/licenses) for the particular license.

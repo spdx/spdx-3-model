@@ -9,8 +9,9 @@ Provides a short, unique identifier to refer to a LicenseAddition.
 ## Description
 
 An additionId contains a human-readable, short-form identifier for a
-LicenseAddition. It may only include letters, numbers, period (".") and
-hyphen ("-") characters.
+LicenseAddition. It may only include letters, digits, periods (“.”) and
+hyphens (“-”). A letter is an ASCII character from “A” to “Z”, upper
+and lower case.
 
 For a ListedLicenseException, the licenseId will be as specified on the
 [SPDX Exceptions List](https://spdx.org/licenses/exceptions-index.html) for the
