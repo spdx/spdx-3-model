@@ -27,6 +27,9 @@ such as a package, a file, or a snippet.
   - type: SoftwarePurpose
   - minCount: 0
   - maxCount: 1
+- additionalPurpose
+  - type: SoftwarePurpose
+  - minCount: 0
 - concludedLicense
   - type: /Licensing/LicenseField
   - minCount: 0
