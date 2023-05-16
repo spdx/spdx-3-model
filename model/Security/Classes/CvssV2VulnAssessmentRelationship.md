@@ -13,7 +13,8 @@ A CvssV2VulnAssessmentRelationship relationship describes the determined score a
 
 **Constraints**
 
-The value of severity must be one of 'low', 'medium' or 'high'
+- The value of severity must be one of 'low', 'medium' or 'high'
+- The relationship type must be set to hasAssessmentFor.
 
 **Syntax**
 
@@ -21,7 +22,7 @@ The value of severity must be one of 'low', 'medium' or 'high'
 {
   "@type": "CvssV2VulnAssessmentRelationship",
   "@id": "urn:spdx.dev:cvssv2-cve-2020-28498",
-  "relationshipType": "hasCvssV2AssessmentFor",
+  "relationshipType": "hasAssessmentFor",
   "score": 4.3,
   "vector": "(AV:N/AC:M/Au:N/C:P/I:N/A:N)",
   "severity": "low",

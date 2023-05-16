@@ -13,13 +13,17 @@ Stakeholder-Specific Vulnerability Categorization (SSVC) decision tree as
 defined on [https://www.cisa.gov/stakeholder-specific-vulnerability-categorization-ssvc](https://www.cisa.gov/stakeholder-specific-vulnerability-categorization-ssvc).
 It is intended to communicate the results of using the CISA SSVC Calculator.
 
+**Constraints**
+
+- The relationship type must be set to hasAssessmentFor.
+
 **Syntax**
 
 ```json
 {
   "@type": "SsvcVulnAssessmentRelationship",
   "@id": "urn:spdx.dev:ssvc-1",
-  "relationshipType": "hasSsvcAssessmentFor",
+  "relationshipType": "hasAssessmentFor",
   "decisionType": "act",
   "from": "urn:spdx.dev:vuln-cve-2020-28498",
   "to": ["urn:product-acme-application-1.3"],
