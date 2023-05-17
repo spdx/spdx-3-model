@@ -18,7 +18,7 @@ In those cases, the `Element` `creationInfo` property would be required to ident
 
 ## External properties restrictions
 
-- /Core/creationInfo
-  - type: /Core/Element/CreationInfo
+- /Core/Element/creationInfo
+  - type: /Core/CreationInfo
   - minCount: 1
   - maxCount: 1
