@@ -19,6 +19,10 @@ assessment relationships. It factors out the common properties shared by them.
 
 ## Properties
 
+- assessmentType
+  - type: AssessmentType
+  - minCount: 1
+  - maxCount: 1
 - assessedElement
   - type: /Core/Element
   - minCount: 0
