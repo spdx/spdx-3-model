@@ -14,5 +14,4 @@ OriginatedBy identifies from where or whom the Element originally came.
 
 - name: originatedBy
 - Nature: ObjectProperty
-- Range: Identity
-
+- Range: Agent

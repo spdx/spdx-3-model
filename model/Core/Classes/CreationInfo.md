@@ -28,7 +28,7 @@ The dateTime created is often the date of last change (e.g., a git commit date),
 - created
   - type: DateTime
 - createdBy
-  - type: Entity
+  - type: Agent
   - minCount: 1
 - createdUsing
   - type: Tool

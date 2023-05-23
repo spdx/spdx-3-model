@@ -13,7 +13,7 @@ An Organization is a group of people who work together in an organized way for a
 ## Metadata
 
 - name: Organization
-- SubclassOf: Identity
+- SubclassOf: Agent
 - Instantiability: Concrete
 
 ## Properties
