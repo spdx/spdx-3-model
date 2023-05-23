@@ -14,5 +14,5 @@ A definingDocument property is used to link an Element identifier to an SpdxDocu
 
 - name: definingDocument
 - Nature: DataProperty
-- Range: AnyURI
+- Range: xsd:anyURI
 
