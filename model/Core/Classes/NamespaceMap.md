@@ -21,8 +21,10 @@ human-readable and smaller serialized representation of the Elements.
 
 - prefix
   - type: xsd:string
+  - minCount: 1
   - maxCount: 1
 - namespace
   - type: xsd:anyURI
+  - minCount: 1
   - maxCount: 1
 
