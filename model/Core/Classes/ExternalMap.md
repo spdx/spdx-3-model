@@ -33,4 +33,4 @@ such as its provenance, where to retrieve it, and how to verify its integrity.
   - type: xsd:anyURI
   - maxCount: 1
 - definingDocument
-  - type: anyURI
+  - type: xsd:anyURI
