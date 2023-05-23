@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# purpose
+# primaryPurpose
 
 ## Summary
 
@@ -8,11 +8,11 @@ Provides information about the primary purpose of the software artifact.
 
 ## Description
 
-purpose provides information about the primary purpose of the software artifact.
+primaryPurpose provides information about the primary purpose of the software artifact.
 
 ## Metadata
 
-- name: purpose
+- name: primaryPurpose
 - Nature: DataProperty
 - Range: SoftwarePurpose
 
