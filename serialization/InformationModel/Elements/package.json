@@ -1,0 +1,21 @@
+{
+  "id": "urn:spdx.dev:spdx-tools-3.0.1",
+  "type": {
+    "package": {
+      "packagePurpose": ["application"],
+      "downloadLocation": "https://spdx.dev/downloads/spdx-tools-3.0.1.tgz",
+      "homePage": "https://spdx.dev/tools.3.0",
+      "originator": ["urn:spdx.dev:project"]
+    }
+  },
+  "externalIdentifier": [
+    {"type": "purl", "identifier": ""},
+    {"type": "cpe_2.2", "identifier": ""}
+  ],
+  "verifiedUsing": [{"hash": {"sha256": "14a657a7118a333cc1fdc6af05071a59cda067fd11130d4ee5d6d47c26e7863f"}}],
+  "creator": ["urn:spdx.dev:iamwillbar"],
+  "created": "2022-05-02T20:28:00.000Z",
+  "specVersion": "3.0",
+  "profile": ["core", "software"],
+  "dataLicense": "CC0-1.0"
+}
