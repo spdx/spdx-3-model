@@ -38,6 +38,7 @@ Build Profile specific RelationshipType descriptions can be found [here](https:/
 - documentation: Every `to` Element is documentation for the `from` Element
 - dynamicLink: Every `to` Element is dynamically linked to the `from` Element
 - example: Every `to` Element is an example for the `from` Element
+- evidenceFor: (Dataset) Every `to` Element is can be considered as evidence for the `from` Element
 - expandedFromArchive: Every `to` Element is an artifact expanded from the `from` archive file
 - fileAdded: Every `to` Element is is a file added to the `from` Element
 - fileDeleted: Every `to` Element is a file deleted from the `from` Element
@@ -59,6 +60,8 @@ Build Profile specific RelationshipType descriptions can be found [here](https:/
 - testCase: Every `to` Element is a test case for the `from` Element
 - testDependency: Every `to` Element is a test dependency for the `from` Element
 - testTool: Every `to` Element is a test tool for the `from` Element
+- testedOn: (AI, Dataset) The `from` Element has been tested on the `to` Element
+- trainedOn: (AI, Dataset) The `from` Element has been trained by the `to` Element(s)
 - variant: Every `to` Element is a variant the `from` Element
 - buildInputOf: Input to the build instance
 - buildOutputOf: Output of the build instance
