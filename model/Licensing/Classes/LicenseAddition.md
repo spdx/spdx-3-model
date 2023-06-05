@@ -25,18 +25,6 @@ or otherwise) which is defined by an SPDX data creator (CustomLicenseAddition).
 
 ## Properties
 
-- additionComment
-  - type: xsd:string
-  - minCount: 0
-  - maxCount: 1
-- additionId
-  - type: xsd:string
-  - minCount: 1
-  - maxCount: 1
-- additionName
-  - type: xsd:string
-  - minCount: 1
-  - maxCount: 1
 - additionText
   - type: xsd:string
   - minCount: 1

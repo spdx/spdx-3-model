@@ -18,7 +18,7 @@ property description.
 ## Metadata
 
 - name: LicenseField
-- SubclassOf: none
+- SubclassOf: /Core/Element
 - Instantiability: Abstract
 
 ## Properties
