@@ -14,7 +14,7 @@ A License represents a license text, whether listed on the SPDX License List
 ## Metadata
 
 - name: License
-- SubclassOf: AnyLicenseInfo
+- SubclassOf: ExtendableLicense
 - Instantiability: Abstract
 
 ## Properties

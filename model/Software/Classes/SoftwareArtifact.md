@@ -31,11 +31,11 @@ such as a package, a file, or a snippet.
   - type: SoftwarePurpose
   - minCount: 0
 - concludedLicense
-  - type: /Licensing/LicenseField
+  - type: /Licensing/AnyLicenseInfo
   - minCount: 0
   - maxCount: 1
 - declaredLicense
-  - type: /Licensing/LicenseField
+  - type: /Licensing/AnyLicenseInfo
   - minCount: 0
   - maxCount: 1
 - copyrightText
