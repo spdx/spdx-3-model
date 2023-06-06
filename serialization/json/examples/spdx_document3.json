@@ -7,7 +7,6 @@
         "https://some.namespace#File1",
         "https://spdx.dev/elements/3F26391C#spdx-spec-v2.3",
         "https://spdx.dev/elements/3F26391C#spdx-dev",
-        "https://some.namespace#sbomolator_v2",
         "http://spdx.acme.org/3FA9CB25#spdxdocument240"
       ]
     }

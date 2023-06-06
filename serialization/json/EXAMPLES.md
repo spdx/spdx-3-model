@@ -28,12 +28,12 @@
 
 ### Collections
 - [Bom1](examples/bom1.json)
-- [Sbom1 with two Files](examples/sbom1.json) - One Element: Sbom1
+- [Sbom1 with two Files](examples/sbom1.json) - Sbom1 with File1 and File2
 
 ### Documents
 - [SpdxDocument1 with two Files](examples/spdx_document1.json) - File1 and File2 - this is a "bundle"
 - [SpdxDocument2 with two Persons](examples/spdx_document2.json) - Person1 and Person2 - also a "bundle"
-- [SpdxDocument3 with Sbom1 with two files](examples/spdx_document3.json) - Sbom1, File1, File2, Org1, Tool1, SpdxDocument3
+- [SpdxDocument3 with Sbom1 with two files and dependencies](examples/spdx_document3.json) - Sbom1, File1, File2, Org1, SpdxDocument3
 - [SpdxDocument4 with NamespaceMap](examples/spdx_document4.json)
 - [SpdxDocument5 with ExternalMap](examples/spdx_document5.json)
 ---
