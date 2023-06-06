@@ -26,7 +26,7 @@ after deserializing an Element instance.
 ### Logical Values
 
 A serialization testing application de-serializes an example Element in one
-format (e.g., JSON) into logical value A, then compare it to the logical
+format (e.g., JSON) into logical value A, then compares it to the logical
 value B resulting from de-serializing the same Element in another format.
 In order to evaluate the expression A == B, A and B must be the same type
 regardless of format and must include only properties defined in the logical
