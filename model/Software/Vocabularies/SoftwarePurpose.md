@@ -36,6 +36,7 @@ about the context in which the Element exists.
 - install: the Element is used to install software on disk
 - library: the Element is a software library
 - manifest: the Element is a software manifest
+- mlModel: the Element is a machine learning model
 - module: the Element is a module of a piece of software
 - operatingSystem: the Element is an operating system
 - other: the Element doesn't fit into any of the other categories
