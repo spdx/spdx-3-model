@@ -29,9 +29,6 @@ or otherwise) which is defined by an SPDX data creator (CustomLicenseAddition).
   - type: xsd:string
   - minCount: 1
   - maxCount: 1
-- seeAlso
-  - type: xsd:anyURI
-  - minCount: 0
 - standardAdditionTemplate
   - type: xsd:string
   - minCount: 0

@@ -23,9 +23,6 @@ A License represents a license text, whether listed on the SPDX License List
   - type: xsd:string
   - minCount: 1
   - maxCount: 1
-- seeAlso
-  - type: xsd:anyURI
-  - minCount: 0
 - isOsiApproved
   - type: xsd:boolean
   - minCount: 0
