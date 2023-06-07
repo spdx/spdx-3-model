@@ -1,0 +1,8 @@
+                             spdxId = 'https://some.namespace#sbomolator_v2'
+                          type.tool = nil
+                               name = 'Acme Corp. Super SBOM-o-lator'
+           creationInfo.specVersion = '3.0.0'
+             creationInfo.profile.0 = 'core'
+               creationInfo.created = '2022-12-01T00:00:00'
+           creationInfo.dataLicense = 'CC0-1.0'
+           creationInfo.createdBy.0 = 'https://spdx.dev/elements/3F26391C#spdx-dev'

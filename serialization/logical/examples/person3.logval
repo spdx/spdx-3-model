@@ -1,0 +1,5 @@
+                             spdxId = 'http://spdx.acme.org/3FA9CB25#person3'
+                        type.person = nil
+                               name = 'Nigel Thornberry'
+externalIdentifier.0.externalIdentifierType = 'email'
+    externalIdentifier.0.identifier = 'nigel3@outlook.com'
