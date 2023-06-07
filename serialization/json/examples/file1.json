@@ -1,0 +1,19 @@
+{
+  "spdxId": "https://some.namespace#file1",
+  "type": {
+    "file": {
+      "contentType": "image/png",
+      "purpose": ["documentation"],
+      "contentIdentifier": "https://github.com/spdx/spdx-3-model/blob/main/model.png",
+      "originatedBy": ["https://spdx.dev/elements/3F26391C#spdx-dev"]
+    }
+  },
+  "name": "model.png",
+  "creationInfo": {
+    "specVersion": "3.0.0",
+    "profile": ["core", "software"],
+    "created": "2022-12-01T00:00:00",
+    "dataLicense": "CC0-1.0",
+    "createdBy": ["https://spdx.dev/elements/3F26391C#spdx-dev"]
+  }
+}

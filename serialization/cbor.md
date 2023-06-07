@@ -1,2 +1,0 @@
-# CBOR serialization
-

@@ -1,0 +1,13 @@
+{
+  "spdxId": "http://spdx.acme.org/3FA9CB25#person3",
+  "type": {
+    "person": {}
+  },
+  "name": "Nigel Thornberry",
+  "externalIdentifier": [
+    {
+      "externalIdentifierType": "email",
+      "identifier": "nigel3@outlook.com"
+    }
+  ]
+}
