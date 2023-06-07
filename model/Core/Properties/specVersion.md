@@ -17,9 +17,14 @@ The minor version number shall be incremented when backwards compatible changes 
 Here, parties exchanging information in accordance with the SPDX specification need to provide 
 100% transparency as to which SPDX specification version such information is conforming to.
 
+The specVersion is a string that is following the specification of [Semantic Versioning 2.0.0](https://semver.org/).
+
 ## Metadata
 
 - name: specVersion
 - Nature: DataProperty
-- Range: SemVer
+- Range: xsd:string
 
+## Format
+
+- pattern: ^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$
