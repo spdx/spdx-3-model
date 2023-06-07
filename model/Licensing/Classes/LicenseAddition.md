@@ -20,7 +20,7 @@ or otherwise) which is defined by an SPDX data creator (CustomLicenseAddition).
 ## Metadata
 
 - name: LicenseAddition
-- SubclassOf: none
+- SubclassOf: /Core/Element
 - Instantiability: Abstract
 
 ## Properties

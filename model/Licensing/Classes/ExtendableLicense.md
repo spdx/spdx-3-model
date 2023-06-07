@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Abstract class representing a license or an OrOperator.
+Abstract class representing a License or an OrLaterOperator.
 
 ## Description
 
-The WithOperator can have a license or an OrOperator as the license property value.  This class is used for the value.
+The WithAdditionOperator can have a License or an OrLaterOperator as the license property value.  This class is used for the value.
 
 ## Metadata
 
