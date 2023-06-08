@@ -16,6 +16,32 @@ JSON and other general data formats do not:
 * reserve property names (such as @context, @id, @type, @graph) for special purposes, or
 * require applications to perform any special processing based on reserved property names.
 
+### JSON-LD
+A collection of examples that is "almost JSON except with @context" is a JSON-LD serialization, not JSON.
+JSON serialization does not use JSON-LD processing or features or sandbox capabilities.
+But RDF-aware applications can deserialize pure JSON data because the model defines the data types
+and their RDF links.
+
+For example, a JSON message:
+```json
+[38.88949, -77.03529]
+```
+is complete in and of itself.
+* Naive applications can parse it into an array of two numbers.
+* Model-aware applications know the array type, its two properties, and those property
+types because they are defined by the model.
+* RDF-aware applications know the array and property types and the RDF URIs of all those types,
+because the model includes those URIs:
+```
+Coordinate = Array       // rdf="http://geotags.org/GPS-Coordinate"
+  1 latitude Latitude
+  2 longitude Longitude
+
+Latitude = Number{-90.0..90.0}   // rdf="http://geotags.org/Latitude"
+```
+There is no need to transmit RDF information in JSON-serialized data, and there is no reason to
+require all JSON-consuming applications to recognize RDF information, even if only to discard it.
+
 ### Definitions:
 * **Logical Value** - the value of an application variable prior to serializing or
 after deserializing an Element instance.
