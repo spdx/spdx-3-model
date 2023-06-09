@@ -14,7 +14,7 @@ the absence of license information from a software artifact.
 ## Metadata
 
 - id: NoneLicense
-- type: LicenseInfo
+- type: Licensing/AnyLicenseInfo
 
 ## Serialization
 
