@@ -23,4 +23,5 @@
 - [SpdxDocument1 with two Files](examples/spdx_document1.json)
 - [SpdxDocument2 with two Files](examples/spdx_document2.json) - all in the same payload
 - [SpdxDocument3 with a Package that contains two Files](examples/spdx_document3.json) - all in the same payload
+- [SpdxDocument4](examples/spdx_document4.json) - same as SpdxDocument3 but using the context to shorten URIs
 

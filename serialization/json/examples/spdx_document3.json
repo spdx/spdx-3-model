@@ -3,7 +3,7 @@
   "@graph": [
     {
       "@type": "SpdxDocument",
-      "@id": "http://spdx.acme.org/3FA9CB25#spdxdocument159",
+      "@id": "https://some.namespace#spdxdocument159",
       "creationInfo": {
         "specVersion": "3.0.0",
         "created": "2022-12-01T00:00:00",
