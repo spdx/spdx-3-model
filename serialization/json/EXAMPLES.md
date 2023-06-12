@@ -25,3 +25,6 @@
 - [SpdxDocument3 with a Package that contains two Files](examples/spdx_document3.json) - all in the same payload
 - [SpdxDocument4](examples/spdx_document4.json) - same as SpdxDocument3 but using the context to shorten URIs
 
+### Full examples
+- [converted SPDX document from SPDX-2.3](examples/converted_from_spdx_2.json) - converted from [this file](https://github.com/spdx/spdx-spec/blob/development/v2.3.1/examples/SPDXJSONExample-v2.3.spdx.json)
+
