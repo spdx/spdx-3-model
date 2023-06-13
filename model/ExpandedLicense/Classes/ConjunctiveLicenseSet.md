@@ -24,11 +24,11 @@ left to the consumer of SPDX data to determine for themselves.
 ## Metadata
 
 - name: ConjunctiveLicenseSet
-- SubclassOf: AnyLicenseInfo
+- SubclassOf: Licensing/AnyLicenseInfo
 - Instantiability: Concrete
 
 ## Properties
 
 - member
-  - type: AnyLicenseInfo
+  - type: Licensing/AnyLicenseInfo
   - minCount: 2

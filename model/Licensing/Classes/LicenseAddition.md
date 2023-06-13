@@ -20,30 +20,15 @@ or otherwise) which is defined by an SPDX data creator (CustomLicenseAddition).
 ## Metadata
 
 - name: LicenseAddition
-- SubclassOf: none
+- SubclassOf: /Core/Element
 - Instantiability: Abstract
 
 ## Properties
 
-- additionComment
-  - type: xsd:string
-  - minCount: 0
-  - maxCount: 1
-- additionId
-  - type: xsd:string
-  - minCount: 1
-  - maxCount: 1
-- additionName
-  - type: xsd:string
-  - minCount: 1
-  - maxCount: 1
 - additionText
   - type: xsd:string
   - minCount: 1
   - maxCount: 1
-- seeAlso
-  - type: xsd:anyURI
-  - minCount: 0
 - standardAdditionTemplate
   - type: xsd:string
   - minCount: 0

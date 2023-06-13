@@ -15,4 +15,4 @@ A subjectLicense is a License which is subject to either an 'or later' effect
 
 - name: subjectLicense
 - Nature: ObjectProperty
-- Range: License
+- Range: Licensing/License

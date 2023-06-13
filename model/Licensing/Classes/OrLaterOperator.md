@@ -23,7 +23,7 @@ data will need to determine for themselves what meaning to attribute to a
 ## Metadata
 
 - name: OrLaterOperator
-- SubclassOf: AnyLicenseInfo
+- SubclassOf: ExtendableLicense
 - Instantiability: Concrete
 
 ## Properties

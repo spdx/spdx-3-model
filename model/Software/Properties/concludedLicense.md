@@ -42,4 +42,4 @@ retain the license choice or identify which license was chosen.
 
 - name: concludedLicense
 - Nature: ObjectProperty
-- Range: /Licensing/LicenseField
+- Range: /Licensing/AnyLicenseInfo

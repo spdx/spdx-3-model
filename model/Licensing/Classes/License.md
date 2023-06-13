@@ -14,30 +14,15 @@ A License represents a license text, whether listed on the SPDX License List
 ## Metadata
 
 - name: License
-- SubclassOf: AnyLicenseInfo
+- SubclassOf: ExtendableLicense
 - Instantiability: Abstract
 
 ## Properties
 
-- licenseComment
-  - type: xsd:string
-  - minCount: 0
-  - maxCount: 1
-- licenseId
-  - type: xsd:string
-  - minCount: 1
-  - maxCount: 1
-- licenseName
-  - type: xsd:string
-  - minCount: 1
-  - maxCount: 1
 - licenseText
   - type: xsd:string
   - minCount: 1
   - maxCount: 1
-- seeAlso
-  - type: xsd:anyURI
-  - minCount: 0
 - isOsiApproved
   - type: xsd:boolean
   - minCount: 0
