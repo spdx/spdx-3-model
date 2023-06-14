@@ -9,9 +9,10 @@
   ],
   "@graph": [
     {
-      "@type": "SpdxDocument",
-      "@id": "myNamespace:spdxdocument159",
+      "type": "SpdxDocument",
+      "spdxId": "myNamespace:spdxdocument159",
       "creationInfo": {
+        "type": "CreationInfo",
         "specVersion": "3.0.0",
         "created": "2022-12-01T00:00:00",
         "createdBy": ["spdxDev:spdx-dev"],
@@ -30,23 +31,23 @@
       ]
     },
     {
-      "@type": "Package",
-      "@id": "myNamespace:SPDXRef-Package",
+      "type": "Package",
+      "spdxId": "myNamespace:SPDXRef-Package",
       "name": "packageName"
     },
     {
-      "@type": "File",
-      "@id": "myNamespace:file1",
+      "type": "File",
+      "spdxId": "myNamespace:file1",
       "name": "file1"
     },
     {
-      "@type": "File",
-      "@id": "myNamespace:file2",
+      "type": "File",
+      "spdxId": "myNamespace:file2",
       "name": "file2"
     },
     {
-      "@type": "Relationship",
-      "@id": "myNamespace:relationship1",
+      "type": "Relationship",
+      "spdxId": "myNamespace:relationship1",
       "from": "myNamespace:SPDXRef-Package",
       "to": [
         "myNamespace:file1",

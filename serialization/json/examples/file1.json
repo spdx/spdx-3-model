@@ -1,8 +1,9 @@
 {
   "@context": "https://spdx.github.io/spdx-3-model/rdf/context.json",
-  "@type": "File",
-  "@id": "https://some.namespace#file1",
+  "type": "File",
+  "spdxId": "https://some.namespace#file1",
   "creationInfo": {
+    "type": "CreationInfo",
     "specVersion": "3.0.0",
     "created": "2022-12-01T00:00:00",
     "createdBy": ["https://spdx.dev/elements/3F26391C#spdx-dev"],

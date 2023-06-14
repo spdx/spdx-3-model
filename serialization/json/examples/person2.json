@@ -1,8 +1,9 @@
 {
   "@context": "https://spdx.github.io/spdx-3-model/rdf/context.json",
-  "@type": "Person",
-  "@id": "http://spdx.acme.org/3FA9CB25#person2",
+  "type": "Person",
+  "spdxId": "http://spdx.acme.org/3FA9CB25#person2",
   "creationInfo": {
+    "type": "CreationInfo",
     "specVersion": "3.0.0",
     "created": "2022-12-01T00:00:00",
     "createdBy": ["https://spdx.dev/elements/3F26391C#spdx-dev"],
@@ -14,6 +15,7 @@
   "name": "Alice Stone",
   "externalIdentifier": [
     {
+      "type": "ExternalIdentifier",
       "externalIdentifierType": "email",
       "identifier": "Alice.Stone@acme.com"
     }

@@ -23,8 +23,7 @@ For deserialization, you can check whether a URI has to be expanded by splitting
 If the suffix does not start with "//" and the prefix is a key in the context, you replace "prefix:" with the value found under that key.
 
 The rest of the serialized file will consist of an array of objects under the "@graph" key, also at top-level of the JSON file.
-Each of these objects must have a property "@type", stating its class name which must be an instantiable subclass of Element.
-It also needs a property "@id", which serves to capture the SPDX ID of the Element.
+Each of these objects must have a property "type", stating its class name which must be an instantiable subclass of Element.
 All other SPDX properties of the Element are stated via key-value pairs, where the key is the name of the property (e.g. "createdBy").
 The type of the value depends on the type of the property in the SPDX model and can be a string, number, array or object.
 Note, though, that inlining of objects is only allowed for "complex data type" classes (CreationInfo, ExternalReference, etc.).

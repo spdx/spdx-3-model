@@ -1,8 +1,9 @@
 {
   "@context": "https://spdx.github.io/spdx-3-model/rdf/context.json",
-  "@type": "Annotation",
-  "@id": "http://spdx.acme.org/3FA9CB25#annotation34",
+  "type": "Annotation",
+  "spdxId": "http://spdx.acme.org/3FA9CB25#annotation34",
   "creationInfo": {
+    "type": "CreationInfo",
     "specVersion": "3.0.0",
     "created": "2022-12-01T00:00:00",
     "createdBy": ["https://spdx.dev/elements/3F26391C#spdx-dev"],
