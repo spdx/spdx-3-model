@@ -45,7 +45,8 @@
       "to": [
         "https://some.namespace#file1",
         "https://some.namespace#file2"
-      ]
+      ],
+      "relationshipType": "contains"
     }
   ]
 }
