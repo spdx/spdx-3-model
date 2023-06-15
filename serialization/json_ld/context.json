@@ -1,0 +1,745 @@
+{
+    "AIPackage": "ai:AIPackage",
+    "Agent": "core:Agent",
+    "Annotation": "core:Annotation",
+    "AnnotationType": "core:AnnotationType",
+    "AnonymousPayload": "core:AnonymousPayload",
+    "AnyLicenseInfo": "licensing:AnyLicenseInfo",
+    "Artifact": "core:Artifact",
+    "Bom": "core:Bom",
+    "Build": "build:Build",
+    "Bundle": "core:Bundle",
+    "ConfidentialityLevelType": "dataset:ConfidentialityLevelType",
+    "ConjunctiveLicenseSet": "expandedlicense:ConjunctiveLicenseSet",
+    "CreationInfo": "core:CreationInfo",
+    "CustomLicense": "licensing:CustomLicense",
+    "CustomLicenseAddition": "licensing:CustomLicenseAddition",
+    "CvssV2VulnAssessmentRelationship": "security:CvssV2VulnAssessmentRelationship",
+    "CvssV3VulnAssessmentRelationship": "security:CvssV3VulnAssessmentRelationship",
+    "Dataset": "dataset:Dataset",
+    "DatasetAvailabilityType": "dataset:DatasetAvailabilityType",
+    "DatasetType": "dataset:DatasetType",
+    "DateTime": "core:DateTime",
+    "DependencyConditionalityType": "software:DependencyConditionalityType",
+    "DictionaryEntry": "core:DictionaryEntry",
+    "DisjunctiveLicenseSet": "expandedlicense:DisjunctiveLicenseSet",
+    "Element": "core:Element",
+    "ElementCollection": "core:ElementCollection",
+    "EpssVulnAssessmentRelationship": "security:EpssVulnAssessmentRelationship",
+    "ExploitCatalogType": "security:ExploitCatalogType",
+    "ExploitCatalogVulnAssessmentRelationship": "security:ExploitCatalogVulnAssessmentRelationship",
+    "ExtendableLicense": "expandedlicense:ExtendableLicense",
+    "ExternalIdentifier": "core:ExternalIdentifier",
+    "ExternalIdentifierType": "core:ExternalIdentifierType",
+    "ExternalMap": "core:ExternalMap",
+    "ExternalReference": "core:ExternalReference",
+    "ExternalReferenceType": "core:ExternalReferenceType",
+    "File": "software:File",
+    "Hash": "core:Hash",
+    "HashAlgorithm": "core:HashAlgorithm",
+    "IntegrityMethod": "core:IntegrityMethod",
+    "License": "licensing:License",
+    "LicenseAddition": "licensing:LicenseAddition",
+    "LicenseExpression": "licensing:LicenseExpression",
+    "LifecycleScopeType": "core:LifecycleScopeType",
+    "LifecycleScopedRelationship": "core:LifecycleScopedRelationship",
+    "ListedLicense": "licensing:ListedLicense",
+    "ListedLicenseException": "licensing:ListedLicenseException",
+    "MediaType": "core:MediaType",
+    "NamespaceMap": "core:NamespaceMap",
+    "OrLaterOperator": "licensing:OrLaterOperator",
+    "Organization": "core:Organization",
+    "Package": "software:Package",
+    "Payload": "core:Payload",
+    "Person": "core:Person",
+    "PositiveIntegerRange": "core:PositiveIntegerRange",
+    "PresenceType": "ai:PresenceType",
+    "ProfileIdentifierType": "core:ProfileIdentifierType",
+    "Relationship": "core:Relationship",
+    "RelationshipCompleteness": "core:RelationshipCompleteness",
+    "RelationshipType": "core:RelationshipType",
+    "SBOMType": "software:SBOMType",
+    "SafetyRiskAssessmentType": "ai:SafetyRiskAssessmentType",
+    "Sbom": "software:Sbom",
+    "SemVer": "core:SemVer",
+    "Snippet": "software:Snippet",
+    "SoftwareAgent": "core:SoftwareAgent",
+    "SoftwareArtifact": "software:SoftwareArtifact",
+    "SoftwareDependencyLinkType": "software:SoftwareDependencyLinkType",
+    "SoftwareDependencyRelationship": "software:SoftwareDependencyRelationship",
+    "SoftwarePurpose": "software:SoftwarePurpose",
+    "SpdxDocument": "core:SpdxDocument",
+    "SsvcDecisionType": "security:SsvcDecisionType",
+    "SsvcVulnAssessmentRelationship": "security:SsvcVulnAssessmentRelationship",
+    "Tool": "core:Tool",
+    "VexAffectedVulnAssessmentRelationship": "security:VexAffectedVulnAssessmentRelationship",
+    "VexFixedVulnAssessmentRelationship": "security:VexFixedVulnAssessmentRelationship",
+    "VexJustificationType": "security:VexJustificationType",
+    "VexNotAffectedVulnAssessmentRelationship": "security:VexNotAffectedVulnAssessmentRelationship",
+    "VexUnderInvestigationVulnAssessmentRelationship": "security:VexUnderInvestigationVulnAssessmentRelationship",
+    "VexVulnAssessmentRelationship": "security:VexVulnAssessmentRelationship",
+    "VulnAssessmentRelationship": "security:VulnAssessmentRelationship",
+    "Vulnerability": "security:Vulnerability",
+    "WithAdditionOperator": "licensing:WithAdditionOperator",
+    "actionStatement": {
+        "@id": "security:actionStatement",
+        "@type": "xsd:string"
+    },
+    "actionStatementTime": {
+        "@id": "security:actionStatementTime",
+        "@type": "core:DateTime"
+    },
+    "additionComment": {
+        "@id": "licensing:additionComment",
+        "@type": "xsd:string"
+    },
+    "additionId": {
+        "@id": "licensing:additionId",
+        "@type": "xsd:string"
+    },
+    "additionName": {
+        "@id": "licensing:additionName",
+        "@type": "xsd:string"
+    },
+    "additionText": {
+        "@id": "licensing:additionText",
+        "@type": "xsd:string"
+    },
+    "additionalPurpose": {
+        "@id": "software:additionalPurpose",
+        "@type": "software:SoftwarePurpose"
+    },
+    "ai": "https://spdx.org/rdf/AI/",
+    "algorithm": {
+        "@id": "core:algorithm",
+        "@type": "@vocab",
+        "@context": {
+            "@vocab": "core:HashAlgorithm/"
+        }
+    },
+    "annotationType": {
+        "@id": "core:annotationType",
+        "@type": "@vocab",
+        "@context": {
+            "@vocab": "core:AnnotationType/"
+        }
+    },
+    "anonymizationMethodUsed": {
+        "@id": "dataset:anonymizationMethodUsed",
+        "@type": "xsd:string"
+    },
+    "assessedElement": {
+        "@id": "security:assessedElement",
+        "@type": "@id"
+    },
+    "attributionText": {
+        "@id": "software:attributionText",
+        "@type": "xsd:string"
+    },
+    "autonomyType": {
+        "@id": "ai:autonomyType",
+        "@type": "ai:PresenceType"
+    },
+    "begin": {
+        "@id": "core:begin",
+        "@type": "xsd:positiveInteger"
+    },
+    "build": "https://spdx.org/rdf/Build/",
+    "buildEndTime": {
+        "@id": "build:buildEndTime",
+        "@type": "core:DateTime"
+    },
+    "buildId": {
+        "@id": "build:buildId",
+        "@type": "xsd:string"
+    },
+    "buildStartTime": {
+        "@id": "build:buildStartTime",
+        "@type": "core:DateTime"
+    },
+    "buildType": {
+        "@id": "build:buildType",
+        "@type": "xsd:anyURI"
+    },
+    "builtTime": {
+        "@id": "core:builtTime",
+        "@type": "core:DateTime"
+    },
+    "byteRange": {
+        "@id": "software:byteRange",
+        "@type": "core:PositiveIntegerRange"
+    },
+    "catalogType": {
+        "@id": "security:catalogType",
+        "@type": "@vocab",
+        "@context": {
+            "@vocab": "security:ExploitCatalogType/"
+        }
+    },
+    "comment": {
+        "@id": "core:comment",
+        "@type": "xsd:string"
+    },
+    "completeness": {
+        "@id": "core:completeness",
+        "@type": "@vocab",
+        "@context": {
+            "@vocab": "core:RelationshipCompleteness/"
+        }
+    },
+    "concludedLicense": {
+        "@id": "software:concludedLicense",
+        "@type": "licensing:AnyLicenseInfo"
+    },
+    "conditionality": {
+        "@id": "software:conditionality",
+        "@type": "@vocab",
+        "@context": {
+            "@vocab": "software:DependencyConditionalityType/"
+        }
+    },
+    "confidentialityLevel": {
+        "@id": "dataset:confidentialityLevel",
+        "@type": "@vocab",
+        "@context": {
+            "@vocab": "dataset:ConfidentialityLevelType/"
+        }
+    },
+    "configSourceDigest": {
+        "@id": "build:configSourceDigest",
+        "@type": "core:Hash"
+    },
+    "configSourceEntrypoint": {
+        "@id": "build:configSourceEntrypoint",
+        "@type": "xsd:string"
+    },
+    "configSourceUri": {
+        "@id": "build:configSourceUri",
+        "@type": "xsd:anyURI"
+    },
+    "contentIdentifier": {
+        "@id": "software:contentIdentifier",
+        "@type": "xsd:anyURI"
+    },
+    "contentType": {
+        "@id": "core:contentType",
+        "@type": "core:MediaType"
+    },
+    "context": {
+        "@id": "core:context",
+        "@type": "xsd:string"
+    },
+    "copyrightText": {
+        "@id": "software:copyrightText",
+        "@type": "xsd:string"
+    },
+    "core": "https://spdx.org/rdf/Core/",
+    "created": {
+        "@id": "core:created",
+        "@type": "core:DateTime"
+    },
+    "createdBy": {
+        "@id": "core:createdBy",
+        "@type": "@id"
+    },
+    "createdUsing": {
+        "@id": "core:createdUsing",
+        "@type": "core:Tool"
+    },
+    "creationInfo": {
+        "@id": "core:creationInfo",
+        "@type": "core:CreationInfo"
+    },
+    "dataCollectionProcess": {
+        "@id": "dataset:dataCollectionProcess",
+        "@type": "xsd:string"
+    },
+    "dataLicense": {
+        "@id": "core:dataLicense",
+        "@type": "xsd:string"
+    },
+    "dataPreprocessing": {
+        "@id": "dataset:dataPreprocessing",
+        "@type": "xsd:string"
+    },
+    "dataset": "https://spdx.org/rdf/Dataset/",
+    "datasetAvailability": {
+        "@id": "dataset:datasetAvailability",
+        "@type": "@vocab",
+        "@context": {
+            "@vocab": "dataset:DatasetAvailabilityType/"
+        }
+    },
+    "datasetNoise": {
+        "@id": "dataset:datasetNoise",
+        "@type": "xsd:string"
+    },
+    "datasetSize": {
+        "@id": "dataset:datasetSize",
+        "@type": "xsd:nonNegativeInteger"
+    },
+    "datasetType": {
+        "@id": "dataset:datasetType",
+        "@type": "dataset:DatasetType"
+    },
+    "datasetUpdateMechanism": {
+        "@id": "dataset:datasetUpdateMechanism",
+        "@type": "xsd:string"
+    },
+    "decisionType": {
+        "@id": "security:decisionType",
+        "@type": "@vocab",
+        "@context": {
+            "@vocab": "security:SsvcDecisionType/"
+        }
+    },
+    "declaredLicense": {
+        "@id": "software:declaredLicense",
+        "@type": "licensing:AnyLicenseInfo"
+    },
+    "definingDocument": {
+        "@id": "core:definingDocument",
+        "@type": "xsd:anyURI"
+    },
+    "deprecatedVersion": {
+        "@id": "licensing:deprecatedVersion",
+        "@type": "xsd:string"
+    },
+    "description": {
+        "@id": "core:description",
+        "@type": "xsd:string"
+    },
+    "domain": {
+        "@id": "ai:domain",
+        "@type": "xsd:string"
+    },
+    "downloadLocation": {
+        "@id": "software:downloadLocation",
+        "@type": "xsd:anyURI"
+    },
+    "element": {
+        "@id": "core:element",
+        "@type": "@id"
+    },
+    "end": {
+        "@id": "core:end",
+        "@type": "xsd:positiveInteger"
+    },
+    "endTime": {
+        "@id": "core:endTime",
+        "@type": "core:DateTime"
+    },
+    "energyConsumption": {
+        "@id": "ai:energyConsumption",
+        "@type": "xsd:string"
+    },
+    "environment": {
+        "@id": "build:environment",
+        "@type": "core:DictionaryEntry"
+    },
+    "expandedlicense": "https://spdx.org/rdf/ExpandedLicense/",
+    "exploited": {
+        "@id": "security:exploited",
+        "@type": "xsd:boolean"
+    },
+    "externalId": {
+        "@id": "core:externalId",
+        "@type": "xsd:anyURI"
+    },
+    "externalIdentifier": {
+        "@id": "core:externalIdentifier",
+        "@type": "core:ExternalIdentifier"
+    },
+    "externalIdentifierType": {
+        "@id": "core:externalIdentifierType",
+        "@type": "@vocab",
+        "@context": {
+            "@vocab": "core:ExternalIdentifierType/"
+        }
+    },
+    "externalReference": {
+        "@id": "core:externalReference",
+        "@type": "core:ExternalReference"
+    },
+    "externalReferenceType": {
+        "@id": "core:externalReferenceType",
+        "@type": "@vocab",
+        "@context": {
+            "@vocab": "core:ExternalReferenceType/"
+        }
+    },
+    "from": {
+        "@id": "core:from",
+        "@type": "@id"
+    },
+    "hashValue": {
+        "@id": "core:hashValue",
+        "@type": "xsd:string"
+    },
+    "homePage": {
+        "@id": "software:homePage",
+        "@type": "xsd:anyURI"
+    },
+    "hyperparameter": {
+        "@id": "ai:hyperparameter",
+        "@type": "core:DictionaryEntry"
+    },
+    "identifier": {
+        "@id": "core:identifier",
+        "@type": "xsd:string"
+    },
+    "identifierLocator": {
+        "@id": "core:identifierLocator",
+        "@type": "xsd:anyURI"
+    },
+    "impactStatement": {
+        "@id": "security:impactStatement",
+        "@type": "xsd:string"
+    },
+    "impactStatementTime": {
+        "@id": "security:impactStatementTime",
+        "@type": "core:DateTime"
+    },
+    "imports": {
+        "@id": "core:imports",
+        "@type": "core:ExternalMap"
+    },
+    "informationAboutApplication": {
+        "@id": "ai:informationAboutApplication",
+        "@type": "xsd:string"
+    },
+    "informationAboutTraining": {
+        "@id": "ai:informationAboutTraining",
+        "@type": "xsd:string"
+    },
+    "intendedUse": {
+        "@id": "dataset:intendedUse",
+        "@type": "xsd:string"
+    },
+    "isDeprecatedAdditionId": {
+        "@id": "licensing:isDeprecatedAdditionId",
+        "@type": "xsd:boolean"
+    },
+    "isDeprecatedLicenseId": {
+        "@id": "licensing:isDeprecatedLicenseId",
+        "@type": "xsd:boolean"
+    },
+    "isFsfLibre": {
+        "@id": "licensing:isFsfLibre",
+        "@type": "xsd:boolean"
+    },
+    "isOsiApproved": {
+        "@id": "licensing:isOsiApproved",
+        "@type": "xsd:boolean"
+    },
+    "issuingAuthority": {
+        "@id": "core:issuingAuthority",
+        "@type": "xsd:anyURI"
+    },
+    "justificationType": {
+        "@id": "security:justificationType",
+        "@type": "@vocab",
+        "@context": {
+            "@vocab": "security:VexJustificationType/"
+        }
+    },
+    "key": {
+        "@id": "core:key",
+        "@type": "xsd:string"
+    },
+    "knownBias": {
+        "@id": "dataset:knownBias",
+        "@type": "xsd:string"
+    },
+    "licenseComment": {
+        "@id": "licensing:licenseComment",
+        "@type": "xsd:string"
+    },
+    "licenseExpression": {
+        "@id": "licensing:licenseExpression",
+        "@type": "xsd:string"
+    },
+    "licenseId": {
+        "@id": "licensing:licenseId",
+        "@type": "xsd:string"
+    },
+    "licenseName": {
+        "@id": "licensing:licenseName",
+        "@type": "xsd:string"
+    },
+    "licenseText": {
+        "@id": "licensing:licenseText",
+        "@type": "xsd:string"
+    },
+    "licensing": "https://spdx.org/rdf/Licensing/",
+    "limitation": {
+        "@id": "ai:limitation",
+        "@type": "xsd:string"
+    },
+    "lineRange": {
+        "@id": "software:lineRange",
+        "@type": "core:PositiveIntegerRange"
+    },
+    "listVersionAdded": {
+        "@id": "licensing:listVersionAdded",
+        "@type": "xsd:string"
+    },
+    "locationHint": {
+        "@id": "core:locationHint",
+        "@type": "xsd:anyURI"
+    },
+    "locator": {
+        "@id": "core:locator",
+        "@type": "xsd:anyURI"
+    },
+    "member": {
+        "@id": "expandedlicense:member",
+        "@type": "licensing:AnyLicenseInfo"
+    },
+    "metric": {
+        "@id": "ai:metric",
+        "@type": "core:DictionaryEntry"
+    },
+    "metricDecisionThreshold": {
+        "@id": "ai:metricDecisionThreshold",
+        "@type": "core:DictionaryEntry"
+    },
+    "modelDataPreprocessing": {
+        "@id": "ai:modelDataPreprocessing",
+        "@type": "xsd:string"
+    },
+    "modelExplainability": {
+        "@id": "ai:modelExplainability",
+        "@type": "xsd:string"
+    },
+    "modifiedTime": {
+        "@id": "security:modifiedTime",
+        "@type": "core:DateTime"
+    },
+    "name": {
+        "@id": "core:name",
+        "@type": "xsd:string"
+    },
+    "namespace": {
+        "@id": "core:namespace",
+        "@type": "xsd:anyURI"
+    },
+    "namespaces": {
+        "@id": "core:namespaces",
+        "@type": "core:NamespaceMap"
+    },
+    "ns0": "http://www.w3.org/2003/06/sw-vocab-status/ns#",
+    "obsoletedBy": {
+        "@id": "licensing:obsoletedBy",
+        "@type": "xsd:string"
+    },
+    "originatedBy": {
+        "@id": "core:originatedBy",
+        "@type": "@id"
+    },
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "packageUrl": {
+        "@id": "software:packageUrl",
+        "@type": "xsd:anyURI"
+    },
+    "packageVersion": {
+        "@id": "software:packageVersion",
+        "@type": "xsd:string"
+    },
+    "parameters": {
+        "@id": "build:parameters",
+        "@type": "core:DictionaryEntry"
+    },
+    "prefix": {
+        "@id": "core:prefix",
+        "@type": "xsd:string"
+    },
+    "primaryPurpose": {
+        "@id": "software:primaryPurpose",
+        "@type": "software:SoftwarePurpose"
+    },
+    "probability": {
+        "@id": "security:probability",
+        "@type": "xsd:decimal"
+    },
+    "profile": {
+        "@id": "core:profile",
+        "@type": "@vocab",
+        "@context": {
+            "core": "https://spdx.org/rdf/Core/ProfileIdentifierType/core",
+            "software": "https://spdx.org/rdf/Core/ProfileIdentifierType/software",
+            "licensing": "https://spdx.org/rdf/Core/ProfileIdentifierType/licensing",
+            "security": "https://spdx.org/rdf/Core/ProfileIdentifierType/security",
+            "build": "https://spdx.org/rdf/Core/ProfileIdentifierType/build",
+            "ai": "https://spdx.org/rdf/Core/ProfileIdentifierType/ai",
+            "dataset": "https://spdx.org/rdf/Core/ProfileIdentifierType/dataset",
+            "usage": "https://spdx.org/rdf/Core/ProfileIdentifierType/usage",
+            "extension": "https://spdx.org/rdf/Core/ProfileIdentifierType/extension"
+        }
+    },
+    "publishedTime": {
+        "@id": "security:publishedTime",
+        "@type": "core:DateTime"
+    },
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "relationshipType": {
+        "@id": "core:relationshipType",
+        "@type": "@vocab",
+        "@context": {
+            "@vocab": "core:RelationshipType/"
+        }
+    },
+    "releaseTime": {
+        "@id": "core:releaseTime",
+        "@type": "core:DateTime"
+    },
+    "rootElement": {
+        "@id": "core:rootElement",
+        "@type": "@id"
+    },
+    "safetyRiskAssessment": {
+        "@id": "ai:safetyRiskAssessment",
+        "@type": "@vocab",
+        "@context": {
+            "@vocab": "ai:SafetyRiskAssessmentType/"
+        }
+    },
+    "sbomType": {
+        "@id": "software:sbomType",
+        "@type": "@vocab",
+        "@context": {
+            "@vocab": "software:SBOMType/"
+        }
+    },
+    "scope": {
+        "@id": "core:scope",
+        "@type": "@vocab",
+        "@context": {
+            "@vocab": "core:LifecycleScopeType/"
+        }
+    },
+    "score": {
+        "@id": "security:score",
+        "@type": "xsd:string"
+    },
+    "security": "https://spdx.org/rdf/Security/",
+    "seeAlso": {
+        "@id": "licensing:seeAlso",
+        "@type": "xsd:anyURI"
+    },
+    "sensitivePersonalInformation": {
+        "@id": "dataset:sensitivePersonalInformation",
+        "@type": "@vocab",
+        "@context": {
+            "@vocab": "dataset:PresenceType/"
+        }
+    },
+    "severity": {
+        "@id": "security:severity",
+        "@type": "xsd:string"
+    },
+    "sh": "http://www.w3.org/ns/shacl#",
+    "software": "https://spdx.org/rdf/Software/",
+    "softwareLinkage": {
+        "@id": "software:softwareLinkage",
+        "@type": "@vocab",
+        "@context": {
+            "@vocab": "software:SoftwareDependencyLinkType/"
+        }
+    },
+    "sourceInfo": {
+        "@id": "software:sourceInfo",
+        "@type": "xsd:string"
+    },
+    "spdxId": "@id",
+    "specVersion": {
+        "@id": "core:specVersion",
+        "@type": "core:SemVer"
+    },
+    "standard": {
+        "@id": "core:standard",
+        "@type": "xsd:string"
+    },
+    "standardAdditionTemplate": {
+        "@id": "licensing:standardAdditionTemplate",
+        "@type": "xsd:string"
+    },
+    "standardCompliance": {
+        "@id": "ai:standardCompliance",
+        "@type": "xsd:string"
+    },
+    "standardLicenseHeader": {
+        "@id": "licensing:standardLicenseHeader",
+        "@type": "xsd:string"
+    },
+    "standardLicenseTemplate": {
+        "@id": "licensing:standardLicenseTemplate",
+        "@type": "xsd:string"
+    },
+    "startTime": {
+        "@id": "core:startTime",
+        "@type": "core:DateTime"
+    },
+    "statement": {
+        "@id": "core:statement",
+        "@type": "xsd:string"
+    },
+    "statusNotes": {
+        "@id": "security:statusNotes",
+        "@type": "xsd:string"
+    },
+    "subject": {
+        "@id": "core:subject",
+        "@type": "@id"
+    },
+    "subjectAddition": {
+        "@id": "expandedlicense:subjectAddition",
+        "@type": "expandedlicense:LicenseAddition"
+    },
+    "subjectLicense": {
+        "@id": "expandedlicense:subjectLicense",
+        "@type": "licensing:License"
+    },
+    "summary": {
+        "@id": "core:summary",
+        "@type": "xsd:string"
+    },
+    "suppliedBy": {
+        "@id": "core:suppliedBy",
+        "@type": "@id"
+    },
+    "to": {
+        "@id": "core:to",
+        "@type": "@id"
+    },
+    "type": "@type",
+    "typeOfModel": {
+        "@id": "ai:typeOfModel",
+        "@type": "xsd:string"
+    },
+    "validUntilTime": {
+        "@id": "core:validUntilTime",
+        "@type": "core:DateTime"
+    },
+    "value": {
+        "@id": "core:value",
+        "@type": "xsd:string"
+    },
+    "vector": {
+        "@id": "security:vector",
+        "@type": "xsd:string"
+    },
+    "verifiedUsing": {
+        "@id": "core:verifiedUsing",
+        "@type": "core:IntegrityMethod"
+    },
+    "vexVersion": {
+        "@id": "security:vexVersion",
+        "@type": "xsd:string"
+    },
+    "withdrawnTime": {
+        "@id": "security:withdrawnTime",
+        "@type": "core:DateTime"
+    },
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+}
