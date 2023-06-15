@@ -53,3 +53,9 @@ results in the payload structure:
 ```
 - [Payload1 uncompressed](examples/spdx_payload1_uncompressed.json) - Two elements: File1 and File2
 - [Payload1](examples/spdx_payload1.json) - File1 and File2 with namespaceMap and creationInfo in header
+
+### Flat Style
+The logical model Element does not have a "type" property, but the examples above show an explicit
+type property and it's properties as a structure.  An alternate JSON serialization would show all
+properties as paths from Element. This is semantically identical to the structured serialization.
+- [Annotation1](examples/annotation1_path.json) - Using path property names
