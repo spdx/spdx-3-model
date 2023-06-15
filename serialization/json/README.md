@@ -33,11 +33,12 @@ types because they are defined by the model.
 * RDF-aware applications know the array and property types and the RDF URIs of all those types,
 because the model includes those URIs:
 ```
-Coordinate = Array       // rdf="http://geotags.org/GPS-Coordinate"
-  1 latitude Latitude
-  2 longitude Longitude
+Coordinate = Array                  // rdf="http://geotags.org/GPS-Coordinate"
+  1 Latitude                        // latitude::
+  2 Longitude                       // longitude::
 
-Latitude = Number{-90.0..90.0}   // rdf="http://geotags.org/Latitude"
+Latitude = Number{-90.0..90.0}      // rdf="http://geotags.org/Latitude"
+Longitude = Number{-180.0..180.0}   // rdf="http://geotags.org/Longitude"
 ```
 There is no need to transmit RDF information in JSON-serialized data, and there is no reason to
 require all JSON-consuming applications to recognize RDF information, even if only to discard it.

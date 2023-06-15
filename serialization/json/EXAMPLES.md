@@ -30,7 +30,8 @@
 - [Bom1](examples/bom1.json)
 - [Sbom1 with two Files](examples/sbom1.json) - Sbom1 with File1 and File2
 
-### Documents
+### SpdxDocument Elements
+Metadata about a Payload / SPDX Document
 - [SpdxDocument1 with two Files](examples/spdx_document1.json) - File1 and File2 - this is a "bundle"
 - [SpdxDocument2 with two Persons](examples/spdx_document2.json) - Person1 and Person2 - also a "bundle"
 - [SpdxDocument3 with Sbom1 with two files and dependencies](examples/spdx_document3.json) - Sbom1, File1, File2, Org1, SpdxDocument3
@@ -39,3 +40,18 @@
 ---
 - Bundle - same as any SpdxDocument
 - Bundle of two Persons - same as SpdxDocument2
+
+### Serialized SPDX Documents / Payloads
+An uncompressed payload is just a set of element values.  This is validated by a pure JSON Schema.
+
+The algorithm used to compress the element values for transmission must be explicitly documented and
+results in the payload structure:
+```json
+{
+  "namespaceMap": {"...": "..."},
+  "creationInfo": {"...": "..."},
+  "element": ["...."]
+}
+```
+- [Payload1 uncompressed](examples/spdx_payload1_uncompressed.json) - Two elements: File1 and File2
+- [Payload1](examples/spdx_payload1.json) - File1 and File2 with namespaceMap and creationInfo in header

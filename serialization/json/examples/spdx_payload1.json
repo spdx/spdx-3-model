@@ -1,0 +1,43 @@
+{
+  "namespaceMap": {
+    "n1": "https://some.namespace#",
+    "n2": "https://spdx.dev/elements/3F26391C#"
+  },
+  "creationInfo": {
+    "c1": {
+      "specVersion": "3.0.0",
+      "profile": ["core", "software"],
+      "created": "2022-12-01T00:00:00",
+      "dataLicense": "CC0-1.0",
+      "createdBy": ["n2:spdx-dev"]
+    }
+  },
+  "element": [
+    {
+      "spdxId": "n1:file1",
+      "type": {
+        "file": {
+          "contentType": "image/png",
+          "purpose": ["documentation"],
+          "contentIdentifier": "https://github.com/spdx/spdx-3-model/blob/main/model.png",
+          "originatedBy": ["n2:spdx-dev"]
+        }
+      },
+      "name": "model.png",
+      "creationInfo": "c1"
+    },
+    {
+      "spdxId": "n2:spdx-spec-v2.3",
+      "type": {
+        "file": {
+          "contentType": "text/html",
+          "purpose": ["documentation"],
+          "contentIdentifier": "https://spdx.github.io/spdx-spec/v2.3/",
+          "originatedBy": ["n2:spdx-dev"]
+        }
+      },
+      "name": "The Software Package Data Exchange® (SPDX®) Specification Version 2.3",
+      "creationInfo": "c1"
+    }
+  ]
+}
