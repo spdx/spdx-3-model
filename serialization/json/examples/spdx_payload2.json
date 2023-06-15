@@ -45,7 +45,8 @@
         "spdxDocument": {
           "element": [
             "n1:File1",
-            "n2:spdx-spec-v2.3"
+            "n2:spdx-spec-v2.3",
+            "n2:spdxdocument159"
           ]
         }
       },
