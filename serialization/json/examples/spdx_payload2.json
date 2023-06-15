@@ -40,13 +40,13 @@
       "creationInfo": "c1"
     },
     {
-      "spdxId": "n2:spdxdocument159",
+      "spdxId": "n2:spdxdocument159d",
       "type": {
         "spdxDocument": {
           "element": [
             "n1:File1",
             "n2:spdx-spec-v2.3",
-            "n2:spdxdocument159"
+            "n2:spdxdocument159d"
           ]
         }
       },
