@@ -53,6 +53,7 @@ results in the payload structure:
 ```
 - [Payload1 uncompressed](examples/spdx_payload1_uncompressed.json) - Two elements: File1 and File2
 - [Payload1](examples/spdx_payload1.json) - File1 and File2 with namespaceMap and creationInfo in header
+- [Payload2](examples) - File1 and File2 and SpdxDocument1
 
 ### Flat Style
 The logical model Element does not have a "type" property, but the examples above show an explicit
