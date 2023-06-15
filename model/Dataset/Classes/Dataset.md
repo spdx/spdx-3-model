@@ -19,9 +19,8 @@ Metadata information that can be added to a dataset that may be used in a softwa
 ## Properties
 
 - datasetType
-  - type: xsd:string
+  - type: DatasetType
   - minCount: 1
-  - maxCount: 1
 - dataCollectionProcess
   - type: xsd:string
   - minCount: 0

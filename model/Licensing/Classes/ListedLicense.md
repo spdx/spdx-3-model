@@ -27,4 +27,3 @@ at https://spdx.org/licenses.
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
-
