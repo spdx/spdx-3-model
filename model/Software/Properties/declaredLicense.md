@@ -54,4 +54,4 @@ indicates that one of the following applies:
 
 - name: declaredLicense
 - Nature: ObjectProperty
-- Range: /Licensing/LicenseField
+- Range: /Licensing/AnyLicenseInfo

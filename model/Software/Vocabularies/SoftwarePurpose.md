@@ -36,7 +36,7 @@ about the context in which the Element exists.
 - install: the Element is used to install software on disk
 - library: the Element is a software library
 - manifest: the Element is a software manifest
-- mlModel: the Element is a machine learning model
+- model: the Element is a machine learning or artificial intelligence model
 - module: the Element is a module of a piece of software
 - operatingSystem: the Element is an operating system
 - other: the Element doesn't fit into any of the other categories
@@ -44,3 +44,4 @@ about the context in which the Element exists.
 - requirement: the Element provides a requirement needed as input for another Element
 - source: the Element is a single or a collection of source files
 - specification: the Element is a plan, guideline or strategy how to create, perform or analyse an application
+- test: The Element is a test used to verify functionality on an software element 
