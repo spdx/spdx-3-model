@@ -32,7 +32,7 @@
   "ExternalReferenceType": "https://spdx.org/rdf/Core/ExternalReferenceType/",
   "HashAlgorithm": "https://spdx.org/rdf/Core/HashAlgorithm/",
   "LifecycleScopeType": "https://spdx.org/rdf/Core/LifecycleScopeType/",
-  "cMediaType": "https://spdx.org/rdf/Core/MediaType",
+  "MediaType": "https://spdx.org/rdf/Core/MediaType",
   "ProfileIdentifierType": "https://spdx.org/rdf/Core/ProfileIdentifierType",
   "RelationshipCompleteness": "https://spdx.org/rdf/Core/RelationshipCompleteness/",
   "RelationshipType": "https://spdx.org/rdf/Core/RelationshipType/",
