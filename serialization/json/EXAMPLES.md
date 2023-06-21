@@ -1,62 +1,68 @@
 # Logical Element Examples
-
+## Individual Elements
 ### Agents
 - [Agent1](examples/agent1.json)
-- [Person1 with minimal CreationInfo](examples/person1.json) - "person"
-- [Person2 with full CreationInfo](examples/person2.json)) - second of "two persons"
-- [Person3 with no CreationInfo](examples/person3.json) - ?? does this even mean anything?
+- [Person1](examples/person1.json) - minimal CreationInfo
+- [Person2](examples/person2.json)) - full CreationInfo
+- [Person3](examples/person3.json) -  no CreationInfo?? does this even mean anything?
 - [Organization1](examples/org1.json)
 - [Tool1](examples/tool1.json) - not an Agent
 
 ### Annotations
 - [Annotation1](examples/annotation1.json)
 
-### Relationships
-- [Relationship1 with Package contains two Files](examples/relationship1.json)
-- [Relationship2 with time properties](examples/relationship2.json)
-- [LifecycleScopeRelationship3](examples/relationship3.json)
-- [AssessmentRelationship4](examples/relationship4.json)
-- [SoftwareDependencyRelationship5](examples/relationship5.json)
-
 ### Artifacts
 - [Package1](examples/package1.json)
-- [Package2 with ExternalIdentifier](examples/package2.json)
-- [Package3 with ExternalReference](examples/package3.json)
+- [Package2](examples/package2.json) - with ExternalIdentifier
+- [Package3](examples/package3.json) - with ExternalReference
 - [File1](examples/file1.json)
 - [File2](examples/file2.json)
 - [Snippet1](examples/snippet1.json)
 
+### Relationships
+- [Relationship1](examples/relationship1.json) - Package1, File1, File2
+- [Relationship2](examples/relationship2.json) - with time properties
+- [LifecycleScopeRelationship1](examples/relationship3.json)
+- [AssessmentRelationship1](examples/relationship4.json)
+- [SoftwareDependencyRelationship1](examples/relationship5.json)
+
 ### Collections
-- [Bom1](examples/bom1.json)
-- [Sbom1 with two Files](examples/sbom1.json) - Sbom1 with File1 and File2
+- [Bom1]
+- [Sbom1](examples/sbom1.json) - Package1, File1, File2, Relationship1
+- [Sbom2] - Package1, Package2
 
-### SpdxDocument Elements
-Metadata about a Payload
-- [SpdxDocument1 with two Files](examples/spdx_document1.json) - File1 and File2 - this is a "bundle"
-- [SpdxDocument2 with two Persons](examples/spdx_document2.json) - Person1 and Person2 - also a "bundle"
-- [SpdxDocument3 with Sbom1 with two files and dependencies](examples/spdx_document3.json) - Sbom1, File1, File2, Org1, SpdxDocument3
-- [SpdxDocument4 with NamespaceMap](examples/spdx_document4.json)
-- [SpdxDocument5 with ExternalMap](examples/spdx_document5.json)
-- Bundle - same as any SpdxDocument
-- Bundle of two Persons - same as SpdxDocument2
+### SpdxDocuments
+- [SpdxDocument1](examples/spdx_document1.json) - Metadata about Payload1
+- [SpdxDocument2](examples/spdx_document1.json) - Metadata about Payload2
+- [SpdxDocument3](examples/spdx_document1.json) - Metadata about Payload3
 
-### Serialized Payloads
-An uncompressed payload is just a set of element values.  This can be validated by a JSON Schema.
-The algorithm used to compress the element values for transmission is explicitly documented and
-results in the payload structure:
-```json
-{
-  "namespaceMap": {"...": "..."},
-  "creationInfo": {"...": "..."},
-  "element": ["...."]
-}
-```
+## Multiple Elements
+### Payloads
+- [Payload1] - File1, File2
+- [Payload2] - Sbom1, Sbom2
+- [Payload3] - Sbom1, Package1, File1, File2, Relationship1, plus Person1, Tool1, SpdxDocument3
+
+
+
 - [Payload1 uncompressed](examples/spdx_payload1_uncompressed.json) - Two elements: File1 and File2
 - [Payload1](examples/spdx_payload1.json) - File1 and File2 with namespaceMap and creationInfo in header
 - [Payload2](examples) - File1 and File2 and SpdxDocument1
 
-### Flat Style
-The logical model Element does not have a "type" property, but the examples above show an explicit
-type property and it's properties as a structure.  An alternate JSON serialization would show all
-properties as paths from Element. This is semantically identical to the structured serialization.
-- [Annotation1](examples/annotation1_path.json) - Using path property names
+
+### Payload, SpdxDocument, and Bundle
+One or more of the individual elements above can be serialized as either a list of values shown above,
+or as a payload.
+
+A Payload is a list of values compressed by:
+- factoring out shared namespace prefixes using NamespaceMap, and
+- factoring out shared creationInfo
+
+```json
+{
+  "namespaceMap": {"...": "..."},
+  "creationInfo": {"...": "..."},
+  "element": ["....", "...", "...", "..."]
+}
+```
+An SpdxDocument Element is metadata about a Payload.  
+Bundle is a synonym for SpdxDocument.
