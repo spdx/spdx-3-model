@@ -14,7 +14,7 @@ SPDX License Expressions provide a way for one to construct expressions that mor
 
 ## Metadata
 
-- name: ExtendableLicense
+- name: LicenseExpression
 - SubclassOf: AnyLicenseInfo
 - Instantiability: Concrete
 
