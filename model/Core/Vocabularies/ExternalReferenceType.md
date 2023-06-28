@@ -51,6 +51,6 @@ ExteralReferenceType specifies the type of an external reference.
 - staticAnalysisReport: A reference to a static analysis report for a package.
 - support: A reference to the software support channel or other support information for a package.
 - vcs: A reference to a version control system related to a software artifact.
-- vulnerabilityExploitabilityAssessment: A reference to a Vulnerability Exploitability eXchange (VEX) statement which provides information on whether a product is impacted by a specific vulnerability in an included package and, if affected, whether there are actions recommended to remediate. See also [NTIA VEX one-page](https://ntia.gov/files/ntia/publications/vex_one-page_summary.pdf)..
 - vulnerabilityDisclosureReport: A reference to a Vulnerability Disclosure Report (VDR) which provides the software supplier's analysis and findings describing the impact (or lack of impact) that reported vulnerabilities have on packages or products in the supplier's SBOM as defined in [NIST SP 800-161](https://csrc.nist.gov/publications/detail/sp/800-161/rev-1/final).
+- vulnerabilityExploitabilityAssessment: A reference to a Vulnerability Exploitability eXchange (VEX) statement which provides information on whether a product is impacted by a specific vulnerability in an included package and, if affected, whether there are actions recommended to remediate. See also [NTIA VEX one-page](https://ntia.gov/files/ntia/publications/vex_one-page_summary.pdf)..
 - qualityAssessmentReport: A reference to a quality assessment for a package.
