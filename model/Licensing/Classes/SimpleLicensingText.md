@@ -15,7 +15,7 @@ creator.
 ## Metadata
 
 - name: SimpleLicensingText
-- SubclassOf: AnyLicenseInfo
+- SubclassOf: /Core/Element
 - Instantiability: Concrete
 
 ## Properties
