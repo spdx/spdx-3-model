@@ -34,6 +34,7 @@ ExteralReferenceType specifies the type of an external reference.
 - license: A reference to additional license information related to an artifact.
 - other: Used when the type doesn't match any of the other options.
 - productMetadata: A reference to additional product metadata such as reference within organization's product catalog.
+- purchaseOrder: A reference to a purchase order for a package.
 - releaseNotes: A reference to the release notes for a package.
 - releaseHistory: A reference to a published list of releases for a package.
 - riskAssessment: A reference to a risk assessment for a package.
