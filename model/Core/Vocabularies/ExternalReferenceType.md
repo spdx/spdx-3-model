@@ -27,6 +27,7 @@ ExteralReferenceType specifies the type of an external reference.
 - documentation: A reference to the documentation for a package.
 - dynamicAnalysisReport: A reference to a dynamic analysis report for a package.
 - eolNotice: A reference to the End Of Sale (EOS) and/or End Of Life (EOL) information related to a package.
+- exportControlAssessment: A reference to a export control assessment for a package.
 - funding: A reference to funding information related to a package.
 - issueTracker: A reference to the issue tracker for a package.
 - mailingList: A reference to the mailing list used by the maintainer for a package.
