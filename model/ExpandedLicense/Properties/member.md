@@ -8,7 +8,7 @@ A license expression participating in a license set.
 
 ## Description
 
-A member is a license expression participating in a conjuctive (of type
+A member is a license expression participating in a conjunctive (of type
 ConjunctiveLicenseSet) or a disjunctive (of type DisjunctiveLicenseSet)
 license set.
 

@@ -18,7 +18,7 @@ Syntax by the `WITH` operator.
 ## Metadata
 
 - name: WithAdditionOperator
-- SubclassOf: AnyLicenseInfo
+- SubclassOf: Licensing/AnyLicenseInfo
 - Instantiability: Concrete
 
 ## Properties

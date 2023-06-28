@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Fully expanded license expresssions.
+Fully expanded license expressions.
 
 ## Description
 
