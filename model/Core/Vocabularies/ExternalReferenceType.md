@@ -34,6 +34,7 @@ ExteralReferenceType specifies the type of an external reference.
 - metrics: A reference to metrics related to package such as OpenSSF scorecards.
 - license: A reference to additional license information related to an artifact.
 - other: Used when the type doesn't match any of the other options.
+- privacyAssessment: A reference to a privacy assessment for a package.
 - productMetadata: A reference to additional product metadata such as reference within organization's product catalog.
 - purchaseOrder: A reference to a purchase order for a package.
 - releaseNotes: A reference to the release notes for a package.
