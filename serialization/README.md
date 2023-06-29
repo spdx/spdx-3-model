@@ -33,8 +33,12 @@ Examples of how to serialize the following cases:
 - two Persons
 - Bundle of two Persons
 
-- security use cases here
+Licensing use cases:
+- single artifact under one listed license
+- single artifact under one custom license
+- single artifact under license expression of listed licenses
+- single artifact under license expression of listed and custom licenses
+- two artifacts under same license expression of listed and custom licenses
 
-- licensing use cases here
-
-- build use cases here
+- security use cases to be added here
+- build use cases to be added here
