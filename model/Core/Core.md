@@ -18,4 +18,4 @@ The Core namespace defines foundational concepts serving as the basis for all SP
 - maxCount: *
 - isOrdered: false
 - isUnique: true
-- isOptional: true
+- isOptional: false
