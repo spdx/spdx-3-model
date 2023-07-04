@@ -16,4 +16,4 @@ Aligning with the guidance produced in [Types of Software Bill of Material (SBOM
 
 - name: sbomType
 - Nature: DataProperty
-- Range: SBOMType
+- Range: SbomType
