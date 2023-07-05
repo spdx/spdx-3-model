@@ -1,0 +1,18 @@
+{
+  "@context": "https://spdx.github.io/spdx-3-model/rdf/context.json",
+  "type": "Annotation",
+  "spdxId": "http://spdx.acme.org/3FA9CB25#annotation34",
+  "creationInfo": {
+    "type": "CreationInfo",
+    "specVersion": "3.0.0",
+    "created": "2022-12-01T00:00:00",
+    "createdBy": ["https://spdx.dev/elements/3F26391C#spdx-dev"],
+    "profile": ["core"],
+    "dataLicense": "https://spdx.org/licenses/CC0-1.0"
+  },
+  "name": "Acme Corp. Super SBOM-o-lator",
+  "annotationType": "review",
+  "subject": "http://spdx.acme.org/3FA9CB25#person9",
+  "contentType": "text/plain",
+  "statement": "Keanu Reeves is back as cyberpunk icon Neo but fans of the original will find this cynical reboot a bitter pill to swallow."
+}
