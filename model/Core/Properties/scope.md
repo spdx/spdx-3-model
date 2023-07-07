@@ -13,6 +13,6 @@ A scope is TODO
 ## Metadata
 
 - name: scope
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: LifecycleScopeType
 

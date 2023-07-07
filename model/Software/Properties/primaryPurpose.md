@@ -13,6 +13,6 @@ primaryPurpose provides information about the primary purpose of the software ar
 ## Metadata
 
 - name: primaryPurpose
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: SoftwarePurpose
 

@@ -14,5 +14,5 @@ in accordance with Article 20 of [EC Regulation No 765/2008](https://ec.europa.e
 ## Metadata
 
 - name: safetyRiskAssessment
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: SafetyRiskAssessmentType

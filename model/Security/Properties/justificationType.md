@@ -20,6 +20,6 @@ complementary to the justification label, but one of both MUST be defined.
 ## Metadata
 
 - name: justificationType
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: VexJustificationType
 

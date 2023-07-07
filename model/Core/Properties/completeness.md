@@ -14,6 +14,6 @@ complete, known to be incomplete or if no assertion is made either way.
 ## Metadata
 
 - name: completeness
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: RelationshipCompleteness
 

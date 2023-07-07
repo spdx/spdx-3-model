@@ -15,5 +15,5 @@ This might include biometric data, addresses or other data that can be used to i
 ## Metadata
 
 - name: sensitivePersonalInformation
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: PresenceType
