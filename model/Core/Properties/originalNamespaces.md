@@ -8,9 +8,9 @@ Provides a NamespaceMap representing the NamspaceMap used for the original seria
 
 ## Description
 
-This field is used for providing a reliable mechanism in reproducing an original serialization for a given SPDX Document.
+This field is used for providing the ability to reproduce an original serialization for a given SPDX Document, especially if the serialization format does not natively support namespace mapping.
 
-This field is not intended for implementing or representing the NameSpaceMap for all serializations where this SPDX document may be found.
+This purely optional field is not intended for implementing or representing the NameSpaceMap for all serializations where this SPDX document may be found.
 
 ## Metadata
 
