@@ -18,7 +18,7 @@ and inter-relatable content objects.
 ## Metadata
 
 - name: Element
-- SubclassOf: Payload
+- SubclassOf: none
 - Instantiability: Abstract
 
 ## Properties
