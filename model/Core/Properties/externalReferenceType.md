@@ -13,6 +13,6 @@ An externalReferenceType specifies the type of the external reference.
 ## Metadata
 
 - name: externalReferenceType
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: ExternalReferenceType
 

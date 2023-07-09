@@ -13,6 +13,6 @@ parameters is a key-value map of all build parameters and their values that were
 ## Metadata
 
 - name: parameters
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: /Core/DictionaryEntry
 

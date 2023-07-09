@@ -13,6 +13,6 @@ A decisionType is a mandatory value and must select one of the four entries in t
 ## Metadata
 
 - name: decisionType
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: SsvcDecisionType
 

@@ -13,6 +13,6 @@ A catalogType is a mandatory value and must select one of the two entries in the
 ## Metadata
 
 - name: catalogType
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: ExploitCatalogType
 

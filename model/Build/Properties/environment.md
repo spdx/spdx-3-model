@@ -13,5 +13,5 @@ environment is a map of environment variables and values that are set during a b
 ## Metadata
 
 - name: environment
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: /Core/DictionaryEntry

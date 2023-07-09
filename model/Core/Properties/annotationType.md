@@ -13,6 +13,6 @@ An annotationType describes the type of an annotation.
 ## Metadata
 
 - name: annotationType
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: AnnotationType
 

@@ -13,6 +13,6 @@ Additional purpose provides information about the additional purposes of the sof
 ## Metadata
 
 - name: additionalPurpose
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: SoftwarePurpose
 

@@ -13,6 +13,6 @@ This field provides a NamespaceMap applicable to an ElementCollection.
 ## Metadata
 
 - name: namespaces
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: NamespaceMap
 

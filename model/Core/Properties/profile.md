@@ -13,6 +13,6 @@ This field provides information about which profiles the Element belongs to.
 ## Metadata
 
 - name: profile
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: ProfileIdentifierType
 

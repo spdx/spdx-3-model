@@ -15,5 +15,5 @@ accuracy, characteristics of the tested population, quality, fairness, explainab
 ## Metadata
 
 - name: metric
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: /Core/DictionaryEntry

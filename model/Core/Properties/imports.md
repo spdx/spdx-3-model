@@ -14,6 +14,6 @@ but defined external to that document.
 ## Metadata
 
 - name: imports
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: ExternalMap
 

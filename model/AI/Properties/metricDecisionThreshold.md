@@ -16,5 +16,5 @@ Each decision threshold should match with a metric field defined in the AI Packa
 ## Metadata
 
 - name: metricDecisionThreshold
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: /Core/DictionaryEntry
