@@ -27,13 +27,16 @@ ExteralReferenceType specifies the type of an external reference.
 - documentation: A reference to the documentation for a package.
 - dynamicAnalysisReport: A reference to a dynamic analysis report for a package.
 - eolNotice: A reference to the End Of Sale (EOS) and/or End Of Life (EOL) information related to a package.
+- exportControlAssessment: A reference to a export control assessment for a package.
 - funding: A reference to funding information related to a package.
 - issueTracker: A reference to the issue tracker for a package.
 - mailingList: A reference to the mailing list used by the maintainer for a package.
 - metrics: A reference to metrics related to package such as OpenSSF scorecards.
 - license: A reference to additional license information related to an artifact.
 - other: Used when the type doesn't match any of the other options.
+- privacyAssessment: A reference to a privacy assessment for a package.
 - productMetadata: A reference to additional product metadata such as reference within organization's product catalog.
+- purchaseOrder: A reference to a purchase order for a package.
 - releaseNotes: A reference to the release notes for a package.
 - releaseHistory: A reference to a published list of releases for a package.
 - riskAssessment: A reference to a risk assessment for a package.
@@ -51,6 +54,6 @@ ExteralReferenceType specifies the type of an external reference.
 - staticAnalysisReport: A reference to a static analysis report for a package.
 - support: A reference to the software support channel or other support information for a package.
 - vcs: A reference to a version control system related to a software artifact.
-- vulnerabilityExploitabilityAssessment: A reference to a Vulnerability Exploitability eXchange (VEX) statement which provides information on whether a product is impacted by a specific vulnerability in an included package and, if affected, whether there are actions recommended to remediate. See also [NTIA VEX one-page](https://ntia.gov/files/ntia/publications/vex_one-page_summary.pdf)..
 - vulnerabilityDisclosureReport: A reference to a Vulnerability Disclosure Report (VDR) which provides the software supplier's analysis and findings describing the impact (or lack of impact) that reported vulnerabilities have on packages or products in the supplier's SBOM as defined in [NIST SP 800-161](https://csrc.nist.gov/publications/detail/sp/800-161/rev-1/final).
+- vulnerabilityExploitabilityAssessment: A reference to a Vulnerability Exploitability eXchange (VEX) statement which provides information on whether a product is impacted by a specific vulnerability in an included package and, if affected, whether there are actions recommended to remediate. See also [NTIA VEX one-page](https://ntia.gov/files/ntia/publications/vex_one-page_summary.pdf)..
 - qualityAssessmentReport: A reference to a quality assessment for a package.
