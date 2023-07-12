@@ -14,7 +14,7 @@ PositiveIntegerRange is a tuple of two positive integers that define a range.
 ## Metadata
 
 - name: PositiveIntegerRange
-- SubclassOf: none
+- SubclassOf: owl:Thing
 - Instantiability: Concrete
 
 ## Properties

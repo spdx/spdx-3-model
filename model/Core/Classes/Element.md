@@ -18,7 +18,7 @@ and inter-relatable content objects.
 ## Metadata
 
 - name: Element
-- SubclassOf: none
+- SubclassOf: owl:Thing
 - Instantiability: Abstract
 
 ## Properties

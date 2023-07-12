@@ -14,7 +14,7 @@ that provides additional characteristics of an Element.
 ## Metadata
 
 - name: ExternalReference
-- SubclassOf: none
+- SubclassOf: owl:Thing
 - Instantiability: Concrete
 
 ## Properties

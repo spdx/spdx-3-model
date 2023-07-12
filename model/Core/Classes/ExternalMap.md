@@ -17,7 +17,7 @@ such as its provenance, where to retrieve it, and how to verify its integrity.
 ## Metadata
 
 - name: ExternalMap
-- SubclassOf: none
+- SubclassOf: owl:Thing
 - Instantiability: Concrete
 
 
