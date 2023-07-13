@@ -21,12 +21,14 @@ The dateTime created is often the date of last change (e.g., a git commit date),
 
 - specVersion
   - type: SemVer
+  - maxCount: 1
 - comment
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
 - created
   - type: DateTime
+  - maxCount: 1
 - createdBy
   - type: Agent
   - minCount: 1
@@ -38,4 +40,5 @@ The dateTime created is often the date of last change (e.g., a git commit date),
   - minCount: 1
 - dataLicense
   - type: xsd:string
+  - maxCount: 1
 
