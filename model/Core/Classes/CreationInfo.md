@@ -21,6 +21,7 @@ The dateTime created is often the date of last change (e.g., a git commit date),
 
 - specVersion
   - type: SemVer
+  - minCount: 1
   - maxCount: 1
 - comment
   - type: xsd:string
