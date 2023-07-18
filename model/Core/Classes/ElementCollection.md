@@ -24,8 +24,6 @@ An SpdxCollection is a collection of Elements, not necessarily with unifying con
 - rootElement
   - type: Element
   - minCount: 1
-- namespaces
-  - type: NamespaceMap
 - imports
   - type: ExternalMap
 
