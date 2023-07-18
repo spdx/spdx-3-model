@@ -5,7 +5,7 @@
   "creationInfo": {
     "type": "CreationInfo",
     "specVersion": "3.0.0",
-    "created": "2022-12-01T00:00:00",
+    "created": "2022-12-01T00:00:00Z",
     "createdBy": ["https://spdx.dev/elements/3F26391C#spdx-dev"],
     "createdUsing": ["https://some.namespace#sbomolator_v2"],
     "profile": ["core"],

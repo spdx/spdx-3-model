@@ -12,7 +12,7 @@
       "@id": "_:creationInfo1",
       "type": "CreationInfo",
       "specVersion": "3.0.0",
-      "created": "2022-12-01T00:00:00",
+      "created": "2022-12-01T00:00:00Z",
       "createdBy": ["spdxDev:spdx-dev"],
       "profile": ["core", "software"],
       "dataLicense": "spdxLicenses:CC0-1.0"
