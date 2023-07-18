@@ -8,15 +8,12 @@ A string constrained to the SemVer 2.0.0 specification.
 
 ## Description
 
-The semantic version is a string
+A semantic version is a string
 that is following the specification of [Semantic Versioning 2.0.0](https://semver.org/).
 
 ## Metadata
 
 - name: SemVer
-- SubclassOf: xsd:string
-
-## Properties
 
 ## Format
 
