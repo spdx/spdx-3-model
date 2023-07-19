@@ -13,6 +13,8 @@ The notes are numbered for easier referencing -- the order is **not** significan
 ## Use cases
 
 Examples of how to serialize the following cases:
+
+### Core and software profile use cases:
 - Person
 - Agent
 - Annotation
@@ -33,12 +35,23 @@ Examples of how to serialize the following cases:
 - two Persons
 - Bundle of two Persons
 
-Licensing use cases:
+### Licensing profile use cases:
 - single artifact under one listed license
 - single artifact under one custom license
 - single artifact under license expression of listed licenses
 - single artifact under license expression of listed and custom licenses
 - two artifacts under same license expression of listed and custom licenses
 
-- security use cases to be added here
-- build use cases to be added here
+### Security profile use cases:
+The following list begins with base examples and sequentially adds expositional elements and relationships step-by-step:
+- An initial set of vulnerability elements
+- Adding vulnerability elements with security external reference types including FIXME
+- Adding hasAssociatedVulnerability relationship between a vulnerability element and a software profile element
+- Adding multiple hasAssessmentFor relationships for vulnerability assessment relationships between vulnerability element and package element for VEX, CVSS, etc. to communicate, e.g.,
+  - changes to a vulnerability element’s status affecting a specific package element using VEX (Vulnerability Exploitability eXchange)  (see the serialized examples listed in Syntax under each SPDX-3-MODEL/model/Security Class definition)
+  - how a vulnerability element may be fixed for a particular software package element
+  - results of a vulnerability scan or audit
+- Adding foundBy, publishedBy, reportedBy relationships between an agent element and a vulnerability element
+
+
+### Build Profile use cases to be added here
