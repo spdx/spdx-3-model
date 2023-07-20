@@ -37,11 +37,12 @@ Payloads containing multiple elements:
 - 2: two Files: [File1, File2]
 - 3: Relationship with Package contains two Files: [Relationship1, Package1, File1, File2]
 - 4: Sbom with two files: [Sbom1, File1, File2]
-- 5: SpdxDocument with two Files, no NamespaceMap: [SpdxDocument1, File1, File2]
-- 6: SpdxDocument with NamespaceMap: [SpdxDocument1, File1, File2]
-- 7: SpdxDocument with NamespaceMap and CreationInfoMap: [SpdxDocument1, File1, File2]
-- 8: SpdxDocument with ExternalMap: [SpdxDocument2, ?, ?]
-- 9: Bundle of two Persons [Person1, Person2] (same as 1)
+- 5: SpdxDocument(Payload2) with two Files, no NamespaceMap: [SpdxDocument1, File1, File2]
+- 6: SpdxDocument(Payload6) with two Files, no NamespaceMap: [SpdxDocument2, File1, File2]
+- 7: SpdxDocument(Payload6) with NamespaceMap: [SpdxDocument2, File1, File2]
+- 8: SpdxDocument(Payload6) with NamespaceMap and CreationInfoMap: [SpdxDocument2, File1, File2]
+- 9: SpdxDocument with ExternalMap: [SpdxDocument3, ?, ?]
+- 10: Bundle of two Persons [Person1, Person2] (same as 1)
 
 Licensing use cases:
 - single artifact under one listed license
