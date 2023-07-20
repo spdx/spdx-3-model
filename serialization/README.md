@@ -28,6 +28,9 @@ Examples of how to serialize the following cases:
 - SpdxDocument with ExternalMap
 - Person with minimal CreationInfo (Person1)
 - Person with full CreationInfo (Person2)
+- Bundle
+- two Persons
+- Bundle of two Persons
 
 Payloads containing multiple elements:
 - 1: two Persons: [Person1, Person2]
