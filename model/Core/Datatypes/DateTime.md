@@ -15,6 +15,7 @@ The specific format is one of the most commonly used ISO-8601 formats.
 ## Metadata
 
 - name: DateTime
+- SubclassOf: xsd:string
 
 ## Format
 

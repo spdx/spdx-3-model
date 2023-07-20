@@ -14,6 +14,7 @@ that is following the specification of [Semantic Versioning 2.0.0](https://semve
 ## Metadata
 
 - name: SemVer
+- SubclassOf: xsd:string
 
 ## Format
 
