@@ -29,7 +29,7 @@ Examples of how to serialize the following cases:
 - Person with minimal CreationInfo (Person1)
 - Person with full CreationInfo (Person2)
 
-Payloads containing multiple elements
+Payloads containing multiple elements:
 - 1: two Persons: [Person1, Person2]
 - 2: two Files: [File1, File2]
 - 3: Relationship with Package contains two Files: [Relationship1, Package1, File1, File2]
