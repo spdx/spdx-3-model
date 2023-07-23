@@ -14,7 +14,7 @@ Commonly used when representing a unit of transfer of SPDX Elements.
 ## Metadata
 
 - name: SpdxDocument
-- SubclassOf: Bundle
+- SubclassOf: Element
 - Instantiability: Concrete
 
 ## Properties
@@ -23,9 +23,15 @@ Commonly used when representing a unit of transfer of SPDX Elements.
   - type: xsd:string
   - minCount: 1
   - maxCount: 1
-
-## External properties restrictions
-
-- /Core/Element/name
+- element
+  - type: Element
   - minCount: 1
+- locationHint
+  - type: xsd:anyURI
+  - minCount: 0
+  - maxCount: 1
+- definingDocument
+  - type: xsd:anyURI
+  - minCount: 0
+  - maxCount: 1
 
