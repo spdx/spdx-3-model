@@ -5,7 +5,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 ## Summary
 
 Portion of an AnyLicenseInfo representing a License which has additional
-text applied to it
+text applied to it.
 
 ## Description
 
@@ -18,7 +18,7 @@ Syntax by the `WITH` operator.
 ## Metadata
 
 - name: WithAdditionOperator
-- SubclassOf: Licensing/AnyLicenseInfo
+- SubclassOf: /SimpleLicensing/AnyLicenseInfo
 - Instantiability: Concrete
 
 ## Properties

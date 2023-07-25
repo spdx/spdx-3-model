@@ -19,7 +19,7 @@ A License represents a license text, whether listed on the SPDX License List
 
 ## Properties
 
-- /Licensing/licenseText
+- /SimpleLicensing/licenseText
   - type: xsd:string
   - minCount: 1
   - maxCount: 1

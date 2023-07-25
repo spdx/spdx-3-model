@@ -18,7 +18,8 @@ There are a set of profiles that have been defined to be valid for a specific re
 
 - core: the element follows the Core profile specification
 - software: the element follows the Software profile specification
-- licensing: the element follows the Licensing profile specification
+- simpleLicensing: the element follows the simple Licensing profile specification
+- expandedLicensing: the element follows the expanded Licensing profile specification
 - security: the element follows the Security profile specification
 - build: the element follows the Build profile specification
 - ai: the element follows the AI profile specification
