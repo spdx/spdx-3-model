@@ -1,10 +1,10 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# ExpandedLicense
+# ExpandedLicensing
 
 ## Summary
 
-Fully expanded license expresssions.
+Fully expanded license expressions.
 
 ## Description
 
@@ -12,5 +12,5 @@ This profile supports representing a fully expanded license expression in object
 
 ## Metadata
 
-- id: https://rdf.spdx.org/v3/ExpandedLicense
-- name: ExpandedLicense
+- id: https://rdf.spdx.org/v3/ExpandedLicensing
+- name: ExpandedLicensing

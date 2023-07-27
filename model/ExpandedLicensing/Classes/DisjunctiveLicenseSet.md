@@ -21,11 +21,11 @@ by the `OR` operator.
 ## Metadata
 
 - name: DisjunctiveLicenseSet
-- SubclassOf: Licensing/AnyLicenseInfo
+- SubclassOf: /SimpleLicensing/AnyLicenseInfo
 - Instantiability: Concrete
 
 ## Properties
 
 - member
-  - type: Licensing/AnyLicenseInfo
+  - type: /SimpleLicensing/AnyLicenseInfo
   - minCount: 2

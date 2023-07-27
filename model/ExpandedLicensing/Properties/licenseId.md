@@ -15,7 +15,7 @@ characters.
 For a ListedLicense, the licenseId will be as specified on the
 [SPDX License List](https://spdx.org/licenses) for the particular license.
 
-For a CustomLicense, the short-form license identifer must begin with the
+For a CustomLicense, the short-form license identifier must begin with the
 prefix `LicenseRef-` and must be unique within the applicable SPDX namespace.
 The short-form license ID may be preceded by an SPDX namespace or a
 fully-qualified URI prefix.

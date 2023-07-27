@@ -14,7 +14,7 @@ is making no assertion about the license information for the corresponding softw
 ## Metadata
 
 - id: NoAssertionLicense
-- type: Licensing/AnyLicenseInfo
+- type: /SimpleLicensing/AnyLicenseInfo
 
 ## Serialization
 
