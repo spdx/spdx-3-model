@@ -17,13 +17,6 @@ Commonly used when representing a unit of transfer of SPDX Elements.
 - SubclassOf: Bundle
 - Instantiability: Concrete
 
-## Properties
-
-- name
-  - type: xsd:string
-  - minCount: 1
-  - maxCount: 1
-
 ## External properties restrictions
 
 - /Core/Element/name
