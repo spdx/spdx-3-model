@@ -20,7 +20,7 @@ creator.
 
 ## Properties
 
-- simpleLicensingText
+- licenseText
   - type: xsd:string
   - minCount: 1
   - maxCount: 1
