@@ -7,7 +7,7 @@
       "creationInfo": {
         "type": "CreationInfo",
         "specVersion": "3.0.0",
-        "created": "2022-12-01T00:00:00",
+        "created": "2022-12-01T00:00:00Z",
         "createdBy": ["https://my_namespace.com/creator1"],
         "profile": ["core", "software"],
         "dataLicense": "https://spdx.org/licenses/CC0-1.0"
@@ -27,7 +27,7 @@
       "creationInfo": {
         "type": "CreationInfo",
         "specVersion": "3.0.0",
-        "created": "2022-12-01T00:00:00",
+        "created": "2022-12-01T00:00:00Z",
         "createdBy": ["https://my_namespace.com/creator1"],
         "profile": ["core", "software"],
         "dataLicense": "https://spdx.org/licenses/CC0-1.0"

@@ -2,16 +2,18 @@
   "@context": "https://spdx.github.io/spdx-3-model/rdf/context.json",
   "@graph": [
     {
+      "@id": "_:creationInfo1",
+      "type": "CreationInfo",
+      "specVersion": "3.0.0",
+      "created": "2022-12-01T00:00:00Z",
+      "createdBy": ["https://spdx.dev/elements/3F26391C#spdx-dev"],
+      "profile": ["core", "software"],
+      "dataLicense": "https://spdx.org/licenses/CC0-1.0"
+    },
+    {
       "type": "SpdxDocument",
       "spdxId": "https://some.namespace#spdxdocument159",
-      "creationInfo": {
-        "type": "CreationInfo",
-        "specVersion": "3.0.0",
-        "created": "2022-12-01T00:00:00",
-        "createdBy": ["https://spdx.dev/elements/3F26391C#spdx-dev"],
-        "profile": ["core", "software"],
-        "dataLicense": "https://spdx.org/licenses/CC0-1.0"
-      },
+      "creationInfo": "_:creationInfo1",
       "name": "Doc 159 - two File elements",
       "element": [
         "https://some.namespace#SPDXRef-Package",
@@ -26,17 +28,20 @@
     {
       "type": "Package",
       "spdxId": "https://some.namespace#SPDXRef-Package",
-      "name": "packageName"
+      "name": "packageName",
+      "creationInfo": "_:creationInfo1"
     },
     {
       "type": "File",
       "spdxId": "https://some.namespace#file1",
-      "name": "file1"
+      "name": "file1",
+      "creationInfo": "_:creationInfo1"
     },
     {
       "type": "File",
       "spdxId": "https://some.namespace#file2",
-      "name": "file2"
+      "name": "file2",
+      "creationInfo": "_:creationInfo1"
     },
     {
       "type": "Relationship",
@@ -46,7 +51,8 @@
         "https://some.namespace#file1",
         "https://some.namespace#file2"
       ],
-      "relationshipType": "contains"
+      "relationshipType": "contains",
+      "creationInfo": "_:creationInfo1"
     }
   ]
 }
