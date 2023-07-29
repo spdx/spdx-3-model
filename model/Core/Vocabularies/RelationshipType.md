@@ -25,10 +25,12 @@ between a Package and a File, between two Packages, or between one SPDXDocument 
 - buildDependency: Every `to` Element is a build dependency of the `from` Element
 - buildTool: Build tool used to build an Element. This may be used to describe the build tool of a Build instance
 - coordinatedBy: (Security) Used to identify the vendor, researcher, or consumer agent performing coordination for a vulnerability
+- concludedLicense: Identifies the license that that SPDX data creator has concluded as governing the software Package, File or Snippet.
 - contains: Every `to` Element is contained by the `from` Element
 - configOf: (Build) Configuration information applied to an Element instance during a LifeycleScopeType period.  Example: Build configuration of the build instance
 - copy: Every `to` Element is a copy of the `from` Element
 - dataFile: Every `to` Element is a data file related to the the `from` Element
+- declaredLicense: dentifies the license information actually found in the software Package, File or Snippet, for example as detected by use of automated tooling.
 - dependencyManifest: Every `to` Element is manifest file containing dependency information related to the `from` Element
 - dependsOn: Every `to` Element is a dependecy of the `from` Element
 - descendant: This relationship may be used to describe child builds of a Build instance.
