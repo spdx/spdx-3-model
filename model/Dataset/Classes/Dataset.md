@@ -47,7 +47,7 @@ Metadata information that can be added to a dataset that may be used in a softwa
   - type: xsd:string
   - minCount: 0
 - sensitivePersonalInformation
-  - type: PresenceType
+  - type: /Core/PresenceType
   - minCount: 0
   - maxCount: 1
 - anonymizationMethodUsed

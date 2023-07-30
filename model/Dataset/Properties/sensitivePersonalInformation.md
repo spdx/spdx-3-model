@@ -15,4 +15,4 @@ or information that allows drawing conclusions about a person's identity.
 
 - name: sensitivePersonalInformation
 - Nature: ObjectProperty
-- Range: PresenceType
+- Range: /Core/PresenceType

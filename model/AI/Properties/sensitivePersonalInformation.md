@@ -16,4 +16,4 @@ This might include biometric data, addresses or other data that can be used to i
 
 - name: sensitivePersonalInformation
 - Nature: ObjectProperty
-- Range: PresenceType
+- Range: /Core/PresenceType

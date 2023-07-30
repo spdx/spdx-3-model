@@ -15,4 +15,4 @@ or if that software is fully automatic.
 
 - name: autonomyType
 - Nature: ObjectProperty
-- Range: PresenceType
+- Range: /Core/PresenceType
