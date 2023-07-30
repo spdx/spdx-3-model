@@ -41,3 +41,7 @@ or otherwise) which is defined by an SPDX data creator (CustomLicenseAddition).
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
+- licenseXml
+  - type: xsd:string
+  - minCount: 0
+  - maxCount: 1
