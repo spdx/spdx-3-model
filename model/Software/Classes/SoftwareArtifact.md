@@ -46,4 +46,7 @@ such as a package, a file, or a snippet.
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
-
+- licenseComment
+  - type: xsdString
+  - minCount: 0
+  - maxCount: 1  
