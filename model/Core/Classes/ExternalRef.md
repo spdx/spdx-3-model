@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# ExternalReference
+# ExternalRef
 
 ## Summary
 
@@ -13,14 +13,14 @@ that provides additional characteristics of an Element.
 
 ## Metadata
 
-- name: ExternalReference
+- name: ExternalRef
 - SubclassOf: none
 - Instantiability: Concrete
 
 ## Properties
 
-- externalReferenceType
-  - type: ExternalReferenceType
+- externalRefType
+  - type: ExternalRefType
   - maxCount: 1
 - locator
   - type: xsd:anyURI
