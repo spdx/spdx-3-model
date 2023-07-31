@@ -13,9 +13,9 @@ isFsfLibre specifies whether the [Free Software Foundation FSF](https://fsf.org)
 has listed this License as "free" in their commentary on licenses, located at
 the time of this writing at https://www.gnu.org/licenses/license-list.en.html.
 
-A value of "true" indicates that the FSF has listed this License as _free_.
+A value of "true"  the license is in the list of licenses that FSF publishes as libre.
 
-A value of "false" indicates that the FSF has listed this License as _not free_.
+A value of "false" indicates the license is explicitly not in the corresponding list of FSF libre licenses (e.g. FSF has the license on a non-free list).
 
 If the isFsfLibre field is not specified, the SPDX data creator makes no
 assertions about whether the License is listed in the FSF's commentary.
