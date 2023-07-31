@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# ExternalReferenceType
+# ExternalRefType
 
 ## Summary
 
@@ -12,7 +12,7 @@ ExteralReferenceType specifies the type of an external reference.
 
 ## Metadata
 
-- name: ExternalReferenceType
+- name: ExternalRefType
 
 ## Entries
 

@@ -32,20 +32,20 @@ Vulnerability Scoring System (CVSS) as defined on
   "from": "urn:spdx.dev:vuln-cve-2020-28498",
   "to": ["urn:product-acme-application-1.3"],
   "assessedElement": "urn:npm-elliptic-6.5.2",
-  "externalReferences": [
+  "externalRefs": [
     {
-      "@type": "ExternalReference",
-      "externalReferenceType": "securityAdvisory",
+      "@type": "ExternalRef",
+      "externalRefType": "securityAdvisory",
       "locator": "https://nvd.nist.gov/vuln/detail/CVE-2020-28498"
     },
     {
-      "@type": "ExternalReference",
-      "externalReferenceType": "securityAdvisory",
+      "@type": "ExternalRef",
+      "externalRefType": "securityAdvisory",
       "locator": "https://snyk.io/vuln/SNYK-JS-ELLIPTIC-1064899"
     },
     {
-      "@type": "ExternalReference",
-      "externalReferenceType": "securityFix",
+      "@type": "ExternalRef",
+      "externalRefType": "securityFix",
       "locator": "https://github.com/indutny/elliptic/commit/441b742"
     }
   ],

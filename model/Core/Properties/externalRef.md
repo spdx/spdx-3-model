@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# externalReference
+# externalRef
 
 ## Summary
 
@@ -14,7 +14,7 @@ that provides additional characteristics of an Element.
 
 ## Metadata
 
-- name: externalReference
+- name: externalRef
 - Nature: ObjectProperty
-- Range: ExternalReference
+- Range: ExternalRef
 
