@@ -13,7 +13,7 @@ isOsiApproved specifies whether the [Open Source Initiative (OSI)](https://opens
 has listed this License as "approved" in their list of OSI Approved Licenses,
 located at the time of this writing at https://opensource.org/licenses/.
 
-A value of "true" the license is in the list of licenses that OSI publishes as approvied.
+A value of "true" indicates the license is in the list of licenses that OSI publishes as approvied.
 
 A value of "false" indicates the license is explicitly not in the corresponding list of OSI licenses (e.g. OSI publishes that a license is not approved).
 
