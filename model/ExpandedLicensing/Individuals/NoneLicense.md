@@ -4,18 +4,18 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Individual representing an assertion that no license information is present, as applicable.
+An Individual Value for License where the SPDX data creator determines that no license is present.
+
 
 ## Description
 
-A NoneLicense is the value that is used to indicate
-the absence of license information from a software artifact.
+NoneLicense should be used if the SPDX creator determines there is no license available for this Artifact.
 
 ## Metadata
 
-- id: NoneLicense
+- name: NoneLicense
 - type: /SimpleLicensing/AnyLicenseInfo
 
-## Serialization
+## Property Values
 
-- text: "NONE"
+- name: "NONE"

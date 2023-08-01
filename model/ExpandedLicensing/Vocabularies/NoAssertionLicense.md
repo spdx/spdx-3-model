@@ -20,3 +20,8 @@ the SPDX creator has intentionally provided no information (no meaning should be
 ## Property Values
 
 - name: "NOASSERTION"
+<<<<<<< HEAD
+=======
+- /SimpleLicensing/licenseText: "Not Applicable, as there is no assertion about license information"
+
+>>>>>>> 22cd9c1... Update model/ExpandedLicensing/Vocabularies/NoAssertionLicense.md
