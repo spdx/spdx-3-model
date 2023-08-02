@@ -1,0 +1,14 @@
+{
+  "spdxId": "https://some.namespace#sbomolator_v2",
+  "type": {
+    "tool": {}
+  },
+  "name": "Acme Corp. Super SBOM-o-lator",
+  "creationInfo": {
+    "specVersion": "3.0.0",
+    "profile": ["core"],
+    "created": "2022-12-01T00:00:00",
+    "dataLicense": "CC0-1.0",
+    "createdBy": ["https://spdx.dev/elements/3F26391C#spdx-dev"]
+  }
+}

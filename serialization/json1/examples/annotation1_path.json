@@ -1,0 +1,12 @@
+{
+  "spdxId": "http://spdx.acme.org/3FA9CB25#annotation34",
+  "type.annotation.annotationType": "review",
+  "type.annotation.subject": "http://spdx.acme.org/3FA9CB25#person9",
+  "type.annotation.contentType": "text/plain",
+  "type.annotation.statement": "Keanu Reeves is back as cyberpunk icon Neo but fans of the original will find this cynical reboot a bitter pill to swallow.",
+  "creationInfo.specVersion": "3.0.0",
+  "creationInfo.profile": ["core"],
+  "creationInfo.created": "2023-06-02T13:49:24+00:00",
+  "creationInfo.dataLicense": "CC0-1.0",
+  "creationInfo.createdBy": ["https://spdx.dev/elements/3F26391C#spdx-dev"]
+}

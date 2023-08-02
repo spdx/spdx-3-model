@@ -1,0 +1,19 @@
+{
+  "spdxId": "http://spdx.acme.org/3FA9CB25#spdxdocument240",
+  "type": {
+    "spdxDocument": {
+      "element": [
+        "https://some.namespace#john_smith",
+        "http://spdx.acme.org/3FA9CB25#person2"
+      ]
+    }
+  },
+  "name": "Doc 240 - two Person elements",
+  "creationInfo": {
+    "specVersion": "3.0.0",
+    "profile": ["core"],
+    "created": "2022-12-01T00:00:00",
+    "dataLicense": "CC0-1.0",
+    "createdBy": ["https://spdx.dev/elements/3F26391C#spdx-dev"]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "spdxId": "http://spdx.acme.org/3FA9CB25#person2",
+  "type": {
+    "person": {}
+  },
+  "name": "Alice Stone",
+  "creationInfo": {
+    "specVersion": "3.0.0",
+    "profile": ["core"],
+    "created": "2022-12-01T00:00:00",
+    "dataLicense": "CC0-1.0",
+    "createdBy": ["https://spdx.dev/elements/3F26391C#spdx-dev"],
+    "createdUsing": ["https://some.namespace#sbomolator_v2"],
+    "comment": "Source: payroll list, 20221130"
+  },
+  "externalIdentifier": [
+    {
+      "externalIdentifierType": "email",
+      "identifier": "Alice.Stone@acme.org"
+    }
+  ]
+}

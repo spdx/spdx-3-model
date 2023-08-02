@@ -14,4 +14,3 @@ The Core namespace defines foundational concepts serving as the basis for all SP
 
 - id: https://rdf.spdx.org/v3/Core
 - name: Core
-

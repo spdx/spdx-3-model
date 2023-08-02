@@ -1,0 +1,20 @@
+{
+  "spdxId": "https://some.namespace#john_smith",
+  "type": {
+    "person": {}
+  },
+  "name": "John Smith",
+  "creationInfo": {
+    "specVersion": "3.0.0",
+    "profile": ["core"],
+    "created": "2022-12-01T00:00:00",
+    "dataLicense": "CC0-1.0",
+    "createdBy": ["https://spdx.dev/elements/3F26391C#spdx-dev"]
+  },
+  "externalIdentifier": [
+    {
+      "externalIdentifierType": "email",
+      "identifier": "john@smith.com"
+    }
+  ]
+}
