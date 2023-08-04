@@ -13,10 +13,8 @@ The SPDX document creator concludes there is no license available for this packa
 ## Metadata
 
 - name: NoneLicense
-- type: License
+- type: /SimpleLicensing/AnyLicenseInfo
 
 ## Property Values
 
 - name: "NONE"
-- /SimpleLicensing/licenseText: "Not Applicable: Text for a NONE License"
-
