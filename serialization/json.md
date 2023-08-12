@@ -64,4 +64,5 @@ understood, and processed
 }
 ```
 Any proposal for nested serialization must define how multiple collections are serialized
-within a single document.
+within a single document, and how multiple collections are translated to a flat array of 
+unoptimized element values.
