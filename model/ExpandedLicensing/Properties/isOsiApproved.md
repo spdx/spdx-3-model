@@ -13,9 +13,9 @@ isOsiApproved specifies whether the [Open Source Initiative (OSI)](https://opens
 has listed this License as "approved" in their list of OSI Approved Licenses,
 located at the time of this writing at https://opensource.org/licenses/.
 
-A value of "true" indicates the license is in the list of licenses that OSI publishes as approvied.
+A value of "true" indicates that the license is in the list of licenses that OSI publishes as approved.
 
-A value of "false" indicates the license is explicitly not in the corresponding list of OSI licenses (e.g. OSI publishes that a license is not approved).
+A value of "false" indicates that the license is explicitly not in the corresponding list of OSI licenses (e.g., OSI publishes that a license is not approved).
 
 If the isOsiApproved field is not specified, the SPDX data creator makes no
 assertions about whether the License is approved by the OSI.
