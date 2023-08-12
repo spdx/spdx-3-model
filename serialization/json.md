@@ -1,26 +1,31 @@
 # JSON Serialization
 
-Ideally JSON will be very similar (or even the same) to JSON-LD.
+As noted by the [serialization team](https://github.com/spdx/meetings/blob/main/serialisation/Serialization%20Team%20Meeting%202023-07-20.md),
+JSON serialization is targeted for easy adoption by the developer community:
+* implied that they prefer JSON (based on prior discussions)
+* also should be validated from a JSON schema all by itself (w/o a context file)
+* easy to use as part of a library you incorporate into your code base
+* how much extra code is needed to write beyond what's provided in standard tools,
+e.g., how much logic is required for parsing, desire not much logic and custom parsing
+required on top (may be unavoidable); don't want to introduce additional JSON complexities
+in order to support JSON-LD.
 
-The JSON serialization will consist of two things: A context file and an array of element objects (the "payload").
+Ignoring optimizations, every serialized SPDX document is a collection of Element instances.
+In JSON this collection is equivalent to an array of element values
+```
+[
+  Element1,
+  Element2,
+  ...,
+  ElementN
+]
+```
+where each Element has an individual **spdxId** and a **type** as defined by the logical model.
+There are various methods for serializing individual Element values and optimizing document size,
+which will be compared and selected based on the developer criteria, but every proposed method
+must be equivalent to a collection of individual element values. This logical collection form
+supports both translation to other serialization formats and validation using JSON Schema.
 
-The context file will be linked via the single property "@context": "https://spdx.github.io/spdx-3-model/rdf/context.json" at top-level of the JSON file.
-You need not care about its specifics, it is simply there to ensure compatibility of JSON and JSON-LD (if you want to know more, see the "about" section below).
-
-The rest of the serialized file will consist of an array of objects under the "@graph" key, also at top-level of the JSON file.
-Each of these objects must have a property "@type", stating its class name which must be an instantiable subclass of Element.
-It also needs a property "@id", which serves to capture the SPDX ID of the Element.
-All other SPDX properties of the Element are stated via key-value pairs, where the key is the name of the property (e.g. "createdBy").
-The type of the value depends on the type of the property in the SPDX model and can be a string, number, array or object.
-Note, though, that inlining of objects is only allowed for "complex data type" classes (CreationInfo, ExternalReference, etc.).
-If the object were an Element, a string containing its ID would be written instead, thereby referencing another object from the same or even another payload.
-
-
-#### About the context file
-The context file is a tool to abbreviate long URIs in keys or vocabulary types.
-This allows for a readable serialized output while still maintaining concise definitions of all properties and classes according to the RDF standard.
-For example, using the context file as a "translation tool", we shorten the property "https://spdx.org/rdf/Core/createdBy" to simply "createdBy".
-The context file will be universal for all SPDX users and is accessible at "https://spdx.github.io/spdx-3-model/rdf/context.json".
-Utilising the context is achieved by adding the property "@context": "https://spdx.github.io/spdx-3-model/rdf/context.json" at top-level of the JSON file.
-The context also serves to omit the @type key in objects where the type is already known from the key of the object.
-For example, the object behind the key "creationInfo" is always of type "CreationInfo", so the key-value pair "@type": "CreationInfo" is implied via the context.
+JSON objects are name:value pairs, and the choice of whether to serialize Element type as a
+property name (e.g., "person", "package") or value type (e.g., "Person", "Package") will be
+based on the developer criteria.
