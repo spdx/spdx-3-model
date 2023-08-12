@@ -10,6 +10,10 @@ e.g., how much logic is required for parsing, desire not much logic and custom p
 required on top (may be unavoidable); don't want to introduce additional JSON complexities
 in order to support JSON-LD.
 
+JSON objects are name:value pairs, and the choice of whether to serialize Element type as a
+property name (e.g., "person", "package") or value type (e.g., "Person", "Package") will be
+based on the developer criteria.
+
 Ignoring optimizations, every serialized SPDX document is a collection of Element instances.
 In JSON this collection is equivalent to an array of element values
 ```
@@ -26,6 +30,38 @@ which will be compared and selected based on the developer criteria, but every p
 must be equivalent to a collection of individual element values. This logical collection form
 supports both translation to other serialization formats and validation using JSON Schema.
 
-JSON objects are name:value pairs, and the choice of whether to serialize Element type as a
-property name (e.g., "person", "package") or value type (e.g., "Person", "Package") will be
-based on the developer criteria.
+### Nested Serialization
+
+In the case of a single ElementCollection at the root level in a document (e.g., Element1 is type Sbom),
+the document might be serialized in nested form:
+```
+{
+  Element1: [       // type = "Sbom"
+    Element2,
+    Element3,
+    ...,
+    ElementN
+  ]
+}
+```
+But this becomes more challenging in the case of multiple or nested collections
+(e.g., Element1 is type Sbom and includes Element3 which is also type Sbom) because:
+* the value of an Element (and its hash or signature) should not be affected by the presence
+(or absence in the case of external references) of other elements in the same document
+* the scope of optimizations such as namespaces and creation information must be defined,
+understood, and processed
+```
+{
+  Element1: [       // type = "Sbom"
+    Element2,
+    Element3: [     // type = "Sbom"
+      Element4,
+      Element5
+    ],
+    ...,
+    ElementN
+  ]
+}
+```
+Any proposal for nested serialization must define how multiple collections are serialized
+within a single document.
