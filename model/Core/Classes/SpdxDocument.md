@@ -17,7 +17,6 @@ Commonly used when representing a unit of transfer of SPDX Elements.
 - SubclassOf: Bundle
 - Instantiability: Concrete
 
-=======
 ## Properties
 
 - originalNamespaces
