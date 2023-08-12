@@ -38,7 +38,7 @@ the document might be serialized in nested form:
 {
   Element1: [       // type = "Sbom"
     Element2,
-    Element3,
+    Element3,       // (imported from another document)
     ...,
     ElementN
   ]
@@ -47,7 +47,7 @@ the document might be serialized in nested form:
 But this becomes more challenging in the case of multiple or nested collections
 (e.g., Element1 is type Sbom and includes Element3 which is also type Sbom) because:
 * the value of an Element (and its hash or signature) should not be affected by the presence
-(or absence in the case of external references) of other elements in the same document
+(or absence in the case of references to external documents) of other elements in the same document
 * the scope of optimizations such as namespaces and creation information must be defined,
 understood, and processed
 ```
@@ -56,13 +56,13 @@ understood, and processed
     Element2,
     Element3: [     // type = "Sbom"
       Element4,
-      Element5
+      Element5      // (imported from another document)
     ],
     ...,
     ElementN
   ]
 }
 ```
-Any proposal for nested serialization must define how multiple collections are serialized
-within a single document, and how multiple collections are translated to a flat array of 
+Any proposal for nested serialization must define how one or more collections are serialized
+within a single document, and how collections are translated to a flat array of 
 unoptimized element values.
