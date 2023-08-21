@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Provides a NamespaceMap representing the NamspaceMap used for the original serialization of an SpdxDocument.
+Provides a NamespaceMap representing the NamespaceMap used for the original serialization of an SpdxDocument.
 
 ## Description
 
