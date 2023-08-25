@@ -16,5 +16,5 @@ The specified version of the SPDX License List must include all listed licenses 
 
 - name: licenseListVersion
 - Nature: DataProperty
-- Range: xsd:string
+- Range: /Core/SemVer
 
