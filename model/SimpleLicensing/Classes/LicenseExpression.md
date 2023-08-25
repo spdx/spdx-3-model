@@ -24,7 +24,7 @@ SPDX License Expressions provide a way for one to construct expressions that mor
   - minCount: 1
   - maxCount: 1
 - licenseListVersion
-  - type: xsd:string
+  - type: /Core/SemVer
   - maxCount: 1
 - customIdToUri
   - type: /Core/DictionaryEntry
