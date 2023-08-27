@@ -23,7 +23,7 @@ that provides additional characteristics of an Element.
   - type: ExternalRefType
   - maxCount: 1
 - locator
-  - type: xsd:anyURI
+  - type: xsd:string
 - contentType
   - type: MediaType
   - maxCount: 1
