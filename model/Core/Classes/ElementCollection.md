@@ -14,7 +14,11 @@ Note that all ElementCollections must conform to the core profile even if the co
 If the profileConformance property is not provided, core is to be assumed as the default.
 
 **Constraints**
-If the ElementCollection has at least 1 element, it must also have at least 1 rootElement
+If the ElementCollection has at least 1 element, it must also have at least 1 rootElement.
+
+The element must not be of type SpdxDocument.
+
+The rootElement must not be of type SpdxDocument.
 
 ## Metadata
 
