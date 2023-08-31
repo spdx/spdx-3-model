@@ -8,7 +8,7 @@ A collection of Elements, not necessarily with unifying context.
 
 ## Description
 
-An SpdxCollection is a collection of Elements, not necessarily with unifying context.
+An Element Collection is a collection of Elements, not necessarily with unifying context.
 
 ## Metadata
 
