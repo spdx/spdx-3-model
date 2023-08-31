@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# namespacemap
+# namespaceMap
 
 ## Summary
 
@@ -12,6 +12,6 @@ This field provides a NamespaceMap of prefixes and associated namespace partial 
 
 ## Metadata
 
-- name: namespacemap
+- name: namespaceMap
 - Nature: ObjectProperty
 - Range: NamespaceMap
