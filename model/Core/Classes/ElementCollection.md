@@ -19,10 +19,10 @@ An SpdxCollection is a collection of Elements, not necessarily with unifying con
 ## Properties
 
 - element
-  - type: Element
+  - type: Element and NOT (X-Collection)
   - minCount: 1
 - rootElement
-  - type: Element
+  - type: Element and NOT (X-Collection)
   - minCount: 1
 - imports
   - type: ExternalMap
