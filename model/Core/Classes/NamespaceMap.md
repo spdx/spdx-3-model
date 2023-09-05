@@ -14,40 +14,25 @@ of ElementIDs to be used in SPDX content serialization in order to provide a mor
 human-readable and smaller serialized representation of the Elements.
 
 The content of a namespace map are suggestions for consistency in serialization but are not normatively enforced.
-Any serialization of the collection content SHOULD (rather than MUST) utilize the namespace map content.
+When a serialization only contains the elements in "X", the collection content SHOULD (rather than MUST) utilize
+the namespace map.
 A serialization MAY choose to use the namespace map content.
 A serialization MAY choose to use prefixes and namespaces other than the namespace map content.
 A serialization MAY choose to use no prefixes at all and rather use the more verbose full ElementID IRIs.
 
-If utilized the namespace map set of prefixes and namespaces MUST be implemented in a given serialization 
-form (e.g., json-ld or xml) as specified in the binding rules specification for that serialization and 
-utilizing the appropriate inherent or custom specified mechanism for that serialization.
-The namespace map itself is also conveyed as native SPDX content to support clarity, transparency and 
-consistency independent of any particular serialization form.
-
-A given serialization payload (whether file or streaming) MUST NOT contain multiple namespace maps with conflicting mappings.
-Any serialization of the collection content SHOULD (rather than MUST) utilize the namespace map content unless the single 
-serialization payload is intended to contain multiple peer collections each with their own namespace map.
-In this case the serializer MUST do one of the following:
-1) Diverge from the exact provided namespace mappings and utilize deconflicted mappings where appropriate.
-   This could be fully new prefix mappings as if the suggested namespace maps had not been provided.
-3) Use full ElementID IRIs instead of prefixed ElementID IRIs.
-
+If a serialization format supports prefixes or namespaces (e.g., JSON-LD context or XML XSD namespace), the namespace map
+must be represented in that format "native" to the serialization.
+The NamespaceMap itself will never be serialized as part of SPDX data if the serialization format support namespaces or prefixes.
+If the serialization format does not support prefixes, then the full URI's for the elements must be used and the namespace map will not be preserved.
+Any custom serialization format SHOULD implement namespaces in order to preserve the namespace map.
 
 Namespace maps support a variety of relevant use cases such as:
 
-1) An SPDX content producer wishing to provide clarity of their serialization of an SPDX 2.X simple style collection where all content is newly minted and a single prefix-namespace is used.
-2) An SPDX content producer wishing to maintain consistent prefix use and understanding across multiple different serializations of the produced content.
-   For example, an SBOM producer wishes to share/publish the SBOM as json-ld, XML and YAML. The producer can specify the preferred prefix mappings they plan to use in all serializations, maintain usage consistency themselves across those serializations and provide clarity to the consumer of the SBOM in any of those serializations independent of which serialization form was received.
+1) An SPDX content producer wishing to provide clarity of their serialization of an SPDX 2.X simple style collection where all content is newly minted and a single prefix-namespace is used.  The consumer of SPDX content wishes to preserve the name space mapping provided by such a producer.  In this case, the consumer would record the namespace map prefixes in the NamespaceMap such that subsequent serializations could reproduce the prefixes / namespaces in the native serialization format.
+2) An SPDX content producer wishing to maintain consistent prefix use and understanding across multiple different serialization formats of the produced content.
+   For example, an SBOM producer wishes to share/publish the SBOM as JSON-LD and XML. The producer can specify the preferred prefix mappings in the native serialization format using the information from a single Namespace stored in memory.
 3) An SPDX content consumer/producer wishing to maintain consistent prefix use while round tripping from SPDX content received, deserialized, modified/extended in some way, and then reserialized in the same serialization form.
-   In this case the prefix-namespace mappings utilized in the content are preserved across serializations as native SPDX content. 
-4) An SPDX content consumer/producer wishing to maintain consistent prefix use while trans-serializing SPDX content received in one serialization form, deserialized, and then reserialized into a different serialization form.
-   In this case the prefix-namespace mappings utilized in the content are preserved across serializations as native SPDX content. 
-5) An SPDX content producer wishing to serialize/share together multiple collections of SPDX content each with their own namespace map in a way any consumer of the content would be able to separate out the multiple collections including their namespace map suggestions.
-   This would involve the conflicted mappings issue briefly characterized above this list of use cases.
-6) An SPDX content consumer wishing to maintain consistent prefix use while receiving serialized content that does not include a namespace map but does utilize prefixes, and at some future point reserializing that content.
-   The consumer can simply "wrap" the received content in a collection with a namespace map and specify the prefix to namespace mappings that were actually implemented in the received content.
-7) It should be possible to derive and maintain namespace mapping provenance for content.
+   In this case the prefix-namespace mappings utilized in the content are transformed from the original native namespace/prefix into the in memory NamespaceMap then transformed from the NamespaceMap back into the resultant serialization native namespace / prefix format.
 
 ## Metadata
 
