@@ -22,7 +22,6 @@ A serialization MAY choose to use no prefixes at all and rather use the more ver
 
 If a serialization format supports prefixes or namespaces (e.g., JSON-LD context or XML XSD namespace), the namespace map
 must be represented in that format "native" to the serialization.
-The NamespaceMap itself will never be serialized as part of SPDX data if the serialization format support namespaces or prefixes.
 If the serialization format does not support prefixes, then the full URI's for the elements must be used and the namespace map will not be preserved.
 Any custom serialization format SHOULD implement namespaces in order to preserve the namespace map.
 
