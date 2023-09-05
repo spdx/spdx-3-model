@@ -19,10 +19,10 @@ An Element Collection is a collection of Elements, not necessarily with unifying
 ## Properties
 
 - element
-  - type: Element and NOT (X-Collection)
+  - type: Element
   - minCount: 1
 - rootElement
-  - type: Element and NOT (X-Collection)
+  - type: Element
   - minCount: 1
 - imports
   - type: ExternalMap
