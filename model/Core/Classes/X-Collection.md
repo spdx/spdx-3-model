@@ -12,7 +12,7 @@ The X-Collection provides a convenient way to store information about SPDX data 
 unit (e.g., all SPDX data within a single JSON-LD file).
 Information we wish to preserve about the serialization itself are store as properties of this class.
 
-NOTE: This class is not intended to be serialized itself.
+NOTE: This class is not intended to be serialized within the SPDX data it is representing.
 It is intended to be utilized within a system to handle the following use cases:
 
 1) An SPDX content producer wishing to provide clarity of their serialization of an SPDX 2.X simple style collection where all content is newly minted and a single prefix-namespace is used.  The consumer of SPDX content wishes to preserve the name space mapping provided by such a producer.  In this case, the consumer would record the namespace map prefixes in the NamespaceMap such that subsequent serializations could reproduce the prefixes / namespaces in the native serialization format.
