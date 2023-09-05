@@ -26,4 +26,9 @@ An SpdxCollection is a collection of Elements, not necessarily with unifying con
   - minCount: 1
 - imports
   - type: ExternalMap
-
+- profileConformance
+  - type: ProfileIdentifierType
+  - minCount: 1
+- profileNamespace
+  - type: ProfileIdentifierType
+  - minCount: 1
