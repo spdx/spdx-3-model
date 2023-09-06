@@ -37,7 +37,7 @@ In this case the serializer MUST do one of the following:
 Namespace maps support a variety of relevant use cases such as:
 
 1) An SPDX content producer wishing to provide clarity of their serialization of an SPDX 2.X simple style collection where all content is newly minted and a single prefix-namespace is used.
-2) An SPDX content producer wishing to maintain consistent prefix use and understanding across multiple different serializations of the produced content.
+2) An SPDX content producer wishing to maintain consistent prefix use and understanding across multiple different serialization formats of the produced content.
    For example, an SBOM producer wishes to share/publish the SBOM as json-ld, XML and YAML. The producer can specify the preferred prefix mappings they plan to use in all serializations, maintain usage consistency themselves across those serializations and provide clarity to the consumer of the SBOM in any of those serializations independent of which serialization form was received.
 3) An SPDX content consumer/producer wishing to maintain consistent prefix use while round tripping from SPDX content received, deserialized, modified/extended in some way, and then reserialized in the same serialization form.
    In this case the prefix-namespace mappings utilized in the content are preserved across serializations as native SPDX content. 
