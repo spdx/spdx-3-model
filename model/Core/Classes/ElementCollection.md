@@ -31,5 +31,3 @@ If the profileConformance property is not provided, core is to be assumed as the
   - type: ExternalMap
 - profileConformance
   - type: ProfileIdentifierType
-- profileNamespace
-  - type: ProfileIdentifierType

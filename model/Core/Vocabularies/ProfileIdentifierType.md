@@ -11,8 +11,7 @@ Enumeration of the valid profiles.
 There are a set of profiles that have been defined by a profile team.
 A profile consists of a namespace that may add properties and classes to the core profile unique to the domain covered by the profile.
 The profile may also contain additional restrictions on existing properties and classes defined in other profiles.
-If a creator of an SPDX element includes a profile in the list of CreationInfo profiles, they are claiming that the element conforms to all restrictions defined for that profile.
-If the creator of an SPDX collection of elements includes a profile in the list of CreationInfo profiles, they are claiming that all contained elements conform to all restrictions defined for that profile.
+If the creator of an SPDX collection of elements includes a profile in the list of conformanceProfiles, they are claiming that all contained elements conform to all restrictions defined for that profile.
 
 ## Metadata
 
