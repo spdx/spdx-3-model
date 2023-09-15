@@ -8,10 +8,8 @@ A map of Element identifiers that are used within a Document but defined externa
 
 ## Description
 
-An External Map is a map of Element identifiers that are used within a Document
-but defined external to that Document.
-The external map provides details about the externally-defined Element
-such as its provenance, where to retrieve it, and how to verify its integrity.
+An External Map is a map of Element identifiers that are used within a Document but defined external to that Document.
+The external map provides details about the Element that are defined externally such as its provenance, where to retrieve it, and how to verify its integrity.
 
 
 ## Metadata
@@ -23,10 +21,9 @@ such as its provenance, where to retrieve it, and how to verify its integrity.
 
 ## Properties
 
-- externalId
-  - type: xsd:anyURI
-  - minCount: 1
-  - maxCount: 1
+- externalIdentifier
+  - type: ExternalIdentifier
+  - minCount: 0
 - verifiedUsing
   - type: IntegrityMethod
 - locationHint

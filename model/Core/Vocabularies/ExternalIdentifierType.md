@@ -24,6 +24,7 @@ ExteralIdentifierType specifies the type of an external identifier.
 - other: Used when the type doesn't match any of the other options.
 - pkgUrl: https://github.com/package-url/purl-spec
 - securityOther: Used when there is a security related identifier of unspecified type.
+- spdxdoc: An identifier for another SPDX Document, e.g. the other SPDX document's namespace appended by #SPDXRef-DOCUMENT as defined in the SPDX 2.3 specification: https://spdx.github.io/spdx-spec/v2.3/document-creation-information/#63-spdx-identifier-field
 - swhid: https://docs.softwareheritage.org/devel/swh-model/persistent-identifiers.html
 - swid: https://www.ietf.org/archive/id/draft-ietf-sacm-coswid-21.html#section-2.3
 - urlScheme: the scheme used in order to locate a resource https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml
