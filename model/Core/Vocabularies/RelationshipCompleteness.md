@@ -17,4 +17,4 @@ RelationshipCompleteness indicates whether the provided relationship is known to
 
 - incomplete: The relationship is known not to be exhaustive.
 - complete: The relationship is known to be exhaustive.
-- noAssertion: There can be made no assertion about the completeness of the relationship.
+- noAssertion: No assertion can be made about the completeness of the relationship.
