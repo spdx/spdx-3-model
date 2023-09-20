@@ -53,4 +53,6 @@ Note that some of these could be represented in SPDX as a file as well.
 
 - /Core/Element/name
   - minCount: 1
+- /Core/Element/verifiedUsing
+  - type: PackageVerification
 
