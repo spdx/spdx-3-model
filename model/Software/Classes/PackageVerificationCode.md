@@ -8,8 +8,7 @@ An SPDX version 2.X compatible verification method for software packages.
 
 ## Description
 
-This verification method is provided for compatibility with SPDX 2.X.  
-The PackageGitoid is the reccomended verification method for software packages not requiring compatibility with SPDX 2.X.
+This verification method is provided for compatibility with SPDX 2.X.
 
 This verification method provides an independently reproducible mechanism identifying specific contents of a package based on the actual files (except the SPDX document itself, if it is included in the package) that make up each package and that correlates to the data in this SPDX document. 
 This identifier enables a recipient to determine if any file in the original package (that the analysis was done on) has been changed and permits inclusion of an SPDX document as part of a package.
