@@ -43,7 +43,17 @@ jobs:
         with:
           name: model.ttl
           path: /tmp/spec-parser.out/model.ttl
-          
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: model.jsonld
+          path: /tmp/spec-parser.out/model.jsonld
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: context.json
+          path: /tmp/spec-parser.out/context.json
+
       - name: get Ontospy
         run: |
           git clone --depth=1 --single-branch --branch=master https://github.com/lambdamusic/Ontospy.git
