@@ -80,10 +80,12 @@ jobs:
           git checkout gh-pages
           rm -rf /auto-generated/
           cp /tmp/spec-parser.out/model.ttl .
+          cp /tmp/spec-parser.out/model.jsonld .
+          cp /tmp/spec-parser.out/context.json .
           cp -r /tmp/auto-generated/ .
-          if [ -n "$(git status -s -- "auto-generated/" "*.ttl")" ]
+          if [ -n "$(git status -s -- "auto-generated/" "*.ttl" "*.jsonld" "*.json")" ]
           then
-            git add model.ttl auto-generated/ 
+            git add model.ttl model.jsonld context.json auto-generated/
             git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -s -m "Automated Upload" --author "${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>"
             git push origin
           fi
