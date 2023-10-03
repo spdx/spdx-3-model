@@ -98,3 +98,7 @@ the concludedLicense relationship comment field.
 
 - id: https://rdf.spdx.org/v3/Licensing
 - name: Licensing
+
+## External relationship restrictions
+- fromType: /Core/Artifact
+
