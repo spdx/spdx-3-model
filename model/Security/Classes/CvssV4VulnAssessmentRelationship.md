@@ -71,7 +71,7 @@ A CvssV4VulnAssessmentRelationship relationship describes the determined score, 
   - type: xsd:decimal
   - minCount: 1
   - maxCount: 1
-- Severity
+- severity
   - type: CvssSeverityType
   - minCount: 1
   - maxCount: 1
