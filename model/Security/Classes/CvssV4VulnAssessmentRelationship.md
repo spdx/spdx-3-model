@@ -67,7 +67,7 @@ A CvssV4VulnAssessmentRelationship relationship describes the determined score, 
 
 ## Properties
 
-- Score
+- score
   - type: xsd:decimal
   - minCount: 1
   - maxCount: 1
