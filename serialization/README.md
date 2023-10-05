@@ -2,13 +2,23 @@
 
 ## Serialization info
 
-_TBD_
+This directory contains the specifications and examples for all supported SPDX formats.
+
+There is a specification markdown file for each supported format describing the serialization.
+
+The "XCollection" section in the specification markdown file describes how each of the properties are
+serialized.
+
+Note that the "XCollection" is a class representing the serialization itself.  Any properties supported by the serialization format must serialize that property using the serialization format syntax.  Specifics and examples can be found in the individual serialization specification markdown files.
 
 ## Serialization formats
 
 The files in this directory provide some notes on the specific serialization formats.
 
-The notes are numbered for easier referencing -- the order is **not** significant.
+The specification and examples are numbered for easier referencing -- the order is **not** significant.
+
+Current supported formats are:
+- [JSON-LD](json-ld.md)
 
 ## Use cases
 
