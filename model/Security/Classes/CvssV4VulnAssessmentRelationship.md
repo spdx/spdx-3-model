@@ -4,16 +4,15 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Provides a CVSS version 4.0 assessment for a vulnerability.
+Provides a CVSS version 4 assessment for a vulnerability.
 
 ## Description
 
-A CvssV4VulnAssessmentRelationship relationship describes the determined score, severity, and vector of a vulnerability using version 4.0 of the Common Vulnerability Scoring System (CVSS) as defined on [https://www.first.org/cvss/v4.0/specification-document](https://www.first.org/cvss/v4.0/specification-document). It is intented to communicate the results of using a CVSS calculator.
+A CvssV4VulnAssessmentRelationship relationship describes the determined score, severity, and vector of a vulnerability using version 4 of the Common Vulnerability Scoring System (CVSS) as defined on [https://www.first.org/cvss/v4.0/specification-document](https://www.first.org/cvss/v4.0/specification-document). It is intented to communicate the results of using a CVSS calculator.
 
 **Constraints**
 
-- The value of severity must be one of 'none', 'low', 'medium', 'high' or 'critical'.
-- Absence of the property shall be interpreted as 'none'.
+- The value of severity must be one of 'NONE', 'LOW', 'MEDIUM', 'HIGH' or 'CRITICAL'.
 - The relationship type must be set to hasAssessmentFor.
 
 **Syntax**
@@ -25,7 +24,7 @@ A CvssV4VulnAssessmentRelationship relationship describes the determined score, 
   "relationshipType": "hasAssessmentFor",
   "severity": "medium",
   "score": 6.8,
-  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+  "vector": "CVSS:4.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
   "from": "urn:spdx.dev:vuln-cve-2020-28498",
   "to": ["urn:product-acme-application-1.3"],
   "assessedElement": "urn:npm-elliptic-6.5.2",
