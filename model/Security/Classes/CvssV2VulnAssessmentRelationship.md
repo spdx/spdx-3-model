@@ -9,12 +9,11 @@ Provides a CVSS version 2.0 assessment for a vulnerability.
 ## Description
 
 A CvssV2VulnAssessmentRelationship relationship describes the determined score and vector of a vulnerability using version 2.0 of the Common Vulnerability Scoring System
-(CVSS) as defined on [https://www.first.org/cvss/v2/guide](https://www.first.org/cvss/v2/guide). It is intented to communicate the results of using a CVSS calculator.
+(CVSS) as defined at [https://www.first.org/cvss/v2/guide](https://www.first.org/cvss/v2/guide). It is intented to communicate the results of using a CVSS calculator.
 
 **Constraints**
 
-- The value of severity must be one of 'low', 'medium' or 'high'
-- The relationship type must be set to hasAssessmentFor.
+- The relationship type must be set to `hasAssessmentFor`.
 
 **Syntax**
 
@@ -25,7 +24,6 @@ A CvssV2VulnAssessmentRelationship relationship describes the determined score a
   "relationshipType": "hasAssessmentFor",
   "score": 4.3,
   "vector": "(AV:N/AC:M/Au:N/C:P/I:N/A:N)",
-  "severity": "low",
   "from": "urn:spdx.dev:vuln-cve-2020-28498",
   "to": ["urn:product-acme-application-1.3"],
   "assessedElement": "urn:npm-elliptic-6.5.2",
@@ -70,10 +68,6 @@ A CvssV2VulnAssessmentRelationship relationship describes the determined score a
 - score
   - type: xsd:decimal
   - minCount: 1
-  - maxCount: 1
-- severity
-  - type: xsd:string
-  - minCount: 0
   - maxCount: 1
 - vector
   - type: xsd:string
