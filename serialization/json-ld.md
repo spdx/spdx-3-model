@@ -7,7 +7,7 @@ The JSON-LD is an RDF format and follows the serialization rules of the [rdf SPD
 
 The following XCollection properties are mapped to JSON-LD syntax specifications.
 Any properties not listed below should be serialized as part of the XCollection element itself within
-the JSON-LD artifact.
+the JSON-LD serialized data.
 
 ### namespaceMap
 

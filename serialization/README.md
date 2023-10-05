@@ -6,10 +6,21 @@ This directory contains the specifications and examples for all supported SPDX f
 
 There is a specification markdown file for each supported format describing the serialization.
 
-The "XCollection" section in the specification markdown file describes how each of the properties are
-serialized.
+A collection of elements can be serialized in multiple formats.
 
-Note that the "XCollection" is a class representing the serialization itself.  Any properties supported by the serialization format must serialize that property using the serialization format syntax.  Specifics and examples can be found in the individual serialization specification markdown files.
+Within the model, we have an "XCollection" which represents the common properties of the collection of elements across all data formats.
+
+Within the model, we have a "YCollection" which represents the specific serialization in a single data format.
+
+Within serialized data, you may need to refer to properties in the "XCollection" - such as "where to start" in a collection.
+
+In that case, the "XCollection" will be in the serialized data with ONLY the properties not supported by the serialization format.
+
+There is at most one "XCollection" in the serialization.
+
+The serialized "XCollection" shall not contain properties where that property value can be derived from the the serialized data itself.
+
+The "XCollection" section in the specification markdown file describes how each of the properties are serialized.
 
 ## Serialization formats
 
