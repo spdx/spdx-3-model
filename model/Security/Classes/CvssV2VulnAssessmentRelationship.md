@@ -8,8 +8,7 @@ Provides a CVSS version 2.0 assessment for a vulnerability.
 
 ## Description
 
-A CvssV2VulnAssessmentRelationship relationship describes the determined score and vector of a vulnerability using version 2.0 of the Common Vulnerability Scoring System
-(CVSS) as defined at [https://www.first.org/cvss/v2/guide](https://www.first.org/cvss/v2/guide). It is intented to communicate the results of using a CVSS calculator.
+A CvssV2VulnAssessmentRelationship relationship describes the determined score and vector of a vulnerability using version 2.0 of the Common Vulnerability Scoring System (CVSS) as defined at [https://www.first.org/cvss/v2/guide](https://www.first.org/cvss/v2/guide). It is intended to communicate the results of using a CVSS calculator.
 
 **Constraints**
 
@@ -23,7 +22,7 @@ A CvssV2VulnAssessmentRelationship relationship describes the determined score a
   "@id": "urn:spdx.dev:cvssv2-cve-2020-28498",
   "relationshipType": "hasAssessmentFor",
   "score": 4.3,
-  "vector": "(AV:N/AC:M/Au:N/C:P/I:N/A:N)",
+  "vectorString": "(AV:N/AC:M/Au:N/C:P/I:N/A:N)",
   "from": "urn:spdx.dev:vuln-cve-2020-28498",
   "to": ["urn:product-acme-application-1.3"],
   "assessedElement": "urn:npm-elliptic-6.5.2",
@@ -69,7 +68,7 @@ A CvssV2VulnAssessmentRelationship relationship describes the determined score a
   - type: xsd:decimal
   - minCount: 1
   - maxCount: 1
-- vector
+- vectorString
   - type: xsd:string
-  - minCount: 0
+  - minCount: 1
   - maxCount: 1
