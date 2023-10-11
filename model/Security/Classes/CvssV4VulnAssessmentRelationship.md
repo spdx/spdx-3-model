@@ -44,7 +44,6 @@ A CvssV4VulnAssessmentRelationship relationship describes the determined score, 
       "externalRefType": "securityOther",
       "locator": "    https://www.first.org/cvss/v4.0/examples#Apache-log4j-JNDI-Command-Execution-log4shell-Vulnerability-CVE-2021-44228"
     },
-    }
   ],
   "suppliedBy": ["urn:spdx.dev:agent-my-security-vendor"],
   "publishedTime": "2023-10-05T23:09:13Z"
