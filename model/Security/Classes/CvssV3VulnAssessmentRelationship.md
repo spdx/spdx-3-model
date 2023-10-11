@@ -4,20 +4,18 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Provides a CVSS version 3.x assessment for a vulnerability.
+Provides a CVSS version 3 assessment for a vulnerability.
 
 ## Description
 
 A CvssV3VulnAssessmentRelationship relationship describes the determined score,
-severity, and vector of a vulnerability using version 3.1 of the Common
-Vulnerability Scoring System (CVSS) as defined on 
-[https://www.first.org/cvss/v3.1/specification-document](https://www.first.org/cvss/v3.1/specification-document). It is intented to communicate the results of using a CVSS calculator.
+severity, and vector of a vulnerability using version [3.0](https://www.first.org/cvss/v3.0/specification-document) or [3.1](https://www.first.org/cvss/v3.1/specification-document) of the Common
+Vulnerability Scoring System (CVSS). It is intended to communicate the results of using a CVSS calculator.
 
 **Constraints**
 
-- The value of severity must be one of 'none', 'low', 'medium', 'high' or 'critical'.
-- Absence of the property shall be interpreted as 'none'.
-- The relationship type must be set to hasAssessmentFor.
+- The value of severity must be one of 'NONE', 'LOW', 'MEDIUM', 'HIGH' or 'CRITICAL'.
+- The relationship type must be set to `hasAssessmentFor`.
 
 **Syntax**
 
@@ -26,9 +24,9 @@ Vulnerability Scoring System (CVSS) as defined on
   "@type": "CvssV3VulnAssessmentRelationship",
   "@id": "urn:spdx.dev:cvssv3-cve-2020-28498",
   "relationshipType": "hasAssessmentFor",
-  "severity": "medium",
   "score": 6.8,
-  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+  "severity": "MEDIUM",
+  "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
   "from": "urn:spdx.dev:vuln-cve-2020-28498",
   "to": ["urn:product-acme-application-1.3"],
   "assessedElement": "urn:npm-elliptic-6.5.2",
@@ -75,10 +73,10 @@ Vulnerability Scoring System (CVSS) as defined on
   - minCount: 1
   - maxCount: 1
 - severity
-  - type: xsd:string
-  - minCount: 0
+  - type: CvssSeverityType
+  - minCount: 1
   - maxCount: 1
-- vector
+- vectorString
   - type: xsd:string
-  - minCount: 0
+  - minCount: 1
   - maxCount: 1
