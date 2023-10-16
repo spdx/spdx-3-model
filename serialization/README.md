@@ -10,7 +10,9 @@ A collection of elements can be serialized in multiple formats.
 
 Within the model, we have an "XCollection" which represents the common properties of the collection of elements across all data formats.
 
-Within the model, we have a "YCollection" which represents the specific serialization in a single data format.
+We can refer to the actual serialized bytes as and Artifact in the model.
+
+A Relationship of type "XCollectionOf" can be used to relate an "XCollection" to one more serialized for of the "XCollection".
 
 Within serialized data, you may need to refer to properties in the "XCollection" - such as "where to start" in a collection.
 
