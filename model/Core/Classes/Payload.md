@@ -4,28 +4,33 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A Payload is a sequence of bytes that can be parsed into a set of SPDX elements.
+A payload is a byte sequence that can be parsed into a set of SPDX elements.
 
 ## Description
 
 SPDX element values can be serialized into a byte sequence called a payload
-for transmission or storage. Serialization must be lossless: parsing a payload
-must yield the identical elements that were used to produce it.
+for transmission or storage. A payload includes header properties (non-element values)
+and element content. Non-element values are valid only within a payload; they can be
+serialized into and parsed from the payload data but are not present in logical elements
+before serialization or after parsing. Serialization must be lossless: parsing a payload
+must yield the identical information that was used to produce it.
 
-There are many possible serialization formats, including the OWL ontology
-formats RDF, JSON-LD, and Turtle, and general-purpose formats including XML, JSON,
-human-friendly text such as YAML or Tag-Value, and machine-optimized
-production formats such as CBOR or Protobuf.
+There are many possible serialization formats:
+* OWL ontology formats - RDF, JSON-LD, Turtle
+* general-purpose - XML, JSON
+* human-oriented - YAML, Tag-Value text, Spreadsheet
+* machine-optimized production oriented - CBOR, Protobuf, Avro, Dataframes
 
-A serialization specification for each supported format defines how element and
-non-element values are serialized:
+A serialization specification for each supported format defines how header properties and
+element values are serialized:
 * the required element property contains serialized element values.
 * the optional namespaceMap and creationInfoMap properties support compaction of the serialized
-data for efficiency and improved readability; if they are not present the element values
+data for efficiency and improved readability; if they are not present the serialized element values
 are not compacted.
 
-Non-element values are used only within a payload. They can be read directly from the
-payload but are not present in logical element values before serialization or after parsing.
+Use case analysis suggests additional header properties that have not yet been approved:
+* rootElement [0..*] - hints for where to start processing after parsing element values
+* dataLicense [0..1] - moved from per-element CreationInfo to a per-document property
 
 ## Metadata
 
