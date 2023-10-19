@@ -1,0 +1,23 @@
+{
+  "@context": "https://spdx.github.io/spdx-3-model/rdf/context.json",
+  "type": "Person",
+  "spdxId": "http://spdx.acme.org/3FA9CB25#person2",
+  "creationInfo": {
+    "type": "CreationInfo",
+    "specVersion": "3.0.0",
+    "created": "2022-12-01T00:00:00Z",
+    "createdBy": ["https://spdx.dev/elements/3F26391C#spdx-dev"],
+    "createdUsing": ["https://some.namespace#sbomolator_v2"],
+    "profile": ["core"],
+    "dataLicense": "https://spdx.org/licenses/CC0-1.0",
+    "comment": "Source: payroll list, 20221130"
+  },
+  "name": "Alice Stone",
+  "externalIdentifier": [
+    {
+      "type": "ExternalIdentifier",
+      "externalIdentifierType": "email",
+      "identifier": "Alice.Stone@acme.com"
+    }
+  ]
+}

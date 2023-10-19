@@ -50,7 +50,7 @@ Metadata information that can be added to a package to describe an AI applicatio
   - type: xsd:string
   - minCount: 0
 - sensitivePersonalInformation
-  - type: PresenceType
+  - type: /Core/PresenceType
   - minCount: 0
   - maxCount: 1
 - metricDecisionThreshold
@@ -63,7 +63,7 @@ Metadata information that can be added to a package to describe an AI applicatio
   - type: xsd:string
   - minCount: 0
 - autonomyType
-  - type: PresenceType
+  - type: /Core/PresenceType
   - minCount: 0
   - maxCount: 1
 - safetyRiskAssessment
@@ -79,7 +79,7 @@ Metadata information that can be added to a package to describe an AI applicatio
   - minCount: 1
 - /Software/Package/packageVersion
   - minCount: 1
-- /Software/SoftwareArtifact/purpose
+- /Software/SoftwareArtifact/primaryPurpose
   - minCount: 1
 - /Core/Artifact/releaseTime
   - minCount: 1

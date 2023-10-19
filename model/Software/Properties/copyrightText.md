@@ -30,5 +30,5 @@ following applies:
 ## Metadata
 
 - name: copyrightText
-- Nature: ObjectProperty
+- Nature: DataProperty
 - Range: xsd:string

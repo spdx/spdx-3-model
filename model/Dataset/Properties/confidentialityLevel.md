@@ -13,5 +13,5 @@ ConfidentialityLevel describes the levels of confidentiality of the data points 
 ## Metadata
 
 - name: confidentialityLevel
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: ConfidentialityLevelType

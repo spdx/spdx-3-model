@@ -15,6 +15,6 @@ between a Package and a File, between two Packages, or between one SPDXDocument 
 ## Metadata
 
 - name: relationshipType
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: RelationshipType
 

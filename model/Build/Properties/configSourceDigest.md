@@ -13,6 +13,6 @@ configSourceDigest is the checksum of the build configuration file used by a bui
 ## Metadata
 
 - name: configSourceDigest
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: /Core/Hash
 

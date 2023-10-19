@@ -19,9 +19,8 @@ Metadata information that can be added to a dataset that may be used in a softwa
 ## Properties
 
 - datasetType
-  - type: xsd:string
+  - type: DatasetType
   - minCount: 1
-  - maxCount: 1
 - dataCollectionProcess
   - type: xsd:string
   - minCount: 0
@@ -48,7 +47,7 @@ Metadata information that can be added to a dataset that may be used in a softwa
   - type: xsd:string
   - minCount: 0
 - sensitivePersonalInformation
-  - type: PresenceType
+  - type: /Core/PresenceType
   - minCount: 0
   - maxCount: 1
 - anonymizationMethodUsed
@@ -73,7 +72,7 @@ Metadata information that can be added to a dataset that may be used in a softwa
   - minCount: 1
 - /Software/Package/downloadLocation
   - minCount: 1
-- /Software/SoftwareArtifact/purpose
+- /Software/SoftwareArtifact/primaryPurpose
   - minCount: 1
 - /Core/Artifact/releaseTime
   - minCount: 1

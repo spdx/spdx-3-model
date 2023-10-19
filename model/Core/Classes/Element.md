@@ -18,7 +18,7 @@ and inter-relatable content objects.
 ## Metadata
 
 - name: Element
-- SubclassOf: Payload
+- SubclassOf: none
 - Instantiability: Abstract
 
 ## Properties
@@ -41,12 +41,12 @@ and inter-relatable content objects.
   - maxCount: 1
 - creationInfo
   - type: CreationInfo
-  - minCount: 0
+  - minCount: 1
   - maxCount: 1
 - verifiedUsing
   - type: IntegrityMethod
-- externalReference
-  - type: ExternalReference
+- externalRef
+  - type: ExternalRef
   - minCount: 0
 - externalIdentifier
   - type: ExternalIdentifier

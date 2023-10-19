@@ -15,5 +15,5 @@ for example the optimization and learning rate used during the training of the m
 ## Metadata
 
 - name: hyperparameter
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: /Core/DictionaryEntry

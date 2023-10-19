@@ -13,6 +13,6 @@ An algorithm specifies the algorithm that was used for calculating the hash valu
 ## Metadata
 
 - name: algorithm
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: HashAlgorithm
 

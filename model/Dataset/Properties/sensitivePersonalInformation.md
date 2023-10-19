@@ -14,5 +14,5 @@ or information that allows drawing conclusions about a person's identity.
 ## Metadata
 
 - name: sensitivePersonalInformation
-- Nature: DataProperty
-- Range: PresenceType
+- Nature: ObjectProperty
+- Range: /Core/PresenceType

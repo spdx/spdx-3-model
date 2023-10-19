@@ -14,5 +14,5 @@ or if that software is fully automatic.
 ## Metadata
 
 - name: autonomyType
-- Nature: DataProperty
-- Range: PresenceType
+- Nature: ObjectProperty
+- Range: /Core/PresenceType

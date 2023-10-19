@@ -13,6 +13,6 @@ A softwareLinkage is TODO
 ## Metadata
 
 - name: softwareLinkage
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: SoftwareDependencyLinkType
 

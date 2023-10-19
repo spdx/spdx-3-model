@@ -14,5 +14,5 @@ and its calibration value as a key-value pair.
 ## Metadata
 
 - name: sensors
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: /Core/DictionaryEntry

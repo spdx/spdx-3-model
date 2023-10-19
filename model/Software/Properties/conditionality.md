@@ -13,6 +13,6 @@ A conditionality is TODO
 ## Metadata
 
 - name: conditionality
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: DependencyConditionalityType
 

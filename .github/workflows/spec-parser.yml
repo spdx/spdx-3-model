@@ -11,6 +11,10 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      contents: write
 
     steps:
       - uses: actions/checkout@v3
@@ -42,15 +46,46 @@ jobs:
 
       - uses: actions/upload-artifact@v3
         with:
-          name: spec-parser.out
-          path: /tmp/spec-parser.out
-
-      - uses: cachix/install-nix-action@v19
-        with:
-          nix_path: nixpkgs=channel:nixos-unstable
-      - run: nix-shell '<nixpkgs>' --fallback -p apache-jena --run "riot --out=jsonld /tmp/spec-parser.out/model.ttl" > /tmp/spec-parser.out/model.jsonld
+          name: model.jsonld
+          path: /tmp/spec-parser.out/model.jsonld
 
       - uses: actions/upload-artifact@v3
         with:
-          name: model.jsonld
-          path: /tmp/spec-parser.out/model.jsonld
+          name: context.json
+          path: /tmp/spec-parser.out/context.json
+
+      - name: get Ontospy
+        run: |
+          git clone --depth=1 --single-branch --branch=master https://github.com/lambdamusic/Ontospy.git
+          cd Ontospy
+          python3 -m pip install -r requirements.txt
+          python3 -m pip install -e .
+      - name: generate docs with Ontospy
+        run : |
+          cd Ontospy
+          mkdir -p /tmp/auto-generated
+          ontospy gendocs -o /tmp/auto-generated --type 2 --title SPDX-3.0 /tmp/spec-parser.out/model.ttl
+          mkdir -p /tmp/auto-generated/one_pager
+          ontospy gendocs -o /tmp/auto-generated/one_pager --type 1 --title SPDX-3.0 /tmp/spec-parser.out/model.ttl
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: auto-generated
+          path: /tmp/auto-generated
+          
+      - name: commit changes to branch
+        if: github.ref_name == 'main'
+        run: |
+          git fetch 
+          git checkout gh-pages
+          rm -rf /auto-generated/
+          cp /tmp/spec-parser.out/model.ttl .
+          cp /tmp/spec-parser.out/model.jsonld .
+          cp /tmp/spec-parser.out/context.json .
+          cp -r /tmp/auto-generated/ .
+          if [ -n "$(git status -s -- "auto-generated/" "*.ttl" "*.jsonld" "*.json")" ]
+          then
+            git add model.ttl model.jsonld context.json auto-generated/
+            git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -s -m "Automated Upload" --author "${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>"
+            git push origin
+          fi

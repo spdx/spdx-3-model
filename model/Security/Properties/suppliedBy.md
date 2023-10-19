@@ -15,4 +15,4 @@ Identify the actual distribution source for the vulnerability assessment relatio
 
 - name: suppliedBy
 - Nature: ObjectProperty
-- Range: /Core/Identity
+- Range: /Core/Agent

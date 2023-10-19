@@ -23,17 +23,13 @@ such as a package, a file, or a snippet.
   - type: xsd:anyURI
   - minCount: 0
   - maxCount: 1
-- purpose
+- primaryPurpose
   - type: SoftwarePurpose
   - minCount: 0
-- concludedLicense
-  - type: /Licensing/LicenseField
-  - minCount: 0
   - maxCount: 1
-- declaredLicense
-  - type: /Licensing/LicenseField
+- additionalPurpose
+  - type: SoftwarePurpose
   - minCount: 0
-  - maxCount: 1
 - copyrightText
   - type: xsd:string
   - minCount: 0
@@ -41,5 +37,4 @@ such as a package, a file, or a snippet.
 - attributionText
   - type: xsd:string
   - minCount: 0
-  - maxCount: 1
 

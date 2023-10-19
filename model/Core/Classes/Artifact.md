@@ -21,11 +21,12 @@ such as an electronic file, a software package, a device or an element of data.
 ## Properties
 
 - originatedBy
-  - type: Identity
+  - type: Agent
   - minCount: 0
 - suppliedBy 
-  - type: Identity
+  - type: Agent
   - minCount: 0
+  - maxCount: 1
 - builtTime
   - type: DateTime
   - minCount: 0
