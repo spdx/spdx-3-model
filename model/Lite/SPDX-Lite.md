@@ -4,12 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-The Lite Profile defines the minimum set of information required for verifying the list of software package and ensureing compliance during the design phase, while maintaining interoperability with information documented using earlier SPDX syntax conventions.
+The Lite Profile defines the minimum set of information required for verifying the list of software package and ensureing compliance.
 
 ## Description  
 
-The Lite profile namespace contains only the additional requirements to comply with the various compliance processes required when considering the software supply chain.  
-This is intended to include the following information as minimum information:  
+The Lite profile namespace defines the additional requirements needed to follow essential compliance rules in the software supply chain. It enables comparison and verification of information against what was recorded in earlier versions of SPDX item descriptions.  
+This is intended to include the following items as minimum information:  
 
 - Creation information of the SBOM  
 - Package information  
