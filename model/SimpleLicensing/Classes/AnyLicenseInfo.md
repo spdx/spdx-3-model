@@ -23,4 +23,3 @@ additional text applied; or a set of licenses combined by applying "AND" and
 - SubclassOf: /Core/Element
 - Instantiability: Abstract
 
-## Properties

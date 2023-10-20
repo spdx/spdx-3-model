@@ -16,9 +16,9 @@ Describes the possible types of availability of a dataset, indicating whether th
 
 ## Entries
 
-- Direct-Download: the dataset is publicly available and can be downloaded directly.
-- Scraping-Script: the dataset provider is not making available the underlying data and the dataset must be reassembled, typically using the provided script for scraping the data.
-- Query: the dataset is publicly available, but not all at once, and can only be accessed through queries which return parts of the dataset.
-- Clickthrough: the dataset is not publicly available and can only be accessed after affirmatively accepting terms on a clickthrough webpage.
-- Registration: the dataset is not publicly available and an email registration is required before accessing the dataset, although without an affirmative acceptance of terms.
+- directDownload: the dataset is publicly available and can be downloaded directly.
+- scrapingScript: the dataset provider is not making available the underlying data and the dataset must be reassembled, typically using the provided script for scraping the data.
+- query: the dataset is publicly available, but not all at once, and can only be accessed through queries which return parts of the dataset.
+- clickthrough: the dataset is not publicly available and can only be accessed after affirmatively accepting terms on a clickthrough webpage.
+- registration: the dataset is not publicly available and an email registration is required before accessing the dataset, although without an affirmative acceptance of terms.
 

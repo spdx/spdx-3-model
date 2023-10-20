@@ -45,4 +45,3 @@ element.
 - SubclassOf: VexVulnAssessmentRelationship
 - Instantiability: Concrete
 
-## Properties

@@ -32,7 +32,7 @@ ExternalRefType specifies the type of an external reference.
 - funding: A reference to funding information related to a package.
 - issueTracker: A reference to the issue tracker for a package.
 - mailingList: A reference to the mailing list used by the maintainer for a package.
-- maven-central: A reference to a maven repository artifact.
+- mavenCentral: A reference to a maven repository artifact.
 - metrics: A reference to metrics related to package such as OpenSSF scorecards.
 - npm: A reference to an npm package.
 - nuget: A reference to a nuget package.
