@@ -17,13 +17,12 @@ such as an electronic file, a software package, a device or an element of data.
 - SubclassOf: Element
 - Instantiability: Abstract
 
-
 ## Properties
 
 - originatedBy
   - type: Agent
   - minCount: 0
-- suppliedBy 
+- suppliedBy
   - type: Agent
   - minCount: 0
   - maxCount: 1

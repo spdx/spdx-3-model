@@ -13,13 +13,11 @@ but defined external to that Document.
 The external map provides details about the externally-defined Element
 such as its provenance, where to retrieve it, and how to verify its integrity.
 
-
 ## Metadata
 
 - name: ExternalMap
 - SubclassOf: none
 - Instantiability: Concrete
-
 
 ## Properties
 

@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# AI Profile
+# AI
 
 ## Summary
 
@@ -14,3 +14,4 @@ The AI profile namespace defines concepts related to AI application and model ar
 
 - id: https://rdf.spdx.org/v3/AI
 - name: AI
+

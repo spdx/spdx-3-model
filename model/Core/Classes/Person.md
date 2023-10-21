@@ -16,5 +16,3 @@ A Person is an individual human being.
 - SubclassOf: Agent
 - Instantiability: Concrete
 
-## Properties
-

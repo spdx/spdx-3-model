@@ -18,4 +18,3 @@ creator.
 - SubclassOf: License
 - Instantiability: Concrete
 
-## Properties

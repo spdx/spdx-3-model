@@ -16,4 +16,3 @@ The WithAdditionOperator can have a License or an OrLaterOperator as the license
 - SubclassOf: /SimpleLicensing/AnyLicenseInfo
 - Instantiability: Abstract
 
-## Properties

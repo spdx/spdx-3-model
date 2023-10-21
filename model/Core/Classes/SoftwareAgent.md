@@ -16,5 +16,3 @@ A SoftwareAgent is a software program that is given the authority (similar to a 
 - SubclassOf: Agent
 - Instantiability: Concrete
 
-## Properties
-
