@@ -34,6 +34,7 @@ between a Package and a File, between two Packages, or between one SPDXDocument 
 - dependencyManifest: Every `to` Element is manifest file containing dependency information related to the `from` Element
 - dependsOn: Every `to` Element is a dependecy of the `from` Element
 - descendant: This relationship may be used to describe child builds of a Build instance.
+- describes: Every `to` Element is described by the `from` Element. To denote the root(s) of a tree of elements in a collection, the rootElement property should be used.
 - devDependency: Every `to` Element is a development dependency for the `from` Element
 - devTool: Every `to` Element is a development tool for the `from` Element
 - distributionArtifact: Every `to` Element is an artifact intended for distribution of the `from` Element (e.g. an RPM or archive file)
