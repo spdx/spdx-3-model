@@ -72,6 +72,12 @@ Metadata information that can be added to a dataset that may be used in a softwa
   - minCount: 1
 - /Software/Package/downloadLocation
   - minCount: 1
+ 
+## External relationship restrictions
+- relationshipType: declaredLicense
+  - fromType: /Software/Package/Dataset
+- relationshipType: concludedLicense
+  - fromType: /Software/Package/Dataset
 - /Software/SoftwareArtifact/primaryPurpose
   - minCount: 1
 - /Core/Artifact/releaseTime
