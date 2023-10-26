@@ -39,6 +39,11 @@ jobs:
               --out-dir /tmp/spec-parser.out \
               ../model
 
+      - name: validate that context is valid
+        run: |
+          python3 -m pip install rdflib
+          python3 ./.github/workflows/test_context.py /tmp/spec-parser.out/context.json
+
       - uses: actions/upload-artifact@v3
         with:
           name: model.ttl
@@ -78,11 +83,14 @@ jobs:
         run: |
           git fetch 
           git checkout gh-pages
-          rm -rf /auto-generated/
+
           cp /tmp/spec-parser.out/model.ttl .
           cp /tmp/spec-parser.out/model.jsonld .
           cp /tmp/spec-parser.out/context.json .
+
+          rm -rf /auto-generated/
           cp -r /tmp/auto-generated/ .
+
           if [ -n "$(git status -s -- "auto-generated/" "*.ttl" "*.jsonld" "*.json")" ]
           then
             git add model.ttl model.jsonld context.json auto-generated/
