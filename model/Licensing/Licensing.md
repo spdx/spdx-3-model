@@ -98,3 +98,15 @@ the concludedLicense relationship comment field.
 
 - id: https://rdf.spdx.org/v3/Licensing
 - name: Licensing
+
+
+## Profile conformance
+
+For an element collection to be conformant with the this profile,
+the following have to hold:
+
+1. for every `/Software/SoftwareArtifact` there MUST exist exactly one `/Core/Relationship`
+   of type `concludedLicense` having that element as its `from` property
+   and an `/SimpleLicensing/AnyLicenseInfo` as its `to` property.
+
+
