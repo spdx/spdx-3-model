@@ -1,6 +1,6 @@
 {
   "@context": [
-    "https://spdx.github.io/spdx-3-model/rdf/context.json",
+    "https://spdx.github.io/spdx-3-model/context.json",
     {
       "myNamespace": "https://some.namespace#",
       "spdxDev": "https://spdx.dev/elements/3F26391C#",
