@@ -31,5 +31,5 @@ such as its provenance, where to retrieve it, and how to verify its integrity.
   - type: xsd:anyURI
   - maxCount: 1
 - definingDocument
-  - type: xsd:anyURI
+  - type: Artifact
   - maxCount: 1
