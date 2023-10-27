@@ -1,5 +1,5 @@
 {
-  "@context": "https://spdx.github.io/spdx-3-model/rdf/context.json",
+  "@context": "https://spdx.github.io/spdx-3-model/context.json",
   "type": "Agent",
   "spdxId": "https://some.namespace#agent1",
   "creationInfo": {

@@ -1,5 +1,5 @@
 {
-  "@context": "https://spdx.github.io/spdx-3-model/rdf/context.json",
+  "@context": "https://spdx.github.io/spdx-3-model/context.json",
   "type": "Tool",
   "spdxId": "https://some.namespace#sbomolator_v2",
   "creationInfo": {
