@@ -4,26 +4,16 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A mapping between prefixes and namespace URIs.
+A mapping between prefixes and namespace partial URIs.
 
 ## Description
 
-A namespace map allows the creator of a collection of Elements to suggest 
+A namespace map allows the creator of a collection of Elements that could be serialized to suggest 
 a set of shorter identifiers ("prefixes") for particular namespace portions 
 of ElementIDs to be used in SPDX content serialization in order to provide a more
 human-readable and smaller serialized representation of the Elements.
 
-The content of a namespace map are suggestions for consistency in serialization but are not normatively enforced.
-When a serialization only contains the elements in "X", the collection content SHOULD (rather than MUST) utilize
-the namespace map.
-A serialization MAY choose to use the namespace map content.
-A serialization MAY choose to use prefixes and namespaces other than the namespace map content.
-A serialization MAY choose to use no prefixes at all and rather use the more verbose full ElementID IRIs.
-
-If a serialization format supports prefixes or namespaces (e.g., JSON-LD context or XML XSD namespace), the namespace map
-must be represented in that format "native" to the serialization.
-If the serialization format does not support prefixes, then the full URI's for the elements must be used and the namespace map will not be preserved.
-Any custom serialization format SHOULD implement namespaces in order to preserve the namespace map.
+For details of how NamespaceMap content is to be serialized please refer to general SPDX serialization guidance at https://spdx.github.io/spdx-3-model/serialization/readme.md and the various serialization format specific .md filed under https://spdx.github.io/spdx-3-model/serialization/ (TODO: update the URLs as soon as the context is publicly available)
 
 Namespace maps support a variety of relevant use cases such as:
 
