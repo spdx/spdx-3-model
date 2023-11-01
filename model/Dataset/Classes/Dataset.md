@@ -65,3 +65,16 @@ Metadata information that can be added to a dataset that may be used in a softwa
   - type: DatasetAvailabilityType
   - minCount: 0
   - maxCount: 1
+
+ ## External properties restrictions
+
+- /Core/Artifact/originatedBy
+  - minCount: 1
+- /Software/Package/downloadLocation
+  - minCount: 1
+- /Software/SoftwareArtifact/primaryPurpose
+  - minCount: 1
+- /Core/Artifact/releaseTime
+  - minCount: 1
+- /Core/Artifact/builtTime
+  - minCount: 1
