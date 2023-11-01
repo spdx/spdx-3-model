@@ -84,8 +84,3 @@ Metadata information that can be added to a package to describe an AI applicatio
 - /Core/Artifact/releaseTime
   - minCount: 1
  
-## External relationship restrictions
-- relationshipType: declaredLicense
-  - fromType: /Software/Package/AIPackage
-- relationshipType: concludedLicense
-  - fromType: /Software/Package/AIPackage
