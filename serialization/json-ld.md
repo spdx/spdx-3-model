@@ -3,11 +3,12 @@ JSON-LD is a JSON-based format to encode RDF graphs. Its documentation can be fo
 
 The JSON-LD is an RDF format and follows the serialization rules of the [rdf SPDX serialization specification](rdf.md).
 
-## XCollection
+## SpdxDocument
 
-The following XCollection properties are mapped to JSON-LD syntax specifications.
-Any properties not listed below should be serialized as part of the XCollection element itself within
+The following SpdxDocument properties are mapped to native JSON-LD mechanisms defined within the JSON-LD syntax specifications.
+Any properties not listed below should be serialized as part of the SpdxDocument element itself within
 the JSON-LD serialized data.
+Deserialization of any JSON-LD serialized SPDX content MUST expand the inverse of these native mappings such that the logical SpdxDocument element directly contains its full set of properties.
 
 ### namespaceMap
 
@@ -15,7 +16,7 @@ The namespaceMap uses the [term to IRI mapping](https://www.w3.org/TR/json-ld11/
 
 ### element
 
-The [graph objects](https://www.w3.org/TR/json-ld11/#graph-objects) `@graph` lists the elements for the XCollection.
+The [graph objects](https://www.w3.org/TR/json-ld11/#graph-objects) `@graph` lists the elements for the SpdxDocument.
 
 The RDF graph of an instance of the SPDX model shall contain all Element nodes (i.e. objects that are subclasses of Element) as a list on top-level under the "@graph" key.
 This means that all references to Element nodes have to use the URI of the referenced Element.
@@ -24,7 +25,7 @@ On the other hand, non-Element nodes (like those of type "ExternalReference" or 
 
 ## Context File
 
-The SPDX organization provides a context file that is to be used universally for all SPDX JSON-LD files of a given SPDX version.
+The SPDX organization provides a global JSON-LD @context file that MUST be used universally for all SPDX JSON-LD files of a given SPDX version.
 The context is available under https://spdx.github.io/spdx-3-model/rdf/context.json (TODO: update the URL as soon as the context is publicly available)
 and should be included in serialized files on top-level via
 ```json
