@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Provides a NamespaceMap of prefixes and associated namespace partial URIs applicable to an X-Collection and independent of any specific serialization format or instance.
+Provides a NamespaceMap of prefixes and associated namespace partial URIs applicable to an SpdxDocument and independent of any specific serialization format or instance.
 
 ## Description
 
-This field provides a NamespaceMap of prefixes and associated namespace partial URIs applicable to an X-Collection and independent of any specific serialization format or instance.
+This field provides a NamespaceMap of prefixes and associated namespace partial URIs applicable to an SpdxDocument and independent of any specific serialization format or instance.
 
 ## Metadata
 
