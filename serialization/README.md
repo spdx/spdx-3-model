@@ -2,31 +2,27 @@
 
 ## Serialization info
 
-This directory contains the specifications and examples for all supported SPDX formats.
+This directory contains the specifications and examples for all supported SPDX serialization formats.
 
 There is a specification markdown file for each supported format describing the serialization.
 
 A collection of elements can be serialized in multiple formats.
 
-Within the model, we have an "XCollection" which represents the common properties of the collection of elements across all data formats.
+Within the model, we have an SpdxDocument which represents the common properties of the collection of elements across all serialization data formats.
 
-We can refer to the actual serialized bytes as and Artifact in the model.
+We can represent/characterize the actual serialized bytes using an Artifact element in the model.
 
-A Relationship of type "XCollectionOf" can be used to relate an "XCollection" to one more serialized for of the "XCollection".
+A Relationship of type spdxDocumentForArtfact can be used to relate an SpdxDocument to one more serialized for of the SpdxDocument.
 
-Within serialized data, you may need to refer to properties in the "XCollection" - such as "where to start" in a collection.
+When serializing the physical SpdxDocument, any properties of the logical element which can be represented using native mechanisms in the specific serialization format (e.g. @context prefixes in JSON-LD in place of the namespaceMap) should use these mechanisms and the remaining properties should be serialized within the “XCollection” element itself.
 
-In that case, the "XCollection" will be in the serialized data with ONLY the properties not supported by the serialization format.
+There is at most one SpdxDocument in the serialization.
 
-There is at most one "XCollection" in the serialization.
-
-The serialized "XCollection" shall not contain properties where that property value can be derived from the the serialized data itself.
-
-The "XCollection" section in the specification markdown file describes how each of the properties are serialized.
+There is at most one SpdxDocument element defined in any given instance of serialization.
 
 ## Serialization formats
 
-The files in this directory provide some notes on the specific serialization formats.
+The specification markdown files describing rules for each serialization format will contain an SpdxDocument section describing how each of the properties of SpdxDocument are serialized for the given serialization format.
 
 The specification and examples are numbered for easier referencing -- the order is **not** significant.
 
