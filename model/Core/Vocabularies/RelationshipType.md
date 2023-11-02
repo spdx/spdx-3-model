@@ -72,7 +72,7 @@ between a Package and a File, between two Packages, or between one SPDXDocument 
 - republishedBy: (Security) Designates the agent that tracked, aggregated, and/or enriched vulnerability details to improve context (i.e. NVD)
 - requirementFor: Every `to` Element is required for the `from` Element
 - runtimeDependency: Every `to` Element is a runtime dependency for the `from` Element
-- serializedArtifactFor: Every `to` Element is an artifact serialized from the `from` SpdxDocument Element
+- spdxDocumentForArtfact: Every `to` Element is an SpdxDocument representing the logical serialization metadata for the `from`  Artifact containing the serliazed data
 - specificationFor: Every `to` Element is a specification for the `from` Element
 - staticLink: Every `to` Element is statically linked to the `from` Element
 - test: Every `to` Element is a test artifact for the `from` Element
