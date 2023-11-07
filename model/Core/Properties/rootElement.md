@@ -4,11 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Top level Element from which all other Elements are reached via relationships.
+This property is used to denote the root Element(s) of a tree of elements contained in an SBOM.
 
 ## Description
 
-A rootElement of a collection is the top level Element from which all other Elements are reached via relationships.
+This property is used to denote the root Element(s) of a tree of elements contained in an SBOM.
+The tree consists of other elements directly and indirectly related through properties or Relationships from the root.
 
 ## Metadata
 
