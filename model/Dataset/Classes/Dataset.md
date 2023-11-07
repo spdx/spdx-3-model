@@ -66,7 +66,7 @@ Metadata information that can be added to a dataset that may be used in a softwa
   - minCount: 0
   - maxCount: 1
 
- ## External properties restrictions
+## External properties restrictions
 
 - /Core/Artifact/originatedBy
   - minCount: 1
