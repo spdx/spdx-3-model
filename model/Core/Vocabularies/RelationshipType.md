@@ -30,7 +30,7 @@ name completes the sentence:
 - availableFrom: The `from` Element is available from the additional supplier described by each `to` Element
 - hasBuildDependencyOn: The `from` Element has a build dependency on each `to` Element
 - usesBuildTool: The `from` Element uses each `to` Element as a build tool
-- coordinatedBy: (Security) Used to identify the vendor, researcher, or consumer agent performing coordination for a vulnerability
+- coordinatedBy: (Security) The `from` Vulnerability is coordinatedBy the `to` Agent(s) (vendor, researcher, or consumer agent)
 - hasConcludedLicense: The `from` Software Artifact is concluded by the SPDX data creator to be governed by each `to` license
 - contains: The `from` Element contains each `to` Element
 - configOf: The `from` Element is a configuration applied to each `to` Element during a LifecycleScopeType period
@@ -50,16 +50,16 @@ name completes the sentence:
 - hasExample: Every `to` Element is an example for the `from` Element (`from` hasExample `to`)
 - hasEvidence: (Dataset) Every `to` Element is considered as evidence for the `from` Element (`from` hasEvidence `to`)
 - expandsTo: The `from` archive expands out as an artifact described by each `to` Element
-- exploitCreatedBy: (Security) Designates an agent has created an exploit against a vulnerability
+- exploitCreatedBy: (Security) The `from` Vulnerability has had an exploit created against it by each `to` Agent
 - hasAddedFile: Every `to` Element is is a file added to the `from` Element (`from` hasAddedFile `to`)
 - hasDeletedFile: Every `to` Element is a file deleted from the `from` Element (`from` hasDeletedFile `to`)
 - modifiedBy: The `from` Element is modified by each `to` Element
-- fixedBy: (Security) Designates a vulnerability has been fixed by an agent
-- fixedIn: (Security/VEX) A vulnerability has been fixed in one or more elements
-- foundBy: (Security) Designates an agent was the original discoverer of a security vulnerability
+- fixedBy: (Security) Designates a `from` Vulnerability has been fixed by the `to` Agent(s)
+- fixedIn: (Security/VEX) A `from` Vulnerability has been fixed in each of the `to` Element(s)
+- foundBy: (Security) Designates a `from` Vulnerability was originally discovered by the `to` Agent(s)
 - generates: The `from` Element generates each `to` Element
-- hasAssessmentFor: (Security) Relates a Vulnerability and an Element with a security assessment.
-- hasAssociatedVulnerability: (Security) Used to associate a security vulnerability with a software artifact
+- hasAssessmentFor: (Security) Relates a `from` Vulnerability and each `to` Element(s) with a security assessment. To be used with `VulnAssessmentRelationship` types
+- hasAssociatedVulnerability: (Security) Used to associate a `from` Artifact with each `to` Vulnerability
 - hasHost: The `from` Build was run on the `to` Element during a LifecycleScopeType period (e.g. The host that the build runs on)
 - hasInputs: The `from` Build has each `to` Elements as an input during a LifecycleScopeType period.
 - invokedBy: The `from` Build was invoked by the `to` Agent during a LifecycleScopeType period.
@@ -73,9 +73,9 @@ name completes the sentence:
 - patchedBy: Every `to` Element is a patch for the `from` Element (`from` patchedBy `to`)
 - hasPrerequsite: The `from` Element has a prerequsite on each `to` Element
 - hasProvidedDependency: The `from` Element has a dependency on each `to` Element, but dependency is not in the distributed artifact, but assumed to be provided
-- publishedBy: (Security) Designates the agent that made a vulnerability record available for public use or reference
-- reportedBy: (Security) Designates the agent that first reported a vulnerability to the project, vendor, or tracking database for formal identification
-- republishedBy: (Security) Designates the agent that tracked, aggregated, and/or enriched vulnerability details to improve context (i.e. NVD)
+- publishedBy: (Security) Designates a `from` Vulnerability was made available for public use or reference by each `to` Agent
+- reportedBy: (Security) Designates a `from` Vulnerability was first reported to a project, vendor, or tracking database for formal identification by each `to` Agent
+- republishedBy: (Security) Designates a `from` Vulnerability's details were tracked, aggregated, and/or enriched to improve context (i.e. NVD) by a `to` Agent(s)
 - hasRequirement: The `from` Element has a requirement on each `to` Element
 - hasRuntimeDependency: The `from` Element has a runtime dependency on each `to` Element
 - serializedInArtifact: The `from` SPDXDocument can be found in a serialized form in each `to` Artifact
@@ -87,5 +87,5 @@ name completes the sentence:
 - hasTestTool: The `from` Element uses each `to` Element as a test tool
 - testedOn: (AI, Dataset) The `from` Element has been tested on the `to` Element
 - trainedOn: (AI, Dataset) The `from` Element has been trained by the `to` Element(s)
-- underInvestigationFor: (Security/VEX) The impact of a vulnerability is being investigated
+- underInvestigationFor: (Security/VEX) The `from` Vulnerability impact is being investigated for each `to` Element
 - hasVariant: Every `to` Element is a variant the `from` Element (`from` hasVariant `to`)
