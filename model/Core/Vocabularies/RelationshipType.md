@@ -24,7 +24,7 @@ between a Package and a File, between two Packages, or between one SPDXDocument 
 - availableFrom:  This relationship is used to identify additional suppliers where an artifact is available from.
 - buildDependency: Every `to` Element is a build dependency of the `from` Element
 - buildTool: Build tool used to build an Element. This may be used to describe the build tool of a Build instance
-- coordinatedBy: (Security) Used to identify the vendor, researcher, or consumer agent performing coordination for a vulnerability
+- coordinatedBy: (Security) The `from` Vulnerability is coordinatedBy the `to` Agent(s) (vendor, researcher, or consumer agent)
 - concludedLicense: The `to` specifices the license the SPDX data creator has concluded as governing the `from` software Artifact.
 - contains: Every `to` Element is contained by the `from` Element
 - configOf: (Build) Configuration information applied to an Element instance during a LifeycleScopeType period.  Example: Build configuration of the build instance
@@ -44,16 +44,16 @@ between a Package and a File, between two Packages, or between one SPDXDocument 
 - example: Every `to` Element is an example for the `from` Element
 - evidenceFor: (Dataset) Every `to` Element is can be considered as evidence for the `from` Element
 - expandedFromArchive: Every `to` Element is an artifact expanded from the `from` archive file
-- exploitCreatedBy: (Security) Designates an agent has created an exploit against a vulnerability
+- exploitCreatedBy: (Security) The `from` Vulnerability has had an exploit created against it by each `to` Agent
 - fileAdded: Every `to` Element is is a file added to the `from` Element
 - fileDeleted: Every `to` Element is a file deleted from the `from` Element
 - fileModified: Every `to` Element is a modification of the `from` Element
-- fixedBy: (Security) Designates a vulnerability has been fixed by an agent
-- fixedIn: (Security/VEX) A vulnerability has been fixed in one or more elements
-- foundBy: (Security) Designates an agent was the original discoverer of a security vulnerability
+- fixedBy: (Security) Designates a `from` Vulnerability has been fixed by the `to` Agent(s)
+- fixedIn: (Security/VEX) A `from` Vulnerability has been fixed in each of the `to` Element(s)
+- foundBy: (Security) Designates a `from` Vulnerability was originally discovered by the `to` Agent(s)
 - generates: Every `to` Element is generated from the `from` Element
-- hasAssessmentFor: (Security) Relates a Vulnerability and an Element with a security assessment.
-- hasAssociatedVulnerability: (Security) Used to associate a security vulnerability with a software artifact
+- hasAssessmentFor: (Security) Relates a `from` Vulnerability and each `to` Element(s) with a security assessment. To be used with `VulnAssessmentRelationship` types
+- hasAssociatedVulnerability: (Security) Used to associate a `from` Artifact with each `to` Vulnerability
 - hostOf: (Build) The`from` Element in which every instance of the `to` Element during a LifecycleScopeType period runs on.   Example: host that the build runs on for an element.
 - inputOf: (Build) Input to the Element instance during a LifecycleScopeType period.   Example: input to the build instance for an element. 
 - invokedBy: (Build) Every`to` Agent that invoked a `from` Element instance during a LifecycleScopeType period.  Example: Agent that invoked the build for an element
@@ -67,9 +67,9 @@ between a Package and a File, between two Packages, or between one SPDXDocument 
 - patch: Every `to` Element is a patch for the `from` Element
 - prerequisite: Every `to` Element is a prerequisite of the `from` Element
 - providedDependency: Every `to` Element is a dependency not included in the distributed artifact but is assumed to be provided the `from` Element
-- publishedBy: (Security) Designates the agent that made a vulnerability record available for public use or reference
-- reportedBy: (Security) Designates the agent that first reported a vulnerability to the project, vendor, or tracking database for formal identification 
-- republishedBy: (Security) Designates the agent that tracked, aggregated, and/or enriched vulnerability details to improve context (i.e. NVD)
+- publishedBy: (Security) Designates a `from` Vulnerability was made available for public use or reference by each `to` Agent
+- reportedBy: (Security) Designates a `from` Vulnerability was first reported to a project, vendor, or tracking database for formal identification by each `to` Agent
+- republishedBy: (Security) Designates a `from` Vulnerability's details were tracked, aggregated, and/or enriched to improve context (i.e. NVD) by a `to` Agent(s)
 - requirementFor: Every `to` Element is required for the `from` Element
 - runtimeDependency: Every `to` Element is a runtime dependency for the `from` Element
 - serializedInArtifact: The from SPDXDocument can be found in a serialized form in each to Artifact
@@ -81,5 +81,5 @@ between a Package and a File, between two Packages, or between one SPDXDocument 
 - testTool: Every `to` Element is a test tool for the `from` Element
 - testedOn: (AI, Dataset) The `from` Element has been tested on the `to` Element
 - trainedOn: (AI, Dataset) The `from` Element has been trained by the `to` Element(s)
-- underInvestigationFor: (Security/VEX) The impact of a vulnerability is being investigated
+- underInvestigationFor: (Security/VEX) The `from` Vulnerability impact is being investigated for each `to` Element
 - variant: Every `to` Element is a variant the `from` Element
