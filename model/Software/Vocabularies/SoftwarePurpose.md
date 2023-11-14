@@ -27,10 +27,12 @@ about the context in which the Element exists.
 - container: the Element is a container image which can be used by a container runtime application
 - data: Element is data
 - device: the Element refers to a chipset, processor, or electronic board
+- diskImage: the Element refers to a disk image that can be written to a disk, booted in a VM, etc. A disk image typically contains most or all of the components necessary to boot, such as bootloaders, kernels, firmware, userspace, etc.
 - documentation: Element is documentation
 - evidence: the Element is the evidence that a specification or requirement has been fulfilled
 - executable: Element is an Artifact that can be run on a computer
 - file: the Element is a single file which can be independently distributed (configuration file, statically linked binary, Kubernetes deployment, etc)
+- filesystemImage: the Element is a file system image that can be written to a disk (or virtual) partition
 - firmware: the Element provides low level control over a device's hardware
 - framework: the Element is a software framework
 - install: the Element is used to install software on disk
