@@ -21,7 +21,7 @@ such as its provenance, where to retrieve it, and how to verify its integrity.
 
 ## Properties
 
-- externalId
+- externalSpdxId
   - type: xsd:anyURI
   - minCount: 1
   - maxCount: 1
