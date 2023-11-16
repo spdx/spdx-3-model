@@ -13,6 +13,9 @@ An ElementCollection is a collection of Elements, not necessarily with unifying 
 Note that all ElementCollections must conform to the core profile even if the core profile is no specified in the profileConformance property.
 If the profileConformance property is not provided, core is to be assumed as the default.
 
+**Constraints**
+If the ElementCollection has at least 1 element, it must also have at least 1 rootElement
+
 ## Metadata
 
 - name: ElementCollection
@@ -23,10 +26,10 @@ If the profileConformance property is not provided, core is to be assumed as the
 
 - element
   - type: Element
-  - minCount: 1
+  - minCount: 0
 - rootElement
   - type: Element
-  - minCount: 1
+  - minCount: 0
 - imports
   - type: ExternalMap
 - profileConformance
