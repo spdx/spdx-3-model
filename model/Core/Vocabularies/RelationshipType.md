@@ -53,21 +53,21 @@ name completes the sentence:
 - hasDependencyManifest: The `from` Element has manifest files that contain dependency information in each `to` Element
 - hasDistributionArtifact: The `from` Element is distributed as an artifact in each Element `to`, (e.g. an RPM or archive file)
 - hasDocumentation: The `from` Element is documented by each `to` Element
-- hasDynamicLink: The `from` Element dynamically links in each `to` Element
+- hasDynamicLink: The `from` Element dynamically links in each `to` Element, during a LifecycleScopeType period.
 - hasEvidence: (Dataset) Every `to` Element is considered as evidence for the `from` Element (`from` hasEvidence `to`)
 - hasExample: Every `to` Element is an example for the `from` Element (`from` hasExample `to`)
 - hasHost: The `from` Build was run on the `to` Element during a LifecycleScopeType period (e.g. The host that the build runs on)
 - hasInputs: The `from` Build has each `to` Elements as an input during a LifecycleScopeType period.
 - hasMetafile: metafile: Every `to` Element is is a file containing metadata about the `from` Element (`from` hasMetafile `to`)
 - hasOptionalComponent: Every `to` Element is an optional component of the `from` Element (`from` hasOptionalComponent` `to`)
-- hasOptionalDependency: Every `to` Element is an optional dependency of the `from` Element (`from` hasOptionalDependency` `to`)
+- hasOptionalDependency: Every `to` Element is an optional dependency of the `from` Element (`from` hasOptionalDependency` `to`), during a LifecycleScopeType period
 - hasOutputs: The `from` Build element generates each `to` Element as an output during a LifecycleScopeType period.
-- hasPrerequsite: The `from` Element has a prerequsite on each `to` Element
-- hasProvidedDependency: The `from` Element has a dependency on each `to` Element, but dependency is not in the distributed artifact, but assumed to be provided
-- hasRequirement: The `from` Element has a requirement on each `to` Element
-- hasSpecification: Every `to` Element is a specification for the `from` Element (`from` hasSpecification `to`)
-- hasStaticLink: The `from` Element statically links in each `to` Element
-- hasTest: Every `to` Element is a test artifact for the `from` Element (`from` hasTest `to`)
+- hasPrerequsite: The `from` Element has a prerequsite on each `to` Element, during a LifecycleScopeType period
+- hasProvidedDependency: The `from` Element has a dependency on each `to` Element, but dependency is not in the distributed artifact, but assumed to be provided, during a LifecycleScopeType period
+- hasRequirement: The `from` Element has a requirement on each `to` Element, during a LifecycleScopeType period
+- hasSpecification: Every `to` Element is a specification for the `from` Element (`from` hasSpecification `to`), during a LifecycleScopeType period
+- hasStaticLink: The `from` Element statically links in each `to` Element, during a LifecycleScopeType period
+- hasTest: Every `to` Element is a test artifact for the `from` Element (`from` hasTest `to`), during a LifecycleScopeType period
 - hasTestCase: Every `to` Element is a test case for the `from` Element (`from` hasTestCase `to`)
 - hasVariant: Every `to` Element is a variant the `from` Element (`from` hasVariant `to`)
 - invokedBy: The `from` Build was invoked by the `to` Agent during a LifecycleScopeType period.
