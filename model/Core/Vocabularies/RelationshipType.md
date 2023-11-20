@@ -28,7 +28,7 @@ name completes the sentence:
 - amendedBy: The `from` Element is amended by each `to` Element
 - ancestorOf: The `from` Element is an ancestor of each `to` Element
 - availableFrom: The `from` Element is available from the additional supplier described by each `to` Element
-- configOf: The `from` Element is a configuration applied to each `to` Element during a LifecycleScopeType period
+- configures: The `from` Element is a configuration applied to each `to` Element during a LifecycleScopeType period
 - contains: The `from` Element contains each `to` Element
 - coordinatedBy: (Security) The `from` Vulnerability is coordinatedBy the `to` Agent(s) (vendor, researcher, or consumer agent)
 - copiedTo: The `from` Element has been copied to each `to` Element
