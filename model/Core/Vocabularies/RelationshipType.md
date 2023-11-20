@@ -29,7 +29,6 @@ name completes the sentence:
 - ancestorOf: The `from` Element is an ancestor of each `to` Element
 - availableFrom: The `from` Element is available from the additional supplier described by each `to` Element
 - hasBuildDependencyOn: The `from` Element has a build dependency on each `to` Element
-- usesBuildTool: The `from` Element uses each `to` Element as a build tool
 - coordinatedBy: (Security) The `from` Vulnerability is coordinatedBy the `to` Agent(s) (vendor, researcher, or consumer agent)
 - hasConcludedLicense: The `from` Software Artifact is concluded by the SPDX data creator to be governed by each `to` license
 - contains: The `from` Element contains each `to` Element
@@ -42,7 +41,6 @@ name completes the sentence:
 - descendantOf: The `from` Element is a descendant of each `to` Element
 - describes: The `from` Element describes each `to` Element. To denote the root(s) of a tree of elements in a collection, the rootElement property should be used.
 - hasDevDependency: The `from` Element has a development dependency on each `to` Element
-- hasDevTool: The `from` Element uses each `to` Element as a development tool
 - hasDistributionArtifact: The `from` Element is distributed as an artifact in each Element `to`, (e.g. an RPM or archive file)
 - hasDocumentation: The `from` Element is documented by each `to` Element
 - doesNotAffect: (Security/VEX) The `from` Vulnerability has no impact on each `to` Element
@@ -84,7 +82,7 @@ name completes the sentence:
 - hasTest: Every `to` Element is a test artifact for the `from` Element (`from` hasTest `to`)
 - hasTestCase: Every `to` Element is a test case for the `from` Element (`from` hasTestCase `to`)
 - hasTestDependency: The `from` Element has a test dependency on each `to` Element
-- hasTestTool: The `from` Element uses each `to` Element as a test tool
+- usesTool: The `from` Element uses each `to` Element as a tool during a LifecycleScopeType period.
 - testedOn: (AI, Dataset) The `from` Element has been tested on the `to` Element
 - trainedOn: (AI, Dataset) The `from` Element has been trained by the `to` Element(s)
 - underInvestigationFor: (Security/VEX) The `from` Vulnerability impact is being investigated for each `to` Element
