@@ -26,7 +26,7 @@ name completes the sentence:
 
 - affects: (Security/VEX) The `from` vulnerability affect each `to` Element
 - amendedBy: The `from` Element is amended by each `to` Element
-- hasAncestor: The `from` Element has ancestor described by each `to` Element
+- ancestorOf: The `from` Element is an ancestor of each `to` Element
 - availableFrom: The `from` Element is available from the additional supplier described by each `to` Element
 - hasBuildDependencyOn: The `from` Element has a build dependency on each `to` Element
 - usesBuildTool: The `from` Element uses each `to` Element as a build tool
