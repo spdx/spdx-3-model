@@ -28,7 +28,6 @@ name completes the sentence:
 - amendedBy: The `from` Element is amended by each `to` Element
 - ancestorOf: The `from` Element is an ancestor of each `to` Element
 - availableFrom: The `from` Element is available from the additional supplier described by each `to` Element
-- hasBuildDependencyOn: The `from` Element has a build dependency on each `to` Element
 - coordinatedBy: (Security) The `from` Vulnerability is coordinatedBy the `to` Agent(s) (vendor, researcher, or consumer agent)
 - hasConcludedLicense: The `from` Software Artifact is concluded by the SPDX data creator to be governed by each `to` license
 - contains: The `from` Element contains each `to` Element
@@ -37,10 +36,9 @@ name completes the sentence:
 - hasDataFile: The `from` Element treats each `to` Element as a data file
 - hasDeclaredLicense: The `from` Software Artifact was discovered to actually contain each `to` license, for example as detected by use of automated tooling.
 - hasDependencyManifest: The `from` Element has manifest files that contain dependency information in each `to` Element
-- dependsOn: The `from` Element depends on each `to` Element
+- dependsOn: The `from` Element depends on each `to` Element during a LifecycleScopeType period.
 - descendantOf: The `from` Element is a descendant of each `to` Element
 - describes: The `from` Element describes each `to` Element. To denote the root(s) of a tree of elements in a collection, the rootElement property should be used.
-- hasDevDependency: The `from` Element has a development dependency on each `to` Element
 - hasDistributionArtifact: The `from` Element is distributed as an artifact in each Element `to`, (e.g. an RPM or archive file)
 - hasDocumentation: The `from` Element is documented by each `to` Element
 - doesNotAffect: (Security/VEX) The `from` Vulnerability has no impact on each `to` Element
@@ -75,13 +73,11 @@ name completes the sentence:
 - reportedBy: (Security) Designates a `from` Vulnerability was first reported to a project, vendor, or tracking database for formal identification by each `to` Agent
 - republishedBy: (Security) Designates a `from` Vulnerability's details were tracked, aggregated, and/or enriched to improve context (i.e. NVD) by a `to` Agent(s)
 - hasRequirement: The `from` Element has a requirement on each `to` Element
-- hasRuntimeDependency: The `from` Element has a runtime dependency on each `to` Element
 - serializedInArtifact: The `from` SPDXDocument can be found in a serialized form in each `to` Artifact
 - hasSpecification: Every `to` Element is a specification for the `from` Element (`from` hasSpecification `to`)
 - hasStaticLink: The `from` Element statically links in each `to` Element
 - hasTest: Every `to` Element is a test artifact for the `from` Element (`from` hasTest `to`)
 - hasTestCase: Every `to` Element is a test case for the `from` Element (`from` hasTestCase `to`)
-- hasTestDependency: The `from` Element has a test dependency on each `to` Element
 - usesTool: The `from` Element uses each `to` Element as a tool during a LifecycleScopeType period.
 - testedOn: (AI, Dataset) The `from` Element has been tested on the `to` Element
 - trainedOn: (AI, Dataset) The `from` Element has been trained by the `to` Element(s)
