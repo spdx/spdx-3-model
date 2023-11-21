@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-The Licensing Profile defines a minimum set of license information required to comply with typical license compliance use cases.
+The Licensing Profile defines a minimum set of license information to facilitate compliance with typical license  use cases.
 
 ## Description
 
@@ -28,14 +28,14 @@ types of Software Artifacts. For example:
 
 * for Packages:
   * would include license info describing the license of the Package as a
-    whole, when it is found in the Package itself (e.g., LICENSE file,
-    README file, metadata in the repository, etc.)
+    whole, found in the Package itself (e.g., LICENSE file,
+    README file, metadata in the Package, etc.)
   * would not include any license information that is not in the Package
     itself (e.g., license information from the project’s website or from a
     third party repository or website)
 * for Files:
   * would include license info found in the File itself (e.g., license
-    header or notice, comments, SPDX-License-Identifier expression)
+    header or notice, comments indicating the license, SPDX-License-Identifier expression)
   * would not include license info found in a different file (e.g., LICENSE
     file in the top directory of a repository)
 * for Snippets:
@@ -45,11 +45,11 @@ types of Software Artifacts. For example:
     different File (e.g., comment at top of File if it is not within the
     Snippet, LICENSE file in the top directory of a repository)
 
-A declaredLicense is related to a NoneLicenseindicates that the
+A declaredLicense is related to a NoneLicense and indicates that the
 corresponding Package, File or Snippet contains no license information
 whatsoever.
 
-A declaredLicense related to aNoAssertionLicense
+A declaredLicense related to a NoAssertionLicense and 
 indicates that one of the following applies:
 * the SPDX data creator has attempted to but cannot reach a reasonable
   objective determination;
@@ -67,7 +67,7 @@ from a missing declaredLicense relationship.
 A concludedLicense is the license identified by the SPDX data creator,
 based on analyzing the license information in the Software Artifact
 and other information to arrive at a reasonably objective
-conclusion as to what license governs it.
+conclusion as to what license governs the Software Artifact.
 
 A concludedLicense related to a NoneLicense indicates that the
 SPDX data creator has looked and did not find any license information for this
