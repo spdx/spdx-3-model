@@ -58,7 +58,7 @@ name completes the sentence:
 - hasExample: Every `to` Element is an example for the `from` Element (`from` hasExample `to`)
 - hasHost: The `from` Build was run on the `to` Element during a LifecycleScopeType period (e.g. The host that the build runs on)
 - hasInputs: The `from` Build has each `to` Elements as an input during a LifecycleScopeType period.
-- hasMetafile: metafile: Every `to` Element is is a file containing metadata about the `from` Element (`from` hasMetafile `to`)
+- hasMetadata: Every `to` Element is metadata about the `from` Element (`from` hasMetadata `to`)
 - hasOptionalComponent: Every `to` Element is an optional component of the `from` Element (`from` hasOptionalComponent` `to`)
 - hasOptionalDependency: The `from` Element optionally depends on each `to` Element during a LifecycleScopeType period
 - hasOutputs: The `from` Build element generates each `to` Element as an output during a LifecycleScopeType period.
