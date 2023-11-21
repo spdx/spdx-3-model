@@ -60,7 +60,7 @@ name completes the sentence:
 - hasInputs: The `from` Build has each `to` Elements as an input during a LifecycleScopeType period.
 - hasMetafile: metafile: Every `to` Element is is a file containing metadata about the `from` Element (`from` hasMetafile `to`)
 - hasOptionalComponent: Every `to` Element is an optional component of the `from` Element (`from` hasOptionalComponent` `to`)
-- hasOptionalDependency: Every `to` Element is an optional dependency of the `from` Element (`from` hasOptionalDependency` `to`), during a LifecycleScopeType period
+- hasOptionalDependency: The `from` Element optionally depends on each `to` Element during a LifecycleScopeType period
 - hasOutputs: The `from` Build element generates each `to` Element as an output during a LifecycleScopeType period.
 - hasPrerequsite: The `from` Element has a prerequsite on each `to` Element, during a LifecycleScopeType period
 - hasProvidedDependency: The `from` Element has a dependency on each `to` Element, but dependency is not in the distributed artifact, but assumed to be provided, during a LifecycleScopeType period
