@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-The Licensing Profile defines a minimum set of license information to facilitate compliance with typical license  use cases.
+The Licensing Profile defines a minimum set of license information to facilitate compliance with typical license use cases.
 
 ## Description
 
@@ -45,11 +45,11 @@ types of Software Artifacts. For example:
     different File (e.g., comment at top of File if it is not within the
     Snippet, LICENSE file in the top directory of a repository)
 
-A declaredLicense is related to a NoneLicense and indicates that the
+A declaredLicense relationship to a NoneLicense indicates that the
 corresponding Package, File or Snippet contains no license information
 whatsoever.
 
-A declaredLicense related to a NoAssertionLicense and 
+A declaredLicense relationship to a NoAssertionLicense 
 indicates that one of the following applies:
 * the SPDX data creator has attempted to but cannot reach a reasonable
   objective determination;
@@ -57,9 +57,10 @@ indicates that one of the following applies:
 * the SPDX data creator has intentionally provided no information (no meaning
   should be implied by doing so).
   
-If a declaredLicense relationship is not present, no conclusion can be drawn.
+If a declaredLicense relationship is not present, no assumptions can be made
+about whether or not a declaredLicense exists.
 Note that a missing declaredLicense is not the same as a relationship to a NoAssertionLicense
-since the latter is a "known unknown" whereas no conclusion can be drawn
+since the latter is a "known unknown" whereas no assumptions can be made
 from a missing declaredLicense relationship.
 
 
@@ -69,11 +70,11 @@ based on analyzing the license information in the Software Artifact
 and other information to arrive at a reasonably objective
 conclusion as to what license governs the Software Artifact.
 
-A concludedLicense related to a NoneLicense indicates that the
+A concludedLicense relationship to a NoneLicense indicates that the
 SPDX data creator has looked and did not find any license information for this
 Software Artifact.
 
-A concludedLicense related to a NoAssertionLicense
+A concludedLicense relationship to a NoAssertionLicense
 indicates that one of the following applies:
 * the SPDX data creator has attempted to but cannot reach a reasonable
   objective determination;
@@ -81,10 +82,11 @@ indicates that one of the following applies:
 * the SPDX data creator has intentionally provided no information (no
   meaning should be implied by doing so).
  
-If a concludedLicense is not present, no conclusion can be drawn.
-Note that a missing or null concludedLicense is not the same as a relationship to a NoAssertionLicense
-since the latter is a "known unknown" whereas no conclusion can be drawn
-from a missing or null value.
+If a concludedLicense is not present, no assumptions can be made
+about whether or not a concludedLicense exists.
+Note that a missing concludedLicense is not the same as a relationship to a NoAssertionLicense
+since the latter is a "known unknown" whereas no assumptions can be made
+from a missing concludedLicense relationship.
 
 A written explanation of a relationship to a NoAssertionLicense MAY be
 provided in the comment field for the relationship.
