@@ -14,20 +14,20 @@ Classes and Property restrictions are defined in the SimpleLicensingProfile
 (Classes and Properties associated with string license expressions) and in the ExpandedLicensingProfile (Classes and Properties used for a
 fully parsed syntax tree of license expressions).
 
-There are 2 licensing related relationship types - declaredLicense and concludedLicense.
+There are 2 relationship types related to licensing - declaredLicense and concludedLicense.
 
 A declaredLicense identifies the license information actually found in the Software Artifact,
 for example as detected by use of automated tooling.
 
 This field is not intended to capture license information obtained from an
 external source, such as a package's website. Such information can be
-included, as needed, in a concludedLicense field.
+included, as needed, in the concludedLicense field.
 
 A declaredLicense may be expressed differently in practice for different
 types of Software Artifacts. For example:
 
 * for Packages:
-  * would include license info describing the license of the Package as a
+  * would include license info for the Package as a
     whole, found in the Package itself (e.g., LICENSE file,
     README file, metadata in the Package, etc.)
   * would not include any license information that is not in the Package
@@ -45,11 +45,11 @@ types of Software Artifacts. For example:
     different File (e.g., comment at top of File if it is not within the
     Snippet, LICENSE file in the top directory of a repository)
 
-A declaredLicense relationship to a NoneLicense indicates that the
+A declaredLicense relationship to NoneLicense indicates that the
 corresponding Package, File or Snippet contains no license information
 whatsoever.
 
-A declaredLicense relationship to a NoAssertionLicense 
+A declaredLicense relationship to NoAssertionLicense 
 indicates that one of the following applies:
 * the SPDX data creator has attempted to but cannot reach a reasonable
   objective determination;
@@ -59,7 +59,7 @@ indicates that one of the following applies:
   
 If a declaredLicense relationship is not present, no assumptions can be made
 about whether or not a declaredLicense exists.
-Note that a missing declaredLicense is not the same as a relationship to a NoAssertionLicense
+Note that a missing declaredLicense is not the same as a relationship to NoAssertionLicense
 since the latter is a "known unknown" whereas no assumptions can be made
 from a missing declaredLicense relationship.
 
@@ -70,11 +70,11 @@ based on analyzing the license information in the Software Artifact
 and other information to arrive at a reasonably objective
 conclusion as to what license governs the Software Artifact.
 
-A concludedLicense relationship to a NoneLicense indicates that the
+A concludedLicense relationship to NoneLicense indicates that the
 SPDX data creator has looked and did not find any license information for this
 Software Artifact.
 
-A concludedLicense relationship to a NoAssertionLicense
+A concludedLicense relationship to NoAssertionLicense
 indicates that one of the following applies:
 * the SPDX data creator has attempted to but cannot reach a reasonable
   objective determination;
