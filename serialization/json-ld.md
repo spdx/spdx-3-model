@@ -26,10 +26,10 @@ On the other hand, non-Element nodes (like those of type "ExternalReference" or 
 ## Context File
 
 The SPDX organization provides a global JSON-LD @context file that MUST be used universally for all SPDX JSON-LD files of a given SPDX version.
-The context is available under https://spdx.github.io/spdx-3-model/rdf/context.json (TODO: update the URL as soon as the context is publicly available)
+The context is available under https://spdx.github.io/spdx-3-model/context.json (TODO: update the URL as soon as the context is publicly available)
 and should be included in serialized files on top-level via
 ```json
-"@context": "https://spdx.github.io/spdx-3-model/rdf/context.json"
+"@context": "https://spdx.github.io/spdx-3-model/context.json"
 ```
 Take special note that this context defines aliases for better compatibility with the SPDX model.
 In particular, these are "spdxId" for "@id" and "type" for "@type".
