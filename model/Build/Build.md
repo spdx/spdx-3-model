@@ -36,6 +36,6 @@ The `hasInputs` relationship can be applied to a config file or a build tool if 
 
 ## Profile Conformance
 
-Conformance to the build profile requires one or more instances of the Build class. In addition, there must be at least three instances of type LifecycleScopedRelationship where the "scope" property must be "build".
+Conformance to the Build profile requires one or more instances of the Build class. In addition, there must be at least three instances `Relationship`s with type `LifecycleScopedRelationship`, where the "scope" property must be "build" and the "from" property must be the Build instance.
 
 At the minimum, the build profile must contain a `hasInputs`, `hasOutputs`, and `invokedBy` relationshipType. If an input is known to be a build configuration or a build tool, the `hasInputs` relationshipType can be replaced by a `configures` or `usesTool` relationshipType.
