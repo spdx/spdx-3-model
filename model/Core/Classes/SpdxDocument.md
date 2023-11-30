@@ -25,6 +25,6 @@ Any instance of serialization of SPDX data MUST NOT contain more than one SpdxDo
 - imports
   - type: ExternalMap
 - namespaceMap
-  - type:NamespaceMap
+  - type: NamespaceMap
 - dataLicense
   - type: AnyLicenseInfo
