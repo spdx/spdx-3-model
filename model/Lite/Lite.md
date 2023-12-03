@@ -26,13 +26,12 @@ An SPDX Lite document can be used in parallel with SPDX documents in software su
 For a /Software/Package to be conformant with this profile,
 the following has to hold:
 
+1. The mincount for /Core/Element/spdxId is 1
 1. The mincount for /Core/Element/name is 1
+1. The mincount for /Core/Element/creationInfo is 1
+1. The mincount for /Core/Artifact/suppliedBy is 1
 1. The mincount for /Software/Package/packageVersion is 1
-1. The mincount for /Software/Package/packageUrl is 1
 1. The mincount for /Software/SoftwareArtifact/copyrightText is 1
-
-For a /Software/Sbom to be conformant with this profile,
-the following has to hold:
 
 1. for every `/Software/Package` there MUST exist exactly one `/Core/Relationship`
    of type `concludedLicense` having that element as its `from` property
@@ -41,4 +40,47 @@ the following has to hold:
    of type `declaredLicense` having that element as its `from` property
    and an `/SimpleLicensing/AnyLicenseInfo` as its `to` property.
 
-- TODO - add other class restrictions
+For a /Software/Sbom to be conformant with this profile,
+the following has to hold:
+
+1. The mincount for /Core/ElementCollection/element is 1
+1. The mincount for /Core/ElementCollection/rootElement is 1
+1. The mincount for /Core/Element/spdxId is 1
+1. The mincount for /Core/Element/creationInfo is 1
+
+For a /Core/Element/CreationInfo to be conformant with this profile,
+the following has to hold:
+
+1. The mincount for /Core/Element/CreationInfo/specVersion is 1
+1. The mincount for /Core/Element/CreationInfo/created is 1
+1. The mincount for /Core/Element/CreationInfo/createdBy is 1
+1. The mincount for /Core/Element/CreationInfo/profile is 1
+1. The mincount for /Core/Element/CreationInfo/dataLicense is 1
+
+For a /Core/Agent to be conformant with this profile,
+the following has to hold:
+
+1. The mincount for /Core/Agent/spdxId is 1
+1. The mincount for /Core/Agent/creationInfo is 1
+
+For a /Core/Relationship to be conformant with this profile,
+the following has to hold:
+
+1. The mincount for /Core/Relationship/from is 1
+1. The mincount for /Core/Relationship/relationshipType is 1
+1. The mincount for /Core/Relationship/spdxId is 1
+1. The mincount for /Core/Relationship/creationInfo is 1
+
+For a /SimpleLicensing/LicenseExpression to be conformant with this profile,
+the following has to hold:
+
+1. The mincount for /SimpleLicensing/LicenseExoression/licenseExpression is 1
+1. The mincount for /SimpleLicensing/LicenseExoression/spdxId is 1
+1. The mincount for /SimpleLicensing/LicenseExoression/creationInfo is 1
+
+For a /SimpleLicensing/SimpleLicensingText to be conformant with this profile,
+the following has to hold:
+
+1. The mincount for /SimpleLicensing/SimpleLicensingText/licenseText is 1
+1. The mincount for /SimpleLicensing/SimpleLicensingText/spdxId is 1
+1. The mincount for /SimpleLicensing/SimpleLicensingText/creationInfo is 1
