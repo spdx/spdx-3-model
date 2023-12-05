@@ -1,0 +1,5 @@
+site_name: SPDX 3.0
+site_url: https://spdx.github.io/spdx-3-model
+docs_dir: spec-parser.out
+nav:
+  - 'index.md'

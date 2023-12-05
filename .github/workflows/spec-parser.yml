@@ -39,6 +39,23 @@ jobs:
               --out-dir /tmp/spec-parser.out \
               ../model
 
+      - name: install mkdocs
+        run: |
+          python3 -m pip install mkdocs
+          mkdocs --help
+      - name: generate browseable spec
+        run: |
+          mkdir -p /tmp/browseable-spec
+          cp browseable/mkdocs.yml /tmp
+          cp browseable/mkdocs-index.md.in /tmp/spec-parser.out/index.md.in
+          python3 browseable/gen-index-page.py /tmp/spec-parser.out
+          cd /tmp
+          mkdocs build -v --clean -d /tmp/browseable-spec
+      - uses: actions/upload-artifact@v3
+        with:
+          name: browseable-spec
+          path: /tmp/browseable-spec
+
       - name: validate that context is valid
         run: |
           python3 -m pip install rdflib
