@@ -48,7 +48,7 @@ jobs:
           mkdir -p /tmp/browseable-spec
           cp browseable/mkdocs.yml /tmp
           cp browseable/mkdocs-index.md.in /tmp/spec-parser.out/index.md.in
-          python3 browseable/gen-index-page.py /tmp/spec-parser.out
+          python3 browseable/gen-index-page.py ./model /tmp/spec-parser.out
           cd /tmp
           mkdocs build -v --clean -d /tmp/browseable-spec
       - uses: actions/upload-artifact@v3
@@ -108,9 +108,12 @@ jobs:
           rm -rf /auto-generated/
           cp -r /tmp/auto-generated/ .
 
-          if [ -n "$(git status -s -- "auto-generated/" "*.ttl" "*.jsonld" "*.json")" ]
+          rm -rf browseable-spec
+          cp -r /tmp/browseable-spec/ .
+
+          if [ -n "$(git status -s -- "browseable-spec/" "auto-generated/" "*.ttl" "*.jsonld" "*.json")" ]
           then
-            git add model.ttl model.jsonld context.json auto-generated/
+            git add model.ttl model.jsonld context.json auto-generated/ browseable-spec/
             git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -s -m "Automated Upload" --author "${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>"
             git push origin
           fi
