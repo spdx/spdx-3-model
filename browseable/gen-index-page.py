@@ -17,14 +17,24 @@ def generate_main_index(toplevel_path):
     os.remove(template_path)
 
 
-def generate_path_indexes(toplevel_path):
-    os.chdir(toplevel_path)
-    for (dirpath, dirnames, filenames) in os.walk('.'):
-        relative_dirpath = os.path.relpath(dirpath)
+def generate_path_indexes(source_model_path, toplevel_path):
+    for (dirpath, dirnames, filenames) in os.walk(toplevel_path):
         if os.path.exists(os.path.join(dirpath, 'index.md')):
             continue
+        preamble = ''
+        relative_dirpath = os.path.relpath(dirpath, toplevel_path)
+        section_preamble_fn = \
+            os.path.join(source_model_path, relative_dirpath,
+                         f'{relative_dirpath}.md')
+        if os.path.exists(section_preamble_fn):
+            with open(section_preamble_fn) as section_preamble_file:
+                preamble = section_preamble_file.read()
         with open(os.path.join(dirpath, 'index.md'), 'w') as index:
-            index.write(f'# {relative_dirpath}\n\n')
+            if preamble:
+                index.write(preamble)
+            else:
+                index.write(f'# {relative_dirpath}\n')
+            index.write('\n')
             if len(dirnames) > 0:
                 for item in dirnames:
                     index.write(f'* [{item}]({item})\n')
@@ -37,11 +47,13 @@ def generate_path_indexes(toplevel_path):
 
 
 def main():
-    toplevel_path = sys.argv[1]
-    if not os.path.isdir(toplevel_path):
-        raise RuntimeError('path not found: ' + toplevel_path)
+    source_model_path = sys.argv[1]
+    toplevel_path = sys.argv[2]
+    for p in [source_model_path, toplevel_path]:
+        if not os.path.isdir(p):
+            raise RuntimeError('path not found: ' + p)
     generate_main_index(toplevel_path)
-    generate_path_indexes(toplevel_path)
+    generate_path_indexes(source_model_path, toplevel_path)
 
 
 if __name__ == "__main__":
