@@ -24,6 +24,8 @@ An Annotation is an assertion made in relation to one or more elements.
   - maxCount: 1
 - contentType
   - type: MediaType
+  - minCount: 0
+  - maxCount: 1
 - statement
   - type: xsd:string
   - minCount: 0
