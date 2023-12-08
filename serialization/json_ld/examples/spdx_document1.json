@@ -7,7 +7,7 @@
     "specVersion": "3.0.0",
     "created": "2022-12-01T00:00:00Z",
     "createdBy": ["https://spdx.dev/elements/3F26391C#spdx-dev"],
-    "profile": ["core", "software"],
+    "profile": ["https://spdx.org/profiles/core", "https://spdx.org/profiles/software"],
     "dataLicense": "https://spdx.org/licenses/CC0-1.0"
   },
   "name": "Doc 159 - two File elements",
