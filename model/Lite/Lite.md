@@ -23,16 +23,14 @@ An SPDX Lite document can be used in parallel with SPDX documents in software su
 
 ## Profile conformance
 
+In addition to the following, please refer to the Annex for elements defined in other profiles that should be included as part of the Lite profile.
+
 For a /Software/Package to be conformant with this profile,
 the following has to hold:
 
 1. The mincount for /Core/Element/name is 1
 1. The mincount for /Software/Package/packageVersion is 1
-1. The mincount for /Software/Package/packageUrl is 1
 1. The mincount for /Software/SoftwareArtifact/copyrightText is 1
-
-For a /Software/Sbom to be conformant with this profile,
-the following has to hold:
 
 1. for every `/Software/Package` there MUST exist exactly one `/Core/Relationship`
    of type `concludedLicense` having that element as its `from` property
@@ -40,5 +38,3 @@ the following has to hold:
 1. for every `/Software/Package` there MUST exist exactly one `/Core/Relationship`
    of type `declaredLicense` having that element as its `from` property
    and an `/SimpleLicensing/AnyLicenseInfo` as its `to` property.
-
-- TODO - add other class restrictions
