@@ -37,7 +37,3 @@ The dateTime created is often the date of last change (e.g., a git commit date),
 - createdUsing
   - type: Tool
   - minCount: 0
-- profile
-  - type: ProfileIdentifierType
-  - minCount: 1
-

@@ -21,4 +21,3 @@ a License, but which is not itself a standalone License.
 - SubclassOf: LicenseAddition
 - Instantiability: Concrete
 
-## Properties

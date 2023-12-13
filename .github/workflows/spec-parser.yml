@@ -39,11 +39,26 @@ jobs:
               --out-dir /tmp/spec-parser.out \
               ../model
 
+      - name: validate that context is valid
+        run: |
+          python3 -m pip install rdflib
+          python3 ./.github/workflows/test_context.py /tmp/spec-parser.out/context.json
+
       - uses: actions/upload-artifact@v3
         with:
           name: model.ttl
           path: /tmp/spec-parser.out/model.ttl
-          
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: model.jsonld
+          path: /tmp/spec-parser.out/model.jsonld
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: context.json
+          path: /tmp/spec-parser.out/context.json
+
       - name: get Ontospy
         run: |
           git clone --depth=1 --single-branch --branch=master https://github.com/lambdamusic/Ontospy.git
@@ -68,12 +83,17 @@ jobs:
         run: |
           git fetch 
           git checkout gh-pages
-          rm -rf /auto-generated/
+
           cp /tmp/spec-parser.out/model.ttl .
+          cp /tmp/spec-parser.out/model.jsonld .
+          cp /tmp/spec-parser.out/context.json .
+
+          rm -rf /auto-generated/
           cp -r /tmp/auto-generated/ .
-          if [ -n "$(git status -s -- "auto-generated/" "*.ttl")" ]
+
+          if [ -n "$(git status -s -- "auto-generated/" "*.ttl" "*.jsonld" "*.json")" ]
           then
-            git add model.ttl auto-generated/ 
+            git add model.ttl model.jsonld context.json auto-generated/
             git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -s -m "Automated Upload" --author "${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>"
             git push origin
           fi

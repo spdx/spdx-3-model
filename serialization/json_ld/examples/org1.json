@@ -1,5 +1,5 @@
 {
-  "@context": "https://spdx.github.io/spdx-3-model/rdf/context.json",
+  "@context": "https://spdx.github.io/spdx-3-model/context.json",
   "type": "Organization",
   "spdxId": "https://spdx.dev/elements/3F26391C#spdx-dev",
   "creationInfo": {

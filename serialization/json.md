@@ -1,26 +1,30 @@
 # JSON Serialization
 
-Ideally JSON will be very similar (or even the same) to JSON-LD.
+## Parsing JSON-LD as JSON
+This is a description of how to deserialize JSON-LD as a pure JSON format without any knowledge of RDF.
+On top-level, JSON-LD has two keys, "@context" and "@graph".
 
-The JSON serialization will consist of two things: A context file and an array of element objects (the "payload").
+### parsing "@context"
+The context is a list of a string and an object. You can ignore the string.
+The object consists of key-value pairs that allow the shortening of IDs and which we will call "namespace map" in the following.
+For deserialization purposes, follow this process:
+- For every string that is an ID (that includes values of the keys "spdxId" and "@id", 
+  as well as all strings where you would expect objects according to the SPDX-3 model),
+  split that string at the first colon into "prefix:suffix".
+- If the suffix does not start with "//" and the prefix is a key in the namespace map,
+  replace "prefix:" with the value found under that key in the namespace map.
+- Else do nothing to that string.
+After you are done applying this process to all IDs, you can ignore the "@context".
 
-The context file will be linked via the single property "@context": "https://spdx.github.io/spdx-3-model/rdf/context.json" at top-level of the JSON file.
-You need not care about its specifics, it is simply there to ensure compatibility of JSON and JSON-LD (if you want to know more, see the "about" section below).
+### parsing "@graph"
+You will find an array of objects under the "@graph" key.
+Every one of these objects has a "type" key that tells you the class of the SPDX-3 model that the object is an instance of.
+The rest of the keys then correspond to the properties of that SPDX class.
+Take special note of the "spdxId" key which specifies the ID by which the object can be referenced from other places.
 
-The rest of the serialized file will consist of an array of objects under the "@graph" key, also at top-level of the JSON file.
-Each of these objects must have a property "@type", stating its class name which must be an instantiable subclass of Element.
-It also needs a property "@id", which serves to capture the SPDX ID of the Element.
-All other SPDX properties of the Element are stated via key-value pairs, where the key is the name of the property (e.g. "createdBy").
-The type of the value depends on the type of the property in the SPDX model and can be a string, number, array or object.
-Note, though, that inlining of objects is only allowed for "complex data type" classes (CreationInfo, ExternalReference, etc.).
-If the object were an Element, a string containing its ID would be written instead, thereby referencing another object from the same or even another payload.
+One thing to note is that not all objects in that list have to be subclasses of Element.
+As only Elements have an spdxId, there is no "spdxId" key in these cases but an "@id" key.
+However, the value of "@id" serves the same function of identifying and referencing that object from within other objects.
 
-
-#### About the context file
-The context file is a tool to abbreviate long URIs in keys or vocabulary types.
-This allows for a readable serialized output while still maintaining concise definitions of all properties and classes according to the RDF standard.
-For example, using the context file as a "translation tool", we shorten the property "https://spdx.org/rdf/Core/createdBy" to simply "createdBy".
-The context file will be universal for all SPDX users and is accessible at "https://spdx.github.io/spdx-3-model/rdf/context.json".
-Utilising the context is achieved by adding the property "@context": "https://spdx.github.io/spdx-3-model/rdf/context.json" at top-level of the JSON file.
-The context also serves to omit the @type key in objects where the type is already known from the key of the object.
-For example, the object behind the key "creationInfo" is always of type "CreationInfo", so the key-value pair "@type": "CreationInfo" is implied via the context.
+Last but not least, whenever you encounter a string where you would expect an object according to the SPDX-3 model,
+you can substitute that string with the object that has that string as its "spdxId" or "@id".

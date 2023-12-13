@@ -21,5 +21,3 @@ its composition, licensing information, known quality or security issues, etc.
 - SubclassOf: Bundle
 - Instantiability: Concrete
 
-## Properties
-

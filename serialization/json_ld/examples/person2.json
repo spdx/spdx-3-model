@@ -1,5 +1,5 @@
 {
-  "@context": "https://spdx.github.io/spdx-3-model/rdf/context.json",
+  "@context": "https://spdx.github.io/spdx-3-model/context.json",
   "type": "Person",
   "spdxId": "http://spdx.acme.org/3FA9CB25#person2",
   "creationInfo": {

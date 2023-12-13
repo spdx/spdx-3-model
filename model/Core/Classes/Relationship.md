@@ -11,13 +11,11 @@ Describes a relationship between one or more elements.
 A Relationship is a grouping of characteristics unique to an assertion
 that one Element is related to one or more other Elements in some way.
 
-
 ## Metadata
 
 - name: Relationship
 - SubclassOf: Element
 - Instantiability: Concrete
-
 
 ## Properties
 
@@ -44,3 +42,4 @@ that one Element is related to one or more other Elements in some way.
   - type: DateTime
   - minCount: 0
   - maxCount: 1
+

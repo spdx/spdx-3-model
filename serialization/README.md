@@ -2,13 +2,32 @@
 
 ## Serialization info
 
-_TBD_
+This directory contains the specifications and examples for all supported SPDX serialization formats.
+
+There is a specification markdown file for each supported format describing the serialization.
+
+A collection of elements can be serialized in multiple formats.
+
+Within the model, we have an SpdxDocument which represents the common properties of the collection of elements across all serialization data formats.
+
+We can represent/characterize the actual serialized bytes using an Artifact element in the model.
+
+A Relationship of type spdxDocumentForArtfact can be used to relate an SpdxDocument to one more serialized for of the SpdxDocument.
+
+When serializing the physical SpdxDocument, any properties of the logical element which can be represented using native mechanisms in the specific serialization format (e.g. @context prefixes in JSON-LD in place of the namespaceMap) should use these mechanisms and the remaining properties should be serialized within the “XCollection” element itself.
+
+There is at most one SpdxDocument in the serialization.
+
+There is at most one SpdxDocument element defined in any given instance of serialization.
 
 ## Serialization formats
 
-The files in this directory provide some notes on the specific serialization formats.
+The specification markdown files describing rules for each serialization format will contain an SpdxDocument section describing how each of the properties of SpdxDocument are serialized for the given serialization format.
 
-The notes are numbered for easier referencing -- the order is **not** significant.
+The specification and examples are numbered for easier referencing -- the order is **not** significant.
+
+Current supported formats are:
+- [JSON-LD](json-ld.md)
 
 ## Use cases
 

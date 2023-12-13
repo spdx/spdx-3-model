@@ -8,7 +8,7 @@ Specifies the type of an external reference.
 
 ## Description
 
-ExteralReferenceType specifies the type of an external reference.
+ExternalRefType specifies the type of an external reference.
 
 ## Metadata
 
@@ -19,6 +19,7 @@ ExteralReferenceType specifies the type of an external reference.
 - altDownloadLocation: A reference to an alternative download location.
 - altWebPage: A reference to an alternative web page.
 - binaryArtifact: A reference to binary artifacts related to a package.
+- bower: A reference to a bower package.
 - buildMeta: A reference build metadata related to a published package.
 - buildSystem: A reference build system used to create or publish the package.
 - chat: A reference to the instant messaging system used by the maintainer for a package.
@@ -31,12 +32,16 @@ ExteralReferenceType specifies the type of an external reference.
 - funding: A reference to funding information related to a package.
 - issueTracker: A reference to the issue tracker for a package.
 - mailingList: A reference to the mailing list used by the maintainer for a package.
+- mavenCentral: A reference to a maven repository artifact.
 - metrics: A reference to metrics related to package such as OpenSSF scorecards.
+- npm: A reference to an npm package.
+- nuget: A reference to a nuget package.
 - license: A reference to additional license information related to an artifact.
 - other: Used when the type doesn't match any of the other options.
 - privacyAssessment: A reference to a privacy assessment for a package.
 - productMetadata: A reference to additional product metadata such as reference within organization's product catalog.
 - purchaseOrder: A reference to a purchase order for a package.
+- qualityAssessmentReport: A reference to a quality assessment for a package.
 - releaseNotes: A reference to the release notes for a package.
 - releaseHistory: A reference to a published list of releases for a package.
 - riskAssessment: A reference to a risk assessment for a package.
@@ -55,5 +60,5 @@ ExteralReferenceType specifies the type of an external reference.
 - support: A reference to the software support channel or other support information for a package.
 - vcs: A reference to a version control system related to a software artifact.
 - vulnerabilityDisclosureReport: A reference to a Vulnerability Disclosure Report (VDR) which provides the software supplier's analysis and findings describing the impact (or lack of impact) that reported vulnerabilities have on packages or products in the supplier's SBOM as defined in [NIST SP 800-161](https://csrc.nist.gov/publications/detail/sp/800-161/rev-1/final).
-- vulnerabilityExploitabilityAssessment: A reference to a Vulnerability Exploitability eXchange (VEX) statement which provides information on whether a product is impacted by a specific vulnerability in an included package and, if affected, whether there are actions recommended to remediate. See also [NTIA VEX one-page](https://ntia.gov/files/ntia/publications/vex_one-page_summary.pdf)..
-- qualityAssessmentReport: A reference to a quality assessment for a package.
+- vulnerabilityExploitabilityAssessment: A reference to a Vulnerability Exploitability eXchange (VEX) statement which provides information on whether a product is impacted by a specific vulnerability in an included package and, if affected, whether there are actions recommended to remediate. See also [NTIA VEX one-page](https://ntia.gov/files/ntia/publications/vex_one-page_summary.pdf).
+

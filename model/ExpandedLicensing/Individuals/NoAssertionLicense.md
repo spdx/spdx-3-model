@@ -3,19 +3,21 @@ SPDX-License-Identifier: Community-Spec-1.0
 # NoAssertionLicense
 
 ## Summary
+An Individual Value for License when no assertion can be made about its actual value.
 
-Individual representing an absence of an assertion about license information.
 
 ## Description
 
-A NoAssertionLicense is the value that is used to indicate that the data creator
-is making no assertion about the license information for the corresponding software artifact.
+NoAssertionLicense should be used if the SPDX creator has attempted to but cannot reach a reasonable objective determination;
+the SPDX creator has made no attempt to determine this field; or
+the SPDX creator has intentionally provided no information (no meaning should be implied by doing so).
 
 ## Metadata
 
-- id: NoAssertionLicense
+- name: NoAssertionLicense
 - type: /SimpleLicensing/AnyLicenseInfo
 
-## Serialization
+## Property Values
 
-- text: "NOASSERTION"
+- name: "NOASSERTION"
+

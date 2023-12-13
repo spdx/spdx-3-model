@@ -27,7 +27,7 @@ you hereby agree that any copyright rights (as determined by your jurisdiction)
 in any SPDX-Metadata, including without limitation explanatory text,
 shall be subject to the terms of the Creative Commons CC0 1.0 Universal license. 
 For SPDX-Metadata not containing any copyright rights, 
-you hereby agree and acknowledge that the SPDX-Metadata is provided to you “as-is”
+you hereby agree and acknowledge that the SPDX-Metadata is provided to you "as-is"
 and without any representations or warranties of any kind concerning the SPDX-Metadata,
 express, implied, statutory or otherwise, including without limitation warranties
 of title, merchantability, fitness for a particular purpose, non-infringement,
