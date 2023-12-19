@@ -51,3 +51,5 @@ A License represents a license text, whether listed on the SPDX License List
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
+- seeAlso
+  - type: xsd:anyURI
