@@ -49,14 +49,14 @@ A declaredLicense relationship to NoneLicense indicates that the
 corresponding Package, File or Snippet contains no license information
 whatsoever.
 
-A declaredLicense relationship to NoAssertionLicense 
+A declaredLicense relationship to NoAssertionLicense
 indicates that one of the following applies:
 * the SPDX data creator has attempted to but cannot reach a reasonable
   objective determination;
 * the SPDX data creator has made no attempt to determine this field; or
 * the SPDX data creator has intentionally provided no information (no meaning
   should be implied by doing so).
-  
+
 If a declaredLicense relationship is not present, no assumptions can be made
 about whether or not a declaredLicense exists.
 Note that a missing declaredLicense is not the same as a relationship to NoAssertionLicense
@@ -81,7 +81,7 @@ indicates that one of the following applies:
 * the SPDX data creator has made no attempt to determine this field; or
 * the SPDX data creator has intentionally provided no information (no
   meaning should be implied by doing so).
- 
+
 If a concludedLicense is not present, no assumptions can be made
 about whether or not a concludedLicense exists.
 Note that a missing concludedLicense is not the same as a relationship to a NoAssertionLicense
@@ -109,6 +109,6 @@ the following has to hold:
 
 1. for every `/Software/SoftwareArtifact` there MUST exist exactly one `/Core/Relationship`
    of type `concludedLicense` having that element as its `from` property
-   and an `/SimpleLicensing/AnyLicenseInfo` as its `to` property.
+   and an `/Core/AnyLicenseInfo` as its `to` property.
 
 

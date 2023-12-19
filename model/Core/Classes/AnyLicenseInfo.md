@@ -20,6 +20,6 @@ additional text applied; or a set of licenses combined by applying "AND" and
 ## Metadata
 
 - name: AnyLicenseInfo
-- SubclassOf: /Core/Element
+- SubclassOf: Element
 - Instantiability: Abstract
 

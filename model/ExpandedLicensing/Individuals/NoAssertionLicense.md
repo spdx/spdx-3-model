@@ -15,7 +15,7 @@ the SPDX creator has intentionally provided no information (no meaning should be
 ## Metadata
 
 - name: NoAssertionLicense
-- type: /SimpleLicensing/AnyLicenseInfo
+- type: /Core/AnyLicenseInfo
 
 ## Property Values
 
