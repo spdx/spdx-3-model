@@ -15,4 +15,4 @@ Common Vulnerability Scoring System as defined on [https://www.first.org/cvss](h
 
 - name: score
 - Nature: DataProperty
-- Range: xsd:string
+- Range: xsd:decimal
