@@ -30,6 +30,6 @@ such as its provenance, where to retrieve it, and how to verify its integrity.
 - locationHint
   - type: xsd:anyURI
   - maxCount: 1
-- definingDocument
+- definingArtifact
   - type: Artifact
   - maxCount: 1
