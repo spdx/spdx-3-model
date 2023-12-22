@@ -34,7 +34,5 @@ The rootElement must not be of type SpdxDocument.
 - rootElement
   - type: Element
   - minCount: 0
-- imports
-  - type: ExternalMap
 - profileConformance
   - type: ProfileIdentifierType
