@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+An entity that is authorized to issue identification credentials.
 
 ## Description
 
-A issuingAuthority is TODO
+The entity may be a government, non-profit or commercial enterprise.  The URI provides a unique identifier for the issuing authority.
 
 ## Metadata
 
