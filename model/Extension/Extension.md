@@ -8,7 +8,7 @@ Everything having to do with SPDX extensions.
 
 ## Description
 
-The Extension namespace defines the abstract Extension class serving as the base for all defined extension subclasses and the extension property for associating one or more instances of extension subclasses with a given Element..
+The Extension namespace defines the abstract Extension class serving as the base for all defined extension subclasses.
 
 ## Metadata
 
