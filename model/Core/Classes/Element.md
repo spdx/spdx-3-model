@@ -52,6 +52,6 @@ and inter-relatable content objects.
   - type: ExternalIdentifier
   - minCount: 0
 - extension
-  - type: Extension
+  - type: Extension/Extension
   - minCount: 0
 
