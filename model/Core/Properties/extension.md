@@ -13,4 +13,4 @@ Specifies an Extension characterization of some aspect of an Element.
 ## Metadata
 - name: extension
 - Nature: ObjectProperty
-- Range: Extension
+- Range: /Extension/Extension
