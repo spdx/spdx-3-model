@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A License when no assertion can be made about its actual value.
+A concrete subclass of AnyLicenseInfo used by the NoAssertionLicense Individual in the ExpandedLicensing profile.
 
 
 ## Description
@@ -16,5 +16,5 @@ the SPDX creator has intentionally provided no information (no meaning should be
 ## Metadata
 
 - name: NoAssertionLicense
-- SubclassOf: IndividualLicense
+- SubclassOf: /SimpleLicensing/AnyLicenseInfo
 - Instantiability: Concrete
