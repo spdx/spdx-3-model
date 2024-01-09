@@ -37,6 +37,6 @@ whether or not discoverable, all to the greatest extent permissible under applic
 ## Metadata
 
 - name: dataLicense
-- Nature: DataProperty
-- Range: xsd:string
+- Nature: ObjectProperty
+- Range: /SimpleLicensing/AnyLicenseInfo
 
