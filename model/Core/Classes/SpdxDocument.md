@@ -27,4 +27,4 @@ Any instance of serialization of SPDX data MUST NOT contain more than one SpdxDo
 - namespaceMap
   - type: NamespaceMap
 - dataLicense
-  - type: AnyLicenseInfo
+  - type: /SimpleLicensing/AnyLicenseInfo
