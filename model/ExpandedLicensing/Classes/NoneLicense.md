@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A concrete subclass of AnyLicenseInfo used by Individuals in the ExpandedLicensing profile.
+A concrete subclass of AnyLicenseInfo used by the NoneLicense Individual in the ExpandedLicensing profile.
 
 
 ## Description
@@ -14,5 +14,5 @@ NoneLicense should be used if the SPDX creator determines there is no license av
 ## Metadata
 
 - name: NoneLicense
-- SubclassOf: IndividualLicense
+- SubclassOf: /SimpleLicensing/AnyLicenseInfo
 - Instantiability: Concrete
