@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Preferred verification method to be used for a Package which represents an artifact that logically binds a number of single files together.
+Verification method to be used for a Package which represents an artifact that logically binds a number of single files together using a Git Object ID (Gitoid).
 
 ## Description
 

@@ -20,7 +20,7 @@ This lets consumers perform an offline verification of private blobs.
 
 ## Properties
 
-- algorithm
+- /Core/algorithm
   - type: /Core/HashAlgorithm
   - minCount: 1
   - maxCount: 1
