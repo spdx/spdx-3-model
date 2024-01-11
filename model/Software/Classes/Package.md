@@ -21,6 +21,9 @@ Any of the following non-limiting examples may be (but are not required to be) r
 
 Note that some of these could be represented in SPDX as a file as well.
 
+Verification of packages can be done through a `verifiedUsing` with a `Hash` representing a single file downloaded from the `downloadLocation`.
+If the package represents multiple files (such as in a directory), the `IdentifierIntegrityMethod` may be used.
+
 ## Metadata
 
 - name: Package
@@ -53,6 +56,3 @@ Note that some of these could be represented in SPDX as a file as well.
 
 - /Core/Element/name
   - minCount: 1
-- /Core/Element/verifiedUsing
-  - type: PackageVerification
-
