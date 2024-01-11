@@ -8,7 +8,9 @@ An entity that is authorized to issue identification credentials.
 
 ## Description
 
-The entity may be a government, non-profit, educational institution or commercial enterprise.  The URI provides a unique identifier for the issuing authority.
+An issuingAuthority is an entity that is authorized to issue identification credentials.
+
+The entity may be a government, non-profit, educational institution, or commercial enterprise.  The URI provides a unique identifier for the issuing authority.
 
 ## Metadata
 
