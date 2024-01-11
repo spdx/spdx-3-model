@@ -8,11 +8,12 @@ Additional metadata relating to software licensing.
 
 ## Description
 
-TODO: This text has to be reworked to reflect the new licensing structure "Simple <-> Expanded".
+The SimpleLicensing profile provides classes and properties to express licenses as a license expression string.
+It also provides the base abstract class, AnyLicenseInfo, used for references to license information.
+The SimpleLicensingText class provides a place to record any license text found that does not match a license
+on the SPDX license list.
 
-The Licensing namespace defines metadata fields applicable to software
-licensing. It also defines the classes and properties that comprise the
-SPDX License Expression syntax and that relate to the SPDX License List.
+The ExpandingLicensing profile can be used to represent the complete parsed license expressions.
 
 ## Metadata
 
