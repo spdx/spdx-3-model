@@ -38,6 +38,3 @@ and is a one-way function, that is, a function which is practically infeasible t
 - sha3_512: sha3 with a digest length of 512 https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf
 - sha384: secure hashing algorithm with a digest length of 384 https://www.rfc-editor.org/rfc/rfc4634
 - sha512: secure hashing algorithm with a digest length of 512 https://www.rfc-editor.org/rfc/rfc4634
-- spdxPvcSha1: TODOdescription
-- spdxPvcSha256: TODOdescription
-- sphincsPlus: TODOdescription
