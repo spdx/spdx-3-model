@@ -24,7 +24,7 @@ ExteralIdentifierType specifies the type of an external identifier.
 - other: Used when the type doesn't match any of the other options.
 - packageUrl: https://github.com/package-url/purl-spec
 - securityOther: Used when there is a security related identifier of unspecified type.
-- swhid: https://docs.softwareheritage.org/devel/swh-model/persistent-identifiers.html
+- swhid: SoftWare Hash IDentifier, persistent intrinsic identifiers for digital artifacts, such as files, trees (also known as directories or folders), commits, and other objects typically found in version control systems. The syntax of the identifiers is defined in the [SWHID specification](https://www.swhid.org/specification/v1.1/4.Syntax) and they typically look like `swh:1:cnt:94a9ed024d3859793618152ea559a168bbcbb5e2`.
 - swid: https://www.ietf.org/archive/id/draft-ietf-sacm-coswid-21.html#section-2.3
 - urlScheme: the scheme used in order to locate a resource https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml
 
