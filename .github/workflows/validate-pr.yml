@@ -1,0 +1,21 @@
+name: validate PR
+
+on:
+  pull-request
+
+jobs:
+  doit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+            python-version: "3.12"
+      - name: get spec-parser
+        run: |
+          git clone --depth=1 --single-branch --branch=main https://github.com/spdx/spec-parser/ /tmp/spec-parser
+          python /tmp/spec-parser/main.py -h
+      - name: run spec-parser to validate
+        run: |
+          python /tmp/spec-parser/main.py -n model
