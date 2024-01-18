@@ -6,7 +6,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 Used by SPDX producers to record the artifact’s gitoid: a canonical, unique, immutable identifier that can be used for software integrity verification.
 
-Used by SPDX consumers to verify the integrity of a software artifact they received.
+Used by SPDX consumers to verify the identity and integrity of a software artifact they received.
 
 ## Description
 
