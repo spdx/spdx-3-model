@@ -46,18 +46,11 @@ jobs:
 
       - uses: actions/upload-artifact@26f96dfa697d77e81fd5907df203aa23a56210a8 # v4.3.0
         with:
-          name: model.ttl
-          path: /tmp/spec-parser.out/model.ttl
-
-      - uses: actions/upload-artifact@26f96dfa697d77e81fd5907df203aa23a56210a8 # v4.3.0
-        with:
-          name: model.jsonld
-          path: /tmp/spec-parser.out/model.jsonld
-
-      - uses: actions/upload-artifact@26f96dfa697d77e81fd5907df203aa23a56210a8 # v4.3.0
-        with:
-          name: context.json
-          path: /tmp/spec-parser.out/context.json
+          name: spec-parser-artifacts
+          path: |
+            /tmp/spec-parser.out/model.ttl
+            /tmp/spec-parser.out/model.jsonld
+            /tmp/spec-parser.out/context.json
 
       - name: get Ontospy
         run: |
