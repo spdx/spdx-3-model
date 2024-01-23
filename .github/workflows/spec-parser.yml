@@ -31,26 +31,26 @@ jobs:
       - name: run spec-parser
         run: |
           cd spec-parser
-          mkdir -p  /tmp/spec-parser.out
+          mkdir -p  ${{ runner.temp }}/spec-parser.out
           python main.py \
               --gen-md \
               --gen-refs \
               --gen-rdf \
-              --out-dir /tmp/spec-parser.out \
+              --out-dir ${{ runner.temp }}/spec-parser.out \
               ../model
 
       - name: validate that context is valid
         run: |
           python3 -m pip install rdflib
-          python3 ./.github/workflows/test_context.py /tmp/spec-parser.out/context.json
+          python3 ./.github/workflows/test_context.py ${{ runner.temp }}/spec-parser.out/context.json
 
       - uses: actions/upload-artifact@26f96dfa697d77e81fd5907df203aa23a56210a8 # v4.3.0
         with:
           name: spec-parser-artifacts
           path: |
-            /tmp/spec-parser.out/model.ttl
-            /tmp/spec-parser.out/model.jsonld
-            /tmp/spec-parser.out/context.json
+            ${{ runner.temp }}/spec-parser.out/model.ttl
+            ${{ runner.temp }}/spec-parser.out/model.jsonld
+            ${{ runner.temp }}/spec-parser.out/context.json
 
       - name: get Ontospy
         run: |
@@ -61,15 +61,15 @@ jobs:
       - name: generate docs with Ontospy
         run : |
           cd Ontospy
-          mkdir -p /tmp/auto-generated
-          ontospy gendocs -o /tmp/auto-generated --type 2 --title SPDX-3.0 /tmp/spec-parser.out/model.ttl
-          mkdir -p /tmp/auto-generated/one_pager
-          ontospy gendocs -o /tmp/auto-generated/one_pager --type 1 --title SPDX-3.0 /tmp/spec-parser.out/model.ttl
+          mkdir -p ${{ runner.temp }}/auto-generated
+          ontospy gendocs -o ${{ runner.temp }}/auto-generated --type 2 --title SPDX-3.0 ${{ runner.temp }}/spec-parser.out/model.ttl
+          mkdir -p ${{ runner.temp }}/auto-generated/one_pager
+          ontospy gendocs -o ${{ runner.temp }}/auto-generated/one_pager --type 1 --title SPDX-3.0 ${{ runner.temp }}/spec-parser.out/model.ttl
 
       - uses: actions/upload-artifact@26f96dfa697d77e81fd5907df203aa23a56210a8 # v4.3.0
         with:
           name: auto-generated
-          path: /tmp/auto-generated
+          path: ${{ runner.temp }}/auto-generated
           
       - name: commit changes to branch
         if: github.ref_name == 'main'
@@ -77,12 +77,12 @@ jobs:
           git fetch 
           git checkout gh-pages
 
-          cp /tmp/spec-parser.out/model.ttl .
-          cp /tmp/spec-parser.out/model.jsonld .
-          cp /tmp/spec-parser.out/context.json .
+          cp ${{ runner.temp }}/spec-parser.out/model.ttl .
+          cp ${{ runner.temp }}/spec-parser.out/model.jsonld .
+          cp ${{ runner.temp }}/spec-parser.out/context.json .
 
           rm -rf /auto-generated/
-          cp -r /tmp/auto-generated/ .
+          cp -r ${{ runner.temp }}/auto-generated/ .
 
           if [ -n "$(git status -s -- "auto-generated/" "*.ttl" "*.jsonld" "*.json")" ]
           then
