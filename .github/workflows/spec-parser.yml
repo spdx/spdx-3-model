@@ -17,11 +17,11 @@ jobs:
       contents: write
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@0a5c61591373683505ea898e09a3ea4f39ef2b9c # v5.0.0
         with:
-          python-version: "3.11"
+          python-version: "3.12"
       - name: get spec-parser
         run: |
           git clone --depth=1 --single-branch --branch=main https://github.com/spdx/spec-parser/
@@ -44,17 +44,17 @@ jobs:
           python3 -m pip install rdflib
           python3 ./.github/workflows/test_context.py /tmp/spec-parser.out/context.json
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@26f96dfa697d77e81fd5907df203aa23a56210a8 # v4.3.0
         with:
           name: model.ttl
           path: /tmp/spec-parser.out/model.ttl
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@26f96dfa697d77e81fd5907df203aa23a56210a8 # v4.3.0
         with:
           name: model.jsonld
           path: /tmp/spec-parser.out/model.jsonld
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@26f96dfa697d77e81fd5907df203aa23a56210a8 # v4.3.0
         with:
           name: context.json
           path: /tmp/spec-parser.out/context.json
@@ -73,7 +73,7 @@ jobs:
           mkdir -p /tmp/auto-generated/one_pager
           ontospy gendocs -o /tmp/auto-generated/one_pager --type 1 --title SPDX-3.0 /tmp/spec-parser.out/model.ttl
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@26f96dfa697d77e81fd5907df203aa23a56210a8 # v4.3.0
         with:
           name: auto-generated
           path: /tmp/auto-generated
