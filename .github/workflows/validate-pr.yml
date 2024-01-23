@@ -17,7 +17,7 @@ jobs:
             python-version: "3.12"
       - name: get spec-parser
         run: |
-          git clone --depth=1 --single-branch --branch=main https://github.com/spdx/spec-parser/ /spec-parser
+          git clone --depth=1 --single-branch --branch=main https://github.com/spdx/spec-parser/ ${{ runner.temp }}/spec-parser
           python ${{ runner.temp }}/spec-parser/main.py -h
       - name: run spec-parser to validate
         run: |
