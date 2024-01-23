@@ -59,6 +59,17 @@ jobs:
           name: context.json
           path: /tmp/spec-parser.out/context.json
 
+      - name: run JPEWdev/shacl2code
+        run: |
+          pip install git+https://github.com/JPEWdev/shacl2code.git
+          mkdir -p /tmp/shacl2code.out
+          shacl2code  --lang python /tmp/spec-parser.out/model.jsonld /tmp/shacl2code.out/model.py
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: model.py
+          path: /tmp/shacl2code.out/model.py
+
       - name: get Ontospy
         run: |
           git clone --depth=1 --single-branch --branch=master https://github.com/lambdamusic/Ontospy.git
@@ -88,12 +99,15 @@ jobs:
           cp /tmp/spec-parser.out/model.jsonld .
           cp /tmp/spec-parser.out/context.json .
 
+          mkdir -p shacl2code/
+          cp /tmp/shacl2code.out/* shacl2code/
+
           rm -rf /auto-generated/
           cp -r /tmp/auto-generated/ .
 
           if [ -n "$(git status -s -- "auto-generated/" "*.ttl" "*.jsonld" "*.json")" ]
           then
-            git add model.ttl model.jsonld context.json auto-generated/
+            git add model.ttl model.jsonld context.json auto-generated/ shacl2code/
             git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -s -m "Automated Upload" --author "${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>"
             git push origin
           fi
