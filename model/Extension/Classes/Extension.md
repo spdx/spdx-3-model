@@ -1,5 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 # Extension
+
 ## Summary
 A characterization of some aspect of an Element that is associated with the Element in a generalized fashion.
 
@@ -21,5 +22,3 @@ This approach serves multiple purposes:
 ## Metadata
 - name: Extension
 - Instantiability: Abstract
-
-## Properties
