@@ -14,7 +14,7 @@ NoneLicense should be used if the SPDX creator determines there is no license av
 ## Metadata
 
 - name: NoneLicense
-- type: NoneLicense
+- type: IndividualLicensingInfo
 
 ## Property Values
 
