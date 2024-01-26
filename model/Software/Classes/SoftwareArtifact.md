@@ -19,7 +19,7 @@ such as a package, a file, or a snippet.
 
 ## Properties
 
-- contentIdentifier
+- gitoid
   - type: xsd:anyURI
   - minCount: 0
   - maxCount: 1
