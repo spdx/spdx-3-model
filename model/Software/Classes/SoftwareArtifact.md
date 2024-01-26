@@ -20,9 +20,7 @@ such as a package, a file, or a snippet.
 ## Properties
 
 - contentIdentifier
-  - type: xsd:anyURI
-  - minCount: 0
-  - maxCount: 1
+  - type: ContentIdentifier
 - primaryPurpose
   - type: SoftwarePurpose
   - minCount: 0
