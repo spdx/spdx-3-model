@@ -17,7 +17,7 @@ The OmniBOR ID for the OmniBOR Document associated with a software artifact shou
 
 ## Metadata
 
-- name: contentIdentifier
+- name: gitoid
 - Nature: DataProperty
 - Range: xsd:anyURI
 
