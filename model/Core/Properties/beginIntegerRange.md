@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# begin
+# beginIntegerRange
 
 ## Summary
 
@@ -8,11 +8,11 @@ Defines the beginning of a range.
 
 ## Description
 
-begin is a positive integer that defines the beginning of a range.
+beginIntegerRange is a positive integer that defines the beginning of a range.
 
 ## Metadata
 
-- name: begin
+- name: beginIntegerRange
 - Nature: DataProperty
 - Range: xsd:positiveInteger
 
