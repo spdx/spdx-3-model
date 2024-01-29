@@ -11,6 +11,8 @@ Refers to any object that stores content on a computer.
 Refers to any object that stores content on a computer.
 The type of content can optionally be provided in the contentType property.
 
+If the file reference a directory, then the file represents the directory and all content stored in that directory.
+
 ## Metadata
 
 - name: File
