@@ -17,7 +17,7 @@ This enumeration summarizes common phases when dependency and other relationship
 ## Entries
 
 - design: A relationship has specific context implications during an element's design.
-- development: A relationship has specific context implications during development of an element. 
+- development: A relationship has specific context implications during development phase of an element. 
 - build: A relationship has specific context implications during an element's build, during development.
 - test: A relationship has specific context implications during an element's testing, during development.
 - runtime: A relationship has specific context implications when an element is executing. 
