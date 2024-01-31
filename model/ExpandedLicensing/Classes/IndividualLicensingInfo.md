@@ -15,7 +15,7 @@ This class provides the type used by the individuals.
 
 ## Metadata
 
-- name: IndividualLicense
+- name: IndividualLicensingInfo
 - SubclassOf: /SimpleLicensing/AnyLicenseInfo
 - Instantiability: Concrete
 
