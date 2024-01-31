@@ -11,7 +11,7 @@ Refers to any object that stores content on a computer.
 Refers to any object that stores content on a computer.
 The type of content can optionally be provided in the contentType property.
 
-If the file reference a directory, then the file represents the directory and all content stored in that directory.
+If the isDirectory is specified and set to true, then the file represents the directory and all content stored in that directory.
 
 ## Metadata
 
@@ -24,9 +24,12 @@ If the file reference a directory, then the file represents the directory and al
   - type: /Core/MediaType
   - minCount: 0
   - maxCount: 1
+- isDirectory
+  - type: xsd:boolean
+  - minCount: 0
+  - maxCount: 1
 
 ## External properties restrictions
 
 - /Core/Element/name
   - minCount: 1
-
