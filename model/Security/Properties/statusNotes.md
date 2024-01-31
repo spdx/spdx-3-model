@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Conveys information about how VEX status was determined.
 
 ## Description
 
-TODO
+A VEX statement may convey information about how status was determined and may reference other VEX information.
 
 ## Metadata
 
