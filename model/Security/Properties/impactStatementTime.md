@@ -8,7 +8,7 @@ Timestamp of impact statement.
 
 ## Description
 
-Records when the impact statement was issued.
+Specifies the time when the impact statement was recorded.
 
 ## Metadata
 
