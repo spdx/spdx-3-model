@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Timestamp of impact statement.
 
 ## Description
 
-TODO
+Records when the impact statement was issued.
 
 ## Metadata
 
