@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Specifies the version of the VEX document.
 
 ## Description
 
-TODO
+The document version default value is zero. When any VEX-related content changes, the version must be incremented.
 
 ## Metadata
 
