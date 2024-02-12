@@ -80,6 +80,7 @@ name completes the sentence:
 - republishedBy: (Security) Designates a `from` Vulnerability's details were tracked, aggregated, and/or enriched to improve context (i.e. NVD) by a `to` Agent(s)
 - serializedInArtifact: The `from` SPDXDocument can be found in a serialized form in each `to` Artifact
 - testedOn: (AI, Dataset) The `from` Element has been tested on the `to` Element
+- serviceDependsOn (Service) The `from` SoftwareService depends on each `to` SoftwareService.
 - trainedOn: (AI, Dataset) The `from` Element has been trained by the `to` Element(s)
 - underInvestigationFor: (Security/VEX) The `from` Vulnerability impact is being investigated for each `to` Element
 - usesTool: The `from` Element uses each `to` Element as a tool during a LifecycleScopeType period.
