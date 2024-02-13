@@ -11,6 +11,8 @@ Refers to any object that stores content on a computer.
 Refers to any object that stores content on a computer.
 The type of content can optionally be provided in the contentType property.
 
+If the isDirectory property is specified and set to true, then the file represents a directory and all content stored in that directory.
+
 ## Metadata
 
 - name: File
@@ -22,9 +24,12 @@ The type of content can optionally be provided in the contentType property.
   - type: /Core/MediaType
   - minCount: 0
   - maxCount: 1
+- isDirectory
+  - type: xsd:boolean
+  - minCount: 0
+  - maxCount: 1
 
 ## External properties restrictions
 
 - /Core/Element/name
   - minCount: 1
-
