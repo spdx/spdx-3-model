@@ -23,7 +23,7 @@ Syntax by the `WITH` operator.
 
 ## Properties
 
-- subjectLicense
+- subjectExtendableLicense
   - type: ExtendableLicense
   - minCount: 1
   - maxCount: 1
