@@ -13,9 +13,8 @@ SoftwareService represents software being licensed, delivered and accessed onlin
 ## Properties
 
 - provider
-  - type: ServiceProvider
+  - type: Agent
   - minCount: 1
-  - maxCount: 1
 
 ## Metadata
 
