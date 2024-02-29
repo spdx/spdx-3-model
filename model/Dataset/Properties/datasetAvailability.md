@@ -13,5 +13,5 @@ Some datasets are publicly available and can be downloaded directly. Others are 
 ## Metadata
 
 - name: datasetAvailability
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: DatasetAvailabilityType

@@ -13,5 +13,5 @@ The severity field provides a human readable string of the resulting numerical C
 ## Metadata
 
 - name: severity
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: CvssSeverityType
