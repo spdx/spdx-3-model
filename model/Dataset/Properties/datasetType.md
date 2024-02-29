@@ -13,5 +13,5 @@ Type describes the datatype contained in the dataset. For example a dataset can 
 ## Metadata
 
 - name: datasetType
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: DatasetType

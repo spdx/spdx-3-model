@@ -13,5 +13,5 @@ supportLevel provides an indication of what support expectations that the suppli
 ## Metadata
 
 - name: supportLevel
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: SupportType
