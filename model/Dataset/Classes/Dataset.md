@@ -46,7 +46,7 @@ Metadata information that can be added to a dataset that may be used in a softwa
 - knownBias
   - type: xsd:string
   - minCount: 0
-- sensitivePersonalInformation
+- hasSensitivePersonalInformation
   - type: /Core/PresenceType
   - minCount: 0
   - maxCount: 1

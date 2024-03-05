@@ -8,7 +8,7 @@ Provides information about the fields in the AI package profile.
 
 ## Description
 
-Metadata information that can be added to a package to describe an AI application or trained AI model. 
+Metadata information that can be added to a package to describe an AI application or trained AI model.
 
 ## Metadata
 
@@ -49,7 +49,7 @@ Metadata information that can be added to a package to describe an AI applicatio
 - modelExplainability
   - type: xsd:string
   - minCount: 0
-- sensitivePersonalInformation
+- useSensitivePersonalInformation
   - type: /Core/PresenceType
   - minCount: 0
   - maxCount: 1
