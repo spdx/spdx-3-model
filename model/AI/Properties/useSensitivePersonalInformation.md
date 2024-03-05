@@ -12,7 +12,7 @@ useSensitivePersonalInformation notes if sensitive personal information
 is used in the training or inference of the AI models.
 This might include biometric data, addresses or other data that can be used to infer a person's identity.
 
-Related: sensitivePersonalInformation in /Dataset/Dataset/
+Related: `hasSensitivePersonalInformation` in `/Dataset/Dataset`
 
 ## Metadata
 
