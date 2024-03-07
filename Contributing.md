@@ -21,7 +21,7 @@ Once alerted, the SPDX tech group will review and provide feedback. Once profile
 This method of development was agreed upon by the SPDX Tech team on 2023-01-17.
 
 ## Profile Maintainers
-In accordance with the development model described above, each profile has at least maintainer in charge of merging profile-specific changes to the profile working branch. To contribute to a specific profile, please open a PR to the profile-specific branch or reach out to the maintainer of the profile (noted below). Each profile also has their own weekly meeting time which can be found [here](https://github.com/spdx/meetings#sub-groups-for-specific-topics).
+In accordance with the development model described above, each profile has at least one maintainer in charge of merging profile-specific changes to the profile working branch. To contribute to a specific profile, please open a PR to the profile-specific branch or reach out to the maintainer of the profile (noted below). Each profile also has their own weekly meeting time which can be found [here](https://github.com/spdx/meetings#sub-groups-for-specific-topics).
 
 | Profile | Maintainer(s) |
 | ----------- | ----------- |
