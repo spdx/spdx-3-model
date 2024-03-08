@@ -16,6 +16,6 @@ so that relationships between Elements can be clearly articulated.
 ## Metadata
 
 - name: spdxId
-- Nature: DataProperty
+- Nature: IdProperty
 - Range: xsd:anyURI
 
