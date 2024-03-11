@@ -10,8 +10,6 @@ A provider of a software service.
 
 A ServiceProvider is an entity that provide a software service.
 
-## Properties
-
 ## Metadata
 
 - name: ServiceProvider
