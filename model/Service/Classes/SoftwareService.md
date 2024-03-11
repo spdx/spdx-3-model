@@ -15,6 +15,9 @@ SoftwareService represents software being licensed, delivered and accessed onlin
 - provider
   - type: Agent
   - minCount: 1
+- serverAuthenticationProtocol
+  - type: AuthenticationProtocolType
+  - minCount: 0
 
 ## Metadata
 
