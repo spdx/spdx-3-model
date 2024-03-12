@@ -25,7 +25,7 @@ The fileKind property can be set to `directory` to indicate the file represents 
   - minCount: 0
   - maxCount: 1
 - fileKind
-  - type: xsd:boolean
+  - type: FileKindType
   - minCount: 0
   - maxCount: 1
 
