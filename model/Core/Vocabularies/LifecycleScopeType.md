@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Provide an enumerated set of software lifecycle phases that can provide context to relationships.
+Provide an enumerated set of lifecycle phases that can provide context to relationships.
 
 ## Description
 
-This enumeration summarizes common phases when dependency and other relationships, have different implications, based on their context.  For example,  a build dependency, may have different implications than a runtime dependency.
+This enumeration summarizes common phases when dependency and other relationships, have different implications, based on their context.  For example,  a build dependency, may have different implications than a operational dependency.
 
 ## Metadata
 
