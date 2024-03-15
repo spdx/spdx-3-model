@@ -16,6 +16,7 @@ that provides additional characteristics of an Element.
 - name: ExternalRef
 - SubclassOf: none
 - Instantiability: Concrete
+- Referenceable: no
 
 ## Properties
 

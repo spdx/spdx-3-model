@@ -17,6 +17,7 @@ confusion over which version or modification of a specific Element is referenced
 
 - name: IntegrityMethod
 - Instantiability: Abstract
+- Referenceable: no
 
 ## Properties
 

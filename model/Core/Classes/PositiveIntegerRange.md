@@ -16,6 +16,7 @@ PositiveIntegerRange is a tuple of two positive integers that define a range.
 - name: PositiveIntegerRange
 - SubclassOf: none
 - Instantiability: Concrete
+- Referenceable: no
 
 ## Properties
 

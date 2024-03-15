@@ -28,6 +28,7 @@ Namespace maps support a variety of relevant use cases such as:
 
 - name: NamespaceMap
 - Instantiability: Concrete
+- Referenceable: no
 
 ## Properties
 

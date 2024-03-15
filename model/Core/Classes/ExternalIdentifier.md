@@ -15,6 +15,7 @@ that uniquely identifies an Element.
 
 - name: ExternalIdentifier
 - Instantiability: Concrete
+- Referenceable: no
 
 ## Properties
 

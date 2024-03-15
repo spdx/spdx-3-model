@@ -14,6 +14,7 @@ The class used for implementing a generic string mapping (also known as associat
 
 - name: DictionaryEntry
 - Instantiability: Concrete
+- Referenceable: no
 
 ## Properties
 

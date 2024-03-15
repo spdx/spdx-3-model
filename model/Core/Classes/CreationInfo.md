@@ -16,6 +16,7 @@ The dateTime created is often the date of last change (e.g., a git commit date),
 
 - name: CreationInfo
 - Instantiability: Concrete
+- Referenceable: local
 
 ## Properties
 
