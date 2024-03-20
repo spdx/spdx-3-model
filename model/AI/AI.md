@@ -4,18 +4,18 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Additional metadata based on software profile, that is useful for ai applications and models.
+The AI Profile provides additional metadata, based on Software Profile, that is useful for AI applications and models.
 
 ## Description
 
-The AI profile namespace defines concepts related to AI application and model artifacts.
+The AI namespace defines concepts related to AI application and model artifacts.
 
 ## Metadata
 
 - id: https://rdf.spdx.org/v3/AI
 - name: AI
 
-## Profile conformance 
+## Profile conformance
 
 For an element collection to be conformant with this profile,
 the following has to hold:

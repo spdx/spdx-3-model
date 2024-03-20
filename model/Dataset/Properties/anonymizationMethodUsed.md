@@ -8,7 +8,7 @@ Describes the anonymization methods used.
 
 ## Description
 
-AnonymizationMethodUsed describes the methods used to anonymize the dataset (of fields in the dataset).
+A free form text that describes the methods used to anonymize the dataset (of fields in the dataset).
 
 ## Metadata
 

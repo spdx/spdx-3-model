@@ -4,12 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Captures a standard that is being complied with. 
+Captures a standard that is being complied with.
 
 ## Description
 
-StandardCompliance captures a standard that the AI software complies with. 
-This includes both published and unpublished standards, for example ISO, IEEE, ETSI etc. 
+A free form text that captures a standard that the AI software complies with.
+This includes both published and unpublished standards, for example ISO, IEEE, ETSI etc.
 The standard could (but not necessarily have to) be used to satisfy a legal or regulatory requirement.
 
 ## Metadata

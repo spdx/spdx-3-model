@@ -8,7 +8,7 @@ Captures the size of the dataset.
 
 ## Description
 
-DatasetSize Captures how large a dataset is.
+Captures how large a dataset is.
 The size is to be measured in bytes.
 
 ## Metadata

@@ -8,7 +8,7 @@ Describes how the dataset was collected.
 
 ## Description
 
-DataCollectionProcess describes how a dataset was collected.
+A free form text that describes how a dataset was collected.
 Examples include the sources from which a dataset was scrapped or
 the interview protocol that was used for data collection.
 

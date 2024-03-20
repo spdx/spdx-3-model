@@ -8,10 +8,10 @@ Describes if any sensitive personal information is present in the dataset.
 
 ## Description
 
-hasSensitivePersonalInformation indicates the presence of sensitive personal data
+Indicates the presence of sensitive personal data
 or information that allows drawing conclusions about a person's identity.
 
-Related: `useSensitivePersonalInformation` in `/AI/AIPackage`
+Related: `useSensitivePersonalInformation` in `/AI/AIPackage/`
 
 ## Metadata
 

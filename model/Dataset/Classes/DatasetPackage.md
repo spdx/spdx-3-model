@@ -1,10 +1,10 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# Dataset
+# DatasetPackage
 
 ## Summary
 
-Provides information about the fields in the Dataset profile.
+Specifies a data package and its associated information.
 
 ## Description
 
@@ -12,7 +12,7 @@ Metadata information that can be added to a dataset that may be used in a softwa
 
 ## Metadata
 
-- name: Dataset
+- name: DatasetPackage
 - SubclassOf: /Software/Package
 - Instantiability: Concrete
 

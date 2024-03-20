@@ -8,7 +8,7 @@ Describes a mechanism to update the dataset.
 
 ## Description
 
-DatasetUpdateMechanism describes a mechanism to update the dataset.
+A free form text that describes a mechanism to update the dataset.
 
 ## Metadata
 

@@ -8,7 +8,7 @@ Records the biases that the dataset is known to encompass.
 
 ## Description
 
-KnownBias is a free form text field that describes the different biases that the dataset encompasses.
+A free form text that describes the different biases that the dataset encompasses.
 
 ## Metadata
 

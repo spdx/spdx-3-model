@@ -8,7 +8,7 @@ Indicates the amount of energy consumed to build the AI package.
 
 ## Description
 
-EnergyConsumption captures the amount of energy needed to train and operate the AI model. 
+A free form text that captures the amount of energy needed to train and operate the AI model.
 This value is also known as training energy consumption or inference energy consumption.
 
 ## Metadata

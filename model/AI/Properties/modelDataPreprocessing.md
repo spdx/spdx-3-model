@@ -8,7 +8,7 @@ Describes all the preprocessing steps applied to the training data before the mo
 
 ## Description
 
-ModelDataPreprocessing is a free form text that describes the preprocessing steps
+A free form text that describes the preprocessing steps
 applied to the training data before training of the model(s) contained in the AI software.
 
 ## Metadata
