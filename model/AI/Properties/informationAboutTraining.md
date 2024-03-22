@@ -8,9 +8,14 @@ Describes relevant information about different steps of the training process.
 
 ## Description
 
-A free form text that describes the specific steps involved in the training of the AI model.
-For example, it can be specified whether supervised fine-tuning
-or active learning is used as part of training the model.
+A detailed explanation of the training process, including the specific techniques, algorithms, and methods employed.
+
+Examples include:
+
+- training data used to train the AI model, along with any relevant details about its source, quality, and pre-processing steps;
+- specific training algorithms employed, including stochastic gradient descent, backpropagation, and reinforcement learning.
+- specific training techniques used to improve the performance or accuracy of the AI model, such as transfer learning, fine-tuning, or active learning; and
+- any evaluation metrics used to assess the performance of the AI model during the training process, including accuracy, precision, recall, and F1 score.
 
 ## Metadata
 

@@ -8,8 +8,10 @@ Describes the preprocessing steps that were applied to the raw data to create th
 
 ## Description
 
-A free form text that describes the various preprocessing steps
-that were applied to the raw data to create the dataset. For examples, standardization, normalization, deduplication, tokenization, removal of tokens, etc.
+A free-form text that describes the various preprocessing steps
+that were applied to the raw data to create the dataset.
+
+Examples include standardization, normalization, deduplication, tokenization, and removal of tokens.
 
 ## Metadata
 

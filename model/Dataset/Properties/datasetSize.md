@@ -9,6 +9,7 @@ Captures the size of the dataset.
 ## Description
 
 Captures how large a dataset is.
+
 The size is to be measured in bytes.
 
 ## Metadata
