@@ -20,6 +20,7 @@ and inter-relatable content objects.
 - name: Element
 - SubclassOf: none
 - Instantiability: Abstract
+- NodeKind: IRI
 
 ## Properties
 
