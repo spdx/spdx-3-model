@@ -16,5 +16,5 @@ An SPDX file may represent a file on disk or a directory of files.  In the futur
 
 ## Entries
 
-- file: The file represents a single file.
+- file: The file represents a single file (default).
 - directory: The file represents a directory and all content stored in that directory.
