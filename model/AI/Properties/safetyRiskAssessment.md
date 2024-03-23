@@ -8,8 +8,8 @@ Categorizes safety risk impact of AI software.
 
 ## Description
 
-Categorizes the safety risk impact of the AI software.
-Using categorization according to the [EU general risk assessment methodology](https://ec.europa.eu/docsroom/documents/17107) which implements Article 20 of Regulation (EC) No 765/2008.
+SafetyRiskAssessment categorizes the safety risk impact of the AI software
+in accordance with Article 20 of [EC Regulation No 765/2008](https://ec.europa.eu/docsroom/documents/17107/attachments/1/translations/en/renditions/pdf). 
 
 ## Metadata
 
