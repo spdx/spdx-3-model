@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Categorizes general safety risk assessment of an AI software.
+Specifies the safety risk assessment type.
 
 ## Description
 
