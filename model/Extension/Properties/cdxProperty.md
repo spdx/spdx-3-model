@@ -1,10 +1,10 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# cdxProperties
+# cdxProperty
 
 ## Summary
 
-Provides a map of property names (keys) to values.
+Provides a map of a property name (keys) to a value.
 
 ## Description
 
@@ -14,6 +14,6 @@ The `DictonaryEntry` `key` property maps to the CycloneDX `name` field.
 
 ## Metadata
 
-- name: cdxProperties
+- name: cdxProperty
 - Nature: ObjectProperty
 - Range: /Core/DictionaryEntry

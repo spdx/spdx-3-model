@@ -16,6 +16,6 @@ See the `cdxProperties` definition for how to map the keys and values to Cyclone
 - Instantiability: Concrete
 
 ## Properties
-- cdxProperties
+- cdxProperty
   - type: /Core/DictionaryEntry
-  - minCount: 0
+  - minCount: 1
