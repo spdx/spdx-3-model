@@ -9,8 +9,10 @@ Captures a standard that is being complied with.
 ## Description
 
 A free-form text that captures a standard that the AI software complies with.
-This includes both published and unpublished standards, for example ISO, IEEE, ETSI etc.
-The standard could (but not necessarily have to) be used to satisfy a legal or regulatory requirement.
+
+This includes both published and unpublished standards, such as those developed by ISO, IEEE, and ETSI.
+
+The standard may, but is not necessarily required to, satisfy a legal or regulatory requirement.
 
 ## Metadata
 
