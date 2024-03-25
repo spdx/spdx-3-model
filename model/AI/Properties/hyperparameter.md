@@ -10,8 +10,15 @@ Records a hyperparameter used to build the AI model contained in the AI package.
 
 Records a hyperparameter value.
 
-A hyperparameter is a parameter that is set before the training process begins and is used to control the behavior of the learning algorithm. Hyperparameters are not learned from the data, but are instead set by the developer or chosen through a process of trial and error. For example, learning rate, batch size, and number of layers.
+Hyperparameters are settings defined before the training process that control
+the learning algorithm's behavior. They differ from model parameters,
+which are learned from the data during training. Developers typically set
+hyperparameters manually or through a process of hyperparameter tuning
+(also known as trial and error).
 
+Examples of hyperparameters include learning rate, batch size, and the number
+of layers in a neural network.
+ 
 ## Metadata
 
 - name: hyperparameter
