@@ -8,8 +8,6 @@ The AI Profile is designed to provide a standardized way of documenting and shar
 
 ## Description
 
-The AI namespace defines concepts related to AI application and model artifacts.
-
 The AI namespace defines a set of concepts and data elements related to AI system and model artifacts. These artifacts are the tangible outputs of the AI development process, such as software packages, models, and datasets.
 
 ## Metadata
