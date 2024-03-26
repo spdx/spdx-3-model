@@ -4,19 +4,15 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Indicates the amount of energy consumed to build and operate the AI package.
+Indicates the amount of energy consumed to train the AI model.
 
 ## Description
 
-A free-form text that captures the amount of energy needed to train and operate the AI model.
+A free-form text captures known or estimated energy consumption for the training of the AI model.
 
-This value is also known as training energy consumption or inference energy consumption.
-
-Training energy consumption is the amount of energy consumed during the training phase of an AI model. This includes the energy used to power the hardware and software systems used for training, such as GPUs, CPUs, and data centers.
-
-Inference energy consumption is the amount of energy consumed for one inference of an AI model. This includes the energy used to power the hardware and software systems used for making predictions or decisions based on the model, such as edge devices, servers, or cloud services.
-
-Total energy consumption is the total amount of energy consumed by an AI model over its entire lifecycle, including training, inference, and any other related activities.
+In case not known, the estimation could be based on information about computational resources used
+(e.g. number of floating point operations – FLOPs), training time, type and quantity of processing units,
+and other relevant details related to the training.
 
 ## Metadata
 
