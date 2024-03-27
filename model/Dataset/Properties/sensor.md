@@ -8,7 +8,7 @@ Describes a sensor used for collecting the data.
 
 ## Description
 
-Sensor describes a sensor that was used for collecting the data
+Describes a sensor that was used for collecting the data
 and its calibration value as a key-value pair.
 
 ## Metadata
@@ -16,4 +16,3 @@ and its calibration value as a key-value pair.
 - name: sensor
 - Nature: ObjectProperty
 - Range: /Core/DictionaryEntry
-

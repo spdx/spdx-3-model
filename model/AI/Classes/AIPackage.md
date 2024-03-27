@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Provides information about the fields in the AI package profile.
+Specifies an AI package and its associated information.
 
 ## Description
 

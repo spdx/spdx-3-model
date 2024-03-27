@@ -8,11 +8,11 @@ Records if sensitive personal information is used during model training or could
 
 ## Description
 
-useSensitivePersonalInformation notes if sensitive personal information
+Notes if sensitive personal information
 is used in the training or inference of the AI models.
 This might include biometric data, addresses or other data that can be used to infer a person's identity.
 
-Related: `hasSensitivePersonalInformation` in `/Dataset/Dataset`
+Related: `hasSensitivePersonalInformation` in `/Dataset/DatasetPackage`
 
 ## Metadata
 

@@ -21,4 +21,3 @@ Describes the possible types of availability of a dataset, indicating whether th
 - query: the dataset is publicly available, but not all at once, and can only be accessed through queries which return parts of the dataset.
 - clickthrough: the dataset is not publicly available and can only be accessed after affirmatively accepting terms on a clickthrough webpage.
 - registration: the dataset is not publicly available and an email registration is required before accessing the dataset, although without an affirmative acceptance of terms.
-
