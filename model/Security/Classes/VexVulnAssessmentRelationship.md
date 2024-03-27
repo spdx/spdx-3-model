@@ -38,7 +38,7 @@ the document's date must be considered as authoritative.
 
 ## Properties
 
-- vexVersion
+- vexMinRequirementsVersion
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
