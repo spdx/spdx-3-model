@@ -9,6 +9,12 @@ or an identity such as a service account.
 
 A process that takes data in any valid form (e.g., various serializations of SPDX like JSON-LD, YAML, XML, Turtle, etc.) and transforms it into a single consistent normalized deterministic and reproducible form. Such a canonical form normalizes things like ordering, formatting, choices, etc.
 
+## Class
+
+A represention of a scope/set of individual instances of a particular “concept” (e.g., File, Person, ExternalReference, etc.).
+
+Each individual instance of a class has an Internationalized Resource Identifier (IRI) and is asserted as a member of a particular class via a type statement.
+
 ## Constraint
 
 An explicit conformance requirement specifying details of an SPDX-valid relationship between a property and a concept class including such details as the valid type of the property on that class, the cardinality (e.g., `0..1`, `1`, `1..*`, etc.) of the property on that class, the value of the property on that class, etc.
@@ -21,11 +27,9 @@ One example could be the requirement of a specific hash algorithm to be present.
 
 The namespace which contains definitions and constraints for all concpet classes and properties which are common to all other domains within the targeted scope of SPDX.
 
-## Class
+## Datatype property
 
-A represention of a scope/set of individual instances of a particular “concept” (e.g., File, Person, ExternalReference, etc.).
-
-Each individual instance of a class has an Internationalized Resource Identifier (IRI) and is asserted as a member of a particular class via a type statement.
+A representation of a relationship between a class (definition or instance) and some literal (string, integer, boolean, etc.) descriptive characterization of the class.
 
 ## Domain
 
@@ -36,10 +40,6 @@ A specific sphere of activity or knowledge. For example, cyber security, softwar
 A class representing a concept of primary focus within a given domain.
 
 In a graph or serialized set of instance content this would be the granularity of what would be a node in the graph or a top-level object in the serialization set. This is typically similar to the scoping seen in labeled property graphs.
-
-## Datatype property
-
-A representation of a relationship between a class (definition or instance) and some literal (string, integer, boolean, etc.) descriptive characterization of the class.
 
 ## Namespace
 
