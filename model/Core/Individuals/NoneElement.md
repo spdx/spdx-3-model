@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# None
+# NoneElement
 
 ## Summary
 
@@ -9,7 +9,7 @@ cardinality (number/count) of zero.
 
 ## Description
 
-NoneLicense should be used if the SPDX creator desires to assert that 
+NoneLicenseElement should be used if the SPDX creator desires to assert that 
 there are NO elements for the given context of use.
 
 For example, a Relationship with `from`=Element1, `relationshipType`="ancestorOf", 
@@ -17,7 +17,7 @@ and `to`=NONE is explicitly expressing an assertion that Element1 has no descend
 
 ## Metadata
 
-- name: None
+- name: NoneElement
 - type: Element
 
 ## Property Values

@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# NoAssertion
+# NoAssertionElement
 
 ## Summary
 An Individual Value for Element representing a set of Elements of unknown 
@@ -8,7 +8,7 @@ identify or cardinality (number).
 
 ## Description
 
-NoAssertion should be used if 
+NoAssertionElement should be used if 
 the SPDX creator has attempted to but cannot reach a reasonable objective determination;
 the SPDX creator has made no attempt to determine this field; or
 the SPDX creator has intentionally provided no information (no meaning should be implied by doing so).
@@ -18,10 +18,9 @@ and `to`=NOASSERTION is explicitly expressing that no assertion is being made ab
 
 ## Metadata
 
-- name: NoAssertion
+- name: NoAssertionElement
 - type: Element
 
 ## Property Values
 
 - name: "NOASSERTION"
-
