@@ -16,7 +16,7 @@ should contain the 'NONE' individual and no other elements.
 A relationship that contains 'NONE' and other elements in the `to` property is not valid.
 
 To explicitly assert that no assertions are being made regarding the 
-existence of such relationships, the `to` property should contain the 'NOASSERTION' individual.
+existence of such relationships, the `to` property should also contain the 'NOASSERTION' individual.
 
 ## Metadata
 
