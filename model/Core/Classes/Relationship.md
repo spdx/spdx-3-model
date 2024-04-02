@@ -13,7 +13,7 @@ that one Element is related to one or more other Elements in some way.
 
 To explicitly assert that no such relationships exist, the `to` property 
 should contain the 'NONE' individual and no other elements.
-A relationship that contains 'NONE' and other elements in the `to` property is not valid.
+A relationship that contains 'NONE' and additional elements in the `to` property is not valid.
 
 To explicitly assert that no assertions are being made regarding the 
 existence of such relationships, the `to` property should also contain the 'NOASSERTION' individual.
