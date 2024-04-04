@@ -17,5 +17,5 @@ and other relevant details related to the training.
 ## Metadata
 
 - name: energyConsumption
-- Nature: DataProperty
-- Range: xsd:string
+- Nature: ObjectProperty
+- Range: EnergyConsumption
