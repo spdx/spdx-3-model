@@ -8,14 +8,14 @@ Specifies the unit of energy consumption
 
 ## Description
 
-List different acceptable units of energy consumption. If the unit in which the energy consumption is recorded is not available here, please select other
+List different acceptable units of energy consumption. If the unit in which the energy consumption has been recorded is not available here, please select other.
 
 ## Metadata
 
-- name: SafetyRiskAssessmentType
+- name: EnergyConsumptionDescriptionUnitType
 
 ## Entries
 
-- kW-H: Kilo Watt/ hour.
-- MJ: Mega Joule.
+- kilowatt-hour: KiloWatt per hour
+- megajoule: Megajoule.
 - other: Any other units of energy measurement. 
