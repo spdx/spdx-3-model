@@ -17,6 +17,6 @@ The ExpandedLicensing profile can be used to represent the complete parsed licen
 
 ## Metadata
 
-- id: https://rdf.spdx.org/v3/SimpleLicensing
+- id: https://spdx.org/rdf/3.0.0/terms/SimpleLicensing
 - name: SimpleLicensing
 

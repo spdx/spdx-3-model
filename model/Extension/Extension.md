@@ -12,5 +12,5 @@ The Extension namespace defines the abstract Extension class serving as the base
 
 ## Metadata
 
-- id: https://rdf.spdx.org/v3/Extension
+- id: https://spdx.org/rdf/3.0.0/terms/Extension
 - name: Extension

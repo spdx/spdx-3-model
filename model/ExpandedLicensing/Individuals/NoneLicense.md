@@ -15,7 +15,7 @@ NoneLicense should be used if the SPDX creator determines there is no license av
 
 - name: NoneLicense
 - type: IndividualLicensingInfo
-- IRI: https://rdf.spdx.org/v3/Licensing/None
+- IRI: https://spdx.org/rdf/3.0.0/terms/Licensing/None
 
 ## Property Values
 

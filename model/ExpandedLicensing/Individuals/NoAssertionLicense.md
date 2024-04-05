@@ -16,7 +16,7 @@ the SPDX creator has intentionally provided no information (no meaning should be
 
 - name: NoAssertionLicense
 - type: IndividualLicensingInfo
-- IRI: https://rdf.spdx.org/v3/Licensing/NoAssertion
+- IRI: https://spdx.org/rdf/3.0.0/terms/Licensing/NoAssertion
 
 ## Property Values
 

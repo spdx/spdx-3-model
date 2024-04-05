@@ -12,7 +12,7 @@ The AI namespace defines a set of concepts and data elements related to AI syste
 
 ## Metadata
 
-- id: https://rdf.spdx.org/v3/AI
+- id: https://spdx.org/rdf/3.0.0/terms/AI
 - name: AI
 
 ## Profile conformance

@@ -30,7 +30,7 @@ The `hasInputs` relationship can be applied to a config file or a build tool if 
 
 ## Metadata
 
-- id: https://rdf.spdx.org/v3/Build
+- id: https://spdx.org/rdf/3.0.0/terms/Build
 - name: Build
 
 
