@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Class that contains properties to describe energy consumption incurred by a AI model in different stages of its lifecycle.
+The class that contains properties to describe energy consumption incurred by an AI model in different stages of its lifecycle.
 
 ## Description
 
-The class used for denoting the training energy consumption, inference energy consumption and fine tuning energy consumption of the AI model(s) used in a AI system.
+The class used for denoting the training energy consumption, inference energy consumption and fine tuning energy consumption of the AI model(s) used in an AI system.
 
 ## Metadata
 
