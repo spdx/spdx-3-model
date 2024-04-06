@@ -16,6 +16,6 @@ List different acceptable units of energy consumption. If the unit in which the 
 
 ## Entries
 
-- kilowatt-hour: KiloWatt per hour
+- kilowattHour: Kilowatt-hour
 - megajoule: Megajoule.
 - other: Any other units of energy measurement. 
