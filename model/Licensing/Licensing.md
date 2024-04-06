@@ -98,7 +98,7 @@ the concludedLicense relationship comment field.
 
 ## Metadata
 
-- id: https://rdf.spdx.org/v3/Licensing
+- id: https://spdx.org/rdf/3.0.0/terms/Licensing
 - name: Licensing
 
 

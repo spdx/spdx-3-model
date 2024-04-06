@@ -18,25 +18,18 @@ This identifier enables a recipient to determine if any file in the original pac
 
 Algorithm:
 
-verificationcode = 0
-
-filelist = templist = ""
-
-for all files in the package {
-
-    if file is an "excludes" file, skip it /* exclude SPDX analysis file(s) */
-
-        append templist with "SHA1(file)/n"
+    verificationcode = 0
+    filelist = templist = ""
+    for all files in the package {
+         if file is an "excludes" file, skip it /* exclude SPDX analysis file(s) */
+         else append templist with "algorithm(file)/n"
+        }
         
-    }
-    
-sort templist in ascending order by SHA1 value
-
-filelist = templist with "/n"s removed. /* ordered sequence of SHA1 values with no separators */
-
-verificationcode = SHA1(filelist)
-
-Where SHA1(file) applies a SHA1 algorithm on the contents of file and returns the result in lowercase hexadecimal digits.
+     sort templist in ascending order by algorithm value
+     
+     filelist = templist with "/n"s removed. /* ordered sequence of algorithm values with no separators */
+     
+     hashValue = algorithm(filelist) /* Where algorithm(file) applies a hash algorithm on the contents of file and returns the result in lowercase hexadecimal digits. */
 
 Required sort order: '0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f' (ASCII order)
 
@@ -47,6 +40,10 @@ Required sort order: '0','1','2','3','4','5','6','7','8','9','a','b','c','d','e'
 
 ## Properties
 
+- algorithm
+  - type: HashAlgorithm
+  - minCount: 1
+  - maxCount: 1
 - hashValue
   - type: xsd:string
   - minCount: 1

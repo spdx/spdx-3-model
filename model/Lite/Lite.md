@@ -18,7 +18,7 @@ An SPDX Lite document can be used in parallel with SPDX documents in software su
 
 ## Metadata
 
-- id: https://rdf.spdx.org/v3/Lite
+- id: https://spdx.org/rdf/3.0.0/terms/Lite
 - name: Lite
 
 ## Profile conformance

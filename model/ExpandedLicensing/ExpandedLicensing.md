@@ -12,5 +12,5 @@ This profile supports representing a fully expanded license expression in object
 
 ## Metadata
 
-- id: https://rdf.spdx.org/v3/ExpandedLicensing
+- id: https://spdx.org/rdf/3.0.0/terms/ExpandedLicensing
 - name: ExpandedLicensing
