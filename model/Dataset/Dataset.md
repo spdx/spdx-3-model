@@ -12,7 +12,7 @@ The Dataset namespace defines concepts related to dataset, including its prepara
 
 ## Metadata
 
-- id: https://rdf.spdx.org/v3/Dataset
+- id: https://spdx.org/rdf/3.0.0/terms/Dataset
 - name: Dataset
 
 ## Profile conformance
