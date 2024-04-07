@@ -1,19 +1,15 @@
 # SPDX 3 model
 
-The Software Package Data Exchange® (SPDX®)
-is a standard format for communicating information
-about components associated with software packages.
-It has wide industry adoption
-as a standardized Software Bill of Materials.
-It is also an ISO standard, ISO/IEC 5962:2021.
+The System Package Data Exchange® (SPDX®)is a standard format for communicating information about components associated with systems.
+Components can include software, AI/ML models, and data today.  More component types that make up modern systems are planned to be included in subsequent releases. 
+The prior version of this format was focused on Software, is an ISO/IEC standard (ISO/IEC 5962:2021) and has wide industry adoption
+as a standardized Software Bill of Materials (SBOM).   All use cases supported by the prior version, are supported here as well.
 
-This repository holds the model for the information captured
-on the (upcoming) SPDX version 3 standard.
+This repository holds the model for the information captured in SPDX version 3 standard.
 
 ## Branches and Formats
 
-The editable files are written in a constrained subset of Markdown
-and are stored in the `main` branch.
+The editable files are written in a constrained subset of Markdown and are stored in the `main` branch.
 
 These files are automatically processed into the following formats available at https://spdx.github.io/spdx-3-model/:
 
