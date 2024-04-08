@@ -37,4 +37,7 @@ such as a package, a file, or a snippet.
 - attributionText
   - type: xsd:string
   - minCount: 0
+- contentIdentifier
+  - type: ContentIdentifier
+  - minCount: 0
 
