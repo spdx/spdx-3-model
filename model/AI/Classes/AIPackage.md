@@ -19,7 +19,7 @@ Metadata information that can be added to a package to describe an AI applicatio
 ## Properties
 
 - energyConsumption
-  - type: xsd:string
+  - type: EnergyConsumption
   - minCount: 0
   - maxCount: 1
 - standardCompliance
