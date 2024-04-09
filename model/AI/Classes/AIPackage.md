@@ -75,8 +75,10 @@ Metadata information that can be added to a package to describe an AI applicatio
 
 - /Core/Artifact/suppliedBy
   - minCount: 1
+  - maxCount: 1
 - /Software/Package/downloadLocation
   - minCount: 1
+  - maxCount: 1
 - /Software/Package/packageVersion
   - minCount: 1
   - maxCount: 1
