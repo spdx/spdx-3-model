@@ -24,7 +24,7 @@ It can be used for verifying its identity and integrity.
   - minCount: 1
   - maxCount: 1
 - contentIdentifierValue
-  - type: xsd:string
+  - type: xsd:anyURI
   - minCount: 1
   - maxCount: 1
 
