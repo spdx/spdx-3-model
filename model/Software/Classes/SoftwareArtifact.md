@@ -19,10 +19,6 @@ such as a package, a file, or a snippet.
 
 ## Properties
 
-- gitoid
-  - type: xsd:anyURI
-  - minCount: 0
-  - maxCount: 2
 - primaryPurpose
   - type: SoftwarePurpose
   - minCount: 0
