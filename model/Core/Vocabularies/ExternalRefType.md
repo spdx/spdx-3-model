@@ -46,7 +46,7 @@ ExternalRefType specifies the type of an external reference.
 - releaseHistory: A reference to a published list of releases for a package.
 - riskAssessment: A reference to a risk assessment for a package.
 - runtimeAnalysisReport: A reference to a runtime analysis report for a package.
-- secureSoftwareAttestation: A reference to information assuring that the software is developed using security practices as defined by [NIST SP 800-218 Secure Software Development Framework (SSDF) Version 1.1](https://csrc.nist.gov/pubs/sp/800/218/final) or [CISA Secure Software Development Attestation Form](https://csrc.nist.gov/pubs/sp/800/218/final). 
+- secureSoftwareAttestation: A reference to information assuring that the software is developed using security practices as defined by [NIST SP 800-218 Secure Software Development Framework (SSDF) Version 1.1](https://csrc.nist.gov/pubs/sp/800/218/final) or [CISA Secure Software Development Attestation Form](https://www.cisa.gov/resources-tools/resources/secure-software-development-attestation-form).
 - securityAdvisory: A reference to a published security advisory (where advisory as defined per ISO 29147:2018) that may affect one or more elements, e.g., vendor advisories or specific NVD entries.
 - securityAdversaryModel: A reference to the security adversary model for a package.
 - securityFix: A reference to the patch or source code that fixes a vulnerability.
