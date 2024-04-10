@@ -46,7 +46,7 @@ ExternalRefType specifies the type of an external reference.
 - releaseHistory: A reference to a published list of releases for a package.
 - riskAssessment: A reference to a risk assessment for a package.
 - runtimeAnalysisReport: A reference to a runtime analysis report for a package.
-- secureSoftwareAttestation: A reference to information assuring that the software is developed using security practices as defined by [NIST SP 800-218 Secure Software Development Framework (SSDF)](https://csrc.nist.gov/publications/detail/sp/800-218/final) or [CISA Secure Software Development Attestation Form](https://www.cisa.gov/sites/default/files/2023-04/secure-software-self-attestation_common-form_508.pdf).
+- secureSoftwareAttestation: A reference to information assuring that the software is developed using security practices as defined by [NIST SP 800-218 Secure Software Development Framework (SSDF) Version 1.1](https://csrc.nist.gov/pubs/sp/800/218/final) or [CISA Secure Software Development Attestation Form](https://csrc.nist.gov/pubs/sp/800/218/final). 
 - securityAdvisory: A reference to a published security advisory (where advisory as defined per ISO 29147:2018) that may affect one or more elements, e.g., vendor advisories or specific NVD entries.
 - securityAdversaryModel: A reference to the security adversary model for a package.
 - securityFix: A reference to the patch or source code that fixes a vulnerability.
@@ -59,6 +59,5 @@ ExternalRefType specifies the type of an external reference.
 - staticAnalysisReport: A reference to a static analysis report for a package.
 - support: A reference to the software support channel or other support information for a package.
 - vcs: A reference to a version control system related to a software artifact.
-- vulnerabilityDisclosureReport: A reference to a Vulnerability Disclosure Report (VDR) which provides the software supplier's analysis and findings describing the impact (or lack of impact) that reported vulnerabilities have on packages or products in the supplier's SBOM as defined in [NIST SP 800-161](https://csrc.nist.gov/publications/detail/sp/800-161/rev-1/final).
-- vulnerabilityExploitabilityAssessment: A reference to a Vulnerability Exploitability eXchange (VEX) statement which provides information on whether a product is impacted by a specific vulnerability in an included package and, if affected, whether there are actions recommended to remediate. See also [NTIA VEX one-page](https://ntia.gov/files/ntia/publications/vex_one-page_summary.pdf).
-
+- vulnerabilityDisclosureReport: A reference to a Vulnerability Disclosure Report (VDR) which provides the software supplier's analysis and findings describing the impact (or lack of impact) that reported vulnerabilities have on packages or products in the supplier's SBOM as defined in [NIST SP 800-161](https://csrc.nist.gov/pubs/sp/800/161/r1/final).
+- vulnerabilityExploitabilityAssessment: A reference to a Vulnerability Exploitability eXchange (VEX) statement which provides information on whether a product is impacted by a specific vulnerability in an included package and, if affected, whether there are actions recommended to remediate. See also [NTIA VEX one-page summary](https://ntia.gov/files/ntia/publications/vex_one-page_summary.pdf).
