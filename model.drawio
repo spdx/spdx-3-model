@@ -1199,13 +1199,13 @@
         <mxCell id="KA1xjPNPVZ9xSUQX3SqY-5" value="&lt;&lt;Individual&gt;&gt;&#xa;NoAssertionLicense : IndividualLicensingInfo" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#f5f5f5;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
           <mxGeometry x="2160" y="126" width="350" height="56" as="geometry" />
         </mxCell>
-        <mxCell id="_3iI9CYwvOLBjie_8vdV-1" value="https://rdf.spdx.org/v3/ExpandedLicensing/NoAssertionLicense" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="KA1xjPNPVZ9xSUQX3SqY-5" vertex="1">
+        <mxCell id="_3iI9CYwvOLBjie_8vdV-1" value="https://spdx.org/rdf/3.0.0/terms/Licensing/NoAssertion" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="KA1xjPNPVZ9xSUQX3SqY-5" vertex="1">
           <mxGeometry y="26" width="350" height="30" as="geometry" />
         </mxCell>
         <mxCell id="KA1xjPNPVZ9xSUQX3SqY-6" value="&lt;&lt;Individual&gt;&gt;&#xa;NoneLicense : IndividualLicensingInfo" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#f5f5f5;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
           <mxGeometry x="2160" y="198" width="350" height="56" as="geometry" />
         </mxCell>
-        <mxCell id="_3iI9CYwvOLBjie_8vdV-2" value="https://rdf.spdx.org/v3/ExpandedLicensing/NoneLicense" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="KA1xjPNPVZ9xSUQX3SqY-6" vertex="1">
+        <mxCell id="_3iI9CYwvOLBjie_8vdV-2" value="https://spdx.org/rdf/3.0.0/terms/Licensing/None" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="KA1xjPNPVZ9xSUQX3SqY-6" vertex="1">
           <mxGeometry y="26" width="350" height="30" as="geometry" />
         </mxCell>
       </root>
