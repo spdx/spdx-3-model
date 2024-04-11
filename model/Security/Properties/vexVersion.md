@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Specifies the version of the VEX document.
+Specifies the version of a VEX statement.
 
 ## Description
 
-The document version default value is zero. When any VEX-related content changes, the version must be incremented.
+The statement version default value is zero. When any VEX-related content changes, the version must be incremented.
 
 ## Metadata
 
