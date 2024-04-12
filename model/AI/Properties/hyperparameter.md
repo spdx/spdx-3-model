@@ -18,7 +18,7 @@ hyperparameters manually or through a process of hyperparameter tuning
 
 Examples of hyperparameters include learning rate, batch size, and the number
 of layers in a neural network.
- 
+
 ## Metadata
 
 - name: hyperparameter

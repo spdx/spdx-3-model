@@ -17,9 +17,9 @@ The class used for denoting the training energy consumption, inference energy co
 
 ## Properties
 
-- trainingEnergyConsumption
-  - type: EnergyConsumptionDescription
 - finetuningEnergyConsumption
   - type: EnergyConsumptionDescription
 - inferenceEnergyConsumption
+  - type: EnergyConsumptionDescription
+- trainingEnergyConsumption
   - type: EnergyConsumptionDescription
