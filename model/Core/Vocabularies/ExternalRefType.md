@@ -25,6 +25,7 @@ ExternalRefType specifies the type of an external reference.
 - chat: A reference to the instant messaging system used by the maintainer for a package.
 - certificationReport: A reference to a certification report for a package from an accredited/independent body.
 - componentAnalysisReport: A reference to a Software Composition Analysis (SCA) report.
+- cwe: A reference to a source of software flaw defined within the official CWE Dictionary that conforms to the CWE specification as defined by https://csrc.nist.gov/glossary/term/common_weakness_enumeration.
 - documentation: A reference to the documentation for a package.
 - dynamicAnalysisReport: A reference to a dynamic analysis report for a package.
 - eolNotice: A reference to the End Of Sale (EOS) and/or End Of Life (EOL) information related to a package.
