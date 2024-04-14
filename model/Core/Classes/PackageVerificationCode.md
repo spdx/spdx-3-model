@@ -10,7 +10,7 @@ An SPDX version 2.X compatible verification method for software packages.
 
 This verification method is provided for compatibility with SPDX 2.X.
 
-Use of this verification code method is discouraged except for scenarios where the `gitoid` property on `Artifact` can not be used.
+Use of this verification code method is discouraged except for scenarios where the `contentIdentifier` property on `Artifact` can not be used.
 
 This verification method provides an independently reproducible mechanism identifying specific contents of a package based on the actual files (except the SPDX document itself, if it is included in the package) that make up each package and that correlates to the data in this SPDX document.
 
