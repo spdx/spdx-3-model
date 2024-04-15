@@ -4,18 +4,18 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Everything having to do with datasets.
+The Dataset Profile provides additional metadata, based on Software Profile, that is useful for datasets.
 
 ## Description
 
-The Dataset namespace defines tbd.
+The Dataset namespace defines concepts related to dataset, including its preparation process, its characteristics, and its access methods.
 
 ## Metadata
 
-- id: https://rdf.spdx.org/v3/Dataset
+- id: https://spdx.org/rdf/3.0.0/terms/Dataset
 - name: Dataset
 
-## Profile conformance 
+## Profile conformance
 
 For an element collection to be conformant with this profile,
 the following has to hold:

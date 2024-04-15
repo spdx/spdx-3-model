@@ -20,4 +20,3 @@ Describes the different confidentiality levels as given by the [Traffic Light Pr
 - amber: Data points in the dataset can be shared only with specific organizations and their clients on a need to know basis.
 - green: Dataset can be shared within a community of peers and partners.
 - clear: Dataset may be distributed freely, without restriction.
-

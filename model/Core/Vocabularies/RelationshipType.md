@@ -32,7 +32,7 @@ name completes the sentence:
 - contains: The `from` Element contains each `to` Element
 - coordinatedBy: (Security) The `from` Vulnerability is coordinatedBy the `to` Agent(s) (vendor, researcher, or consumer agent)
 - copiedTo: The `from` Element has been copied to each `to` Element
-- delegatedTo: The `from` Agent is delegated to each `to` Agent during a LifecycleScopeType period, (e.g. `to` is acting on behalf of `from`)
+- delegatedTo: The `from` Agent is delegating an action to the Agent of the `to` Relationship (which must be of type invokedBy) during a LifecycleScopeType. (e.g. the `to` invokedBy Relationship is being done on behalf of `from`)
 - dependsOn: The `from` Element depends on each `to` Element during a LifecycleScopeType period.
 - descendantOf: The `from` Element is a descendant of each `to` Element
 - describes: The `from` Element describes each `to` Element. To denote the root(s) of a tree of elements in a collection, the rootElement property should be used.

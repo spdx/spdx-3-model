@@ -13,10 +13,10 @@ It also provides the base abstract class, AnyLicenseInfo, used for references to
 The SimpleLicensingText class provides a place to record any license text found that does not match a license
 on the SPDX license list.
 
-The ExpandingLicensing profile can be used to represent the complete parsed license expressions.
+The ExpandedLicensing profile can be used to represent the complete parsed license expressions.
 
 ## Metadata
 
-- id: https://rdf.spdx.org/v3/SimpleLicensing
+- id: https://spdx.org/rdf/3.0.0/terms/SimpleLicensing
 - name: SimpleLicensing
 

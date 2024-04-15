@@ -27,6 +27,11 @@ following applies:
 * the SPDX data creator has intentionally provided no information (no
   meaning should be implied by doing so).
 
+If a copyrightText is present, but consists of solely an empty string or a
+string with no substantive content (e.g., a string that contains only
+whitespace), then this should be interpreted as equivalent to a "NOASSERTION"
+value as described above.
+
 ## Metadata
 
 - name: copyrightText

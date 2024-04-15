@@ -19,10 +19,6 @@ such as a package, a file, or a snippet.
 
 ## Properties
 
-- contentIdentifier
-  - type: xsd:anyURI
-  - minCount: 0
-  - maxCount: 1
 - primaryPurpose
   - type: SoftwarePurpose
   - minCount: 0
@@ -36,5 +32,8 @@ such as a package, a file, or a snippet.
   - maxCount: 1
 - attributionText
   - type: xsd:string
+  - minCount: 0
+- contentIdentifier
+  - type: ContentIdentifier
   - minCount: 0
 

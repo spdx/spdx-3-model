@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# end
+# endIntegerRange
 
 ## Summary
 
@@ -8,11 +8,11 @@ Defines the end of a range.
 
 ## Description
 
-end is a positive integer that defines the end of a range.
+endIntegerRange is a positive integer that defines the end of a range.
 
 ## Metadata
 
-- name: end
+- name: endIntegerRange
 - Nature: DataProperty
 - Range: xsd:positiveInteger
 

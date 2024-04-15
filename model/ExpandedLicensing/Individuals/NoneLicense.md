@@ -14,7 +14,8 @@ NoneLicense should be used if the SPDX creator determines there is no license av
 ## Metadata
 
 - name: NoneLicense
-- type: /SimpleLicensing/AnyLicenseInfo
+- type: IndividualLicensingInfo
+- IRI: https://spdx.org/rdf/3.0.0/terms/Licensing/None
 
 ## Property Values
 

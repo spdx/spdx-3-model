@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Provide context for a relationship that occurs in the lifecycle.
 
 ## Description
 
-TODO
+Certain relationships are sensitive to where they occur in the lifecycle.  This parameter lets us avoid a proliferation of relationships, by parameterizing this context information for a relationship.
 
 ## Metadata
 

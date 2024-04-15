@@ -5,7 +5,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 ## Summary
 
 Portion of an AnyLicenseInfo representing a set of licensing information
-where only any one of the elements applies.
+where only one of the elements applies.
 
 ## Description
 

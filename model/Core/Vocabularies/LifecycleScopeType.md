@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Provide an enumerated set of lifecycle phases that can provide context to relationships.
 
 ## Description
 
-TODO
+This enumeration summarizes common phases when dependency and other relationships, have different implications, based on their context.  For example,  a build dependency, may have different implications than a operational dependency.
 
 ## Metadata
 
@@ -16,9 +16,9 @@ TODO
 
 ## Entries
 
-- design: TODOdescription
-- build: TODOdescription
-- development: TODOdescription
-- test: TODOdescription
-- runtime: TODOdescription
-- other: TODOdescription
+- design: A relationship has specific context implications during an element's design.
+- development: A relationship has specific context implications during development phase of an element. 
+- build: A relationship has specific context implications during an element's build phase, during development.
+- test: A relationship has specific context implications during an element's testing phase, during development.
+- runtime: A relationship has specific context implications during the execution phase of an element.
+- other: A relationship has other specific context information necessary to capture that the above set of enumerations does not handle.

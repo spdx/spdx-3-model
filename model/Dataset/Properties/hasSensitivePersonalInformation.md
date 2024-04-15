@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# sensitivePersonalInformation
+# hasSensitivePersonalInformation
 
 ## Summary
 
@@ -8,11 +8,13 @@ Describes if any sensitive personal information is present in the dataset.
 
 ## Description
 
-SensitivePersonalInformation indicates the presence of sensitive personal data
+Indicates the presence of sensitive personal data
 or information that allows drawing conclusions about a person's identity.
+
+Related: `useSensitivePersonalInformation` in `/AI/AIPackage`
 
 ## Metadata
 
-- name: sensitivePersonalInformation
+- name: hasSensitivePersonalInformation
 - Nature: ObjectProperty
 - Range: /Core/PresenceType
