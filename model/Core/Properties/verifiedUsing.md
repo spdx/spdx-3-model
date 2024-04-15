@@ -10,6 +10,8 @@ Provides an IntegrityMethod with which the integrity of an Element can be assert
 
 VerifiedUsing provides an IntegrityMethod with which the integrity of an Element can be asserted.
 
+Please note that different profiles may also provide additional methods for verifying the integrity of specific subclasses of Elements.
+
 ## Metadata
 
 - name: verifiedUsing
