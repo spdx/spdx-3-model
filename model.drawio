@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-04-21T18:59:43.437Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:124.0) Gecko/20100101 Firefox/124.0" etag="2ylb3QwWEvLFUxZyLB1W" compressed="false" version="24.2.5" type="github" pages="11">
+<mxfile host="app.diagrams.net" modified="2024-04-21T19:17:29.185Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:124.0) Gecko/20100101 Firefox/124.0" etag="XccCgXp0UWAGMZz2v3x2" compressed="false" version="24.2.5" type="github" pages="11">
   <diagram id="MqBy92FNWJOg9jOokCTN" name="Core">
-    <mxGraphModel dx="954" dy="1492" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="418" dy="1385" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -658,7 +658,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="38Y2qA5PATijJB36qmQP" name="Software">
-    <mxGraphModel dx="2874" dy="2355" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1002" dy="2134" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1026,7 +1026,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="CdX0Z9I8omaGFy3n41Yx" name="Software Enumerations">
-    <mxGraphModel dx="1774" dy="1505" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="-777" dy="414" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1867,7 +1867,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="L82DZidMtc7JshnkpAnJ" name="AI">
-    <mxGraphModel dx="1047" dy="1742" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2000,7 +2000,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="jvcBLcdmtOIPwAJ3PkCR" name="Dataset">
-    <mxGraphModel dx="2874" dy="2605" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="323" dy="1514" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2033,58 +2033,58 @@
         <mxCell id="Vtgq-jyTV3dxKo35nZ68-9" value="DatasetPackage" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#f5f5f5;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
           <mxGeometry x="290" y="-626" width="413.51" height="566" as="geometry" />
         </mxCell>
-        <mxCell id="Vtgq-jyTV3dxKo35nZ68-10" value="+ Core/Artifact/originatedBy: Agent[1]" style="text;strokeColor=none;fillColor=#E1D5E7;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
+        <mxCell id="Vtgq-jyTV3dxKo35nZ68-12" value="+ Core/Artifact/builtTime: DataTime[1]" style="text;strokeColor=none;fillColor=#E1D5E7;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
           <mxGeometry y="26" width="413.51" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Vtgq-jyTV3dxKo35nZ68-11" value="+ Software/Package/downloadLocation: anyURI[1]" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
+        <mxCell id="Vtgq-jyTV3dxKo35nZ68-10" value="+ Core/Artifact/originatedBy: Agent[1]" style="text;strokeColor=none;fillColor=#E1D5E7;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
           <mxGeometry y="56" width="413.51" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Vtgq-jyTV3dxKo35nZ68-13" value="+ Software/SoftwareArtifact/primaryPurpose: SoftwarePurpose[1]" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
+        <mxCell id="Vtgq-jyTV3dxKo35nZ68-14" value="+ Core/Artifact/releaseTime: DateTime[1]" style="text;strokeColor=none;fillColor=#E1D5E7;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
           <mxGeometry y="86" width="413.51" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Vtgq-jyTV3dxKo35nZ68-12" value="+ Core/Artifact/builtTime: DataTime[1]" style="text;strokeColor=none;fillColor=#E1D5E7;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
+        <mxCell id="Vtgq-jyTV3dxKo35nZ68-11" value="+ Software/Package/downloadLocation: anyURI[1]" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
           <mxGeometry y="116" width="413.51" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Vtgq-jyTV3dxKo35nZ68-14" value="+ Core/Artifact/releaseTime: DateTime[1]" style="text;strokeColor=none;fillColor=#E1D5E7;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
+        <mxCell id="Vtgq-jyTV3dxKo35nZ68-13" value="+ Software/SoftwareArtifact/primaryPurpose: SoftwarePurpose[1]" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
           <mxGeometry y="146" width="413.51" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Vtgq-jyTV3dxKo35nZ68-15" value="+ datasetType: DatasetType[1]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
+        <mxCell id="Vtgq-jyTV3dxKo35nZ68-24" value="+ anonymizationMethodUsed: String[0..*]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
           <mxGeometry y="176" width="413.51" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Vtgq-jyTV3dxKo35nZ68-16" value="+ dataCollectionProcess: String[0..1]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
+        <mxCell id="Vtgq-jyTV3dxKo35nZ68-25" value="+ confidentialityLevel: ConfidentialityLevelType[0..1]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
           <mxGeometry y="206" width="413.51" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Vtgq-jyTV3dxKo35nZ68-17" value="+ intendedUse: String[0..1]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
+        <mxCell id="Vtgq-jyTV3dxKo35nZ68-16" value="+ dataCollectionProcess: String[0..1]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
           <mxGeometry y="236" width="413.51" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Vtgq-jyTV3dxKo35nZ68-18" value="+ datasetSize: nonNegativeInteger[0..1]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
+        <mxCell id="Vtgq-jyTV3dxKo35nZ68-20" value="+ dataPreprocessing: String[0..*]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
           <mxGeometry y="266" width="413.51" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Vtgq-jyTV3dxKo35nZ68-19" value="+ datasetNoise: String[0..1]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
+        <mxCell id="Vtgq-jyTV3dxKo35nZ68-27" value="+ datasetAvailability: DatasetAvailabilityType[0..1]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
           <mxGeometry y="296" width="413.51" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Vtgq-jyTV3dxKo35nZ68-20" value="+ datasetPreprocessing: String[0..*]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
+        <mxCell id="Vtgq-jyTV3dxKo35nZ68-19" value="+ datasetNoise: String[0..1]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
           <mxGeometry y="326" width="413.51" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Vtgq-jyTV3dxKo35nZ68-21" value="+ sensor: DictionaryEntry[0..*]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
+        <mxCell id="Vtgq-jyTV3dxKo35nZ68-18" value="+ datasetSize: nonNegativeInteger[0..1]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
           <mxGeometry y="356" width="413.51" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Vtgq-jyTV3dxKo35nZ68-22" value="+ knownBias: String[0..*]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
+        <mxCell id="Vtgq-jyTV3dxKo35nZ68-15" value="+ datasetType: DatasetType[1]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
           <mxGeometry y="386" width="413.51" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Vtgq-jyTV3dxKo35nZ68-23" value="+ hasSensitivePersonalInformation: /Core/PresenceType[0..1]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
+        <mxCell id="Vtgq-jyTV3dxKo35nZ68-26" value="+ datasetUpdateMechanism: String[0..1]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
           <mxGeometry y="416" width="413.51" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Vtgq-jyTV3dxKo35nZ68-24" value="+ anonymizationMethodUsed: String[0..*]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
+        <mxCell id="Vtgq-jyTV3dxKo35nZ68-23" value="+ hasSensitivePersonalInformation: /Core/PresenceType[0..1]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
           <mxGeometry y="446" width="413.51" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Vtgq-jyTV3dxKo35nZ68-25" value="+ confidentialityLevel: ConfidentialityLevelType[0..1]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
+        <mxCell id="Vtgq-jyTV3dxKo35nZ68-17" value="+ intendedUse: String[0..1]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
           <mxGeometry y="476" width="413.51" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Vtgq-jyTV3dxKo35nZ68-26" value="+ datasetUpdateMechanism: String[0..1]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
+        <mxCell id="Vtgq-jyTV3dxKo35nZ68-22" value="+ knownBias: String[0..*]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
           <mxGeometry y="506" width="413.51" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Vtgq-jyTV3dxKo35nZ68-27" value="+ datasetAvailability: DatasetAvailabilityType[0..1]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
+        <mxCell id="Vtgq-jyTV3dxKo35nZ68-21" value="+ sensor: DictionaryEntry[0..*]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="Vtgq-jyTV3dxKo35nZ68-9" vertex="1">
           <mxGeometry y="536" width="413.51" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Vtgq-jyTV3dxKo35nZ68-30" value="" style="endArrow=block;html=1;rounded=0;entryX=0.455;entryY=0.942;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endFill=0;" parent="1" source="Vtgq-jyTV3dxKo35nZ68-9" target="Vtgq-jyTV3dxKo35nZ68-7" edge="1">
@@ -2099,10 +2099,10 @@
         <mxCell id="Vtgq-jyTV3dxKo35nZ68-32" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center ; text-decoration: underline&quot;&gt;&lt;b&gt;ConfidentialityLevelType&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;red&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;amber&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;green&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;clear&lt;/font&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
           <mxGeometry x="840" y="-620" width="190" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="Vtgq-jyTV3dxKo35nZ68-33" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center ; text-decoration: underline&quot;&gt;&lt;b&gt;DatasetAvailabilityType&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;directDownload&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;scrapingScript&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;query&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;clickthrough&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;registration&lt;/font&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
+        <mxCell id="Vtgq-jyTV3dxKo35nZ68-33" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center ; text-decoration: underline&quot;&gt;&lt;b&gt;DatasetAvailabilityType&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;clickthrough&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;directDownload&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;query&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;registration&lt;/font&gt;&lt;/p&gt;&lt;div&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;scrapingScript&lt;/font&gt;&lt;/p&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;/font&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
           <mxGeometry x="840" y="-500" width="190" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="Vtgq-jyTV3dxKo35nZ68-34" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center ; text-decoration: underline&quot;&gt;&lt;b&gt;DatasetType&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;structured&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;numeric&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;text&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;categorical&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;graph&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;timeseries&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;timestamp&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;sensor&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;image&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;syntactic&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;audio&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;video&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;other&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;noAssertion&lt;/font&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
+        <mxCell id="Vtgq-jyTV3dxKo35nZ68-34" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center ; text-decoration: underline&quot;&gt;&lt;b&gt;DatasetType&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;audio&lt;/font&gt;&lt;/p&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;/font&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;categorical&lt;/font&gt;&lt;/p&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;/font&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;graph&lt;/font&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;image&lt;/font&gt;&lt;/p&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;/font&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;noAssertion&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;numeric&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;other&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;/p&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;/font&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;/p&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&amp;nbsp;sensor&lt;/font&gt;&lt;/div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;/font&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;structured&lt;/font&gt;&lt;/p&gt;&lt;font face=&quot;Courier New&quot;&gt;&amp;nbsp;syntactic&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&amp;nbsp;text&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&amp;nbsp;timeseries&lt;/font&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;timestamp&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 8px&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;video&lt;/font&gt;&lt;/p&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
           <mxGeometry x="840" y="-360" width="190" height="250" as="geometry" />
         </mxCell>
       </root>
