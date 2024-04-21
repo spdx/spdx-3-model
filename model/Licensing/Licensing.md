@@ -16,6 +16,8 @@ fully parsed syntax tree of license expressions).
 
 There are 2 relationship types related to licensing - declaredLicense and concludedLicense.
 
+### declaredLicense
+
 A declaredLicense identifies the license information actually found in the Software Artifact,
 for example as detected by use of automated tooling.
 
@@ -26,24 +28,29 @@ included, as needed, in the concludedLicense field.
 A declaredLicense may be expressed differently in practice for different
 types of Software Artifacts. For example:
 
-- for Packages:
-  - would include license info for the Package as a
-    whole, found in the Package itself (e.g., LICENSE file,
-    README file, metadata in the Package, etc.)
-  - would not include any license information that is not in the Package
-    itself (e.g., license information from the project’s website or from a
-    third party repository or website)
-- for Files:
-  - would include license info found in the File itself (e.g., license
-    header or notice, comments indicating the license, SPDX-License-Identifier expression)
-  - would not include license info found in a different file (e.g., LICENSE
-    file in the top directory of a repository)
-- for Snippets:
-  - would include license info found in the Snippet itself (e.g., license
-    notice, comments, SPDX-License-Identifier expression)
-  - would not include license info found elsewhere in the File or in a
-    different File (e.g., comment at top of File if it is not within the
-    Snippet, LICENSE file in the top directory of a repository)
+for Packages:
+
+- would include license info for the Package as a
+  whole, found in the Package itself (e.g., LICENSE file,
+  README file, metadata in the Package, etc.)
+- would not include any license information that is not in the Package
+  itself (e.g., license information from the project’s website or from a
+  third party repository or website)
+
+for Files:
+
+- would include license info found in the File itself (e.g., license
+  header or notice, comments indicating the license, SPDX-License-Identifier expression)
+- would not include license info found in a different file (e.g., LICENSE
+  file in the top directory of a repository)
+
+for Snippets:
+
+- would include license info found in the Snippet itself (e.g., license
+  notice, comments, SPDX-License-Identifier expression)
+- would not include license info found elsewhere in the File or in a
+  different File (e.g., comment at top of File if it is not within the
+  Snippet, LICENSE file in the top directory of a repository)
 
 A declaredLicense relationship to NoneLicense indicates that the
 corresponding Package, File or Snippet contains no license information
@@ -63,6 +70,8 @@ about whether or not a declaredLicense exists.
 Note that a missing declaredLicense is not the same as a relationship to NoAssertionLicense
 since the latter is a "known unknown" whereas no assumptions can be made
 from a missing declaredLicense relationship.
+
+### concludedLicense
 
 A concludedLicense is the license identified by the SPDX data creator,
 based on analyzing the license information in the Software Artifact
