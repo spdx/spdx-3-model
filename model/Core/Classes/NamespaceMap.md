@@ -8,8 +8,8 @@ A mapping between prefixes and namespace partial URIs.
 
 ## Description
 
-A namespace map allows the creator of a collection of Elements that could be serialized to suggest 
-a set of shorter identifiers ("prefixes") for particular namespace portions 
+A namespace map allows the creator of a collection of Elements that could be serialized to suggest
+a set of shorter identifiers ("prefixes") for particular namespace portions
 of ElementIDs to be used in SPDX content serialization in order to provide a more
 human-readable and smaller serialized representation of the Elements.
 

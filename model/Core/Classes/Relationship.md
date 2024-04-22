@@ -11,11 +11,11 @@ Describes a relationship between one or more elements.
 A Relationship is a grouping of characteristics unique to an assertion
 that one Element is related to one or more other Elements in some way.
 
-To explicitly assert that no such relationships exist, the `to` property 
+To explicitly assert that no such relationships exist, the `to` property
 should contain the 'NONE' individual and no other elements.
 A relationship that contains 'NONE' and additional elements in the `to` property is not valid.
 
-To explicitly assert that no assertions are being made regarding the 
+To explicitly assert that no assertions are being made regarding the
 existence of such relationships, the `to` property should contain the 'NOASSERTION' individual.
 
 ## Metadata
