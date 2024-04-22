@@ -15,4 +15,3 @@ Identifiers are not always structured as URIs. An identifierLocator is a locatio
 - name: identifierLocator
 - Nature: DataProperty
 - Range: xsd:anyURI
-

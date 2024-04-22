@@ -15,4 +15,3 @@ A scope is additional context about a relationship, that clarifies the relations
 - name: scope
 - Nature: ObjectProperty
 - Range: LifecycleScopeType
-

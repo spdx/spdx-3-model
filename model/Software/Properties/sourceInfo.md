@@ -20,4 +20,3 @@ any anomalies or discoveries in the determination of the origin of the package.
 - name: sourceInfo
 - Nature: DataProperty
 - Range: xsd:string
-

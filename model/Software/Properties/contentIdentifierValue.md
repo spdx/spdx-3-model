@@ -15,4 +15,3 @@ A contentIdentifierValue specifies the value of a content identifier.
 - name: contentIdentifierValue
 - Nature: DataProperty
 - Range: xsd:anyURI
-

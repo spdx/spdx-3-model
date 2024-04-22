@@ -18,4 +18,3 @@ This field may also include a description of improvements over prior versions of
 - name: description
 - Nature: DataProperty
 - Range: xsd:string
-

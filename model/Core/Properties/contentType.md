@@ -15,4 +15,3 @@ ContentType specifies the media type of an Element or Property.
 - name: contentType
 - Nature: DataProperty
 - Range: MediaType
-

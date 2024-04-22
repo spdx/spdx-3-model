@@ -34,4 +34,3 @@ An Annotation is an assertion made in relation to one or more elements. The `con
   - type: Element
   - minCount: 1
   - maxCount: 1
-

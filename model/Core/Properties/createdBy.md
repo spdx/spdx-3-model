@@ -17,4 +17,3 @@ the general reliability/accuracy of the analysis information.
 - name: createdBy
 - Nature: ObjectProperty
 - Range: Agent
-

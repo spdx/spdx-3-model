@@ -31,4 +31,3 @@ may have been originally created under another license or copied from a place wi
   - type: File
   - minCount: 1
   - maxCount: 1
-

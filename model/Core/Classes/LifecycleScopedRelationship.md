@@ -22,4 +22,3 @@ Certain relationships are sensitive to where they occur in the lifecycle.  This 
   - type: LifecycleScopeType
   - minCount: 0
   - maxCount: 1
-

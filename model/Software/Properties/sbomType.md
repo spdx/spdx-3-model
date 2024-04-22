@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Provides information about the type of an SBOM. 
+Provides information about the type of an SBOM.
 
 ## Description
 

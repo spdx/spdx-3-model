@@ -49,4 +49,3 @@ existence of such relationships, the `to` property should contain the 'NOASSERTI
   - type: DateTime
   - minCount: 0
   - maxCount: 1
-

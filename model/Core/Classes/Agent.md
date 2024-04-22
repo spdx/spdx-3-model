@@ -15,4 +15,3 @@ The Agent class represents anything that has the potential to act on a system. T
 - name: Agent
 - SubclassOf: Element
 - Instantiability: Concrete
-

@@ -15,4 +15,3 @@ A endTime specifies the time from which element is no applicable / valid.
 - name: endTime
 - Nature: DataProperty
 - Range: DateTime
-

@@ -17,4 +17,3 @@ There is also an XML schema available at https://github.com/spdx/license-list-XM
 - name: licenseXml
 - Nature: DataProperty
 - Range: xsd:string
-

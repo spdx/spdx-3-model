@@ -15,4 +15,3 @@ An algorithm specifies the algorithm that was used for calculating the hash valu
 - name: algorithm
 - Nature: ObjectProperty
 - Range: HashAlgorithm
-

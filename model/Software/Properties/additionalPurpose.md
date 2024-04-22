@@ -15,4 +15,3 @@ Additional purpose provides information about the additional purposes of the sof
 - name: additionalPurpose
 - Nature: ObjectProperty
 - Range: SoftwarePurpose
-

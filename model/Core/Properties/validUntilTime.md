@@ -15,4 +15,3 @@ A validUntilTime specifies until when the artifact can be used before its usage 
 - name: validUntilTime
 - Nature: DataProperty
 - Range: DateTime
-

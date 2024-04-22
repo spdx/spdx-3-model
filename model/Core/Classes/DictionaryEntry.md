@@ -24,4 +24,3 @@ The class used for implementing a generic string mapping (also known as associat
 - value
   - type: xsd:string
   - maxCount: 1
-

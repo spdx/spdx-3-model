@@ -8,9 +8,9 @@ Identifies the download Uniform Resource Identifier for the package at the time 
 
 ## Description
 
-DownloadLocation identifies the download Uniform Resource Identifier 
+DownloadLocation identifies the download Uniform Resource Identifier
 for the package at the time that the document was created.
-Where and how to download the exact package being referenced 
+Where and how to download the exact package being referenced
 is critical for verification and tracking data.
 
 ## Metadata
@@ -18,4 +18,3 @@ is critical for verification and tracking data.
 - name: downloadLocation
 - Nature: DataProperty
 - Range: xsd:anyURI
-

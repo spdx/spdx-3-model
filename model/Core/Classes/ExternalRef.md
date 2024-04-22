@@ -30,4 +30,3 @@ that provides additional context, characteristics or related information about a
 - comment
   - type: xsd:string
   - maxCount: 1
-

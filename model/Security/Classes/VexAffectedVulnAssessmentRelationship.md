@@ -13,7 +13,7 @@ VexAffectedVulnAssessmentRelationship connects a vulnerability and a number
 of elements. The relationship marks these elements as products affected by the
 vulnerability. This relationship corresponds to the VEX affected status.
 
-**Constraints**
+### Constraints
 
 When linking elements using a VexAffectedVulnAssessmentRelationship, the
 following requirements must be observed:
@@ -21,7 +21,7 @@ following requirements must be observed:
 - Elements linked with a VulnVexAffectedAssessmentRelationship are constrained
 to the affects relationship type.
 
-**Syntax**
+### Syntax
 
 ```json
 {
@@ -38,11 +38,13 @@ to the affects relationship type.
 ```
 
 ## Metadata
+
 - name: VexAffectedVulnAssessmentRelationship
-- SubclassOf: VexVulnAssessmentRelationship 
+- SubclassOf: VexVulnAssessmentRelationship
 - Instantiability: Concrete
 
 ## Properties
+
 - actionStatement
   - type: xsd:string
   - minCount: 0

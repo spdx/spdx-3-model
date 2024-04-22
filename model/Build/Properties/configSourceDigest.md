@@ -15,4 +15,3 @@ configSourceDigest is the checksum of the build configuration file used by a bui
 - name: configSourceDigest
 - Nature: ObjectProperty
 - Range: /Core/Hash
-

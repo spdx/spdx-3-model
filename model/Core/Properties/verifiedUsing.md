@@ -17,4 +17,3 @@ Please note that different profiles may also provide additional methods for veri
 - name: verifiedUsing
 - Nature: ObjectProperty
 - Range: IntegrityMethod
-

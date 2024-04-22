@@ -15,4 +15,3 @@ A Person is an individual human being.
 - name: Person
 - SubclassOf: Agent
 - Instantiability: Concrete
-

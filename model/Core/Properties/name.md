@@ -16,4 +16,3 @@ The name of an Element is an important convention and easier to refer to than th
 - name: name
 - Nature: DataProperty
 - Range: xsd:string
-

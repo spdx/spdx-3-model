@@ -16,4 +16,3 @@ but defined external to that document.
 - name: imports
 - Nature: ObjectProperty
 - Range: ExternalMap
-

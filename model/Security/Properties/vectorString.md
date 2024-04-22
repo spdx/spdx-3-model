@@ -10,7 +10,7 @@ Specifies the CVSS vector string for a vulnerability.
 
 Specifies any combination of the CVSS Base, Temporal, Threat, Environmental, and/or Supplemental vector string values for a vulnerability. Supports vectorStrings specified in all CVSS versions.
 
-**Constraints**
+### Constraints
 
 String values for the vectorString range must only include the abbreviated form of metric names specified in CVSS specifications, e.g. [https://www.first.org/cvss/v4.0/specification-document#Vector-String](https://www.first.org/cvss/v4.0/specification-document#Vector-String)
 
@@ -19,4 +19,3 @@ String values for the vectorString range must only include the abbreviated form 
 - name: vectorString
 - Nature: DataProperty
 - Range: xsd:string
-

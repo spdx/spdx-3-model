@@ -15,4 +15,3 @@ This field refers to one or more Elements that are part of an ElementCollection.
 - name: element
 - Nature: ObjectProperty
 - Range: Element
-

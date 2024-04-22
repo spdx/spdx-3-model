@@ -16,4 +16,3 @@ to the readers/reviewers of the document.
 - name: comment
 - Nature: DataProperty
 - Range: xsd:string
-

@@ -15,4 +15,3 @@ primaryPurpose provides information about the primary purpose of the software ar
 - name: primaryPurpose
 - Nature: ObjectProperty
 - Range: SoftwarePurpose
-

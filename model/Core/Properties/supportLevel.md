@@ -8,7 +8,7 @@ Specifies the level of support associated with an artifact.
 
 ## Description
 
-supportLevel provides an indication of what support expectations that the supplier of an artifact is providing to the user. 
+supportLevel provides an indication of what support expectations that the supplier of an artifact is providing to the user.
 
 ## Metadata
 

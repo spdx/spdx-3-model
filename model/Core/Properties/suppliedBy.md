@@ -11,7 +11,6 @@ Identifies who or what supplied the artifact or VulnAssessmentRelationship refer
 Identify the actual distribution source for the artifact (e.g., snippet, file, package, vulnerability) or VulnAssessmentRelationship being referenced.
 This might or might not be different from the originating distribution source for the artifact (e.g., snippet, file, package, vulnerability) or VulnAssessmentRelationship..
 
-
 ## Metadata
 
 - name: suppliedBy

@@ -16,4 +16,3 @@ provide concise information about the function or use of the Element.
 - name: summary
 - Nature: DataProperty
 - Range: xsd:string
-

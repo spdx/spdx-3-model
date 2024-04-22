@@ -8,7 +8,7 @@ The Build Profile defines the set of information required to describe an instanc
 
 ## Description
 
-A Software Build is defined here as the act of converting software inputs into software artifacts using software build tools. Inputs can include source code, config files, artifacts that are build environments, and build tools. Outputs can include intermediate artifacts to other build inputs or the final artifacts. 
+A Software Build is defined here as the act of converting software inputs into software artifacts using software build tools. Inputs can include source code, config files, artifacts that are build environments, and build tools. Outputs can include intermediate artifacts to other build inputs or the final artifacts.
 
 The Build profile provides a subclass of Element called Build. It also provides a minimum set of required Relationship Types from the Core profile:
 
@@ -32,7 +32,6 @@ The `hasInputs` relationship can be applied to a config file or a build tool if 
 
 - id: https://spdx.org/rdf/3.0.0/terms/Build
 - name: Build
-
 
 ## Profile Conformance
 

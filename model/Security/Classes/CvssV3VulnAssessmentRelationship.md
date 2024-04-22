@@ -12,12 +12,12 @@ A CvssV3VulnAssessmentRelationship relationship describes the determined score,
 severity, and vector of a vulnerability using version [3.0](https://www.first.org/cvss/v3.0/specification-document) or [3.1](https://www.first.org/cvss/v3.1/specification-document) of the Common
 Vulnerability Scoring System (CVSS). It is intended to communicate the results of using a CVSS calculator.
 
-**Constraints**
+### Constraints
 
 - The value of severity must be one of 'NONE', 'LOW', 'MEDIUM', 'HIGH' or 'CRITICAL'.
 - The relationship type must be set to `hasAssessmentFor`.
 
-**Syntax**
+### Syntax
 
 ```json
 {

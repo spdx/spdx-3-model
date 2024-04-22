@@ -17,4 +17,3 @@ creator.
 - name: CustomLicense
 - SubclassOf: License
 - Instantiability: Concrete
-

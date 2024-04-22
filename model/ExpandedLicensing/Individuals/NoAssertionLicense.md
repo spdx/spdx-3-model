@@ -3,8 +3,8 @@ SPDX-License-Identifier: Community-Spec-1.0
 # NoAssertionLicense
 
 ## Summary
-An Individual Value for License when no assertion can be made about its actual value.
 
+An Individual Value for License when no assertion can be made about its actual value.
 
 ## Description
 
@@ -21,4 +21,3 @@ the SPDX creator has intentionally provided no information (no meaning should be
 ## Property Values
 
 - name: "NOASSERTION"
-

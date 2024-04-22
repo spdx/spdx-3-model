@@ -17,4 +17,3 @@ that provides additional characteristics of an Element.
 - name: externalRef
 - Nature: ObjectProperty
 - Range: ExternalRef
-

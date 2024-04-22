@@ -15,4 +15,3 @@ A packageVersion is useful for identification purposes and for indicating later 
 - name: packageVersion
 - Nature: DataProperty
 - Range: xsd:string
-

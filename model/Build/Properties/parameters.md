@@ -15,4 +15,3 @@ parameters is a key-value map of all build parameters and their values that were
 - name: parameters
 - Nature: ObjectProperty
 - Range: /Core/DictionaryEntry
-

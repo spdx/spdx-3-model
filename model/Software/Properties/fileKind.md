@@ -15,4 +15,3 @@ An SPDX file may represent a specific file or a directory of files.  In the futu
 - name: fileKind
 - Nature: ObjectProperty
 - Range: FileKindType
-

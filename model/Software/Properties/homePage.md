@@ -19,4 +19,3 @@ referenced by the SPDX document creator.
 - name: homePage
 - Nature: DataProperty
 - Range: xsd:anyURI
-

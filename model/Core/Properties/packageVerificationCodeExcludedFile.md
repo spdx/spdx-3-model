@@ -17,4 +17,3 @@ In general, every filename is preceded with a ./, see http://www.ietf.org/rfc/rf
 - name: packageVerificationCodeExcludedFile
 - Nature: DataProperty
 - Range: xsd:string
-

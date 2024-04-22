@@ -16,4 +16,3 @@ It may be used for verifying its identity and/or integrity.
 - name: contentIdentifier
 - Nature: DataProperty
 - Range: ContentIdentifier
-
