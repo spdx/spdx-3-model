@@ -10,7 +10,7 @@ Provides a place for the SPDX data creator to record the package URL string (in 
 
 A packageUrl (commonly pronounced and referred to as "purl") is an attempt to standardize package representations in order to reliably identify and locate software packages. A purl is a URL string which represents a package in a mostly universal and uniform way across programming languages, package managers, packaging conventions, tools, APIs and databases.
 
-the purl URL string is defined by seven components:
+The purl URL string is defined by seven components:
 ```
 scheme:type/namespace/name@version?qualifiers#subpath
 ```
