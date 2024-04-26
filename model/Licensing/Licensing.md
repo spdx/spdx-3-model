@@ -31,7 +31,7 @@ types of Software Artifacts. For example:
     whole, found in the Package itself (e.g., LICENSE file,
     README file, metadata in the Package, etc.)
   * would not include any license information that is not in the Package
-    itself (e.g., license information from the project’s website or from a
+    itself (e.g., license information from the project's website or from a
     third party repository or website)
 * for Files:
   * would include license info found in the File itself (e.g., license
