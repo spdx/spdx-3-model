@@ -1,6 +1,6 @@
 {
   "@context": [
-    "https://spdx.github.io/spdx-3-model/context.json",
+    "https://spdx.org/rdf/3.0.0/spdx-context.jsonld",
     {
       "spdx-example": "http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#"
     }
