@@ -26,22 +26,22 @@ included, as needed, in the concludedLicense field.
 A declaredLicense may be expressed differently in practice for different
 types of Software Artifacts. For example:
 
-* for Packages:
-  * would include license info for the Package as a
+- for Packages:
+  - would include license info for the Package as a
     whole, found in the Package itself (e.g., LICENSE file,
     README file, metadata in the Package, etc.)
-  * would not include any license information that is not in the Package
+  - would not include any license information that is not in the Package
     itself (e.g., license information from the project’s website or from a
     third party repository or website)
-* for Files:
-  * would include license info found in the File itself (e.g., license
+- for Files:
+  - would include license info found in the File itself (e.g., license
     header or notice, comments indicating the license, SPDX-License-Identifier expression)
-  * would not include license info found in a different file (e.g., LICENSE
+  - would not include license info found in a different file (e.g., LICENSE
     file in the top directory of a repository)
-* for Snippets:
-  * would include license info found in the Snippet itself (e.g., license
+- for Snippets:
+  - would include license info found in the Snippet itself (e.g., license
     notice, comments, SPDX-License-Identifier expression)
-  * would not include license info found elsewhere in the File or in a
+  - would not include license info found elsewhere in the File or in a
     different File (e.g., comment at top of File if it is not within the
     Snippet, LICENSE file in the top directory of a repository)
 
@@ -51,10 +51,11 @@ whatsoever.
 
 A declaredLicense relationship to NoAssertionLicense 
 indicates that one of the following applies:
-* the SPDX data creator has attempted to but cannot reach a reasonable
+
+- the SPDX data creator has attempted to but cannot reach a reasonable
   objective determination;
-* the SPDX data creator has made no attempt to determine this field; or
-* the SPDX data creator has intentionally provided no information (no meaning
+- the SPDX data creator has made no attempt to determine this field; or
+- the SPDX data creator has intentionally provided no information (no meaning
   should be implied by doing so).
   
 If a declaredLicense relationship is not present, no assumptions can be made
@@ -76,10 +77,11 @@ Software Artifact.
 
 A concludedLicense relationship to NoAssertionLicense
 indicates that one of the following applies:
-* the SPDX data creator has attempted to but cannot reach a reasonable
+
+- the SPDX data creator has attempted to but cannot reach a reasonable
   objective determination;
-* the SPDX data creator has made no attempt to determine this field; or
-* the SPDX data creator has intentionally provided no information (no
+- the SPDX data creator has made no attempt to determine this field; or
+- the SPDX data creator has intentionally provided no information (no
   meaning should be implied by doing so).
  
 If a concludedLicense is not present, no assumptions can be made
