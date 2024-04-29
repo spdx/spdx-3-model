@@ -17,7 +17,7 @@ The profile may also contain additional restrictions on existing properties and
 classes defined in other profiles.
 
 If the creator of an SPDX collection of elements includes a profile in the list
-of conformanceProfiles, they are claiming that all contained elements conform
+of profileConformance, they are claiming that all contained elements conform
 to all restrictions defined for that profile.
 
 ## Metadata
@@ -33,7 +33,6 @@ to all restrictions defined for that profile.
 - expandedLicensing: the element follows the expanded Licensing profile
   specification
 - extension: the element follows the Extension profile specification
-- licensing: the element follows the Licensing profile specification
 - lite: the element follows the Lite profile specification
 - security: the element follows the Security profile specification
 - simpleLicensing: the element follows the simple Licensing profile
