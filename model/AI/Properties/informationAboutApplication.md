@@ -4,11 +4,13 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Provides relevant information about the AI software, not including the model description.
+Provides relevant information about the AI software, not including the model
+description.
 
 ## Description
 
 A free-form text description of how the AI model is used within the software.
+
 It should include any relevant information, such as pre-processing steps,
 third-party APIs, and other pertinent details.
 

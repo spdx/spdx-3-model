@@ -8,12 +8,11 @@ Provides an ExternalMap of Element identifiers.
 
 ## Description
 
-Imports provides an ExternalMap of Element identifiers that are used within a document
-but defined external to that document.
+Imports provides an ExternalMap of Element identifiers that are used within a
+document but defined external to that document.
 
 ## Metadata
 
 - name: imports
 - Nature: ObjectProperty
 - Range: ExternalMap
-

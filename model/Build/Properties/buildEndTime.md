@@ -8,7 +8,9 @@ Property that describes the time at which a build stops.
 
 ## Description
 
-buildEndTime describes the time at which a build stops or finishes. This value is typically recorded by the builder.
+buildEndTime describes the time at which a build stops or finishes.
+
+This value is typically recorded by the builder.
 
 ## Metadata
 

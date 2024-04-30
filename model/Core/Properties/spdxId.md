@@ -18,4 +18,3 @@ so that relationships between Elements can be clearly articulated.
 - name: spdxId
 - Nature: DataProperty
 - Range: xsd:anyURI
-

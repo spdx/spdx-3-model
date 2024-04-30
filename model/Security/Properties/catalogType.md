@@ -15,4 +15,3 @@ A catalogType is a mandatory value and must select one of the existing entries i
 - name: catalogType
 - Nature: ObjectProperty
 - Range: ExploitCatalogType
-

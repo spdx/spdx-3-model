@@ -29,21 +29,21 @@ or otherwise) which is defined by an SPDX data creator (CustomLicenseAddition).
   - type: xsd:string
   - minCount: 1
   - maxCount: 1
-- standardAdditionTemplate
-  - type: xsd:string
-  - minCount: 0
-  - maxCount: 1
 - isDeprecatedAdditionId
   - type: xsd:boolean
-  - minCount: 0
-  - maxCount: 1
-- obsoletedBy
-  - type: xsd:string
   - minCount: 0
   - maxCount: 1
 - licenseXml
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
+- obsoletedBy
+  - type: xsd:string
+  - minCount: 0
+  - maxCount: 1
 - seeAlso
   - type: xsd:anyURI
+- standardAdditionTemplate
+  - type: xsd:string
+  - minCount: 0
+  - maxCount: 1

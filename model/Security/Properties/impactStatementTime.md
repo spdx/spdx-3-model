@@ -15,4 +15,3 @@ Specifies the time when the impact statement was recorded.
 - name: impactStatementTime
 - Nature: DataProperty
 - Range: /Core/DateTime
-
