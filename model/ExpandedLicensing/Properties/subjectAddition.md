@@ -16,4 +16,3 @@ text' effect (WithAdditionOperator).
 - name: subjectAddition
 - Nature: ObjectProperty
 - Range: LicenseAddition
-

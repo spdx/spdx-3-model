@@ -15,4 +15,3 @@ An annotationType describes the type of an annotation.
 - name: annotationType
 - Nature: ObjectProperty
 - Range: AnnotationType
-

@@ -19,4 +19,3 @@ when comparing it to another text for matching purposes.
 - name: additionText
 - Nature: DataProperty
 - Range: xsd:string
-

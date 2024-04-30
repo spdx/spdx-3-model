@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Records the time when a recommended action was communicated in a VEX statement 
+Records the time when a recommended action was communicated in a VEX statement
 to mitigate a vulnerability.
 
 ## Description
@@ -19,4 +19,3 @@ when the action statement was first communicated.
 - name: actionStatementTime
 - Nature: DataProperty
 - Range: /Core/DateTime
-

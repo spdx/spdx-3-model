@@ -20,4 +20,3 @@ a License, but which is not itself a standalone License.
 - name: CustomLicenseAddition
 - SubclassOf: LicenseAddition
 - Instantiability: Concrete
-

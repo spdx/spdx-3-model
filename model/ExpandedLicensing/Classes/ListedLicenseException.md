@@ -21,11 +21,11 @@ https://spdx.org/licenses/exceptions-index.html.
 
 ## Properties
 
-- listVersionAdded
+- deprecatedVersion
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
-- deprecatedVersion
+- listVersionAdded
   - type: xsd:string
   - minCount: 0
   - maxCount: 1

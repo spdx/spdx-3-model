@@ -13,8 +13,9 @@ general safety risk of an AI system.
 
 Using categorization according to the
 [EU general risk assessment methodology](https://ec.europa.eu/docsroom/documents/17107).
-The methodology implements Article 20 of Regulation (EC) No 765/2008 and is intended to assist
-authorities when they assess general product safety compliance.
+The methodology implements Article 20 of Regulation (EC) No 765/2008 and is
+intended to assist authorities when they assess general product safety
+compliance.
 
 ## Metadata
 
