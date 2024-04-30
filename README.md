@@ -13,7 +13,7 @@ This repository holds the model for the information captured in SPDX version 3 s
 
 The editable files are written in a constrained subset of Markdown and are stored in the `main` branch.
 
-These files are automatically processed into the following formats:
+These files are automatically processed by spec-parser and the following are generated::
 
 - [MkDocs](https://www.mkdocs.org/) input, which then generates the [specification](https://spdx.github.io/spdx-spec/v3.0/)
 - [JSON-LD context](http://niem.github.io/json/reference/json-ld/context/) file: [spdx-context.jsonld](https://spdx.org/rdf/3.0.0/spdx-context.jsonld)
