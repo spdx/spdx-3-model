@@ -11,7 +11,7 @@ Asbtract ancestor class for all VEX relationships
 VexVulnAssessmentRelationship is an abstract subclass that defined the common
 properties shared by all the SPDX-VEX status relationships.
 
-### Constraints
+**Constraints**
 
 When linking elements using a VexVulnAssessmentRelationship, the following
 requirements must be observed:

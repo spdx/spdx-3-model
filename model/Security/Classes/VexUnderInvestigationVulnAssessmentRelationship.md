@@ -13,7 +13,7 @@ VexUnderInvestigationVulnAssessmentRelationship links a vulnerability to a
 number of products stating the vulnerability's impact on them is being
 investigated. It represents the VEX under_investigation status.
 
-### Constraints
+**Constraints**
 
 When linking elements using a VexUnderInvestigationVulnAssessmentRelationship
 the following requirements must be observed:
@@ -23,7 +23,7 @@ constrained to using the underInvestigationFor relationship type.
 - The from: end of the relationship must ve a /Security/Vulnerability classed
 element.
 
-### Syntax
+**Syntax**
 
 ```json
 {

@@ -8,15 +8,19 @@ Provides an EPSS assessment for a vulnerability.
 
 ## Description
 
-An EpssVulnAssessmentRelationship relationship describes the likelihood or probability that a vulnerability will be exploited in the wild, and the percentile ranking of probability relative to all other vulnerabilities' EPSS scores, using the Exploit Prediction Scoring System (EPSS) as defined at [https://www.first.org/epss/model](https://www.first.org/epss/model).
+An EpssVulnAssessmentRelationship relationship describes the likelihood or
+probability that a vulnerability will be exploited in the wild, and the
+percentile ranking of probability relative to all other vulnerabilities' EPSS
+scores, using the Exploit Prediction Scoring System (EPSS) as defined at
+[https://www.first.org/epss/model](https://www.first.org/epss/model).
 
-### Constraints
+**Constraints**
 
 - The relationship type must be set to hasAssessmentFor.
 - The probability must be between 0 and 1.
 - The percentile must be between 0 and 1.
 
-### Syntax
+**Syntax**
 
 ```json
 {

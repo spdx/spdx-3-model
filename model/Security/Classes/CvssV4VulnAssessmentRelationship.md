@@ -8,14 +8,18 @@ Provides a CVSS version 4 assessment for a vulnerability.
 
 ## Description
 
-A CvssV4VulnAssessmentRelationship relationship describes the determined score, severity, and vector of a vulnerability using version 4 of the Common Vulnerability Scoring System (CVSS) as defined on [https://www.first.org/cvss/v4.0/specification-document](https://www.first.org/cvss/v4.0/specification-document). It is intented to communicate the results of using a CVSS calculator.
+A CvssV4VulnAssessmentRelationship relationship describes the determined score,
+severity, and vector of a vulnerability using version 4 of the Common
+Vulnerability Scoring System (CVSS) as defined on
+[https://www.first.org/cvss/v4.0/specification-document](https://www.first.org/cvss/v4.0/specification-document).
+It is intended to communicate the results of using a CVSS calculator.
 
-### Constraints
+**Constraints**
 
 - The value of severity must be one of 'NONE', 'LOW', 'MEDIUM', 'HIGH' or 'CRITICAL'.
 - The relationship type must be set to hasAssessmentFor.
 
-### Syntax
+**Syntax**
 
 ```json
 {

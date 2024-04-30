@@ -8,13 +8,17 @@ Provides a CVSS version 2.0 assessment for a vulnerability.
 
 ## Description
 
-A CvssV2VulnAssessmentRelationship relationship describes the determined score and vector of a vulnerability using version 2.0 of the Common Vulnerability Scoring System (CVSS) as defined at [https://www.first.org/cvss/v2/guide](https://www.first.org/cvss/v2/guide). It is intended to communicate the results of using a CVSS calculator.
+A CvssV2VulnAssessmentRelationship relationship describes the determined score
+and vector of a vulnerability using version 2.0 of the Common Vulnerability
+Scoring System (CVSS) as defined at
+[https://www.first.org/cvss/v2/guide](https://www.first.org/cvss/v2/guide).
+It is intended to communicate the results of using a CVSS calculator.
 
-### Constraints
+**Constraints**
 
 - The relationship type must be set to `hasAssessmentFor`.
 
-### Syntax
+**Syntax**
 
 ```json
 {
