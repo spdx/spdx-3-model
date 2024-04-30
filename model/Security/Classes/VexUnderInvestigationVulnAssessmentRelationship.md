@@ -19,9 +19,9 @@ When linking elements using a VexUnderInvestigationVulnAssessmentRelationship
 the following requirements must be observed:
 
 - Elements linked with a VexUnderInvestigationVulnAssessmentRelationship are
-constrained to using the underInvestigationFor relationship type.
+  constrained to using the underInvestigationFor relationship type.
 - The from: end of the relationship must ve a /Security/Vulnerability classed
-element.
+  element.
 
 **Syntax**
 

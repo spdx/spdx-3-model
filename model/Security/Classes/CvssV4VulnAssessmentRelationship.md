@@ -16,7 +16,8 @@ It is intended to communicate the results of using a CVSS calculator.
 
 **Constraints**
 
-- The value of severity must be one of 'NONE', 'LOW', 'MEDIUM', 'HIGH' or 'CRITICAL'.
+- The value of severity must be one of 'NONE', 'LOW', 'MEDIUM', 'HIGH' or
+  'CRITICAL'.
 - The relationship type must be set to hasAssessmentFor.
 
 **Syntax**

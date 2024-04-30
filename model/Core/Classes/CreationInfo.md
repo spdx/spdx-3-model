@@ -8,9 +8,12 @@ Provides information about the creation of the Element.
 
 ## Description
 
-The CreationInfo provides information about who created the Element, and when and how it was created.
+The CreationInfo provides information about who created the Element, and when
+and how it was created.
 
-The dateTime created is often the date of last change (e.g., a git commit date), not the date when the SPDX data was created, as doing so supports reproducible builds.
+The dateTime created is often the date of last change
+(e.g., a git commit date), not the date when the SPDX data was created, as
+doing so supports reproducible builds.
 
 ## Metadata
 

@@ -8,7 +8,9 @@ An assertion made in relation to one or more elements.
 
 ## Description
 
-An Annotation is an assertion made in relation to one or more elements. The `contentType` property describes the format of the `statement` property.
+An Annotation is an assertion made in relation to one or more elements.
+
+The `contentType` property describes the format of the `statement` property.
 
 ## Metadata
 
