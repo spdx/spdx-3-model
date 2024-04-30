@@ -4,11 +4,13 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Identifies an external Element used within a Document but defined external to that Document.
+Identifies an external Element used within a Document but defined external to
+that Document.
 
 ## Description
 
-ExternalSpdxId identifies an external Element used within a Document but defined external to that Document.
+ExternalSpdxId identifies an external Element used within a Document but
+defined external to that Document.
 
 ## Metadata
 

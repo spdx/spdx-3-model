@@ -15,4 +15,3 @@ A contentIdentifierType specifies the type of the content identifier.
 - name: contentIdentifierType
 - Nature: ObjectProperty
 - Range: ContentIdentifierType
-

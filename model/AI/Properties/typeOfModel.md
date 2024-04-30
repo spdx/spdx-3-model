@@ -9,7 +9,9 @@ Records the type of the model used in the AI software.
 ## Description
 
 A free-form text that records the type of the AI model(s) used in the software.
-For instance, if it is a supervised model, unsupervised model, reinforcement learning model or a combination of those.
+
+For instance, if it is a supervised model, unsupervised model, reinforcement
+learning model or a combination of those.
 
 ## Metadata
 

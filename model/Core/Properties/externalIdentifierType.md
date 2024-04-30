@@ -15,4 +15,3 @@ An externalIdentifierType specifies the type of the external identifier.
 - name: externalIdentifierType
 - Nature: ObjectProperty
 - Range: ExternalIdentifierType
-

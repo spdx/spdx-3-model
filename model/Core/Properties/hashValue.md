@@ -15,4 +15,3 @@ HashValue is the result of applying a hash algorithm to an Element.
 - name: hashValue
 - Nature: DataProperty
 - Range: xsd:string
-
