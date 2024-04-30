@@ -64,7 +64,6 @@ A declaredLicense relationship to NoAssertionLicense
 indicates that one of the following applies:
 
 - the SPDX data creator has attempted to but cannot reach a reasonable
-
   objective determination;
 - the SPDX data creator has made no attempt to determine this field; or
 - the SPDX data creator has intentionally provided no information (no meaning
