@@ -54,4 +54,3 @@ and inter-relatable content objects.
 - extension
   - type: /Extension/Extension
   - minCount: 0
-

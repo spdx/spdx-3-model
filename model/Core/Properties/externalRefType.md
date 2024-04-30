@@ -15,4 +15,3 @@ An externalRefType specifies the type of the external reference.
 - name: externalRefType
 - Nature: ObjectProperty
 - Range: ExternalRefType
-

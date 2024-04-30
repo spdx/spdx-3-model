@@ -25,4 +25,3 @@ Please note that different profiles may also provide additional methods for veri
 - comment
   - type: xsd:string
   - maxCount: 1
-

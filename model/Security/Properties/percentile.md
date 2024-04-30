@@ -15,4 +15,3 @@ The percentile between 0 and 1 (0 and 100%) of the current probability score, th
 - name: percentile
 - Nature: DataProperty
 - Range: xsd:decimal
-
