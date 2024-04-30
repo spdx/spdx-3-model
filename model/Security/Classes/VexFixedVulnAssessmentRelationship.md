@@ -19,9 +19,9 @@ When linking elements using a VexFixedVulnAssessmentRelationship, the following
 requirements must be observed:
 
 - Elements linked with a VulnVexFixedAssessmentRelationship are constrained to
-using the fixedIn relationship type.
+  using the fixedIn relationship type.
 - The from: end of the relationship must ve a /Security/Vulnerability classed
-element.
+  element.
 
 **Syntax**
 
@@ -38,10 +38,8 @@ element.
 }
 ```
 
-
 ## Metadata
 
 - name: VexFixedVulnAssessmentRelationship
 - SubclassOf: VexVulnAssessmentRelationship
 - Instantiability: Concrete
-

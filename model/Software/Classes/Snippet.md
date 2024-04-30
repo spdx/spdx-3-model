@@ -8,9 +8,12 @@ Describes a certain part of a file.
 
 ## Description
 
-A Snippet describes a certain part of a file and can be used when the file is known to have some content
-that has been included from another original source. Snippets are useful for denoting when part of a file
-may have been originally created under another license or copied from a place with a known vulnerability.
+A Snippet describes a certain part of a file and can be used when the file is
+known to have some content that has been included from another original source.
+
+Snippets are useful for denoting when part of a file may have been originally
+created under another license or copied from a place with a known
+vulnerability.
 
 ## Metadata
 
@@ -31,4 +34,3 @@ may have been originally created under another license or copied from a place wi
   - type: File
   - minCount: 1
   - maxCount: 1
-

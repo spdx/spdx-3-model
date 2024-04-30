@@ -15,4 +15,3 @@ An Organization is a group of people who work together in an organized way for a
 - name: Organization
 - SubclassOf: Agent
 - Instantiability: Concrete
-

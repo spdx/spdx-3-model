@@ -8,7 +8,8 @@ A License participating in a 'with addition' model.
 
 ## Description
 
-A subjectExtendableLicense is a License which is subject to a 'with additional text' effect (WithAdditionOperator).
+A subjectExtendableLicense is a License which is subject to a 'with additional
+text' effect (WithAdditionOperator).
 
 ## Metadata
 

@@ -1,7 +1,7 @@
 # SPDX 3 model
 
 The System Package Data Exchange® (SPDX®)is a standard format for communicating information about components associated with systems.
-Components can include software, AI/ML models, and data today.  More component types that make up modern systems are planned to be included in subsequent releases. 
+Components can include software, AI/ML models, and data today.  More component types that make up modern systems are planned to be included in subsequent releases.
 The prior version of this format was focused on Software, is an ISO/IEC standard (ISO/IEC 5962:2021) and has wide industry adoption
 as a standardized Software Bill of Materials (SBOM).   All use cases supported by the prior version, are supported here as well.
 
@@ -90,7 +90,6 @@ not affected, under investigation, and fixed categories).
 The Software profile contains information about files, packages, SBOMs, snippets, and
 artifacts of the software application.
 
-
 ## Contribute!
 
 For information about how to contribute to a specific profile,
@@ -100,4 +99,3 @@ Feel free to join us and contribute!
 The discussions are happening on the spdx-tech mailing list
 and during our weekly meetings.
 All the details are in: https://spdx.dev/participate/tech/
-

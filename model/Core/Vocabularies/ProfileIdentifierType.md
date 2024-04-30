@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Enumeration of the valid profiles. 
+Enumeration of the valid profiles.
 
 ## Description
 
