@@ -39,14 +39,14 @@ for Packages:
 - would not include any license information that is not in the Package itself
   (e.g., license information from the project's website or from a third party
   repository or website)
-  
+
 for Files:
 
 - would include license info found in the File itself (e.g., license header or
   notice, comments indicating the license, SPDX-License-Identifier expression)
 - would not include license info found in a different file (e.g., LICENSE file
   in the top directory of a repository)
-  
+
 for Snippets:
 
 - would include license info found in the Snippet itself (e.g., license notice,
@@ -66,7 +66,7 @@ indicates that one of the following applies:
 - the SPDX data creator has made no attempt to determine this field; or
 - the SPDX data creator has intentionally provided no information (no meaning
   should be implied by doing so).
-  
+
 If a declaredLicense relationship is not present, no assumptions can be made
 about whether or not a declaredLicense exists.
 
