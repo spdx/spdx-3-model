@@ -8,7 +8,8 @@ The basis for all SPDX profiles.
 
 ## Description
 
-The Core namespace defines foundational concepts serving as the basis for all SPDX-3.0 profiles.
+The Core namespace defines foundational concepts serving as the basis for all
+SPDX-3.0 profiles.
 
 ## Metadata
 

@@ -8,7 +8,8 @@ Specifies the algorithm used for calculating the hash value.
 
 ## Description
 
-An algorithm specifies the algorithm that was used for calculating the hash value.
+An algorithm specifies the algorithm that was used for calculating the hash
+value.
 
 ## Metadata
 

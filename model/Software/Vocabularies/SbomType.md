@@ -4,12 +4,20 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Provides a set of values to be used to describe the common types of SBOMs that tools may create.
+Provides a set of values to be used to describe the common types of SBOMs that
+tools may create.
 
 ## Description
 
-The set of SBOM types with definitions as defined in [Types of Software Bill of Material (SBOM) Documents](https://www.cisa.gov/sites/default/files/2023-04/sbom-types-document-508c.pdf), published on April 21, 2023.
-An SBOM type describes the most likely type of an SBOM from the producer perspective, so that consumers can draw conclusions about the data inside an SBOM.  A single SBOM can have multiple SBOM document types associated with it.
+The set of SBOM types with definitions as defined in
+[Types of Software Bill of Material (SBOM) Documents](https://www.cisa.gov/sites/default/files/2023-04/sbom-types-document-508c.pdf),
+published on April 21, 2023.
+
+An SBOM type describes the most likely type of an SBOM from the producer
+perspective, so that consumers can draw conclusions about the data inside an
+SBOM.
+
+A single SBOM can have multiple SBOM document types associated with it.
 
 ## Metadata
 

@@ -8,7 +8,8 @@ Specifies the time from which an element is no longer applicable / valid.
 
 ## Description
 
-An endTime specifies the time from which element is no longer applicable / valid.
+An endTime specifies the time from which element is no longer applicable
+/ valid.
 
 ## Metadata
 

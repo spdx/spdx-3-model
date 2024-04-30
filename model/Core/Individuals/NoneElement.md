@@ -12,8 +12,9 @@ cardinality (number/count) of zero.
 NoneLicenseElement should be used if the SPDX creator desires to assert that
 there are NO elements for the given context of use.
 
-For example, a Relationship with `from`=Element1, `relationshipType`="ancestorOf",
-and `to`=NONE is explicitly expressing an assertion that Element1 has no descendents.
+For example, a Relationship with `from`=Element1,
+`relationshipType`="ancestorOf", and `to`=NONE is explicitly expressing an
+assertion that Element1 has no descendents.
 
 ## Metadata
 

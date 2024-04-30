@@ -4,7 +4,8 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Provide consumers with comments by the creator of the Element about the Element.
+Provide consumers with comments by the creator of the Element about the
+Element.
 
 ## Description
 

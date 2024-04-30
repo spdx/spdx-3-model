@@ -8,8 +8,8 @@ A string constrained to the SemVer 2.0.0 specification.
 
 ## Description
 
-A semantic version is a string
-that is following the specification of [Semantic Versioning 2.0.0](https://semver.org/).
+A semantic version is a string that is following the specification of
+[Semantic Versioning 2.0.0](https://semver.org/).
 
 ## Metadata
 

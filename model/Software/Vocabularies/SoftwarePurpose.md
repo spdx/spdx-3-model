@@ -9,10 +9,13 @@ Provides information about the primary purpose of an Element.
 ## Description
 
 This field provides information about the primary purpose of an Element.
-Software Purpose is intrinsic to how the Element is being used rather than the content of the Element.
+
+Software Purpose is intrinsic to how the Element is being used rather than the
+content of the Element.
+
 This field is a reasonable estimate of the most likely usage of the Element
-from the producer and consumer perspective from which both parties can draw conclusions
-about the context in which the Element exists.
+from the producer and consumer perspective from which both parties can draw
+conclusions about the context in which the Element exists.
 
 ## Metadata
 

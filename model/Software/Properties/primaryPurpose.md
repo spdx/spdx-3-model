@@ -8,7 +8,8 @@ Provides information about the primary purpose of the software artifact.
 
 ## Description
 
-primaryPurpose provides information about the primary purpose of the software artifact.
+primaryPurpose provides information about the primary purpose of the software
+artifact.
 
 ## Metadata
 

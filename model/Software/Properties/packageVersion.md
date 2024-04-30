@@ -8,7 +8,8 @@ Identify the version of a package.
 
 ## Description
 
-A packageVersion is useful for identification purposes and for indicating later changes of the package version.
+A packageVersion is useful for identification purposes and for indicating later
+changes of the package version.
 
 ## Metadata
 

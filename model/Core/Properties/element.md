@@ -8,7 +8,8 @@ Refers to one or more Elements that are part of an ElementCollection.
 
 ## Description
 
-This field refers to one or more Elements that are part of an ElementCollection.
+This field refers to one or more Elements that are part of an
+ElementCollection.
 
 ## Metadata
 

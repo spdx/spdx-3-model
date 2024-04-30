@@ -8,8 +8,10 @@ Identifies the name of an Element as designated by the creator.
 
 ## Description
 
-This field identifies the name of an Element as designated by the creator. 
-The name of an Element is an important convention and easier to refer to than the URI.
+This field identifies the name of an Element as designated by the creator.
+
+The name of an Element is an important convention and easier to refer to than
+the URI.
 
 ## Metadata
 

@@ -8,7 +8,8 @@ Specifies an Extension characterization of some aspect of an Element.
 
 ## Description
 
-`extension` specifies an Extension-based characterization of a particular aspect of an Element.
+`extension` specifies an Extension-based characterization of a particular
+aspect of an Element.
 
 ## Metadata
 

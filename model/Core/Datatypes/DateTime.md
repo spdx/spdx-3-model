@@ -9,7 +9,9 @@ A string representing a specific date and time.
 ## Description
 
 A Datetime is a string representation of a specific date and time.
+
 It has resolution of seconds and is always expressed in UTC timezone.
+
 The specific format is one of the most commonly used ISO-8601 formats.
 
 ## Metadata
