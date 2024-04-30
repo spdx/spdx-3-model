@@ -11,6 +11,7 @@ A container for a grouping of SPDX-3.0 content characterizing details
 
 A Bill Of Materials (BOM) is a container for a grouping of SPDX-3.0 content
 characterizing details about a product.
+
 This could include details of the content and composition of the product,
 provenence details of the product and/or
 its composition, licensing information, known quality or security issues, etc.
@@ -20,4 +21,3 @@ its composition, licensing information, known quality or security issues, etc.
 - name: Bom
 - SubclassOf: Bundle
 - Instantiability: Concrete
-

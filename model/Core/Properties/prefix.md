@@ -15,4 +15,3 @@ A prefix is a substitute for a URI.
 - name: prefix
 - Nature: DataProperty
 - Range: xsd:string
-

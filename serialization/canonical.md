@@ -6,11 +6,11 @@ Such a canonical form normalizes things like ordering and formatting.
 
 1. Canonical serialization is in JSON format, as defined in RFC 8259 (IETF STD 90)
 
-1. no line breaks
+1. No line breaks
 
-1. key names MUST be wrapped in double quotes
+1. Key names MUST be wrapped in double quotes
 
-1. no whitespace outside of strings
+1. No whitespace outside of strings
 
 1. true, false and null: the literal names must be lowercase; no other literal names are allowed
 
@@ -23,4 +23,3 @@ Such a canonical form normalizes things like ordering and formatting.
 1. objects: An object structure is represented as a pair of curly brackets surrounding zero or more name/value pairs (or members). A name is a string containing only ASCII characters (0x21-0x7F). The names within an object must be unique. A single colon comes after each name, separating the name from the value. A single comma separates a value from a following name. The name/value pairs are ordered by name value.
 
 1. DateTime is a signed integer of milliseconds since or before the Unix Epoch1. DateTime MUST be expressed as a series of base-10 digits, and MUST NOT be expressed with any leading zeroes, an exponent, a decimal point or a fractional part.
-

@@ -7,6 +7,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 Indicates whether a relationship is known to be complete, incomplete, or if no assertion is made with respect to relationship completeness.
 
 ## Description
+
 RelationshipCompleteness indicates whether the provided relationship is known to be complete, known to be incomplete, or if no assertion is made by the relationship creator.
 
 ## Metadata

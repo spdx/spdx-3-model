@@ -17,4 +17,3 @@ that Elements of the bundle have been assembled under.
 - name: context
 - Nature: DataProperty
 - Range: xsd:string
-

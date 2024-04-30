@@ -29,4 +29,3 @@ another identifier is preferable.
 - name: isDeprecatedAdditionId
 - Nature: DataProperty
 - Range: xsd:boolean
-

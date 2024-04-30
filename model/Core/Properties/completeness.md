@@ -16,4 +16,3 @@ complete, known to be incomplete or if no assertion is made either way.
 - name: completeness
 - Nature: ObjectProperty
 - Range: RelationshipCompleteness
-

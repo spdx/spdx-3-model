@@ -17,4 +17,3 @@ between a Package and a File, between two Packages, or between one SPDXDocument 
 - name: relationshipType
 - Nature: ObjectProperty
 - Range: RelationshipType
-

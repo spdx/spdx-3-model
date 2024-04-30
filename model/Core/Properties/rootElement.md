@@ -16,4 +16,3 @@ The tree consists of other elements directly and indirectly related through prop
 - name: rootElement
 - Nature: ObjectProperty
 - Range: Element
-

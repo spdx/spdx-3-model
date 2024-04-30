@@ -15,4 +15,3 @@ A decisionType is a mandatory value and must select one of the four entries in t
 - name: decisionType
 - Nature: ObjectProperty
 - Range: SsvcDecisionType
-

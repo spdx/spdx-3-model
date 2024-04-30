@@ -18,4 +18,4 @@ This type is used to indicate if a given field is present or absent or unknown.
 
 - yes: Indicates presence of the field.
 - no: Indicates absence of the field.
-- noAssertion: Makes no assertion about the field. 
+- noAssertion: Makes no assertion about the field.
