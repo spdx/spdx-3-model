@@ -15,6 +15,3 @@ A Tool is an element of hardware and/or software utilized to carry out a particu
 - name: Tool
 - SubclassOf: Element
 - Instantiability: Concrete
-
-## Properties
-

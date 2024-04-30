@@ -4,15 +4,20 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Indicates the amount of energy consumed to build the AI package.
+Indicates the amount of energy consumed to train the AI model.
 
 ## Description
 
-EnergyConsumption captures the amount of energy needed to train and operate the AI model. 
-This value is also known as training energy consumption or inference energy consumption.
+A free-form text captures known or estimated energy consumption for the
+training of the AI model.
+
+In case not known, the estimation could be based on information about
+computational resources used (e.g. number of floating point operations --
+FLOPs), training time, type and quantity of processing units, and other
+relevant details related to the training.
 
 ## Metadata
 
 - name: energyConsumption
-- Nature: DataProperty
-- Range: xsd:string
+- Nature: ObjectProperty
+- Range: EnergyConsumption

@@ -20,4 +20,3 @@ must be provided.
 - name: impactStatement
 - Nature: DataProperty
 - Range: xsd:string
-

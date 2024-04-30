@@ -4,15 +4,14 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Specifies the media type of an Element.
+Specifies the media type of an Element or Property.
 
 ## Description
 
-ContentType specifies the media type of an Element.
+ContentType specifies the media type of an Element or Property.
 
 ## Metadata
 
 - name: contentType
 - Nature: DataProperty
 - Range: MediaType
-

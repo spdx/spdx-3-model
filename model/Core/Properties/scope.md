@@ -4,15 +4,14 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Capture the scope of information about a specific relationship between elements. 
 
 ## Description
 
-A scope is TODO
+A scope is additional context about a relationship, that clarifies the relationship between elements. 
 
 ## Metadata
 
 - name: scope
 - Nature: ObjectProperty
 - Range: LifecycleScopeType
-

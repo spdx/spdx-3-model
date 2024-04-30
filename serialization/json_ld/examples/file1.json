@@ -1,11 +1,11 @@
 {
-  "@context": "https://spdx.github.io/spdx-3-model/rdf/context.json",
+  "@context": "https://spdx.org/rdf/3.0.0/spdx-context.jsonld",
   "type": "File",
   "spdxId": "https://some.namespace#file1",
   "creationInfo": {
     "type": "CreationInfo",
     "specVersion": "3.0.0",
-    "created": "2022-12-01T00:00:00",
+    "created": "2022-12-01T00:00:00Z",
     "createdBy": ["https://spdx.dev/elements/3F26391C#spdx-dev"],
     "profile": ["core", "software"],
     "dataLicense": "https://spdx.org/licenses/CC0-1.0"

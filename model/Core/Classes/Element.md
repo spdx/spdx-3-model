@@ -45,13 +45,12 @@ and inter-relatable content objects.
   - maxCount: 1
 - verifiedUsing
   - type: IntegrityMethod
-- externalReference
-  - type: ExternalReference
+- externalRef
+  - type: ExternalRef
   - minCount: 0
 - externalIdentifier
   - type: ExternalIdentifier
   - minCount: 0
 - extension
-  - type: Extension
+  - type: /Extension/Extension
   - minCount: 0
-

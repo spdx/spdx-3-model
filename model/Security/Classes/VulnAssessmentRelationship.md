@@ -27,7 +27,7 @@ assessment relationships. It factors out the common properties shared by them.
   - type: /Core/DateTime
   - minCount: 0
   - maxCount: 1
-- suppliedBy
+- /Core/suppliedBy
   - type: /Core/Agent
   - minCount: 0
   - maxCount: 1

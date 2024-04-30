@@ -13,7 +13,10 @@ of applying a mathematical algorithm
 that maps data of arbitrary size to a bit string (the hash)
 and is a one-way function, that is,
 a function which is practically infeasible to invert.
+
 This is commonly used for integrity checking of data.
+
+Please note that different profiles may also provide additional methods for verifying the integrity of specific subclasses of Elements.
 
 ## Metadata
 
@@ -30,4 +33,3 @@ This is commonly used for integrity checking of data.
   - type: xsd:string
   - minCount: 1
   - maxCount: 1
-

@@ -13,17 +13,15 @@ but defined external to that Document.
 The external map provides details about the externally-defined Element
 such as its provenance, where to retrieve it, and how to verify its integrity.
 
-
 ## Metadata
 
 - name: ExternalMap
 - SubclassOf: none
 - Instantiability: Concrete
 
-
 ## Properties
 
-- externalId
+- externalSpdxId
   - type: xsd:anyURI
   - minCount: 1
   - maxCount: 1
@@ -32,6 +30,6 @@ such as its provenance, where to retrieve it, and how to verify its integrity.
 - locationHint
   - type: xsd:anyURI
   - maxCount: 1
-- definingDocument
-  - type: xsd:anyURI
+- definingArtifact
+  - type: Artifact
   - maxCount: 1
