@@ -23,6 +23,7 @@ and the identification of the supplier of SPDX files.
 Compliance with this document includes populating the SPDX fields therein
 with data related to such fields ("SPDX-Metadata").
 
+
 This document contains numerous fields where an SPDX file creator may provide
 relevant explanatory text in SPDX-Metadata. Without opining on the lawfulness
 of "database rights" (in jurisdictions where applicable),
