@@ -23,7 +23,7 @@ may also explain elsewhere (such as in a licenseComment field) how they intend
 for data in this field to be used.
 
 An attributionText is is not meant to include the software Package, File or
-Snippet’s actual complete license text (see concludedLicense to identify the
+Snippet's actual complete license text (see concludedLicense to identify the
 corresponding license).
 
 ## Metadata

@@ -8,12 +8,18 @@ A mapping between prefixes and namespace partial URIs.
 
 ## Description
 
-A namespace map allows the creator of a collection of Elements that could be serialized to suggest 
-a set of shorter identifiers ("prefixes") for particular namespace portions 
-of ElementIDs to be used in SPDX content serialization in order to provide a more
-human-readable and smaller serialized representation of the Elements.
+A namespace map allows the creator of a collection of Elements that could be
+serialized to suggest a set of shorter identifiers ("prefixes") for particular
+namespace portions of ElementIDs to be used in SPDX content serialization in
+order to provide a more human-readable and smaller serialized representation of
+the Elements.
 
-For details of how NamespaceMap content is to be serialized please refer to general SPDX serialization guidance at https://spdx.github.io/spdx-3-model/serialization/readme.md and the various serialization format specific .md filed under https://spdx.github.io/spdx-3-model/serialization/ (TODO: update the URLs as soon as the context is publicly available)
+For details of how NamespaceMap content is to be serialized please refer to
+general SPDX serialization guidance at
+https://github.com/spdx/spdx-3-model/blob/main/serialization/README.md
+and the various serialization format specific .md filed under
+https://github.com/spdx/spdx-3-model/tree/main/serialization
+(TODO: update the URLs as soon as the context is publicly available)
 
 Namespace maps support a variety of relevant use cases such as:
 
@@ -24,6 +30,7 @@ Namespace maps support a variety of relevant use cases such as:
 
 3) An SPDX content consumer/producer wishing to maintain consistent prefix use while round tripping from SPDX content received, deserialized, modified/extended in some way, and then reserialized in the same serialization form.
    In this case the prefix-namespace mappings utilized in the content are transformed from the original native namespace/prefix into the in memory NamespaceMap then transformed from the NamespaceMap back into the resultant serialization native namespace / prefix format.
+
 
 ## Metadata
 

@@ -15,4 +15,3 @@ An identifier uniquely identifies an external element.
 - name: identifier
 - Nature: DataProperty
 - Range: xsd:string
-

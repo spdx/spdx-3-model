@@ -27,4 +27,3 @@ PositiveIntegerRange is a tuple of two positive integers that define a range.
   - type: xsd:positiveInteger
   - minCount: 1
   - maxCount: 1
-

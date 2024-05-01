@@ -4,13 +4,16 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Records if sensitive personal information is used during model training or could be used during the inference.
+Records if sensitive personal information is used during model training or
+could be used during the inference.
 
 ## Description
 
-Notes if sensitive personal information
-is used in the training or inference of the AI models.
-This might include biometric data, addresses or other data that can be used to infer a person's identity.
+Notes if sensitive personal information is used in the training or inference of
+the AI models.
+
+This might include biometric data, addresses or other data that can be used to
+infer a person's identity.
 
 Related: `hasSensitivePersonalInformation` in `/Dataset/DatasetPackage`
 

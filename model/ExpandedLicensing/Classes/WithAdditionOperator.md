@@ -23,11 +23,11 @@ Syntax by the `WITH` operator.
 
 ## Properties
 
-- subjectExtendableLicense
-  - type: ExtendableLicense
-  - minCount: 1
-  - maxCount: 1
 - subjectAddition
   - type: LicenseAddition
+  - minCount: 1
+  - maxCount: 1
+- subjectExtendableLicense
+  - type: ExtendableLicense
   - minCount: 1
   - maxCount: 1

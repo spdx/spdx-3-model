@@ -27,13 +27,15 @@ The specification markdown files describing rules for each serialization format 
 The specification and examples are numbered for easier referencing -- the order is **not** significant.
 
 Current supported formats are:
+
 - [JSON-LD](json-ld.md)
 
 ## Use cases
 
 Examples of how to serialize the following cases:
 
-### Core and software profile use cases:
+### Core and software profile use cases
+
 - Person
 - Agent
 - Annotation
@@ -54,15 +56,18 @@ Examples of how to serialize the following cases:
 - two Persons
 - Bundle of two Persons
 
-### Licensing profile use cases:
+### Licensing profile use cases
+
 - single artifact under one listed license
 - single artifact under one custom license
 - single artifact under license expression of listed licenses
 - single artifact under license expression of listed and custom licenses
 - two artifacts under same license expression of listed and custom licenses
 
-### Security profile use cases:
+### Security profile use cases
+
 The following list begins with base examples and sequentially adds expositional elements and relationships step-by-step:
+
 - An initial set of vulnerability elements
 - Adding vulnerability elements with security external reference types including FIXME
 - Adding hasAssociatedVulnerability relationship between a vulnerability element and a software profile element
@@ -71,6 +76,5 @@ The following list begins with base examples and sequentially adds expositional 
   - how a vulnerability element may be fixed for a particular software package element
   - results of a vulnerability scan or audit
 - Adding foundBy, publishedBy, reportedBy relationships between an agent element and a vulnerability element
-
 
 ### Build Profile use cases to be added here

@@ -21,8 +21,7 @@ Please note that entries appearing in the License List are not under this namesp
 ## Resources
 
 1. The ontology is available at: https://spdx.org/rdf/3.0.0/spdx-model.ttl
- 
+
 1. The JSON-LD context definition is available at: https://spdx.org/rdf/3.0.0/spdx-context.jsonld
- 
+
 1. The JSON schema is available at: https://spdx.org/schema/3.0.0/spdx-json-schema.json
- 
