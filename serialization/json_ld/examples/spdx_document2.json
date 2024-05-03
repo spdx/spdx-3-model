@@ -6,15 +6,14 @@
       "type": "CreationInfo",
       "specVersion": "3.0.0",
       "created": "2022-12-01T00:00:00Z",
-      "createdBy": ["https://spdx.dev/elements/3F26391C#spdx-dev"],
-      "profile": ["core", "software"],
-      "dataLicense": "https://spdx.org/licenses/CC0-1.0"
+      "createdBy": ["https://spdx.dev/elements/3F26391C#spdx-dev"]
     },
     {
       "type": "SpdxDocument",
       "spdxId": "http://spdx.acme.org/3FA9CB25#spdxdocument159",
       "creationInfo": "_:creationInfo1",
       "name": "Doc 159 - two File elements",
+      "profileConformance": ["core", "software"],
       "element": [
         "https://some.namespace#File1",
         "https://spdx.dev/elements/3F26391C#spdx-spec-v2.3"
@@ -24,21 +23,19 @@
       ]
     },
     {
-      "type": "File",
+      "type": "software_File",
       "spdxId": "https://some.namespace#file1",
       "name": "model.png",
-      "contentType": "image/png",
-      "purpose": ["documentation"],
-      "contentIdentifier": "https://github.com/spdx/spdx-3-model/blob/main/model.png",
+      "software_contentType": "image/png",
+      "software_primaryPurpose": "documentation",
       "creationInfo": "_:creationInfo1"
     },
     {
-      "type": "File",
+      "type": "software_File",
       "spdxId": "https://spdx.dev/elements/3F26391C#spdx-spec-v2.3",
       "name": "The Software Package Data Exchange® (SPDX®) Specification Version 2.3",
-      "contentType": "text/html",
-      "purpose": ["documentation"],
-      "contentIdentifier": "https://spdx.github.io/spdx-spec/v2.3/",
+      "software_contentType": "text/html",
+      "software_primaryPurpose": "documentation",
       "creationInfo": "_:creationInfo1"
     }
   ]
