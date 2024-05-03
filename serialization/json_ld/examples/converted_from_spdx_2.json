@@ -222,6 +222,7 @@
     {
       "type": "software_File",
       "spdxId": "spdx-example:SPDXRef-DoapSource",
+      "creationInfo": "_:creationInfo1",
       "name": "./src/org/spdx/parser/DOAPProject.java",
       "verifiedUsing": [
         {
@@ -250,6 +251,7 @@
     {
       "type": "software_File",
       "spdxId": "spdx-example:SPDXRef-JenaLib",
+      "creationInfo": "_:creationInfo1",
       "name": "./lib-source/jena-2.6.3-sources.jar",
       "comment": "This file belongs to Jena",
       "verifiedUsing": [
