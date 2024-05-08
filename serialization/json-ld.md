@@ -76,4 +76,4 @@ from the
 
 ## Examples
 
-JSON-LD serialization examples can be found [here](json_ld/EXAMPLES.md).
+JSON-LD serialization examples can be found [here](json_ld/examples.md).
