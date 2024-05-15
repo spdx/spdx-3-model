@@ -15,4 +15,3 @@ The field identifies the file which contains the snippet.
 - name: snippetFromFile
 - Nature: ObjectProperty
 - Range: File
-

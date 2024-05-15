@@ -36,4 +36,3 @@ such as a package, a file, or a snippet.
 - contentIdentifier
   - type: ContentIdentifier
   - minCount: 0
-

@@ -15,4 +15,3 @@ A statement is a commentary on an assertion that an annotator has made.
 - name: statement
 - Nature: DataProperty
 - Range: xsd:string
-

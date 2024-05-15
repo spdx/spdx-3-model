@@ -15,4 +15,3 @@ beginIntegerRange is a positive integer that defines the beginning of a range.
 - name: beginIntegerRange
 - Nature: DataProperty
 - Range: xsd:positiveInteger
-

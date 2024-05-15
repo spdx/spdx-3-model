@@ -43,4 +43,4 @@ such as an electronic file, a software package, a device or an element of data.
   - minCount: 0
 - supportLevel
   - type: SupportType
-  - minCount: 0 
+  - minCount: 0

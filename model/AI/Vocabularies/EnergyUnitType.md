@@ -21,4 +21,4 @@ is not listed here, please select "other".
 
 - kilowattHour: Kilowatt-hour.
 - megajoule: Megajoule.
-- other: Any other units of energy measurement. 
+- other: Any other units of energy measurement.

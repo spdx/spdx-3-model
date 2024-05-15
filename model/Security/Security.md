@@ -14,4 +14,3 @@ The Security Profile captures security related information.
 
 - id: https://spdx.org/rdf/3.0.0/terms/Security
 - name: Security
-

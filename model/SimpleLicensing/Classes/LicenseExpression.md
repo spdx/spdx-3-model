@@ -26,6 +26,7 @@ license expression as a combination of license objects.
 - Instantiability: Concrete
 
 ## Properties
+
 - licenseExpression
   - type: xsd:string
   - minCount: 1

@@ -4,11 +4,13 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Provides an unambiguous mechanism for conveying a URI fragment portion of an ElementID.
+Provides an unambiguous mechanism for conveying a URI fragment portion of an
+ElementID.
 
 ## Description
 
-A namespace provides an unambiguous mechanism for conveying a URI fragment portion of an ElementID.
+A namespace provides an unambiguous mechanism for conveying a URI fragment
+portion of an ElementID.
 
 ## Metadata
 
