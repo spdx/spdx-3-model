@@ -4,11 +4,13 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-The Dataset Profile provides additional metadata, based on Software Profile, that is useful for datasets.
+The Dataset Profile provides additional metadata, based on Software Profile,
+that is useful for datasets.
 
 ## Description
 
-The Dataset namespace defines concepts related to dataset, including its preparation process, its characteristics, and its access methods.
+The Dataset namespace defines concepts related to dataset, including its
+preparation process, its characteristics, and its access methods.
 
 ## Metadata
 

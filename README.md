@@ -62,8 +62,9 @@ profiles of the SPDX model.
 #### Dataset
 
 The Dataset profile describes a dataset's core aspects (type, size, collection
-method) and its preparation for AI use (preprocessing, noise handling, data
-quality and privacy considerations like bias and anonymization).
+method), its access method, and its preparation for further use (preprocessing,
+noise handling, data quality and privacy considerations like bias and
+anonymization).
 
 #### Licensing
 
