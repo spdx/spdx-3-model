@@ -9,8 +9,9 @@ identifier was deprecated.
 
 ## Description
 
-A deprecatedVersion for a ListedLicense or ListedLicenseException on the SPDX
-License List specifies which version release of the License List was the first
+A deprecatedVersion for a ListedLicense or ListedLicenseException on the
+[SPDX License List](https://spdx.org/licenses/)
+specifies which version release of the License List was the first
 one in which it was marked as deprecated.
 
 ## Metadata

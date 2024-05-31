@@ -12,7 +12,8 @@ according to the SPDX license expression syntax.
 
 An AnyLicenseInfo is used by licensing properties of software artifacts.
 It can be a NoneLicense, a NoAssertionLicense,
-single license (either on the SPDX License List or a custom-defined license);
+single license (either on the [SPDX License List](https://spdx.org/licenses/)
+or [a custom-defined license](https://spdx.github.io/spdx-spec/v3.0/annexes/SPDX-license-expressions/));
 a single license with an "or later" operator applied; the foregoing with
 additional text applied; or a set of licenses combined by applying "AND" and
 "OR" operators recursively.
