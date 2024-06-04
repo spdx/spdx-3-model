@@ -27,7 +27,7 @@ Software Artifact, for example as detected by use of automated tooling.
 
 This field is not intended to capture license information obtained from an
 external source, such as a package's website. Such information can be
-included, as needed, in the concludedLicense field.
+included, as needed, in the hasConcludedLicense field.
 
 A hasDeclaredLicense may be expressed differently in practice for different
 types of Software Artifacts. For example:
@@ -77,7 +77,7 @@ Note that a missing hasDeclaredLicense is not the same as a relationship to
 NoAssertionLicense since the latter is a "known unknown" whereas no assumptions
 can be made from a missing hasDeclaredLicense relationship.
 
-***concludedLicense***
+***hasConcludedLicense***
 
 A hasConcludedLicense is the license identified by the SPDX data creator,
 based on analyzing the license information in the Software Artifact
