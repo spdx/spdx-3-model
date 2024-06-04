@@ -42,10 +42,10 @@ the following has to hold:
 1. The mincount for `/Software/Package/packageVersion` is 1
 1. The mincount for `/Software/SoftwareArtifact/copyrightText` is 1
 1. for every `/Software/Package` there MUST exist exactly one
-   `/Core/Relationship` of type `concludedLicense` having that element as its
-   `from` property and an `/SimpleLicensing/AnyLicenseInfo` as its `to`
+   `/Core/Relationship` of type `hasConcludedLicense` having that element as
+   its `from` property and an `/SimpleLicensing/AnyLicenseInfo` as its `to`
    property.
 1. for every `/Software/Package` there MUST exist exactly one
-   `/Core/Relationship` of type `declaredLicense` having that element as its
+   `/Core/Relationship` of type `hasDeclaredLicense` having that element as its
    `from` property and an `/SimpleLicensing/AnyLicenseInfo` as its `to`
    property.
