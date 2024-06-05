@@ -4,8 +4,8 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A class for describing the energy consumption incurred by an AI model.
-throughout its lifecycle.
+A class for describing the energy consumption incurred by an AI model in
+different stages of its lifecycle.
 
 ## Description
 
