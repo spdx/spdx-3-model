@@ -12,7 +12,8 @@ Specifies whether the License is listed as free by the
 isFsfLibre specifies whether the
 [Free Software Foundation FSF](https://fsf.org)
 has listed this License as "free" in their commentary on licenses, located at
-the time of this writing at https://www.gnu.org/licenses/license-list.en.html.
+the time of this writing at
+<https://www.gnu.org/licenses/license-list.en.html>.
 
 A value of "true" indicates that the license is in the list of licenses that
 FSF publishes as libre.
