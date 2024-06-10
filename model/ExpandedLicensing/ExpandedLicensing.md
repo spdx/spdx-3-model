@@ -8,8 +8,9 @@ Fully expanded license expressions.
 
 ## Description
 
-This profile supports representing a fully expanded license expression in
-object form.
+This profile supports representing a fully expanded
+[license expression](../../annexes/SPDX-license-expressions.md)
+in object form.
 
 ## Metadata
 

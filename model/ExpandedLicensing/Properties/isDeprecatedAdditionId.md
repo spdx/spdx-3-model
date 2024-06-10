@@ -12,7 +12,8 @@ The isDeprecatedAdditionId property specifies whether an identifier for a
 LicenseAddition has been marked as deprecated. If the property is not defined,
 then it is presumed to be false (i.e., not deprecated).
 
-If the LicenseAddition is included on the SPDX Exceptions List, then
+If the LicenseAddition is included on the
+[SPDX Exceptions List](https://spdx.org/licenses/exceptions-index.html), then
 the `deprecatedVersion` property indicates on which version release of the
 Exceptions List it was first marked as deprecated.
 
