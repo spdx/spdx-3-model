@@ -78,9 +78,9 @@ profiles of the SPDX model.
 #### Dataset
 
 The Dataset profile describes a dataset's core aspects (type, size, collection
-method), its access method, and its preparation for further use (preprocessing,
-noise handling, data quality and privacy considerations like bias and
-anonymization).
+method), access method, preparation (preprocessing, noise handling), intended
+use (e.g. hardware calibration, machine learning), and related considerations
+(data quality and privacy).
 
 #### Licensing
 
@@ -117,4 +117,4 @@ Feel free to join us and contribute!
 The discussions are happening on the spdx-tech mailing list
 and during our weekly meetings.
 
-All the details are in: https://spdx.dev/participate/tech/
+All the details are in: <https://spdx.dev/participate/tech/>
