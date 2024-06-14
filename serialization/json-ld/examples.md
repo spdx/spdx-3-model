@@ -6,7 +6,7 @@
 - [Organization1](examples/org1.json)
 - [Person1 with minimal CreationInfo](examples/person1.json)
 - [Person2 with full CreationInfo](examples/person2.json)
-- [Person3 with no CreationInfo](examples/person3.json) - does this even mean anything?
+- [Person3 with no CreationInfo](examples/person3.json)
 
 ## Annotations
 
