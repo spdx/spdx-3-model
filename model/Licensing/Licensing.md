@@ -41,26 +41,28 @@ types of Software Artifacts. For example:
 
 for Packages:
 
-- would include license info for the Package as a whole, found in the Package
-  itself (e.g., LICENSE file, README file, metadata in the Package, etc.)
-- would not include any license information that is not in the Package itself
-  (e.g., license information from the project's website or from a third party
-  repository or website)
+- would include license info for the Package as a
+  whole, found in the Package itself (e.g., LICENSE file,
+  README file, metadata in the Package, etc.)
+- would not include any license information that is not in the Package
+  itself (e.g., license information from the project's website or from a
+  third party repository or website)
 
 for Files:
 
-- would include license info found in the File itself (e.g., license header or
-  notice, comments indicating the license, SPDX-License-Identifier expression)
-- would not include license info found in a different file (e.g., LICENSE file
-  in the top directory of a repository)
+- would include license info found in the File itself (e.g., license
+  header or notice, comments indicating the license, SPDX-License-Identifier
+  expression)
+- would not include license info found in a different file (e.g., LICENSE
+  file in the top directory of a repository)
 
 for Snippets:
 
-- would include license info found in the Snippet itself (e.g., license notice,
-  comments, SPDX-License-Identifier expression)
-- would not include license info found elsewhere in the File or in a different
-  File (e.g., comment at top of File if it is not within the Snippet, LICENSE
-  file in the top directory of a repository)
+- would include license info found in the Snippet itself (e.g., license
+  notice, comments, SPDX-License-Identifier expression)
+- would not include license info found elsewhere in the File or in a
+  different File (e.g., comment at top of File if it is not within the
+  Snippet, LICENSE file in the top directory of a repository)
 
 A hasDeclaredLicense relationship to NoneLicense indicates that the
 corresponding Package, File or Snippet contains no license information
