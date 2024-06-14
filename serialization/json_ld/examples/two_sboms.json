@@ -2,15 +2,13 @@
   "@context": "https://spdx.org/rdf/3.0.0/spdx-context.jsonld",
   "@graph": [
     {
-      "type": "Sbom",
+      "type": "software_Sbom",
       "spdxId": "http://my_namespace.com/sbom1",
       "creationInfo": {
         "type": "CreationInfo",
         "specVersion": "3.0.0",
         "created": "2022-12-01T00:00:00Z",
-        "createdBy": ["https://my_namespace.com/creator1"],
-        "profile": ["core", "software"],
-        "dataLicense": "https://spdx.org/licenses/CC0-1.0"
+        "createdBy": ["https://my_namespace.com/creator1"]
       },
       "name": "My SBOM",
       "element": [
@@ -22,15 +20,13 @@
       ]
     },
     {
-      "type": "Sbom",
+      "type": "software_Sbom",
       "spdxId": "http://my_namespace.com/sbom2",
       "creationInfo": {
         "type": "CreationInfo",
         "specVersion": "3.0.0",
         "created": "2022-12-01T00:00:00Z",
-        "createdBy": ["https://my_namespace.com/creator1"],
-        "profile": ["core", "software"],
-        "dataLicense": "https://spdx.org/licenses/CC0-1.0"
+        "createdBy": ["https://my_namespace.com/creator1"]
       },
       "name": "My other SBOM",
       "element": [
