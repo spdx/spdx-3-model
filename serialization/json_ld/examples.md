@@ -3,11 +3,10 @@
 ## Agents
 
 - [Agent1](examples/agent1.json)
+- [Organization1](examples/org1.json)
 - [Person1 with minimal CreationInfo](examples/person1.json)
 - [Person2 with full CreationInfo](examples/person2.json)
 - [Person3 with no CreationInfo](examples/person3.json) - does this even mean anything?
-- [Organization1](examples/org1.json)
-- [Tool1](examples/tool1.json) - not an Agent
 
 ## Annotations
 
@@ -15,12 +14,8 @@
 
 ## Artifacts
 
-- [Package1](examples/package1.json)
 - [File1](examples/file1.json)
-
-## Relationships
-
-- [Relationship1 with Package contains two Files](examples/spdx_document3.json)
+- [Package1](examples/package1.json)
 
 ## Collections
 
@@ -33,6 +28,15 @@
 - [SpdxDocument3 with a Package that contains two Files](examples/spdx_document3.json) - all in the same payload
 - [SpdxDocument4](examples/spdx_document4.json) - same as SpdxDocument3 but using the context to shorten URIs
 
+## Relationships
+
+- [Relationship1 with Package contains two Files](examples/spdx_document3.json)
+
+## Tools
+
+- [Tool1](examples/tool1.json)
+
 ## Full examples
 
-- [Converted SPDX document from SPDX-2.3](examples/converted_from_spdx_2.json) - converted from [this file](https://github.com/spdx/spdx-spec/blob/development/v2.3.1/examples/SPDXJSONExample-v2.3.spdx.json)
+- [Converted SPDX 3.0 document from SPDX 2.3](examples/converted_from_spdx_2.json)
+  - converted from [this v2.3.1 file](https://github.com/spdx/spdx-spec/blob/development/v2.3.1/examples/SPDXJSONExample-v2.3.spdx.json)
