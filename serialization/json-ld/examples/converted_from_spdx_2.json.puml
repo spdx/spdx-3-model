@@ -1,0 +1,323 @@
+@startuml
+Package "converted_from_spdx_2.json" as 733775c89f4e27aacb0aea36ccf7e47f {
+object "<b>Apache Commons Lang</b>\nsoftware_Package" as 733775c89f4e27aacb0aea36ccf7e47f_o1
+object "CreationInfo" as 733775c89f4e27aacb0aea36ccf7e47f_o2
+object "<b>ExampleCodeInspect</b>\nOrganization" as 733775c89f4e27aacb0aea36ccf7e47f_o3
+object "<b>Jane Doe</b>\nPerson" as 733775c89f4e27aacb0aea36ccf7e47f_o4
+object "<b>LicenseFind-1.0</b>\nTool" as 733775c89f4e27aacb0aea36ccf7e47f_o5
+object "spdx-example:SPDXef-Relationship-2\nRelationship" as 733775c89f4e27aacb0aea36ccf7e47f_o6
+object "<b>glibc</b>\nsoftware_Package" as 733775c89f4e27aacb0aea36ccf7e47f_o7
+object "ExternalIdentifier" as 733775c89f4e27aacb0aea36ccf7e47f_o8
+object "Hash" as 733775c89f4e27aacb0aea36ccf7e47f_o9
+object "Hash" as 733775c89f4e27aacb0aea36ccf7e47f_o10
+object "Hash" as 733775c89f4e27aacb0aea36ccf7e47f_o11
+object "Hash" as 733775c89f4e27aacb0aea36ccf7e47f_o12
+object "<b>ExampleCodeInspect</b>\nOrganization" as 733775c89f4e27aacb0aea36ccf7e47f_o13
+object "ExternalIdentifier" as 733775c89f4e27aacb0aea36ccf7e47f_o14
+object "<b>Jane Doe</b>\nPerson" as 733775c89f4e27aacb0aea36ccf7e47f_o15
+object "ExternalIdentifier" as 733775c89f4e27aacb0aea36ccf7e47f_o16
+object "<b>Saxon</b>\nsoftware_Package" as 733775c89f4e27aacb0aea36ccf7e47f_o17
+object "Hash" as 733775c89f4e27aacb0aea36ccf7e47f_o18
+object "<b>./package/foo.c</b>\nsoftware_File" as 733775c89f4e27aacb0aea36ccf7e47f_o19
+object "Hash" as 733775c89f4e27aacb0aea36ccf7e47f_o20
+object "Hash" as 733775c89f4e27aacb0aea36ccf7e47f_o21
+object "spdx-example:SPDXRef-Relationship-5\nRelationship" as 733775c89f4e27aacb0aea36ccf7e47f_o22
+object "<b>Jena</b>\nsoftware_Package" as 733775c89f4e27aacb0aea36ccf7e47f_o23
+object "<b>./docs/myspec.pdf</b>\nsoftware_File" as 733775c89f4e27aacb0aea36ccf7e47f_o24
+object "Hash" as 733775c89f4e27aacb0aea36ccf7e47f_o25
+object "spdx-example:SPDXRef-Relationship-1\nRelationship" as 733775c89f4e27aacb0aea36ccf7e47f_o26
+object "<b>SPDX-Tools-v2.0</b>\nSpdxDocument" as 733775c89f4e27aacb0aea36ccf7e47f_o27
+object "<b>./src/org/spdx/parser/DOAPProject.java</b>\nsoftware_File" as 733775c89f4e27aacb0aea36ccf7e47f_o28
+object "Hash" as 733775c89f4e27aacb0aea36ccf7e47f_o29
+object "<b>./lib-source/commons-lang3-3.1-sources.jar</b>\nsoftware_File" as 733775c89f4e27aacb0aea36ccf7e47f_o30
+object "Hash" as 733775c89f4e27aacb0aea36ccf7e47f_o31
+object "<b>./lib-source/jena-2.6.3-sources.jar</b>\nsoftware_File" as 733775c89f4e27aacb0aea36ccf7e47f_o32
+object "Hash" as 733775c89f4e27aacb0aea36ccf7e47f_o33
+object "<b>from linux kernel</b>\nsoftware_Snippet" as 733775c89f4e27aacb0aea36ccf7e47f_o34
+object "PositiveIntegerRange" as 733775c89f4e27aacb0aea36ccf7e47f_o35
+object "PositiveIntegerRange" as 733775c89f4e27aacb0aea36ccf7e47f_o36
+object "software_File" as 733775c89f4e27aacb0aea36ccf7e47f_o37
+object "CreationInfo" as 733775c89f4e27aacb0aea36ccf7e47f_o38
+object "spdx-example:SPDXRef-Relationship-0\nRelationship" as 733775c89f4e27aacb0aea36ccf7e47f_o39
+object "spdx-example:SPDXRef-Relationship-2" as 733775c89f4e27aacb0aea36ccf7e47f_131ef1decc356ab6ad570e6c7492c799
+object "spdx-example:SPDXRef-Relationship-4\nRelationship" as 733775c89f4e27aacb0aea36ccf7e47f_o41
+object "spdx-example:SPDXRef-Relationship-6\nRelationship" as 733775c89f4e27aacb0aea36ccf7e47f_o42
+object "spdx-example:SPDXRef-Relationship-8\nRelationship" as 733775c89f4e27aacb0aea36ccf7e47f_o43
+object "spdx-example:SPDXRef-Relationship-12\nRelationship" as 733775c89f4e27aacb0aea36ccf7e47f_o44
+object "spdx-example:SPDXRef-Annotation-0\nAnnotation" as 733775c89f4e27aacb0aea36ccf7e47f_o45
+object "<b>Joe Reviewer</b>\nPerson" as 733775c89f4e27aacb0aea36ccf7e47f_o46
+object "spdx-example:SPDXRef-Annotation-1\nAnnotation" as 733775c89f4e27aacb0aea36ccf7e47f_o47
+object "<b>Suzanne Reviewer</b>\nPerson" as 733775c89f4e27aacb0aea36ccf7e47f_o48
+object "spdx-example:SPDXRef-Annotation-2\nAnnotation" as 733775c89f4e27aacb0aea36ccf7e47f_o49
+object "<b>Package Commenter</b>\nPerson" as 733775c89f4e27aacb0aea36ccf7e47f_o50
+object "spdx-example:SPDXRef-Annotation-3\nAnnotation" as 733775c89f4e27aacb0aea36ccf7e47f_o51
+object "<b>File Commenter</b>\nPerson" as 733775c89f4e27aacb0aea36ccf7e47f_o52
+object "spdx-example:SPDXRef-Annotation-4\nAnnotation" as 733775c89f4e27aacb0aea36ccf7e47f_o53
+object "ExternalMap" as 733775c89f4e27aacb0aea36ccf7e47f_o54
+object "Hash" as 733775c89f4e27aacb0aea36ccf7e47f_o55
+object "NamespaceMap" as 733775c89f4e27aacb0aea36ccf7e47f_o56
+}
+733775c89f4e27aacb0aea36ccf7e47f_o1 : spdxId = "spdx-example:SPDXRef-fromDoap-1"
+733775c89f4e27aacb0aea36ccf7e47f_o2 : comment = "This is the SPDX-2.3 JSON example converted to SPDX-3.0. As there is currently no closure on how to treat licenses, they are omitted here for now."
+733775c89f4e27aacb0aea36ccf7e47f_o2 : created = 2010-01-29 18:30:22+00:00
+733775c89f4e27aacb0aea36ccf7e47f_o3 : spdxId = "spdx-example:SPDXRef-Actor-ExampleCodeInspect"
+733775c89f4e27aacb0aea36ccf7e47f_o3::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o2 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o3 : name = "ExampleCodeInspect"
+733775c89f4e27aacb0aea36ccf7e47f_o2::createdBy --> 733775c89f4e27aacb0aea36ccf7e47f_o3 : createdBy
+733775c89f4e27aacb0aea36ccf7e47f_o4 : spdxId = "spdx-example:SPDXRef-Actor-JaneDoe"
+733775c89f4e27aacb0aea36ccf7e47f_o4::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o2 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o4 : name = "Jane Doe"
+733775c89f4e27aacb0aea36ccf7e47f_o2::createdBy --> 733775c89f4e27aacb0aea36ccf7e47f_o4 : createdBy
+733775c89f4e27aacb0aea36ccf7e47f_o5 : spdxId = "spdx-example:SPDXRef-Actor-LicenseFind-1.0"
+733775c89f4e27aacb0aea36ccf7e47f_o5::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o2 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o5 : name = "LicenseFind-1.0"
+733775c89f4e27aacb0aea36ccf7e47f_o2::createdUsing --> 733775c89f4e27aacb0aea36ccf7e47f_o5 : createdUsing
+733775c89f4e27aacb0aea36ccf7e47f_o2 : specVersion = "3.0.0"
+733775c89f4e27aacb0aea36ccf7e47f_o1::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o2 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o1 : name = "Apache Commons Lang"
+733775c89f4e27aacb0aea36ccf7e47f_o1 : software_homePage = "http://commons.apache.org/proper/commons-lang/"
+733775c89f4e27aacb0aea36ccf7e47f_o6 : spdxId = "spdx-example:SPDXef-Relationship-2"
+733775c89f4e27aacb0aea36ccf7e47f_o6::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o2 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o7 : spdxId = "spdx-example:SPDXRef-Package"
+733775c89f4e27aacb0aea36ccf7e47f_o7::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o2 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o7 : description = "The GNU C Library defines functions that are specified by the ISO C standard, as well as additional features specific to POSIX and other derivatives of the Unix operating system, and extensions specific to GNU systems."
+733775c89f4e27aacb0aea36ccf7e47f_o8 : externalIdentifierType = "https://spdx.org/rdf/3.0.0/terms/Core/ExternalIdentifierType/cpe23"
+733775c89f4e27aacb0aea36ccf7e47f_o8 : identifier = "cpe:2.3:a:pivotal_software:spring_framework:4.1.0:*:*:*:*:*:*:*"
+733775c89f4e27aacb0aea36ccf7e47f_o7::externalIdentifier --> 733775c89f4e27aacb0aea36ccf7e47f_o8 : externalIdentifier
+733775c89f4e27aacb0aea36ccf7e47f_o7 : name = "glibc"
+733775c89f4e27aacb0aea36ccf7e47f_o7 : summary = "GNU C library."
+733775c89f4e27aacb0aea36ccf7e47f_o9 : algorithm = "https://spdx.org/rdf/3.0.0/terms/Core/HashAlgorithm/md5"
+733775c89f4e27aacb0aea36ccf7e47f_o9 : hashValue = "624c1abb3664f4b35547e7c73864ad24"
+733775c89f4e27aacb0aea36ccf7e47f_o7::verifiedUsing --> 733775c89f4e27aacb0aea36ccf7e47f_o9 : verifiedUsing
+733775c89f4e27aacb0aea36ccf7e47f_o10 : algorithm = "https://spdx.org/rdf/3.0.0/terms/Core/HashAlgorithm/sha1"
+733775c89f4e27aacb0aea36ccf7e47f_o10 : hashValue = "85ed0817af83a24ad8da68c2b5094de69833983c"
+733775c89f4e27aacb0aea36ccf7e47f_o7::verifiedUsing --> 733775c89f4e27aacb0aea36ccf7e47f_o10 : verifiedUsing
+733775c89f4e27aacb0aea36ccf7e47f_o11 : algorithm = "https://spdx.org/rdf/3.0.0/terms/Core/HashAlgorithm/sha256"
+733775c89f4e27aacb0aea36ccf7e47f_o11 : hashValue = "11b6d3ee554eedf79299905a98f9b9a04e498210b59f15094c916c91d150efcd"
+733775c89f4e27aacb0aea36ccf7e47f_o7::verifiedUsing --> 733775c89f4e27aacb0aea36ccf7e47f_o11 : verifiedUsing
+733775c89f4e27aacb0aea36ccf7e47f_o12 : algorithm = "https://spdx.org/rdf/3.0.0/terms/Core/HashAlgorithm/blake2b384"
+733775c89f4e27aacb0aea36ccf7e47f_o12 : hashValue = "aaabd89c926ab525c242e6621f2f5fa73aa4afe3d9e24aed727faaadd6af38b620bdb623dd2b4788b1c8086984af8706"
+733775c89f4e27aacb0aea36ccf7e47f_o7::verifiedUsing --> 733775c89f4e27aacb0aea36ccf7e47f_o12 : verifiedUsing
+733775c89f4e27aacb0aea36ccf7e47f_o7 : builtTime = 2011-01-29 18:30:22+00:00
+733775c89f4e27aacb0aea36ccf7e47f_o13 : spdxId = "spdx-example:SPDXRef-Actor-ExampleCodeInspect-contact@example.com"
+733775c89f4e27aacb0aea36ccf7e47f_o13::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o2 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o14 : externalIdentifierType = "https://spdx.org/rdf/3.0.0/terms/Core/ExternalIdentifierType/email"
+733775c89f4e27aacb0aea36ccf7e47f_o14 : identifier = "contact@example.com"
+733775c89f4e27aacb0aea36ccf7e47f_o13::externalIdentifier --> 733775c89f4e27aacb0aea36ccf7e47f_o14 : externalIdentifier
+733775c89f4e27aacb0aea36ccf7e47f_o13 : name = "ExampleCodeInspect"
+733775c89f4e27aacb0aea36ccf7e47f_o7::originatedBy --> 733775c89f4e27aacb0aea36ccf7e47f_o13 : originatedBy
+733775c89f4e27aacb0aea36ccf7e47f_o7 : releaseTime = 2012-01-29 18:30:22+00:00
+733775c89f4e27aacb0aea36ccf7e47f_o15 : spdxId = "spdx-example:SPDXRef-Actor-JaneDoe-jane.doe@example.com"
+733775c89f4e27aacb0aea36ccf7e47f_o15::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o2 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o16 : externalIdentifierType = "https://spdx.org/rdf/3.0.0/terms/Core/ExternalIdentifierType/email"
+733775c89f4e27aacb0aea36ccf7e47f_o16 : identifier = "jane.doe@example.com"
+733775c89f4e27aacb0aea36ccf7e47f_o15::externalIdentifier --> 733775c89f4e27aacb0aea36ccf7e47f_o16 : externalIdentifier
+733775c89f4e27aacb0aea36ccf7e47f_o15 : name = "Jane Doe"
+733775c89f4e27aacb0aea36ccf7e47f_o7::suppliedBy --> 733775c89f4e27aacb0aea36ccf7e47f_o15 : suppliedBy
+733775c89f4e27aacb0aea36ccf7e47f_o7 : validUntilTime = 2014-01-29 18:30:22+00:00
+733775c89f4e27aacb0aea36ccf7e47f_o7 : software_attributionText = ['The GNU C Library is free software.  See the file COPYING.LIB for copying conditions, and LICENSES for notices about a few contributions that require these additional notices to be distributed.  License copyright years may be listed using range notation, e.g., 1996-2015, indicating that every year in the range, inclusive, is a copyrightable year that would otherwise be listed individually.']
+733775c89f4e27aacb0aea36ccf7e47f_o7 : software_copyrightText = "Copyright 2008-2010 John Smith"
+733775c89f4e27aacb0aea36ccf7e47f_o7 : software_primaryPurpose = "https://spdx.org/rdf/3.0.0/terms/Software/SoftwarePurpose/source"
+733775c89f4e27aacb0aea36ccf7e47f_o7 : software_downloadLocation = "http://ftp.gnu.org/gnu/glibc/glibc-ports-2.15.tar.gz"
+733775c89f4e27aacb0aea36ccf7e47f_o7 : software_homePage = "http://ftp.gnu.org/gnu/glibc"
+733775c89f4e27aacb0aea36ccf7e47f_o7 : software_packageVersion = "2.11.1"
+733775c89f4e27aacb0aea36ccf7e47f_o7 : software_sourceInfo = "uses glibc-2_11-branch from git://sourceware.org/git/glibc.git."
+733775c89f4e27aacb0aea36ccf7e47f_o7 <-- 733775c89f4e27aacb0aea36ccf7e47f_o6::from : from
+733775c89f4e27aacb0aea36ccf7e47f_o6 : relationshipType = "https://spdx.org/rdf/3.0.0/terms/Core/RelationshipType/dependsOn"
+733775c89f4e27aacb0aea36ccf7e47f_o17 : spdxId = "spdx-example:SPDXRef-Saxon"
+733775c89f4e27aacb0aea36ccf7e47f_o17::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o2 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o17 : description = "The Saxon package is a collection of tools for processing XML documents."
+733775c89f4e27aacb0aea36ccf7e47f_o17 : name = "Saxon"
+733775c89f4e27aacb0aea36ccf7e47f_o18 : algorithm = "https://spdx.org/rdf/3.0.0/terms/Core/HashAlgorithm/sha1"
+733775c89f4e27aacb0aea36ccf7e47f_o18 : hashValue = "85ed0817af83a24ad8da68c2b5094de69833983c"
+733775c89f4e27aacb0aea36ccf7e47f_o17::verifiedUsing --> 733775c89f4e27aacb0aea36ccf7e47f_o18 : verifiedUsing
+733775c89f4e27aacb0aea36ccf7e47f_o17 : software_copyrightText = "Copyright Saxonica Ltd"
+733775c89f4e27aacb0aea36ccf7e47f_o17 : software_downloadLocation = "https://sourceforge.net/projects/saxon/files/Saxon-B/8.8.0.7/saxonb8-8-0-7j.zip/download"
+733775c89f4e27aacb0aea36ccf7e47f_o17 : software_homePage = "http://saxon.sourceforge.net/"
+733775c89f4e27aacb0aea36ccf7e47f_o17 : software_packageVersion = "8.8"
+733775c89f4e27aacb0aea36ccf7e47f_o6::to --> 733775c89f4e27aacb0aea36ccf7e47f_o17 : to
+733775c89f4e27aacb0aea36ccf7e47f_o19 : spdxId = "spdx-example:SPDXRef-File"
+733775c89f4e27aacb0aea36ccf7e47f_o19 : comment = "The concluded license was taken from the package level that the file was included in.\nThis information was found in the COPYING.txt file in the xyz directory."
+733775c89f4e27aacb0aea36ccf7e47f_o19::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o2 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o19 : name = "./package/foo.c"
+733775c89f4e27aacb0aea36ccf7e47f_o20 : algorithm = "https://spdx.org/rdf/3.0.0/terms/Core/HashAlgorithm/sha1"
+733775c89f4e27aacb0aea36ccf7e47f_o20 : hashValue = "d6a770ba38583ed4bb4525bd96e50461655d2758"
+733775c89f4e27aacb0aea36ccf7e47f_o19::verifiedUsing --> 733775c89f4e27aacb0aea36ccf7e47f_o20 : verifiedUsing
+733775c89f4e27aacb0aea36ccf7e47f_o21 : algorithm = "https://spdx.org/rdf/3.0.0/terms/Core/HashAlgorithm/md5"
+733775c89f4e27aacb0aea36ccf7e47f_o21 : hashValue = "624c1abb3664f4b35547e7c73864ad24"
+733775c89f4e27aacb0aea36ccf7e47f_o19::verifiedUsing --> 733775c89f4e27aacb0aea36ccf7e47f_o21 : verifiedUsing
+733775c89f4e27aacb0aea36ccf7e47f_o19 : software_copyrightText = "Copyright 2008-2010 John Smith"
+733775c89f4e27aacb0aea36ccf7e47f_o22 : spdxId = "spdx-example:SPDXRef-Relationship-5"
+733775c89f4e27aacb0aea36ccf7e47f_o22::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o2 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o23 : spdxId = "spdx-example:SPDXRef-fromDoap-0"
+733775c89f4e27aacb0aea36ccf7e47f_o23::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o2 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o23 : name = "Jena"
+733775c89f4e27aacb0aea36ccf7e47f_o23 : software_downloadLocation = "https://search.maven.org/remotecontent?filepath=org/apache/jena/apache-jena/3.12.0/apache-jena-3.12.0.tar.gz"
+733775c89f4e27aacb0aea36ccf7e47f_o23 : software_homePage = "http://www.openjena.org/"
+733775c89f4e27aacb0aea36ccf7e47f_o23 : software_packageUrl = "pkg:maven/org.apache.jena/apache-jena@3.12.0"
+733775c89f4e27aacb0aea36ccf7e47f_o23 : software_packageVersion = "3.12.0"
+733775c89f4e27aacb0aea36ccf7e47f_o23 <-- 733775c89f4e27aacb0aea36ccf7e47f_o22::from : from
+733775c89f4e27aacb0aea36ccf7e47f_o22 : relationshipType = "https://spdx.org/rdf/3.0.0/terms/Core/RelationshipType/hasSpecification"
+733775c89f4e27aacb0aea36ccf7e47f_o24 : spdxId = "spdx-example:SPDXRef-Specification"
+733775c89f4e27aacb0aea36ccf7e47f_o24 : comment = "Specification Documentation"
+733775c89f4e27aacb0aea36ccf7e47f_o24::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o2 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o24 : name = "./docs/myspec.pdf"
+733775c89f4e27aacb0aea36ccf7e47f_o25 : algorithm = "https://spdx.org/rdf/3.0.0/terms/Core/HashAlgorithm/sha1"
+733775c89f4e27aacb0aea36ccf7e47f_o25 : hashValue = "fff4e1c67a2d28fced849ee1bb76e7391b93f125"
+733775c89f4e27aacb0aea36ccf7e47f_o24::verifiedUsing --> 733775c89f4e27aacb0aea36ccf7e47f_o25 : verifiedUsing
+733775c89f4e27aacb0aea36ccf7e47f_o22::to --> 733775c89f4e27aacb0aea36ccf7e47f_o24 : to
+733775c89f4e27aacb0aea36ccf7e47f_o26 : spdxId = "spdx-example:SPDXRef-Relationship-1"
+733775c89f4e27aacb0aea36ccf7e47f_o26::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o2 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o27 : spdxId = "spdx-example:SPDXRef-DOCUMENT"
+733775c89f4e27aacb0aea36ccf7e47f_o27 : comment = "This document was created using SPDX 2.0 using licenses from the web site."
+733775c89f4e27aacb0aea36ccf7e47f_o27::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o2 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o27 : name = "SPDX-Tools-v2.0"
+733775c89f4e27aacb0aea36ccf7e47f_o27::element --> 733775c89f4e27aacb0aea36ccf7e47f_o5 : element
+733775c89f4e27aacb0aea36ccf7e47f_o27::element --> 733775c89f4e27aacb0aea36ccf7e47f_o3 : element
+733775c89f4e27aacb0aea36ccf7e47f_o27::element --> 733775c89f4e27aacb0aea36ccf7e47f_o4 : element
+733775c89f4e27aacb0aea36ccf7e47f_o27::element --> 733775c89f4e27aacb0aea36ccf7e47f_o15 : element
+733775c89f4e27aacb0aea36ccf7e47f_o27::element --> 733775c89f4e27aacb0aea36ccf7e47f_o13 : element
+733775c89f4e27aacb0aea36ccf7e47f_o27::element --> 733775c89f4e27aacb0aea36ccf7e47f_o7 : element
+733775c89f4e27aacb0aea36ccf7e47f_o27::element --> 733775c89f4e27aacb0aea36ccf7e47f_o1 : element
+733775c89f4e27aacb0aea36ccf7e47f_o27::element --> 733775c89f4e27aacb0aea36ccf7e47f_o23 : element
+733775c89f4e27aacb0aea36ccf7e47f_o27::element --> 733775c89f4e27aacb0aea36ccf7e47f_o17 : element
+733775c89f4e27aacb0aea36ccf7e47f_o28 : spdxId = "spdx-example:SPDXRef-DoapSource"
+733775c89f4e27aacb0aea36ccf7e47f_o28::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o2 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o28 : name = "./src/org/spdx/parser/DOAPProject.java"
+733775c89f4e27aacb0aea36ccf7e47f_o29 : algorithm = "https://spdx.org/rdf/3.0.0/terms/Core/HashAlgorithm/sha1"
+733775c89f4e27aacb0aea36ccf7e47f_o29 : hashValue = "2fd4e1c67a2d28fced849ee1bb76e7391b93eb12"
+733775c89f4e27aacb0aea36ccf7e47f_o28::verifiedUsing --> 733775c89f4e27aacb0aea36ccf7e47f_o29 : verifiedUsing
+733775c89f4e27aacb0aea36ccf7e47f_o28 : software_copyrightText = "Copyright 2010, 2011 Source Auditor Inc."
+733775c89f4e27aacb0aea36ccf7e47f_o27::element --> 733775c89f4e27aacb0aea36ccf7e47f_o28 : element
+733775c89f4e27aacb0aea36ccf7e47f_o30 : spdxId = "spdx-example:SPDXRef-CommonsLangSrc"
+733775c89f4e27aacb0aea36ccf7e47f_o30 : comment = "This file is used by Jena"
+733775c89f4e27aacb0aea36ccf7e47f_o30::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o2 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o30 : name = "./lib-source/commons-lang3-3.1-sources.jar"
+733775c89f4e27aacb0aea36ccf7e47f_o31 : algorithm = "https://spdx.org/rdf/3.0.0/terms/Core/HashAlgorithm/sha1"
+733775c89f4e27aacb0aea36ccf7e47f_o31 : hashValue = "c2b4e1c67a2d28fced849ee1bb76e7391b93f125"
+733775c89f4e27aacb0aea36ccf7e47f_o30::verifiedUsing --> 733775c89f4e27aacb0aea36ccf7e47f_o31 : verifiedUsing
+733775c89f4e27aacb0aea36ccf7e47f_o30 : software_copyrightText = "Copyright 2001-2011 The Apache Software Foundation"
+733775c89f4e27aacb0aea36ccf7e47f_o27::element --> 733775c89f4e27aacb0aea36ccf7e47f_o30 : element
+733775c89f4e27aacb0aea36ccf7e47f_o32 : spdxId = "spdx-example:SPDXRef-JenaLib"
+733775c89f4e27aacb0aea36ccf7e47f_o32 : comment = "This file belongs to Jena"
+733775c89f4e27aacb0aea36ccf7e47f_o32::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o2 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o32 : name = "./lib-source/jena-2.6.3-sources.jar"
+733775c89f4e27aacb0aea36ccf7e47f_o33 : algorithm = "https://spdx.org/rdf/3.0.0/terms/Core/HashAlgorithm/sha1"
+733775c89f4e27aacb0aea36ccf7e47f_o33 : hashValue = "3ab4e1c67a2d28fced849ee1bb76e7391b93f125"
+733775c89f4e27aacb0aea36ccf7e47f_o32::verifiedUsing --> 733775c89f4e27aacb0aea36ccf7e47f_o33 : verifiedUsing
+733775c89f4e27aacb0aea36ccf7e47f_o32 : software_copyrightText = "(c) Copyright 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009 Hewlett-Packard Development Company, LP"
+733775c89f4e27aacb0aea36ccf7e47f_o27::element --> 733775c89f4e27aacb0aea36ccf7e47f_o32 : element
+733775c89f4e27aacb0aea36ccf7e47f_o27::element --> 733775c89f4e27aacb0aea36ccf7e47f_o24 : element
+733775c89f4e27aacb0aea36ccf7e47f_o27::element --> 733775c89f4e27aacb0aea36ccf7e47f_o19 : element
+733775c89f4e27aacb0aea36ccf7e47f_o34 : spdxId = "spdx-example:SPDXRef-Snippet"
+733775c89f4e27aacb0aea36ccf7e47f_o34 : comment = "This snippet was identified as significant and highlighted in this Apache-2.0 file, when a commercial scanner identified it as being derived from file foo.c in package xyz which is licensed under GPL-2.0."
+733775c89f4e27aacb0aea36ccf7e47f_o34::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o2 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o34 : name = "from linux kernel"
+733775c89f4e27aacb0aea36ccf7e47f_o34 : software_copyrightText = "Copyright 2008-2010 John Smith"
+733775c89f4e27aacb0aea36ccf7e47f_o35 : beginIntegerRange = 310
+733775c89f4e27aacb0aea36ccf7e47f_o35 : endIntegerRange = 420
+733775c89f4e27aacb0aea36ccf7e47f_o34::software_byteRange --> 733775c89f4e27aacb0aea36ccf7e47f_o35 : software_byteRange
+733775c89f4e27aacb0aea36ccf7e47f_o36 : beginIntegerRange = 5
+733775c89f4e27aacb0aea36ccf7e47f_o36 : endIntegerRange = 23
+733775c89f4e27aacb0aea36ccf7e47f_o34::software_lineRange --> 733775c89f4e27aacb0aea36ccf7e47f_o36 : software_lineRange
+733775c89f4e27aacb0aea36ccf7e47f_o37::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o38 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o34::software_snippetFromFile --> 733775c89f4e27aacb0aea36ccf7e47f_o37 : software_snippetFromFile
+733775c89f4e27aacb0aea36ccf7e47f_o27::element --> 733775c89f4e27aacb0aea36ccf7e47f_o34 : element
+733775c89f4e27aacb0aea36ccf7e47f_o39 : spdxId = "spdx-example:SPDXRef-Relationship-0"
+733775c89f4e27aacb0aea36ccf7e47f_o39::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o2 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o27 <-- 733775c89f4e27aacb0aea36ccf7e47f_o39::from : from
+733775c89f4e27aacb0aea36ccf7e47f_o39 : relationshipType = "https://spdx.org/rdf/3.0.0/terms/Core/RelationshipType/contains"
+733775c89f4e27aacb0aea36ccf7e47f_o39::to --> 733775c89f4e27aacb0aea36ccf7e47f_o7 : to
+733775c89f4e27aacb0aea36ccf7e47f_o27::element --> 733775c89f4e27aacb0aea36ccf7e47f_o39 : element
+733775c89f4e27aacb0aea36ccf7e47f_o27::element --> 733775c89f4e27aacb0aea36ccf7e47f_o26 : element
+733775c89f4e27aacb0aea36ccf7e47f_o27::element --> 733775c89f4e27aacb0aea36ccf7e47f_131ef1decc356ab6ad570e6c7492c799 : element
+733775c89f4e27aacb0aea36ccf7e47f_o41 : spdxId = "spdx-example:SPDXRef-Relationship-4"
+733775c89f4e27aacb0aea36ccf7e47f_o41::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o2 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o32 <-- 733775c89f4e27aacb0aea36ccf7e47f_o41::from : from
+733775c89f4e27aacb0aea36ccf7e47f_o41 : relationshipType = "https://spdx.org/rdf/3.0.0/terms/Core/RelationshipType/contains"
+733775c89f4e27aacb0aea36ccf7e47f_o41::to --> 733775c89f4e27aacb0aea36ccf7e47f_o7 : to
+733775c89f4e27aacb0aea36ccf7e47f_o27::element --> 733775c89f4e27aacb0aea36ccf7e47f_o41 : element
+733775c89f4e27aacb0aea36ccf7e47f_o27::element --> 733775c89f4e27aacb0aea36ccf7e47f_o22 : element
+733775c89f4e27aacb0aea36ccf7e47f_o42 : spdxId = "spdx-example:SPDXRef-Relationship-6"
+733775c89f4e27aacb0aea36ccf7e47f_o42::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o2 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o23 <-- 733775c89f4e27aacb0aea36ccf7e47f_o42::from : from
+733775c89f4e27aacb0aea36ccf7e47f_o42 : relationshipType = "https://spdx.org/rdf/3.0.0/terms/Core/RelationshipType/generates"
+733775c89f4e27aacb0aea36ccf7e47f_o42::to --> 733775c89f4e27aacb0aea36ccf7e47f_o19 : to
+733775c89f4e27aacb0aea36ccf7e47f_o27::element --> 733775c89f4e27aacb0aea36ccf7e47f_o42 : element
+733775c89f4e27aacb0aea36ccf7e47f_o43 : spdxId = "spdx-example:SPDXRef-Relationship-8"
+733775c89f4e27aacb0aea36ccf7e47f_o43::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o2 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o27 <-- 733775c89f4e27aacb0aea36ccf7e47f_o43::from : from
+733775c89f4e27aacb0aea36ccf7e47f_o43 : relationshipType = "https://spdx.org/rdf/3.0.0/terms/Core/RelationshipType/describes"
+733775c89f4e27aacb0aea36ccf7e47f_o43::to --> 733775c89f4e27aacb0aea36ccf7e47f_o19 : to
+733775c89f4e27aacb0aea36ccf7e47f_o43::to --> 733775c89f4e27aacb0aea36ccf7e47f_o7 : to
+733775c89f4e27aacb0aea36ccf7e47f_o27::element --> 733775c89f4e27aacb0aea36ccf7e47f_o43 : element
+733775c89f4e27aacb0aea36ccf7e47f_o44 : spdxId = "spdx-example:SPDXRef-Relationship-12"
+733775c89f4e27aacb0aea36ccf7e47f_o44::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o2 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o7 <-- 733775c89f4e27aacb0aea36ccf7e47f_o44::from : from
+733775c89f4e27aacb0aea36ccf7e47f_o44 : relationshipType = "https://spdx.org/rdf/3.0.0/terms/Core/RelationshipType/contains"
+733775c89f4e27aacb0aea36ccf7e47f_o44::to --> 733775c89f4e27aacb0aea36ccf7e47f_o24 : to
+733775c89f4e27aacb0aea36ccf7e47f_o44::to --> 733775c89f4e27aacb0aea36ccf7e47f_o30 : to
+733775c89f4e27aacb0aea36ccf7e47f_o44::to --> 733775c89f4e27aacb0aea36ccf7e47f_o32 : to
+733775c89f4e27aacb0aea36ccf7e47f_o44::to --> 733775c89f4e27aacb0aea36ccf7e47f_o28 : to
+733775c89f4e27aacb0aea36ccf7e47f_o27::element --> 733775c89f4e27aacb0aea36ccf7e47f_o44 : element
+733775c89f4e27aacb0aea36ccf7e47f_o45 : spdxId = "spdx-example:SPDXRef-Annotation-0"
+733775c89f4e27aacb0aea36ccf7e47f_o45::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o2 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o45 : annotationType = "https://spdx.org/rdf/3.0.0/terms/Core/AnnotationType/other"
+733775c89f4e27aacb0aea36ccf7e47f_o45 : statement = "Document level annotation"
+733775c89f4e27aacb0aea36ccf7e47f_o45::subject --> 733775c89f4e27aacb0aea36ccf7e47f_o27 : subject
+733775c89f4e27aacb0aea36ccf7e47f_o27::element --> 733775c89f4e27aacb0aea36ccf7e47f_o45 : element
+733775c89f4e27aacb0aea36ccf7e47f_o46 : spdxId = "spdx-example:SPDXRef-Actor-JoeReviewer"
+733775c89f4e27aacb0aea36ccf7e47f_o46::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o2 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o46 : name = "Joe Reviewer"
+733775c89f4e27aacb0aea36ccf7e47f_o27::element --> 733775c89f4e27aacb0aea36ccf7e47f_o46 : element
+733775c89f4e27aacb0aea36ccf7e47f_o47 : spdxId = "spdx-example:SPDXRef-Annotation-1"
+733775c89f4e27aacb0aea36ccf7e47f_o47::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o2 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o47 : annotationType = "https://spdx.org/rdf/3.0.0/terms/Core/AnnotationType/review"
+733775c89f4e27aacb0aea36ccf7e47f_o47 : statement = "This is just an example.  Some of the non-standard licenses look like they are actually BSD 3 clause licenses"
+733775c89f4e27aacb0aea36ccf7e47f_o47::subject --> 733775c89f4e27aacb0aea36ccf7e47f_o27 : subject
+733775c89f4e27aacb0aea36ccf7e47f_o27::element --> 733775c89f4e27aacb0aea36ccf7e47f_o47 : element
+733775c89f4e27aacb0aea36ccf7e47f_o48 : spdxId = "spdx-example:SPDXRef-Actor-SuzanneReviewer"
+733775c89f4e27aacb0aea36ccf7e47f_o48::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o2 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o48 : name = "Suzanne Reviewer"
+733775c89f4e27aacb0aea36ccf7e47f_o27::element --> 733775c89f4e27aacb0aea36ccf7e47f_o48 : element
+733775c89f4e27aacb0aea36ccf7e47f_o49 : spdxId = "spdx-example:SPDXRef-Annotation-2"
+733775c89f4e27aacb0aea36ccf7e47f_o49::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o2 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o49 : annotationType = "https://spdx.org/rdf/3.0.0/terms/Core/AnnotationType/review"
+733775c89f4e27aacb0aea36ccf7e47f_o49 : statement = "Another example reviewer."
+733775c89f4e27aacb0aea36ccf7e47f_o49::subject --> 733775c89f4e27aacb0aea36ccf7e47f_o27 : subject
+733775c89f4e27aacb0aea36ccf7e47f_o27::element --> 733775c89f4e27aacb0aea36ccf7e47f_o49 : element
+733775c89f4e27aacb0aea36ccf7e47f_o50 : spdxId = "spdx-example:SPDXRef-Actor-PackageCommenter"
+733775c89f4e27aacb0aea36ccf7e47f_o50::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o2 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o50 : name = "Package Commenter"
+733775c89f4e27aacb0aea36ccf7e47f_o27::element --> 733775c89f4e27aacb0aea36ccf7e47f_o50 : element
+733775c89f4e27aacb0aea36ccf7e47f_o51 : spdxId = "spdx-example:SPDXRef-Annotation-3"
+733775c89f4e27aacb0aea36ccf7e47f_o51::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o2 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o51 : annotationType = "https://spdx.org/rdf/3.0.0/terms/Core/AnnotationType/other"
+733775c89f4e27aacb0aea36ccf7e47f_o51 : statement = "Package level annotation"
+733775c89f4e27aacb0aea36ccf7e47f_o51::subject --> 733775c89f4e27aacb0aea36ccf7e47f_o7 : subject
+733775c89f4e27aacb0aea36ccf7e47f_o27::element --> 733775c89f4e27aacb0aea36ccf7e47f_o51 : element
+733775c89f4e27aacb0aea36ccf7e47f_o52 : spdxId = "spdx-example:SPDXRef-Actor-FileCommenter"
+733775c89f4e27aacb0aea36ccf7e47f_o52::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o2 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o52 : name = "File Commenter"
+733775c89f4e27aacb0aea36ccf7e47f_o27::element --> 733775c89f4e27aacb0aea36ccf7e47f_o52 : element
+733775c89f4e27aacb0aea36ccf7e47f_o53 : spdxId = "spdx-example:SPDXRef-Annotation-4"
+733775c89f4e27aacb0aea36ccf7e47f_o53::creationInfo --> 733775c89f4e27aacb0aea36ccf7e47f_o2 : creationInfo
+733775c89f4e27aacb0aea36ccf7e47f_o53 : annotationType = "https://spdx.org/rdf/3.0.0/terms/Core/AnnotationType/other"
+733775c89f4e27aacb0aea36ccf7e47f_o53 : statement = "File level annotation"
+733775c89f4e27aacb0aea36ccf7e47f_o53::subject --> 733775c89f4e27aacb0aea36ccf7e47f_o19 : subject
+733775c89f4e27aacb0aea36ccf7e47f_o27::element --> 733775c89f4e27aacb0aea36ccf7e47f_o53 : element
+733775c89f4e27aacb0aea36ccf7e47f_o27 : profileConformance = ['https://spdx.org/rdf/3.0.0/terms/Core/ProfileIdentifierType/core', 'https://spdx.org/rdf/3.0.0/terms/Core/ProfileIdentifierType/software']
+733775c89f4e27aacb0aea36ccf7e47f_o27::rootElement --> 733775c89f4e27aacb0aea36ccf7e47f_o19 : rootElement
+733775c89f4e27aacb0aea36ccf7e47f_o27::rootElement --> 733775c89f4e27aacb0aea36ccf7e47f_o7 : rootElement
+733775c89f4e27aacb0aea36ccf7e47f_o54 : externalSpdxId = "DocumentRef-spdx-tool-1.2:SPDXRef-DOCUMENT"
+733775c89f4e27aacb0aea36ccf7e47f_o55 : algorithm = "https://spdx.org/rdf/3.0.0/terms/Core/HashAlgorithm/sha1"
+733775c89f4e27aacb0aea36ccf7e47f_o55 : hashValue = "d6a770ba38583ed4bb4525bd96e50461655d2759"
+733775c89f4e27aacb0aea36ccf7e47f_o54::verifiedUsing --> 733775c89f4e27aacb0aea36ccf7e47f_o55 : verifiedUsing
+733775c89f4e27aacb0aea36ccf7e47f_o27::imports --> 733775c89f4e27aacb0aea36ccf7e47f_o54 : imports
+733775c89f4e27aacb0aea36ccf7e47f_o56 : namespace = "http://spdx.org/spdxdocs/spdx-tools-v1.2-3F2504E0-4F89-41D3-9A0C-0305E82C3301#"
+733775c89f4e27aacb0aea36ccf7e47f_o56 : prefix = "DocumentRef-spdx-tool-1.2"
+733775c89f4e27aacb0aea36ccf7e47f_o27::namespaceMap --> 733775c89f4e27aacb0aea36ccf7e47f_o56 : namespaceMap
+733775c89f4e27aacb0aea36ccf7e47f_o27 <-- 733775c89f4e27aacb0aea36ccf7e47f_o26::from : from
+733775c89f4e27aacb0aea36ccf7e47f_o26 : relationshipType = "https://spdx.org/rdf/3.0.0/terms/Core/RelationshipType/copiedTo"
+733775c89f4e27aacb0aea36ccf7e47f_o26 : to = ['spdx-example:DocumentRef-spdx-tool-1.2:SPDXRef-ToolsElement']
+@enduml

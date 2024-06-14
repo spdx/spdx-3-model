@@ -1,0 +1,16 @@
+@startuml
+Package "agent1.json" as 34afb2c99be04050831a2cc735f53968 {
+object "<b>John Smith</b>\nAgent" as 34afb2c99be04050831a2cc735f53968_o1
+object "CreationInfo" as 34afb2c99be04050831a2cc735f53968_o2
+object "ExternalIdentifier" as 34afb2c99be04050831a2cc735f53968_o3
+}
+34afb2c99be04050831a2cc735f53968_o1 : spdxId = "https://some.namespace#agent1"
+34afb2c99be04050831a2cc735f53968_o2 : created = 2022-12-01 00:00:00+00:00
+34afb2c99be04050831a2cc735f53968_o2 : createdBy = ['https://spdx.dev/elements/3F26391C#spdx-dev']
+34afb2c99be04050831a2cc735f53968_o2 : specVersion = "3.0.0"
+34afb2c99be04050831a2cc735f53968_o1::creationInfo --> 34afb2c99be04050831a2cc735f53968_o2 : creationInfo
+34afb2c99be04050831a2cc735f53968_o3 : externalIdentifierType = "https://spdx.org/rdf/3.0.0/terms/Core/ExternalIdentifierType/email"
+34afb2c99be04050831a2cc735f53968_o3 : identifier = "info@acme.com"
+34afb2c99be04050831a2cc735f53968_o1::externalIdentifier --> 34afb2c99be04050831a2cc735f53968_o3 : externalIdentifier
+34afb2c99be04050831a2cc735f53968_o1 : name = "John Smith"
+@enduml

@@ -56,7 +56,7 @@ with the SPDX model. In particular, these are "spdxId" for "@id" and "type" for
 "@type".
 
 Further custom namespace mapping can be included in the context in a separate
-object, see for example [here](json_ld/examples/spdx_document4.json).
+object, see for example [here](json-ld/examples/spdx_document4.json).
 
 ## Validation
 
@@ -64,7 +64,7 @@ An SPDX serialization in JSON-LD is considered valid if it validates against
 the OWL ontology which also includes SHACL shape restrictions.
 
 Read a detailed document on how to
-[validating SPDX 3 JSON-LD documents](json_ld/validation.md), structurally and
+[validating SPDX 3 JSON-LD documents](json-ld/validation.md), structurally and
 semantically. The document also include a few tools that are known to work.
 
 The OWL ontology is located at <https://spdx.org/rdf/3.0.0/spdx-model.ttl>.
@@ -76,4 +76,4 @@ from the
 
 ## Examples
 
-JSON-LD serialization examples can be found [here](json_ld/examples.md).
+JSON-LD serialization examples can be found [here](json-ld/examples.md).

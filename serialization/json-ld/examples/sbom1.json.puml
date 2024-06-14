@@ -1,0 +1,14 @@
+@startuml
+Package "sbom1.json" as 56b3ec1198017674bce616df2e9cf1d3 {
+object "https://some.namespace#SBOM\nsoftware_Sbom" as 56b3ec1198017674bce616df2e9cf1d3_o1
+object "CreationInfo" as 56b3ec1198017674bce616df2e9cf1d3_o2
+}
+56b3ec1198017674bce616df2e9cf1d3_o1 : spdxId = "https://some.namespace#SBOM"
+56b3ec1198017674bce616df2e9cf1d3_o2 : created = 2022-12-01 00:00:00+00:00
+56b3ec1198017674bce616df2e9cf1d3_o2 : createdBy = ['https://spdx.dev/elements/3F26391C#spdx-dev']
+56b3ec1198017674bce616df2e9cf1d3_o2 : specVersion = "3.0.0"
+56b3ec1198017674bce616df2e9cf1d3_o1::creationInfo --> 56b3ec1198017674bce616df2e9cf1d3_o2 : creationInfo
+56b3ec1198017674bce616df2e9cf1d3_o1 : element = ['https://some.namespace#File1', 'https://spdx.dev/elements/3F26391C#spdx-spec-v2.3']
+56b3ec1198017674bce616df2e9cf1d3_o1 : rootElement = ['https://some.namespace#File1']
+56b3ec1198017674bce616df2e9cf1d3_o1 : software_sbomType = ['https://spdx.org/rdf/3.0.0/terms/Software/SbomType/analyzed']
+@enduml

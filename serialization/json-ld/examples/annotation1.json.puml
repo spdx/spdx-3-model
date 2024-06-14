@@ -1,0 +1,16 @@
+@startuml
+Package "annotation1.json" as 742889fcdf5950130355030869b824b1 {
+object "<b>Acme Corp. Super SBOM-o-lator</b>\nAnnotation" as 742889fcdf5950130355030869b824b1_o1
+object "CreationInfo" as 742889fcdf5950130355030869b824b1_o2
+}
+742889fcdf5950130355030869b824b1_o1 : spdxId = "http://spdx.acme.org/3FA9CB25#annotation34"
+742889fcdf5950130355030869b824b1_o2 : created = 2022-12-01 00:00:00+00:00
+742889fcdf5950130355030869b824b1_o2 : createdBy = ['https://spdx.dev/elements/3F26391C#spdx-dev']
+742889fcdf5950130355030869b824b1_o2 : specVersion = "3.0.0"
+742889fcdf5950130355030869b824b1_o1::creationInfo --> 742889fcdf5950130355030869b824b1_o2 : creationInfo
+742889fcdf5950130355030869b824b1_o1 : name = "Acme Corp. Super SBOM-o-lator"
+742889fcdf5950130355030869b824b1_o1 : annotationType = "https://spdx.org/rdf/3.0.0/terms/Core/AnnotationType/review"
+742889fcdf5950130355030869b824b1_o1 : contentType = "text/plain"
+742889fcdf5950130355030869b824b1_o1 : statement = "Keanu Reeves is back as cyberpunk icon Neo but fans of the original will find this cynical reboot a bitter pill to swallow."
+742889fcdf5950130355030869b824b1_o1 : subject = "http://spdx.acme.org/3FA9CB25#person9"
+@enduml

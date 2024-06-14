@@ -1,0 +1,27 @@
+@startuml
+Package "spdx_document2.json" as 1254402040b0a03fbae1037ff379010a {
+object "CreationInfo" as 1254402040b0a03fbae1037ff379010a_o1
+object "<b>Doc 159 - two File elements</b>\nSpdxDocument" as 1254402040b0a03fbae1037ff379010a_o2
+object "<b>The Software Package Data Exchange® (SPDX®) Specification Version 2.3</b>\nsoftware_File" as 1254402040b0a03fbae1037ff379010a_o3
+object "<b>model.png</b>\nsoftware_File" as 1254402040b0a03fbae1037ff379010a_o4
+}
+1254402040b0a03fbae1037ff379010a_o1 : created = 2022-12-01 00:00:00+00:00
+1254402040b0a03fbae1037ff379010a_o1 : createdBy = ['https://spdx.dev/elements/3F26391C#spdx-dev']
+1254402040b0a03fbae1037ff379010a_o1 : specVersion = "3.0.0"
+1254402040b0a03fbae1037ff379010a_o2 : spdxId = "http://spdx.acme.org/3FA9CB25#spdxdocument159"
+1254402040b0a03fbae1037ff379010a_o2::creationInfo --> 1254402040b0a03fbae1037ff379010a_o1 : creationInfo
+1254402040b0a03fbae1037ff379010a_o2 : name = "Doc 159 - two File elements"
+1254402040b0a03fbae1037ff379010a_o2 : element = ['https://some.namespace#File1', <spdx3_to_graph.spdx30.software_File object at 0x104a99a10>]
+1254402040b0a03fbae1037ff379010a_o2 : profileConformance = ['https://spdx.org/rdf/3.0.0/terms/Core/ProfileIdentifierType/core', 'https://spdx.org/rdf/3.0.0/terms/Core/ProfileIdentifierType/software']
+1254402040b0a03fbae1037ff379010a_o2 : rootElement = ['https://some.namespace#File1']
+1254402040b0a03fbae1037ff379010a_o3 : spdxId = "https://spdx.dev/elements/3F26391C#spdx-spec-v2.3"
+1254402040b0a03fbae1037ff379010a_o3::creationInfo --> 1254402040b0a03fbae1037ff379010a_o1 : creationInfo
+1254402040b0a03fbae1037ff379010a_o3 : name = "The Software Package Data Exchange® (SPDX®) Specification Version 2.3"
+1254402040b0a03fbae1037ff379010a_o3 : software_primaryPurpose = "https://spdx.org/rdf/3.0.0/terms/Software/SoftwarePurpose/documentation"
+1254402040b0a03fbae1037ff379010a_o3 : software_contentType = "text/html"
+1254402040b0a03fbae1037ff379010a_o4 : spdxId = "https://some.namespace#file1"
+1254402040b0a03fbae1037ff379010a_o4::creationInfo --> 1254402040b0a03fbae1037ff379010a_o1 : creationInfo
+1254402040b0a03fbae1037ff379010a_o4 : name = "model.png"
+1254402040b0a03fbae1037ff379010a_o4 : software_primaryPurpose = "https://spdx.org/rdf/3.0.0/terms/Software/SoftwarePurpose/documentation"
+1254402040b0a03fbae1037ff379010a_o4 : software_contentType = "image/png"
+@enduml

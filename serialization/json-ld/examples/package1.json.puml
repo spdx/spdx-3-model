@@ -1,0 +1,34 @@
+@startuml
+Package "package1.json" as dbaf1509dff2ab643f231a641ea44dd1 {
+object "<b>packageName</b>\nsoftware_Package" as dbaf1509dff2ab643f231a641ea44dd1_o1
+object "CreationInfo" as dbaf1509dff2ab643f231a641ea44dd1_o2
+object "ExternalRef" as dbaf1509dff2ab643f231a641ea44dd1_o3
+object "Hash" as dbaf1509dff2ab643f231a641ea44dd1_o4
+object "Hash" as dbaf1509dff2ab643f231a641ea44dd1_o5
+}
+dbaf1509dff2ab643f231a641ea44dd1_o1 : spdxId = "https://some.namespace#SPDXRef-Package"
+dbaf1509dff2ab643f231a641ea44dd1_o1 : comment = "packageComment"
+dbaf1509dff2ab643f231a641ea44dd1_o2 : created = 2022-12-01 00:00:00+00:00
+dbaf1509dff2ab643f231a641ea44dd1_o2 : createdBy = ['https://spdx.dev/elements/3F26391C#spdx-dev']
+dbaf1509dff2ab643f231a641ea44dd1_o2 : specVersion = "3.0.0"
+dbaf1509dff2ab643f231a641ea44dd1_o1::creationInfo --> dbaf1509dff2ab643f231a641ea44dd1_o2 : creationInfo
+dbaf1509dff2ab643f231a641ea44dd1_o1 : description = "packageDescription"
+dbaf1509dff2ab643f231a641ea44dd1_o3 : externalRefType = "https://spdx.org/rdf/3.0.0/terms/Core/ExternalRefType/securityFix"
+dbaf1509dff2ab643f231a641ea44dd1_o3 : locator = ['https://support.com']
+dbaf1509dff2ab643f231a641ea44dd1_o1::externalRef --> dbaf1509dff2ab643f231a641ea44dd1_o3 : externalRef
+dbaf1509dff2ab643f231a641ea44dd1_o1 : name = "packageName"
+dbaf1509dff2ab643f231a641ea44dd1_o1 : summary = "packageSummary"
+dbaf1509dff2ab643f231a641ea44dd1_o4 : algorithm = "https://spdx.org/rdf/3.0.0/terms/Core/HashAlgorithm/sha1"
+dbaf1509dff2ab643f231a641ea44dd1_o4 : hashValue = "71c4025dd9897b364f3ebbb42c484ff43d00791c"
+dbaf1509dff2ab643f231a641ea44dd1_o1::verifiedUsing --> dbaf1509dff2ab643f231a641ea44dd1_o4 : verifiedUsing
+dbaf1509dff2ab643f231a641ea44dd1_o5 : algorithm = "https://spdx.org/rdf/3.0.0/terms/Core/HashAlgorithm/sha256"
+dbaf1509dff2ab643f231a641ea44dd1_o5 : hashValue = "fbea580d286bbbbb41314430d58ba887716a74d7134119c5307cdc9f0c7a4299"
+dbaf1509dff2ab643f231a641ea44dd1_o1::verifiedUsing --> dbaf1509dff2ab643f231a641ea44dd1_o5 : verifiedUsing
+dbaf1509dff2ab643f231a641ea44dd1_o1 : originatedBy = ['https://some.namespace#SPDXRef-Agent-creatorName-some@mail.com']
+dbaf1509dff2ab643f231a641ea44dd1_o1 : suppliedBy = "https://some.namespace#john_smith"
+dbaf1509dff2ab643f231a641ea44dd1_o1 : software_primaryPurpose = "https://spdx.org/rdf/3.0.0/terms/Software/SoftwarePurpose/source"
+dbaf1509dff2ab643f231a641ea44dd1_o1 : software_downloadLocation = "https://download.com"
+dbaf1509dff2ab643f231a641ea44dd1_o1 : software_homePage = "https://homepage.com"
+dbaf1509dff2ab643f231a641ea44dd1_o1 : software_packageUrl = "https://some.purl"
+dbaf1509dff2ab643f231a641ea44dd1_o1 : software_packageVersion = "12.2"
+@enduml

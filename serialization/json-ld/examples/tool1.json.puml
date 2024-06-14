@@ -1,0 +1,12 @@
+@startuml
+Package "tool1.json" as dbce2db8c9c0539f74f9a563948aad90 {
+object "<b>Acme Corp. Super SBOM-o-lator</b>\nTool" as dbce2db8c9c0539f74f9a563948aad90_o1
+object "CreationInfo" as dbce2db8c9c0539f74f9a563948aad90_o2
+}
+dbce2db8c9c0539f74f9a563948aad90_o1 : spdxId = "https://some.namespace#sbomolator_v2"
+dbce2db8c9c0539f74f9a563948aad90_o2 : created = 2022-12-01 00:00:00+00:00
+dbce2db8c9c0539f74f9a563948aad90_o2 : createdBy = ['https://spdx.dev/elements/3F26391C#spdx-dev']
+dbce2db8c9c0539f74f9a563948aad90_o2 : specVersion = "3.0.0"
+dbce2db8c9c0539f74f9a563948aad90_o1::creationInfo --> dbce2db8c9c0539f74f9a563948aad90_o2 : creationInfo
+dbce2db8c9c0539f74f9a563948aad90_o1 : name = "Acme Corp. Super SBOM-o-lator"
+@enduml

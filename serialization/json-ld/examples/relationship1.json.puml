@@ -1,0 +1,14 @@
+@startuml
+Package "relationship1.json" as 4c4689e6e8ffd06ba06dbbc24fbca44a {
+object "https://some.namespace#relationship1\nRelationship" as 4c4689e6e8ffd06ba06dbbc24fbca44a_o1
+object "CreationInfo" as 4c4689e6e8ffd06ba06dbbc24fbca44a_o2
+}
+4c4689e6e8ffd06ba06dbbc24fbca44a_o1 : spdxId = "https://some.namespace#relationship1"
+4c4689e6e8ffd06ba06dbbc24fbca44a_o2 : created = 2022-12-01 00:00:00+00:00
+4c4689e6e8ffd06ba06dbbc24fbca44a_o2 : createdBy = ['https://spdx.dev/elements/3F26391C#spdx-dev']
+4c4689e6e8ffd06ba06dbbc24fbca44a_o2 : specVersion = "3.0.0"
+4c4689e6e8ffd06ba06dbbc24fbca44a_o1::creationInfo --> 4c4689e6e8ffd06ba06dbbc24fbca44a_o2 : creationInfo
+4c4689e6e8ffd06ba06dbbc24fbca44a_o1 : from = "https://some.namespace#SPDXRef-Package"
+4c4689e6e8ffd06ba06dbbc24fbca44a_o1 : relationshipType = "https://spdx.org/rdf/3.0.0/terms/Core/RelationshipType/contains"
+4c4689e6e8ffd06ba06dbbc24fbca44a_o1 : to = ['https://some.namespace#file1', 'https://some.namespace#file2']
+@enduml
