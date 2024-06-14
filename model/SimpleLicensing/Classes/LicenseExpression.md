@@ -12,8 +12,8 @@ A LicenseExpression enables the representation, in a single string, of a
 combination of one or more licenses, together with additions such as license
 exceptions.
 
-The syntax for a LicenseExpression string is set forth in the SPDX License
-Expressions annex to the SPDX Specification. A LicenseExpression string is
+The syntax for a LicenseExpression string is set forth in the Annex D
+of the SPDX Specification ("SPDX license expressions"). A LicenseExpression string is
 not valid if it does not conform to the grammar set forth in that annex.
 
 The ExpandedLicensing profile can be used to represent the complete parsed

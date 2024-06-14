@@ -74,7 +74,7 @@ check-jsonschema -v --schemafile https://spdx.org/schema/3.0.0/spdx-json-schema.
 The SPDX 3 SHACL model is designed to validate that a document is semantically
 valid, that is that the way objects and properties are used actually conforms
 to SPDX 3. However, the SHACL model cannot validate the structure of a
-document, since there are many different ways of encoding and RDF document,
+document, since there are many different ways of encoding an RDF document,
 many of which are not allowed by SPDX 3.
 
 There is currently only one preferred tool for validating an SPDX 3 document
