@@ -17,7 +17,7 @@ software packages. A purl is a URL string which represents a package in a
 mostly universal and uniform way across programming languages, package
 managers, packaging conventions, tools, APIs and databases.
 
-the purl URL string is defined by seven components:
+The purl URL string is defined by seven components:
 
 ```text
 scheme:type/namespace/name@version?qualifiers#subpath

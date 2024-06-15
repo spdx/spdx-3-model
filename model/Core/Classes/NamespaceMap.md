@@ -16,9 +16,9 @@ the Elements.
 
 For details of how NamespaceMap content is to be serialized please refer to
 general SPDX serialization guidance at
-https://github.com/spdx/spdx-3-model/blob/main/serialization/README.md
+<https://github.com/spdx/spdx-3-model/blob/main/serialization/README.md>
 and the various serialization format specific .md filed under
-https://github.com/spdx/spdx-3-model/tree/main/serialization
+<https://github.com/spdx/spdx-3-model/tree/main/serialization>
 (TODO: update the URLs as soon as the context is publicly available)
 
 Namespace maps support a variety of relevant use cases such as:
@@ -30,19 +30,23 @@ Namespace maps support a variety of relevant use cases such as:
   the consumer would record the namespace map prefixes in the NamespaceMap such
   that subsequent serializations could reproduce the prefixes / namespaces in
   the native serialization format.
+
 2. An SPDX content producer wishing to maintain consistent prefix use and
   understanding across multiple different serialization formats of the produced
-  content. For example, an SBOM producer wishes to share/publish the SBOM as
-  JSON-LD and XML. The producer can specify the preferred prefix mappings in
-  the native serialization format using information from a single Namespacemap
-  accessible local to the producer.
+  content.
+  For example, an SBOM producer wishes to share/publish the SBOM as JSON-LD and
+  XML. The producer can specify the preferred prefix mappings in the native
+  serialization format using information from a single Namespacemap accessible
+  local to the producer.
+
 3. An SPDX content consumer/producer wishing to maintain consistent prefix use
   while round tripping from SPDX content received, deserialized,
   modified/extended in some way, and then reserialized in the same
-  serialization form. In this case the prefix-namespace mappings utilized in
-  the content are transformed from the original native namespace/prefix into
-  the in memory NamespaceMap then transformed from the NamespaceMap back into
-  the resultant serialization native namespace / prefix format.
+  serialization form.
+  In this case the prefix-namespace mappings utilized in the content are
+  transformed from the original native namespace/prefix into the in memory
+  NamespaceMap then transformed from the NamespaceMap back into the resultant
+  serialization native namespace / prefix format.
 
 ## Metadata
 
