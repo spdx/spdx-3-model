@@ -36,25 +36,27 @@ Examples of how to serialize the following cases:
 
 ### Core and software profile use cases
 
-- Person
 - Agent
 - Annotation
+- Bundle
+  - Bundle of two Persons
 - File
 - Package
-- Package with ExternalIdentifier
-- Package with ExternalReference
-- Relationship with Package contains two Files
-- Relationship with time properties
+  - Package with ExternalIdentifier
+  - Package with ExternalReference
+- Person
+  - Person with no CreationInfo
+  - Person with minimal CreationInfo
+  - Person with full CreationInfo
+  - two Persons
+- Relationship
+  - Relationship with Package contains two Files
+  - Relationship with time properties
 - SBOM with two Files
-- SpdxDocument with two Files
-- SpdxDocument with NamespaceMap
-- SpdxDocument with ExternalMap
-- Person with no CreationInfo
-- Person with minimal CreationInfo
-- Person with full CreationInfo
-- Bundle
-- two Persons
-- Bundle of two Persons
+- SpdxDocument
+  - SpdxDocument with two Files
+  - SpdxDocument with NamespaceMap
+  - SpdxDocument with ExternalMap
 
 ### Licensing profile use cases
 
