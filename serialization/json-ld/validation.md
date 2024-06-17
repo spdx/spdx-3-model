@@ -44,7 +44,7 @@ wget -O spdx-3-schema.json https://spdx.org/schema/3.0.0/spdx-json-schema.json
 Validation of a document can now be done with the command:
 
 ```shell
-ajv validate --spec=draft2020 -s spdx-3-schema.json -d <DOCUMENT>
+ajv validate --spec=draft2020 -s spdx-json-schema.json -d <DOCUMENT>
 ```
 
 ### check-jsonschema
