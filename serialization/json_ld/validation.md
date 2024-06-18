@@ -145,6 +145,10 @@ Only values from the predefined list are allowed.
 
 ![An error with a value in a dataset_confidentialityLevel](./validation-vscode-error.png "A screenshot showing an error with a value in a dataset_confidentialityLevel")
 
+The editor can also recommend an acceptable value.
+
+![Suggestions for a type while typing](./validation-vscode-suggestion.png "A screenshot showing suggestions for a type while typing")
+
 ## Common errors
 
 Here are some common errors worth looking into if an SPDX JSON-LD fails validation.
