@@ -1,7 +1,7 @@
 # Validating SPDX 3 JSON-LD documents
 
-There are two mechanisms for validating SPDX 3 JSON-LD documents; validating
-the structure against the JSON Schema, and validating the semantic against the
+There are two mechanisms for validating SPDX 3 JSON-LD documents: validating
+the structure against the JSON Schema, and validating the semantics against the
 SHACL model.
 
 These two different mechanisms serve validate the document in different ways,
@@ -70,7 +70,7 @@ no need to download it first. To validate a document, run the command:
 check-jsonschema -v --schemafile https://spdx.org/schema/3.0.0/spdx-json-schema.json <DOCUMENT>
 ```
 
-## Validating the semantic against the SHACL model
+## Validating the semantics against the SHACL model
 
 The SPDX 3 SHACL model is designed to validate that a document is semantically
 valid, that is that the way objects and properties are used actually conforms
@@ -112,7 +112,7 @@ Some code editors offer real-time validation of JSON against a schema as you
 edit. This feature is particularly handy for quickly identifying the location
 of errors or warnings.
 
-### Real-time validation in Visual Studio Code
+### Real-time structural validation in Visual Studio Code
 
 For instance, in Visual Studio Code, you can
 [enable JSON validation](https://code.visualstudio.com/docs/languages/json#_intellisense-and-validation)
@@ -148,6 +148,11 @@ Only values from the predefined list are allowed.
 The editor can also recommend an acceptable value.
 
 ![Suggestions for a type while typing](./validation-vscode-suggestion.png "A screenshot showing suggestions for a type while typing")
+
+Note again that the validation in Visual Studio Code is against a JSON Schema,
+which  validates the structure of the JSON-LD document.
+However, it does not validate the semantics of the document.
+You still need to perform separate validation against the SHACL model.
 
 ## Common errors
 
