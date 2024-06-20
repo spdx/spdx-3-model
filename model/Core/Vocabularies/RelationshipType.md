@@ -78,6 +78,7 @@ type is contrained to `VexFixedVulnAssessmentRelationship` classed relationships
 - other: Every `to` Element is related to the `from` Element where the relationship type is not described by any of the SPDX relationhip types (this relationship is directionless)
 - packagedBy: Every `to` Element is a packaged instance of the `from` Element (`from` packagedBy `to`)
 - patchedBy: Every `to` Element is a patch for the `from` Element (`from` patchedBy `to`)
+- providesSupportFor: The `from` Agent provides support for each `to` Artifact. Must be a `SupportRelationship` type
 - publishedBy: (Security) Designates a `from` Vulnerability was made available for public use or reference by each `to` Agent
 - reportedBy: (Security) Designates a `from` Vulnerability was first reported to a project, vendor, or tracking database for formal identification by each `to` Agent
 - republishedBy: (Security) Designates a `from` Vulnerability's details were tracked, aggregated, and/or enriched to improve context (i.e. NVD) by a `to` Agent(s)
