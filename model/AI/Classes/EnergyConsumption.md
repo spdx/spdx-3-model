@@ -20,14 +20,14 @@ during its training, fine-tuning, and inference stages.
   "ai_trainingEnergyConsumption": [
     {
       "type": "ai_EnergyConsumptionDescription",
-      "ai_energyQuantity": 36.5,
+      "ai_energyQuantity": "36.5",
       "ai_energyUnit": "kilowattHour"
     }
   ],
   "ai_inferenceEnergyConsumption": [
     {
       "type": "ai_EnergyConsumptionDescription",
-      "ai_energyQuantity": 0.042,
+      "ai_energyQuantity": "0.042",
       "ai_energyUnit": "kilowattHour"
     }
   ]
