@@ -24,7 +24,7 @@ property `energyQuantity`, and `"kilowattHour"` as a value for property
 ```json
 {
   "type": "ai_EnergyConsumptionDescription",
-  "ai_energyQuantity": 0.042,
+  "ai_energyQuantity": "0.042",
   "ai_energyUnit": "kilowattHour"
 }
 ```
