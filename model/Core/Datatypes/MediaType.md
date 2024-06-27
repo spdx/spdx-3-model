@@ -16,9 +16,13 @@ or a Property.
 
 **Examples**
 
-- `text/csv`
-- `image/avif`
+- `application/java-archive`
 - `application/vcard+json`
+- `application/vnd.oasis.opendocument.text`
+- `image/avif`
+- `text/csv;charset=UTF-8`
+- `text/javascript`
+- `text/spdx`
 
 A list of all possible media types is available at
 <https://www.iana.org/assignments/media-types/media-types.xhtml>.
