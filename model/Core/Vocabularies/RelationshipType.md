@@ -82,7 +82,7 @@ type is contrained to `VexFixedVulnAssessmentRelationship` classed relationships
 - reportedBy: (Security) Designates a `from` Vulnerability was first reported to a project, vendor, or tracking database for formal identification by each `to` Agent
 - republishedBy: (Security) Designates a `from` Vulnerability's details were tracked, aggregated, and/or enriched to improve context (i.e. NVD) by a `to` Agent(s)
 - serializedInArtifact: The `from` SPDXDocument can be found in a serialized form in each `to` Artifact
-- testedOn: (AI, Dataset) The `from` Element has been tested on the `to` Element
-- trainedOn: (AI, Dataset) The `from` Element has been trained by the `to` Element(s)
+- testedOn: (AI, Dataset) The `from` Element has been tested on the `to` Element(s)
+- trainedOn: (AI, Dataset) The `from` Element has been trained on the `to` Element(s)
 - underInvestigationFor: (Security/VEX) The `from` Vulnerability impact is being investigated for each `to` Element. The use of the `underInvestigationFor` type is contrained to `VexUnderInvestigationVulnAssessmentRelationship` classed relationships.
 - usesTool: The `from` Element uses each `to` Element as a tool during a LifecycleScopeType period.
