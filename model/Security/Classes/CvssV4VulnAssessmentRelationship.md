@@ -11,13 +11,13 @@ Provides a CVSS version 4 assessment for a vulnerability.
 A CvssV4VulnAssessmentRelationship relationship describes the determined score,
 severity, and vector of a vulnerability using version 4 of the Common
 Vulnerability Scoring System (CVSS) as defined on
-[https://www.first.org/cvss/v4.0/specification-document](https://www.first.org/cvss/v4.0/specification-document).
+<https://www.first.org/cvss/v4.0/specification-document>.
 It is intended to communicate the results of using a CVSS calculator.
 
 **Constraints**
 
-- The value of severity must be one of 'NONE', 'LOW', 'MEDIUM', 'HIGH' or
-  'CRITICAL'.
+- The value of severity must be one of 'none', 'low', 'medium', 'high' or
+  'critical'.
 - The relationship type must be set to hasAssessmentFor.
 
 **Syntax**
@@ -27,8 +27,8 @@ It is intended to communicate the results of using a CVSS calculator.
   "@type": "CvssV4VulnAssessmentRelationship",
   "@id": "urn:spdx.dev:cvssv4-cve-2021-44228",
   "relationshipType": "hasAssessmentFor",
-  "severity": "MEDIUM",
-  "score": 10.0,
+  "severity": "medium",
+  "score": "10.0",
   "vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/AR:N/UI:N/VCH/VI:H/VA:H/SC:H/SI:H/SA:H/E:A",
   "from": "urn:spdx.dev:vuln-cve-2021-44228",
   "to": ["urn:product-acme-application-1.3"],

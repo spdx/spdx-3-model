@@ -17,8 +17,8 @@ It is intended to communicate the results of using a CVSS calculator.
 
 **Constraints**
 
-- The value of severity must be one of 'NONE', 'LOW', 'MEDIUM', 'HIGH' or
-  'CRITICAL'.
+- The value of severity must be one of 'none', 'low', 'medium', 'high' or
+  'critical'.
 - The relationship type must be set to `hasAssessmentFor`.
 
 **Syntax**
@@ -28,8 +28,8 @@ It is intended to communicate the results of using a CVSS calculator.
   "@type": "CvssV3VulnAssessmentRelationship",
   "@id": "urn:spdx.dev:cvssv3-cve-2020-28498",
   "relationshipType": "hasAssessmentFor",
-  "score": 6.8,
-  "severity": "MEDIUM",
+  "score": "6.8",
+  "severity": "medium",
   "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
   "from": "urn:spdx.dev:vuln-cve-2020-28498",
   "to": ["urn:product-acme-application-1.3"],

@@ -10,8 +10,7 @@ Provides a CVSS version 2.0 assessment for a vulnerability.
 
 A CvssV2VulnAssessmentRelationship relationship describes the determined score
 and vector of a vulnerability using version 2.0 of the Common Vulnerability
-Scoring System (CVSS) as defined at
-[https://www.first.org/cvss/v2/guide](https://www.first.org/cvss/v2/guide).
+Scoring System (CVSS) as defined at <https://www.first.org/cvss/v2/guide>.
 It is intended to communicate the results of using a CVSS calculator.
 
 **Constraints**
@@ -25,7 +24,7 @@ It is intended to communicate the results of using a CVSS calculator.
   "@type": "CvssV2VulnAssessmentRelationship",
   "@id": "urn:spdx.dev:cvssv2-cve-2020-28498",
   "relationshipType": "hasAssessmentFor",
-  "score": 4.3,
+  "score": "4.3",
   "vectorString": "(AV:N/AC:M/Au:N/C:P/I:N/A:N)",
   "from": "urn:spdx.dev:vuln-cve-2020-28498",
   "to": ["urn:product-acme-application-1.3"],
