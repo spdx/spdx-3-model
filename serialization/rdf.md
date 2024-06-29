@@ -16,12 +16,13 @@ SPDX data can be serialized in RDF. This can be saved in a variety of formats, l
 
 1. IRIs for an individual value list are of the form: `https://spdx.org/rdf/3.0.0/terms/{Namespacename}/{Individualname}`
 
-Please note that entries appearing in the License List are not under this namespace!
+Please note that entries appearing in the
+[SPDX License List](https://spdx.org/licenses/) are not under this namespace!
 
 ## Resources
 
-1. The ontology is available at: https://spdx.org/rdf/3.0.0/spdx-model.ttl
+1. The ontology is available at: <https://spdx.org/rdf/3.0.0/spdx-model.ttl>
 
-1. The JSON-LD context definition is available at: https://spdx.org/rdf/3.0.0/spdx-context.jsonld
+1. The JSON-LD context definition is available at: <https://spdx.org/rdf/3.0.0/spdx-context.jsonld>
 
-1. The JSON schema is available at: https://spdx.org/schema/3.0.0/spdx-json-schema.json
+1. The JSON schema is available at: <https://spdx.org/schema/3.0.0/spdx-json-schema.json>

@@ -8,7 +8,8 @@ The version of the SPDX License List used in the license expression.
 
 ## Description
 
-Recognizing that licenses are added to the SPDX License List with each
+Recognizing that licenses are added to the
+[SPDX License List](https://spdx.org/licenses/) with each
 subsequent version, the intent is to provide consumers with the version of the
 SPDX License List used.
 

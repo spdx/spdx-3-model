@@ -13,7 +13,8 @@ The isDeprecatedLicenseId property specifies whether an identifier for a
 License or LicenseAddition has been marked as deprecated. If the property
 is not defined, then it is presumed to be false (i.e., not deprecated).
 
-If the License or LicenseAddition is included on the SPDX License List, then
+If the License or LicenseAddition is included on the
+[SPDX License List](https://spdx.org/licenses/), then
 the `deprecatedVersion` property indicates on which version release of the
 License List it was first marked as deprecated.
 

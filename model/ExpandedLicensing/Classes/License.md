@@ -8,7 +8,8 @@ Abstract class for the portion of an AnyLicenseInfo representing a license.
 
 ## Description
 
-A License represents a license text, whether listed on the SPDX License List
+A License represents a license text, whether listed on the
+[SPDX License List](https://spdx.org/licenses/)
 (ListedLicense) or defined by an SPDX data creator (CustomLicense).
 
 ## Metadata
