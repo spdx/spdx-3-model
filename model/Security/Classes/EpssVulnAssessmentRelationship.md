@@ -12,7 +12,7 @@ An EpssVulnAssessmentRelationship relationship describes the likelihood or
 probability that a vulnerability will be exploited in the wild, and the
 percentile ranking of probability relative to all other vulnerabilities' EPSS
 scores, using the Exploit Prediction Scoring System (EPSS) as defined at
-[https://www.first.org/epss/model](https://www.first.org/epss/model).
+<https://www.first.org/epss/model>.
 
 **Constraints**
 
@@ -52,7 +52,9 @@ scores, using the Exploit Prediction Scoring System (EPSS) as defined at
   - type: xsd:decimal
   - minCount: 1
   - maxCount: 1
-- publishedTime
-  - type: /Core/DateTime
+
+## External properties restrictions
+
+- /Security/VulnAssessmentRelationship/publishedTime
   - minCount: 1
   - maxCount: 1
