@@ -55,6 +55,6 @@ scores, using the Exploit Prediction Scoring System (EPSS) as defined at
 
 ## External properties restrictions
 
-- publishedTime
+- /Security/VulnAssessmentRelationship/publishedTime
   - minCount: 1
   - maxCount: 1
