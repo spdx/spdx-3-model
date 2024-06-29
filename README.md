@@ -56,17 +56,10 @@ Note:
 
 #### AI
 
-The AI profile describes the characteristics and capabilities of the AI component
-of the software application. Fields include the domain of the application (banking,
-telecom, …), type of AI model (neural networks, logistic regression, …), industry
-standards compliance (ISO/IEC 42001, …), information about how the AI model is used
-within the application, energy consumed by the AI model, limitations of the AI model
-(dataset of a specific demography cannot be used by the model, …), how the model would
-be trained, hyperparameters, how data would be preprocessed, whether the model can
-explain its reasoning, whether sensitive personal information is used during the model
-training, metrics used for measuring model performance, decision thresholds for those
-metrics, autonomy type of the model (supervised, unsupervised, …), and safety risk
-assessment information.
+The AI profile describes an AI component's capabilities for a specific system
+(domain, model type, industry standards). It details its usage within the
+application, limitations, training methods, data handling, explainability, and
+energy consumption.
 
 #### Build
 
@@ -84,16 +77,10 @@ profiles of the SPDX model.
 
 #### Dataset
 
-The Dataset profile describes the characteristics of the dataset(s) used by the AI system.
-Fields include type of the dataset (image, text, relational DB, …), how the data is collected,
-how the collected data would be used, size of the dataset, information about noise in the
-fields of the dataset and/or noise that affects the entire dataset, information about
-preprocessing before dataset is constructed, sensors used to collect data, known biases
-in the data of the dataset, information about whether the dataset contains sensitive or
-identifiable personal information, anonymization methods used to mask sensitive or identifiable
-personal information, confidentiality levels of data points in the dataset as defined in the
-Traffic Light Protocol, information about dataset update mechanism, and information about
-availability aspects of the dataset (public, restricted, …).
+The Dataset profile describes a dataset's core aspects (type, size, collection
+method), access method, preparation (preprocessing, noise handling), intended
+use (e.g. hardware calibration, machine learning), and related considerations
+(data quality and privacy).
 
 #### Licensing
 
@@ -130,4 +117,4 @@ Feel free to join us and contribute!
 The discussions are happening on the spdx-tech mailing list
 and during our weekly meetings.
 
-All the details are in: https://spdx.dev/participate/tech/
+All the details are in: <https://spdx.dev/participate/tech/>
