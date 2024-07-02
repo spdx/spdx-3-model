@@ -18,8 +18,7 @@ For details of how NamespaceMap content is to be serialized please refer to
 general SPDX serialization guidance at
 <https://github.com/spdx/spdx-3-model/blob/main/serialization/README.md>
 and the various serialization format specific .md filed under
-<https://github.com/spdx/spdx-3-model/tree/main/serialization>
-(TODO: update the URLs as soon as the context is publicly available)
+<https://github.com/spdx/spdx-3-model/tree/main/serialization>.
 
 Namespace maps support a variety of relevant use cases such as:
 
@@ -36,7 +35,7 @@ Namespace maps support a variety of relevant use cases such as:
   content.
   For example, an SBOM producer wishes to share/publish the SBOM as JSON-LD and
   XML. The producer can specify the preferred prefix mappings in the native
-  serialization format using information from a single Namespacemap accessible
+  serialization format using information from a single NamespaceMap accessible
   local to the producer.
 
 3. An SPDX content consumer/producer wishing to maintain consistent prefix use
