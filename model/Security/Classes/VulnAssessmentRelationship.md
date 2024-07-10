@@ -40,7 +40,3 @@ assessment relationships. It factors out the common properties shared by them.
   - minCount: 0
   - maxCount: 1
 
-## External properties restrictions
-
-- /Core/Relationship/to
-  - minCount: 1
