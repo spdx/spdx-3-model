@@ -24,8 +24,7 @@ name completes the sentence:
 
 ## Entries
 
-- affects: (Security/VEX) The `from` vulnerability affect each `to` Element. The use of the `affects` type is constrained
-to `VexAffectedVulnAssessmentRelationship` classed relationships.
+- affects: (Security/VEX) The `from` vulnerability affect each `to` Element. The use of the `affects` type is constrained to `VexAffectedVulnAssessmentRelationship` classed relationships.
 - amendedBy: The `from` Element is amended by each `to` Element
 - ancestorOf: The `from` Element is an ancestor of each `to` Element
 - availableFrom: The `from` Element is available from the additional supplier described by each `to` Element
@@ -37,13 +36,11 @@ to `VexAffectedVulnAssessmentRelationship` classed relationships.
 - dependsOn: The `from` Element depends on each `to` Element during a LifecycleScopeType period.
 - descendantOf: The `from` Element is a descendant of each `to` Element
 - describes: The `from` Element describes each `to` Element. To denote the root(s) of a tree of elements in a collection, the rootElement property should be used.
-- doesNotAffect: (Security/VEX) The `from` Vulnerability has no impact on each `to` Element. The use of the `doesNotAffect`
-is contrained to `VexNotAffectedVulnAssessmentRelationship` classed relationships.
+- doesNotAffect: (Security/VEX) The `from` Vulnerability has no impact on each `to` Element. The use of the `doesNotAffect` is contrained to `VexNotAffectedVulnAssessmentRelationship` classed relationships.
 - expandsTo: The `from` archive expands out as an artifact described by each `to` Element
 - exploitCreatedBy: (Security) The `from` Vulnerability has had an exploit created against it by each `to` Agent
 - fixedBy: (Security) Designates a `from` Vulnerability has been fixed by the `to` Agent(s)
-- fixedIn: (Security/VEX) A `from` Vulnerability has been fixed in each of the `to` Element(s). The use of the `fixedIn`
-type is contrained to `VexFixedVulnAssessmentRelationship` classed relationships.
+- fixedIn: (Security/VEX) A `from` Vulnerability has been fixed in each of the `to` Element(s). The use of the `fixedIn` type is contrained to `VexFixedVulnAssessmentRelationship` classed relationships.
 - foundBy: (Security) Designates a `from` Vulnerability was originally discovered by the `to` Agent(s)
 - generates: The `from` Element generates each `to` Element
 - hasAddedFile: Every `to` Element is is a file added to the `from` Element (`from` hasAddedFile `to`)
