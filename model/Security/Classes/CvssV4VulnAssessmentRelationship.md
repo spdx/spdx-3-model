@@ -24,16 +24,16 @@ It is intended to communicate the results of using a CVSS calculator.
 
 ```json
 {
-  "@type": "CvssV4VulnAssessmentRelationship",
-  "@id": "urn:spdx.dev:cvssv4-cve-2021-44228",
+  "type": "CvssV4VulnAssessmentRelationship",
+  "spdxId": "urn:spdx.dev:cvssv4-cve-2021-44228",
   "relationshipType": "hasAssessmentFor",
-  "severity": "medium",
-  "score": "10.0",
-  "vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/AR:N/UI:N/VCH/VI:H/VA:H/SC:H/SI:H/SA:H/E:A",
+  "security_severity": "medium",
+  "security_score": "10.0",
+  "security_vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/AR:N/UI:N/VCH/VI:H/VA:H/SC:H/SI:H/SA:H/E:A",
   "from": "urn:spdx.dev:vuln-cve-2021-44228",
   "to": ["urn:product-acme-application-1.3"],
-  "assessedElement": "urn:apache-log4j-2.14.1",
-  "externalRefs": [
+  "security_assessedElement": "urn:apache-log4j-2.14.1",
+  "externalRef": [
     {
       "@type": "ExternalRef",
       "externalRefType": "securityAdvisory",
@@ -54,11 +54,11 @@ It is intended to communicate the results of using a CVSS calculator.
   "publishedTime": "2023-10-05T23:09:13Z"
 },
 {
-  "@type": "Relationship",
-  "@id": "urn:spdx.dev:vulnAgentRel-1",
+  "type": "Relationship",
+  "spdxId": "urn:spdx.dev:vulnAgentRel-1",
   "relationshipType": "publishedBy",
   "from": "urn:spdx.dev:cvssv4-cve-2021-44228",
-  "to": "urn:spdx.dev:agent-apache.org",
+  "to": ["urn:spdx.dev:agent-apache.org"],
   "startTime": "2021-12-11T18:39:00Z"
 }
 ```
