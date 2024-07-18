@@ -13,5 +13,5 @@ object form.
 
 ## Metadata
 
-- id: https://spdx.org/rdf/3.0.0/terms/ExpandedLicensing
+- id: https://spdx.org/rdf/3.0.1/terms/ExpandedLicensing
 - name: ExpandedLicensing

@@ -15,7 +15,7 @@ development process, such as software packages, models, and datasets.
 
 ## Metadata
 
-- id: https://spdx.org/rdf/3.0.0/terms/AI
+- id: https://spdx.org/rdf/3.0.1/terms/AI
 - name: AI
 
 ## Profile conformance
