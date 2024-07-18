@@ -39,4 +39,3 @@ assessment relationships. It factors out the common properties shared by them.
   - type: /Core/DateTime
   - minCount: 0
   - maxCount: 1
-
