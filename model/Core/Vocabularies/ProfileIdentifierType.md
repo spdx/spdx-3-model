@@ -28,10 +28,8 @@ to all restrictions defined for that profile.
 
 - core: the element follows the Core profile specification
 - software: the element follows the Software profile specification
-- simpleLicensing: the element follows the simple Licensing profile
-  specification
-- expandedLicensing: the element follows the expanded Licensing profile
-  specification
+- simpleLicensing: the element follows the simple Licensing profile specification
+- expandedLicensing: the element follows the expanded Licensing profile specification
 - security: the element follows the Security profile specification
 - build: the element follows the Build profile specification
 - ai: the element follows the AI profile specification

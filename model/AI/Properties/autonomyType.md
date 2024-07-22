@@ -4,12 +4,18 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-States if a human is involved in the decisions of the AI software.
+Indicates whether the system can perform a decision or action without human
+involvement or guidance.
 
 ## Description
 
-Indicates if a human is involved in any of the decisions of the AI system
-or if that system is fully automatic.  
+Indicates if the system is fully automated or a human is involved in any of the
+decisions of the AI system.
+
+- yes: Indicates that the system is fully automated
+- no: Indicates that a human is involved in any of the decisions of the AI
+  system
+- noAssertion: Makes no assertion about the autonomy
 
 ## Metadata
 

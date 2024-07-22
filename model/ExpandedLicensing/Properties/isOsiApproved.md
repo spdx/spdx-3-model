@@ -12,7 +12,7 @@ Specifies whether the License is listed as approved by the
 isOsiApproved specifies whether the
 [Open Source Initiative (OSI)](https://opensource.org)
 has listed this License as "approved" in their list of OSI Approved Licenses,
-located at the time of this writing at https://opensource.org/licenses/.
+located at the time of this writing at <https://opensource.org/licenses/>.
 
 A value of "true" indicates that the license is in the list of licenses that
 OSI publishes as approved.

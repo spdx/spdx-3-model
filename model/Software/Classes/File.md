@@ -21,7 +21,7 @@ a directory and all content stored in that directory.
 
 ## Properties
 
-- contentType
+- /Core/contentType
   - type: /Core/MediaType
   - minCount: 0
   - maxCount: 1
