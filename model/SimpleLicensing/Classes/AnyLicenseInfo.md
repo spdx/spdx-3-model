@@ -12,12 +12,15 @@ according to the
 ## Description
 
 An AnyLicenseInfo is used by licensing properties of software artifacts.
-It can be a NoneLicense, a NoAssertionLicense,
-single license (either on the [SPDX License List](https://spdx.org/licenses/)
-or [a custom-defined license](../../ExpandedLicensing/Classes/CustomLicense.md));
-a single license with an "or later" operator applied; the foregoing with
-additional text applied; or a set of licenses combined by applying "AND" and
-"OR" operators recursively.
+
+It can be:
+
+- a NoneLicense;
+- a NoAssertionLicense;
+- a single license (either on the [SPDX License List](https://spdx.org/licenses/) or [a custom-defined license](../../ExpandedLicensing/Classes/CustomLicense.md));
+- a single license with an "or later" operator applied;
+- the foregoing with additional text applied;
+- or a set of licenses combined by applying "AND" and "OR" operators recursively.
 
 ## Metadata
 

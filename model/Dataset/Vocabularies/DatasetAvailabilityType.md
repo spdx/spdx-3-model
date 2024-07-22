@@ -19,15 +19,8 @@ form.
 
 ## Entries
 
-- clickthrough: the dataset is not publicly available and can only be accessed
-  after affirmatively accepting terms on a clickthrough webpage.
-- directDownload: the dataset is publicly available and can be downloaded
-  directly.
-- query: the dataset is publicly available, but not all at once, and can only
-  be accessed through queries which return parts of the dataset.
-- registration: the dataset is not publicly available and an email registration
-  is required before accessing the dataset, although without an affirmative
-  acceptance of terms.
-- scrapingScript: the dataset provider is not making available the underlying
-  data and the dataset must be reassembled, typically using the provided script
-  for scraping the data.
+- clickthrough: the dataset is not publicly available and can only be accessed after affirmatively accepting terms on a clickthrough webpage.
+- directDownload: the dataset is publicly available and can be downloaded directly.
+- query: the dataset is publicly available, but not all at once, and can only be accessed through queries which return parts of the dataset.
+- registration: the dataset is not publicly available and an email registration is required before accessing the dataset, although without an affirmative acceptance of terms.
+- scrapingScript: the dataset provider is not making available the underlying data and the dataset must be reassembled, typically using the provided script for scraping the data.
