@@ -10,16 +10,23 @@ facilitate compliance with typical license use cases.
 ## Description
 
 The Licensing profile only contains the additional requirement that any
-Software Artifact must have a Relationship of type hasConcludedLicense.
+Software Artifact must have a `Relationship` of type `hasConcludedLicense`.
 
-Classes and Property restrictions are defined in the SimpleLicensingProfile
+Classes and Property restrictions are defined in the `SimpleLicensingProfile`
 (Classes and Properties associated with
-[license expression srings](../../annexes/SPDX-license-expressions.md)) and in
-the ExpandedLicensingProfile (Classes and Properties used for a fully parsed
-syntax tree of license expressions).
+[license expression strings](../../annexes/SPDX-license-expressions.md))
+and in the `ExpandedLicensingProfile` (Classes and Properties used for a
+fully parsed syntax tree of license expressions).
 
 There are 2 relationship types related to licensing - `hasDeclaredLicense` and
 `hasConcludedLicense`.
+
+If the `hasConcludedLicense` for a Software Artifact is not the same as its
+`hasDeclaredLicense`, a written explanation SHOULD be provided in the
+`hasConcludedLicense` relationship `comment` field.
+
+A written explanation of a relationship to a `NoAssertionLicense` MAY be
+provided in the `comment` field for the relationship.
 
 ***hasDeclaredLicense***
 
@@ -41,7 +48,7 @@ for Packages:
 - would not include any license information that is not in the Package
   itself (e.g., license information from the project's website or from a
   third party repository or website)
-  
+
 for Files:
 
 - would include license info found in the File itself (e.g., license
@@ -49,7 +56,7 @@ for Files:
   expression)
 - would not include license info found in a different file (e.g., LICENSE
   file in the top directory of a repository)
-  
+
 for Snippets:
 
 - would include license info found in the Snippet itself (e.g., license
@@ -104,13 +111,6 @@ about whether or not a hasConcludedLicense exists.
 Note that a missing hasConcludedLicense is not the same as a relationship to a
 NoAssertionLicense since the latter is a "known unknown" whereas no assumptions
 can be made from a missing hasConcludedLicense relationship.
-
-A written explanation of a relationship to a NoAssertionLicense MAY be
-provided in the comment field for the relationship.
-
-If the hasConcludedLicense for a Software Artifact is not the
-same as its hasDeclaredLicense, a written explanation SHOULD be provided in
-the hasConcludedLicense relationship comment field.
 
 ## Metadata
 
