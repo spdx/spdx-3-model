@@ -14,9 +14,9 @@ Software Artifact must have a `Relationship` of type `hasConcludedLicense`.
 
 Classes and Property restrictions are defined in the `SimpleLicensingProfile`
 (Classes and Properties associated with
-[license expression srings](../../annexes/SPDX-license-expressions.md)) and in
-the `ExpandedLicensingProfile` (Classes and Properties used for a fully parsed
-syntax tree of license expressions).
+[license expression strings](../../annexes/SPDX-license-expressions.md))
+and in the `ExpandedLicensingProfile` (Classes and Properties used for a
+fully parsed syntax tree of license expressions).
 
 There are 2 relationship types related to licensing - `hasDeclaredLicense` and
 `hasConcludedLicense`.
