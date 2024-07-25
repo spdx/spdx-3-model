@@ -8,7 +8,8 @@ Categories of confidentiality level.
 
 ## Description
 
-Describes the different confidentiality levels as given by the [Traffic Light Protocol](https://en.wikipedia.org/wiki/Traffic_Light_Protocol).
+Describes the different confidentiality levels as given by the
+[Traffic Light Protocol](https://en.wikipedia.org/wiki/Traffic_Light_Protocol).
 
 ## Metadata
 

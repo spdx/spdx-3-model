@@ -1,13 +1,17 @@
 # JSON Serialization
 
 ## Parsing JSON-LD as JSON
+
 This is a description of how to deserialize JSON-LD as a pure JSON format without any knowledge of RDF.
 On top-level, JSON-LD has two keys, "@context" and "@graph".
 
-### parsing "@context"
+### Parsing "@context"
+
 The context is a list of a string and an object. You can ignore the string.
 The object consists of key-value pairs that allow the shortening of IDs and which we will call "namespace map" in the following.
+
 For deserialization purposes, follow this process:
+
 - For every string that is an ID (that includes values of the keys "spdxId" and "@id", 
   as well as all strings where you would expect objects according to the SPDX-3 model),
   split that string at the first colon into "prefix:suffix".
@@ -16,7 +20,8 @@ For deserialization purposes, follow this process:
 - Else do nothing to that string.
 After you are done applying this process to all IDs, you can ignore the "@context".
 
-### parsing "@graph"
+### Parsing "@graph"
+
 You will find an array of objects under the "@graph" key.
 Every one of these objects has a "type" key that tells you the class of the SPDX-3 model that the object is an instance of.
 The rest of the keys then correspond to the properties of that SPDX class.

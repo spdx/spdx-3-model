@@ -33,4 +33,3 @@ Please note that different profiles may also provide additional methods for veri
   - type: xsd:string
   - minCount: 1
   - maxCount: 1
-

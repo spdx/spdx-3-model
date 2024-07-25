@@ -4,15 +4,16 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Indicates the amount of energy consumed to train the AI model.
+Indicates the amount of energy consumption incurred by an AI model.
 
 ## Description
 
-A free-form text captures known or estimated energy consumption for the training of the AI model.
+Captures the energy consumption of an AI model, either known or estimated.
 
-In case not known, the estimation could be based on information about computational resources used
-(e.g. number of floating point operations – FLOPs), training time, type and quantity of processing units,
-and other relevant details related to the training.
+In the absence of direct measurements, an SPDX data creator may choose to
+estimate the energy consumption based on information about computational
+resources (e.g., number of floating-point operations), training time, and other
+relevant training details.
 
 ## Metadata
 

@@ -4,14 +4,21 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Enumeration of the valid profiles. 
+Enumeration of the valid profiles.
 
 ## Description
 
 There are a set of profiles that have been defined by a profile team.
-A profile consists of a namespace that may add properties and classes to the core profile unique to the domain covered by the profile.
-The profile may also contain additional restrictions on existing properties and classes defined in other profiles.
-If the creator of an SPDX collection of elements includes a profile in the list of conformanceProfiles, they are claiming that all contained elements conform to all restrictions defined for that profile.
+
+A profile consists of a namespace that may add properties and classes to the
+core profile unique to the domain covered by the profile.
+
+The profile may also contain additional restrictions on existing properties and
+classes defined in other profiles.
+
+If the creator of an SPDX collection of elements includes a profile in the list
+of profileConformance, they are claiming that all contained elements conform
+to all restrictions defined for that profile.
 
 ## Metadata
 
@@ -27,5 +34,5 @@ If the creator of an SPDX collection of elements includes a profile in the list 
 - build: the element follows the Build profile specification
 - ai: the element follows the AI profile specification
 - dataset: the element follows the Dataset profile specification
-- usage: the element follows the Usage profile specification
 - extension: the element follows the Extension profile specification
+- lite: the element follows the Lite profile specification

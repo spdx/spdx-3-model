@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-This property is used to denote the root Element(s) of a tree of elements contained in an SBOM.
+This property is used to denote the root Element(s) of a tree of elements contained in a BOM.
 
 ## Description
 
-This property is used to denote the root Element(s) of a tree of elements contained in an SBOM.
+This property is used to denote the root Element(s) of a tree of elements contained in a BOM.
 The tree consists of other elements directly and indirectly related through properties or Relationships from the root.
 
 ## Metadata
@@ -16,4 +16,3 @@ The tree consists of other elements directly and indirectly related through prop
 - name: rootElement
 - Nature: ObjectProperty
 - Range: Element
-

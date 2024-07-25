@@ -9,7 +9,8 @@ Describes methods that can be used to explain the model.
 ## Description
 
 A free-form text that lists the different explainability mechanisms
-(such as SHAP, or other model specific explainability mechanisms) that can be used to explain the model.
+(such as SHAP, or other model specific explainability mechanisms) that can be
+used to explain the model.
 
 ## Metadata
 

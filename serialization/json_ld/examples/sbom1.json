@@ -1,16 +1,14 @@
 {
-  "@context": "https://spdx.github.io/spdx-3-model/context.json",
-  "type": "Sbom",
+  "@context": "https://spdx.org/rdf/3.0.0/spdx-context.jsonld",
+  "type": "software_Sbom",
   "spdxId": "https://some.namespace#SBOM",
   "creationInfo": {
     "type": "CreationInfo",
     "specVersion": "3.0.0",
     "created": "2022-12-01T00:00:00Z",
-    "createdBy": ["https://spdx.dev/elements/3F26391C#spdx-dev"],
-    "profile": ["core", "software"],
-    "dataLicense": "https://spdx.org/licenses/CC0-1.0"
+    "createdBy": ["https://spdx.dev/elements/3F26391C#spdx-dev"]
   },
-  "sbomType": "TBD",
+  "software_sbomType": "analyzed",
   "element": [
     "https://some.namespace#File1",
     "https://spdx.dev/elements/3F26391C#spdx-spec-v2.3"

@@ -8,7 +8,11 @@ Provides an EPSS assessment for a vulnerability.
 
 ## Description
 
-An EpssVulnAssessmentRelationship relationship describes the likelihood or probability that a vulnerability will be exploited in the wild, and the percentile ranking of probability relative to all other vulnerabilities' EPSS scores, using the Exploit Prediction Scoring System (EPSS) as defined at [https://www.first.org/epss/model](https://www.first.org/epss/model).
+An EpssVulnAssessmentRelationship relationship describes the likelihood or
+probability that a vulnerability will be exploited in the wild, and the
+percentile ranking of probability relative to all other vulnerabilities' EPSS
+scores, using the Exploit Prediction Scoring System (EPSS) as defined at
+<https://www.first.org/epss/model>.
 
 **Constraints**
 
@@ -20,11 +24,11 @@ An EpssVulnAssessmentRelationship relationship describes the likelihood or proba
 
 ```json
 {
-  "@type": "EpssVulnAssessmentRelationship",
-  "@id": "urn:spdx.dev:epss-CVE-2020-28498",
+  "type": "EpssVulnAssessmentRelationship",
+  "spdxId": "urn:spdx.dev:epss-CVE-2020-28498",
   "relationshipType": "hasAssessmentFor",
-  "probability": 0.00105,
-  "percentile": 0.42356,
+  "security_probability": "0.00105",
+  "security_percentile": "0.42356",
   "from": "urn:spdx.dev:vuln-cve-2020-28498",
   "to": ["urn:product-acme-application-1.3"],
   "suppliedBy": ["urn:spdx.dev:agent-jane-doe"],
@@ -48,7 +52,9 @@ An EpssVulnAssessmentRelationship relationship describes the likelihood or proba
   - type: xsd:decimal
   - minCount: 1
   - maxCount: 1
-- publishedTime
-  - type: /Core/DateTime
+
+## External properties restrictions
+
+- /Security/VulnAssessmentRelationship/publishedTime
   - minCount: 1
   - maxCount: 1

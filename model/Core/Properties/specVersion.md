@@ -14,7 +14,7 @@ The major version number shall be incremented when incompatible changes between 
 (one or more sections are created, modified or deleted).
 The minor version number shall be incremented when backwards compatible changes are made.
 
-Here, parties exchanging information in accordance with the SPDX specification need to provide 
+Here, parties exchanging information in accordance with the SPDX specification need to provide
 100% transparency as to which SPDX specification version such information is conforming to.
 
 ## Metadata
@@ -22,4 +22,3 @@ Here, parties exchanging information in accordance with the SPDX specification n
 - name: specVersion
 - Nature: DataProperty
 - Range: SemVer
-
