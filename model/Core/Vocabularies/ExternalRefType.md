@@ -25,7 +25,7 @@ ExternalRefType specifies the type of an external reference.
 - chat: A reference to the instant messaging system used by the maintainer for a package.
 - certificationReport: A reference to a certification report for a package from an accredited/independent body.
 - componentAnalysisReport: A reference to a Software Composition Analysis (SCA) report.
-- cwe: A reference to a source of software flaw defined within the official CWE Dictionary that conforms to the CWE specification as defined by https://csrc.nist.gov/glossary/term/common_weakness_enumeration.
+- cwe: [Common Weakness Enumeration](https://csrc.nist.gov/glossary/term/common_weakness_enumeration). A reference to a source of software flaw defined within the official [CWE List](https://cwe.mitre.org/data/) that conforms to the [CWE specification](https://cwe.mitre.org/).
 - documentation: A reference to the documentation for a package.
 - dynamicAnalysisReport: A reference to a dynamic analysis report for a package.
 - eolNotice: A reference to the End Of Sale (EOS) and/or End Of Life (EOL) information related to a package.
@@ -60,5 +60,5 @@ ExternalRefType specifies the type of an external reference.
 - staticAnalysisReport: A reference to a static analysis report for a package.
 - support: A reference to the software support channel or other support information for a package.
 - vcs: A reference to a version control system related to a software artifact.
-- vulnerabilityDisclosureReport: A reference to a Vulnerability Disclosure Report (VDR) which provides the software supplier's analysis and findings describing the impact (or lack of impact) that reported vulnerabilities have on packages or products in the supplier's SBOM as defined in [NIST SP 800-161](https://csrc.nist.gov/pubs/sp/800/161/r1/final).
+- vulnerabilityDisclosureReport: A reference to a Vulnerability Disclosure Report (VDR) which provides the software supplier's analysis and findings describing the impact (or lack of impact) that reported vulnerabilities have on packages or products in the supplier's SBOM as defined in [NIST SP 800-161 Cybersecurity Supply Chain Risk Management Practices for Systems and Organizations](https://csrc.nist.gov/pubs/sp/800/161/r1/final).
 - vulnerabilityExploitabilityAssessment: A reference to a Vulnerability Exploitability eXchange (VEX) statement which provides information on whether a product is impacted by a specific vulnerability in an included package and, if affected, whether there are actions recommended to remediate. See also [NTIA VEX one-page summary](https://ntia.gov/files/ntia/publications/vex_one-page_summary.pdf).

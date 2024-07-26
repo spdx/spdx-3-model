@@ -10,7 +10,7 @@ A String constrained to the RFC 2046 specificiation.
 ## Description
 
 A MediaType is a string constrained to the
-[RFC 2046 specification (MIME Part Two: Media Types)](https://www.rfc-editor.org/rfc/rfc2046).
+[RFC 2046 MIME Part Two: Media Types](https://www.rfc-editor.org/info/rfc2046).
 It provides a standardized way of indicating the type of content of an Element
 or a Property.
 
@@ -25,7 +25,7 @@ or a Property.
 - `text/spdx`
 
 A list of all possible media types is available at
-<https://www.iana.org/assignments/media-types/media-types.xhtml>.
+[IANA Protocol Registries](https://www.iana.org/assignments/media-types/media-types.xhtml).
 
 ## Metadata
 
