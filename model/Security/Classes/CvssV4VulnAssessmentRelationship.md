@@ -11,7 +11,8 @@ Provides a CVSS version 4 assessment for a vulnerability.
 A CvssV4VulnAssessmentRelationship relationship describes the determined score,
 severity, and vector of a vulnerability using version 4 of the Common
 Vulnerability Scoring System (CVSS) as defined on
-<https://www.first.org/cvss/v4.0/specification-document>.
+[Common Vulnerability Scoring System version 4.0: Specification Document](https://www.first.org/cvss/v4.0/specification-document).
+
 It is intended to communicate the results of using a CVSS calculator.
 
 **Constraints**
