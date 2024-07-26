@@ -6,7 +6,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 Provides a place for the SPDX data creator to record the package URL string
 (in accordance with the
-[Package URL specification](https://github.com/package-url/purl-spec/))
+[Package URL specification](https://github.com/package-url/purl-spec))
 for a software Package.
 
 ## Description
