@@ -6,7 +6,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 Provides a place for the SPDX data creator to record the package URL string
 (in accordance with the
-[package URL spec](https://github.com/package-url/purl-spec/blob/master/PURL-SPECIFICATION.rst))
+[Package URL specification](https://github.com/package-url/purl-spec/))
 for a software Package.
 
 ## Description
@@ -24,7 +24,7 @@ scheme:type/namespace/name@version?qualifiers#subpath
 ```
 
 The definition for each component can be found in the
-[purl specification](https://github.com/package-url/purl-spec/blob/master/PURL-SPECIFICATION.rst).
+[Package URL core specification](https://github.com/package-url/purl-spec/blob/master/PURL-SPECIFICATION.rst).
 Components are designed such that they form a hierarchy from the most
 significant on the left to the least significant components on the right.
 
