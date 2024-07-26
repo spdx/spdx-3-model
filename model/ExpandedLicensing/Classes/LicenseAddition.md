@@ -14,7 +14,7 @@ as additional text, but which is not itself intended to be a standalone
 License.
 
 It may be an exception which is listed on the
-[SPDX Exceptions List](https://spdx.org/licenses/exceptions-index.html)
+[SPDX License Exceptions](https://spdx.org/licenses/exceptions-index.html)
 (ListedLicenseException), or may be any other additional text (as an exception
 or otherwise) which is defined by an SPDX data creator (CustomLicenseAddition).
 
