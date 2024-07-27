@@ -4,13 +4,13 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Describes methods that can be used to explain the model.
+Describes methods that can be used to explain the results from the model.
 
 ## Description
 
 A free-form text that lists the different explainability mechanisms
 (such as SHAP, or other model specific explainability mechanisms) that can be
-used to explain the model.
+used to explain the results from the model.
 
 ## Metadata
 
