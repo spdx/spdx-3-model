@@ -19,7 +19,7 @@ ExternalRefType specifies the type of an external reference.
 - altDownloadLocation: A reference to an alternative download location.
 - altWebPage: A reference to an alternative web page.
 - binaryArtifact: A reference to binary artifacts related to a package.
-- bower: A reference to a bower package.
+- bower: A reference to a Bower package. The package reference format, looks like `package#version`, is defined in the "install" section of [Bower API documentation](https://bower.io/docs/api/#install).
 - buildMeta: A reference build metadata related to a published package.
 - buildSystem: A reference build system used to create or publish the package.
 - chat: A reference to the instant messaging system used by the maintainer for a package.
@@ -35,10 +35,10 @@ ExternalRefType specifies the type of an external reference.
 - mailingList: A reference to the mailing list used by the maintainer for a package.
 - mavenCentral: A reference to a maven repository artifact.
 - metrics: A reference to metrics related to package such as OpenSSF scorecards.
-- npm: A reference to an npm package.
-- nuget: A reference to a nuget package.
+- npm: A reference to an npm package. The package reference format, looks like `package@version`, is defined in [npm Docs](https://docs.npmjs.com/cli/v10/configuring-npm/package-json).
+- nuget: A reference to a NuGet package. The package reference format, looks like `package/version`, is defined in [NuGet documentation](https://docs.nuget.org).
 - license: A reference to additional license information related to an artifact.
-- other: Used when the type doesn't match any of the other options.
+- other: Used when the type does not match any of the other options.
 - privacyAssessment: A reference to a privacy assessment for a package.
 - productMetadata: A reference to additional product metadata such as reference within organization's product catalog.
 - purchaseOrder: A reference to a purchase order for a package.
