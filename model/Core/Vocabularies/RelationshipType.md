@@ -10,7 +10,8 @@ Information about the relationship between two Elements.
 
 Provides information about the relationship between two Elements.
 For example, you can represent a relationship between two different Files,
-between a Package and a File, between two Packages, or between one SPDXDocument and another SPDXDocument.
+between a Package and a File, between two Packages, or between one SPDXDocument
+and another SPDXDocument.
 
 Relationship names be descriptive enough to easily deduce the correct direction
 from their name. The best way to do this is to make sure that the relationship
@@ -43,11 +44,11 @@ name completes the sentence:
 - fixedIn: (Security/VEX) A `from` Vulnerability has been fixed in each of the `to` Element(s). The use of the `fixedIn` type is contrained to `VexFixedVulnAssessmentRelationship` classed relationships.
 - foundBy: (Security) Designates a `from` Vulnerability was originally discovered by the `to` Agent(s)
 - generates: The `from` Element generates each `to` Element
-- hasAddedFile: Every `to` Element is is a file added to the `from` Element (`from` hasAddedFile `to`)
+- hasAddedFile: Every `to` Element is a file added to the `from` Element (`from` hasAddedFile `to`)
 - hasAssessmentFor: (Security) Relates a `from` Vulnerability and each `to` Element(s) with a security assessment. To be used with `VulnAssessmentRelationship` types
 - hasAssociatedVulnerability: (Security) Used to associate a `from` Artifact with each `to` Vulnerability
 - hasConcludedLicense: The `from` Software Artifact is concluded by the SPDX data creator to be governed by each `to` license
-- hasDataFile: The `from` Element treats each `to` Element as a data file
+- hasDataFile: The `from` Element treats each `to` Element as a data file. A data file is a data resource that the `from` Element can use to fulfil its expected functinality or behavior. It can be a generic database fie, a log file, an AI model file, a calibration data file, a temporary file, etc. For AI training data, test data, other test artifacts, configuration data, Build input data, and Build output data, please consider using `trainedOn`, `testedOn`, `hasTest`, `configures`, `hasInputs`, and `hasOutputs` types, respectively.
 - hasDeclaredLicense: The `from` Software Artifact was discovered to actually contain each `to` license, for example as detected by use of automated tooling.
 - hasDeletedFile: Every `to` Element is a file deleted from the `from` Element (`from` hasDeletedFile `to`)
 - hasDependencyManifest: The `from` Element has manifest files that contain dependency information in each `to` Element
