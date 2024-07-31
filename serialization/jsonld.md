@@ -1,4 +1,4 @@
-# JSON-LD Serialization
+# JSON-LD serialization
 
 JSON-LD is a JSON-based format to encode RDF graphs.
 Its documentation can be found [here](https://www.w3.org/TR/json-ld11/).
@@ -9,17 +9,18 @@ The JSON-LD is an RDF format and follows the serialization rules of the
 ## SpdxDocument
 
 The following SpdxDocument properties are mapped to native JSON-LD mechanisms
-defined within the JSON-LD syntax specifications. Any properties not listed below
-should be serialized as part of the SpdxDocument element itself within the
-JSON-LD serialized data.
+defined within the JSON-LD syntax specifications. Any properties not listed
+below should be serialized as part of the SpdxDocument element itself within
+the JSON-LD serialized data.
 
-Deserialization of any JSON-LD serialized SPDX content MUST expand the inverse of
-these native mappings such that the logical SpdxDocument element directly
+Deserialization of any JSON-LD serialized SPDX content MUST expand the inverse
+of these native mappings such that the logical SpdxDocument element directly
 contains its full set of properties.
 
 ### namespaceMap
 
-The namespaceMap uses the [term to IRI mapping](https://www.w3.org/TR/json-ld11/#example-11-term-expansion-from-context-definition)
+The namespaceMap uses the
+[term to IRI mapping](https://www.w3.org/TR/json-ld11/#example-11-term-expansion-from-context-definition)
 in the [JSON-LD context](https://www.w3.org/TR/json-ld11/#the-context).
 
 ### element
@@ -39,7 +40,7 @@ similar complex data classes) have to be inlined (TODO: we may want to make an
 exception for CreationInfo, depending on the outcome of the surrounding
 discussion).
 
-## Context File
+## Context file
 
 The SPDX organization provides a global JSON-LD @context file that MUST be used
 universally for all SPDX JSON-LD files of a given SPDX version.
