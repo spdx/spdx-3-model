@@ -12,7 +12,7 @@ Within the model, we have an SpdxDocument which represents the common properties
 
 We can represent/characterize the actual serialized bytes using an Artifact element in the model.
 
-A Relationship of type spdxDocumentForArtfact can be used to relate an SpdxDocument to one more serialized for of the SpdxDocument.
+A Relationship of type `serializedInArtifact` can be used to relate an SpdxDocument to one more serialized for of the SpdxDocument.
 
 When serializing the physical SpdxDocument, any properties of the logical element which can be represented using native mechanisms in the specific serialization format (e.g. @context prefixes in JSON-LD in place of the namespaceMap) should use these mechanisms and the remaining properties should be serialized within the “XCollection” element itself.
 
