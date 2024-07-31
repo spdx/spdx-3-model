@@ -5,7 +5,7 @@
 This directory contains the specifications and examples for all supported SPDX
 serialization formats.
 
-There is a specification markdown file for each supported format describing the
+There is a specification Markdown file for each supported format describing the
 serialization.
 
 A collection of elements can be serialized in multiple formats.
@@ -32,7 +32,7 @@ serialization.
 
 ## Serialization formats
 
-The specification files describing rules for each serialization format
+The specification Markdown files describing rules for each serialization format
 will contain an SpdxDocument section describing how each of the properties of
 SpdxDocument are serialized for the given serialization format.
 
