@@ -14,7 +14,7 @@ preparation process, its characteristics, and its access methods.
 
 ## Metadata
 
-- id: https://spdx.org/rdf/3.0.0/terms/Dataset
+- id: https://spdx.org/rdf/3.0.1/terms/Dataset
 - name: Dataset
 
 ## Profile conformance
