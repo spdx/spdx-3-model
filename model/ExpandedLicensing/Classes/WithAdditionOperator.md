@@ -11,8 +11,7 @@ text applied to it.
 
 A WithAdditionOperator indicates that the designated License is subject to the
 designated LicenseAddition, which might be a license exception on the
-[SPDX
-Exceptions List](https://spdx.org/licenses/exceptions-index.html)
+[SPDX License Exceptions](https://spdx.org/licenses/exceptions-index.html)
 (ListedLicenseException) or may be other additional text
 (CustomLicenseAddition). It is represented in the SPDX License Expression
 Syntax by the `WITH` operator.

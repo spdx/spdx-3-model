@@ -8,8 +8,8 @@ A license that is listed on the SPDX License List.
 
 ## Description
 
-A ListedLicense represents a License that is listed on the SPDX License List
-at <https://spdx.org/licenses>.
+A ListedLicense represents a License that is listed on the
+[SPDX License List](https://spdx.org/licenses).
 
 ## Metadata
 
