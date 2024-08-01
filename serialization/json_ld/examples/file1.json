@@ -9,7 +9,7 @@
     "createdBy": ["https://spdx.dev/elements/3F26391C#spdx-dev"]
   },
   "name": "model.png",
-  "software_contentType": "image/png",
+  "contentType": "image/png",
   "software_primaryPurpose": "documentation",
   "originatedBy": ["https://spdx.dev/elements/3F26391C#spdx-dev"]
 }

@@ -27,7 +27,7 @@ supply chains.
 
 ## Metadata
 
-- id: https://spdx.org/rdf/3.0.0/terms/Lite
+- id: https://spdx.org/rdf/3.0.1/terms/Lite
 - name: Lite
 
 ## Profile conformance

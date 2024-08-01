@@ -16,7 +16,7 @@ etc.).
 
 Definitions of "buildType", "configSourceEntrypoint", "configSourceUri",
 "parameters" and "environment" follow those defined in
-[SLSA provenance](https://slsa.dev/provenance/v0.2).
+[SLSA Provenance v0.2](https://slsa.dev/provenance/v0.2).
 
 ExternalIdentifier of type "urlScheme" may be used to identify build logs.
 In this case, the comment of the ExternalIdentifier should be "LogReference".

@@ -13,7 +13,7 @@ A relative filename with the root of the package archive or directory
 referencing a file to be excluded from the `PackageVerificationCode`.
 
 In general, every filename is preceded with a `./`, see
-[http://www.ietf.org/rfc/rfc3986.txt](http://www.ietf.org/rfc/rfc3986.txt)
+[RFC 3986 Uniform Resource Identifier (URI): Generic Syntax](https://www.rfc-editor.org/info/rfc3986)
 for syntax.
 
 ## Metadata
