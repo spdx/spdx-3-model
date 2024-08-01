@@ -70,16 +70,12 @@ Metadata information that can be added to a dataset that may be used in a softwa
 
 - /Core/Artifact/builtTime
   - minCount: 1
-  - maxCount: 1
 - /Core/Artifact/originatedBy
   - minCount: 1
   - maxCount: 1
 - /Core/Artifact/releaseTime
   - minCount: 1
-  - maxCount: 1
 - /Software/Package/downloadLocation
   - minCount: 1
-  - maxCount: 1
 - /Software/SoftwareArtifact/primaryPurpose
   - minCount: 1
-  - maxCount: 1

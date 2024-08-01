@@ -101,6 +101,12 @@ A Property Shape defines the set of constraints for a given property when applie
 
 In SPDX 3.0 these shapes are expressed using the W3C SHACL language.
 
+## SPDX
+
+In previous editions of the specification, SPDX meant "Software Package Data Exchange".
+
+Starting with V3.0, the scope of SPDX has expanded beyond software and now means "System Package Data Exchange".
+
 ## Validation
 
 The action of checking or proving that instance data content conforms to the explicit semantics (meaning) and syntax (structure of classes and properties) of the SPDX language standard.
