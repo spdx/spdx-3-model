@@ -12,7 +12,7 @@ identifier was deprecated.
 A deprecatedVersion, for a ListedLicense on the
 [SPDX License List](https://spdx.org/licenses/)
 or a ListedLicenseException on the
-[SPDX Exceptions List](https://spdx.org/licenses/exceptions-index.html),
+[SPDX License Exceptions](https://spdx.org/licenses/exceptions-index.html),
 specifies which version release of the License List was the first
 one in which it was marked as deprecated.
 
