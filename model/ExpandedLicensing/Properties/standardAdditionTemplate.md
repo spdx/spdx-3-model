@@ -4,13 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Identifies the full text of a LicenseAddition, in SPDX templating format.
+Identifies the full text of a LicenseAddition.
 
 ## Description
 
 A standardAdditionTemplate contains a license addition template which describes
-sections of the LicenseAddition text which can be varied. See the Legacy Text
-Template format section of the SPDX specification for format information.
+sections of the LicenseAddition text which can be varied.
 
 ## Metadata
 
