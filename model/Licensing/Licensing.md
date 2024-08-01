@@ -114,7 +114,7 @@ can be made from a missing hasConcludedLicense relationship.
 
 ## Metadata
 
-- id: https://spdx.org/rdf/3.0.0/terms/Licensing
+- id: https://spdx.org/rdf/3.0.1/terms/Licensing
 - name: Licensing
 
 ## Profile conformance
