@@ -9,10 +9,9 @@ Provides a CVSS version 2.0 assessment for a vulnerability.
 ## Description
 
 A CvssV2VulnAssessmentRelationship relationship describes the determined score
-and vector of a vulnerability using version 2.0 of the Common Vulnerability
-Scoring System (CVSS) as defined at
-[A Complete Guide to the Common Vulnerability Scoring System
-Version 2.0](https://www.first.org/cvss/v2/guide).
+and vector of a vulnerability as defined in
+[A Complete Guide to the Common Vulnerability Scoring System Version 2.0](https://www.first.org/cvss/v2/guide).
+
 It is intended to communicate the results of using a CVSS calculator.
 
 **Constraints**
