@@ -25,13 +25,13 @@ These files are automatically processed by
 and the following are generated:
 
 - [MkDocs](https://www.mkdocs.org/) input, which then generates the
-  [specification](https://spdx.github.io/spdx-spec/v3.0/)
+  [specification](https://spdx.github.io/spdx-spec/v3.0.1/)
 - [JSON-LD context](http://niem.github.io/json/reference/json-ld/context/)
-  file: [spdx-context.jsonld](https://spdx.org/rdf/3.0.0/spdx-context.jsonld)
+  file: [spdx-context.jsonld](https://spdx.org/rdf/3.0.1/spdx-context.jsonld)
 - Model [SHACL](https://en.wikipedia.org/wiki/SHACL) and
   [OWL](https://www.w3.org/OWL/) files:
   - [Turtle format](https://en.wikipedia.org/wiki/Turtle_(syntax)):
-    [spdx-model.ttl](https://spdx.org/rdf/3.0.0/spdx-model.ttl)
+    [spdx-model.ttl](https://spdx.org/rdf/3.0.1/spdx-model.ttl)
   - [JSON-LD format](https://json-ld.org/):
     [model.jsonld](https://spdx.github.io/spdx-3-model/model.jsonld)
 

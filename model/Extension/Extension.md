@@ -13,5 +13,5 @@ base for all defined extension subclasses.
 
 ## Metadata
 
-- id: https://spdx.org/rdf/3.0.0/terms/Extension
+- id: https://spdx.org/rdf/3.0.1/terms/Extension
 - name: Extension

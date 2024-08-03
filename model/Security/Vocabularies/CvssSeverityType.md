@@ -18,6 +18,6 @@ CvssSeverityType specifies the CVSS severity type, defined in the CVSS specifica
 
 - critical: When a CVSS score is between 9.0 - 10.0
 - high: When a CVSS score is between 7.0 - 8.9
-- medium: When a CVSS score is between 4 - 6.9
-- low: When a CVSS score is between 0 - 3.9
-- none: When a CVSS score is 0
+- medium: When a CVSS score is between 4.0 - 6.9
+- low: When a CVSS score is between 0.1 - 3.9
+- none: When a CVSS score is 0.0
