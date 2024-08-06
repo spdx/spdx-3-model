@@ -11,12 +11,11 @@ XML format.
 
 The license XML format is defined and used by the SPDX legal team.
 
-See the XML fields defined at
-[XML template fields](https://github.com/spdx/license-list-XML/blob/main/DOCS/xml-fields.md)
-for a text description.
+The formal schema definition is available at
+[SPDX License List XML Schema](https://github.com/spdx/license-list-XML/blob/v3.24.0/schema/ListedLicense.xsd).
 
-There is also an XML schema available at
-[SPDX license-list-XML GitHub repository](https://github.com/spdx/license-list-XML/blob/main/schema/ListedLicense.xsd).
+For a text description of the XML fields, see
+[XML template fields](https://github.com/spdx/license-list-XML/blob/v3.24.0/DOCS/xml-fields.md).
 
 ## Metadata
 
