@@ -11,7 +11,8 @@ Identifies the full text of a License or Addition.
 A licenseText contains the plain text of the License or Addition,
 without templating or other similar markup.
 
-Users of the licenseText for a License can apply the SPDX Matching Guidelines
+Users of the licenseText for a License can apply the
+[SPDX License List Matching Guidelines](../../../annexes/license-matching-guidelines-and-templates.md)
 when comparing it to another text for matching purposes.
 
 ## Metadata
