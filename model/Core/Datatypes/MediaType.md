@@ -12,7 +12,7 @@ A MediaType is a string constrained to the [RFC 2046](https://www.ietf.org/rfc/r
 way of indicating the type of content of an Element.
 
 A list of all possible media types is available at
-[https://www.iana.org/assignments/media-types/media-types.xhtml](https://www.iana.org/assignments/media-types/media-types.xhtml).
+[IANA](https://www.iana.org/assignments/media-types/media-types.xhtml).
 
 ## Metadata
 
