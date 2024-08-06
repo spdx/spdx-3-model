@@ -21,7 +21,7 @@ A purl is a URL composed of seven components:
 scheme:type/namespace/name@version?qualifiers#subpath
 ```
 
-The definition for each component and known purl type can be found in the
+The definition for each component and known purl types can be found in the
 [Package URL specification](../../../annexes/pkg-url-specification.md).
 Known purl type definitions can be found in the
 [Package URL type definitions](https://github.com/package-url/purl-spec/blob/b33dda1cf4515efa8eabbbe8e9b140950805f845/PURL-TYPES.rst).
