@@ -15,7 +15,7 @@ order to provide a more human-readable and smaller serialized representation of
 the Elements.
 
 For details of how NamespaceMap content is to be serialized please refer to
-[Model and Serializations](../../../docs/serializations.md)
+the [Model and Serializations](../../../docs/serializations.md) clause
 and the various serialization format-specific .md files in
 [spdx-3-model repository](https://github.com/spdx/spdx-3-model/tree/main/serialization).
 
