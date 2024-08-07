@@ -16,7 +16,7 @@ the Elements.
 
 For details of how NamespaceMap content is to be serialized please refer to
 the [Model and Serializations](../../../docs/serializations.md) clause
-and the various serialization format-specific .md files in
+and the various serialization format-specific files in
 [spdx-3-model repository](https://github.com/spdx/spdx-3-model/tree/main/serialization).
 
 Namespace maps support a variety of relevant use cases such as:
