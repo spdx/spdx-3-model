@@ -17,7 +17,7 @@ Supports vectorStrings specified in all CVSS versions.
 
 String values for the vectorString range must only include the abbreviated form
 of metric names specified in CVSS specifications, e.g.
-[https://www.first.org/cvss/v4.0/specification-document#Vector-String](https://www.first.org/cvss/v4.0/specification-document#Vector-String)
+[Common Vulnerability Scoring System Vector String](https://www.first.org/cvss/v4.0/specification-document#Vector-String).
 
 ## Metadata
 

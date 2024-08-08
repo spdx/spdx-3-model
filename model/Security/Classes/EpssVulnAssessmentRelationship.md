@@ -12,7 +12,7 @@ An EpssVulnAssessmentRelationship relationship describes the likelihood or
 probability that a vulnerability will be exploited in the wild, and the
 percentile ranking of probability relative to all other vulnerabilities' EPSS
 scores, using the Exploit Prediction Scoring System (EPSS) as defined at
-<https://www.first.org/epss/model>.
+[The EPSS Model](https://www.first.org/epss/model).
 
 **Constraints**
 

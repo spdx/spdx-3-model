@@ -8,7 +8,9 @@ Specifies the SSVC decision type.
 
 ## Description
 
-SsvcDecisionType specifies the type of decision that's been made according to the Stakeholder-Specific Vulnerability Categorization (SSVC)  system [https://www.cisa.gov/stakeholder-specific-vulnerability-categorization-ssvc](https://www.cisa.gov/stakeholder-specific-vulnerability-categorization-ssvc)
+SsvcDecisionType specifies the type of decision that's been made according to
+the
+[Stakeholder-Specific Vulnerability Categorization (SSVC)](https://www.cisa.gov/stakeholder-specific-vulnerability-categorization-ssvc).
 
 ## Metadata
 

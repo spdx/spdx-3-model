@@ -9,7 +9,8 @@ Provides a numerical (0-10) representation of the severity of a vulnerability.
 ## Description
 
 The score provides information on the severity of a vulnerability per the
-Common Vulnerability Scoring System as defined on [https://www.first.org/cvss](https://www.first.org/cvss/).
+Common Vulnerability Scoring System as defined by
+[Forum of Incident Response and Security Teams](https://www.first.org/cvss/).
 
 ## Metadata
 
