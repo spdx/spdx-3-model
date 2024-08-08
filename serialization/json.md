@@ -1,4 +1,4 @@
-# JSON Serialization
+# JSON serialization
 
 ## Parsing JSON-LD as JSON
 

@@ -1,4 +1,4 @@
-# Lite Serialization
+# Lite serialization
 
 ## Summary
 
@@ -8,7 +8,7 @@ specification, from the point of view of use cases in some industries.
 SPDX Lite aims at the balance between the SPDX standard and actual workflows in
 some industries.
 
-## Supported SPDX Fields
+## Supported SPDX fields
 
 The SPDX Lite serialization supports a subset of the entire SPDX specification.
 Any unsupported properties may result in a parsing error.
