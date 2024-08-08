@@ -63,6 +63,8 @@ elements and relationships step-by-step:
 
 - An initial set of vulnerability elements
 - Adding vulnerability elements with security external reference types
+  including `securityFix`, `vulnerabilityDisclosureReport`,
+  and `vulnerabilityExploitabilityAssessment`
 - Adding `hasAssociatedVulnerability` relationship between a vulnerability
   element and a software profile element
 - Adding multiple `hasAssessmentFor` relationships for vulnerability assessment
