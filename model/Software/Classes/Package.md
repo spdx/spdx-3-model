@@ -34,19 +34,19 @@ Note that some of these could be represented in SPDX as a file as well.
 
 ## Properties
 
-- packageVersion
-  - type: xsd:string
-  - minCount: 0
-  - maxCount: 1
 - downloadLocation
   - type: xsd:anyURI
   - minCount: 0
   - maxCount: 1
-- packageUrl
+- homePage
   - type: xsd:anyURI
   - minCount: 0
   - maxCount: 1
-- homePage
+- packageVersion
+  - type: xsd:string
+  - minCount: 0
+  - maxCount: 1
+- packageUrl
   - type: xsd:anyURI
   - minCount: 0
   - maxCount: 1
