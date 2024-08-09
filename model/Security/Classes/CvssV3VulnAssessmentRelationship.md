@@ -9,10 +9,11 @@ Provides a CVSS version 3 assessment for a vulnerability.
 ## Description
 
 A CvssV3VulnAssessmentRelationship relationship describes the determined score,
-severity, and vector of a vulnerability using version
-[3.0](https://www.first.org/cvss/v3.0/specification-document) or
-[3.1](https://www.first.org/cvss/v3.1/specification-document) of the Common
-Vulnerability Scoring System (CVSS).
+severity, and vector of a vulnerability as defined in
+[Common Vulnerability Scoring System v3.0: Specification Document](https://www.first.org/cvss/v3.0/specification-document)
+or
+[Common Vulnerability Scoring System v3.1: Specification Document](https://www.first.org/cvss/v3.1/specification-document).
+
 It is intended to communicate the results of using a CVSS calculator.
 
 **Constraints**
