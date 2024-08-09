@@ -24,7 +24,7 @@ These files are automatically processed by
 [spec-parser](https://github.com/spdx/spec-parser/)
 and the following are generated:
 
-- [MkDocs](https://www.mkdocs.org/) input, which then generates the
+- Input for [MkDocs](https://www.mkdocs.org/), which then generates the
   [specification](https://spdx.github.io/spdx-spec/v3.0.1/)
 - [JSON-LD context](http://niem.github.io/json/reference/json-ld/context/)
   file: [spdx-context.jsonld](https://spdx.org/rdf/3.0.1/spdx-context.jsonld)
@@ -43,6 +43,7 @@ should be working on the former.
 
 The SPDX model is described using profiles related to the software application.
 The profiles are organized as sub-directories under the ‘model’ directory.
+The model diagram is available in [model.drawio](./model.drawio) file.
 
 Note:
 
