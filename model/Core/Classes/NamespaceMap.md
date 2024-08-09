@@ -8,15 +8,14 @@ A mapping between prefixes and namespace partial URIs.
 
 ## Description
 
-A namespace map allows the creator of a collection of Elements that could be
-serialized to suggest a set of shorter identifiers ("prefixes") for particular
-namespace portions of ElementIDs to be used in SPDX content serialization in
-order to provide a more human-readable and smaller serialized representation of
-the Elements.
+A namespace map allows the creator of a collection of serializable Elements
+to suggest shorter identifiers ("prefixes") for specific namespace portions
+of Element IDs. This map is used in SPDX content serialization to provide
+a more human-readable and smaller serialized representation of the Elements.
 
 For details of how NamespaceMap content is to be serialized please refer to
-the [Model and Serializations](../../../docs/serializations.md) clause
-and the various serialization format-specific files in
+the [Model and serializations](../../../docs/serializations.md) clause
+and the various serialization format-specific files within the
 [spdx-3-model repository](https://github.com/spdx/spdx-3-model/tree/main/serialization).
 
 Namespace maps support a variety of relevant use cases such as:
