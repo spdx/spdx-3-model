@@ -1,7 +1,8 @@
 # Validating SPDX 3 JSON-LD documents
 
-There are two mechanisms for validating SPDX 3 JSON-LD documents; validating
-the JSON Schema, and validating against the SHACL model.
+There are two mechanisms for validating SPDX 3 JSON-LD documents: validating
+the structure against the JSON Schema, and validating the semantics against the
+SHACL model.
 
 These two different mechanisms serve validate the document in different ways,
 so it is recommended to do both types of validation to ensure that your
@@ -9,7 +10,7 @@ documents are correct.
 
 Validation of documents can be done locally using the methods described below.
 
-## Validating the JSON Schema
+## Validating the structure against the JSON Schema
 
 SPDX 3 JSON-LD documents adhere to a JSON Schema to ensure that they can be
 parsed as either RDF documents using a full RDF parsing library, or as more
@@ -44,7 +45,7 @@ wget -O spdx-3-schema.json https://spdx.org/schema/3.0.0/spdx-json-schema.json
 Validation of a document can now be done with the command:
 
 ```shell
-ajv validate --spec=draft2020 -s spdx-json-schema.json -d <DOCUMENT>
+ajv validate --spec=draft2020 -s spdx-3-schema.json -d <DOCUMENT>
 ```
 
 ### check-jsonschema
@@ -69,7 +70,7 @@ no need to download it first. To validate a document, run the command:
 check-jsonschema -v --schemafile https://spdx.org/schema/3.0.0/spdx-json-schema.json <DOCUMENT>
 ```
 
-## Validating against the SHACL model
+## Validating the semantics against the SHACL model
 
 The SPDX 3 SHACL model is designed to validate that a document is semantically
 valid, that is that the way objects and properties are used actually conforms
@@ -104,3 +105,75 @@ pyshacl \
 outside of your document, as it cannot understand the use of `import` in
 `SpdxDocument`. For the time being, you will need to manually verify these
 references and ignore the warnings.
+
+## Enable real-time validation during editing
+
+Some code editors offer real-time validation of JSON against a schema as you
+edit. This feature is particularly handy for quickly identifying the location
+of errors or warnings.
+
+### Real-time structural validation in Visual Studio Code
+
+For instance, in Visual Studio Code, you can
+[enable JSON validation](https://code.visualstudio.com/docs/languages/json#_intellisense-and-validation)
+by navigating to `Settings` > `Extensions` and activate the
+`JSON › Validate: Enable` setting by ticking the checkbox.
+
+![Visual Studio Code settings for JSON validation](./validation-vscode.png "A screenshot of Visual Studio Code settings for JSON validation")
+
+Next, edit your `settings.json` file and add the SPDX JSON Schema
+(`https://spdx.org/schema/3.0.0/spdx-json-schema.json`)
+to the `json.schemas` array.
+
+```json
+"json.schemas": [
+  {
+    "fileMatch": [
+      "*.spdx3.json"
+    ],
+    "url": "https://spdx.org/schema/3.0.0/spdx-json-schema.json"
+  }
+]
+```
+
+Once enabled, the editor will perform real-time validation and display any
+errors.
+
+To illustrate, the screenshot below shows the editor highlighting an
+unacceptable value for `dataset_confidentialityLevel`.
+Only values from the predefined list are allowed.
+
+![An error with a value in a dataset_confidentialityLevel](./validation-vscode-error.png "A screenshot showing an error with a value in a dataset_confidentialityLevel")
+
+The editor can also recommend an acceptable value.
+
+![Suggestions for a type while typing](./validation-vscode-suggestion.png "A screenshot showing suggestions for a type while typing")
+
+Note again that the validation in Visual Studio Code is against a JSON Schema,
+which  validates the structure of the JSON-LD document.
+However, it does not validate the semantics of the document.
+You still need to perform separate validation against the SHACL model.
+
+## Common errors
+
+Here are some common errors worth looking into if an SPDX JSON-LD fails validation.
+
+### Serialized names
+
+Serialized names take the form of either `profilename_ClassName` or
+`profilename_propertyName`.  The prefix `profilename_` is derived from the name
+of the Profile and is always written in lowercase letters.
+There is an exception for the `Core` Profile, where serialized names omit the
+prefix entirely.
+
+For example,
+
+- `dataset_datasetType` for a `datasetType` Property in the `Dataset` Profile
+- `expandedlicensing_CustomLicense` for a `CustomLicense` Class in the
+  `ExpandedLicensing` Profile
+- `Person` for a Class `Person` in the `Core` Profile (no prefix)
+
+### Cardinality
+
+A property with a cardinality greater than 1 must be represented as an array in
+JSON, regardless of the actual number of values it holds.
