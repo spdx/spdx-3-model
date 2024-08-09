@@ -14,7 +14,7 @@ of Element IDs. This map is used in SPDX content serialization to provide
 a more human-readable and smaller serialized representation of the Elements.
 
 For details of how NamespaceMap content is to be serialized please refer to
-the [Model and serializations](../../../docs/serializations.md) clause
+the [Model and serializations](../../../serializations.md) clause
 and the various serialization format-specific files within the
 [spdx-3-model repository](https://github.com/spdx/spdx-3-model/tree/main/serialization).
 
