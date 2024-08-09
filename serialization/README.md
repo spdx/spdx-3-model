@@ -1,4 +1,4 @@
-# Notes on Serialization
+# Notes on serialization
 
 ## Serialization information
 
