@@ -45,7 +45,7 @@ Examples of how to serialize the following cases:
 - `Sbom` with two `File`s
 - `SpdxDocument`
   - `SpdxDocument` with `ExternalMap`
-  - `SpdxDocument` with `NamespaceMap
+  - `SpdxDocument` with `NamespaceMap`
   - `SpdxDocument` with two `File`s
 
 ### Licensing Profile use cases
