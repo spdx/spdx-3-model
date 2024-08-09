@@ -1,4 +1,4 @@
-# Canonical Serialization
+# Canonical serialization
 
 Canonical serialization is single, consistent, normalized, deterministic, and reproducible form.
 

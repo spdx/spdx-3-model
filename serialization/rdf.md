@@ -1,4 +1,4 @@
-# RDF Serialization
+# RDF serialization
 
 SPDX data can be serialized in RDF. This can be saved in a variety of formats, like XML, JSON-LD, Turtle, etc.
 
