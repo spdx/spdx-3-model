@@ -12,7 +12,7 @@ different stages of its lifecycle.
 A class to denote the known or estimated energy consumption of an AI model
 during its training, fine-tuning, and inference stages.
 
-**Syntax**
+*Example*
 
 ```json
 {

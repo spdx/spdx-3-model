@@ -4,12 +4,15 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Abstract class representing a license combination consisting of one or more
+Abstract class representing a license combination consisting of one or more licenses.
+
+## Description
+
+AnyLicenseInfo is 
+an bstract class representing a license combination consisting of one or more
 licenses (optionally including additional text), which may be combined
 according to the
 [SPDX license expression syntax](../../../annexes/SPDX-license-expressions.md).
-
-## Description
 
 An AnyLicenseInfo is used by licensing properties of software artifacts.
 

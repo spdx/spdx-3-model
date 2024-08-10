@@ -33,10 +33,10 @@ ExternalRefType specifies the type of an external reference.
 - funding: A reference to funding information related to a package.
 - issueTracker: A reference to the issue tracker for a package.
 - mailingList: A reference to the mailing list used by the maintainer for a package.
-- mavenCentral: A reference to a Maven repository artifact. The artifact locator format, looks like `groupId:artifactId[:version]`, is defined in [Maven documentation](https://maven.apache.org/guides/mini/guide-naming-conventions.html).
+- mavenCentral: A reference to a Maven repository artifact. The artifact locator format is defined in the [Maven documentation](https://maven.apache.org/guides/mini/guide-naming-conventions.html) and looks like `groupId:artifactId[:version]`.
 - metrics: A reference to metrics related to package such as OpenSSF scorecards.
-- npm: A reference to an npm package. The package locator format, looks like `package@version`, is defined in [npm Docs](https://docs.npmjs.com/cli/v10/configuring-npm/package-json).
-- nuget: A reference to a NuGet package. The package locator format, looks like `package/version`, is defined in [NuGet documentation](https://docs.nuget.org).
+- npm: A reference to an npm package. The package locator format is defined in the [npm documentation](https://docs.npmjs.com/cli/v10/configuring-npm/package-json) and looks like `package@version`.
+- nuget: A reference to a NuGet package. The package locator format is defined in the [NuGet documentation](https://docs.nuget.org) and looks like `package/version`.
 - license: A reference to additional license information related to an artifact.
 - other: Used when the type does not match any of the other options.
 - privacyAssessment: A reference to a privacy assessment for a package.

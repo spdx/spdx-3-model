@@ -17,9 +17,13 @@ NoAssertionElement should be used if
 - the SPDX creator has intentionally provided no information (no meaning should
   be implied by doing so).
 
-For example, a Relationship with `from`=Element1,
-`relationshipType`="ancestorOf", and `to`=NOASSERTION is explicitly expressing
-that no assertion is being made about any potential descendents of Element1.
+For example, a Relationship with
+`relationshipType`="ancestorOf",
+`from`=Element1,
+and
+`to`=NoAssertionElement
+is explicitly expressing that
+no assertion is being made about any potential descendents of Element1.
 
 ## Metadata
 

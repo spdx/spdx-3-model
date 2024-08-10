@@ -19,7 +19,7 @@ For example, 0.0042 kilowatt-hour of energy will have `0.042` as a value for
 property `energyQuantity`, and `"kilowattHour"` as a value for property
 `energyUnit`.
 
-**Syntax**
+*Example*
 
 ```json
 {

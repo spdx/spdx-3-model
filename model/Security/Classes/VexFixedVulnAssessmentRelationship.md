@@ -13,7 +13,7 @@ VexFixedVulnAssessmentRelationship links a vulnerability to a number of elements
 representing VEX products where a vulnerability has been fixed and are no longer
 affected. It represents the VEX fixed status.
 
-**Constraints**
+*Constraints*
 
 When linking elements using a VexFixedVulnAssessmentRelationship, the following
 requirements must be observed:
@@ -23,7 +23,7 @@ requirements must be observed:
 - The from: end of the relationship must ve a /Security/Vulnerability classed
   element.
 
-**Syntax**
+*Example*
 
 ```json
 {

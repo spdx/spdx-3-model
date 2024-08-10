@@ -5,7 +5,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 ## Summary
 
 Specifies whether the License is listed as free by the
-[Free Software Foundation (FSF)](https://fsf.org).
+Free Software Foundation (FSF).
 
 ## Description
 
