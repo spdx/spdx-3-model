@@ -18,6 +18,7 @@ practically infeasible to invert.
 
 ## Entries
 
+- adler32: Adler-32 checksum is part of the widely used zlib compression library as defined in [RFC 1950])(https://www.ietf.org/rfc/rfc1950.txt) Section 2.3.
 - blake2b256: BLAKE2b algorithm with a digest size of 256, as defined in [RFC 7693](https://www.rfc-editor.org/info/rfc7693) Section 4.
 - blake2b384: BLAKE2b algorithm with a digest size of 384, as defined in [RFC 7693](https://www.rfc-editor.org/info/rfc7693) Section 4.
 - blake2b512: BLAKE2b algorithm with a digest size of 512, as defined in [RFC 7693](https://www.rfc-editor.org/info/rfc7693) Section 4.
