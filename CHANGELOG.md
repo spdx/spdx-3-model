@@ -5,8 +5,7 @@
 ### Changes since 3.0
 
 - **Removed:** `Software/contentType` property.
-  - The `Software/File` is meant to use the `Core/contentType` property
-    instead.
+  - The `Software/File` class is meant to use the `Core/contentType` property.
 - **Fixed:** Typo in `hasPrerequisite` entry.
   - Corrected the misspelling of `hasPrerequsite` to `hasPrerequisite` in
     `Core/RelationshipType`.
