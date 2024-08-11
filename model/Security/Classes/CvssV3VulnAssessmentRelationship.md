@@ -16,13 +16,11 @@ or
 
 It is intended to communicate the results of using a CVSS calculator.
 
-**Constraints**
+*Constraints*
 
-- The value of severity must be one of 'none', 'low', 'medium', 'high' or
-  'critical'.
 - The relationship type must be set to `hasAssessmentFor`.
 
-**Syntax**
+*Example*
 
 ```json
 {

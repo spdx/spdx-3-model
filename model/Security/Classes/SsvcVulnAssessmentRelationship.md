@@ -15,11 +15,11 @@ defined by
 
 It is intended to communicate the results of using the CISA SSVC Calculator.
 
-**Constraints**
+*Constraints*
 
 - The relationship type must be set to hasAssessmentFor.
 
-**Syntax**
+*Example*
 
 ```json
 {

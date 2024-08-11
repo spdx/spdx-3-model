@@ -14,13 +14,13 @@ percentile ranking of probability relative to all other vulnerabilities' EPSS
 scores, using the Exploit Prediction Scoring System (EPSS) as defined at
 [The EPSS Model](https://www.first.org/epss/model).
 
-**Constraints**
+*Constraints*
 
 - The relationship type must be set to hasAssessmentFor.
 - The probability must be between 0 and 1.
 - The percentile must be between 0 and 1.
 
-**Syntax**
+*Example*
 
 ```json
 {

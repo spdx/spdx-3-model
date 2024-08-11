@@ -14,13 +14,11 @@ severity, and vector of a vulnerability as defined in
 
 It is intended to communicate the results of using a CVSS calculator.
 
-**Constraints**
+*Constraints*
 
-- The value of severity must be one of 'none', 'low', 'medium', 'high' or
-  'critical'.
 - The relationship type must be set to hasAssessmentFor.
 
-**Syntax**
+*Example*
 
 ```json
 {
@@ -47,7 +45,7 @@ It is intended to communicate the results of using a CVSS calculator.
     {
       "@type": "ExternalRef",
       "externalRefType": "securityOther",
-      "locator": "    https://www.first.org/cvss/v4.0/examples#Apache-log4j-JNDI-Command-Execution-log4shell-Vulnerability-CVE-2021-44228"
+      "locator": "https://www.first.org/cvss/v4.0/examples#Apache-log4j-Vulnerability-CVE-2021-44228"
     },
   ],
   "suppliedBy": ["urn:spdx.dev:agent-my-security-vendor"],

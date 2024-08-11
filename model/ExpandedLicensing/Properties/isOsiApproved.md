@@ -5,7 +5,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 ## Summary
 
 Specifies whether the License is listed as approved by the
-[Open Source Initiative (OSI)](https://opensource.org).
+Open Source Initiative (OSI).
 
 ## Description
 

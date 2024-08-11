@@ -18,18 +18,21 @@ This identifier enables a recipient to determine if any file in the original pac
 
 Algorithm:
 
-    verificationcode = 0
-    filelist = templist = ""
-    for all files in the package {
-        if file is an "excludes" file, skip it /* exclude SPDX analysis file(s) */
-        else append templist with "algorithm(file)/n"
-    }
+    templist = empty list of strings
 
-    sort templist in ascending order by algorithm value
+    for all files in the package
+        if file is an "excludes" file
+            skip it /* exclude SPDX analysis file(s) */
+        else
+            append algorithm(contents of file) to templist
 
-    filelist = templist with "/n"s removed. /* ordered sequence of algorithm values with no separators */
+    sort templist in ascending order by value
+
+    valueslist = join templist values     /* ordered sequence with no separators */
      
-    hashValue = algorithm(filelist) /* Where algorithm(file) applies a hash algorithm on the contents of file and returns the result in lowercase hexadecimal digits. */
+    verificationcode = algorithm(valueslist)
+
+where `algorithm(string)` applies a hash algorithm on a string and returns the result in lowercase hexadecimal digits.
 
 Required sort order: '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f' (ASCII order)
 

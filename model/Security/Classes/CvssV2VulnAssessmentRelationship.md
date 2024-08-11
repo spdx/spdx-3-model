@@ -14,11 +14,11 @@ and vector of a vulnerability as defined in
 
 It is intended to communicate the results of using a CVSS calculator.
 
-**Constraints**
+*Constraints*
 
 - The relationship type must be set to `hasAssessmentFor`.
 
-**Syntax**
+*Example*
 
 ```json
 {

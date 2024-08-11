@@ -14,7 +14,6 @@ the build was invoked on.
 
 For example, if the build was invoked on GitHub's CI platform using GitHub
 Actions, the buildType can be expressed as `https://github.com/actions`.
-
 In contrast, if the build was invoked on a local machine, the buildType can be
 expressed as `file://username@host/path/to/build`.
 
