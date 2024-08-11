@@ -49,7 +49,7 @@ simplify creating reproducible builds.
 - configSourceDigest
   - type: /Core/Hash
   - minCount: 0
-- parameters
+- parameter
   - type: /Core/DictionaryEntry
   - minCount: 0
 - buildStartTime
