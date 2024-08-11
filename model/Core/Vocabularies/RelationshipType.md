@@ -25,7 +25,7 @@ name completes the sentence:
 
 ## Entries
 
-- affects: The `from` vulnerability affects each `to` Element. The use of the `affects` type is constrained to `VexAffectedVulnAssessmentRelationship` classed relationships.
+- affects: The `from` Vulnerability affects each `to` Element. The use of the `affects` type is constrained to `VexAffectedVulnAssessmentRelationship` classed relationships.
 - amendedBy: The `from` Element is amended by each `to` Element.
 - ancestorOf: The `from` Element is an ancestor of each `to` Element.
 - availableFrom: The `from` Element is available from the additional supplier described by each `to` Element.
