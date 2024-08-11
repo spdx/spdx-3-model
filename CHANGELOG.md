@@ -13,9 +13,7 @@
   - Corrected `concludedLicense` to `hasConcludedLicense` and
     `declaredLicense` to `hasDeclaredLicense` in the "Profile conformance"
     section of AI, Dataset, Licensing, and Lite Profiles.
-- **Fixed:** Change `parameter` property - [#836](https://github.com/spdx/spdx-3-model/pull/836)
-  - Corrected `parameters` to `parameter` in Build Profile. 
-- **Added:** `adler32` entry to `Core/HashAlgorithm` - [#826](https://github.com/spdx/spdx-3-model/pull/826)
+- **Added:** `adler32` entry to `Core/HashAlgorithm`
   - The Adler-32 checksum, previously available in SPDX 2.3, has been
     reintroduced.
 - **Improved:** JSON-LD examples.
