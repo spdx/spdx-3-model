@@ -9,7 +9,7 @@ Provides a place for the SPDX data creator to record the package URL string
 
 ## Description
 
-A package URL is an attempt to standardize package representations
+A package URL (commonly pronounced and referred to as "purl") is an attempt to standardize package representations
 in order to reliably identify and locate software packages.
 A packageUrl is a URL string which represents a package in a
 mostly universal and uniform way across programming languages, package
