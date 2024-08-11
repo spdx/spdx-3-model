@@ -19,7 +19,7 @@ It is syntactically correct to specify a ConjunctiveLicenseSet where the
 subsidiary AnyLicenseInfos may be "incompatible" according to a particular
 interpretation of the corresponding Licenses.
 The
-[SPDX License Expression Syntax](../../../annexes/SPDX-license-expressions.md)
+[SPDX License Expression Syntax](../../../annexes/spdx-license-expressions.md)
 does not take into account interpretation of license texts, which is
 left to the consumer of SPDX data to determine for themselves.
 
