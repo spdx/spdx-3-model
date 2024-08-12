@@ -21,3 +21,11 @@ its composition, licensing information, known quality or security issues, etc.
 - name: Bom
 - SubclassOf: Bundle
 - Instantiability: Concrete
+
+## External properties restrictions
+
+- /Core/ElementCollection/element
+  - minCount: 1
+- /Core/ElementCollection/rootElement
+  - minCount: 1
+
