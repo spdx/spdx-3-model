@@ -8,7 +8,7 @@ Provides an ExternalMap of Element identifiers.
 
 ## Description
 
-Import provides an ExternalMap of Element identifiers that are used within a
+Import provides an ExternalMap of an Element identifier that is used within a
 document but defined external to that document.
 
 ## Metadata
