@@ -93,7 +93,7 @@
           "namespace": "http://spdx.org/spdxdocs/spdx-tools-v1.2-3F2504E0-4F89-41D3-9A0C-0305E82C3301#"
         }
       ],
-      "imports": [
+      "import": [
         {
           "type": "ExternalMap",
           "externalSpdxId": "DocumentRef-spdx-tool-1.2:SPDXRef-DOCUMENT",
