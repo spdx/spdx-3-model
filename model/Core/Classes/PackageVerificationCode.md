@@ -23,7 +23,7 @@ Algorithm:
 
     for all files in the package {
         if file is a packageVerificationCodeExcludedFile
-            skip it /* exclude SPDX analysis file(s) */
+            skip it  /* exclude SPDX analysis file */
         else
             append "algorithm(file)/n" to templist
     }
