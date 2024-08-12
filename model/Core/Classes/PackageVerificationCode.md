@@ -32,7 +32,10 @@ Algorithm:
     
     valueslist = remove "/n"s from templist  /* ordered sequence with no separators */
      
-    hashValue = algorithm(valueslist)
+    if valuelist is empty
+       hashValue = 0
+    else
+       hashValue = algorithm(valueslist)
 
 where `algorithm(string)` applies a hash algorithm on a string and returns the result in lowercase hexadecimal digits.
 
