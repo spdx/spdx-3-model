@@ -18,7 +18,7 @@ This identifier enables a recipient to determine if any file in the original pac
 
 Algorithm:
 
-    templist = empty list of strings
+    templist = ""
 
     for all files in the package {
         if file is a packageVerificationCodeExcludedFile
