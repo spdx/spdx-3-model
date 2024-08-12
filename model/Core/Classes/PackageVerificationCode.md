@@ -32,7 +32,7 @@ Algorithm:
     /* remove separators from ordered sequence */
     valueslist = remove "/n"s from templist
      
-    if valuelist is empty
+    if valueslist is empty
        hashValue = 0
     else
        hashValue = algorithm(valueslist)
