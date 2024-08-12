@@ -26,7 +26,7 @@ Algorithm:
             skip it /* exclude SPDX analysis file(s) */
         else
             append "algorithm(file)/n" to templist
-        }
+    }
 
     sort templist in ascending order by value
     
