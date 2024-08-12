@@ -14,7 +14,7 @@ exceptions.
 
 The syntax for a LicenseExpression string is set forth in the corresponding
 Annex of this specification
-(["SPDX license expressions"](../../../annexes/SPDX-license-expressions.md)).
+(["SPDX license expressions"](../../../annexes/spdx-license-expressions.md)).
 A LicenseExpression string is not valid if it does not conform to the grammar
 set forth in that annex.
 

@@ -9,7 +9,7 @@ Additional metadata relating to software licensing.
 ## Description
 
 The SimpleLicensing profile provides classes and properties to express licenses
-as a [license expression](../../annexes/SPDX-license-expressions.md) string.
+as a [license expression](../../annexes/spdx-license-expressions.md) string.
 
 It also provides the base abstract class, AnyLicenseInfo, used for references
 to license information.

@@ -12,7 +12,7 @@ License Addition to its URI ID.
 Within a License Expression, references can be made to a Custom License or a
 Custom License Addition.
 
-The [License Expression syntax](../../../annexes/SPDX-license-expressions.md)
+The [License Expression syntax](../../../annexes/spdx-license-expressions.md)
 dictates any reference starting with a
 "LicenseRef-" or "AdditionRef-" refers to license or addition text not found in
 the official [SPDX License List](https://spdx.org/licenses/).
