@@ -18,7 +18,6 @@ This identifier enables a recipient to determine if any file in the original pac
 
 Algorithm:
 
-    hashValue = 0
     templist = empty list of strings
 
     for all files in the package {
