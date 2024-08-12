@@ -29,7 +29,8 @@ Algorithm:
 
     sort templist in ascending order by value
     
-    valueslist = remove "/n"s from templist  /* ordered sequence with no separators */
+    /* remove separators from ordered sequence */
+    valueslist = remove "/n"s from templist
      
     if valuelist is empty
        hashValue = 0
