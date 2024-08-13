@@ -39,7 +39,7 @@ Unfortunately, `ajv` does not allow referencing a schema from a URL, so it must
 first be downloaded locally in order to do validation:
 
 ```shell
-wget -O spdx-3-schema.json https://spdx.org/schema/3.0.0/spdx-json-schema.json
+wget -O spdx-3-schema.json https://spdx.org/schema/3.0.1/spdx-json-schema.json
 ```
 
 Validation of a document can now be done with the command:
@@ -67,7 +67,7 @@ python3 -m pip install --user check-jsonschema
 no need to download it first. To validate a document, run the command:
 
 ```shell
-check-jsonschema -v --schemafile https://spdx.org/schema/3.0.0/spdx-json-schema.json <DOCUMENT>
+check-jsonschema -v --schemafile https://spdx.org/schema/3.0.1/spdx-json-schema.json <DOCUMENT>
 ```
 
 ## Validating the semantics against the SHACL model
@@ -96,8 +96,8 @@ means a document can be validated using the command:
 
 ```shell:
 pyshacl \
-    --shacl https://spdx.org/rdf/3.0.0/spdx-model.ttl \
-    --ont-graph https://spdx.org/rdf/3.0.0/spdx-model.ttl \
+    --shacl https://spdx.org/rdf/3.0.1/spdx-model.ttl \
+    --ont-graph https://spdx.org/rdf/3.0.1/spdx-model.ttl \
     <DOCUMENT>
 ```
 
@@ -122,7 +122,7 @@ by navigating to `Settings` > `Extensions` and activate the
 ![Visual Studio Code settings for JSON validation](./validation-vscode.png "A screenshot of Visual Studio Code settings for JSON validation")
 
 Next, edit your `settings.json` file and add the SPDX JSON Schema
-(`https://spdx.org/schema/3.0.0/spdx-json-schema.json`)
+(`https://spdx.org/schema/3.0.1/spdx-json-schema.json`)
 to the `json.schemas` array.
 
 ```json
@@ -131,7 +131,7 @@ to the `json.schemas` array.
     "fileMatch": [
       "*.spdx3.json"
     ],
-    "url": "https://spdx.org/schema/3.0.0/spdx-json-schema.json"
+    "url": "https://spdx.org/schema/3.0.1/spdx-json-schema.json"
   }
 ]
 ```
