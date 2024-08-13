@@ -10,8 +10,8 @@ Information about the relationship between two Elements.
 
 Provides information about the relationship between two Elements.
 For example, you can represent a relationship between two different Files,
-between a Package and a File, between two Packages, or between one SPDXDocument
-and another SPDXDocument.
+between a Package and a File, between two Packages, or between one SpdxDocument
+and another SpdxDocument.
 
 Relationship names be descriptive enough to easily deduce the correct direction
 from their name. The best way to do this is to make sure that the relationship
@@ -79,7 +79,7 @@ name completes the sentence:
 - publishedBy: Designates a `from` Vulnerability was made available for public use or reference by each `to` Agent.
 - reportedBy: Designates a `from` Vulnerability was first reported to a project, vendor, or tracking database for formal identification by each `to` Agent.
 - republishedBy: Designates a `from` Vulnerability's details were tracked, aggregated, and/or enriched to improve context (i.e. NVD) by each `to` Agent.
-- serializedInArtifact: The `from` SPDXDocument can be found in a serialized form in each `to` Artifact.
+- serializedInArtifact: The `from` SpdxDocument can be found in a serialized form in each `to` Artifact.
 - testedOn: The `from` Element has been tested on the `to` Element(s).
 - trainedOn: The `from` Element has been trained on the `to` Element(s).
 - underInvestigationFor: The `from` Vulnerability impact is being investigated for each `to` Element. The use of the `underInvestigationFor` type is constrained to `VexUnderInvestigationVulnAssessmentRelationship` classed relationships.
