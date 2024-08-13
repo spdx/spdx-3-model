@@ -49,12 +49,12 @@ Additionally:
    property.
    
 For a `/Core/SpdxDocument` to be conformant with this profile, the following has to hold:
-1. The mincount for `/Core/SpdxDocument/element` is 1
-1. The mincount for `/Core/SpdxDocument/rootElement` is 1
+1. The mincount for `element` is 1
+1. The mincount for `rootElement` is 1
 
 For a `/Software/Sbom` to be conformant with this profile, the following has to hold:
-1. The mincount for `/Software/Sbom/element` is 1
-1. The mincount for `/Software/Sbom/rootElement` is 1
+1. The mincount for `element` is 1
+1. The mincount for `rootElement` is 1
 
 Finally, for a `/Core/Agent` to be conformant with this profile, the following has to hold:
 
