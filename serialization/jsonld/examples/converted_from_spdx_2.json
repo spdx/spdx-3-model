@@ -1,6 +1,6 @@
 {
   "@context": [
-    "https://spdx.org/rdf/3.0.0/spdx-context.jsonld",
+    "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
     {
       "spdx-example": "http://spdx.org/spdxdocs/spdx-example-444504E0-4F89-41D3-9A0C-0305E82C3301#"
     }
@@ -9,7 +9,7 @@
     {
       "@id": "_:creationInfo1",
       "type": "CreationInfo",
-      "specVersion": "3.0.0",
+      "specVersion": "3.0.1",
       "created": "2010-01-29T18:30:22Z",
       "createdBy": [
         "spdx-example:SPDXRef-Actor-ExampleCodeInspect",
@@ -18,7 +18,7 @@
       "createdUsing": [
         "spdx-example:SPDXRef-Actor-LicenseFind-1.0"
       ],
-      "comment": "This is the SPDX-2.3 JSON example converted to SPDX-3.0. As there is currently no closure on how to treat licenses, they are omitted here for now."
+      "comment": "This is the SPDX-2.3 JSON example converted to SPDX-3.0.1. As there is currently no closure on how to treat licenses, they are omitted here for now."
     },
     {
       "type": "Tool",
