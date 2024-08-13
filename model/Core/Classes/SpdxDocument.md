@@ -30,7 +30,7 @@ SpdxDocument element definition.
 
 ## Properties
 
-- imports
+- import
   - type: ExternalMap
 - namespaceMap
   - type: NamespaceMap
