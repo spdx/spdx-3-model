@@ -3,7 +3,7 @@
 The System Package Data Exchange® (SPDX®) is a standard format for
 communicating information about components associated with systems.
 
-Components can include software, AI/ML models, and data today.
+Components can include software, AI/ML models and dataset.
 More component types that make up modern systems are planned to be included in
 subsequent releases.
 
@@ -17,10 +17,11 @@ standard.
 
 ## Branches and Formats
 
-The editable files are written in a constrained subset of Markdown and are
-stored in the `main` branch.
+The editable files inside `model/` directory are written in a constrained
+subset of Markdown, with specific headings for specific types of information,
+and are stored in the `main` branch.
 
-These files are automatically processed by
+The editable files are automatically processed by
 [spec-parser](https://github.com/spdx/spec-parser/)
 and the following are generated:
 
@@ -33,11 +34,15 @@ and the following are generated:
   - [Turtle format](https://en.wikipedia.org/wiki/Turtle_(syntax)):
     [spdx-model.ttl](https://spdx.org/rdf/3.0.1/spdx-model.ttl)
   - [JSON-LD format](https://json-ld.org/):
-    [model.jsonld](https://spdx.github.io/spdx-3-model/model.jsonld)
+    [model.jsonld](https://spdx.github.io/spdx-3-model/model.jsonld) <!-- TODO: Update URL. Current URL is gh-pages one. -->
+    <!-- https://spdx.org/schema/3.0.0/spdx-json-schema.json -->
 
 People who wish to read the current version of the information
 should be viewing the generated files, while anyone wanting to edit
-should be working on the former.
+should be working on the editable files.
+
+For the specification content other than the model, they are in the
+[spdx-spec](https://github.com/spdx/spdx-spec/) repository.
 
 ## Model
 
@@ -65,16 +70,17 @@ energy consumption.
 #### Build
 
 The Build profile contains information about the build done for the software application.
-Fields include build type URI (of toolchain, platform, or infrastructure), locally unique
-build identifier assigned by the developer, entry point of creation of build, URI of the
-build configuration source if any, digest of build configuration source if any, build
-parameters, start time of the build, end time of the build, and the system’s environment
-variables at the time of the build.
+Fields include build type URI (of toolchain, platform, or infrastructure),
+locally unique build identifier assigned by the developer,
+entry point of creation of build, URI of the build configuration source if any,
+digest of build configuration source if any, build parameters,
+start time of the build, end time of the build,
+and the system’s environment variables at the time of the build.
 
 #### Core
 
-The Core profile describes the foundational classes and properties that are used by all
-profiles of the SPDX model.
+The Core profile describes the foundational classes and properties that are
+used by all profiles of the SPDX model.
 
 #### Dataset
 
@@ -85,28 +91,31 @@ use (e.g. hardware calibration, machine learning), and related considerations
 
 #### Licensing
 
-The Licensing profile describes the aspects of licensing for the software application under
-three categories (sub-directories) - Licensing, SimpleLicensing, and ExpandedLicensing.
+The Licensing profile describes the aspects of licensing for the software
+application under three categories (sub-directories) -
+Licensing, SimpleLicensing, and ExpandedLicensing.
 
-The Licensing category describes information about declared licenses and concluded (detected) licenses.
-The SimpleLicensing category describes information about text-formatted licenses.
-The ExpandedLicensing category describes information about parseable and machine-readable licenses.
+- Licensing describes information about declared licenses and concluded
+  (detected) licenses.
+- SimpleLicensing describes information about text-formatted licenses.
+- ExpandedLicensing describes information about parseable and machine-readable
+  licenses.
 
 #### Lite
 
-The SPDX Lite profile defines a subset of the SPDX specification for use cases and
-workflows in some industries.
+The SPDX Lite profile defines a subset of the SPDX specification for use cases
+and workflows in some industries.
 
 #### Security
 
-The Security profile contains information about vulnerabilities and their assessments
-based on CVSS (versions 2, 3, and 4), EPSS, Exploit Catalog, SSVC, and VEX (affected,
-not affected, under investigation, and fixed categories).
+The Security profile contains information about vulnerabilities and their
+assessments based on CVSS (versions 2, 3, and 4), EPSS, Exploit Catalog, SSVC,
+and VEX (affected, not affected, under investigation, and fixed categories).
 
 #### Software
 
-The Software profile contains information about files, packages, SBOMs, snippets, and
-artifacts of the software application.
+The Software profile contains information about files, packages, SBOMs,
+snippets, and artifacts of the software application.
 
 ## Contribute!
 
@@ -115,7 +124,11 @@ please see [Contributing.md](Contributing.md).
 
 Feel free to join us and contribute!
 
-The discussions are happening on the spdx-tech mailing list
-and during our weekly meetings.
+The discussions are happening on the
+[spdx-tech mailing list][spdx-tech-list]
+and during our [regular meetings][meetings].
 
 All the details are in: <https://spdx.dev/participate/tech/>
+
+[meetings]: https://github.com/spdx/meetings/
+[spdx-tech-list]: https://lists.spdx.org/mailman/listinfo/spdx-tech
