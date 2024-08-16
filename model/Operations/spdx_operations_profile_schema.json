@@ -1,0 +1,367 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://foo.bar",
+  "title": "SPDX operations profile",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+	"applicationFacts": {
+      "type": "object",
+      "description": "Collection of facts about the product/project/service (may also be referred to as application in the following) described by the spdx-file. The product/project/service may consist of several deliverables.",
+      "properties": {
+        "productOwner": {
+          "description": "Name of the application or service owner",
+          "type": "string"
+        },
+		"documentationLink": {
+          "description": "URL of existing product documentation",
+          "type": "string"
+        },
+		"productAccessURL": {
+          "description": "URL to the Download-Location or to the Web-Access in case the application is available in the network. Field may be used to link to marketing product website in case of a device.",
+          "type": "string"
+        },
+		"comment": {
+          "description": "Free comment about the product/project/service",
+          "type": "string"
+        },
+		"distributionTarget": {
+          "description": "Specification where the application/service is distributed to / deployed. E.g. in the cloud or shipped as device.",
+          "type": "string"
+        },
+		"distributedDeliverables": {
+          "description": "high-level overview list of the software deliverables that the product consists of (e.g. frontend +  microservices etc.)",
+          "type": "string"
+        },
+		"technicalDeployment": {
+          "description": "Entity in the supplychain that is technically deploying the application / distributing the software or the device containing the software.",
+          "type": "string"
+        },
+		"contact": {
+          "description": "contact person of contact details for urgent incidents",
+          "type": "string"
+        },
+		"scope": {
+          "description": "organization internal or external distribution/deployment",
+          "type": "string"
+        },
+		"relationType": {
+          "description": "e.g. one-to-one or one-to-many",
+          "type": "string"
+        },
+		"supplyChainContext": {
+          "description": "e.g. upstream/steward, tier2, tier1, OEM, …",
+          "type": "string"
+        },
+		"releaseCycles": {
+          "description": "e.g. nightly, weekly,…",
+          "type": "string"
+        },
+		"fossComplianceBundleProvision": {
+          "description": "Short summary in what way the FOSS Compliance Bundle is handed over downstream in the supply chain",
+          "type": "string"
+        },
+		"contractSetup": {
+          "description": "e.g. B2B, B2C, …",
+          "type": "string"
+        },
+		"fossTermsTowardsCustomer": {
+          "description": "e.g. special deny or allow lists",
+          "type": "string"
+        },
+		"distributionTermsTowardsCustomer": {
+          "description": "e.g. weekly deliveries",
+          "type": "string"
+        },
+		"customerFossContact": {
+          "description": "e.g. Open Source Office contact downstream the supplychain",
+          "type": "string"
+        }
+      },
+      "required": []
+    },
+	"deliverableFacts": {
+      "type": "object",
+      "description": "Collection of facts about a deliverable that is used as part of product/project/service described by the spdx-file.",
+      "properties": {
+        "swLanguage": {
+          "description": "programming language used to implement the deliverable",
+          "type": "string"
+        },
+		 "dependencyManager": {
+          "description": "dependency manager used to build the deliverable (e.g. Maven, Gradle, …)",
+          "type": "string"
+        },
+		 "packageManager": {
+          "description": "package manager used with or to build the deliverable (e.g. dpkg, …)",
+          "type": "string"
+        },
+		 "environmentFramework": {
+          "description": "environment or framework used to implement the deliverable (e.g. NodeJS,…)",
+          "type": "string"
+        },
+		 "applicationCategory": {
+          "description": "intended way to distribute / deploy the application while development (e.g. hosted, distributed,...)",
+          "type": "string"
+        },
+		 "applicationType": {
+          "description": "intended business case the application is developed for (e.g. fat client, cloud service, ...)",
+          "type": "string"
+        },
+		 "distributionMethod": {
+          "description": "method how the developed deliverable is made available (e.g. docker container, ...)",
+          "type": "string"
+        },
+		 "operatingSystem": {
+          "description": "operating system that is used or the application is designed for",
+          "type": "string"
+        },
+		 "consistsOf": {
+          "description": "at least the URL to the source code repository, if necessary list intended additional external components and components from third party suppliers  (hint: this field is meant to be populated in early or pre-development phase)",
+          "type": "string"
+        },
+		 "developedBy": {
+          "description": "(e.g. development team or external third party)",
+          "type": "string"
+        },
+		 "contact": {
+          "description": "(e.g. the chief developer or architect)",
+          "type": "string"
+        },
+		 "linkToArchitecture": {
+          "description": "link to architecture, if available",
+          "type": "string"
+        },
+		 "osmConcept": {
+          "description": "link to the used open source management concept used while development",
+          "type": "string"
+        },
+        "reviews": {
+          "description": "link to the latest review reports (e.g. Open Source dependency review, snippet review, security review ,… ) each different review may be added as separate item",
+          "type": "array",
+          "items": {
+            "title": "review",
+            "type": "object",
+            "properties": {
+              "question": {
+                "description": "e.g. Link to the Open Source dependency review report",
+                "type": "string"
+              }
+            }
+          }
+        },
+		 "comment": {
+          "description": "Free comment about the deliverable",
+          "type": "string"
+        }
+      },
+      "required": []
+    },
+	"supplierDeliverableFacts": {
+      "type": "object",
+      "description": "Collection of facts about a deliverable from suppliers that are used as part of product/project/service described by the spdx-file.",
+      "properties": {
+        "supplierName": {
+          "description": "name of the supplier",
+          "type": "string"
+        },
+		 "deliverableFromSupplier": {
+          "description": "name or identifier of the deliverable provided by the supplier",
+          "type": "string"
+        },
+		 "fossTermsTowardsSupplier": {
+          "description": "e.g. special deny or allow lists",
+          "type": "string"
+        },
+		 "distributionTermsFromSupplier": {
+          "description": "in case there are special project specific distribution conditions agreed that may impact the Open Source Components, please provide here",
+          "type": "string"
+        },
+		 "fossComplianceBundleConsumption": {
+          "description": "e.g. 'FOSS Compliance Bundle included in Installation File'",
+          "type": "string"
+        },
+		 "supplierFossContact": {
+          "description": "Contact person on supplier side in case urgent measures need to be taken",
+          "type": "string"
+        },
+		 "comment": {
+          "description": "Free comment about the supplier deliverable",
+          "type": "string"
+        }
+      },
+      "required": []
+    },
+    "exportControl": {
+      "type": "object",
+      "description": "This is for export control data.",
+      "properties": {
+        "classifications": {
+          "type": "array",
+          "description": "export control classifications.",
+          "items": {
+            "description": "export control classification",
+            "type": "object",
+            "title": "export control classification",
+            "properties": {
+              "classificationSystem": {
+                "description": "referenced export control classification system (e.g. 'ECCN' or 'EAR' for US, 'Ausfuhrlistennummer' for Germany ,...).",
+                "type": "string"
+              },
+              "classificationValue": {
+                "description": "e.g. EAR99 ",
+                "type": "string"
+              },
+              "comment": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "notRequired": {
+          "$comment": "This could make sense to have a 'no export control context given' flag to avoid unnecessary parsing of details.",
+          "description": "Set this true, if no export control context is given.",
+          "type": "boolean"
+        },
+        "qaQuestions": {
+          "description": "Individual, Q&A style queries not covered by any standard field.",
+          "type": "array",
+          "items": {
+            "title": "exportControlQuestion",
+            "type": "object",
+            "properties": {
+              "question": {
+                "description": "e.g. 'Was the software developed for specific (military) application and product areas?'",
+                "type": "string"
+              },
+              "clarification": {
+                "minItems": 1,
+                "type": "string"
+              }
+            }
+          }
+        },
+        "specialTechnology": {
+          "type": "object",
+          "properties": {
+            "includesCrypto?": {
+              "type": "string",
+              "enum": [
+                "Yes",
+                "No",
+                "NOASSERTION"
+              ],
+              "default": ""
+            },
+            "cryptoDetail": {
+              "description": "Cryptography/encryption technology used / encryption algorithm's strength.",
+              "type": "string"
+            },
+            "externalServerCommunication?": {
+              "type": "string",
+              "enum": [
+                "Yes",
+                "No",
+                "NOASSERTION"
+              ],
+              "default": ""
+            },
+            "includesArtificialIntelligence?": {
+              "type": "string",
+              "enum": [
+                "Yes",
+                "No",
+                "NOASSERTION"
+              ],
+              "default": ""
+            }
+          }
+        },
+        "purpose": {
+          "type": "string",
+          "description": "Main purpose of this component."
+        },
+        "countryOfOrigin": {
+          "type": "array",
+          "description": "country / countries of origin",
+          "items": {
+            "type": "string"
+          }
+        },
+        "manufacturer": {
+          "type": "string"
+        },
+        "manufacturerID": {
+          "type": "string",
+          "description": "ID/reference for original manufacturer dataset"
+        },
+        "address": {
+          "type": "string",
+          "description": "Manufacturer Address",
+          "format": "textarea"
+        },
+        "website": {
+          "type": "string"
+        }
+      }
+    },
+    "otherBusiness": {
+      "type": "object",
+      "description": "Other information, that might impact business use.",
+      "properties": {
+        "sourceCodeProvision": {
+          "description": "Links for source provision for distribution. Links must be persistent!",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "description": "",
+            "title": "Annotation",
+            "properties": {
+              "sourceLink": {
+                "type": "string"
+              },
+              "relatedSpdxElement": {
+                "type": "string",
+                "description": "Reference to the respctive component in the SPDX document"
+              }
+            }
+          }
+        }
+      },
+      "required": []
+    },
+    "obligations": {
+      "$comment": "Could be used to phrase simple instructions, 'do/don't', which would otherwise need an expert to read fom the data.",
+      "description": "Obligations that impact and/or confine the use of the component.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "description": "",
+        "title": "Obligation",
+        "properties": {
+          "obligation": {
+            "type": "string",
+            "description": "Conditions to follow."
+          },
+          "source": {
+            "type": "string",
+            "description": "Origin of the obligation."
+          }
+        }
+      }
+    },
+    "annotations": {
+      "description": "Any remarks that are not covered by provided fields.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "",
+        "title": "Annotation"
+      }
+    }
+  },
+  "required": [],
+  "additionalProperties": false
+}
