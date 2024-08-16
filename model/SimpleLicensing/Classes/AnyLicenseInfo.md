@@ -18,8 +18,8 @@ An AnyLicenseInfo is used by licensing properties of software artifacts.
 
 It can be:
 
-- a [NoneLicense](../../ExpandedLicensing/Individuals/NoneLicense.md);
-- a [NoAssertionLicense](../../ExpandedLicensing/Individuals/NoAssertionLicense.md);
+- a NoneLicense;
+- a NoAssertionLicense;
 - a single license (either on the
   [SPDX License List](https://spdx.org/licenses/) or
   [a custom-defined license](../../ExpandedLicensing/Classes/CustomLicense.md));
