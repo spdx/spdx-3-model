@@ -11,7 +11,7 @@ A type of extension consisting of a list of name value pairs.
 This extension provides a more structured extension using a name-value
 approach.
 
-Unlike key-value stores, cdxProperty support duplicate names, each
+Unlike key-value stores, properties in CdxPropertiesExtension support duplicate names, each
 potentially having different values.
 
 This is intended to be compatible with the CycloneDX property `properties`.
