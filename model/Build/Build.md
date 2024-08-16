@@ -20,8 +20,8 @@ The Build profile provides a subclass of Element called Build.
 It also provides a minimum set of required Relationship Types from the Core
 profile:
 
-- hasInputs: Describes the relationship from the Build element to its inputs.
-- hasOutputs: Describes the relationship from the Build element to its outputs.
+- hasInput: Describes the relationship from the Build element to its inputs.
+- hasOutput: Describes the relationship from the Build element to its outputs.
 - invokedBy: Describes the relationship from the Build element to the Agent
   that invoked it.
 
@@ -40,7 +40,7 @@ In addition, the following Relationship Types may be used to describe a Build.
 All relationships in the Build Profile are scoped to the "build"
 LifecycleScopeType period.
 
-The `hasInputs` relationship can be applied to a config file or a build tool if
+The `hasInput` relationship can be applied to a config file or a build tool if
 the nature of these inputs are not known at the creation of an SPDX document.
 
 ## Metadata
@@ -55,7 +55,7 @@ class. In addition, there must be at least three instances `Relationship`s with
 type `LifecycleScopedRelationship`, where the "scope" property must be "build"
 and the "from" property must be the Build instance.
 
-At the minimum, the build profile must contain a `hasInputs`, `hasOutputs`, and
+At the minimum, the build profile must contain a `hasInput`, `hasOutput`, and
 `invokedBy` relationshipType. If an input is known to be a build configuration
-or a build tool, the `hasInputs` relationshipType can be replaced by a
+or a build tool, the `hasInput` relationshipType can be replaced by a
 `configures` or `usesTool` relationshipType.

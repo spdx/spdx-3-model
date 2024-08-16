@@ -30,18 +30,10 @@ SpdxDocument element definition.
 
 ## Properties
 
-- imports
+- import
   - type: ExternalMap
 - namespaceMap
   - type: NamespaceMap
 - dataLicense
   - type: /SimpleLicensing/AnyLicenseInfo
   - maxCount: 1
-
-## External properties restrictions
-
-- /Core/ElementCollection/element
-  - minCount: 1
-- /Core/ElementCollection/rootElement
-  - minCount: 1
-
