@@ -47,19 +47,15 @@ Additionally:
    `/Core/Relationship` of type `hasDeclaredLicense` having that element as its
    `from` property and an `/SimpleLicensing/AnyLicenseInfo` as its `to`
    property.
+   
+For a `/Core/SpdxDocument` to be conformant with this profile, the following has to hold:
+1. The mincount for `element` is 1
+1. The mincount for `rootElement` is 1
+
+For a `/Software/Sbom` to be conformant with this profile, the following has to hold:
+1. The mincount for `element` is 1
+1. The mincount for `rootElement` is 1
 
 Finally, for a `/Core/Agent` to be conformant with this profile, the following has to hold:
 
 1. The mincount for `name` is 1
-
-
-
-<!--
-* /Core/SpdxDocument
-6      /Core/SpdxDocument/element   1..*   MUST have at least one /Core/Sbom object
-7      /Core/SpdxDocument/rootElement      1..*   This should be objects of /Core/Sbom
-
-* /Software/Sbom
-3      /Software/Sbom/element       1..*   MUST have at least one /Software/Package object
-4      /Software/Sbom/rootElement   1..*   This should be objects of /Software/Package
--->
