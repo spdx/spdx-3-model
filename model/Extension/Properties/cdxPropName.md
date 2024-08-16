@@ -10,7 +10,7 @@ A name used in a CdxExtension name-value pair.
 
 A cdxPropName is used in a CdxExtension name-value pair.
 
-Unlike key-value stores, cdxProperties support duplicate names, each
+Unlike key-value stores, CdxPropertiesExtension support duplicate names, each
 potentially having different values.
 
 ## Metadata
