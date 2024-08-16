@@ -11,8 +11,8 @@ A property name with an associated value.
 Each CdxPropertyEntry contains a name-value pair which maps the name to its
 associated value.
 
-Unlike key-value stores, CdxPropertiesExtension support duplicate names, each
-potentially having different values.
+Unlike key-value stores, properties in CdxPropertiesExtension support duplicate
+names, each potentially having different values.
 
 This class can be used to implement CycloneDX compatible properties.
 

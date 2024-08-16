@@ -12,8 +12,8 @@ This field provides a mapping of a name to a value.
 
 This is intended to be compatible with the CycloneDX property `properties`.
 
-Unlike key-value stores, CdxPropertiesExtension support duplicate names, each
-potentially having different values.
+Unlike key-value stores, properties in CdxPropertiesExtension support duplicate
+names, each potentially having different values.
 
 ## Metadata
 
