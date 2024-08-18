@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:128.0) Gecko/20100101 Firefox/128.0" compressed="false" version="24.7.7" pages="11">
   <diagram id="MqBy92FNWJOg9jOokCTN" name="Core">
-    <mxGraphModel dx="1194" dy="1492" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1137" dy="1375" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -169,7 +169,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="PneUqTGE2ykhamjTnd7t-46" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="endArrow=block;endSize=6;endFill=0;html=1;rounded=0;exitX=0;exitY=0.107;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1" source="PneUqTGE2ykhamjTnd7t-29">
+        <mxCell id="PneUqTGE2ykhamjTnd7t-46" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="endArrow=block;endSize=6;endFill=0;html=1;rounded=0;exitX=0;exitY=0.107;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="PneUqTGE2ykhamjTnd7t-29" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="810" y="-657.25" as="sourcePoint" />
             <mxPoint x="640" y="-660" as="targetPoint" />
@@ -251,7 +251,7 @@
             <mxGeometry x="785" y="-333.75" width="80" height="52" as="geometry" />
           </mxCell>
         </object>
-        <mxCell id="PneUqTGE2ykhamjTnd7t-79" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;exitX=0.001;exitY=0.811;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1" source="PneUqTGE2ykhamjTnd7t-35">
+        <mxCell id="PneUqTGE2ykhamjTnd7t-79" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;exitX=0.001;exitY=0.811;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="PneUqTGE2ykhamjTnd7t-35" edge="1">
           <mxGeometry x="-0.1822" relative="1" as="geometry">
             <mxPoint x="809.0000000000001" y="-489.38000000000005" as="sourcePoint" />
             <mxPoint as="offset" />
@@ -484,13 +484,13 @@
           <mxGeometry y="134" width="280" height="30" as="geometry" />
         </mxCell>
         <mxCell id="PneUqTGE2ykhamjTnd7t-147" value="PositiveIntegerRange" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e1d5e7;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#9673a6;" parent="1" vertex="1">
-          <mxGeometry x="580" y="-70" width="232.5" height="76" as="geometry" />
+          <mxGeometry x="580" y="-70" width="250" height="76" as="geometry" />
         </mxCell>
         <mxCell id="PneUqTGE2ykhamjTnd7t-148" value="+ beginIntegerRange: xsd:positiveInteger[1]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;" parent="PneUqTGE2ykhamjTnd7t-147" vertex="1">
-          <mxGeometry y="26" width="232.5" height="24" as="geometry" />
+          <mxGeometry y="26" width="250" height="24" as="geometry" />
         </mxCell>
         <mxCell id="PneUqTGE2ykhamjTnd7t-149" value="+ endIntegerRange: xsd:positiveInteger[1]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;" parent="PneUqTGE2ykhamjTnd7t-147" vertex="1">
-          <mxGeometry y="50" width="232.5" height="26" as="geometry" />
+          <mxGeometry y="50" width="250" height="26" as="geometry" />
         </mxCell>
         <mxCell id="PneUqTGE2ykhamjTnd7t-152" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" parent="1" source="PneUqTGE2ykhamjTnd7t-153" target="PneUqTGE2ykhamjTnd7t-99" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -549,7 +549,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="PneUqTGE2ykhamjTnd7t-169" value="Instances of these classes exist only to adorn single instances of Element classes through properties on those Element classes and cannot exist independent of such an Element class. Instances of these classes MUST always accompany their associated Element class in any serialization document. Serialization formats MAY enable de-duplication within a single document." style="text;align=left;fontStyle=1;verticalAlign=top;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="155" y="-150" width="550" height="84.21535714285714" as="geometry" />
+          <mxGeometry x="155" y="-150" width="575" height="84.22" as="geometry" />
         </mxCell>
         <mxCell id="PneUqTGE2ykhamjTnd7t-170" value="DictionaryEntry" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e1d5e7;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#9673a6;" parent="1" vertex="1">
           <mxGeometry x="580" y="29.25" width="152.5" height="78" as="geometry" />
@@ -2163,7 +2163,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Core+Software" id="evL5fLv8r15yFEJPhG0Y">
-    <mxGraphModel dx="796" dy="2128" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1194" dy="2251" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="lbw5UqFOsXxO_sbxoh2b-0" />
         <mxCell id="lbw5UqFOsXxO_sbxoh2b-1" parent="lbw5UqFOsXxO_sbxoh2b-0" />
@@ -2876,13 +2876,13 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="jvhwNxMEuVlS3L2Q85VT-2" value="PositiveIntegerRange" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e1d5e7;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#9673a6;" parent="lbw5UqFOsXxO_sbxoh2b-1" vertex="1">
-          <mxGeometry x="1727.5" y="-852.5" width="232.5" height="76" as="geometry" />
+          <mxGeometry x="1727.5" y="-852.5" width="250" height="76" as="geometry" />
         </mxCell>
         <mxCell id="jvhwNxMEuVlS3L2Q85VT-3" value="+ beginIntegerRange: xsd:positiveInteger[1]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;" parent="jvhwNxMEuVlS3L2Q85VT-2" vertex="1">
-          <mxGeometry y="26" width="232.5" height="24" as="geometry" />
+          <mxGeometry y="26" width="250" height="24" as="geometry" />
         </mxCell>
         <mxCell id="jvhwNxMEuVlS3L2Q85VT-4" value="+ endIntegerRange: xsd:positiveInteger[1]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;" parent="jvhwNxMEuVlS3L2Q85VT-2" vertex="1">
-          <mxGeometry y="50" width="232.5" height="26" as="geometry" />
+          <mxGeometry y="50" width="250" height="26" as="geometry" />
         </mxCell>
         <mxCell id="PNPRmp86_3kdyMgQoip8-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" parent="lbw5UqFOsXxO_sbxoh2b-1" source="PNPRmp86_3kdyMgQoip8-2" target="4jpS5foKJOr7ldEgcm20-22" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -2931,7 +2931,7 @@
         <mxCell id="AQ91tEVbBVTUy-TZAcdC-5" value="+ scope: LifecycleScopeType[0..1]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;" parent="_tOrbuKJGU1E6TveA5gi-16" vertex="1">
           <mxGeometry y="26" width="200" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="g5KuPnkRZWVS2fDiIEBW-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;entryX=0.732;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="lbw5UqFOsXxO_sbxoh2b-1" edge="1" target="jUCqu7r1JRTQMiQOWCPR-5">
+        <mxCell id="g5KuPnkRZWVS2fDiIEBW-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;entryX=0.732;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="lbw5UqFOsXxO_sbxoh2b-1" target="jUCqu7r1JRTQMiQOWCPR-5" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="670" y="-650" />
@@ -2945,7 +2945,7 @@
             <mxPoint y="-2" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="9nZJnaLfMqw_sOQ4WODU-0" value="*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fillColor=none;" vertex="1" connectable="0" parent="g5KuPnkRZWVS2fDiIEBW-0">
+        <mxCell id="9nZJnaLfMqw_sOQ4WODU-0" value="*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fillColor=none;" parent="g5KuPnkRZWVS2fDiIEBW-0" vertex="1" connectable="0">
           <mxGeometry x="0.6577" relative="1" as="geometry">
             <mxPoint x="7" y="6" as="offset" />
           </mxGeometry>
@@ -2972,7 +2972,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="A_poBjrdFwQ311XOwxoM-1" value="Instances of these classes exist only to adorn single instances of Element classes through properties on those Element classes and cannot exist independent of such an Element class. Instances of these classes MUST always accompany their associated Element class in any serialization document. Serialization formats MAY enable de-duplication within a single document." style="text;align=left;fontStyle=1;verticalAlign=top;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontColor=#000000;" parent="lbw5UqFOsXxO_sbxoh2b-1" vertex="1">
-          <mxGeometry x="1302.5" y="-932.5" width="550" height="84.21535714285714" as="geometry" />
+          <mxGeometry x="1302.5" y="-932.5" width="577.5" height="84.22" as="geometry" />
         </mxCell>
         <mxCell id="A_poBjrdFwQ311XOwxoM-2" value="DictionaryEntry" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e1d5e7;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#9673a6;" parent="lbw5UqFOsXxO_sbxoh2b-1" vertex="1">
           <mxGeometry x="1727.5" y="-753.25" width="152.5" height="78" as="geometry" />
