@@ -8,7 +8,7 @@ Abstract class representing a license combination consisting of one or more lice
 
 ## Description
 
-AnyLicenseInfo is 
+AnyLicenseInfo is
 an abstract class representing a license combination consisting of one or more
 licenses (optionally including additional text), which may be combined
 according to the
