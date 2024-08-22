@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:128.0) Gecko/20100101 Firefox/128.0" compressed="false" version="24.7.7" pages="11">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:129.0) Gecko/20100101 Firefox/129.0" compressed="false" version="24.7.7" pages="11">
   <diagram id="MqBy92FNWJOg9jOokCTN" name="Core">
     <mxGraphModel dx="1137" dy="1375" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
@@ -1083,7 +1083,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="PfPf3rA2bqZPrQek9LXx" name="Licensing">
-    <mxGraphModel dx="1194" dy="1742" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1085" dy="1684" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1196,12 +1196,12 @@
         </mxCell>
         <mxCell id="WsG3on_o6fCEi1LXzxYa-12" value="2..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="WsG3on_o6fCEi1LXzxYa-1" vertex="1" connectable="0">
           <mxGeometry x="0.7781" y="-1" relative="1" as="geometry">
-            <mxPoint x="-17" y="-81" as="offset" />
+            <mxPoint x="-17" y="-82" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="WsG3on_o6fCEi1LXzxYa-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;strokeColor=default;endArrow=block;endFill=0;" parent="1" source="vKSOmb4R4rdushqp2duA-15" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1260" y="-450" as="targetPoint" />
+            <mxPoint x="1260" y="-448" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="vKSOmb4R4rdushqp2duA-15" value="ConjunctiveLicenseSet" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#f5f5f5;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
@@ -1283,7 +1283,7 @@
         <mxCell id="mbIi8jTC4E0aAiEF0B1e-19" value="" style="endArrow=block;html=1;rounded=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;endFill=0;" parent="1" source="mbIi8jTC4E0aAiEF0B1e-14" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="613" y="-390" as="sourcePoint" />
-            <mxPoint x="1150" y="-450" as="targetPoint" />
+            <mxPoint x="1150" y="-448" as="targetPoint" />
             <Array as="points">
               <mxPoint x="1150" y="200" />
             </Array>
@@ -1801,7 +1801,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="GXGQmkwye6T6EeFXLMXb" name="Build">
-    <mxGraphModel dx="344" dy="1742" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="235" dy="1684" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2163,7 +2163,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Core+Software" id="evL5fLv8r15yFEJPhG0Y">
-    <mxGraphModel dx="1194" dy="2251" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1194" dy="2342" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="lbw5UqFOsXxO_sbxoh2b-0" />
         <mxCell id="lbw5UqFOsXxO_sbxoh2b-1" parent="lbw5UqFOsXxO_sbxoh2b-0" />
