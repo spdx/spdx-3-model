@@ -13,7 +13,7 @@ For example, you can represent a relationship between two different Files,
 between a Package and a File, between two Packages, or between one SpdxDocument
 and another SpdxDocument.
 
-Relationship names be descriptive enough to easily deduce the correct direction
+Relationship names should be descriptive enough to easily deduce the correct direction
 from their name. The best way to do this is to make sure that the relationship
 name completes the sentence:
 
