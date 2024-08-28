@@ -4,7 +4,8 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Provide consumers with comments by the creator of the Element about the Element.
+Provide consumers with comments by the creator of the Element about the
+Element.
 
 ## Description
 
@@ -16,4 +17,3 @@ to the readers/reviewers of the document.
 - name: comment
 - Nature: DataProperty
 - Range: xsd:string
-

@@ -4,12 +4,17 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Describes methods that can be used to explain the model.
+Describes methods that can be used to explain the results from the AI model.
 
 ## Description
 
-A free-form text that lists the different explainability mechanisms
-(such as SHAP, or other model specific explainability mechanisms) that can be used to explain the model.
+A free-form text that lists the different explainability mechanisms and how
+they can be used to explain the results from the AI model.
+
+The mechanisms can be model-agnostic methods, such as
+[SHapley Additive exPlanations (SHAP)](https://shap.readthedocs.io/) and
+[Local Interpretable Model-agnostic Explanations (LIME)](https://github.com/marcotcr/lime),
+and model-specific methods that applied to a limited category of models.
 
 ## Metadata
 

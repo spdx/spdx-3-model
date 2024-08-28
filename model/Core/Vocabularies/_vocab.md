@@ -17,4 +17,3 @@ TODO
 ## Entries
 
 - TODOentry: TODOdescription
-

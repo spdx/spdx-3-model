@@ -9,8 +9,9 @@ ListedLicenseException identifier was first added.
 
 ## Description
 
-A listVersionAdded for a ListedLicense or ListedLicenseException on the SPDX
-License List specifies which version release of the License List was the first
+A listVersionAdded for a ListedLicense or ListedLicenseException on the
+[SPDX License List](https://spdx.org/licenses/)
+specifies which version release of the License List was the first
 one in which it was included.
 
 ## Metadata

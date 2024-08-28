@@ -4,11 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A map of Element identifiers that are used within a Document but defined external to that Document.
+A map of Element identifiers that are used within a Document but defined
+external to that Document.
 
 ## Description
 
-An External Map is a map of Element identifiers that are used within a Document
+An external map is a map of Element identifiers that are used within a Document
 but defined external to that Document.
 The external map provides details about the externally-defined Element
 such as its provenance, where to retrieve it, and how to verify its integrity.

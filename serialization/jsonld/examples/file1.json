@@ -1,0 +1,15 @@
+{
+  "@context": "https://spdx.org/rdf/3.0.0/spdx-context.jsonld",
+  "type": "software_File",
+  "spdxId": "https://some.namespace#file1",
+  "creationInfo": {
+    "type": "CreationInfo",
+    "specVersion": "3.0.0",
+    "created": "2022-12-01T00:00:00Z",
+    "createdBy": ["https://spdx.dev/elements/3F26391C#spdx-dev"]
+  },
+  "name": "model.png",
+  "contentType": "image/png",
+  "software_primaryPurpose": "documentation",
+  "originatedBy": ["https://spdx.dev/elements/3F26391C#spdx-dev"]
+}

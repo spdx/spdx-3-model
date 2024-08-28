@@ -1,0 +1,13 @@
+{
+  "@context": "https://spdx.org/rdf/3.0.0/spdx-context.jsonld",
+  "type": "Person",
+  "spdxId": "http://spdx.acme.org/3FA9CB25#person3",
+  "name": "Nigel Thornberry",
+  "externalIdentifier": [
+    {
+      "type": "ExternalIdentifier",
+      "externalIdentifierType": "email",
+      "identifier": "nigel3@outlook.com"
+    }
+  ]
+}

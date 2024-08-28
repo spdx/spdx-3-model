@@ -8,7 +8,9 @@ Enumeration of the different kinds of SPDX file.
 
 ## Description
 
-An SPDX file may represent a file on disk or a directory of files.  In the future, this may be extended to other kinds (e.g. network based files).
+An SPDX file may represent a file on disk or a directory of files.
+
+In the future, this may be extended to other kinds (e.g. network based files).
 
 ## Metadata
 

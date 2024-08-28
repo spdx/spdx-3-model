@@ -11,7 +11,8 @@ Identifies the full text of a LicenseAddition.
 An additionText contains the plain text of the LicenseAddition, without
 templating or other similar markup.
 
-Users of the additionText for a License can apply the SPDX Matching Guidelines
+Users of the additionText for a License can apply the
+[SPDX License List Matching Guidelines](../../../annexes/license-matching-guidelines-and-templates.md)
 when comparing it to another text for matching purposes.
 
 ## Metadata
@@ -19,4 +20,3 @@ when comparing it to another text for matching purposes.
 - name: additionText
 - Nature: DataProperty
 - Range: xsd:string
-

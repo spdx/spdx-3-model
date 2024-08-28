@@ -8,14 +8,17 @@ Class that describes a build instance of software/artifacts.
 
 ## Description
 
-A build is a representation of the process in which a piece of software or artifact is built. It encapsulates information related to a build process and
-provides an element from which relationships can be created to describe the build's inputs, outputs, and related entities (e.g. builders, identities, etc.).
+A build is a representation of the process in which a piece of software or
+artifact is built. It encapsulates information related to a build process and
+provides an element from which relationships can be created to describe the
+build's inputs, outputs, and related entities (e.g. builders, identities,
+etc.).
 
-Definitions of "buildType", "configSourceEntrypoint", "configSourceUri", "parameters" and "environment" follow those defined in [SLSA provenance](https://slsa.dev/provenance/v0.2).
+ExternalIdentifier of type "urlScheme" may be used to identify build logs.
+In this case, the comment of the ExternalIdentifier should be "LogReference".
 
-ExternalIdentifier of type "urlScheme" may be used to identify build logs. In this case, the comment of the ExternalIdentifier should be "LogReference".
-
-Note that buildStartTime and buildEndTime are optional, and may be omitted to simplify creating reproducible builds.
+Note that buildStartTime and buildEndTime are optional, and may be omitted to
+simplify creating reproducible builds.
 
 ## Metadata
 
@@ -42,7 +45,7 @@ Note that buildStartTime and buildEndTime are optional, and may be omitted to si
 - configSourceDigest
   - type: /Core/Hash
   - minCount: 0
-- parameters
+- parameter
   - type: /Core/DictionaryEntry
   - minCount: 0
 - buildStartTime
