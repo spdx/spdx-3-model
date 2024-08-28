@@ -17,7 +17,8 @@ standard.
 
 ## Branches and Formats
 
-The editable files are written in a constrained subset of Markdown and are
+The editable files are written in a
+[constrained subset of Markdown](./specmark.md) and are
 stored in the `main` branch.
 
 These files are automatically processed by
