@@ -19,7 +19,7 @@ Organisation:
 
 Content structure:
 
-- Each file starts with a SPDX license information:
+- Each file must start with SPDX license information:
   `SPDX-License-Identifier: Community-Spec-1.0`
   and follows by one blank line.
 - The content immediately after the license information must begin with an
