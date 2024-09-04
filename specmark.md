@@ -1,36 +1,147 @@
+---
+SPDX-License-Identifier: Community-Spec-1.0
+---
+
 # Markdown for SPDX 3 model specification
 
 The SPDX 3 model is written in a constrained subset of a Markdown flavour
 ([Python-Markdown](https://www.mkdocs.org/user-guide/writing-your-docs/#writing-with-markdown)
 which is used by [MkDocs](https://www.mkdocs.org/) site generator).
 
+Each model element (class, datatype, individual, property, and vocabulary)
+is defined in a distinct file.
+
 Specific headings and formatting are used to provide information for the
-generation of a machine-readable specification, by the
-[spec-parser](https://github.com/spdx/spec-parser/).
+generation of a machine-readable specification, in
+[Resource Description Framework (RDF)](https://en.wikipedia.org/wiki/Resource_Description_Framework)
+data model, by the [spec-parser](https://github.com/spdx/spec-parser/).
 
-Organisation:
+For instance, a summary listed under the "Summary" heading will be represented
+as an `rdfs:comment` in the RDF file. Likewise, a value specified for the
+minCount of a property name under the "Properties" heading will be translated
+into a `sh:minCount` in the RDF file. See an [example](#example).
 
-- All the model files are inside the `model/` directory.
-- Profiles are organized in subdirectories (`Core/`, `Dataset/`, etc.)
-- Entities are organised by type in subdirectories (`Classes/`, `Datatypes/`,
-  `Individuals/`, `Properties/`, and `Vocabularies/`).
-- Each entity (class, datatype, individual, property, and vocabulary)
-  is defined in a distinct file.
+Descriptions provided under the "Description" heading are intended for human
+reference and will not be incorporated into the RDF file.
 
-Content structure:
+## Model file content structure
+
+Each model file must adhere to a strict content structure:
 
 - Each file must start with SPDX license information:
   `SPDX-License-Identifier: Community-Spec-1.0`
   and follows by one blank line.
 - The content immediately after the license information must begin with an
-  H1 heading containing the entity's name.
-- Each entity type has a predefined set of allowed H2 headings and
+  H1 heading containing the element's name.
+- Each element type has a predefined set of [allowed H2 headings](#syntax) and
   labeled lists that must be used to structure its content.
 - There must be a blank line before and after a heading.
 - There must be a blank line before the beginning of a list.
 - There must be a blank line after the end of a list.
 
-## Classes
+## Model file organisation
+
+Apart from the content in each individual file, the file itself has to be
+placed in a specific location, as the spec-parser implies some model semantic
+from the location of the file:
+
+- Each element (class, datatype, individual, property, and vocabulary)
+  is defined in a distinct file.
+- Model file names are case-sensitive and must be identical to the element they
+  represent.
+- All model files must be located within the `model/` directory.
+- Profiles should be organised into subdirectories (e.g., `Core/`, `Dataset/`).
+- Elements should be categorised by their type in subdirectories (e.g.,
+  `Classes/`, `Datatypes/`, `Individuals/`, `Properties/`, `Vocabularies/`).
+
+File and directory organisation:
+
+```text
+.
+├── model
+│   ├── AI
+:   :
+│   ├── Core
+│   │   ├── Classes
+│   │   │   ├── Agent.md
+:   :   :   :
+│   │   │   └── Tool.md
+│   │   ├── Datatypes
+:   :   :   :
+│   │   │   └── SemVer.md
+│   │   ├── Individuals
+:   :   :   :
+│   │   │   └── NoneElement.md
+│   │   ├── Properties
+:   :   :   :
+│   │   │   └── verifiedUsing.md
+│   │   └── Vocabularies
+:   :       :
+│   │       └── SupportType.md
+│   ├── Dataset
+:   :
+```
+
+The living repository at
+<https://github.com/spdx/spdx-3-model/tree/main/model>
+is the best reference.
+
+## Example
+
+This example is taken from the actual file for
+[SimpleLicensingText](https://github.com/spdx/spdx-3-model/blob/main/model/SimpleLicensing/Classes/SimpleLicensingText.md?plain=1)
+class.
+Its name and location in the repository is
+`model/SimpleLicensing/Classes/SimpleLicensingText.md`.
+
+```markdown
+SPDX-License-Identifier: Community-Spec-1.0
+
+# SimpleLicensingText
+
+## Summary
+
+A license or addition that is not listed on the SPDX License List.
+
+## Description
+
+A SimpleLicensingText represents a License or Addition that is not listed on
+the [SPDX License List](https://spdx.org/licenses),
+and is therefore defined by an SPDX data creator.
+
+## Metadata
+
+- name: SimpleLicensingText
+- SubclassOf: /Core/Element
+- Instantiability: Concrete
+
+## Properties
+
+- licenseText
+  - type: xsd:string
+  - minCount: 1
+  - maxCount: 1
+```
+
+will give this RDF graph
+(in [Turtle syntax](https://en.wikipedia.org/wiki/Turtle_(syntax))):
+
+```ttl
+<https://spdx.org/rdf/3.0.1/terms/SimpleLicensing/SimpleLicensingText> a owl:Class,
+        sh:NodeShape ;
+    rdfs:comment "A license or addition that is not listed on the SPDX License List."@en ;
+    rdfs:subClassOf <https://spdx.org/rdf/3.0.1/terms/Core/Element> ;
+    sh:nodeKind sh:IRI ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:path <https://spdx.org/rdf/3.0.1/terms/SimpleLicensing/licenseText> ] .
+```
+
+## Syntax
+
+### Classes
 
 Allowed headings:
 
@@ -52,7 +163,7 @@ Allowed headings:
     - maxCount: \<number\> *(Optional)*
   - ...
 
-### Class example
+#### Class example
 
 ```markdown
 SPDX-License-Identifier: Community-Spec-1.0
@@ -85,7 +196,7 @@ A class example.
   - minCount: 1
 ```
 
-## Datatypes
+### Datatypes
 
 Allowed headings:
 
@@ -97,7 +208,7 @@ Allowed headings:
 - Format
   - pattern: \<regular_expression\>
 
-### Datatype example
+#### Datatype example
 
 ```markdown
 SPDX-License-Identifier: Community-Spec-1.0
@@ -122,7 +233,7 @@ A DateTime is a string representation of a specific date and time.
 - pattern: ^\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ$
 ```
 
-## Individuals
+### Individuals
 
 Allowed headings:
 
@@ -135,7 +246,7 @@ Allowed headings:
   - \<property_name\>: \<property_value\>
   - ...
 
-### Individual example
+#### Individual example
 
 ```markdown
 SPDX-License-Identifier: Community-Spec-1.0
@@ -160,7 +271,7 @@ Blah.
 - name: "NONE"
 ```
 
-## Properties
+### Properties
 
 Allowed headings:
 
@@ -171,7 +282,7 @@ Allowed headings:
   - Nature: "DataProperty" OR "ObjectProperty"
   - Range: \<datatype_name\> OR \<class_name\>
 
-### Property example
+#### Property example
 
 ```markdown
 SPDX-License-Identifier: Community-Spec-1.0
@@ -194,7 +305,7 @@ and its calibration value as a key-value pair.
 - Range: /Core/DictionaryEntry
 ```
 
-## Vocabularies
+### Vocabularies
 
 Allowed headings:
 
@@ -208,7 +319,7 @@ Allowed headings:
 
 Each entry in Entries must be written in a single line.
 
-### Vocabulary example
+#### Vocabulary example
 
 ```markdown
 SPDX-License-Identifier: Community-Spec-1.0
