@@ -4,9 +4,8 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 # Markdown for SPDX 3 model specification
 
-The SPDX 3 model is written in a constrained subset of a Markdown flavour
-([Python-Markdown](https://www.mkdocs.org/user-guide/writing-your-docs/#writing-with-markdown)
-which is used by [MkDocs](https://www.mkdocs.org/) site generator).
+The SPDX 3 model is written in a constrained subset of a Markdown markup
+language*, with predefined headings.
 
 Each model element (class, datatype, individual, property, and vocabulary)
 is defined in a distinct file.
@@ -24,6 +23,12 @@ into a `sh:minCount` in the RDF file. See an [example](#example).
 Descriptions provided under the "Description" heading are intended for human
 reference and will not be incorporated into the RDF file.
 
+*The Markdown flavour used for the specification is
+[Python-Markdown](https://www.mkdocs.org/user-guide/writing-your-docs/#writing-with-markdown)
+as it is used by [MkDocs](https://www.mkdocs.org/) site generator.
+It differs slightly from
+[GitHub Flavored Markdown Spec](https://github.github.com/gfm/).
+
 ## Model file content structure
 
 Each model file must adhere to a strict content structure:
@@ -38,6 +43,9 @@ Each model file must adhere to a strict content structure:
 - There must be a blank line before and after a heading.
 - There must be a blank line before the beginning of a list.
 - There must be a blank line after the end of a list.
+- Any block level elements nested in a list, including paragraphs, sub-lists,
+  blockquotes, code blocks, etc., must always be indented by at least 4
+  spaces for each level of nesting.
 
 ## Model file organisation
 
