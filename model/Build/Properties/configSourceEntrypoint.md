@@ -9,7 +9,7 @@ Property describes the invocation entrypoint of a build.
 ## Description
 
 A build entrypoint is the invoked executable of a build which always runs when
-the build is triggered.
+the build is triggered, according to the buildType.
 
 For example, when a build is triggered by running a shell script, the
 entrypoint is `script.sh`.
