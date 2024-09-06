@@ -34,8 +34,7 @@ and the following are generated:
   - [Turtle format](https://en.wikipedia.org/wiki/Turtle_(syntax)):
     [spdx-model.ttl](https://spdx.org/rdf/3.0.1/spdx-model.ttl)
   - [JSON-LD format](https://json-ld.org/):
-    [model.jsonld](https://spdx.github.io/spdx-3-model/model.jsonld) <!-- TODO: Update URL. Current URL is gh-pages one. -->
-    <!-- https://spdx.org/schema/3.0.0/spdx-json-schema.json -->
+    [spdx-model.jsonld](https://spdx.github.io/spdx-spec/v3.0.1/rdf/spdx-model.jsonld) 
 
 People who wish to read the current version of the information
 should be viewing the generated files, while anyone wanting to edit
