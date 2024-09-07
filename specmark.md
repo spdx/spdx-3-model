@@ -17,8 +17,8 @@ data model, by the [spec-parser](https://github.com/spdx/spec-parser/).
 
 For instance, a summary listed under the "Summary" heading will be represented
 as an `rdfs:comment` in the RDF file. Likewise, a value specified for the
-minCount of a property name under the "Properties" heading will be translated
-into a `sh:minCount` in the RDF file. See an [example](#example).
+"minCount" of a property name under the "Properties" heading will be
+translated into a `sh:minCount` in the RDF file. See [an example](#example).
 
 Descriptions provided under the "Description" heading are intended for human
 reference and will not be incorporated into the RDF file.
@@ -68,11 +68,9 @@ File and directory organisation:
 ```text
 .
 ├── model
-│   ├── AI
 :   :
 │   ├── Core
 │   │   ├── Classes
-│   │   │   ├── Agent.md
 :   :   :   :
 │   │   │   └── Tool.md
 │   │   ├── Datatypes
