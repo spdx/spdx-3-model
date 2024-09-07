@@ -12,11 +12,14 @@ All the details are in: <https://spdx.dev/participate/tech/>
 
 This repository consists of Markdown files describing the model classes,
 datatypes, properties, and vocabularies which will be used to automatically
-reate documentation, ontologies, and validation artifacts.
+create documentation, ontologies, and validation artifacts.
 These are organized by profile.
 
 Please submit [a pull request][pull-requests] or [an issue][issues]
 for any suggested changes or issues you find.
+
+Significant changes between versions should be logged to
+[CHANGELOG.md](CHANGELOG.md).
 
 ## Contribution License Agreement
 
@@ -77,7 +80,7 @@ Each profile in active development phase also has their own
 [meetings]: https://github.com/spdx/meetings/
 [issues]: https://github.com/spdx/spdx-3-model/issues/
 [pull-requests]: https://github.com/spdx/spdx-3-model/pulls/
-[cla]: https://github.com/spdx/governance/blob/main/0._SPDX_Contributor_License_Agreement.md
+[cla]: CLA.md
 [gh-karen]: https://github.com/bk
 [gh-gopi]: https://github.com/rgopikrishnan91
 [gh-brandon]: https://github.com/lumjjb

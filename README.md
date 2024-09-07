@@ -116,6 +116,10 @@ and VEX (affected, not affected, under investigation, and fixed categories).
 The Software profile contains information about files, packages, SBOMs,
 snippets, and artifacts of the software application.
 
+## Change log
+
+See [CHANGELOG.md](CHANGELOG.md) for changes between versions.
+
 ## Contribute!
 
 For information about how to contribute to a specific profile,
