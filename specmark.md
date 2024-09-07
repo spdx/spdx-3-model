@@ -249,6 +249,7 @@ Allowed headings:
 - Metadata
   - name: \<individual_name\>
   - type:  \<class_name\>
+  - IRI: \<IRI\>
 - Property Values
   - \<property_name\>: \<property_value\>
   - ...
