@@ -33,6 +33,7 @@ It differs slightly from
 
 Each model file must adhere to a strict content structure:
 
+- All files must be encoded in UTF-8.
 - Each file must start with SPDX license information:
   `SPDX-License-Identifier: Community-Spec-1.0`
   and follows by one blank line.
