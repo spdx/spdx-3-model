@@ -23,6 +23,9 @@ translated into a `sh:minCount` in the RDF file. See [an example](#example).
 Descriptions provided under the "Description" heading are intended for human
 reference and will not be incorporated into the RDF file.
 
+The same Markdown files are used to generate the HTML files for
+[the website](https://spdx.github.io/spdx-spec/).
+
 *The Markdown flavour used for the specification is
 [Python-Markdown](https://www.mkdocs.org/user-guide/writing-your-docs/#writing-with-markdown)
 as it is used by [MkDocs](https://www.mkdocs.org/) site generator.
@@ -47,6 +50,10 @@ Each model file must adhere to a strict content structure:
 - Any block level elements nested in a list, including paragraphs, sub-lists,
   blockquotes, code blocks, etc., must always be indented by at least 4
   spaces for each level of nesting.
+
+The last four points are because of
+MkDocs' [strict processing](https://python-markdown.github.io/#differences)
+of Markdown files.
 
 ## Model file organisation
 
