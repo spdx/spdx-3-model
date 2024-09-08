@@ -24,14 +24,14 @@ is `publish`.
 name: Publish packages to PyPI
 
 on:
-create:
-tags: "*"
+  create:
+    tags: "*"
 
 jobs:
-publish:
-runs-on: ubuntu-latest
-if: startsWith(github.ref, 'refs/tags/')
-steps:
+  publish:
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/')
+    steps:
 
 ...
 ```
