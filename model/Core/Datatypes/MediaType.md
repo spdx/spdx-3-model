@@ -14,7 +14,7 @@ A MediaType is a string constrained to the
 It provides a standardized way of indicating the type of content of an Element
 or a Property.
 
-**Examples**
+*Example*
 
 - `application/java-archive`
 - `application/vcard+json`
