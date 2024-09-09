@@ -5,7 +5,7 @@ communicating information about components associated with systems.
 
 Components can include software, AI/ML models and dataset.
 More component types that make up modern systems are planned to be included in
-subsequent releases.
+subsequent releases. See [scope](scope.md).
 
 The prior version of this format was focused on Software, is an ISO/IEC
 standard ([ISO/IEC 5962:2021](https://www.iso.org/standard/81870.html)) and has
