@@ -9,7 +9,6 @@ from the point of view of use cases in some industries.
 
 ## Description
 
-
 The SPDX Lite profile consists of mandatory and recommended information.
 
 The mandatory data in SPDX Lite is basic but useful for complying with licenses.
@@ -32,10 +31,10 @@ that should be included as part of a document conforming to the Lite profile.
 
 For a `/Software/Package` to be conformant with this profile, the following has to hold:
 
-1. The mincount for `copyrightText` is 1
-1. The mincount for `packageVersion` is 1
-1. The mincount for `suppliedBy` is 1
-1. At least one of `downloadLocation` or `packageUrl` must be present
+1. The minCount for `copyrightText` is 1
+2. The minCount for `packageVersion` is 1
+3. The minCount for `suppliedBy` is 1
+4. At least one of `downloadLocation` or `packageUrl` must be present
 
 Additionally:
 
@@ -43,19 +42,21 @@ Additionally:
    `/Core/Relationship` of type `hasConcludedLicense` having that element as
    its `from` property and an `/SimpleLicensing/AnyLicenseInfo` as its `to`
    property.
-1. for every `/Software/Package` there MUST exist exactly one
+2. for every `/Software/Package` there MUST exist exactly one
    `/Core/Relationship` of type `hasDeclaredLicense` having that element as its
    `from` property and an `/SimpleLicensing/AnyLicenseInfo` as its `to`
    property.
-   
+
 For a `/Core/SpdxDocument` to be conformant with this profile, the following has to hold:
-1. The mincount for `element` is 1
-1. The mincount for `rootElement` is 1
+
+1. The minCount for `element` is 1
+2. The minCount for `rootElement` is 1
 
 For a `/Software/Sbom` to be conformant with this profile, the following has to hold:
-1. The mincount for `element` is 1
-1. The mincount for `rootElement` is 1
+
+1. The minCount for `element` is 1
+2. The minCount for `rootElement` is 1
 
 Finally, for a `/Core/Agent` to be conformant with this profile, the following has to hold:
 
-1. The mincount for `name` is 1
+1. The minCount for `name` is 1
