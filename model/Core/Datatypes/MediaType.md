@@ -10,7 +10,7 @@ A String constrained to the RFC 2046 specificiation.
 ## Description
 
 A MediaType is a string constrained to the
-[RFC 2046 MIME Part Two: Media Types](https://www.rfc-editor.org/info/rfc2046).
+[RFC 2046 MIME Part Two: Media Types](https://datatracker.ietf.org/doc/rfc2046/).
 It provides a standardized way of indicating the type of content of an Element
 or a Property.
 
