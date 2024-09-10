@@ -21,18 +21,19 @@ If you are not using a well-known buildType, it should be namespaced to a
 domain you own to prevent conflicts with other builtType IRIs.
 
 Examples of a buildType might be:
-* A GitHub action workflow
-* A step in a GitHub actions pipeline
-* An invocation of a compiler or other tool
-* A script that orchestrates builds at a higher level
 
-Keep in mind that builds can be "nested" using the `ancestorOf` relationship
+- A GitHub action workflow
+- A step in a GitHub actions pipeline
+- An invocation of a compiler or other tool
+- A script that orchestrates builds at a higher level
+
+Keep in mind that builds can be "nested" using the `ancestorOf` relationship.
 
 If the buildType IRI is not recognized, it is still possible to inspect other
 properties of the build, but it may not be possible to derive deeper meaning
-from them
+from them.
 
-For more information, see the SLSA definition of buildType
+For more information, see the SLSA definition of buildType.
 
 ## Metadata
 
