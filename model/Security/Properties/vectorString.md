@@ -13,7 +13,7 @@ and/or Supplemental vector string values for a vulnerability.
 
 Supports vectorStrings specified in all CVSS versions.
 
-**Constraints**
+*Constraints*
 
 String values for the vectorString range must only include the abbreviated form
 of metric names specified in CVSS specifications, e.g.

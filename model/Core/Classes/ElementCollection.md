@@ -17,7 +17,7 @@ core profile is no specified in the profileConformance property.
 If the profileConformance property is not provided, core is to be assumed as
 the default.
 
-**Constraints**
+*Constraints*
 
 - If the ElementCollection has at least 1 element, it must also have at least
   1 rootElement.
