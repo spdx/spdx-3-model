@@ -14,8 +14,8 @@ SpdxOrganization is an Organization representing the SPDX Project. It is by defi
 
 - name: SpdxOrganization
 - type: Organization
+- IRI: https://spdx.org/
 
 ## Property Values
 
-- spdxId: https://spdx.org/
 - name: "SPDX Project"
