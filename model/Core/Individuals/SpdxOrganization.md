@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-An Individual Value for Organization representing the SPDX Project.
+An Organization representing the SPDX Project.
 
 ## Description
 
