@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:129.0) Gecko/20100101 Firefox/129.0" compressed="false" version="24.7.13" pages="11">
   <diagram id="MqBy92FNWJOg9jOokCTN" name="Core">
-    <mxGraphModel dx="597" dy="1171" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="583" dy="1171" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -627,6 +627,11 @@
         </mxCell>
         <mxCell id="RVktUqgd9DiQmxE-O_MH-1" value="&lt;&lt;Individual&gt;&gt;&#xa;SpdxOrganization : Organization" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e1d5e7;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#9673a6;" vertex="1" parent="1">
           <mxGeometry x="960" y="351" width="380" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="zjFrh8iNBKUZBvw-vcp8-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;dashed=1;" edge="1" parent="RVktUqgd9DiQmxE-O_MH-1" source="RVktUqgd9DiQmxE-O_MH-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="-31" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="RVktUqgd9DiQmxE-O_MH-2" value="&lt;span style=&quot;color: rgb(31, 35, 40); font-family: ui-monospace, SFMono-Regular, &amp;quot;SF Mono&amp;quot;, Menlo, Consolas, &amp;quot;Liberation Mono&amp;quot;, monospace; font-size: 11.9px; white-space-collapse: break-spaces; background-color: rgb(255, 255, 255);&quot;&gt;https://spdx.org/&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="RVktUqgd9DiQmxE-O_MH-1">
           <mxGeometry y="26" width="380" height="30" as="geometry" />
@@ -2169,7 +2174,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Core+Software" id="evL5fLv8r15yFEJPhG0Y">
-    <mxGraphModel dx="1405" dy="2455" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="448" dy="1947" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="lbw5UqFOsXxO_sbxoh2b-0" />
         <mxCell id="lbw5UqFOsXxO_sbxoh2b-1" parent="lbw5UqFOsXxO_sbxoh2b-0" />
@@ -3098,6 +3103,15 @@
         </mxCell>
         <mxCell id="YB-LcHTzW_OK4cjaWRjM-1" value="&lt;span style=&quot;color: rgb(31, 35, 40); font-family: ui-monospace, SFMono-Regular, &amp;quot;SF Mono&amp;quot;, Menlo, Consolas, &amp;quot;Liberation Mono&amp;quot;, monospace; font-size: 11.9px; white-space-collapse: break-spaces; background-color: rgb(255, 255, 255);&quot;&gt;https://spdx.org/&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="YB-LcHTzW_OK4cjaWRjM-0">
           <mxGeometry y="26" width="380" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YB-LcHTzW_OK4cjaWRjM-3" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endFill=0;dashed=1;" edge="1" parent="lbw5UqFOsXxO_sbxoh2b-1" source="YB-LcHTzW_OK4cjaWRjM-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2500" y="-453" as="sourcePoint" />
+            <mxPoint x="2540" y="-460" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2540" y="-385" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
