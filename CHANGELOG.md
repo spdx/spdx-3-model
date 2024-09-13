@@ -25,7 +25,7 @@
     reintroduced.
 - **Added:** `Core/SpdxOrganization` - [#880](https://github.com/spdx/spdx-3-model/pull/880)
   - An `SpdxOrganization` individual, an Organization representing the SPDX
-    Project, is added. It is by definition the creator of all individuals
+    Project, is added. It is by definition the creator of all Element type individuals 
     defined by the SPDX Project.
 - **Clarified:** `AI/autonomyType` property - [#741](https://github.com/spdx/spdx-3-model/pull/741)
   - Specified the meaning of `yes`, `no`, and `noAssertion` values in the
