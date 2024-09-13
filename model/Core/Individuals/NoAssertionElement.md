@@ -29,6 +29,7 @@ no assertion is being made about any potential descendents of Element1.
 
 - name: NoAssertionElement
 - type: Element
+- IRI: https://spdx.org/rdf/3.0.1/terms/Core/NoAssertion
 
 ## Property Values
 

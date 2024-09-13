@@ -23,6 +23,7 @@ Element1 has no descendents.
 
 - name: NoneElement
 - type: Element
+- IRI: https://spdx.org/rdf/3.0.1/terms/Core/None
 
 ## Property Values
 
