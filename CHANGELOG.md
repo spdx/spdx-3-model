@@ -1,6 +1,6 @@
 # Change Log
 
-## 3.0.1 (under development - last update 2024-08-14)
+## 3.0.1 (Unrelease - under development - last update 2024-09-13)
 
 ### Changes since 3.0
 
@@ -23,9 +23,16 @@
 - **Added:** `adler32` entry to `Core/HashAlgorithm` - [#826](https://github.com/spdx/spdx-3-model/pull/826)
   - The Adler-32 checksum, previously available in SPDX 2.3, has been
     reintroduced.
+- **Added:** `Core/SpdxOrganization` - [#880](https://github.com/spdx/spdx-3-model/pull/880)
+  - An `SpdxOrganization` individual, an Organization representing the SPDX
+    Project, is added. It is by definition the creator of all individuals
+    defined by the SPDX Project.
 - **Clarified:** `AI/autonomyType` property - [#741](https://github.com/spdx/spdx-3-model/pull/741)
   - Specified the meaning of `yes`, `no`, and `noAssertion` values in the
     `AI/autonomyType` property description.
+- **Clarified:** `Build/buildType` - [#875](https://github.com/spdx/spdx-3-model/pull/875)
+  - Its intent is added: "The buildType is used to interpret the meaning of
+    other build parameters by defining the "type" of build...".
 - **Improved:** JSON-LD examples.
   - All JSON-LD examples in the "Syntax" section of class descriptions are now
     validated.
