@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:129.0) Gecko/20100101 Firefox/129.0" compressed="false" version="24.7.7" pages="11">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:129.0) Gecko/20100101 Firefox/129.0" compressed="false" version="24.7.13" pages="11">
   <diagram id="MqBy92FNWJOg9jOokCTN" name="Core">
-    <mxGraphModel dx="1137" dy="1375" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="597" dy="1171" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -589,7 +589,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="z_q5mUjaVD6jPgVRnz_J-1" value="Individuals" style="shape=umlFrame;whiteSpace=wrap;html=1;width=120;height=30;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="940" y="162.25" width="420" height="197.75" as="geometry" />
+          <mxGeometry x="940" y="162.25" width="420" height="257.75" as="geometry" />
         </mxCell>
         <mxCell id="z_q5mUjaVD6jPgVRnz_J-4" value="" style="endArrow=block;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endFill=0;dashed=1;" parent="1" source="4OaWlMuUKFpyz8jWA7rf-2" target="PneUqTGE2ykhamjTnd7t-6" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -623,6 +623,12 @@
           <mxGeometry x="960" y="280.5" width="380" height="56" as="geometry" />
         </mxCell>
         <mxCell id="4OaWlMuUKFpyz8jWA7rf-4" value="&lt;span style=&quot;color: rgb(31, 35, 40); font-family: ui-monospace, SFMono-Regular, &amp;quot;SF Mono&amp;quot;, Menlo, Consolas, &amp;quot;Liberation Mono&amp;quot;, monospace; font-size: 11.9px; white-space-collapse: break-spaces; background-color: rgb(255, 255, 255);&quot;&gt;https://spdx.org/rdf/3.0.1/terms/Core/None&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="4OaWlMuUKFpyz8jWA7rf-3" vertex="1">
+          <mxGeometry y="26" width="380" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RVktUqgd9DiQmxE-O_MH-1" value="&lt;&lt;Individual&gt;&gt;&#xa;SpdxOrganization : Organization" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e1d5e7;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="960" y="351" width="380" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="RVktUqgd9DiQmxE-O_MH-2" value="&lt;span style=&quot;color: rgb(31, 35, 40); font-family: ui-monospace, SFMono-Regular, &amp;quot;SF Mono&amp;quot;, Menlo, Consolas, &amp;quot;Liberation Mono&amp;quot;, monospace; font-size: 11.9px; white-space-collapse: break-spaces; background-color: rgb(255, 255, 255);&quot;&gt;https://spdx.org/&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="RVktUqgd9DiQmxE-O_MH-1">
           <mxGeometry y="26" width="380" height="30" as="geometry" />
         </mxCell>
       </root>
@@ -2163,7 +2169,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Core+Software" id="evL5fLv8r15yFEJPhG0Y">
-    <mxGraphModel dx="1194" dy="2342" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1405" dy="2455" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="lbw5UqFOsXxO_sbxoh2b-0" />
         <mxCell id="lbw5UqFOsXxO_sbxoh2b-1" parent="lbw5UqFOsXxO_sbxoh2b-0" />
@@ -3024,7 +3030,7 @@
           <mxGeometry x="1937.5" y="670" width="160" height="140" as="geometry" />
         </mxCell>
         <mxCell id="VDyvOTMMLM2Na8qfTwVK-0" value="Individuals" style="shape=umlFrame;whiteSpace=wrap;html=1;width=120;height=30;strokeWidth=2;" parent="lbw5UqFOsXxO_sbxoh2b-1" vertex="1">
-          <mxGeometry x="2090" y="-620.75" width="420" height="190.75" as="geometry" />
+          <mxGeometry x="2090" y="-620.75" width="420" height="260.75" as="geometry" />
         </mxCell>
         <mxCell id="hmzJpYZgqMZkrT6AyAVb-0" value="" style="endArrow=block;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endFill=0;dashed=1;" parent="lbw5UqFOsXxO_sbxoh2b-1" source="GA1kH7pVbCI2MPRxdU4r-1" target="lbw5UqFOsXxO_sbxoh2b-71" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -3086,6 +3092,12 @@
               <mxPoint x="1564" y="-400" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="YB-LcHTzW_OK4cjaWRjM-0" value="&lt;&lt;Individual&gt;&gt;&#xa;SpdxOrganization : Organization" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e1d5e7;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#9673a6;" vertex="1" parent="lbw5UqFOsXxO_sbxoh2b-1">
+          <mxGeometry x="2110" y="-425.75" width="380" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="YB-LcHTzW_OK4cjaWRjM-1" value="&lt;span style=&quot;color: rgb(31, 35, 40); font-family: ui-monospace, SFMono-Regular, &amp;quot;SF Mono&amp;quot;, Menlo, Consolas, &amp;quot;Liberation Mono&amp;quot;, monospace; font-size: 11.9px; white-space-collapse: break-spaces; background-color: rgb(255, 255, 255);&quot;&gt;https://spdx.org/&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="YB-LcHTzW_OK4cjaWRjM-0">
+          <mxGeometry y="26" width="380" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
