@@ -1,3 +1,5 @@
+# Classes draft
+## main draft
 ```mermaid
 ---
 title: SPDX Operations Profile
@@ -70,16 +72,16 @@ namespace OperationsClasses {
     
     class ApplicationFactsAssessmentRelationship{
 		+ productOwner: Person[0..1]
-		+ documentationLink
-		+ productAccessURL
+		+ documentationLink: security/locator[0..n]
+		+ productAccessURL: security/locator[0..n]
 		+ applicationFactsComment: comment[0..n]
 		+ distributionTarget
 		+ distributedDeliverables
 		+ technicalDeployment
-		+ contact
+		+ contact: Agent [1]
 		+ scope
 		+ relationType
-		+ supplyChainContext
+		+ supplyChainContext: String[1]
 		+ releaseCycles
 		+ fossComplianceBundleProvision
 		+ contractSetup
@@ -89,7 +91,7 @@ namespace OperationsClasses {
     }
     class DeliverableFactsAssessmentRelationship{
 		+ swLanguage
-		+ dependencyManager
+		+ dependencyManager: Agent[1]
 		+ packageManager
 		+ environmentFramework
 		+ applicationCategory
@@ -110,10 +112,14 @@ namespace OperationsClasses {
         + fossTermsTowardsSupplier
         + distributionTermsFromSupplier
         + fossComplianceBundleConsumption
-        + supplierFossContact
+        + ?supplierFossContact: Person[1]
         + supplierDeliverableFactsComment: comment[0..n]
     }
 }
+```
+## nonElementClasses
+```mermaid
+classDiagram
 namespace OperationsNonElementClasses {
     class QandA{
         + question: String[0..1]
@@ -131,11 +137,15 @@ namespace OperationsNonElementClasses {
         + includesArtificialIntelligence: Boolean
     }
 }
-namespace Enumerations {
-    class CountryCode{
-        <<Enumeration>>
-    }
-    class classificationSystem{
-        <<Enumeration>>       
-    }
-}
+
+```
+## Enumerations
+- CountryCode
+    - Enumeration, external provider (official country code)
+- classificationSystem
+    - Enumeration, possibly external provider
+
+# Notes
+- remove 'supplierFossContact' from 'SupplierDeliverableFactsAssessmentRelationship'?
+    - this is probably better tracked in CRM and linked to 'Agent' class supplier information 
+- 'Delivery' as its own relationship rather than part of an assessment?
