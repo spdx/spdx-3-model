@@ -8,7 +8,7 @@ Specifies the type of an external identifier.
 
 ## Description
 
-ExteralIdentifierType specifies the type of an external identifier.
+ExternalIdentifierType specifies the type of an external identifier.
 
 ## Metadata
 

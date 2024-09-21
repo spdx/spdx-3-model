@@ -31,9 +31,9 @@ In addition, the following Relationship Types may be used to describe a Build.
   or host.
 - configures: Describes the relationship from a configuration to the Build
   element.
-- ancestorOf: Describes a relationship from a Build element to Build eelements
+- ancestorOf: Describes a relationship from a Build element to Build elements
   that describe its child builds.
-- decendentOf: Describes a relationship from a child Build element to its
+- descendantOf: Describes a relationship from a child Build element to its
   parent.
 - usesTool: Describes a relationship from a Build element to a build tool.
 
