@@ -8,7 +8,7 @@ Provides additional purpose information of the software artifact.
 
 ## Description
 
-Additional purpose provides information about the additional purposes of the
+An additionalPurpose provides information about the additional purpose of the
 software artifact in addition to the primaryPurpose.
 
 ## Metadata

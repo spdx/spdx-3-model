@@ -18,7 +18,7 @@ elements, it means they are the same kind of build, but difference instances
 and possible with different configurations.
 
 If you are not using a well-known buildType, it should be namespaced to a
-domain you own to prevent conflicts with other builtType IRIs.
+domain you own to prevent conflicts with other buildType IRIs.
 
 Examples of a buildType might be:
 
