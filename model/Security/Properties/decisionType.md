@@ -10,7 +10,7 @@ Provide the enumeration of possible decisions in the
 ## Description
 
 A decisionType is a mandatory value and must select one of the four entries in
-the `SsvcDecisionType.md` vocabulary.
+the [`SsvcDecisionType`](../Vocabularies/SsvcDecisionType.md) vocabulary.
 
 ## Metadata
 
