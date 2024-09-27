@@ -1,3 +1,5 @@
+# Classes draft
+## main draft
 ```mermaid
 ---
 title: SPDX Operations Profile
@@ -11,11 +13,12 @@ classDiagram
     Agent <|-- Person
     Agent <|-- Country
     Relationship <|-- OperationsAssessmentRelationship
+    Relationship <|-- Delivery
     OperationsAssessmentRelationship <|-- ExportControlAssessmentRelationship
     OperationsAssessmentRelationship <|-- ObligationsAssessmentRelationship
-    OperationsAssessmentRelationship <|-- ApplicationFactsAssessmentRelationship
-    OperationsAssessmentRelationship <|-- DeliverableFactsAssessmentRelationship
-    OperationsAssessmentRelationship <|-- SupplierDeliverableFactsAssessmentRelationship
+    Delivery <|-- ApplicationFacts
+    Delivery <|-- DeliverableFacts
+    Delivery <|-- SupplierDeliverableFacts
 
     note for Organization "ID \naddress \nwebsite"
     note for OperationsAssessmentRelationship "Inspired by VulnAssessmentRelationship"
@@ -55,6 +58,9 @@ namespace OperationsClasses {
         + modifiedTime: DateTime[0..1]
         + withdrawnTime: DateTime[0..1]
     }
+    class Delivery {
+        
+    }
     class ExportControlAssessmentRelationship{
         + notRequired: Boolean[1]
         + purpose: String[0..1]
@@ -68,18 +74,18 @@ namespace OperationsClasses {
         + Obligation: String [0..n]
     }
     
-    class ApplicationFactsAssessmentRelationship{
+    class ApplicationFacts{
 		+ productOwner: Person[0..1]
-		+ documentationLink
-		+ productAccessURL
+		+ documentationLink: security/locator[0..n]
+		+ productAccessURL: security/locator[0..n]
 		+ applicationFactsComment: comment[0..n]
 		+ distributionTarget
 		+ distributedDeliverables
 		+ technicalDeployment
-		+ contact
+		+ contact: Agent [1]
 		+ scope
 		+ relationType
-		+ supplyChainContext
+		+ supplyChainContext: String[1]
 		+ releaseCycles
 		+ fossComplianceBundleProvision
 		+ contractSetup
@@ -87,9 +93,9 @@ namespace OperationsClasses {
 		+ distributionTermsTowardsCustomer
 		+ customerFossContact: Person[0..n]
     }
-    class DeliverableFactsAssessmentRelationship{
+    class DeliverableFacts{
 		+ swLanguage
-		+ dependencyManager
+		+ dependencyManager: Agent[1]
 		+ packageManager
 		+ environmentFramework
 		+ applicationCategory
@@ -104,16 +110,20 @@ namespace OperationsClasses {
         + deliverableReview: QandA[0..n]
 		+ deliverabelComment: comment[0..n]
     }
-    class SupplierDeliverableFactsAssessmentRelationship{
+    class SupplierDeliverableFacts{
         + supplierName
         + deliverableFromSupplier
         + fossTermsTowardsSupplier
         + distributionTermsFromSupplier
         + fossComplianceBundleConsumption
-        + supplierFossContact
+        + ?supplierFossContact: Person[1]
         + supplierDeliverableFactsComment: comment[0..n]
     }
 }
+```
+## nonElementClasses
+```mermaid
+classDiagram
 namespace OperationsNonElementClasses {
     class QandA{
         + question: String[0..1]
@@ -131,11 +141,15 @@ namespace OperationsNonElementClasses {
         + includesArtificialIntelligence: Boolean
     }
 }
-namespace Enumerations {
-    class CountryCode{
-        <<Enumeration>>
-    }
-    class classificationSystem{
-        <<Enumeration>>       
-    }
-}
+
+```
+## Enumerations
+- CountryCode
+    - Enumeration, external provider (official country code)
+- classificationSystem
+    - Enumeration, possibly external provider
+
+# Notes
+- remove 'supplierFossContact' from 'SupplierDeliverableFacts'?
+    - this is probably better tracked in CRM and linked to 'Agent' class supplier information 
+- 'Delivery' as its own relationship rather than part of an assessment?
