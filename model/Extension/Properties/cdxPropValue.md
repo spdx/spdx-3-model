@@ -4,14 +4,14 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A value used in a CdxExtension name-value pair.
+A value used in a CdxPropertyEntry name-value pair.
 
 ## Description
 
-A cdxPropValue is used in a CdxExtension name-value pair.
+A cdxPropValue is used in a CdxPropertyEntry name-value pair.
 
-Unlike key-value stores, cdxProperties support duplicate names, each
-potentially having different values.
+Unlike key-value stores, properties in CdxPropertiesExtension support duplicate
+names, each potentially having different values.
 
 ## Metadata
 

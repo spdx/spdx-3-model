@@ -72,7 +72,7 @@ elements and relationships step-by-step:
   CVSS, etc. to communicate, e.g.,
   - Changes to a vulnerability element’s status affecting a specific package
     element using VEX (Vulnerability Exploitability eXchange) (see the
-    serialized examples listed in *Syntax* under each vulnerability assessment
+    serialized examples listed in *Example* under each vulnerability assessment
     relationship class definition)
   - How a vulnerability element may be fixed for a particular software package
     element
