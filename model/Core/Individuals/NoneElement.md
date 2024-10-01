@@ -17,7 +17,7 @@ For example, a Relationship with
 `from`=Element1,
 and `to`=NoneElement
 is explicitly expressing an assertion that
-Element1 has no descendents.
+Element1 has no descendants.
 
 ## Metadata
 
