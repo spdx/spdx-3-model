@@ -40,11 +40,11 @@ Additionally:
 
 1. for every `/Software/Package` there MUST exist exactly one
    `/Core/Relationship` of type `hasConcludedLicense` having that element as
-   its `from` property and an `/SimpleLicensing/AnyLicenseInfo` as its `to`
+   its `from` property and a `/SimpleLicensing/AnyLicenseInfo` as its `to`
    property.
 2. for every `/Software/Package` there MUST exist exactly one
    `/Core/Relationship` of type `hasDeclaredLicense` having that element as its
-   `from` property and an `/SimpleLicensing/AnyLicenseInfo` as its `to`
+   `from` property and a `/SimpleLicensing/AnyLicenseInfo` as its `to`
    property.
 
 For a `/Core/SpdxDocument` to be conformant with this profile, the following has to hold:
