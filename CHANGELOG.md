@@ -1,6 +1,6 @@
 # Change Log
 
-## 3.0.1 (Unrelease - under development - last update 2024-09-25)
+## 3.0.1 (2024-10-02)
 
 ### Changes since 3.0
 
@@ -25,7 +25,7 @@
     reintroduced.
 - **Added:** `Core/SpdxOrganization` - [#880](https://github.com/spdx/spdx-3-model/pull/880)
   - An `SpdxOrganization` individual, an Organization representing the SPDX
-    Project, is added. It is by definition the creator of all Element type individuals 
+    Project, is added. It is by definition the creator of all Element type individuals
     defined by the SPDX Project.
 - **Clarified:** `AI/autonomyType` - [#741](https://github.com/spdx/spdx-3-model/pull/741)
   - Specified the meaning of `yes`, `no`, and `noAssertion` values in the
@@ -33,7 +33,7 @@
 - **Clarified:** `Build/buildType` - [#875](https://github.com/spdx/spdx-3-model/pull/875)
   - Its intent is added: "The buildType is used to interpret the meaning of
     other build parameters by defining the "type" of build...".
-- **Clarified:** `hasData` entry in `Core/RelationshipType` - [#815](https://github.com/spdx/spdx-3-model/pull/815)
+- **Clarified:** `hasDataFile` entry in `Core/RelationshipType` - [#815](https://github.com/spdx/spdx-3-model/pull/815)
 - **Improved:** JSON-LD examples.
   - All JSON-LD examples in the "Syntax" section of class descriptions are now
     validated - [#794](https://github.com/spdx/spdx-3-model/pull/794)
