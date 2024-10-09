@@ -33,7 +33,7 @@
 - **Clarified:** `Build/buildType` - [#875](https://github.com/spdx/spdx-3-model/pull/875)
   - Its intent is added: "The buildType is used to interpret the meaning of
     other build parameters by defining the "type" of build...".
-- **Clarified:** `hasData` entry in `Core/RelationshipType` - [#815](https://github.com/spdx/spdx-3-model/pull/815)
+- **Clarified:** `hasDataFile` entry in `Core/RelationshipType` - [#815](https://github.com/spdx/spdx-3-model/pull/815)
 - **Improved:** JSON-LD examples.
   - All JSON-LD examples in the "Syntax" section of class descriptions are now
     validated - [#794](https://github.com/spdx/spdx-3-model/pull/794)
