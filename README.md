@@ -17,8 +17,9 @@ standard.
 
 ## Branches and Formats
 
-The editable files inside `model/` directory are written in a constrained
-subset of Markdown, with specific headings for specific types of information,
+The editable files inside `model/` directory are written in a 
+[constrained subset of Markdown](./specmark.md),
+with specific headings for specific types of information,
 and are stored in the `main` branch.
 
 The editable files are automatically processed by
