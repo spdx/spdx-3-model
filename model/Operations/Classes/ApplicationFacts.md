@@ -1,59 +1,100 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# EpssVulnAssessmentRelationship
+# ApplicationFacts
 
 ## Summary
 
-Provides an EPSS assessment for a vulnerability.
+The Application facts summarize the business context metadata of an application. An application may consist of one to n deliverables.
 
 ## Description
 
-An EpssVulnAssessmentRelationship relationship describes the likelihood or
-probability that a vulnerability will be exploited in the wild, and the
-percentile ranking of probability relative to all other vulnerabilities' EPSS
-scores, using the Exploit Prediction Scoring System (EPSS) as defined at
-[The EPSS Model](https://www.first.org/epss/model).
-
-*Constraints*
-
-- The relationship type must be set to hasAssessmentFor.
-- The probability must be between 0 and 1.
-- The percentile must be between 0 and 1.
-
-*Example*
-
-```json
-{
-  "type": "EpssVulnAssessmentRelationship",
-  "spdxId": "urn:spdx.dev:epss-CVE-2020-28498",
-  "relationshipType": "hasAssessmentFor",
-  "security_probability": "0.00105",
-  "security_percentile": "0.42356",
-  "from": "urn:spdx.dev:vuln-cve-2020-28498",
-  "to": ["urn:product-acme-application-1.3"],
-  "suppliedBy": ["urn:spdx.dev:agent-jane-doe"],
-  "publishedTime": "2023-10-05T00:00:30Z"
-}
+The Application Facts are collected all along the product lifecyle and contents may be updated when the product reaches a new phase.
 ```
 
 ## Metadata
 
-- name: EpssVulnAssessmentRelationship
-- SubclassOf: VulnAssessmentRelationship
+- name: ApplicationFacts
+- SubclassOf: tbd
 - Instantiability: Concrete
 
 ## Properties
 
-- probability
-  - type: xsd:decimal
-  - minCount: 1
-  - maxCount: 1
-- percentile
-  - type: xsd:decimal
+- productOwner
+  - type: tbd
   - minCount: 1
   - maxCount: 1
 
-## External properties restrictions
-
-- /Security/VulnAssessmentRelationship/publishedTime
+- documentationLink
+  - type: tbd
   - minCount: 1
+  - maxCount: 1
+
+- productAccessURL
+  - type: tbd
+  - minCount: 1
+  - maxCount: 1
+
+- commentComment
+  - type: tbd
+  - minCount: 1
+  - maxCount: 1
+
+- distributedDeliverables
+  - type: tbd
+  - minCount: 1
+  - maxCount: n
+
+- technicalDeploymnent
+  - type: tbd
+  - minCount: 1
+  - maxCount: 1
+
+- contact
+  - type: tbd
+  - minCount: 1
+  - maxCount: 1
+
+- scope
+  - type: tbd
+  - minCount: 1
+  - maxCount: 1
+
+- relationType
+  - type: tbd
+  - minCount: 1
+  - maxCount: 1
+
+- supplyChainContext
+  - type: tbd
+  - minCount: 1
+  - maxCount: 1
+
+- releaseCycles
+  - type: tbd
+  - minCount: 1
+  - maxCount: 1
+
+- fossComplianceBundelProvision
+  - type: tbd
+  - minCount: 1
+  - maxCount: 1
+
+- contractSetup
+  - type: tbd
+  - minCount: 1
+  - maxCount: 1
+
+- fossTermsTowardsCustomer
+  - type: tbd
+  - minCount: 1
+  - maxCount: 1
+
+- distributionTermsTowardsCustomer
+  - type: tbd
+  - minCount: 1
+  - maxCount: 1
+
+- customerFossContact
+  - type: tbd
+  - minCount: 1
+  - maxCount: 1
