@@ -255,7 +255,7 @@ Allowed headings:
 - Description
 - Metadata
   - name: \<individual_name\>
-  - type:  \<class_name\>
+  - type: \<class_name\>
   - IRI: \<IRI\>
 - Property Values
   - \<property_name\>: \<property_value\>
@@ -270,11 +270,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-An Individual Value example.
+A named individual example.
 
 ## Description
 
-Blah.
+A named individual of Element class that representing none.
 
 ## Metadata
 
