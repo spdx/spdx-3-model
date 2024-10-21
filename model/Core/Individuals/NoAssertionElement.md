@@ -34,11 +34,11 @@ no assertion is being made about any potential descendants of Element1.
 
 - name: "NOASSERTION"
 
-## Summary @jp
+## Summary @ja
 
 不明な識別子やカーディナリティ (数) を持つ要素の集合を表す個別の値。  
 
-## Description @jp
+## Description @ja
 
 NoAssertionElement は、以下の場合に利用されるべきです。  
 

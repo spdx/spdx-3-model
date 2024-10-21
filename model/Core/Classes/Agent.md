@@ -20,11 +20,11 @@ This is not to be confused with tools that are used to perform tasks.
 - SubclassOf: Element
 - Instantiability: Concrete
 
-## Summary @jp
+## Summary @ja
 
 Agent は、システム上で動作する可能性のあるすべてのものを表します。  
 
-## Description @jp
+## Description @ja
 
 Agent クラスは、システムで動作する可能性のあるすべてのものを表します。  
 

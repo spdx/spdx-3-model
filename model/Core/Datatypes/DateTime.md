@@ -23,11 +23,11 @@ The specific format is one of the most commonly used ISO-8601 formats.
 
 - pattern: ^\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ$
 
-## Summary @jp
+## Summary @ja
 
 特定の日付と時刻を表す文字列。  
 
-## Description @jp
+## Description @ja
 
 DateTime は、特定の日付と時刻を表す文字列です。  
 
