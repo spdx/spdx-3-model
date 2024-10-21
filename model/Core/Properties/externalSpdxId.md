@@ -9,7 +9,7 @@ external to that SpdxDocument.
 
 ## Description
 
-ExternalSpdxId identifies an external Element used within an SpdxDocument but
+An externalSpdxId identifies an external Element used within an SpdxDocument but
 defined external to that SpdxDocument.
 
 ## Metadata

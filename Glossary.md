@@ -11,7 +11,7 @@ A process that takes data in any valid form (e.g., various serializations of SPD
 
 ## Class
 
-A represention of a scope/set of individual instances of a particular “concept” (e.g., File, Person, ExternalReference, etc.).
+A representation of a scope/set of individual instances of a particular “concept” (e.g., File, Person, ExternalReference, etc.).
 
 Each individual instance of a class has an Internationalized Resource Identifier (IRI) and is asserted as a member of a particular class via a type statement.
 
@@ -25,7 +25,7 @@ One example could be the requirement of a specific hash algorithm to be present.
 
 ## Core
 
-The namespace which contains definitions and constraints for all concpet classes and properties which are common to all other domains within the targeted scope of SPDX.
+The namespace which contains definitions and constraints for all concept classes and properties which are common to all other domains within the targeted scope of SPDX.
 
 ## Datatype property
 

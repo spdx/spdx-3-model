@@ -23,7 +23,7 @@ For example, a Relationship with
 and
 `to`=NoAssertionElement
 is explicitly expressing that
-no assertion is being made about any potential descendents of Element1.
+no assertion is being made about any potential descendants of Element1.
 
 ## Metadata
 
