@@ -16,3 +16,11 @@ value.
 - name: algorithm
 - Nature: ObjectProperty
 - Range: HashAlgorithm
+
+## Summary @jp
+
+ハッシュ値を計算するために使用されるアルゴリズムを指定します。  
+
+## Description @jp
+
+algorithm は、ハッシュ値を計算するために使用されるアルゴリズムを指定します。  
