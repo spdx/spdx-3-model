@@ -8,7 +8,7 @@ The result of applying a hash algorithm to an Element.
 
 ## Description
 
-HashValue is the result of applying a hash algorithm to an Element.
+A hashValue is the result of applying a hash algorithm to an Element.
 
 ## Metadata
 

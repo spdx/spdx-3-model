@@ -119,5 +119,5 @@ the following has to hold:
 
 1. for every `/Software/SoftwareArtifact` there MUST exist exactly one
    `/Core/Relationship` of type `hasConcludedLicense` having that element as
-   its `from` property and an `/SimpleLicensing/AnyLicenseInfo` as its `to`
+   its `from` property and a `/SimpleLicensing/AnyLicenseInfo` as its `to`
    property.
