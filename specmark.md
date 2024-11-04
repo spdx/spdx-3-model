@@ -1,4 +1,5 @@
 ---
+SPDX-FileCopyrightText: 2024 SPDX Project
 SPDX-License-Identifier: Community-Spec-1.0
 ---
 
@@ -6,6 +7,24 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 The SPDX 3 model is written in a constrained subset of a Markdown markup
 language*, with predefined headings.
+
+This document provides guidelines for writing model files in the specific syntax used by SPDX 3.
+
+## Table of contents
+
+- [Overview](#overview)
+- [Model file content structure](#model-file-content-structure)
+- [Model file organisation](#model-file-organisation)
+- [Syntax](#syntax)
+  - [Classes](#classes)
+  - [Datatypes](#datatypes)
+  - [Individuals](#individuals)
+  - [Properties](#properties)
+  - [Vocabularies](#vocabularies)
+- [Example](#example)
+- [Writing style for consistent documentation](#writing-style-for-consistent-documentation)
+
+## Overview
 
 Each model element (class, datatype, individual, property, and vocabulary)
 is defined in a distinct file.
@@ -359,3 +378,84 @@ RpsType specifies the type of a hand shape.
 - rock: A closed fist.
 - scissors: Two fingers extended, forming a V shape.
 ```
+
+## Writing style for consistent documentation
+
+To ensure clear and consistent documentation generation, follow these
+recommendations when writing paragraph text and incorporating links.
+
+- **Avoid overly long paragraphs.**
+  Breaking up text into smaller paragraphs, using bullet points, or creating numbered lists can significantly improve readability and comprehension by separating distinct concepts, processes, criteria, or categories.
+  This makes the specification easier to scan and understand.
+
+- **Avoid bare URLs.**
+  Always provide a descriptive label for each link. Avoid using bare URLs.
+  This improves accessibility for screen readers and provides context for
+  users.
+
+  Here's an example of a **recommended** link using descriptive text:
+
+  ```Markdown
+  [SPDX Project](https://spdx.dev/)
+  ```
+
+  Here's an example of a **not recommended** bare URL:
+
+  ```Markdown
+  https://spdx.dev/
+  ```
+
+- **Bare URLs: Use with caution.**
+  While descriptive link text is generally preferred for better readability
+  and accessibility, there may be specific cases where bare URLs might be
+  necessary, such as for URLs intended to be clearly visible in both digital
+  and print formats.
+
+  Be aware that not all Markdown renderers, including MkDocs, will
+  automatically convert bare URLs into clickable links.
+  To ensure that URLs remain clickable on the specification website,
+  you should enclose them within angle brackets (`<` and `>`).
+
+  Here's an example of a **correct** bare link with a markup:
+
+  ```Markdown
+  SPDX Project GitHub: <https://github.com/spdx/>
+  ```
+
+  Here's an example of an **incorrect** bare URL:
+
+  ```Markdown
+  SPDX Project GitHub: https://github.com/spdx
+  ```
+
+- **Formatting Links to RFCs:** When referencing RFCs (Request for Comments) or other relevant IETF documents, utilize the following format for the URL:
+
+  ```text
+  https://datatracker.ietf.org/doc/<rfc-number>/
+  ```
+
+  Here's an example of a **correct** link to an RFC:
+
+  ```Markdown
+  [RFC 3986](https://datatracker.ietf.org/doc/rfc3986/)
+  ```
+
+  Here are examples of **incorrect** links to RFCs:
+
+  Missing trailing slash:
+
+  ```Markdown
+  [RFC 3986](https://datatracker.ietf.org/doc/rfc3986)
+  ```
+
+  Linking to HTML version:
+
+  ```Markdown
+  [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986)
+  ```
+
+  Using a different website:
+
+  ```Markdown
+  [RFC 3986](https://www.rfc-editor.org/rfc/rfc3986)
+  ```
