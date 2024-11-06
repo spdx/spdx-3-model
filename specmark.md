@@ -554,11 +554,11 @@ AnnotationType specifies the type of an annotation.
 
 ## Description @ja
 
-AnnotationType は、注釈の種類を指定します。  
+AnnotationType は、注釈の種類を指定します。
 
 ## Entries @ja
 
-- review: 誰かが Element をレビューし、注釈をつけたときに使われます。  
+- review: 誰かが Element をレビューし、注釈をつけたときに使われます。
 ```
 
 The above model Markdown file will generate the following RDF
