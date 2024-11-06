@@ -18,16 +18,16 @@ specifications.
 ## Table of contents
 
 - [Overview](#overview)
-- [Model file content structure and formatting](#model-file-content-structure-and-formatting)
-- [Model file organisation](#model-file-organisation)
+- [Directory organisation](#directory-organisation)
+- [File content structure and formatting](#file-content-structure-and-formatting)
+  - [Model file example](#model-file-example)
 - [Syntax](#syntax)
   - [Classes](#classes)
   - [Datatypes](#datatypes)
   - [Individuals](#individuals)
   - [Properties](#properties)
   - [Vocabularies](#vocabularies)
-- [Example](#example)
-- [Writing style for consistent documentation](#writing-style-for-consistent-documentation)
+- [Writing style](#writing-style)
 - [Localisation](#localisation)
   - [Localisation example](#localisation-example)
 
@@ -58,34 +58,7 @@ as it is used by [MkDocs](https://www.mkdocs.org/) site generator.
 It differs slightly from
 [GitHub Flavored Markdown Spec](https://github.github.com/gfm/).
 
-## Model file content structure and formatting
-
-Each model file must adhere to a strict content structure:
-
-- All files must be encoded in UTF-8.
-- Each file must start with SPDX license information:
-  `SPDX-License-Identifier: Community-Spec-1.0`
-  and follows by one blank line.
-- The content immediately after the license information must begin with an
-  H1 heading containing the element's name.
-- Each element type has a predefined set of [allowed H2 headings](#syntax) and
-  labeled lists that must be used to structure its content.
-
-Additionally, since MkDocs uses a strict
-[Python-Markdown](https://python-markdown.github.io/#differences),
-each model file must adhere to specific formatting guidelines:
-
-- Blank lines:
-  - There must be a blank line before and after a heading.
-  - There must be a blank line before and after a list.
-- Indentation:
-  - Use spaces instead of tabs.
-  - When a list item consists of multiple paragraphs, each subsequent paragraph
-    in a list item must be indented by 4 spaces. This applies to any
-    block-level elements nested in a list, including paragraphs, sub-lists,
-    blockquotes, code blocks, etc.
-
-## Model file organisation
+## Directory organisation
 
 Apart from the content in each individual file, the file itself has to be
 placed in a specific location, as the spec-parser implies some model semantic
@@ -130,7 +103,34 @@ The living repository at
 <https://github.com/spdx/spdx-3-model/tree/main/model>
 is the best reference.
 
-## Example
+## File content structure and formatting
+
+Each model file must adhere to a strict content structure:
+
+- All files must be encoded in UTF-8.
+- Each file must start with SPDX license information:
+  `SPDX-License-Identifier: Community-Spec-1.0`
+  and follows by one blank line.
+- The content immediately after the license information must begin with an
+  H1 heading containing the element's name.
+- Each element type has a predefined set of [allowed H2 headings](#syntax) and
+  labeled lists that must be used to structure its content.
+
+Additionally, since MkDocs uses a strict
+[Python-Markdown](https://python-markdown.github.io/#differences),
+each model file must adhere to specific formatting guidelines:
+
+- Blank lines:
+  - There must be a blank line before and after a heading.
+  - There must be a blank line before and after a list.
+- Indentation:
+  - Use spaces instead of tabs.
+  - When a list item consists of multiple paragraphs, each subsequent paragraph
+    in a list item must be indented by 4 spaces. This applies to any
+    block-level elements nested in a list, including paragraphs, sub-lists,
+    blockquotes, code blocks, etc.
+
+### Model file example
 
 This example is taken from the actual file for
 [SimpleLicensingText](https://github.com/spdx/spdx-3-model/blob/main/model/SimpleLicensing/Classes/SimpleLicensingText.md?plain=1)
@@ -390,7 +390,7 @@ RpsType specifies the type of a hand shape.
 - scissors: Two fingers extended, forming a V shape.
 ```
 
-## Writing style for consistent documentation
+## Writing style
 
 To ensure clear and consistent documentation generation, follow these
 recommendations when writing paragraph text and incorporating links.
@@ -422,18 +422,19 @@ recommendations when writing paragraph text and incorporating links.
     necessary, such as for URLs intended to be clearly visible in both digital
     and print formats.
 
-    Be aware that not all Markdown renderers, including MkDocs, will
-    automatically convert bare URLs into clickable links.
+    Be aware that MkDocs *will not* automatically convert bare URLs into
+    clickable links.
+
     To ensure that URLs remain clickable on the specification website,
     you should enclose them within angle brackets (`<` and `>`).
 
-    Here's an example of a **correct** bare link with a markup:
+    Here's an example of a **clickable** URL:
 
     ```Markdown
     SPDX Project GitHub: <https://github.com/spdx/>
     ```
 
-    Here's an example of an **incorrect** bare URL:
+    Here's an example of an **unclickable** URL:
 
     ```Markdown
     SPDX Project GitHub: https://github.com/spdx
