@@ -8,12 +8,17 @@ SPDX-License-Identifier: Community-Spec-1.0
 The SPDX 3 model is written in a constrained subset of a Markdown markup
 language*, with predefined headings.
 
-This document provides guidelines for writing model files in the specific syntax used by SPDX 3.
+This document provides guidelines for writing model files in the specific
+syntax used by SPDX 3.
+
+Following these guidelines ensures consistency and avoids rendering issues when
+using spec-parser and MkDocs to generate model ontologies and model textual
+specifications.
 
 ## Table of contents
 
 - [Overview](#overview)
-- [Model file content structure](#model-file-content-structure)
+- [Model file content structure and formatting](#model-file-content-structure-and-formatting)
 - [Model file organisation](#model-file-organisation)
 - [Syntax](#syntax)
   - [Classes](#classes)
@@ -23,6 +28,8 @@ This document provides guidelines for writing model files in the specific syntax
   - [Vocabularies](#vocabularies)
 - [Example](#example)
 - [Writing style for consistent documentation](#writing-style-for-consistent-documentation)
+- [Localisation](#localisation)
+  - [Localisation example](#localisation-example)
 
 ## Overview
 
@@ -35,7 +42,7 @@ generation of a machine-readable specification, in
 data model, by the [spec-parser](https://github.com/spdx/spec-parser/).
 
 For instance, a summary listed under the "Summary" heading will be represented
-as an `rdfs:comment` in the RDF file. Likewise, a value specified for the
+as a `rdfs:comment` in the RDF file. Likewise, a value specified for the
 "minCount" of a property name under the "Properties" heading will be
 translated into a `sh:minCount` in the RDF file. See [an example](#example).
 
@@ -51,7 +58,7 @@ as it is used by [MkDocs](https://www.mkdocs.org/) site generator.
 It differs slightly from
 [GitHub Flavored Markdown Spec](https://github.github.com/gfm/).
 
-## Model file content structure
+## Model file content structure and formatting
 
 Each model file must adhere to a strict content structure:
 
@@ -63,16 +70,20 @@ Each model file must adhere to a strict content structure:
   H1 heading containing the element's name.
 - Each element type has a predefined set of [allowed H2 headings](#syntax) and
   labeled lists that must be used to structure its content.
-- There must be a blank line before and after a heading.
-- There must be a blank line before the beginning of a list.
-- There must be a blank line after the end of a list.
-- Any block level elements nested in a list, including paragraphs, sub-lists,
-  blockquotes, code blocks, etc., must always be indented by at least 4
-  spaces for each level of nesting.
 
-The last four points are because of
-MkDocs' [strict processing](https://python-markdown.github.io/#differences)
-of Markdown files.
+Additionally, since MkDocs uses a strict
+[Python-Markdown](https://python-markdown.github.io/#differences),
+each model file must adhere to specific formatting guidelines:
+
+- Blank lines:
+  - There must be a blank line before and after a heading.
+  - There must be a blank line before and after a list.
+- Indentation:
+  - Use spaces instead of tabs.
+  - When a list item consists of multiple paragraphs, each subsequent paragraph
+    in a list item must be indented by 4 spaces. This applies to any
+    block-level elements nested in a list, including paragraphs, sub-lists,
+    blockquotes, code blocks, etc.
 
 ## Model file organisation
 
@@ -385,77 +396,177 @@ To ensure clear and consistent documentation generation, follow these
 recommendations when writing paragraph text and incorporating links.
 
 - **Avoid overly long paragraphs.**
-  Breaking up text into smaller paragraphs, using bullet points, or creating numbered lists can significantly improve readability and comprehension by separating distinct concepts, processes, criteria, or categories.
-  This makes the specification easier to scan and understand.
+    Breaking up text into smaller paragraphs, using bullet points, or creating numbered lists can significantly improve readability and comprehension by separating distinct concepts, processes, criteria, or categories.
+    This makes the specification easier to scan and understand.
 
 - **Avoid bare URLs.**
-  Always provide a descriptive label for each link. Avoid using bare URLs.
-  This improves accessibility for screen readers and provides context for
-  users.
+    Always provide a descriptive label for each link. Avoid using bare URLs.
+    This improves accessibility for screen readers and provides context for
+    users.
 
-  Here's an example of a **recommended** link using descriptive text:
+    Here's an example of a **recommended** link using descriptive text:
 
-  ```Markdown
-  [SPDX Project](https://spdx.dev/)
-  ```
+    ```Markdown
+    [SPDX Project](https://spdx.dev/)
+    ```
 
-  Here's an example of a **not recommended** bare URL:
+    Here's an example of a **not recommended** bare URL:
 
-  ```Markdown
-  https://spdx.dev/
+    ```Markdown
+    https://spdx.dev/
   ```
 
 - **Bare URLs: Use with caution.**
-  While descriptive link text is generally preferred for better readability
-  and accessibility, there may be specific cases where bare URLs might be
-  necessary, such as for URLs intended to be clearly visible in both digital
-  and print formats.
+    While descriptive link text is generally preferred for better readability
+    and accessibility, there may be specific cases where bare URLs might be
+    necessary, such as for URLs intended to be clearly visible in both digital
+    and print formats.
 
-  Be aware that not all Markdown renderers, including MkDocs, will
-  automatically convert bare URLs into clickable links.
-  To ensure that URLs remain clickable on the specification website,
-  you should enclose them within angle brackets (`<` and `>`).
+    Be aware that not all Markdown renderers, including MkDocs, will
+    automatically convert bare URLs into clickable links.
+    To ensure that URLs remain clickable on the specification website,
+    you should enclose them within angle brackets (`<` and `>`).
 
-  Here's an example of a **correct** bare link with a markup:
+    Here's an example of a **correct** bare link with a markup:
 
-  ```Markdown
-  SPDX Project GitHub: <https://github.com/spdx/>
-  ```
+    ```Markdown
+    SPDX Project GitHub: <https://github.com/spdx/>
+    ```
 
-  Here's an example of an **incorrect** bare URL:
+    Here's an example of an **incorrect** bare URL:
 
-  ```Markdown
-  SPDX Project GitHub: https://github.com/spdx
-  ```
+    ```Markdown
+    SPDX Project GitHub: https://github.com/spdx
+    ```
 
-- **Formatting Links to RFCs:** When referencing RFCs (Request for Comments) or other relevant IETF documents, utilize the following format for the URL:
+- **Standard format for RFC URLs.**
+    When referencing RFCs (Request for Comments) or other relevant IETF
+    documents, utilize the following format for the URL:
 
-  ```text
-  https://datatracker.ietf.org/doc/<rfc-number>/
-  ```
+    ```text
+    https://datatracker.ietf.org/doc/<number>/
+    ```
 
-  Here's an example of a **correct** link to an RFC:
+    Here's an example of a **correct** link to an RFC:
 
-  ```Markdown
-  [RFC 3986](https://datatracker.ietf.org/doc/rfc3986/)
-  ```
+    ```Markdown
+    [RFC 3986](https://datatracker.ietf.org/doc/rfc3986/)
+    ```
 
-  Here are examples of **incorrect** links to RFCs:
+    Here are examples of **incorrect** links to RFCs:
 
-  Missing trailing slash:
+    Incorrect. Missing trailing slash:
 
-  ```Markdown
-  [RFC 3986](https://datatracker.ietf.org/doc/rfc3986)
-  ```
+    ```Markdown
+    [RFC 3986](https://datatracker.ietf.org/doc/rfc3986)
+    ```
 
-  Linking to HTML version:
+    Incorrect. Linking to HTML version:
 
-  ```Markdown
-  [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986)
-  ```
+    ```Markdown
+    [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986)
+    ```
 
-  Using a different website:
+    Incorrect. Using a different website:
 
-  ```Markdown
-  [RFC 3986](https://www.rfc-editor.org/rfc/rfc3986)
-  ```
+    ```Markdown
+    [RFC 3986](https://www.rfc-editor.org/rfc/rfc3986)
+    ```
+
+- **Code Highlighting.**
+    When using code blocks, specify the appropriate computer language code.
+    For instance, use `json` for JSON, `yaml` for YAML, and `text` for plain
+    text. This ensures correct syntax highlighting and improves readability.
+
+    For example, start a code block for JSON data with this markup:
+
+    ```markdown
+    ```json
+    ```
+
+    Here's an example of a code block with a specified language and syntax
+    highlighting:
+
+    ```json
+    {
+      "type": "Relationship",
+      "from": "urn:spdx.dev:28984",
+      "to": ["urn:acme-4.2"]
+    }
+    ```
+
+    Here's an example of a code block without a specified language and no syntax highlighting:
+
+    ```text
+    {
+      "type": "Relationship",
+      "from": "urn:spdx.dev:28984",
+      "to": ["urn:acme-4.2"]
+    }
+    ```
+
+## Localisation
+
+Only model summaries, descriptions, and vocabulary entry descriptions can be
+translated.
+
+Other content, such as model metadata, cannot be translated.
+
+To add translations, include them directly at the end of the model file
+using the same heading name followed by a two- or three-character language tag
+e.g., `## Summary @ga` for a summary in Irish language and
+`## Entries @kok` for an entry list in Konkani language.
+
+These textual descriptions are encoded as RDF 1.1 literals,
+so the language tag must adhere to the well-formedness rules outlined in
+[IETF BCP 47](https://datatracker.ietf.org/doc/html/rfc5646).
+
+### Localisation example
+
+Here's an example of an `AnnotationType` class,
+demonstrating how to add a translation for Japanese.
+Note that the "Metadata" heading remains untranslated:
+
+```markdown
+SPDX-License-Identifier: Community-Spec-1.0
+
+# AnnotationType
+
+## Summary
+
+Specifies the type of an annotation.
+
+## Description
+
+AnnotationType specifies the type of an annotation.
+
+## Metadata
+
+- name: AnnotationType
+
+## Entries
+
+- review: Used when someone reviews the Element.
+
+## Summary @ja
+
+注釈の種類を指定します。
+
+## Description @ja
+
+AnnotationType は、注釈の種類を指定します。  
+
+## Entries @ja
+
+- review: 誰かが Element をレビューし、注釈をつけたときに使われます。  
+```
+
+The above model Markdown file will generate the following RDF
+(showing partial):
+
+```ttl
+<https://spdx.org/rdf/3.0.1/terms/Core/AnnotationType> a owl:Class;
+    rdfs:comment "Specifies the type of an annotation."@en ;
+    rdfs:comment "注釈の種類を指定します。"@ja ;
+    .
+```
