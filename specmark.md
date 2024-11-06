@@ -478,14 +478,14 @@ recommendations when writing paragraph text and incorporating links.
     For instance, use `json` for JSON, `yaml` for YAML, and `text` for plain
     text. This ensures correct syntax highlighting and improves readability.
 
-    For example, start a code block for JSON data with this markup:
+    For example, start a JSON code block with this markup:
 
     ```markdown
     ```json
     ```
 
-    Here's an example of a code block with a specified language and syntax
-    highlighting:
+    A code block with a specified language will be rendered with syntax
+    highlighting, appearing as follows:
 
     ```json
     {
@@ -495,7 +495,8 @@ recommendations when writing paragraph text and incorporating links.
     }
     ```
 
-    Here's an example of a code block without a specified language and no syntax highlighting:
+    A code block without a specified language will be rendered without syntax
+    highlighting, appearing as follows:
 
     ```text
     {
