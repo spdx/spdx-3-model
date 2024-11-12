@@ -47,8 +47,9 @@ following requirements must be observed:
 
 - actionStatement
   - type: xsd:string
-  - minCount: 0
+  - minCount: 1
   - maxCount: 1
 - actionStatementTime
   - type: /Core/DateTime
   - minCount: 0
+  - maxCount: 1
