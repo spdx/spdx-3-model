@@ -9,7 +9,7 @@ infrastructure that the build was invoked on.
 
 ## Description
 
-A buildType is a IRI expressing the toolchain, platform, or infrastructure that
+A buildType is an IRI expressing the toolchain, platform, or infrastructure that
 the build was invoked on.
 
 The buildType is used to interpret the meaning of other build parameters by
