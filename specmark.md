@@ -397,10 +397,12 @@ To ensure clear and consistent documentation generation, follow these
 recommendations when writing paragraph text and incorporating links.
 
 - **Avoid overly long paragraphs.**
+
     Breaking up text into smaller paragraphs, using bullet points, or creating numbered lists can significantly improve readability and comprehension by separating distinct concepts, processes, criteria, or categories.
     This makes the specification easier to scan and understand.
 
 - **Avoid bare URLs.**
+
     Always provide a descriptive label for each link. Avoid using bare URLs.
     This improves accessibility for screen readers and provides context for
     users.
@@ -418,6 +420,7 @@ recommendations when writing paragraph text and incorporating links.
     ```
 
 - **Bare URLs: Use with caution.**
+
     While descriptive link text is generally preferred for better readability
     and accessibility,
     there may be specific instances where bare URLs might be necessary.
@@ -453,6 +456,7 @@ recommendations when writing paragraph text and incorporating links.
     ```
 
 - **Standard format for RFC URLs.**
+
     When referencing RFCs (Request for Comments) or other relevant IETF
     documents, utilize the following format for the URL:
 
@@ -487,6 +491,7 @@ recommendations when writing paragraph text and incorporating links.
     ```
 
 - **Code Highlighting.**
+
     When using code blocks, specify the appropriate computer language code.
     For instance, use `json` for JSON, `yaml` for YAML, and `text` for plain
     text. This ensures correct syntax highlighting and improves readability.
@@ -527,19 +532,25 @@ translated.
 Other content, such as model metadata, cannot be translated.
 
 To add translations, include them directly at the end of the model file
-using the same heading name followed by a two- or three-character language tag
-e.g., `## Summary @ga` for a summary in Irish language and
-`## Entries @kok` for an entry list in Konkani language.
+using the same set of heading names followed by a language tag (e.g.,
+`## Summary @ga` for a summary in Irish,
+`## Description @kok` for a description in Konkani, or
+`## Entries @sr-Latn` for an entry list in Serbian written using
+the Latin script).
 
-These textual descriptions are encoded as RDF 1.1 literals,
-so the language tag must adhere to the well-formedness rules outlined in
-[IETF BCP 47](https://datatracker.ietf.org/doc/html/rfc5646).
+These textual descriptions are encoded as RDF 1.1 literals.
+Therefore, the language tag used to identify the language must follow the
+well-formedness rules defined in
+[IETF BCP 47 (RFC 5646)](https://datatracker.ietf.org/doc/rfc5646).
+Appendix A of that document provides examples of valid language tags.
 
 ### Localisation example
 
-Here's an example of an `AnnotationType` class,
-demonstrating how to add a translation for Japanese.
-Note that the "Metadata" heading remains untranslated:
+Here's an example of an `AnnotationType` class with translations for Japanese,
+Chinese (simplified script), and Chinese (traditional script).
+
+Note that the "Metadata" section and the names of entries within the "Entries"
+section remain untranslated:
 
 ```markdown
 SPDX-License-Identifier: Community-Spec-1.0
@@ -573,6 +584,31 @@ AnnotationType は、注釈の種類を指定します。
 ## Entries @ja
 
 - review: 誰かが Element をレビューし、注釈をつけたときに使われます。
+
+## Summary @zh-Hans
+
+指定注释的类型。
+
+## Description @zh-Hans
+
+AnnotationType指定注释的类型。
+
+## Entries @zh-Hans
+
+- review: 当其人评审元素时使用的注释。
+
+## Summary @zh-Hant
+
+指定註解的類型。
+
+## Description @zh-Hant
+
+AnnotationType指定註解的類型。
+
+## Entries @zh-Hant
+
+- review: 當其人審核元素時使用的註解。
+
 ```
 
 The above model Markdown file will generate the following RDF
@@ -582,5 +618,7 @@ The above model Markdown file will generate the following RDF
 <https://spdx.org/rdf/3.0.1/terms/Core/AnnotationType> a owl:Class;
     rdfs:comment "Specifies the type of an annotation."@en ;
     rdfs:comment "注釈の種類を指定します。"@ja ;
+    rdfs:comment "指定注释的类型。"@zh-Hans ;
+    rdfs:comment "指定註解的類型。"@zh-Hant ;
     .
 ```
