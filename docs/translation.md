@@ -35,7 +35,8 @@ Appendix A of that document provides examples of valid language tags.
 ### Model translation example
 
 Here's an example of an `AnnotationType` vocabulary with translations for
-Japanese, Chinese (simplified script), and Chinese (traditional script).
+Japanese, Chinese (simplified script), and Chinese (traditional script),
+sorted by language tag.
 
 Note that the "Metadata" section and the names of entries within the "Entries"
 section remain untranslated:
