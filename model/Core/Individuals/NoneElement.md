@@ -9,7 +9,7 @@ cardinality (number/count) of zero.
 
 ## Description
 
-NoneLicenseElement should be used if the SPDX creator desires to assert that
+NoneElement should be used if the SPDX creator desires to assert that
 there are NO elements for the given context of use.
 
 For example, a Relationship with
