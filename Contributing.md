@@ -10,7 +10,8 @@ and during our [regular meetings][meetings].
 
 All the details are in: <https://spdx.dev/participate/tech/>
 
-This repository consists of Markdown files describing the model classes,
+This repository consists of files written in
+[a specific Markdown format][format] describing the model classes,
 datatypes, properties, and vocabularies which will be used to automatically
 create documentation, ontologies, and validation artifacts.
 These are organized by profile.
@@ -54,6 +55,11 @@ updating individual profiles.
 
 This method of development was agreed upon by the SPDX Tech team on 2023-01-17.
 
+## Translation
+
+Translations of model descriptions are welcome.
+Please see [translation.md][translation] for details.
+
 ## Profile Maintainers
 
 In accordance with the development model described above,
@@ -76,6 +82,8 @@ Each profile in active development phase also has their own
 | Security | [Thomas Steenbergen][gh-thomas], [Adolfo García Veytia][gh-adolfo], and [Rose Judge][gh-rose] |
 | Software | [Alexios Zavras][gh-alexios] and [Gary O'Neall][gh-gary] |
 
+[format]: ./docs/format.md
+[translation]: ./docs/translation.md
 [spdx-tech-list]: https://lists.spdx.org/mailman/listinfo/spdx-tech
 [meetings]: https://github.com/spdx/meetings/
 [issues]: https://github.com/spdx/spdx-3-model/issues/
