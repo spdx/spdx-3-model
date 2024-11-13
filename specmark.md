@@ -44,7 +44,8 @@ data model, by the [spec-parser](https://github.com/spdx/spec-parser/).
 For instance, a summary listed under the "Summary" heading will be represented
 as a `rdfs:comment` in the RDF file. Likewise, a value specified for the
 "minCount" of a property name under the "Properties" heading will be
-translated into a `sh:minCount` in the RDF file. See [an example](#example).
+translated into a `sh:minCount` in the RDF file.
+See [an example](#model-file-example).
 
 Descriptions provided under the "Description" heading are intended for human
 reference and will not be incorporated into the RDF file.
@@ -414,13 +415,24 @@ recommendations when writing paragraph text and incorporating links.
 
     ```Markdown
     https://spdx.dev/
-  ```
+    ```
 
 - **Bare URLs: Use with caution.**
     While descriptive link text is generally preferred for better readability
-    and accessibility, there may be specific cases where bare URLs might be
-    necessary, such as for URLs intended to be clearly visible in both digital
-    and print formats.
+    and accessibility,
+    there may be specific instances where bare URLs might be necessary.
+    This could include cases where URLs need to be clearly visible in both
+    digital and print formats or when the URL serves as a metadata value.
+
+    The IRI field in the Metadata section MUST use a bare URL:
+
+    ```markdown
+    ## Metadata
+
+    - name: SpdxOrganization
+    - type: Organization
+    - IRI: https://spdx.org/
+    ```
 
     Be aware that MkDocs *will not* automatically convert bare URLs into
     clickable links.
