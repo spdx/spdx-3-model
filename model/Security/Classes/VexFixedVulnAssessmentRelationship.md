@@ -20,7 +20,7 @@ requirements must be observed:
 
 - Elements linked with a VulnVexFixedAssessmentRelationship are constrained to
   using the fixedIn relationship type.
-- The from: end of the relationship must ve a /Security/Vulnerability classed
+- The from: end of the relationship must be a /Security/Vulnerability classed
   element.
 
 *Example*
