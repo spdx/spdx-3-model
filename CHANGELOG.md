@@ -1,25 +1,30 @@
 # Change Log
 
-## 3.0.1 (2024-10-02)
+## 3.0.1 (2024-11-15)
 
 ### Changes since 3.0
 
 - **Removed:** `Software/contentType` property - [#789](https://github.com/spdx/spdx-3-model/pull/789)
   - The `Software/File` class is meant to use the `Core/contentType` property.
-- **Fixed:** Typo in `hasPrerequisite` entry - [#817](https://github.com/spdx/spdx-3-model/pull/817)
-  - Corrected the misspelling of `hasPrerequsite` to `hasPrerequisite` in
-    `Core/RelationshipType`.
-- **Fixed:** Licensing relationship type names - [#779](https://github.com/spdx/spdx-3-model/pull/779)
-  - Corrected `concludedLicense` to `hasConcludedLicense` and
-    `declaredLicense` to `hasDeclaredLicense` in the "Profile conformance"
-    section of AI, Dataset, Licensing, and Lite Profiles.
-- **Fixed:** Typo in `import` property - [#847](https://github.com/spdx/spdx-3-model/pull/847)
+- **Fixed:**
+  Cardinalities in `Security/VexAffectedVulnAssessmentRelationship` -
+  [#908](https://github.com/spdx/spdx-3-model/pull/908)
+  - Corrected `actionStatement` cardinality from `0..1` to `1..1` to match its textual description.
+  - Corrected `actionStatementTime` cardinality from `0..*` to `0..1` to match its textual description.
+- **Fixed:** Typo in `Core/import` property - [#847](https://github.com/spdx/spdx-3-model/pull/847)
   - Corrected `imports` to `import` in Core Profile.
 - **Fixed:** Typo in `Build/parameter` property - [#836](https://github.com/spdx/spdx-3-model/pull/836)
   - Corrected `parameters` to `parameter` in Build Profile.
 - **Fixed:** Typo in `hasInput` and `hasOutput` relationship type names - [#854](https://github.com/spdx/spdx-3-model/pull/854)
   - Corrected `hasInputs` to `hasInput` and `hasOutputs` to `hasOutput` in
     `Core/RelationshipType`.
+- **Fixed:** Typo in `hasPrerequisite` relationship type name - [#817](https://github.com/spdx/spdx-3-model/pull/817)
+  - Corrected the misspelling of `hasPrerequsite` to `hasPrerequisite` in
+    `Core/RelationshipType`.
+- **Fixed:** Licensing relationship type names in Profile conformance - [#779](https://github.com/spdx/spdx-3-model/pull/779)
+  - Corrected `concludedLicense` to `hasConcludedLicense` and
+    `declaredLicense` to `hasDeclaredLicense` in the "Profile conformance"
+    section of AI, Dataset, Licensing, and Lite Profiles.
 - **Added:** `adler32` entry to `Core/HashAlgorithm` - [#826](https://github.com/spdx/spdx-3-model/pull/826)
   - The Adler-32 checksum, previously available in SPDX 2.3, has been
     reintroduced.
