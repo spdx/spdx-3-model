@@ -6,8 +6,7 @@
 
 - **Removed:** `Software/contentType` property - [#789](https://github.com/spdx/spdx-3-model/pull/789)
   - The `Software/File` class is meant to use the `Core/contentType` property.
-- **Fixed:**
-  Cardinalities in `Security/VexAffectedVulnAssessmentRelationship` class -
+- **Fixed:** Cardinalities in `Security/VexAffectedVulnAssessmentRelationship` class -
   [#908](https://github.com/spdx/spdx-3-model/pull/908)
   - Corrected `actionStatement` cardinality from `0..1` to `1..1` to match its textual description.
   - Corrected `actionStatementTime` cardinality from `0..*` to `0..1` to match its textual description.
@@ -48,3 +47,8 @@
   - Used updated names and specified XSD datatypes - [#852](https://github.com/spdx/spdx-3-model/pull/852)
   - Removed all named individuals - [#884](https://github.com/spdx/spdx-3-model/pull/884)
 - Fixed general typos and formatting issues.
+
+## 3.0 (2024-04-15)
+
+For changes since the 3.0 release candidates, please visit:
+<https://github.com/spdx/spdx-3-model/releases>.
