@@ -17,9 +17,13 @@ standard.
 
 ## Branches and Formats
 
-The editable files inside `model/` directory are written in a constrained
-subset of Markdown, with specific headings for specific types of information,
+The editable files inside `model/` directory are written in a
+[constrained subset of Markdown][format],
+with specific headings for specific types of information,
 and are stored in the `main` branch.
+
+Textual description of these model files
+[can be translated][translation] into other natural languages.
 
 The editable files are automatically processed by
 [spec-parser](https://github.com/spdx/spec-parser/)
@@ -34,7 +38,7 @@ and the following are generated:
   - [Turtle format](https://en.wikipedia.org/wiki/Turtle_(syntax)):
     [spdx-model.ttl](https://spdx.org/rdf/3.0.1/spdx-model.ttl)
   - [JSON-LD format](https://json-ld.org/):
-    [spdx-model.jsonld](https://spdx.github.io/spdx-spec/v3.0.1/rdf/spdx-model.jsonld) 
+    [spdx-model.jsonld](https://spdx.github.io/spdx-spec/v3.0.1/rdf/spdx-model.jsonld)
 
 People who wish to read the current version of the information
 should be viewing the generated files, while anyone wanting to edit
@@ -47,7 +51,8 @@ For the specification content other than the model, they are in the
 
 The SPDX model is described using profiles related to the software application.
 The profiles are organized as sub-directories under the ‘model’ directory.
-The model diagram is available in [model.drawio](./model.drawio) file.
+
+The model diagram is available in [model.drawio][model-diagram] file.
 
 Note:
 
@@ -120,7 +125,11 @@ snippets, and artifacts of the software application.
 
 See [CHANGELOG.md](CHANGELOG.md) for changes between versions.
 
-## Contribute!
+## Glossary
+
+See [glossary][glossary] for definitions and explanations of terms used throughout the specification.
+
+## Contribute
 
 For information about how to contribute to a specific profile,
 please see [Contributing.md](Contributing.md).
@@ -133,5 +142,9 @@ and during our [regular meetings][meetings].
 
 All the details are in: <https://spdx.dev/participate/tech/>
 
+[format]: ./docs/format.md
+[translation]: ./docs/translation.md
+[model-diagram]: ./docs/model.drawio
+[glossary]: ./docs/glossary.md
 [meetings]: https://github.com/spdx/meetings/
 [spdx-tech-list]: https://lists.spdx.org/mailman/listinfo/spdx-tech
