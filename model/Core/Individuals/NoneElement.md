@@ -15,7 +15,7 @@ there are NO elements for the given context of use.
 For example, a Relationship with
 `relationshipType`="ancestorOf",
 `from`=Element1,
-and `to`=NoneElement
+and `to`=NoneElement,
 is explicitly expressing an assertion that
 Element1 has no descendants.
 
