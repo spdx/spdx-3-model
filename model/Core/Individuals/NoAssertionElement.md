@@ -21,7 +21,7 @@ For example, a Relationship with
 `relationshipType`="ancestorOf",
 `from`=Element1,
 and
-`to`=NoAssertionElement,
+`to`=NoAssertionElement
 is explicitly expressing that
 no assertion is being made about any potential descendants of Element1.
 
