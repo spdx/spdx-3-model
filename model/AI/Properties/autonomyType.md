@@ -12,10 +12,10 @@ involvement or guidance.
 Indicates if the system is fully automated or a human is involved in any of the
 decisions of the AI system.
 
+- yes: Indicates that the system is fully automated.
 - no: Indicates that a human is involved in any of the decisions of the AI
   system.
 - noAssertion: Makes no assertion about the autonomy.
-- yes: Indicates that the system is fully automated.
 
 ## Metadata
 
