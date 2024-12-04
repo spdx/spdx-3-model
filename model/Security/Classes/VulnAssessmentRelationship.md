@@ -20,7 +20,7 @@ assessment relationships. It factors out the common properties shared by them.
 ## Properties
 
 - assessedElement
-  - type: /Core/Element
+  - type: /Software/SoftwareArtifact
   - minCount: 0
   - maxCount: 1
 - publishedTime
