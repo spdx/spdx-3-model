@@ -28,7 +28,7 @@ no assertion is being made about any potential descendants of Element1.
 ## Metadata
 
 - name: NoAssertionElement
-- type: Element
+- type: IndividualElement
 
 ## Property Values
 

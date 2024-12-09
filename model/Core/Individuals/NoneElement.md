@@ -22,7 +22,7 @@ Element1 has no descendants.
 ## Metadata
 
 - name: NoneElement
-- type: Element
+- type: IndividualElement
 
 ## Property Values
 
