@@ -10,7 +10,7 @@ Core profile.
 ## Description
 
 Individuals, such as NoneElement and NoAssertionElement, need to reference a
-concrete subclass of ELement.
+concrete subclass of Element.
 
 This class provides the type used by the individuals.
 
