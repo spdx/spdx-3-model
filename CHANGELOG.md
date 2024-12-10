@@ -1,6 +1,6 @@
 # Change Log
 
-## 3.0.1 (2024-11-15)
+## 3.0.1 (2024-12-10)
 
 ### Changes since 3.0
 
@@ -24,12 +24,18 @@
   - Corrected `concludedLicense` to `hasConcludedLicense` and
     `declaredLicense` to `hasDeclaredLicense` in the "Profile conformance"
     section of AI, Dataset, Licensing, and Lite Profiles.
+- **Fixed:** `Security/actionStatement` property - [#908](https://github.com/spdx/spdx-3-model/pull/908)
+  - Corrected its cardinality from `0..1` to `1..1`.
+- **Fixed:** `Security/actionStatementTime` property - [#908](https://github.com/spdx/spdx-3-model/pull/908)
+  - Corrected its cardinality from `0..*` to `0..1`.
 - **Added:** `adler32` entry to `Core/HashAlgorithm` - [#826](https://github.com/spdx/spdx-3-model/pull/826)
   - Reintroduced the Adler-32 checksum, previously available in SPDX 2.3.
 - **Added:** `Core/SpdxOrganization` individual - [#880](https://github.com/spdx/spdx-3-model/pull/880)
   - An `SpdxOrganization` individual, a `Organization` representing the SPDX
     Project, is added. It is by definition the creator of all Element type individuals
     defined by the SPDX Project.
+- **Added:** `Core/IndividualElement` class - [#937](https://github.com/spdx/spdx-3-model/pull/937)
+  - A concrete subclass of Element used by Individuals in the Core profile.
 - **Clarified:** `AI/autonomyType` property - [#741](https://github.com/spdx/spdx-3-model/pull/741)
   - Specified the meaning of `yes`, `no`, and `noAssertion` values in the
     `AI/autonomyType` property description.
@@ -38,6 +44,8 @@
     other build parameters by defining the 'type' of build...".
 - **Clarified:** `hasDataFile` entry in `Core/RelationshipType` - [#815](https://github.com/spdx/spdx-3-model/pull/815)
   - Its description is enhanced with examples and counter-examples.
+- **Clarified:** `Core/packageVerificationCodeExcludedFile` property - [#913](https://github.com/spdx/spdx-3-model/pull/913)
+  - Its description is now stating that every filename is preceded with a `./`.
 - **Improved:** JSON-LD examples.
   - All JSON-LD examples in the "Syntax" section of class descriptions are now
     validated - [#794](https://github.com/spdx/spdx-3-model/pull/794)
@@ -46,6 +54,8 @@
 - **Updated:** Model diagrams.
   - Used updated names and specified XSD datatypes - [#852](https://github.com/spdx/spdx-3-model/pull/852)
   - Removed all named individuals - [#884](https://github.com/spdx/spdx-3-model/pull/884)
+  - Adjusted layout to also fit printed format and removed all vocabulary
+    entries - [#935](https://github.com/spdx/spdx-3-model/pull/935)
 - Fixed general typos and formatting issues.
 
 ## 3.0 (2024-04-15)
