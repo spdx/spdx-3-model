@@ -55,7 +55,7 @@ class. In addition, there must be at least three instances `Relationship`s with
 type `LifecycleScopedRelationship`, where the "scope" property must be "build"
 and the "from" property must be the Build instance.
 
-At the minimum, the build profile must contain a `hasInput`, `hasOutput`, and
+At the minimum, the Build profile must contain a `hasInput`, `hasOutput`, and
 `invokedBy` relationshipType. If an input is known to be a build configuration
 or a build tool, the `hasInput` relationshipType can be replaced by a
 `configures` or `usesTool` relationshipType.

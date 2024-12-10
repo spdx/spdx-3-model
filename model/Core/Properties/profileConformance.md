@@ -21,9 +21,9 @@ in the profile specific documentation and schema files.
 Use of this property allows the creator of an ElementCollection to communicate
 to consumers their intent to adhere to the profile additional restrictions.
 
-The profileConformance has a default value of core if no other
+The profileConformance has a default value of "core" if no other
 profileConformance is specified since all ElementCollections and Element must
-adhere to the core profile.
+adhere to the Core profile.
 
 ## Metadata
 
