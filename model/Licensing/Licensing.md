@@ -12,10 +12,10 @@ facilitate compliance with typical license use cases.
 The Licensing profile only contains the additional requirement that any
 Software Artifact must have a `Relationship` of type `hasConcludedLicense`.
 
-Classes and Property restrictions are defined in the `SimpleLicensingProfile`
+Classes and Property restrictions are defined in the SimpleLicensing Profile
 (Classes and Properties associated with
 [license expression strings](../../annexes/spdx-license-expressions.md))
-and in the `ExpandedLicensingProfile` (Classes and Properties used for a
+and in the ExpandedLicensing Profile (Classes and Properties used for a
 fully parsed syntax tree of license expressions).
 
 There are 2 relationship types related to licensing - `hasDeclaredLicense` and
