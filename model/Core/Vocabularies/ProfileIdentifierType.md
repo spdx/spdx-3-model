@@ -11,7 +11,7 @@ Enumeration of the valid profiles.
 There are a set of profiles that have been defined by a profile team.
 
 A profile consists of a namespace that may add properties and classes to the
-core profile unique to the domain covered by the profile.
+Core profile unique to the domain covered by the profile.
 
 The profile may also contain additional restrictions on existing properties and
 classes defined in other profiles.
@@ -28,8 +28,8 @@ to all restrictions defined for that profile.
 
 - core: the element follows the Core profile specification
 - software: the element follows the Software profile specification
-- simpleLicensing: the element follows the simple Licensing profile specification
-- expandedLicensing: the element follows the expanded Licensing profile specification
+- simpleLicensing: the element follows the SimpleLicensing profile specification
+- expandedLicensing: the element follows the ExpandedLicensing profile specification
 - security: the element follows the Security profile specification
 - build: the element follows the Build profile specification
 - ai: the element follows the AI profile specification
