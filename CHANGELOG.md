@@ -56,6 +56,8 @@
   - Removed all named individuals - [#884](https://github.com/spdx/spdx-3-model/pull/884)
   - Adjusted layout to also fit printed format and removed all vocabulary
     entries - [#935](https://github.com/spdx/spdx-3-model/pull/935)
+  - Add `Core/IndividualElement` class
+    to the Core diagram - [#941](https://github.com/spdx/spdx-3-model/pull/941)
 - Fixed general typos and formatting issues.
 
 ## 3.0 (2024-04-15)
