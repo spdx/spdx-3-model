@@ -22,3 +22,15 @@ The specific format is one of the most commonly used ISO-8601 formats.
 ## Format
 
 - pattern: ^\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ$
+
+## Summary @ja
+
+特定の日付と時刻を表す文字列。  
+
+## Description @ja
+
+DateTime は、特定の日付と時刻を表す文字列です。  
+
+秒単位の解像度を持ち、常にUTCタイムゾーンで表されます。  
+
+最も一般的に使用されている形式の1つである、ISO-8601 フォーマットで記述します。  
