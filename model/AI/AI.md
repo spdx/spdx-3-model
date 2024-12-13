@@ -25,8 +25,7 @@ the following has to hold:
 
 1. for every `/AI/AIPackage` there MUST exist exactly one `/Core/Relationship`
    of type `hasConcludedLicense` having that element as its `from` property
-   and an `/SimpleLicensing/AnyLicenseInfo` as its `to` property.
+   and a `/SimpleLicensing/AnyLicenseInfo` as its `to` property.
 2. for every `/AI/AIPackage` there MUST exist exactly one `/Core/Relationship`
    of type `hasDeclaredLicense` having that element as its `from` property
-   and an `/SimpleLicensing/AnyLicenseInfo` as its `to` property.
-
+   and a `/SimpleLicensing/AnyLicenseInfo` as its `to` property.

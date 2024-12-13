@@ -8,7 +8,7 @@ The name of a relevant standard that may apply to an artifact.
 
 ## Description
 
-Various standards may be relevant to useful to capture for specific artifacts.
+Various standards may be relevant or useful to capture for specific artifacts.
 
 ## Metadata
 

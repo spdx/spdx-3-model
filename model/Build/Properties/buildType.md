@@ -9,7 +9,7 @@ infrastructure that the build was invoked on.
 
 ## Description
 
-A buildType is a IRI expressing the toolchain, platform, or infrastructure that
+A buildType is an IRI expressing the toolchain, platform, or infrastructure that
 the build was invoked on.
 
 The buildType is used to interpret the meaning of other build parameters by
@@ -18,7 +18,7 @@ elements, it means they are the same kind of build, but difference instances
 and possible with different configurations.
 
 If you are not using a well-known buildType, it should be namespaced to a
-domain you own to prevent conflicts with other builtType IRIs.
+domain you own to prevent conflicts with other buildType IRIs.
 
 Examples of a buildType might be:
 

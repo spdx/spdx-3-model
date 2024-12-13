@@ -9,7 +9,7 @@ about the origin of the package.
 
 ## Description
 
-SourceInfo records any relevant background information or additional comments
+A sourceInfo records any relevant background information or additional comments
 about the origin of the package.
 
 For example, this field might include comments indicating whether the package

@@ -9,7 +9,7 @@ asserted.
 
 ## Description
 
-VerifiedUsing provides an IntegrityMethod with which the integrity of an
+A verifiedUsing provides an IntegrityMethod with which the integrity of an
 Element can be asserted.
 
 Please note that different profiles may also provide additional methods for

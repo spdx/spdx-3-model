@@ -12,10 +12,10 @@ facilitate compliance with typical license use cases.
 The Licensing profile only contains the additional requirement that any
 Software Artifact must have a `Relationship` of type `hasConcludedLicense`.
 
-Classes and Property restrictions are defined in the `SimpleLicensingProfile`
+Classes and Property restrictions are defined in the SimpleLicensing Profile
 (Classes and Properties associated with
 [license expression strings](../../annexes/spdx-license-expressions.md))
-and in the `ExpandedLicensingProfile` (Classes and Properties used for a
+and in the ExpandedLicensing Profile (Classes and Properties used for a
 fully parsed syntax tree of license expressions).
 
 There are 2 relationship types related to licensing - `hasDeclaredLicense` and
@@ -40,25 +40,25 @@ included, as needed, in the hasConcludedLicense field.
 A hasDeclaredLicense may be expressed differently in practice for different
 types of Software Artifacts. For example:
 
-- for Packages:
-  - would include license info for the Package as a
-    whole, found in the Package itself (e.g., LICENSE file,
-    README file, metadata in the Package, etc.)
-  - would not include any license information that is not in the Package
-    itself (e.g., license information from the project's website or from a
-      third party repository or website)
-- for Files:
-  - would include license info found in the File itself (e.g., license
-    header or notice, comments indicating the license, SPDX-License-Identifier
-    expression)
-  - would not include license info found in a different file (e.g., LICENSE
-    file in the top directory of a repository)
-- for Snippets:
-  - would include license info found in the Snippet itself (e.g., license
-    notice, comments, SPDX-License-Identifier expression)
-  - would not include license info found elsewhere in the File or in a
-    different File (e.g., comment at top of File if it is not within the
-    Snippet, LICENSE file in the top directory of a repository)
+- for Packages,
+  it would include license info for the Package as a
+  whole, found in the Package itself (e.g., LICENSE file,
+  README file, metadata in the Package, etc.),
+  but it would not include any license information that is not in the Package
+  itself (e.g., license information from the project's website or from a
+  third party repository or website).
+- for Files,
+  it would include license info found in the File itself (e.g., license
+  header or notice, comments indicating the license, SPDX-License-Identifier
+  expression),
+  but it would not include license info found in a different file
+  (e.g., LICENSE file in the top directory of a repository).
+- for Snippets,
+  it would include license info found in the Snippet itself (e.g., license
+  notice, comments, SPDX-License-Identifier expression),
+  but it would not include license info found elsewhere in the File or in a
+  different File (e.g., comment at top of File if it is not within the
+  Snippet, LICENSE file in the top directory of a repository).
 
 A hasDeclaredLicense relationship to NoneLicense indicates that the
 corresponding Package, File or Snippet contains no license information
@@ -119,5 +119,5 @@ the following has to hold:
 
 1. for every `/Software/SoftwareArtifact` there MUST exist exactly one
    `/Core/Relationship` of type `hasConcludedLicense` having that element as
-   its `from` property and an `/SimpleLicensing/AnyLicenseInfo` as its `to`
+   its `from` property and a `/SimpleLicensing/AnyLicenseInfo` as its `to`
    property.

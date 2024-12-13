@@ -8,7 +8,7 @@ Identifies from where or whom the Element originally came.
 
 ## Description
 
-OriginatedBy identifies from where or whom the Element originally came.
+An originatedBy identifies from where or whom the Element originally came.
 
 ## Metadata
 

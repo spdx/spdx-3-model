@@ -9,7 +9,7 @@ cardinality (number/count) of zero.
 
 ## Description
 
-NoneLicenseElement should be used if the SPDX creator desires to assert that
+NoneElement should be used if the SPDX creator desires to assert that
 there are NO elements for the given context of use.
 
 For example, a Relationship with
@@ -17,12 +17,12 @@ For example, a Relationship with
 `from`=Element1,
 and `to`=NoneElement
 is explicitly expressing an assertion that
-Element1 has no descendents.
+Element1 has no descendants.
 
 ## Metadata
 
 - name: NoneElement
-- type: Element
+- type: IndividualElement
 - IRI: https://spdx.org/rdf/3.0.1/terms/Core/None
 
 ## Property Values

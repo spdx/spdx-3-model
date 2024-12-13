@@ -31,9 +31,9 @@ In addition, the following Relationship Types may be used to describe a Build.
   or host.
 - configures: Describes the relationship from a configuration to the Build
   element.
-- ancestorOf: Describes a relationship from a Build element to Build eelements
+- ancestorOf: Describes a relationship from a Build element to Build elements
   that describe its child builds.
-- decendentOf: Describes a relationship from a child Build element to its
+- descendantOf: Describes a relationship from a child Build element to its
   parent.
 - usesTool: Describes a relationship from a Build element to a build tool.
 
@@ -55,7 +55,7 @@ class. In addition, there must be at least three instances `Relationship`s with
 type `LifecycleScopedRelationship`, where the "scope" property must be "build"
 and the "from" property must be the Build instance.
 
-At the minimum, the build profile must contain a `hasInput`, `hasOutput`, and
+At the minimum, the Build profile must contain a `hasInput`, `hasOutput`, and
 `invokedBy` relationshipType. If an input is known to be a build configuration
 or a build tool, the `hasInput` relationshipType can be replaced by a
 `configures` or `usesTool` relationshipType.
