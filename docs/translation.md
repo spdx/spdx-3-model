@@ -28,6 +28,8 @@ Therefore, the language tag used to identify the language must follow the
 well-formedness rules defined in [IETF BCP 47 (RFC 5646)][rfc5646].
 Appendix A of that document provides examples of valid language tags.
 
+English remains the normative language in all cases.
+
 [headings]: ./format.md#syntax
 [language-tagged-string]: https://www.w3.org/TR/rdf11-concepts/#dfn-language-tagged-string
 [rfc5646]: https://datatracker.ietf.org/doc/rfc5646
