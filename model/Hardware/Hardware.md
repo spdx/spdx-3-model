@@ -8,7 +8,7 @@ The Hardware Profile provides additional metadata, that is useful for hardware.
 
 ## Description
 
-The Hardware namespace defines concepts related to hardware, including VuHardware
+The Hardware namespace defines concepts related to hardware, including virtual hardware
 preparation process, its characteristics, and its access methods.
 
 ## Metadata
