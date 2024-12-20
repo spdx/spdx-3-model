@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# yAxis
+# yAxisLength
 
 ## Summary
 
@@ -12,6 +12,6 @@ Information related to yAxis measurement of an object.
 
 ## Metadata
 
-- name: yAxis
+- name: yAxisLength
 - Nature: DataProperty
 - Range: xsd:string
