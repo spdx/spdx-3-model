@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# zAxis
+# zAxisLength
 
 ## Summary
 
@@ -12,6 +12,6 @@ Information related to zAxis measurement of an object.
 
 ## Metadata
 
-- name: zAxis
+- name: zAxisLength
 - Nature: DataProperty
 - Range: xsd:string
