@@ -17,15 +17,15 @@ This class records the unit dimensions.
 
 ## Properties
 
-- xAxis
+- xAxisLength
   - type: xsd:string
   - minCount: 1
   - maxCount: 1
-- yAxis
+- yAxisLength
   - type: xsd:string
   - minCount: 1
   - maxCount: 1
-- zAxis
+- zAxisLength
   - type: xsd:string
   - minCount: 1
   - maxCount: 1
