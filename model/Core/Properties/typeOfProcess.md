@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# type
+# typeOfProcess
 
 ## Summary
 
@@ -12,6 +12,6 @@ Processes vary by implementation. The process type defines the specific category
 
 ## Metadata
 
-- name: type
+- name: typeOfProcess
 - Nature: DataProperty
 - Range: ProcessType
