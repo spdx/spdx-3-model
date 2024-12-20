@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# xAxis
+# xAxisLength
 
 ## Summary
 
@@ -12,6 +12,6 @@ Information related to xAxis measurement of an object.
 
 ## Metadata
 
-- name: xAxis
+- name: xAxisLength
 - Nature: DataProperty
 - Range: xsd:string
