@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Additional information used of relevance.
+Additional relevance information.
 
 ## Description
 
-An information element is additional product relevant to the product and related issues.
+This elemtent provides relevant information to the product.
 
 ## Metadata
 
