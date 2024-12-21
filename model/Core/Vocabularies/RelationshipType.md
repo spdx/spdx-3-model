@@ -72,6 +72,7 @@ name completes the sentence:
 - hasTestCase: Every `to` Element is a test case for the `from` Element (`from` hasTestCase `to`).
 - hasVariant: Every `to` Element is a variant the `from` Element (`from` hasVariant `to`).
 - invokedBy: The `from` Element was invoked by the `to` Agent, during a LifecycleScopeType period (for example, a Build element that describes a build step).
+- instantiation: The `to` element is instantiated by the `From` Process element 
 - modifiedBy: The `from` Element is modified by each `to` Element.
 - other: Every `to` Element is related to the `from` Element where the relationship type is not described by any of the SPDX relationship types (this relationship is directionless).
 - packagedBy: Every `to` Element is a packaged instance of the `from` Element (`from` packagedBy `to`).
@@ -79,6 +80,7 @@ name completes the sentence:
 - publishedBy: Designates a `from` Vulnerability was made available for public use or reference by each `to` Agent.
 - reportedBy: Designates a `from` Vulnerability was first reported to a project, vendor, or tracking database for formal identification by each `to` Agent.
 - republishedBy: Designates a `from` Vulnerability's details were tracked, aggregated, and/or enriched to improve context (i.e. NVD) by each `to` Agent.
+- runsOn: The `from` Element (the instructions) of runs on each `to` Hardware (processing element), during a LifecycleScopeType period.
 - serializedInArtifact: The `from` SpdxDocument can be found in a serialized form in each `to` Artifact.
 - testedOn: The `from` Element has been tested on the `to` Element(s).
 - trainedOn: The `from` Element has been trained on the `to` Element(s).
