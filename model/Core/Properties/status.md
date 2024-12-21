@@ -8,7 +8,7 @@ Status describes the state of a process status.
 
 ## Description
 
-Draft, active, obsolete or other are used to define the state or status of a process.
+Draft, active, obsolete or other are used to define the state or status of a proceedure.
 
 ## Metadata
 
