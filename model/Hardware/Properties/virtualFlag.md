@@ -8,7 +8,8 @@ Establishes the presence of virtual hardware.
 
 ## Description
 
-Identifies the fact that emulation processes are used for operations to create a virtual entity. virtualFlag = true, identifies virtual hardware.  
+Identifies the fact that emulation processes are used for operations to create a virtual entity. 
+virtualFlag = true, identifies virtual hardware.  
 virtualFlag = false, identifies a hardware unit that exits the world.
 
 ## Metadata
