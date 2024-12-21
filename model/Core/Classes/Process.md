@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Class that describes a instance of process.
+Class that describes a process.
 
 ## Description
 
