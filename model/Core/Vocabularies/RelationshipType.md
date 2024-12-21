@@ -80,7 +80,7 @@ name completes the sentence:
 - publishedBy: Designates a `from` Vulnerability was made available for public use or reference by each `to` Agent.
 - reportedBy: Designates a `from` Vulnerability was first reported to a project, vendor, or tracking database for formal identification by each `to` Agent.
 - republishedBy: Designates a `from` Vulnerability's details were tracked, aggregated, and/or enriched to improve context (i.e. NVD) by each `to` Agent.
-- runsOn: The `from` Element (the instructions) of runs on on each `to` Hardware (processing element), during a LifecycleScopeType period.
+- runsOn: The `from` Element (the instructions) of runs on each `to` Hardware (processing element), during a LifecycleScopeType period.
 - serializedInArtifact: The `from` SpdxDocument can be found in a serialized form in each `to` Artifact.
 - testedOn: The `from` Element has been tested on the `to` Element(s).
 - trainedOn: The `from` Element has been trained on the `to` Element(s).
