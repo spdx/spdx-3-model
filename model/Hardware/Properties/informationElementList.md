@@ -14,4 +14,4 @@ This elemtent provides relevant information to the product.
 
 - name: informationElementList
 - Nature: ObjectProperty
-- Range::/Core/DictionaryEntry
+- Range: /Core/DictionaryEntry
