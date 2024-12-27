@@ -27,3 +27,21 @@ compliance.
 - high: The second-highest level of risk posed by an AI system.
 - medium: The third-highest level of risk posed by an AI system.
 - low: Low/no risk is posed by an AI system.
+
+## Summary @zh-Hans
+
+指定安全风险级别。
+
+## Description @zh-Hans
+
+列出可用于描述AI系统的一般安全风险的不同级别。
+
+使用[欧盟一般风险评估方法](https://ec.europa.eu/docsroom/documents/17107)进行分类。
+该方法落实了第765/2008号条例（EC）第20条，旨在帮助当局评估产品的一般安全合规性。
+
+## Entries @zh-Hans
+
+- serious: AI系统可能导致的最高级别风险。
+- high: AI系统可能导致的次高级别风险。
+- medium: AI系统可能导致的第三高风险。
+- low: AI系统可能导致的低风险/没有风险。

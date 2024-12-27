@@ -17,3 +17,13 @@ This value is typically recorded by the builder.
 - name: buildEndTime
 - Nature: DataProperty
 - Range: /Core/DateTime
+
+## Summary @zh-Hans
+
+此属性描述构建结束时间。
+
+## Description @zh-Hans
+
+`buildEndTime` 描述构建结束或完成的时间。
+
+这个值通常由构建者记录。

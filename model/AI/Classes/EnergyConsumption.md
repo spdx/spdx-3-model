@@ -47,3 +47,11 @@ during its training, fine-tuning, and inference stages.
   - type: EnergyConsumptionDescription
 - trainingEnergyConsumption
   - type: EnergyConsumptionDescription
+
+## Summary @zh-Hans
+
+用于描述AI模型在其生命周期的不同阶段能耗的类。
+
+## Description @zh-Hans
+
+该类用于表示AI模型在训练、微调和推理阶段已知或估算的能耗。

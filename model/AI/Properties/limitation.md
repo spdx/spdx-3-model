@@ -21,3 +21,15 @@ datasets from a certain demography.
 - name: limitation
 - Nature: DataProperty
 - Range: xsd:string
+
+## Summary @zh-Hans
+
+描述AI软件的限制。
+
+## Description @zh-Hans
+
+记录AI软件包（或AI软件包中的AI模型）的限制的自由格式文本。
+
+对限制的描述不一定是完整的。
+
+限制的例子：某AI软件包不能用于某些人口统计学数据集。

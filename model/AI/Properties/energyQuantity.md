@@ -15,3 +15,11 @@ Provides the quantity information of the energy.
 - name: energyQuantity
 - Nature: DataProperty
 - Range: xsd:decimal
+
+## Summary @zh-Hans
+
+表示能量的数量。
+
+## Description @zh-Hans
+
+提供能量的数量信息。

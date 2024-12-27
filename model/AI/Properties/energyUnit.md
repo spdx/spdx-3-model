@@ -15,3 +15,11 @@ Provides the unit information of the energy.
 - name: energyUnit
 - Nature: ObjectProperty
 - Range: EnergyUnitType
+
+## Summary @zh-Hans
+
+指定能量的计量单位。
+
+## Description @zh-Hans
+
+提供能量的单位信息。

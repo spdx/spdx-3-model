@@ -83,3 +83,12 @@ Metadata information that can be added to a package to describe an AI applicatio
   - minCount: 1
 - /Software/SoftwareArtifact/primaryPurpose
   - minCount: 1
+
+## Summary @zh-Hans
+
+指定一个AI软件包及其相关信息。
+
+## Description @zh-Hans
+
+可添加到软件包中的元数据信息，用于描述AI应用或经过训练的AI模型。
+

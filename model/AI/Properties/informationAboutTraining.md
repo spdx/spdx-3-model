@@ -29,3 +29,18 @@ Examples include:
 - name: informationAboutTraining
 - Nature: DataProperty
 - Range: xsd:string
+
+## Summary @zh-Hans
+
+描述有关训练过程不同步骤的相关信息。
+
+## Description @zh-Hans
+
+详细说明训练过程，包括采用的具体技术、算法和方法。
+
+示例包括：
+
+- 用于训练AI模型的训练数据，以及其来源、质量和预处理步骤的相关详细信息；
+- 使用的具体训练算法，包括随机梯度下降、反向传播和强化学习；
+- 用于提高AI模型性能或准确性的特定训练技术，如迁移学习、微调或主动学习；以及
+- 在训练过程中用于评估AI模型性能的任何评估指标，包括准确度、精确度、召回率和F1分数。

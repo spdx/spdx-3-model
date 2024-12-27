@@ -19,3 +19,13 @@ This Property uses the Core model's [Hash](../../Core/Classes/Hash.md) class.
 - name: configSourceDigest
 - Nature: ObjectProperty
 - Range: /Core/Hash
+
+## Summary @zh-Hans
+
+此属性用于描述调用构建时所使用的构建配置文件的摘要。
+
+## Description @zh-Hans
+
+`configSourceDigest` 是构建者根据 `buildType` 执行构建时使用的构建配置文件的校验和。
+
+这个属性使用了 `Core` 模型的 [`Hash`](../../Core/Classes/Hash.md) 类。

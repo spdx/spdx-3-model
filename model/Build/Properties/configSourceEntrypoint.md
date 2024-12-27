@@ -41,3 +41,33 @@ jobs:
 - name: configSourceEntrypoint
 - Nature: DataProperty
 - Range: xsd:string
+
+## Summary @zh-Hans
+
+此属性描述构建调用入口点。
+
+## Description @zh-Hans
+
+构建入口点是根据 `buildType` 触发构建时始终运行的构建可执行文件。
+
+例如，当通过运行 shell 脚本触发构建时，入口点是 `script.sh`。
+
+对于声明的构建，入口点是在配置文件或构建声明中的位置，该位置在触发构建时始终运行。
+
+例如，在下面的配置文件中，构建的入口点是 `publish`。
+
+```yaml
+name: Publish packages to PyPI
+
+on:
+  create:
+    tags: "*"
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/')
+    steps:
+
+...
+```

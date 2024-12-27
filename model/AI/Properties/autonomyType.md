@@ -22,3 +22,15 @@ decisions of the AI system.
 - name: autonomyType
 - Nature: ObjectProperty
 - Range: /Core/PresenceType
+
+## Summary @zh-Hans
+
+表示系统是否可以在没有人工参与或指导的情况下执行决策或行动。
+
+## Description @zh-Hans
+
+表示系统是否完全自动化，或在AI系统的任何决策中是否有人工参与。
+
+- yes: 表示系统完全自动化。
+- no: 表示在AI系统的任何决策中有人工参与。
+- noAssertion: 不对自主性作出任何断言。

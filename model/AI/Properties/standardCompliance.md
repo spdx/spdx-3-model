@@ -21,3 +21,15 @@ regulatory requirement.
 - name: standardCompliance
 - Nature: DataProperty
 - Range: xsd:string
+
+## Summary @zh-Hans
+
+记录所遵循的标准。
+
+## Description @zh-Hans
+
+记录AI软件遵循的标准的自由格式文本。
+
+这包括已发布和未发布的标准，例如由ISO、IEEE和ETSI制定的标准。
+
+该标准可能（但不一定必须）满足法律或监管要求。

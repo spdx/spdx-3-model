@@ -18,3 +18,13 @@ learning model or a combination of those.
 - name: typeOfModel
 - Nature: DataProperty
 - Range: xsd:string
+
+## Summary @zh-Hans
+
+记录AI软件中使用的模型类型。
+
+## Description @zh-Hans
+
+记录软件中使用的AI模型类型的自由格式文本。
+
+例如监督模型、无监督模型、强化学习模型或这些类型的组合。

@@ -17,3 +17,13 @@ The builder typically records this value.
 - name: buildStartTime
 - Nature: DataProperty
 - Range: /Core/DateTime
+
+## Summary @zh-Hans
+
+此属性描述构建开始时间。
+
+## Description @zh-Hans
+
+`buildStartTime` 是触发构建的时间。
+
+这个值通常由构建者记录。
