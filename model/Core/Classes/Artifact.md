@@ -44,3 +44,11 @@ such as an electronic file, a software package, a device or an element of data.
 - supportLevel
   - type: SupportType
   - minCount: 0
+
+## Summary @zh-Hans
+
+数字领域内的特定文章或单位。
+
+## Description @zh-Hans
+
+`Artifact`是数字领域中的特定文章或单位，如电子文件、软件包、设备或数据元素。

@@ -25,3 +25,14 @@ Please note that different profiles may also provide additional methods for veri
 - comment
   - type: xsd:string
   - maxCount: 1
+
+## Summary @zh-Hans
+
+提供一个独立可复现的机制，允许验证特定的`Element`。
+
+## Description @zh-Hans
+
+`IntegrityMethod`提供一个独立可复现的机制，允许验证与此SPDX文档中数据相关的特定`Element`。这一标识符使接收方能够确定原始`Element`是否有任何更改，并消除对特定`Element`的哪个版本或修改项被引用的困惑。
+
+请注意，其他配置文件可能还会提供额外的方法用于验证特定`Element`子类的完整性。
+

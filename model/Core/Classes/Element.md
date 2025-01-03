@@ -54,3 +54,12 @@ and inter-relatable content objects.
 - extension
   - type: /Extension/Extension
   - minCount: 0
+
+## Summary @zh-Hans
+
+派生所有其他SPDX 3.0域类的基础域类。
+
+## Description @zh-Hans
+
+`Element`是一个基本概念的表示，它可以直接与物料清单（BOM）域相关，也可以与BOM域间接相关，是在上下文中表征BOM概念和关系所必需的。
+在SPDX 3.0结构中，`Element`是作为所有显式和相互关联的内容对象的一致、统一和互操作基础的基类。

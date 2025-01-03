@@ -15,3 +15,11 @@ A statement is a commentary on an assertion that an annotator has made.
 - name: statement
 - Nature: DataProperty
 - Range: xsd:string
+
+## Summary @zh-Hans
+
+对注释者所作断言的评论。
+
+## Description @zh-Hans
+
+`statement`是对注释者所作断言的评论。

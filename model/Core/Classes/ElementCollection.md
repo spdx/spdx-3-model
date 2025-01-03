@@ -40,3 +40,21 @@ the default.
   - minCount: 0
 - profileConformance
   - type: ProfileIdentifierType
+
+## Summary @zh-Hans
+
+`Element`的集合，不一定具有统一的上下文。
+
+## Description @zh-Hans
+
+`ElementCollection`是`Element`的集合，不一定具有统一的上下文。
+
+需要注意的是，所有`ElementCollection`都必须符合`Core`配置，即使在`profileConformance`属性中未指定`core`配置。
+
+如果未提供`profileConformance`属性，则`core`将作为默认值。
+
+*约束条件*
+
+- 如果`ElementCollection`至少有一个元素，那么它还必须至少有一个`rootElement`。
+- `Element`不能是`SpdxDocument`类型。
+- `rootElement`不能是`SpdxDocument`类型。

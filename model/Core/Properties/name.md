@@ -18,3 +18,13 @@ the URI.
 - name: name
 - Nature: DataProperty
 - Range: xsd:string
+
+## Summary @zh-Hans
+
+标识由创建者指定的`Element`的名称。
+
+## Description @zh-Hans
+
+此字段标识由创建者指定的`Element`的名称。
+
+`Element`的名称是一种重要的约定，比URI更易于引用。

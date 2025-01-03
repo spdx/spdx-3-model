@@ -15,3 +15,11 @@ CreationInfo provides information about the creation of the Element.
 - name: creationInfo
 - Nature: ObjectProperty
 - Range: CreationInfo
+
+## Summary @zh-Hans
+
+提供有关`Element`创建的信息。
+
+## Description @zh-Hans
+
+`creationInfo`提供有关`Element`创建的信息。

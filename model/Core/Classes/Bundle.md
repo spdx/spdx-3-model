@@ -21,3 +21,11 @@ A bundle is a collection of Elements that have a shared context.
 - context
   - type: xsd:string
   - maxCount: 1
+
+## Summary @zh-Hans
+
+一组共享上下文的`Element`集合。
+
+## Description @zh-Hans
+
+`Bundle`是共享上下文的一组`Element`。

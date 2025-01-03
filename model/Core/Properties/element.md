@@ -16,3 +16,11 @@ ElementCollection.
 - name: element
 - Nature: ObjectProperty
 - Range: Element
+
+## Summary @zh-Hans
+
+指属于`ElementCollection`的一个或多个`Element`。
+
+## Description @zh-Hans
+
+此字段指属于`ElementCollection`的一个或多个`Element`。

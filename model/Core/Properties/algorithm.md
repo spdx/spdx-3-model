@@ -16,3 +16,11 @@ value.
 - name: algorithm
 - Nature: ObjectProperty
 - Range: HashAlgorithm
+
+## Summary @zh-Hans
+
+指定计算哈希值的算法。
+
+## Description @zh-Hans
+
+`algorithm`指定计算哈希值的算法。

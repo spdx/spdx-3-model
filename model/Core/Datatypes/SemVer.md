@@ -19,3 +19,11 @@ A semantic version is a string that is following the specification of
 ## Format
 
 - pattern: ^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$
+
+## Summary @zh-Hans
+
+符合语义化版本2.0.0规范的字符串。
+
+## Description @zh-Hans
+
+`SemVer`是遵循[语义化版本2.0.0](https://semver.org/)规范的字符串。

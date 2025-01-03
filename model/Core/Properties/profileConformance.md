@@ -30,3 +30,19 @@ adhere to the Core profile.
 - name: profileConformance
 - Nature: ObjectProperty
 - Range: ProfileIdentifierType
+
+## Summary @zh-Hans
+
+描述此`ElementCollection`的创建者意图遵循的配置文件。
+
+## Description @zh-Hans
+
+描述此`ElementCollection`的创建者意图遵循的配置文件。
+
+`profileConformance`将应用于集合中的所有`Element`以及集合本身。
+
+对配置文件的符合性由配置文件特定的文档和架构文件中记录的附加限制来定义。
+
+使用此属性允许`ElementCollection`的创建者向消费者传达其遵循配置文件附加限制的意图。
+
+如果没有指定其他`profileConformance`，则`profileConformance`的默认值为`Core`，因为所有`ElementCollections`和`Element`都必须遵循`Core`配置文件。

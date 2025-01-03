@@ -15,3 +15,11 @@ An originatedBy identifies from where or whom the Element originally came.
 - name: originatedBy
 - Nature: ObjectProperty
 - Range: Agent
+
+## Summary @zh-Hans
+
+标识`Element`的最初来源。
+
+## Description @zh-Hans
+
+`originatedBy`标识`Element`的最初来源。

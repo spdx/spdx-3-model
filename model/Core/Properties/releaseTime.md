@@ -15,3 +15,11 @@ A releaseTime specifies the time an artifact was released.
 - name: releaseTime
 - Nature: DataProperty
 - Range: DateTime
+
+## Summary @zh-Hans
+
+指定`Artifact`的发布时间。
+
+## Description @zh-Hans
+
+`releaseTime`指定`Artifact`的发布时间。

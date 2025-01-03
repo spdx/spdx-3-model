@@ -36,3 +36,14 @@ The `contentType` property describes the format of the `statement` property.
   - type: Element
   - minCount: 1
   - maxCount: 1
+
+## Summary @zh-Hans
+
+对一个或多个元素断言。
+
+## Description @zh-Hans
+
+`Annotation`是对一个或多个元素的断言。
+
+`contentType`属性描述了`statement`属性的格式。
+

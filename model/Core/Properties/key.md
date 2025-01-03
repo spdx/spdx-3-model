@@ -18,3 +18,14 @@ with a value.
 - name: key
 - Nature: DataProperty
 - Range: xsd:string
+
+## Summary @zh-Hans
+
+通用键值对的键。
+
+## Description @zh-Hans
+
+通用键值对的键。
+
+键值对可以用来实现字典，将键与值相关联。
+

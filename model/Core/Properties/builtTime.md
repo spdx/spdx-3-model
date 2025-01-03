@@ -15,3 +15,11 @@ A builtTime specifies the time an artifact was built.
 - name: builtTime
 - Nature: DataProperty
 - Range: DateTime
+
+## Summary @zh-Hans
+
+指定`Artifact`的构建时间。
+
+## Description @zh-Hans
+
+`builtTime`指定`Artifact`的构建时间。

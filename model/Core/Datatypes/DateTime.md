@@ -22,3 +22,15 @@ The specific format is one of the most commonly used ISO-8601 formats.
 ## Format
 
 - pattern: ^\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ$
+
+## Summary @zh-Hans
+
+表示特定日期和时间的字符串。
+
+## Description @zh-Hans
+
+`DateTime`是表示特定日期和时间的字符串。
+
+其精度为秒，并始终以UTC时区表示。
+
+具体格式是最常用的ISO-8601格式之一。

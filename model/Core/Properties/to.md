@@ -18,3 +18,13 @@ the given type.
 - name: to
 - Nature: ObjectProperty
 - Range: Element
+
+## Summary @zh-Hans
+
+引用`Relationship`右侧的`Element`。
+
+## Description @zh-Hans
+
+该字段引用`Relationship`右侧的`Element`。
+
+如果未提供，则表示没有已知的给定类型的`Relationship`。

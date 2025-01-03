@@ -58,3 +58,42 @@ Required sort order: '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b',
   - maxCount: 1
 - packageVerificationCodeExcludedFile
   - type: xsd:string
+
+## Summary @zh-Hans
+
+SPDX 2.X版本兼容的软件包校验方法。
+
+## Description @zh-Hans
+
+此验证方法是为兼容SPDX 2.X而提供的。
+
+除非`Artifact`中的`contentIdentifier`属性无法使用，否则不建议使用此校验码方法。
+
+此校验方法提供了一种独立可复现的机制，根据构成每个软件包且与此SPDX文档中的数据相关联的实际文件（如果SPDX文档包含在软件包中，则排除SPDX文档本身）来识别软件包的特定内容。
+
+此标识符使接收者能够确定原始软件包（进行分析的软件包）中的任何文件是否已更改，并允许将SPDX文档作为软件包的一部分包含在内。
+
+算法：
+
+    templist = ""
+
+    对于软件包中的所有文件 {
+        如果文件是 packageVerificationCodeExcludedFile
+            跳过文件  /* 排除 SPDX 分析文件 */
+        否则
+            将"algorithm(file)/n"追加到templist
+    }
+
+    按值升序排列templist
+
+    /* 从有序序列中删除分隔符 */
+    valueslist = 从templist中删除"/n"
+
+    如果valueslist为空
+       hashValue = 0
+    否则
+       hashValue = algorithm(valueslist)
+
+其中`algorithm(string)`将哈希算法应用于字符串，并以小写十六进制数字返回结果。
+
+所需排序顺序：'0'，'1'，'2'，'3'，'4'，'5'，'6'，'7'，'8'，'9'，'a'，'b'，'c'，'d'，'e'，'f'（ASCII顺序）

@@ -19,3 +19,13 @@ the general reliability/accuracy of the analysis information.
 - name: createdUsing
 - Nature: ObjectProperty
 - Range: Tool
+
+## Summary @zh-Hans
+
+标识创建`Element`期间使用的工具。
+
+## Description @zh-Hans
+
+`createdUsing`标识创建`Element`期间使用的工具。
+
+生成方法将帮助`Element`的接收者评估分析信息的一般可靠性/准确性。

@@ -15,3 +15,11 @@ An annotationType describes the type of an annotation.
 - name: annotationType
 - Nature: ObjectProperty
 - Range: AnnotationType
+
+## Summary @zh-Hans
+
+描述注释的类型。
+
+## Description @zh-Hans
+
+`annotationType`描述注释的类型。

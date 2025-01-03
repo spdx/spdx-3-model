@@ -33,3 +33,15 @@ Please note that different profiles may also provide additional methods for veri
   - type: xsd:string
   - minCount: 1
   - maxCount: 1
+
+## Summary @zh-Hans
+
+一组数据的数学计算表示。
+
+## Description @zh-Hans
+
+`Hash`是应用数学算法将任意大小的数据映射到位字符串（哈希值）的过程，是一种不可逆函数。
+
+常用于数据完整性检查。
+
+请注意，其他配置文件可能还会提供额外的方法用于验证特定`Element`子类的完整性。

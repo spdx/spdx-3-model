@@ -15,3 +15,11 @@ A prefix is a substitute for a URI.
 - name: prefix
 - Nature: DataProperty
 - Range: xsd:string
+
+## Summary @zh-Hans
+
+URI的替代。
+
+## Description @zh-Hans
+
+`prefix`是URI的替代。

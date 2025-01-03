@@ -16,3 +16,12 @@ aspect of an Element.
 - name: extension
 - Nature: ObjectProperty
 - Range: /Extension/Extension
+
+## Summary @zh-Hans
+
+指定`Element`某个方面的`Extension`特征。
+
+## Description @zh-Hans
+
+`extension`指定`Element`某个特定方面的基于`Extension`的特征。
+

@@ -15,3 +15,11 @@ A locator provides the location of an external reference.
 - name: locator
 - Nature: DataProperty
 - Range: xsd:string
+
+## Summary @zh-Hans
+
+提供外部参考的位置信息。
+
+## Description @zh-Hans
+
+`locator`提供外部参考的位置信息。

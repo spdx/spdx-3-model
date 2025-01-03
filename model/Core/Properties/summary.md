@@ -17,3 +17,11 @@ the Element.
 - name: summary
 - Nature: DataProperty
 - Range: xsd:string
+
+## Summary @zh-Hans
+
+`Element`的简短描述。
+
+## Description @zh-Hans
+
+`summary`是对`Element`的简短描述，旨在允许`Element`的创建者提供有关`Element`功能或用途的简明信息。

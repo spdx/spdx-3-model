@@ -15,3 +15,11 @@ A Person is an individual human being.
 - name: Person
 - SubclassOf: Agent
 - Instantiability: Concrete
+
+## Summary @zh-Hans
+
+独立的人类个体。
+
+## Description @zh-Hans
+
+`Person`是独立的人类个体。

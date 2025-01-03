@@ -17,3 +17,11 @@ needs to be reassessed.
 - name: validUntilTime
 - Nature: DataProperty
 - Range: DateTime
+
+## Summary @zh-Hans
+
+指定`Artifact`的使用期限，超过该期限后需重新评估其使用。
+
+## Description @zh-Hans
+
+`validUntilTime`指定`Artifact`的使用期限，超过该期限后需重新评估其使用。

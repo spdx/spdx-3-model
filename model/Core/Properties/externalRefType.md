@@ -15,3 +15,11 @@ An externalRefType specifies the type of the external reference.
 - name: externalRefType
 - Nature: ObjectProperty
 - Range: ExternalRefType
+
+## Summary @zh-Hans
+
+指定外部引用的类型。
+
+## Description @zh-Hans
+
+`externalRefType`指定外部引用的类型。

@@ -38,3 +38,11 @@ that provides a unique key within an established domain that can uniquely identi
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
+
+## Summary @zh-Hans
+
+SPDX 3.0内容范围之外定义的资源标识符的引用，唯一地标识一个`Element`。
+
+## Description @zh-Hans
+
+`ExternalIdentifier`是一个引用，指向一个在SPDX 3.0内容范围之外定义的资源，提供一个在特定领域内的唯一键，可以唯一标识一个`Element`。

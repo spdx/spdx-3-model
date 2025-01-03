@@ -15,3 +15,11 @@ A subject is an Element an annotator has made an assertion about.
 - name: subject
 - Nature: ObjectProperty
 - Range: Element
+
+## Summary @zh-Hans
+
+被注释者作出断言的`Element`。
+ 
+## Description @zh-Hans
+
+`subject`是被注释者作出断言的`Element`。

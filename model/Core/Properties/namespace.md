@@ -17,3 +17,11 @@ portion of an Element ID.
 - name: namespace
 - Nature: DataProperty
 - Range: xsd:anyURI
+
+## Summary @zh-Hans
+
+提供明确的机制，用于传递`Element` ID的URI片段部分。
+
+## Description @zh-Hans
+
+`namespace`提供明确的机制，用于传递`Element` ID的URI片段部分。

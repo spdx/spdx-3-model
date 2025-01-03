@@ -15,3 +15,11 @@ A Tool is an element of hardware and/or software utilized to carry out a particu
 - name: Tool
 - SubclassOf: Element
 - Instantiability: Concrete
+
+## Summary @zh-Hans
+
+用于执行特定功能的硬件和/或软件元素。
+
+## Description @zh-Hans
+
+`Tool`是用于执行特定功能的硬件和/或软件元素。

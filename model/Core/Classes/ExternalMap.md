@@ -34,3 +34,12 @@ such as its provenance, where to retrieve it, and how to verify its integrity.
 - definingArtifact
   - type: Artifact
   - maxCount: 1
+
+## Summary @zh-Hans
+
+在`SpdxDocument`中使用但在`SpdxDocument`外部定义的`Element`标识符的映射。
+
+## Description @zh-Hans
+
+`ExternalMap`是在`SpdxDocument`中使用但在`SpdxDocument`外部定义的`Element`标识符的映射。
+`ExternalMap`提供了关于外部定义的`Element`的详细信息，例如其来源、如何检索它以及如何验证其完整性。

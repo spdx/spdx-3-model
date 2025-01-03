@@ -17,3 +17,11 @@ defined external to that SpdxDocument.
 - name: externalSpdxId
 - Nature: DataProperty
 - Range: xsd:anyURI
+
+## Summary @zh-Hans
+
+标识在`SpdxDocument`中使用但定义在该`SpdxDocument`之外的外部`Element`。
+
+## Description @zh-Hans
+
+`externalSpdxId`标识在`SpdxDocument`中使用但定义在该`SpdxDocument`之外的外部`Element`。

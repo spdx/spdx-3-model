@@ -19,3 +19,13 @@ is being used.
 - name: contentType
 - Nature: DataProperty
 - Range: MediaType
+
+## Summary @zh-Hans
+
+提供有关`Element`或`Property`内容类型的信息。
+
+## Description @zh-Hans
+
+此字段是从创建者的角度对`Element`或`Property`的内容类型的合理估计。
+
+内容类型是`Element`或`Property`固有的，与其使用方式无关。

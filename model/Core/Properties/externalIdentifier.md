@@ -17,3 +17,11 @@ that uniquely identifies an Element.
 - name: externalIdentifier
 - Nature: ObjectProperty
 - Range: ExternalIdentifier
+
+## Summary @zh-Hans
+
+提供对SPDX 3.0内容范围外的资源的引用，该资源唯一标识一个`Element`。
+
+## Description @zh-Hans
+
+`externalIdentifier`指向一个SPDX 3.0内容范围外的资源，该资源唯一标识一个`Element`。

@@ -16,3 +16,11 @@ user's authority) to act on a system.
 - name: SoftwareAgent
 - SubclassOf: Agent
 - Instantiability: Concrete
+
+## Summary @zh-Hans
+
+软件代理。
+
+## Description @zh-Hans
+
+`SoftwareAgent`是一个软件程序，它被赋予在系统上执行操作的权限（类似于用户的权限）。

@@ -19,3 +19,13 @@ Every filename is preceded with a `./`.
 - name: packageVerificationCodeExcludedFile
 - Nature: DataProperty
 - Range: xsd:string
+
+## Summary @zh-Hans
+
+要从`PackageVerificationCode`中排除的文件的相对文件名。
+
+## Description @zh-Hans
+
+相对于包归档或目录的根目录的文件名，用于引用要从`PackageVerificationCode`中排除的文件。
+
+通常，每个文件名前面都会加上`./`。关于语法，详见[RFC 3986统一资源标识符（URI）：通用语法](https://datatracker.ietf.org/doc/rfc3986/)。

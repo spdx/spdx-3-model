@@ -17,3 +17,11 @@ that provides additional characteristics of an Element.
 - name: externalRef
 - Nature: ObjectProperty
 - Range: ExternalRef
+
+## Summary @zh-Hans
+
+指向SPDX 3.0内容范围之外的资源来提供某个`Element`的附加特征。
+
+## Description @zh-Hans
+
+该字段指向SPDX 3.0内容范围之外的资源来提供某个`Element`的附加特征。

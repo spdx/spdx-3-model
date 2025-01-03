@@ -19,3 +19,13 @@ and another SpdxDocument.
 - name: relationshipType
 - Nature: ObjectProperty
 - Range: RelationshipType
+
+## Summary @zh-Hans
+
+关于两个`Element`之间关系的信息。
+
+## Description @zh-Hans
+
+此字段提供两个`Element`之间关系的信息。
+
+例如，可以表示两个不同`File`之间的关系，一个`Package`和一个`File`之间的关系，两个`Package`之间的关系，或者一个`SpdxDocument`与另一个`SpdxDocument`之间的关系。

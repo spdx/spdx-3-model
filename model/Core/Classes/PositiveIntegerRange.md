@@ -27,3 +27,12 @@ PositiveIntegerRange is a tuple of two positive integers that define a range.
   - type: xsd:positiveInteger
   - minCount: 1
   - maxCount: 1
+
+## Summary @zh-Hans
+
+由两个正整数构成的定义范围的元组。
+
+## Description @zh-Hans
+
+`PositiveIntegerRange`是由两个正整数构成的定义范围的元组。
+`beginIntegerRange`必须小于或等于`endIntegerRange`。

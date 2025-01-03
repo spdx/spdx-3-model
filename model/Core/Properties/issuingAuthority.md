@@ -21,3 +21,15 @@ The string provides a unique identifier for the issuing authority.
 - name: issuingAuthority
 - Nature: DataProperty
 - Range: xsd:string
+
+## Summary @zh-Hans
+
+被授权颁发身份凭证的实体。
+
+## Description @zh-Hans
+
+`issuingAuthority`是被授权颁发身份凭证的实体。
+
+该实体可以是政府、非营利组织、教育机构或商业企业。
+
+该字符串为颁发机构提供一个唯一标识符。
