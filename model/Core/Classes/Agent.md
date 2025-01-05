@@ -19,8 +19,6 @@ This is not to be confused with tools that are used to perform tasks.
 - name: Agent
 - SubclassOf: Element
 - Instantiability: Concrete
-
-
 ## Summary @zh-Hans
 
 `Agent`代表任何有可能作用于系统的对象。
