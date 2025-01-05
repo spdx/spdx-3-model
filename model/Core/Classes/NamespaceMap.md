@@ -75,6 +75,7 @@ Namespace maps support a variety of relevant use cases such as:
 有关如何序列化`NamespaceMap`内容的详细信息，请参阅[模型和序列化](../../../serializations.md)以及[spdx-3-model存储库](https://github.com/spdx/spdx-3-model/tree/main/serialization)中各种序列化格式的文件。
 
 `NamespaceMap`支持各种相关的用例，例如：
+
 1. SPDX内容生产者希望使其SPDX 2.X简单样式集合的序列化清晰明确，其中所有内容都是新生成的，并且使用单一前缀-命名空间。SPDX内容消费者希望保留此类生产者提供的`NamespaceMap`。
 
     在这种情况下，消费者可以记录`NamespaceMap`中的前缀，以便后续序列化使用原生序列化格式复现前缀/命名空间。

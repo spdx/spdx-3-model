@@ -45,6 +45,4 @@ no assertion is being made about any potential descendants of Element1.
 - SPDX创建者尝试但无法达成合理的客观判断；
 - SPDX创建者未尝试确定此字段；
 - SPDX创建者故意不提供信息（这样做不应被暗示为有任何含义）。
-
-
 例如，关系`relationshipType=ancestorOf`、`from=Element1`和`to=NoAssertionElement`明确表示不对`Element1`的任何潜在后代作出任何断言。
