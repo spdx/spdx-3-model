@@ -71,8 +71,6 @@ or a build tool, the `hasInput` relationshipType can be replaced by a
 `Build` 配置文件提供了 `Build` 元素，它是 `Element` 的子类。
 
 它还提供了来自 `Core` 配置文件所需关系类型的最小集合。
-
-
 - hasInput: 描述了从 `Build` 元素到其输入的关系。
 - hasOutput: 描述了从 `Build` 元素到其输出的关系。
 - invokedBy: 描述了从 `Build` 元素到调用其代理的关系。
