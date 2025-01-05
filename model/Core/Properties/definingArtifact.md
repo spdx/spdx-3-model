@@ -19,6 +19,7 @@ the Element.
 - name: definingArtifact
 - Nature: ObjectProperty
 - Range: Artifact
+
 ## Summary @zh-Hans
 
 代表包含特定`Element`定义的SPDX数据的序列化实例的`Artifact`。
