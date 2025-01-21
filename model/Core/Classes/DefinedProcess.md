@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# Process
+# DefinedProcess
 
 ## Summary
 
@@ -12,21 +12,21 @@ Processes are composed of systematic task(s) required to achieve a goal.
 
 ## Metadata
 
-- name: Process
+- name: DefinedProcess
 - SubclassOf: Artifact
 - Instantiability: Abstract
 
 ## Properties
 
-- version
+- processVersion
   - type: xsd:string
   - minCount: 1
   - maxCount: 1
-- rationale 
+- processRationale 
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
-- status
-  - type: DocumentState
+- processReadiness
+  - type: ProcessReadinessType
   - minCount: 0
   - maxCount: 1
