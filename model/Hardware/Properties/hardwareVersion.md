@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# version
+# hardwareVersion
 
 ## Summary
 
@@ -12,6 +12,6 @@ Describes the specific hardware version.
 
 ## Metadata
 
-- name: version
+- name: hardwareVersion
 - Nature: DataProperty
 - Range: xsd:string
