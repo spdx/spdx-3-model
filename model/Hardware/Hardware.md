@@ -21,13 +21,10 @@ supply chain and its characteristics.
 For an element collection to be conformant with this profile,
 the following has to hold:
 
-1. for every `/Hardware/InstantiatedProcess` there MUST exist exactly one
-   `/Core/Relationship` of type `instantiatedBy` having that element as its
+1. for every `/Hardware/InstantiationVirtualHardwareProcess` there MUST exist exactly one
+   `/Core/Relationship` of type `instantiates` having that element as its
    `from` property and a `/Hardware/VirualHardware` as its `to`.
    
-2. for every `/Hardware/HBOMPhysical`, if the property `mass` is defined then
-   `massUnit` must be defined.
-
-3. for every `/Hardware/HBOMPhysical`, if the properties `dimensions` and
+2. for every `/Hardware/PhysicalHardware`, if the properties `dimensions` and
    `centerOfMass` are defined then both `dimensions` and `centerOfMass`
    must have the same `coordinateOrientationType` for x, y, and z.
