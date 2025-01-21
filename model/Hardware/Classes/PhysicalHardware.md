@@ -13,12 +13,18 @@ A PhysicalHardware artifact describes a distinct physical unit.
 ## Metadata
 
 - name: PhysicalHardware
-- SubclassOf: /Hardware/Hardware
+- SubclassOf: Hardware
 - Instantiability: Concrete
 
 ## Properties
 
-- physical
-  - type: HBOMPhysical
+- massOfHardware
+  - type: HBOMMass
   - minCount: 0
+  - maxCount: 1
+- dimensions
+  - type: HBOMDimensions
+  - maxCount: 1  
+- centerOfMass
+  - type: HBOMDimensions
   - maxCount: 1
