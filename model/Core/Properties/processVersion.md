@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# version
+# processVersion
 
 ## Summary
 
@@ -12,6 +12,6 @@ Defines the version of a specific process.
 
 ## Metadata
 
-- name: version
+- name: processVersion
 - Nature: DataProperty
 - Range: xsd:string
