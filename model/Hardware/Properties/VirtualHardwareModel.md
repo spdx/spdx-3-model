@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# VirtualHardwareModel
+# virtualHardwareModel
 
 ## Summary
 
@@ -12,6 +12,6 @@ Information related to Virtual hardware simulation modelling process.
 
 ## Metadata
 
-- name: VirtualHardwareModel
+- name: virtualHardwareModel
 - Nature: DataProperty
 - Range: VirtualHardwareModelType
