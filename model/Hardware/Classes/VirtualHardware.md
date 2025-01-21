@@ -21,7 +21,7 @@ Virtual hardware requires instantiation involving specific hardware and software
 
 ## Properties
 
-- VirtualHardwareModel
+- virtualHardwareModel
   - type: VirtualHardwareModelType
   - minCount: 0
   - maxCount: 1
