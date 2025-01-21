@@ -22,7 +22,7 @@ Processes are composed of systematic task(s) required to achieve a goal.
   - type: xsd:string
   - minCount: 1
   - maxCount: 1
-- processRationale 
+- processRationale
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
