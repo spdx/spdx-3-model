@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Information related to Virtual hardware simulation .
+Information related to virtual hardware simulation.
 
 ## Description
 
-Information related to Virtual hardware simulation modelling process.
+Information related to virtual hardware simulation modelling process.
 
 ## Metadata
 
