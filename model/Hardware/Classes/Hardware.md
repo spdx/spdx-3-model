@@ -35,7 +35,7 @@ A hardware artifact is a distinct unit related to hardware.
 - serialNumber
   - type: xsd:string
   - maxCount: 1
-- batchNumber 
+- batchNumber
   - type: xsd:string
   - maxCount: 1
 - informationElementList 
