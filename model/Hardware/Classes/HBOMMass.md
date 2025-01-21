@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# HBOMPhysical
+# HBOMMass
 
 ## Summary
 
@@ -8,25 +8,18 @@ Class that describes a instance of HBOMPhysical.
 
 ## Description
 
-Describes the physical characteristics of hardware. 
-Physical characteristics include dimensions, mass, units and related items.
+Describes the physical mass characteristics of hardware. 
 
 ## Metadata
 
-- name: HBOMPhysical
+- name: HBOMMass
 - Instantiability: Concrete
 
 ## Properties
 
-- dimensions
-  - type: HBOMDimensions
-  - maxCount: 1
 - mass
   - type: xsd:decimal
   - maxCount: 1
 - massUnit
   - type: xsd:string
-  - maxCount: 1
-- centerOfMass
-  - type: HBOMDimensions
   - maxCount: 1
