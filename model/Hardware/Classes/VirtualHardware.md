@@ -19,3 +19,9 @@ Virtual hardware requires instantiation involving specific hardware and software
 - SubclassOf: Hardware
 - Instantiability: Concrete
 
+## Properties
+
+- VirtualHardwareModel
+  - type: VirtualHardwareModelType
+  - minCount: 0
+  - maxCount: 1
