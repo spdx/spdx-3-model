@@ -19,7 +19,7 @@ A hardware artifact is a distinct unit related to hardware.
 ## Properties
 
 - organizationalEntity
-  - type: /Core/Organization
+  - type: /Core/Agent
   - minCount: 1
   - maxCount: 1
 - hardwareVersion
