@@ -14,4 +14,4 @@ The Agent that provides a SoftwareService to one or more consumers.
 
 - name: provider
 - Nature: ObjectProperty
-- Range: Agent
+- Range: /Core/Agent

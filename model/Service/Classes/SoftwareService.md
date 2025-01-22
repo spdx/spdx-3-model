@@ -13,7 +13,7 @@ SoftwareService represents software being licensed, delivered and accessed onlin
 ## Properties
 
 - provider
-  - type: Agent
+  - type: /Core/Agent
   - minCount: 1
 - serverAuthenticationProtocol
   - type: AuthenticationProtocolType
@@ -22,5 +22,5 @@ SoftwareService represents software being licensed, delivered and accessed onlin
 ## Metadata
 
 - name: SoftwareService
-- SubclassOf: Element
+- SubclassOf: /Core/Element
 - Instantiability: Concrete

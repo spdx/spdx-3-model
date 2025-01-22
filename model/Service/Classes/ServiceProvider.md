@@ -13,5 +13,5 @@ A ServiceProvider is an entity that provide a software service.
 ## Metadata
 
 - name: ServiceProvider
-- SubclassOf: Agent
+- SubclassOf: /Core/Agent
 - Instantiability: Concrete
