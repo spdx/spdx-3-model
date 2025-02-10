@@ -18,6 +18,9 @@ SoftwareService represents software being licensed, delivered and accessed onlin
 - serverAuthenticationProtocol
   - type: AuthenticationProtocolType
   - minCount: 0
+- serviceHostingCountries
+  - type: xsd:string
+  - minCount: 0
 
 ## Metadata
 
