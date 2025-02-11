@@ -13,13 +13,13 @@ SoftwareService represents software being licensed, delivered and accessed onlin
 ## Properties
 
 - provider
-  - type: /Core/Agent
+  - type: ServiceProvider
   - minCount: 1
 - serverAuthenticationProtocol
   - type: AuthenticationProtocolType
   - minCount: 0
 - serviceHostingCountries
-  - type: xsd:string
+  - type: CountryCodeAlpha3
   - minCount: 0
 
 ## Metadata
