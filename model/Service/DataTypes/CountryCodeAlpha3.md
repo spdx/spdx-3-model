@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A string constrained to the ISO 3166-1 alpha-3 3 character format.
+A string constrained to the ISO 3166-1 alpha-3 three-letter format.
 
 ## Description
 
