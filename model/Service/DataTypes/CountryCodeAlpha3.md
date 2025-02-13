@@ -8,7 +8,7 @@ A string constrained to the ISO 3166-1 alpha-3 three-letter format.
 
 ## Description
 
-The string must be in the [ISO 3166-1 alpha-3](https://www.iso.org/obp/ui/#iso:std:iso:3166:-3:ed-2:v1:en) format.  
+The string must be in the [ISO 3166-1 alpha-3](https://www.iso.org/obp/ui/#iso:std:iso:3166:-1) three-letter format.  
 See the [ISO 3166-1 alpha-3 Wikipedia page](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) for more information.
 
 ## Metadata
