@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# serviceHostingCountries
+# serviceHostingCountry
 
 ## Summary
 
@@ -15,6 +15,6 @@ See the [ISO 3166-1 alpha-3 Wikipedia page](https://en.wikipedia.org/wiki/ISO_31
 
 ## Metadata
 
-- name: serviceHostingCountries
+- name: serviceHostingCountry
 - Nature: DataProperty
 - Range: CountryCodeAlpha3

@@ -18,7 +18,7 @@ SoftwareService represents software being licensed, delivered and accessed onlin
 - serverAuthenticationProtocol
   - type: AuthenticationProtocolType
   - minCount: 0
-- serviceHostingCountries
+- serviceHostingCountry
   - type: CountryCodeAlpha3
   - minCount: 0
 
