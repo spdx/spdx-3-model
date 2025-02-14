@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-The  Profile captures software as a service related information.
+The Profile captures software as a service related information.
 
 ## Description
 
