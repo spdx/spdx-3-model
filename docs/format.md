@@ -224,10 +224,10 @@ Allowed headings:
 `minCount` and `maxCount` indicate the minimum and maximum number of times
 a property may appear in a class (cardinality):
 
-- The absolute minimum number of occurrences is zero (`0`).
-- For an unbounded maximum number of occurrences, a star (`*`) is used.
-- If no `minCount` is specified, the default is `0`.
-- If no `maxCount` is specified, the default is `*`.
+- The minimum possible occurrence is zero (`0`).
+- An unbounded maximum occurrence is represented by a star/asterisk (`*`).
+- If `minCount` is omitted, it defaults to `0`.
+- If `maxCount` is omitted, it defaults to `*`.
 
 See details in the [Conformance section][conformance] of the specification.
 
