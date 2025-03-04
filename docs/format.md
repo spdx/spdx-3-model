@@ -108,9 +108,10 @@ is the best reference.
 
 - Use the singular form (e.g., use `import` and not `imports`).
   (See discussion in [Issue 226][issue-226])
-- Use `UpperCamelCase` format for classes, datatypes, individuals,
+- Use `UpperCamelCase` format for the names of classes, datatypes, individuals,
   and vocabularies.
-- Use `lowerCamelCase` format for properties and vocabulary entries.
+- Use `lowerCamelCase` format for the names of properties and
+  vocabulary entries.
 
 [issue-226]: https://github.com/spdx/spdx-3-model/issues/226
 
@@ -385,8 +386,6 @@ and its calibration value as a key-value pair.
 
 The name of a vocabulary must be in `UpperCamelCase` format.
 
-The name of an entry within a vocabulary must be in `lowerCamelCase` format.
-
 Allowed headings:
 
 - Summary
@@ -397,7 +396,9 @@ Allowed headings:
   - \<entry_name\>: \<entry_description\>
   - ...
 
-Each entry in Entries must be written in a single line.
+Each entry in Entries must be written in a single line:
+
+- The name of an entry must be in `lowerCamelCase` format.
 
 #### Vocabulary example
 
@@ -432,8 +433,37 @@ recommendations when writing paragraph text and incorporating links.
 
 - **Avoid overly long paragraphs.**
 
-    Breaking up text into smaller paragraphs, using bullet points, or creating numbered lists can significantly improve readability and comprehension by separating distinct concepts, processes, criteria, or categories.
+    Breaking up text into smaller paragraphs, using bullet points, or creating
+    numbered lists can significantly improve readability and comprehension by
+    separating distinct concepts, processes, criteria, or categories.
+
     This makes the specification easier to scan and understand.
+
+- **Maintain a consistent style.**
+
+  - Employ a uniform writing style, particularly when presenting similar
+    information.
+  - Use parallel sentence structures for related entries.
+
+  Here's an example of a **consistent** writing style:
+
+  ```markdown
+  ## Entries
+
+  - tls: Transport Layer Security, or TLS, is a widely ...
+  - ocsp: Online Certificate Status Protocol, or OCSP, is a common ...
+  - crl: Certificate Revocation List, or CRL, is a list of ...
+  ```
+
+  Here's an example of an **inconsistent** writing style:
+
+  ```markdown
+  ## Entries
+
+  - tls: Transport Layer Security, or TLS, is a widely ...
+  - ocsp: OCSP (Online Certificate Status Protocol) is a common ...
+  - crl: Certificate Revocation List (CRL) - A CRL is a list of ...
+  ```
 
 - **Avoid bare URLs.**
 
