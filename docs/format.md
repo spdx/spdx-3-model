@@ -19,6 +19,7 @@ specifications.
 
 - [Overview](#overview)
 - [Directory organisation](#directory-organisation)
+- [Naming convention](#naming-convention)
 - [File content structure and formatting](#file-content-structure-and-formatting)
   - [Model file example](#model-file-example)
 - [Syntax](#syntax)
@@ -102,6 +103,16 @@ File and directory organisation:
 The living repository at
 <https://github.com/spdx/spdx-3-model/tree/main/model>
 is the best reference.
+
+## Naming convention
+
+- Use the singular form (e.g., use `import` and not `imports`).
+  (See discussion in [Issue 226][issue-226])
+- Use `UpperCamelCase` format for classes, datatypes, individuals,
+  and vocabularies.
+- Use `lowerCamelCase` format for properties and vocabulary entries.
+
+[issue-226]: https://github.com/spdx/spdx-3-model/issues/226
 
 ## File content structure and formatting
 
@@ -187,6 +198,8 @@ will give this RDF graph
 
 ### Classes
 
+The name of a class must be in `UpperCamelCase` format.
+
 Allowed headings:
 
 - Summary
@@ -206,6 +219,18 @@ Allowed headings:
     - minCount: \<number\> *(Optional)*
     - maxCount: \<number\> *(Optional)*
   - ...
+
+`minCount` and `maxCount` indicate the minimum and maximum number of times
+a property may appear in a class (cardinality):
+
+- The absolute minimum number of occurrences is zero (`0`).
+- For an unbounded maximum number of occurrences, a star (`*`) is used.
+- If no `minCount` is specified, the default is `0`.
+- If no `maxCount` is specified, the default is `*`.
+
+See details in the [Conformance section][conformance] of the specification.
+
+[conformance]: https://spdx.github.io/spdx-spec/v3.0.1/conformance/
 
 #### Class example
 
@@ -241,6 +266,8 @@ A class example.
 ```
 
 ### Datatypes
+
+The name of a datatype must be in `UpperCamelCase` format.
 
 Allowed headings:
 
@@ -278,6 +305,8 @@ A DateTime is a string representation of a specific date and time.
 ```
 
 ### Individuals
+
+The name of an individual  must be in `UpperCamelCase` format.
 
 Allowed headings:
 
@@ -318,6 +347,8 @@ A named individual of Element class that representing none.
 
 ### Properties
 
+The name of a property must be in `lowerCamelCase` format.
+
 Allowed headings:
 
 - Summary
@@ -351,6 +382,10 @@ and its calibration value as a key-value pair.
 ```
 
 ### Vocabularies
+
+The name of a vocabulary must be in `UpperCamelCase` format.
+
+The name of an entry within a vocabulary must be in `lowerCamelCase` format.
 
 Allowed headings:
 
