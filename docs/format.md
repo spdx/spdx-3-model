@@ -441,9 +441,11 @@ recommendations when writing paragraph text and incorporating links.
 
 - **Maintain a consistent style.**
 
-  - Employ a uniform writing style, particularly when presenting similar
+  - Use a uniform writing style, particularly when presenting similar
     information.
   - Use parallel sentence structures for related entries.
+
+  This improves readability and helps in comparing related information.
 
   Here's an example of a **consistent** writing style:
 
@@ -468,6 +470,7 @@ recommendations when writing paragraph text and incorporating links.
 - **Avoid bare URLs.**
 
     Always provide a descriptive label for each link. Avoid using bare URLs.
+
     This improves accessibility for screen readers and provides context for
     users.
 
@@ -558,7 +561,9 @@ recommendations when writing paragraph text and incorporating links.
 
     When using code blocks, specify the appropriate computer language code.
     For instance, use `json` for JSON, `yaml` for YAML, and `text` for plain
-    text. This ensures correct syntax highlighting and improves readability.
+    text.
+
+    This ensures correct syntax highlighting and improves readability.
 
     For example, start a JSON code block with this markup:
 
