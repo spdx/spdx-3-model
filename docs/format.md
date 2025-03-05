@@ -43,7 +43,7 @@ data model, by the [spec-parser](https://github.com/spdx/spec-parser/).
 
 For instance, a summary listed under the "Summary" heading will be represented
 as a `rdfs:comment` in the RDF file. Likewise, a value specified for the
-"minCount" of a property name under the "Properties" heading will be
+"minCount" of a property under the "Properties" heading will be
 translated into a `sh:minCount` in the RDF file.
 See [an example](#model-file-example).
 
@@ -55,9 +55,13 @@ The same Markdown files are used to generate the HTML files for
 
 *The Markdown flavour used for the specification is
 [Python-Markdown](https://www.mkdocs.org/user-guide/writing-your-docs/#writing-with-markdown)
-as it is used by [MkDocs](https://www.mkdocs.org/) site generator.
-It differs slightly from
+as it is used by the [MkDocs](https://www.mkdocs.org/) site generator.
+It differs slightly from the
 [GitHub Flavored Markdown Spec](https://github.github.com/gfm/).
+Running [markdownlint] over your Markdown files can help enforce formatting
+consistency and reduce the risk of rendering issues.
+
+[markdownlint]: https://github.com/DavidAnson/markdownlint
 
 ## Directory organisation
 
