@@ -396,9 +396,12 @@ Allowed headings:
   - \<entry_name\>: \<entry_description\>
   - ...
 
-Each entry in Entries must be written in a single line:
+Entry formatting:
 
-- The name of an entry must be in `lowerCamelCase` format.
+- Entry names must be in `lowerCamelCase` format.
+- Each entry must be written on a single line.
+- Entries should be listed alphabetically whenever possible to facilitate
+  review and editing, particularly for long lists.
 
 #### Vocabulary example
 
