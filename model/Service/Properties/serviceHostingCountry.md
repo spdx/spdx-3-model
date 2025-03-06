@@ -18,4 +18,4 @@ See the [ISO 3166-1 alpha-3 Wikipedia page](https://en.wikipedia.org/wiki/ISO_31
 
 - name: serviceHostingCountry
 - Nature: DataProperty
-- Range: CountryCodeAlpha3
+- Range: Core/CountryCodeAlpha3
