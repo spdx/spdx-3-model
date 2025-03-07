@@ -19,7 +19,7 @@ SoftwareService represents software being licensed, delivered and accessed onlin
   - type: AuthenticationProtocolType
   - minCount: 0
 - serviceHostingCountry
-  - type: Core/CountryCodeAlpha3
+  - type: /Core/CountryCodeAlpha3
   - minCount: 0
 
 ## Metadata
