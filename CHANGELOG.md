@@ -1,5 +1,10 @@
 # Change Log
 
+## Post-3.0.1 (2025-03-08)
+
+- **Added:** `/Software/artifactSize` property - [#966](https://github.com/spdx/spdx-3-model/pull/966)
+  - A property to identifies the size of a software artifact, in bytes.
+
 ## 3.0.1 (2024-12-10)
 
 ### Changes since 3.0
