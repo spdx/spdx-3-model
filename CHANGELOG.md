@@ -2,8 +2,10 @@
 
 ## Post-3.0.1 (2025-03-08)
 
+### Changes since 3.0.1
+
 - **Added:** `/Software/artifactSize` property - [#966](https://github.com/spdx/spdx-3-model/pull/966)
-  - A property to identifies the size of a software artifact, in bytes.
+  - A property identifying the size of a software artifact, in bytes.
 
 ## 3.0.1 (2024-12-10)
 
@@ -64,6 +66,12 @@
   - Add `Core/IndividualElement` class
     to the Core diagram - [#941](https://github.com/spdx/spdx-3-model/pull/941)
 - Fixed general typos and formatting issues.
+
+### Release notes
+
+The version 3.0.1 model release notes,
+with full change records from 3.0 to 3.0.1, are available at:
+<https://github.com/spdx/spdx-3-model/releases/tag/3.0.1>.
 
 ## 3.0 (2024-04-15)
 
