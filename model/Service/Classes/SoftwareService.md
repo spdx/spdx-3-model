@@ -13,7 +13,7 @@ SoftwareService represents software being licensed, delivered and accessed onlin
 ## Properties
 
 - provider
-  - type: ServiceProvider
+  - type: /Core/Agent
   - minCount: 1
 - serverAuthenticationProtocol
   - type: AuthenticationProtocolType
