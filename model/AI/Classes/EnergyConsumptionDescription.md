@@ -15,7 +15,7 @@ and the unit of measurement.
 The `energyQuantity` property stores the amount of energy consumed,
 and the `energyUnit` property stores the unit used for measurement.
 
-For example, 0.0042 kilowatt-hour of energy will have `0.042` as a value for
+For example, 0.042 kilowatt-hour of energy will have `0.042` as a value for
 property `energyQuantity`, and `"kilowattHour"` as a value for property
 `energyUnit`.
 
