@@ -29,6 +29,7 @@ specifications.
   - [Vocabularies](#vocabularies)
 - [Writing style](#writing-style)
 - [Translation](#translation)
+- [Checking if everything is ok](#checking-if-everything-is-ok)
 
 ## Overview
 
@@ -38,7 +39,7 @@ is defined in a distinct file.
 Specific headings and formatting are used to provide information for the
 generation of a machine-readable specification, in
 [Resource Description Framework (RDF)](https://en.wikipedia.org/wiki/Resource_Description_Framework)
-data model, by the [spec-parser](https://github.com/spdx/spec-parser/).
+data model, by the [spec-parser][].
 
 For instance, a summary listed under the "Summary" heading will be represented
 as a `rdfs:comment` in the RDF file. Likewise, a value specified for the
@@ -527,3 +528,45 @@ recommendations when writing paragraph text and incorporating links.
 
 Model summaries, descriptions, and vocabulary entry descriptions can be
 translated. Please see [translation.md](./translation.md) for details.
+
+## Checking if everything is ok
+
+To check if your additions or edits are correctly formatted,
+according the latest [spec-parser][], use the following commands.
+
+Install spec-parser:
+
+```shell
+git clone --branch main --depth 1 https://github.com/spdx/spec-parser.git
+```
+
+If you already have the spec-parser, update it:
+
+```shell
+git pull origin main
+```
+
+Check format:
+
+```shell
+python3 spec-parser/main.py --no-output <MODEL_MARKDOWN_DIR>
+```
+
+Generate RDF, so you can check the RDF outputs:
+
+```shell
+python spec-parser/main.py --generate-rdf --output-rdf <OUTPUT_RDF_DIR> <MODEL_MARKDOWN_DIR>
+```
+
+More spec-parser options:
+
+```shell
+python spec-parser/main.py --help
+```
+
+To generate the whole specification website and see how your
+additions or edits will look like, post-MkDocs processing,
+read [build.md][build] on the spdx-spec repo.
+
+[spec-parser]: https://github.com/spdx/spec-parser/
+[build]: https://github.com/spdx/spdx-spec/blob/develop/build.md
