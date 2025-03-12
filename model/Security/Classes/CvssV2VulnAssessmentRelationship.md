@@ -22,11 +22,11 @@ It is intended to communicate the results of using a CVSS calculator.
 
 ```json
 {
-  "type": "CvssV2VulnAssessmentRelationship",
+  "type": "security_CvssV2VulnAssessmentRelationship",
   "spdxId": "urn:spdx.dev:cvssv2-cve-2020-28498",
   "relationshipType": "hasAssessmentFor",
   "security_score": "4.3",
-  "security_vectorString": "(AV:N/AC:M/Au:N/C:P/I:N/A:N)",
+  "security_vectorString": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
   "from": "urn:spdx.dev:vuln-cve-2020-28498",
   "to": ["urn:product-acme-application-1.3"],
   "security_assessedElement": "urn:npm-elliptic-6.5.2",
@@ -47,7 +47,7 @@ It is intended to communicate the results of using a CVSS calculator.
       "locator": "https://github.com/indutny/elliptic/commit/441b742"
     }
   ],
-  "suppliedBy": ["urn:spdx.dev:agent-my-security-vendor"],
+  "suppliedBy": "urn:spdx.dev:agent-my-security-vendor",
   "publishedTime": "2023-05-06T10:06:13Z"
 },
 {

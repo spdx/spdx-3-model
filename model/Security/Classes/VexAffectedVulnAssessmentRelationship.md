@@ -25,14 +25,14 @@ following requirements must be observed:
 
 ```json
 {
-  "type": "VexAffectedVulnAssessmentRelationship",
+  "type": "security_VexAffectedVulnAssessmentRelationship",
   "spdxId": "urn:spdx.dev:vex-affected-1",
   "relationshipType": "affects",
   "from": "urn:spdx.dev:vuln-cve-2020-28498",
   "to": ["urn:product-acme-application-1.3"],
   "security_assessedElement": "urn:npm-elliptic-6.5.2",
   "security_actionStatement": "Upgrade to version 1.4 of ACME application.",
-  "suppliedBy": ["urn:spdx.dev:agent-jane-doe"],
+  "suppliedBy": "urn:spdx.dev:agent-jane-doe",
   "publishedTime": "2021-03-09T11:04:53Z"
 }
 ```
