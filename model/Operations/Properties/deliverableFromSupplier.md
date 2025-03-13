@@ -14,4 +14,4 @@ name or identifier of the deliverable provided by the supplier
 
 - name: deliverableFromSupplier
 - Nature: DataProperty
-- Range: xsd:string
+- Range: /Core/Artifact

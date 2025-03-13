@@ -14,4 +14,4 @@ This field describes if the application is used organization internal or externa
 
 - name: scope
 - Nature: DataProperty
-- Range: xsd:string
+- Range: scopeType

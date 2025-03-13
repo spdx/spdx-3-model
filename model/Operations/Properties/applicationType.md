@@ -14,4 +14,4 @@ intended business case the application is developed for (e.g. fat client, cloud 
 
 - name: applicationType
 - Nature: DataProperty
-- Range: xsd:string
+- Range: ApplicationType

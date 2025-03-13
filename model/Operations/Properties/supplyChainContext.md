@@ -15,4 +15,4 @@ e.g. upstream/steward, tier2, tier1, OEM/manufacturer , …
 
 - name: supplyChainContext
 - Nature: DataProperty
-- Range: xsd:string
+- Range: supplyChainContextType

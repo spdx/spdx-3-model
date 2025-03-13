@@ -14,4 +14,4 @@ Short summary in what way the FOSS Compliance Bundle is handed over downstream i
 
 - name: fossComplianceBundleProvision
 - Nature: DataProperty
-- Range: xsd:string
+- Range: fossComplianceBundleProvisionType

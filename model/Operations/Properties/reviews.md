@@ -1,17 +1,17 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# documentationLink
+# reviews
 
 ## Summary
 
-URL of existing product documentation
+Link to the review reports
 
 ## Description
 
-...
+This field provides the links to the review reports
 
 ## Metadata
 
-- name: documentationLink
+- name: relationType
 - Nature: DataProperty
 - Range: xsd:anyURI

@@ -15,4 +15,4 @@ e.g. special deny or allow lists
 
 - name: fossTermsTowardsSupplier
 - Nature: DataProperty
-- Range: xsd:string
+- Range: /Core/Artifact

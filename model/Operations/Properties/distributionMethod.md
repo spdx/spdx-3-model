@@ -14,4 +14,4 @@ method how the developed deliverable is made available (e.g. docker container, .
 
 - name: distributionMethod
 - Nature: DataProperty
-- Range: xsd:string
+- Range: DistributionMethodType

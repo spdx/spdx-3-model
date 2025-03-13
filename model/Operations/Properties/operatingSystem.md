@@ -14,4 +14,4 @@ operating system that is used or the application is designed for
 
 - name: operatingSystem
 - Nature: DataProperty
-- Range: xsd:string
+- Range: OperatingSystemType

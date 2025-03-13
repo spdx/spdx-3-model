@@ -17,4 +17,4 @@ in case of a device.
 
 - name: productAccessURL
 - Nature: DataProperty
-- Range: xsd:string
+- Range: xsd:anyURI

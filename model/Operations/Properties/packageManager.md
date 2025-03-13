@@ -14,4 +14,4 @@ package manager used with or to build the deliverable (e.g. dpkg, …)
 
 - name: packageManager
 - Nature: DataProperty
-- Range: xsd:string
+- Range: PackageManagerType

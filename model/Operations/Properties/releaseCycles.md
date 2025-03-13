@@ -15,4 +15,4 @@ e.g. nightly, weekly,…
 
 - name: releaseCycles
 - Nature: DataProperty
-- Range: xsd:string
+- Range: releaseCyclesType

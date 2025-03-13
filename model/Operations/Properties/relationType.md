@@ -15,4 +15,4 @@ e.g. one-to-one or one-to-many
 
 - name: relationType
 - Nature: DataProperty
-- Range: xsd:string
+- Range: relationTypeType

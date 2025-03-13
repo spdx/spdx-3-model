@@ -15,4 +15,4 @@ e.g. 'FOSS Compliance Bundle included in Installation File'
 
 - name: fossComplianceBundleConsumption
 - Nature: DataProperty
-- Range: xsd:string
+- Range: fossComplianceBundleProvisionType

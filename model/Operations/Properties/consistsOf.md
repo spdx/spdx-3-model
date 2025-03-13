@@ -17,4 +17,4 @@ in early or pre-development phase)
 
 - name: consistsOf
 - Nature: DataProperty
-- Range: xsd:string
+- Range: /Core/Artifact

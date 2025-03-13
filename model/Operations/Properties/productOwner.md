@@ -14,4 +14,4 @@ Name of the application or service owner
 
 - name: productOwner
 - Nature: DataProperty
-- Range: xsd:string
+- Range: /Core/Person

@@ -14,4 +14,4 @@ This field describes specific boundaries that are agreed with the customer for t
 
 - name: distributionTermsTowardsCustomer
 - Nature: DataProperty
-- Range: xsd:string
+- Range: /Core/Artifact

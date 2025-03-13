@@ -14,4 +14,4 @@ link to architecture, if available
 
 - name: linkToArchitecture
 - Nature: DataProperty
-- Range: xsd:string
+- Range: xsd:anyURI

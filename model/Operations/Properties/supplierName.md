@@ -14,4 +14,4 @@ name of the supplier
 
 - name: supplierName
 - Nature: DataProperty
-- Range: xsd:string
+- Range: /Core/Agent

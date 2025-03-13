@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-contact person of contact details for urgent incidents
+contact details of contact person for urgent incidents
 
 ## Description
 
@@ -14,4 +14,4 @@ contact person of contact details for urgent incidents
 
 - name: contact
 - Nature: DataProperty
-- Range: xsd:string
+- Range: /Core/Agent

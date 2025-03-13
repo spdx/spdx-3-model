@@ -14,4 +14,4 @@ dependency manager used to build the deliverable (e.g. Maven, Gradle, …)
 
 - name: dependencyManager
 - Nature: DataProperty
-- Range: xsd:string
+- Range: DependencyManagerType

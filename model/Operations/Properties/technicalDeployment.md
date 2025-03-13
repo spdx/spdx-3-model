@@ -14,4 +14,4 @@ Entity in the supplychain that is technically deploying the application / distri
 
 - name: technicalDeployment
 - Nature: DataProperty
-- Range: xsd:string
+- Range: deploymentType

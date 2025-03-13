@@ -9,92 +9,65 @@ The Application facts summarize the business context metadata of an application.
 ## Description
 
 The Application Facts are collected all along the product lifecyle and contents may be updated when the product reaches a new phase.
-```
 
 ## Metadata
 
 - name: ApplicationFacts
-- SubclassOf: tbd
+- SubclassOf: Delivery
 - Instantiability: Concrete
 
 ## Properties
 
 - productOwner
-  - type: tbd
-  - minCount: 1
+  - type: /Core/Person
+  - minCount: 0
   - maxCount: 1
-
 - documentationLink
-  - type: tbd
+  - type: xsd:anyURI
   - minCount: 1
   - maxCount: 1
-
 - productAccessURL
-  - type: tbd
-  - minCount: 1
+  - type: xsd:anyURI
   - maxCount: 1
-
-- commentComment
-  - type: tbd
-  - minCount: 1
+- applicationFactsComment
+  - type: xsd:string
   - maxCount: 1
-
 - distributedDeliverables
-  - type: tbd
+  - type: /Core/Artifact
   - minCount: 1
-  - maxCount: n
-
 - technicalDeploymnent
-  - type: tbd
+  - type: deploymentType
   - minCount: 1
   - maxCount: 1
-
 - contact
-  - type: tbd
+  - type: /Core/Agent
   - minCount: 1
   - maxCount: 1
-
 - scope
-  - type: tbd
+  - type: scopeType
   - minCount: 1
   - maxCount: 1
-
 - relationType
-  - type: tbd
+  - type: relationTypeType
   - minCount: 1
   - maxCount: 1
-
 - supplyChainContext
-  - type: tbd
-  - minCount: 1
+  - type: supplyChainContextType
   - maxCount: 1
-
 - releaseCycles
-  - type: tbd
+  - type: releaseCyclesType
   - minCount: 1
   - maxCount: 1
-
-- fossComplianceBundelProvision
-  - type: tbd
+- fossComplianceBundleProvision
+  - type: fossComplianceBundleProvisionType
   - minCount: 1
   - maxCount: 1
-
 - contractSetup
-  - type: tbd
-  - minCount: 1
+  - type: contractSetupType
   - maxCount: 1
-
 - fossTermsTowardsCustomer
-  - type: tbd
-  - minCount: 1
+  - type: /Core/Artifact
   - maxCount: 1
-
 - distributionTermsTowardsCustomer
-  - type: tbd
-  - minCount: 1
-  - maxCount: 1
-
-- customerFossContact
-  - type: tbd
-  - minCount: 1
+  - type: /Core/Artifact
   - maxCount: 1

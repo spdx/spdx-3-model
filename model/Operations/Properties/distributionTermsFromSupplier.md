@@ -15,4 +15,4 @@ agreed that may impact the Open Source Components, please provide here
 
 - name: distributionTermsFromSupplier
 - Nature: DataProperty
-- Range: xsd:string
+- Range: /Core/Artifact

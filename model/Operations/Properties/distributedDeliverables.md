@@ -14,4 +14,4 @@ Overview list of the software deliverables that the "product" consists of (e.g. 
 
 - name: distributedDeliverables
 - Nature: DataProperty
-- Range: xsd:string
+- Range: /Core/Artifact

@@ -15,4 +15,4 @@ Entities that took part in the development of the deliverable
 
 - name: developedBy
 - Nature: DataProperty
-- Range: xsd:string
+- Range: /Core/Agent

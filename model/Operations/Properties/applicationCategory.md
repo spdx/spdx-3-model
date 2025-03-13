@@ -14,4 +14,4 @@ intended way to distribute / deploy the application while development (e.g. host
 
 - name: applicationCategory
 - Nature: DataProperty
-- Range: xsd:string
+- Range: ApplicationCategoryType

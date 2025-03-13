@@ -14,4 +14,4 @@ This field describes the setup of the contract that is used to make the applicat
 
 - name: contractSetup
 - Nature: DataProperty
-- Range: xsd:string
+- Range: contractSetupType

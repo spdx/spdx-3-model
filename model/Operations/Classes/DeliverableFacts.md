@@ -13,124 +13,66 @@ The deliverable facts are collected and update in all deliverable lifecycle phas
 ## Metadata
 
 - name: DeliverableFacts
-- SubclassOf: tbd
+- SubclassOf: Delivery
 - Instantiability: Concrete
 
 ## Properties
 
 - programmingLanguage
-  - type: tbd
+  - type: ProgrammingLanguageType
   - minCount: 1
-  - maxCount: n
-
 - dependencyManager
-  - type: tbd
+  - type: DependencyManagerType
   - minCount: 1
-  - maxCount: n
-
 - packageManager
-  - type: tbd
+  - type: PackageManagerType
   - minCount: 1
-  - maxCount: n
-
 - environmentFramework
-  - type: tbd
+  - type: EnvironmentFrameworkType
   - minCount: 1
-  - maxCount: n
-
 - applicationCategory
-  - type: tbd
+  - type: ApplicationCategoryType
   - minCount: 1
   - maxCount: 1
-
 - applicationType
-  - type: tbd
+  - type: ApplicationType
   - minCount: 1
   - maxCount: 1
-
 - distributionMethod
-  - type: tbd
+  - type: DistributionMethodType
   - minCount: 1
-  - maxCount: 1
-
+  - maxCount: n
 - operatingSystem
-  - type: tbd
+  - type: OperatingSystemType
   - minCount: 1
   - maxCount: 1
-
 - consistsOf
-  - type: tbd
+  - type: /Core/Artifact
   - minCount: 1
-  - maxCount: n
-
 - developedBy
-  - type: tbd
+  - type: /Core/Agent
   - minCount: 1
-  - maxCount: n
-
 - contact
-  - type: tbd
+  - type: /Core/Agent
   - minCount: 1
-  - maxCount: n
-
 - linkToArchitecture
-  - type: tbd
+  - type: xsd:anyURI
   - minCount: 1
   - maxCount: 1
-
 - osmConcept
-  - type: tbd
+  - type: xsd:anyURI
   - minCount: 1
   - maxCount: 1
-
 - fossComplianceBundleStorage
-  - type: tbd
+  - type: xsd:string
   - minCount: 1
   - maxCount: 1
-
 - reviews
-  - type: tbd
+  - type: xsd:anyURI
   - minCount: 1
-  - maxCount: n
-
-- comment
-  - type: tbd
-  - minCount: 1
-  - maxCount: n
-
-[//]: the parts below should be a class that can be instantiated 0:n
-
+- deliverableComment
+  - type: xsd:string
+  - maxCount: 1
 - supplierDeliverableFacts
-  - type: tbd
-  - minCount: 1
-  - maxCount: n
-
-- supplierName
-  - type: tbd
-  - minCount: 1
-  - maxCount: n
-
-- deliverableFromSupplier
-  - type: tbd
-  - minCount: 1
-  - maxCount: n
-
-- fossTermsTowardsSupplier
-  - type: tbd
-  - minCount: 1
-  - maxCount: n
-
-- distributionTermsFromSupplier
-  - type: tbd
-  - minCount: 1
-  - maxCount: n
-
-- fossComplianceBundleConsumption
-  - type: tbd
-  - minCount: 1
-  - maxCount: n
-
-- supplierFossContact
-  - type: tbd
-  - minCount: 1
-  - maxCount: n
+  - type: Delivery
+  - minCount: 0

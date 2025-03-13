@@ -14,4 +14,4 @@ programming language used to implement the deliverable
 
 - name: programmingLanguage
 - Nature: DataProperty
-- Range: xsd:string
+- Range: ProgrammingLanguageType

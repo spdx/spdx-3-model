@@ -14,4 +14,4 @@ link to the used open source management concept or standard reference used while
 
 - name: osmConcept
 - Nature: DataProperty
-- Range: xsd:string
+- Range: xsd:anyURI

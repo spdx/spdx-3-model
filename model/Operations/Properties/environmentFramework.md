@@ -14,4 +14,4 @@ environment or framework used to implement the deliverable (e.g. NodeJS,…)
 
 - name: environmentFramework
 - Nature: DataProperty
-- Range: xsd:string
+- Range: EnvironmentFrameworkType

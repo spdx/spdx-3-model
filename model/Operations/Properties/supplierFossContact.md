@@ -14,4 +14,4 @@ Contact person on supplier side in case urgent measures need to be taken
 
 - name: supplierFossContact
 - Nature: DataProperty
-- Range: xsd:string
+- Range: /Core/Agent
