@@ -312,7 +312,7 @@ A DateTime is a string representation of a specific date and time.
 
 ### Individuals
 
-The name of an individual  must be in `UpperCamelCase` format.
+The name of an individual must be in `UpperCamelCase` format.
 
 Allowed headings:
 
