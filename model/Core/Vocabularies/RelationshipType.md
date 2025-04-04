@@ -30,6 +30,7 @@ name completes the sentence:
 - ancestorOf: The `from` Element is an ancestor of each `to` Element.
 - availableFrom: The `from` Element is available from the additional supplier described by each `to` Element.
 - configures: The `from` Element is a configuration applied to each `to` Element, during a LifecycleScopeType period.
+- conformsTo: The `from` Element conforms to each `to` Regulation.
 - contains: The `from` Element contains each `to` Element.
 - coordinatedBy: The `from` Vulnerability is coordinatedBy the `to` Agent(s) (vendor, researcher, or consumer agent).
 - copiedTo: The `from` Element has been copied to each `to` Element.
