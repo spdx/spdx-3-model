@@ -1,28 +1,127 @@
 # Validating SPDX 3 JSON-LD documents
 
-There are two mechanisms for validating SPDX 3 JSON-LD documents: validating
-the structure against the JSON Schema, and validating the semantics against the
-SHACL model.
+There are two mechanisms for validating SPDX 3 JSON-LD documents:
+validating the structure against the JSON Schema, and
+validating the semantics against the SHACL model.
 
 These two different mechanisms serve validate the document in different ways,
 so it is recommended to do both types of validation to ensure that your
 documents are correct.
 
-Validation of documents can be done locally using the methods described below.
+## Table of contents
 
-## Validating the structure against the JSON Schema
+- [Background](#background)
+  - [Validating the structure against the JSON Schema](#validating-the-structure-against-the-json-schema)
+  - [Validating the semantics against the SHACL model](#validating-the-semantics-against-the-shacl-model)
+- [Common errors](#common-errors)
+- [Validating with online tools](#validating-with-online-tools)
+- [Validating with command-line tools](#validating-with-command-line-tools)
+  - [spdx3-validate](#spdx3-validate) (JSON Schema + SHACL) (Python)
+  - [ajv](#ajv) (JSON Schema) (Node.js)
+  - [check-jsonschema](#check-jsonschema) (JSON Schema) (Python)
+  - [pyshacl](#pyshacl) (SHACL) (Python)
+- [Real-time validation in text editors](#real-time-validation-in-text-editors)
+  - [Real-time validation in Visual Studio Code](#real-time-structural-validation-in-visual-studio-code)
 
-SPDX 3 JSON-LD documents adhere to a JSON Schema to ensure that they can be
-parsed as either RDF documents using a full RDF parsing library, or as more
-simplistic JSON documents using a basic JSON parser. Validating a document
-against the JSON schema requires installing a tool that can do the validation.
+## Background
+
+### Validating the structure against the JSON Schema
+
+SPDX 3 JSON-LD documents adhere to a [JSON Schema][json-schema] to ensure that
+they can be parsed as either RDF documents using a full RDF parsing library,
+or as more simplistic JSON documents using a basic JSON parser.
 
 JSON Schema validation is designed to ensure that a document is structurally
 conformant to the SPDX 3 spec (that is, all the proper fields are used and have
 the correct types), but it is unable to ensure that a document is semantically
 correct (that is that everything is used in the correct way).
 
-There are a few tools that are known to work, which are described below
+Known validators: [spdx3-validate](#spdx3-validate), [ajv](#ajv),
+[check-jsonschema](#check-jsonschema)
+
+[json-schema]: https://en.wikipedia.org/wiki/JSON#Metadata_and_schema
+
+### Validating the semantics against the SHACL model
+
+The SPDX 3 [SHACL model][shacl] is designed to validate that a document is
+semantically valid, that is that the way objects and properties are used
+actually conforms to SPDX 3.
+
+However, the SHACL model cannot validate the structure of a document,
+since there are many different ways of encoding an RDF document,
+many of which are not allowed by SPDX 3.
+
+Known validators: [spdx3-validate](#spdx3-validate), [pyshacl](#pyshacl)
+
+[shacl]: https://en.wikipedia.org/wiki/SHACL
+
+## Common errors
+
+Here are some common errors worth looking into if an SPDX JSON-LD fails
+validation.
+
+### Serialized names
+
+Serialized names take the form of either `profilename_ClassName` or
+`profilename_propertyName`.
+
+The prefix `profilename_` is derived from the name of the Profile and is always
+written in lowercase letters.
+There is an exception for the `Core` Profile, where serialized names omit the
+prefix entirely.
+
+For example,
+
+- `dataset_datasetType` for a `datasetType` Property in the `Dataset` Profile
+- `expandedlicensing_CustomLicense` for a `CustomLicense` Class in the
+  `ExpandedLicensing` Profile
+- `Person` for a Class `Person` in the `Core` Profile (no prefix)
+
+### Cardinality
+
+A property with a cardinality greater than 1 must be represented as an array in
+JSON, regardless of the actual number of values it holds.
+
+### Casing
+
+Note that SPDX 3 may use different casing than vocabularies in previous versions.
+
+For example, in the SPDX 3.0 Software Profile, the `homePage` property uses an
+uppercase "P," while SPDX 2.3 uses the DOAP `homepage` property, which has a
+lowercase "p."
+
+## Validating with online tools
+
+A web-based validation tool is available at <https://tools.spdx.org/>:
+
+- [Validate SPDX Document](https://tools.spdx.org/app/validate/)
+
+<!-- Add SBOM Conformance Checker here with it supports SPDX 3 -->
+
+## Validating with command-line tools
+
+Documents can be validated locally using the methods described below.
+
+These tools can also be integrated into automated workflows to ensure SBOM
+correctness.
+
+### spdx3-validate
+
+[spdx3-validate](https://github.com/JPEWdev/spdx3-validate) is a validator
+designed specifically for SPDX 3.
+It can handle `spdxId`s in relation to `ExternalMap` entries.
+
+Install:
+
+```shell
+pip install spdx3-validate
+```
+
+Validate:
+
+```shell
+spdx3-validate --json <DOCUMENT>
+```
 
 ### ajv
 
@@ -70,17 +169,6 @@ no need to download it first. To validate a document, run the command:
 check-jsonschema -v --schemafile https://spdx.org/schema/3.0.1/spdx-json-schema.json <DOCUMENT>
 ```
 
-## Validating the semantics against the SHACL model
-
-The SPDX 3 SHACL model is designed to validate that a document is semantically
-valid, that is that the way objects and properties are used actually conforms
-to SPDX 3. However, the SHACL model cannot validate the structure of a
-document, since there are many different ways of encoding an RDF document,
-many of which are not allowed by SPDX 3.
-
-There is currently only one preferred tool for validating an SPDX 3 document
-against the model:
-
 ### pyshacl
 
 [pyshacl](https://github.com/RDFLib/pySHACL/) is a Python based SHACL validator
@@ -106,10 +194,10 @@ outside of your document, as it cannot understand the use of `import` in
 `SpdxDocument`. For the time being, you will need to manually verify these
 references and ignore the warnings.
 
-## Enable real-time validation during editing
+## Real-time validation in text editors
 
-Some code editors offer real-time validation of JSON against a schema as you
-edit. This feature is particularly handy for quickly identifying the location
+Some code editors offer real-time validation of JSON as you edit.
+This feature is particularly handy for quickly identifying the location
 of errors or warnings.
 
 ### Real-time structural validation in Visual Studio Code
@@ -129,6 +217,7 @@ to the `json.schemas` array.
 "json.schemas": [
   {
     "fileMatch": [
+      "*.spdx.json",
       "*.spdx3.json"
     ],
     "url": "https://spdx.org/schema/3.0.1/spdx-json-schema.json"
@@ -150,30 +239,6 @@ The editor can also recommend an acceptable value.
 ![Suggestions for a type while typing](./validation-vscode-suggestion.png "A screenshot showing suggestions for a type while typing")
 
 Note again that the validation in Visual Studio Code is against a JSON Schema,
-which  validates the structure of the JSON-LD document.
+which validates the structure of the JSON-LD document.
 However, it does not validate the semantics of the document.
 You still need to perform separate validation against the SHACL model.
-
-## Common errors
-
-Here are some common errors worth looking into if an SPDX JSON-LD fails validation.
-
-### Serialized names
-
-Serialized names take the form of either `profilename_ClassName` or
-`profilename_propertyName`.  The prefix `profilename_` is derived from the name
-of the Profile and is always written in lowercase letters.
-There is an exception for the `Core` Profile, where serialized names omit the
-prefix entirely.
-
-For example,
-
-- `dataset_datasetType` for a `datasetType` Property in the `Dataset` Profile
-- `expandedlicensing_CustomLicense` for a `CustomLicense` Class in the
-  `ExpandedLicensing` Profile
-- `Person` for a Class `Person` in the `Core` Profile (no prefix)
-
-### Cardinality
-
-A property with a cardinality greater than 1 must be represented as an array in
-JSON, regardless of the actual number of values it holds.

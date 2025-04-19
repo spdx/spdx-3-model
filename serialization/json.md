@@ -12,12 +12,13 @@ The object consists of key-value pairs that allow the shortening of IDs and whic
 
 For deserialization purposes, follow this process:
 
-- For every string that is an ID (that includes values of the keys "spdxId" and "@id", 
+- For every string that is an ID (that includes values of the keys "spdxId" and "@id",
   as well as all strings where you would expect objects according to the SPDX-3 model),
   split that string at the first colon into "prefix:suffix".
 - If the suffix does not start with "//" and the prefix is a key in the namespace map,
   replace "prefix:" with the value found under that key in the namespace map.
 - Else do nothing to that string.
+
 After you are done applying this process to all IDs, you can ignore the "@context".
 
 ### Parsing "@graph"
