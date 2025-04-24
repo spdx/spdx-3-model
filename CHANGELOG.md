@@ -1,6 +1,6 @@
 # Change Log
 
-## Post-3.0.1 (2025-03-08)
+## Post-3.0.1 (2025-04-24)
 
 ### Changes since 3.0.1
 
@@ -11,6 +11,8 @@ semantic changes to the model and may affect compatibility.
   - A property identifying the size of a software artifact, in bytes.
 - **Improved:** `/Security/*VulnAssessmentRelationship` examples - [#994](https://github.com/spdx/spdx-3-model/pull/994)
   - Corrected values in examples within the JSON-LD examples section.
+- **Clarified:** Serialization and validation documents - [#1019](https://github.com/spdx/spdx-3-model/pull/1019)
+  - Use "SPDX 3 JSON" name (instead of "SPDX 3 JSON-LD").
 - Fixed general typos and formatting issues.
 
 ## 3.0.1 (2024-12-10)
