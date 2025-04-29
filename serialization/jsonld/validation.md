@@ -1,6 +1,11 @@
-# Validating SPDX 3 JSON-LD documents
+# Validating SPDX 3 JSON documents
 
-There are two mechanisms for validating SPDX 3 JSON-LD documents:
+> The SPDX 3 JSON format is a strict subset of JSON-LD.
+> It requires data to be serialized according to the defined serialization
+> specification and validated against the SPDX 3 JSON Schema.
+> It may be parsed – not serialized – using standard JSON-LD libraries.
+
+There are two mechanisms for validating SPDX 3 JSON documents:
 validating the structure against the JSON Schema, and
 validating the semantics against the SHACL model.
 
@@ -27,17 +32,20 @@ documents are correct.
 
 ### Validating the structure against the JSON Schema
 
-SPDX 3 JSON-LD documents adhere to a [JSON Schema][json-schema] to ensure that
+SPDX 3 JSON documents adhere to the SPDX 3 JSON Schema to ensure that
 they can be parsed as either RDF documents using a full RDF parsing library,
 or as more simplistic JSON documents using a basic JSON parser.
 
-JSON Schema validation is designed to ensure that a document is structurally
+[JSON Schema][json-schema] validation
+is designed to ensure that a document is structurally
 conformant to the SPDX 3 spec (that is, all the proper fields are used and have
 the correct types), but it is unable to ensure that a document is semantically
 correct (that is that everything is used in the correct way).
 
-Known validators: [spdx3-validate](#spdx3-validate), [ajv](#ajv),
-[check-jsonschema](#check-jsonschema)
+- The SPDX 3 JSON Schema is available at:
+  <https://spdx.org/schema/3.0.1/spdx-json-schema.json>
+- Known validators: [spdx3-validate](#spdx3-validate), [ajv](#ajv),
+  [check-jsonschema](#check-jsonschema)
 
 [json-schema]: https://en.wikipedia.org/wiki/JSON#Metadata_and_schema
 
@@ -51,7 +59,10 @@ However, the SHACL model cannot validate the structure of a document,
 since there are many different ways of encoding an RDF document,
 many of which are not allowed by SPDX 3.
 
-Known validators: [spdx3-validate](#spdx3-validate), [pyshacl](#pyshacl)
+- The SPDX 3 OWL ontology, which contains the SPDX 3 SHACL model,
+  is available at:
+  <https://spdx.org/rdf/3.0.1/spdx-model.ttl>
+- Known validators: [spdx3-validate](#spdx3-validate), [pyshacl](#pyshacl)
 
 [shacl]: https://en.wikipedia.org/wiki/SHACL
 
