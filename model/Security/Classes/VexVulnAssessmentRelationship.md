@@ -16,7 +16,6 @@ properties shared by all the SPDX-VEX status relationships.
 When linking elements using a VexVulnAssessmentRelationship, the following
 requirements must be observed:
 
-- The from: end must be a /Security/Vulnerability classed element
 - The to: end must point to elements representing the VEX *products*.
 
 To specify a different element where the vulnerability was detected, the VEX

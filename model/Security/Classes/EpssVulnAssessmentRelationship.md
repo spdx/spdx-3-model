@@ -24,14 +24,14 @@ scores, using the Exploit Prediction Scoring System (EPSS) as defined at
 
 ```json
 {
-  "type": "EpssVulnAssessmentRelationship",
+  "type": "security_EpssVulnAssessmentRelationship",
   "spdxId": "urn:spdx.dev:epss-CVE-2020-28498",
   "relationshipType": "hasAssessmentFor",
   "security_probability": "0.00105",
   "security_percentile": "0.42356",
   "from": "urn:spdx.dev:vuln-cve-2020-28498",
   "to": ["urn:product-acme-application-1.3"],
-  "suppliedBy": ["urn:spdx.dev:agent-jane-doe"],
+  "suppliedBy": "urn:spdx.dev:agent-jane-doe",
   "publishedTime": "2023-10-05T00:00:30Z"
 }
 ```

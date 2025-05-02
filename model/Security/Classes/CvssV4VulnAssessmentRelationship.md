@@ -22,33 +22,33 @@ It is intended to communicate the results of using a CVSS calculator.
 
 ```json
 {
-  "type": "CvssV4VulnAssessmentRelationship",
+  "type": "security_CvssV4VulnAssessmentRelationship",
   "spdxId": "urn:spdx.dev:cvssv4-cve-2021-44228",
   "relationshipType": "hasAssessmentFor",
-  "security_severity": "medium",
+  "security_severity": "critical",
   "security_score": "10.0",
-  "security_vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/AR:N/UI:N/VCH/VI:H/VA:H/SC:H/SI:H/SA:H/E:A",
+  "security_vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:N/SA:N",
   "from": "urn:spdx.dev:vuln-cve-2021-44228",
   "to": ["urn:product-acme-application-1.3"],
   "security_assessedElement": "urn:apache-log4j-2.14.1",
   "externalRef": [
     {
-      "@type": "ExternalRef",
+      "type": "ExternalRef",
       "externalRefType": "securityAdvisory",
       "locator": "https://nvd.nist.gov/vuln/detail/CVE-2021-44228"
     },
     {
-      "@type": "ExternalRef",
+      "type": "ExternalRef",
       "externalRefType": "securityAdvisory",
       "locator": "https://logging.apache.org/log4j/2.x/security.html"
     },
     {
-      "@type": "ExternalRef",
+      "type": "ExternalRef",
       "externalRefType": "securityOther",
       "locator": "https://www.first.org/cvss/v4.0/examples#Apache-log4j-Vulnerability-CVE-2021-44228"
     },
   ],
-  "suppliedBy": ["urn:spdx.dev:agent-my-security-vendor"],
+  "suppliedBy": "urn:spdx.dev:agent-my-security-vendor",
   "publishedTime": "2023-10-05T23:09:13Z"
 },
 {
