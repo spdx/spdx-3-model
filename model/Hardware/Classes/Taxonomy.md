@@ -10,6 +10,7 @@ Taxonomy is used to organize any set of items or concepts into a hierarchical st
 
 Taxonomy is used to organize any set of items or concepts into a hierarchical structure.
 This approach helps users efficiently find, compare, and understand information by breaking it down into logical, related groups.
+
 ## Metadata
 
 - name: Taxonomy
