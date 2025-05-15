@@ -23,17 +23,12 @@ A specification (spec) is a detailed document that outlines the exact requiremen
 
 - specType
   - type: SpecificationType
-  - minCount: 1
+  - minCount: 0
   - maxCount: 1
 
 ## External properties restrictions
 
 - /Core/Element/externalIdentifier
   - minCount: 1
-- /Core/Element/externalRef
-  - minCount: 1
-- /Core/Artifact/releaseTime
-  - minCount: 1
-- /Core/Artifact/originatedBy
-  - minCount: 1
+
 
