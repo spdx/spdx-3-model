@@ -19,4 +19,4 @@ A product specification (product spec) is a detailed document that outlines the 
 ## Properties
 
 - hazard
-  - type: DefinedHazard
+  - type: /Core/DefinedType
