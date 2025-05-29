@@ -14,4 +14,4 @@ Hazards are potential sources of harm, danger, or adverse effects to people, pro
 
 - name: hazard
 - Nature: ObjectProperty
-- Range: DefinedHazard
+- Range: /Core/DefinedType
