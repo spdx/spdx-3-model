@@ -4,14 +4,14 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-The category describes the hardware item in the taxonomy.
+The category describes the hardware item in a DefinedType.
 
 ## Description
 
-The category describes the hardware item in the taxonomy.
+The category describes the hardware item in a DefinedType.
 
 ## Metadata
 
 - name: category
 - Nature: ObjectProperty
-- Range: Taxonomy
+- Range: /Core/DefinedType
