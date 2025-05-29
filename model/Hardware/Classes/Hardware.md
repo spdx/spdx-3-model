@@ -39,9 +39,9 @@ A hardware artifact is a distinct unit related to hardware.
   - type: xsd:string
   - maxCount: 1
 - hazard
-  - type: DefinedHazard
+  - type: /Core/DefinedType
 - category
-  - type: Taxonomy
+  - type: /Core/DefinedType
 - additionalInformationSpecification 
   - type: /Core/Specification
 - additionalInformation
