@@ -27,3 +27,7 @@ ExternalIdentifierType specifies the type of an external identifier.
 - swhid: SoftWare Hash IDentifier, a persistent intrinsic identifier for digital artifacts, such as files, trees (also known as directories or folders), commits, and other objects typically found in version control systems. The format of the identifiers is defined in the [SWHID specification](https://www.swhid.org/specification/v1.1/4.Syntax) (ISO/IEC DIS 18670). They typically look like `swh:1:cnt:94a9ed024d3859793618152ea559a168bbcbb5e2`.
 - swid: Concise Software Identification (CoSWID) tag, as defined in [RFC 9393](https://datatracker.ietf.org/doc/rfc9393/) Section 2.3.
 - urlScheme: [Uniform Resource Identifier (URI) Schemes](https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml). The scheme used in order to locate a resource.
+- gtin - Global Trade Item Number (GTIN) can be used to uniquely identify all of its trade items [Global Trade Item Number (GTIN) | GS1](https://www.gs1.org/standards/id-keys/gtin)
+- hsCodes - The Harmonized System (HS) of tariff nomenclature is an internationally standardized system of names and numbers to classify traded products. [World Customs Organization](https://www.wcoomd.org/en/topics/nomenclature/overview/what-is-the-harmonized-system.aspx)
+- gln - Global Location Number (GLN) can be used by companies to identify their locations. [Global Location Number (GLN) | GS1](https://www.gs1.org/standards/id-keys/gln)
+  
