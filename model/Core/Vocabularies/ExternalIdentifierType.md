@@ -32,4 +32,4 @@ ExternalIdentifierType specifies the type of an external identifier.
 - gln: Global Location Number (GLN) can be used by companies to identify their locations. [Global Location Number (GLN) | GS1](https://www.gs1.org/standards/id-keys/gln)
 - duns: The Dun & Bradstreet D‑U‑N‑S Number is a unique nine-digit identifier for businesses. [D-U-N-S Number Questions: Start Here - Dun & Bradstreet](https://www.dnb.com/en-us/smb/duns.html)
 - lei: The Legal Entity Identifier (LEI) is a 20-character, alpha-numeric code based on the ISO 17442 standard developed by the International Organization for Standardization (ISO). [Identifying Organizations - the Legal Entity Identifier (LEI) - Organizational Identity – GLEIF](https://www.gleif.org/en/organizational-identity/introducing-the-legal-entity-identifier-lei)
-- GLUID: GLobal Unique Enterprise (GLUE) Identifiers [GLobal Unique Enterprise (GLUE) Identifiers](https://datatracker.ietf.org/doc/draft-ietf-spice-glue-id/)
+- glue: GLobal Unique Enterprise (GLUE) Identifiers [GLobal Unique Enterprise (GLUE) Identifiers](https://datatracker.ietf.org/doc/draft-ietf-spice-glue-id/)
