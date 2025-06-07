@@ -8,7 +8,7 @@ Software provided as a service over a network.
 
 ## Description
 
-SoftwareService represents software being licensed, delivered and accessed online over a network.
+SoftwareService represents a service based on software components offered for access online over a network.
 
 ## Properties
 
