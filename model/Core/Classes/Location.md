@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Location is used to define the location, address or coordinates of an place. 
+Location is used to define the location, address or coordinates of a place. 
 
 ## Description
 
