@@ -17,6 +17,10 @@ A physical location is a tangible, geographically identifiable place where objec
 - Instantiability: Concrete
 
 ## Properties
+- country
+  - type: CountryCodeAlpha3
+  - minCount: 0
+  - maxCount: 1
 - city
   - type: xsd:string
   - minCount: 0
