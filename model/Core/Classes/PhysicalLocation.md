@@ -45,3 +45,6 @@ A physical location is a tangible, geographically identifiable place where objec
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
+- geographicPointLocation
+  - type: xsd:string
+  - minCount: 0
