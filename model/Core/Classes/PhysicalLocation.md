@@ -21,6 +21,10 @@ A physical location is a tangible, geographically identifiable place where objec
   - type: CountryCodeAlpha3
   - minCount: 0
   - maxCount: 1
+- countyCode
+  - type: xsd:string
+  - minCount: 0
+  - maxCount: 1
 - city
   - type: xsd:string
   - minCount: 0
@@ -37,7 +41,7 @@ A physical location is a tangible, geographically identifiable place where objec
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
-- regionInCountry
+- provinceStateCode
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
