@@ -4,7 +4,7 @@
 
 ### Changes since 3.0.1
 
-Items marked 'Removed,' 'Fixed,' or 'Added' indicate potential
+Items marked 'Removed' or 'Fixed' indicate potential
 semantic changes to the model and may affect compatibility.
 
 - **Added:** `/Software/artifactSize` property - [#966](https://github.com/spdx/spdx-3-model/pull/966)
@@ -19,7 +19,7 @@ semantic changes to the model and may affect compatibility.
 
 ### Changes since 3.0
 
-Items marked 'Removed,' 'Fixed,' or 'Added' indicate potential
+Items marked 'Removed' or 'Fixed' indicate potential
 semantic changes to the model and may affect compatibility.
 
 - **Removed:** `Software/contentType` property - [#789](https://github.com/spdx/spdx-3-model/pull/789)
