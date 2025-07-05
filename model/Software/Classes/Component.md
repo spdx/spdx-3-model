@@ -5,7 +5,6 @@ SPDX-License-Identifier: Community-Spec-1.0
 ## Summary
 
 Refers to an abstract, conceptual software entity.
-software.
 
 ## Description
 
