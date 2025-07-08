@@ -26,6 +26,12 @@ its official homepage, or its originating author or organization.
 
 ## Properties
 
+- attributionText
+  - type: xsd:string
+  - minCount: 0
+- copyrightText
+  - type: xsd:string
+  - minCount: 0
 - homePage
   - type: xsd:anyURI
   - minCount: 0
@@ -42,3 +48,4 @@ its official homepage, or its originating author or organization.
 
 - /Core/Element/name
   - minCount: 1
+
