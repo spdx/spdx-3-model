@@ -4,12 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A container for a grouping of SPDX-3.0 content characterizing details
+A container for a grouping of SPDX 3.0 content characterizing details
 (provenance, composition, licensing, etc.) about a product.
 
 ## Description
 
-A Bill of Materials (BOM) is a container for a grouping of SPDX-3.0 content
+A Bill of Materials (BOM) is a container for a grouping of SPDX 3.0 content
 characterizing details about a product.
 
 This could include details of the content and composition of the product,

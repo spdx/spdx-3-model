@@ -4,12 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Provides a reference to a resource outside the scope of SPDX-3.0 content
+Provides a reference to a resource outside the scope of SPDX 3.0 content
 that uniquely identifies an Element.
 
 ## Description
 
-ExternalIdentifier points to a resource outside the scope of SPDX-3.0 content
+ExternalIdentifier points to a resource outside the scope of SPDX 3.0 content
 that uniquely identifies an Element.
 
 ## Metadata
