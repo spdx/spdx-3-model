@@ -22,7 +22,7 @@ scheme:type/namespace/name@version?qualifiers#subpath
 ```
 
 The definition for each component can be found in the corresponding
-[Annex](../../../annexes/pkg-url-specification.md) of this specification.
+[Annex](../../../annexes/pkg-url-specification.md) of this document.
 Known type definitions can be found in the
 Package URL [type definitions](https://github.com/package-url/purl-spec/blob/b33dda1cf4515efa8eabbbe8e9b140950805f845/PURL-TYPES.rst).
 
