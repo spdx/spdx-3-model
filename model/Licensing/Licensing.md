@@ -190,4 +190,4 @@ the following has to hold:
 
 要使元素集符合此配置文件，必须满足以下条件：
 
-1.对于每个`/Software/SoftwareArtifact`，**必须**存在一个类型为`hasConcludedLicense`的`/Core/Relationship`，其`from`属性为该元素，`to`属性为`/SimpleLicensing/AnyLicenseInfo`。
+1. 对于每个`/Software/SoftwareArtifact`，**必须**存在一个类型为`hasConcludedLicense`的`/Core/Relationship`，其`from`属性为该元素，`to`属性为`/SimpleLicensing/AnyLicenseInfo`。

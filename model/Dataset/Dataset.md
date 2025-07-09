@@ -46,6 +46,6 @@ the following has to hold:
 1. 每一个 `/Dataset/DatasetPackage` 必须存在一个类型为 `hasConcludedLicense`
    的 `/Core/Relationship` 元素，此元素作为它的 `from` 属性，
    `/SimpleLicensing/AnyLicenseInfo` 作为它的 `to` 属性。
-2. 每一个  `/Dataset/DatasetPackage` 必须存在一个类型为 `hasDeclaredLicense`
+2. 每一个 `/Dataset/DatasetPackage` 必须存在一个类型为 `hasDeclaredLicense`
    的 `/Core/Relationship` 元素，此元素作为它的 `from` 属性，
    `/SimpleLicensing/AnyLicenseInfo` 作为它的 `to` 属性。
