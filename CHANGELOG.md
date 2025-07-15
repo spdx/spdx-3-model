@@ -1,8 +1,26 @@
 # Change Log
 
+## Post-3.0.1 (2025-04-24)
+
+### Changes since 3.0.1
+
+Items marked 'Removed' or 'Fixed' indicate potential
+semantic changes to the model and may affect compatibility.
+
+- **Added:** `/Software/artifactSize` property - [#966](https://github.com/spdx/spdx-3-model/pull/966)
+  - A property identifying the size of a software artifact, in bytes.
+- **Improved:** `/Security/*VulnAssessmentRelationship` examples - [#994](https://github.com/spdx/spdx-3-model/pull/994)
+  - Corrected values in examples within the JSON-LD examples section.
+- **Clarified:** Serialization and validation documents - [#1019](https://github.com/spdx/spdx-3-model/pull/1019)
+  - Use "SPDX 3 JSON" name (instead of "SPDX 3 JSON-LD").
+- Fixed general typos and formatting issues.
+
 ## 3.0.1 (2024-12-10)
 
 ### Changes since 3.0
+
+Items marked 'Removed' or 'Fixed' indicate potential
+semantic changes to the model and may affect compatibility.
 
 - **Removed:** `Software/contentType` property - [#789](https://github.com/spdx/spdx-3-model/pull/789)
   - The `Software/File` class is meant to use the `Core/contentType` property.
@@ -59,6 +77,12 @@
   - Add `Core/IndividualElement` class
     to the Core diagram - [#941](https://github.com/spdx/spdx-3-model/pull/941)
 - Fixed general typos and formatting issues.
+
+### Release notes
+
+The version 3.0.1 model release notes,
+with full change records from 3.0 to 3.0.1, are available at:
+<https://github.com/spdx/spdx-3-model/releases/tag/3.0.1>.
 
 ## 3.0 (2024-04-15)
 

@@ -51,4 +51,4 @@ conclusions about the context in which the Element exists.
 - requirement: The Element provides a requirement needed as input for another Element.
 - source: The Element is a single or a collection of source files.
 - specification: The Element is a plan, guideline or strategy how to create, perform or analyze an application.
-- test: The Element is a test used to verify functionality on an software element.
+- test: The Element is a test used to verify functionality on a software element.

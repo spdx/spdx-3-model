@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Provides a map of a property names to a values.
+Provides a map of a property name to a value.
 
 ## Description
 

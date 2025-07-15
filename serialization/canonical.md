@@ -16,7 +16,7 @@ Such a canonical form normalizes things like ordering and formatting.
 
 1. integers: represented in base 10 using decimal digits. Contains an integer component that may be prefixed with an optional minus sign. Leading zeros are not allowed.
 
-1. strings: UTF-8 representation without specific canonicalisation. A string begins and ends with quotation marks (%x22). Any Unicode characters may be placed within the quotation marks, except for the characters that MUST be escaped: quotation mark, reverse solidus, and the control characters (U+0000 through U+001F).
+1. strings: UTF-8 representation without specific normalization. A string begins and ends with quotation marks (%x22). Any Unicode characters may be placed within the quotation marks, except for the characters that MUST be escaped: quotation mark, reverse solidus, and the control characters (U+0000 through U+001F).
 
 1. arrays: An array structure is represented as square brackets surrounding zero or more items. Items are separated by commas.
 
