@@ -10,7 +10,6 @@ Origin of the requirement context.
 
 Specification, why the context is like it is. Describes what it means, where the details of the Context are defined, can be a Specification, a Requirements Management Plan, a conference discussion etc.
 
-
 ## Metadata
 
 - name: contextOrigin
