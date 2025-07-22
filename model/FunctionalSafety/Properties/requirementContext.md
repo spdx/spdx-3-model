@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Context of the requirement relating it to a project and its structure
+Context of the requirement relating it to a project and its structure.
 
 ## Description
 
