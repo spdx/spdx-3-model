@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Namespace of the requirement
+Namespace of the requirement.
 
 ## Description
 
