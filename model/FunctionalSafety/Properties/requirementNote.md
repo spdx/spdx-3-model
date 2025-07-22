@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Text used to define the rational or additional information
+Text used to define the rational or additional information.
 
 ## Description
 
