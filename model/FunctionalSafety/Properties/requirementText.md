@@ -8,7 +8,7 @@ The statement describing the actual need defined by the requirement.
 
 ## Description
 
- the text portion of the requirement, usually following specific rules and best practices of requirements engineering. e.g. EARS
+The text portion of the requirement, usually following specific rules and best practices of requirements engineering. e.g. EARS.
 
 ## Metadata
 
