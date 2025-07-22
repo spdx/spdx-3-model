@@ -21,7 +21,7 @@ The requirement context describes the the hierarchical level of the requirement 
   - type:xsd:string
   - minCount: 0
   - maxCount: 1
-- requirementHierachyLevel
+- requirementHieratchyLevel
   - type: PositiveIntegerRange
   - minCount: 0
   - maxCount: 1
