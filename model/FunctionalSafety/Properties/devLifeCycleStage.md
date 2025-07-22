@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-The product lifecycle phase, the requirement is applicable for
+The product lifecycle phase, the requirement is applicable for.
 
 ## Description
 

@@ -4,12 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Text used to define the rational or additional information
+Text used to define the rational or additional information.
 
 ## Description
 
-additional detail used to define the reason/rational, why this requirement is there or give some additional information, needed to understand the requirement. Usually less formal than the requirement wording of the RequirementText.
-
+Additional detail used to define the reason/rational, why this requirement is there or give some additional information, needed to understand the requirement. Usually less formal than the requirement wording of the RequirementText.
 
 ## Metadata
 

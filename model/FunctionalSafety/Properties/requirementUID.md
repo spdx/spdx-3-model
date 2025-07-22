@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Provides an unique Requirement ID
+Provides a unique Requirement ID.
 
 ## Description
 
-An unique ID, as used by requirements management or other lifecycle management tools, usually a string that follows a project specific naming convention.
+A unique ID, as used by requirements management or other lifecycle management tools, usually a string that follows a project specific naming convention.
 
 ## Metadata
 
