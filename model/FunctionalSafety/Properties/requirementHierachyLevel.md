@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Number indicating the hierachical level of the requirement whithin its namespace
+Number indicating the hierarchical level of the requirement within its namespace.
 
 ## Description
 
