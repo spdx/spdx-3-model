@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Origin of the requirement context 
+Origin of the requirement context.
 
 ## Description
 
