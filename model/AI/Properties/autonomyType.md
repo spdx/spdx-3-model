@@ -8,7 +8,7 @@ Indicates whether the system can perform a decision or action without human
 involvement or guidance.
 
 Deprecated.
-Use [autonomyLevel](./autonomyLevel.md) instead.
+Use [automationLevel](automationLevel.md) instead.
 
 ## Description
 

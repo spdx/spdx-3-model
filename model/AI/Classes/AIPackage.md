@@ -18,8 +18,8 @@ Metadata information that can be added to a package to describe an AI applicatio
 
 ## Properties
 
-- autonomyLevel
-  - type: AutonomyLevel
+- automationLevel
+  - type: AutomationLevel
   - minCount: 0
   - maxCount: 1
 - autonomyType
