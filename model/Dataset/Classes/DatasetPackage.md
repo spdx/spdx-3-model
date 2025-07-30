@@ -40,6 +40,10 @@ Metadata information that can be added to a dataset that may be used in a softwa
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
+- datasetSize
+  - type: xsd:nonNegativeInteger
+  - minCount: 0
+  - maxCount: 1
 - datasetType
   - type: DatasetType
   - minCount: 1
