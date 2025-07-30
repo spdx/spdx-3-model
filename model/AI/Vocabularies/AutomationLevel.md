@@ -8,8 +8,9 @@ Defines the level of automation a system possesses.
 
 ## Description
 
-AutomationLevel is an enumeration categorizing a system's level of
-automation.
+AutomationLevel is an enumeration that categorizes a system's level of
+automation, helping to define the roles and responsibilities of both the
+human operator and the automated system.
 
 The 7-level enumeration is based on
 [ISO/IEC 22989:2022 Artificial intelligence concepts and terminology](https://www.iso.org/standard/74296.html),

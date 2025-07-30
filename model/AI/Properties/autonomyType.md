@@ -7,8 +7,8 @@ SPDX-License-Identifier: Community-Spec-1.0
 Indicates whether the system can perform a decision or action without human
 involvement or guidance.
 
-Deprecated.
-Use [automationLevel](automationLevel.md) instead.
+Deprecated in SPDX 3.1.
+Use [automationLevel](./automationLevel.md) instead.
 
 ## Description
 
