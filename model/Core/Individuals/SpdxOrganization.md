@@ -11,7 +11,7 @@ An Organization representing the SPDX Project.
 SpdxOrganization is an Organization representing the SPDX Project.
 It is by definition the creator of all Element type individuals defined by
 the SPDX Project.
-These individuals include licences and exceptions defined in the SPDX License
+These individuals include licenses and exceptions defined in the SPDX License
 List, as well as individuals defined in the specification.
 
 ## Metadata

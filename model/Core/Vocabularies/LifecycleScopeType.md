@@ -8,7 +8,8 @@ Provide an enumerated set of lifecycle phases that can provide context to relati
 
 ## Description
 
-This enumeration summarizes common phases when dependency and other relationships, have different implications, based on their context.  For example,  a build dependency, may have different implications than a operational dependency.
+This enumeration summarizes common phases when dependency and other relationships, have different implications, based on their context.
+For example, a build dependency, may have different implications than an operational dependency.
 
 ## Metadata
 
