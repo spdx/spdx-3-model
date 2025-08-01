@@ -21,7 +21,7 @@ A requirement element is a distinct article or unit defining an expectation, nee
   - type: ContentIdentifier
   - minCount: 0
   - maxCount: 1
-- DevLifeCycleStage
+- devLifeCycleStage
   - type: LifecycleScopeType
   - minCount: 0
   - maxCount: *
