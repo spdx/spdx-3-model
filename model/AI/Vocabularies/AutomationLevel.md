@@ -18,7 +18,7 @@ aligned with
 [SAE J3016_202104 Taxonomy and Definitions for Terms Related to Driving Automation Systems for On-Road Motor Vehicles](https://www.sae.org/standards/content/j3016_202104/),
 [Levels of Autonomy in Surgical Robotics (LASR)](https://doi.org/10.1038/s41746-024-01102-y),
 and
-[AutomationLevel in Data Privacy Vocabulary](https://w3c.github.io/dpv/2.1/dpv/#vocab-processing-context-automation).
+[AutomationLevel in Data Privacy Vocabulary](http://w3id.org/dpv/#AutomationLevel).
 
 Systems categorized with automation levels 0-5 are heteronomous.
 This means that while they may be fully automated, their goals and objectives
