@@ -5,12 +5,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 ## Summary
 
 Temporary endeavor with a beginning and an end and that must be used to create a unique product, service or result.
-(based on PMBOK (Project Management Body of Knowledge) 3rd edition)
 
 ## Description
 
 Temporary endeavor with a beginning and an end and that must be used to create a unique product, service or result.
-(based on PMBOK (Project Management Body of Knowledge) 3rd edition)
+
+Based on the Project Management Body of Knowledge (PMBOK), 3rd edition.
 
 ## Metadata
 
