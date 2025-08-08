@@ -14,4 +14,4 @@ Specified the time and date when an assessment trigger was withdrawn.
 
 - name: withdrawnTime
 - Nature: DataProperty
-- Range: /Core/DateTime
+- Range: DateTime
