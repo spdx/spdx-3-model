@@ -14,4 +14,4 @@ Comment on the Operations Assessment.
 
 - name: operationsAssessmentComment
 - Nature: DataProperty
-- Range: Core/Element/comment
+- Range: xsd:string
