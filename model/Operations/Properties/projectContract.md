@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# ProjectContract
+# projectContract
 
 ## Summary
 
@@ -12,6 +12,6 @@ Link to the project contract.
 
 ## Metadata
 
-- name: ProjectContract
+- name: projectContract
 - Nature: DataProperty
 - Range: xsd:anyURI
