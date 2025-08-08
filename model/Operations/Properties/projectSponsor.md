@@ -14,4 +14,4 @@ Sponsor of the project.
 
 - name: projectSponsor
 - Nature: DataProperty
-- Range: Core/Agent
+- Range: /Core/Agent
