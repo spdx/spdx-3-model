@@ -35,7 +35,7 @@ Based on the Project Management Body of Knowledge (PMBOK), 3rd edition.
   - type: /Core/Agent
   - maxCount: 1
 - projectOwner
-  - type: Core/Agent
+  - type: /Core/Agent
   - minCount: 1
   - maxCount: 1
 - applicationType
