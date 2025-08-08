@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# ProjectSponsor
+# projectSponsor
 
 ## Summary
 
@@ -12,6 +12,6 @@ Sponsor of the project.
 
 ## Metadata
 
-- name: ProjectSponsor
+- name: projectSponsor
 - Nature: DataProperty
 - Range: Core/Agent
