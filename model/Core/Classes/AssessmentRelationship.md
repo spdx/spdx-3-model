@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Abstract ancestor class for all assessments
+Abstract ancestor class for all assessments.
 
 ## Description
 
