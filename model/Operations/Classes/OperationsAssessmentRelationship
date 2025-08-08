@@ -18,7 +18,7 @@ OperationsAssessmentRelationship is the ancestor class common to all operations 
 
 ## Properties
 
-- operationsComment
+- operationsAssessmentComment
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
