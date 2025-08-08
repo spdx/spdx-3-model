@@ -14,4 +14,4 @@ Person responsible for the project.
 
 - name: projectOwner
 - Nature: DataProperty
-- Range: Core/Agent
+- Range: /Core/Agent
