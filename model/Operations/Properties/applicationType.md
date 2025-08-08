@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-intended business case the application is developed for
+Intended business case the application is developed for.
 
 ## Description
 
