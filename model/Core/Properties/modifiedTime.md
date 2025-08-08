@@ -14,4 +14,4 @@ Specifies a time when an assessment was last modified.
 
 - name: modifiedTime
 - Nature: DataProperty
-- Range: /Core/DateTime
+- Range: DateTime
