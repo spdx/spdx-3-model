@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Concept for the Supply Chain Risk Management (SCRM)
+Concept for the Supply Chain Risk Management (SCRM).
 
 ## Description
 
