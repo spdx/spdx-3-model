@@ -45,10 +45,10 @@ Temporary endeavor with a beginning and an end and that must be used to create a
 - ComplianceBundleStorage
   - type: xsd:anyURI
   - maxCount: 1
-- StartTime
+- ProjectStartTime
   - type: /Core/DateTime
   - minCount: 1
   - maxCount: 1
-- endTime
+- ProjectEndTime
   - type: /Core/DateTime
   - maxCount: 1
