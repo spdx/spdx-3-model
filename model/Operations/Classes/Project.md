@@ -24,9 +24,6 @@ Based on the Project Management Body of Knowledge (PMBOK), 3rd edition.
   - type: xsd:string
   - minCount: 1
   - maxCount: 1
-- projectInformation
-  - type: /Core/description
-  - minCount: 0
 - projectContract
   - type: xsd:anyURI
   - minCount: 1
