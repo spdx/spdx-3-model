@@ -45,7 +45,7 @@ Based on the Project Management Body of Knowledge (PMBOK), 3rd edition.
 - distributionMethod
   - type: DistributionMethodType
   - minCount: 1
-  scrmConcept
+- scrmConcept
   - type: xsd:anyURI
   - maxCount: 1
 - complianceBundleStorage
