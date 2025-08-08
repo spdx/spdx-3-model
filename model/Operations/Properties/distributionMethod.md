@@ -8,7 +8,7 @@ Method how the developed deliverable is made available.
 
 ## Description
 
-method how the developed deliverable is made available (e.g. docker container, ...)
+Method how the developed deliverable is made available (e.g. docker container).
 
 ## Metadata
 
