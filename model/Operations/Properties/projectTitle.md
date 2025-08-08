@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# ProjectTitle
+# projectTitle
 
 ## Summary
 
@@ -12,6 +12,6 @@ Title of the project.
 
 ## Metadata
 
-- name: ProjectTitle
+- name: projectTitle
 - Nature: DataProperty
 - Range: xsd:string
