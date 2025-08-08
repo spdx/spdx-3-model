@@ -14,6 +14,12 @@ Temporary endeavor with a beginning and an end and that must be used to create a
 
 ## Metadata
 
+- name: Project
+- SubclassOf: /Core/Organization
+- Instantiability: Abstract
+
+## Properties
+
 - projectTitle
   - type: xsd:string
   - minCount: 1
