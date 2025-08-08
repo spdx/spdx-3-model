@@ -22,6 +22,6 @@ OperationsAssessmentRelationship is the ancestor class common to all operations 
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
-- project
+- assessedProject
   - type: Project
   - maxCount: 1
