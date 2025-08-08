@@ -15,7 +15,7 @@ Based on the Project Management Body of Knowledge (PMBOK), 3rd edition.
 ## Metadata
 
 - name: Project
-- SubclassOf: /Core/Artifact
+- SubclassOf: /Core/Bundle
 - Instantiability: Abstract
 
 ## Properties
