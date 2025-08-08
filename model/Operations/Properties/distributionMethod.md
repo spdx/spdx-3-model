@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-method how the developed deliverable is made available
+Method how the developed deliverable is made available.
 
 ## Description
 
