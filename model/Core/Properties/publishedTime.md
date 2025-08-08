@@ -14,4 +14,4 @@ Specifies the time when an assessment trigger was first published.
 
 - name: publishedTime
 - Nature: DataProperty
-- Range: /Core/DateTime
+- Range: DateTime
