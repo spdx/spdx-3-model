@@ -22,5 +22,5 @@ This enumeration summarizes common phases when dependency and other relationship
 - test: A relationship has specific context implications during an element's testing phase, during development.
 - runtime: A relationship has specific context implications during the execution phase of an element.
 - update: A relationship has specific context implications for a product update.
-- decommission: A relationship has specific implications for a product's retirement and/or decommissioning.
+- decommission: A relationship has specific context implications for a product's retirement and/or decommissioning.
 - other: A relationship has other specific context information necessary to capture that the above set of enumerations does not handle.
