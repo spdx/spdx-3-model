@@ -16,5 +16,5 @@ The field can be used to document the way how an element is distributed in the s
 
 ## Entries
 
-- hosted
-- distributed
+- hosted: Application is not shipped but hosted.
+- distributed: Application is shipped to another legal entity.
