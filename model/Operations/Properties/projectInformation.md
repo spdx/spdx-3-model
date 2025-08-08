@@ -14,4 +14,4 @@ Detail-Information of the project.
 
 - name: ProjectInformation
 - Nature: DataProperty
-- Range: Core/Element/comment
+- Range: /Core/description
