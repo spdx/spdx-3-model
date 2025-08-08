@@ -25,14 +25,14 @@ Based on the Project Management Body of Knowledge (PMBOK), 3rd edition.
   - minCount: 1
   - maxCount: 1
 - projectInformation
-  - type: Core/description
+  - type: /Core/description
   - minCount: 0
 - projectContract
   - type: xsd:anyURI
   - minCount: 1
   - maxCount: 1
 - projectSponsor
-  - type: Core/Agent
+  - type: /Core/Agent
   - maxCount: 1
 - projectOwner
   - type: Core/Agent
