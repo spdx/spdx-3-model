@@ -26,7 +26,7 @@ AssessmentRelationship is the ancestor class common to all assessment relationsh
   - type: DateTime
   - minCount: 0
   - maxCount: 1
-- /Core/suppliedBy
+- suppliedBy
   - type: Agent
   - minCount: 0
   - maxCount: 1
