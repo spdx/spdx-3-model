@@ -14,41 +14,41 @@ Temporary endeavor with a beginning and an end and that must be used to create a
 
 ## Metadata
 
-- ProjectTitle
+- projectTitle
   - type: xsd:string
   - minCount: 1
   - maxCount: 1
-- ProjectInformation
+- projectInformation
   - type: Core/Element/comment
   - minCount: 0
-- ProjectContract
+- projectContract
   - type: xsd:anyURI
   - minCount: 1
   - maxCount: 1
-- ProjectSponsor
+- projectSponsor
   - type: Core/Agent
   - maxCount: 1
-- ProjectOwner
+- projectOwner
   - type: Core/Agent
   - minCount: 1
   - maxCount: 1
-- ApplicationType
+- applicationType
   - type: ApplicationType
   - minCount: 1
   - maxCount: 1
-- DistributionMethod
+- distributionMethod
   - type: DistributionMethodType
   - minCount: 1
-- SCRMConcept
+  scrmConcept
   - type: xsd:anyURI
   - maxCount: 1
-- ComplianceBundleStorage
+- complianceBundleStorage
   - type: xsd:anyURI
   - maxCount: 1
-- ProjectStartTime
+- projectStartTime
   - type: /Core/DateTime
   - minCount: 1
   - maxCount: 1
-- ProjectEndTime
+- projectEndTime
   - type: /Core/DateTime
   - maxCount: 1
