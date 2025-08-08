@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# ProjectOwner
+# projectOwner
 
 ## Summary
 
@@ -12,6 +12,6 @@ Person responsible for the project.
 
 ## Metadata
 
-- name: ProjectOwner
+- name: projectOwner
 - Nature: DataProperty
 - Range: Core/Agent
