@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# SCRMConcept
+# scrmConcept
 
 ## Summary
 
@@ -12,6 +12,6 @@ The Supply Chain Risk Management Concept describes the way how the risks in the 
 
 ## Metadata
 
-- name: SCRMConcept
+- name: scrmConcept
 - Nature: DataProperty
 - Range: xsd:anyURI
