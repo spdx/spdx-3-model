@@ -15,4 +15,4 @@ e.g. 'FOSS Compliance Bundle stored in Project folder'
 
 - name: complianceBundleStorage
 - Nature: DataProperty
-- Range: xsd:string
+- Range: xsd:anyURI
