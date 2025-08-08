@@ -8,7 +8,7 @@ Intended business case the application is developed for.
 
 ## Description
 
-intended business case the application is developed for (e.g. fat client, cloud service, ...)
+Intended business case the application is developed for (e.g. fat client, cloud service).
 
 ## Metadata
 
