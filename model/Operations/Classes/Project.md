@@ -16,7 +16,7 @@ Based on the Project Management Body of Knowledge (PMBOK), 3rd edition.
 
 - name: Project
 - SubclassOf: /Core/Bundle
-- Instantiability: Abstract
+- Instantiability: Concrete
 
 ## Properties
 
