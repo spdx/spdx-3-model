@@ -30,7 +30,6 @@ Based on the Project Management Body of Knowledge (PMBOK), 3rd edition.
   - maxCount: 1
 - projectSponsor
   - type: /Core/Agent
-  - maxCount: 1
 - projectOwner
   - type: /Core/Agent
   - minCount: 1
