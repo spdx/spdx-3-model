@@ -70,7 +70,7 @@ Metadata information that can be added to a package to describe an AI applicatio
   - type: /Core/PresenceType
   - minCount: 0
   - maxCount: 1
- - promptPattern
+- promptPattern
 	- type: xsd:string
 	- minCount: 0
 - promptContent
