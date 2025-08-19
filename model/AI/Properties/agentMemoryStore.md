@@ -12,8 +12,8 @@ Records a reference (URI or file path) to the storage used by the agent to retai
 If the agent does not use persistent memory, set the value to NONE. If the presence or location of memory cannot be determined, set to NOASSERTION. 
 For multiple memory backends, repeat this property once per backend.
 
-
 ## Metadata
+
 - name: agentMemoryStore
 -  Nature: DataProperty
 -  Range: xsd:anyURI
