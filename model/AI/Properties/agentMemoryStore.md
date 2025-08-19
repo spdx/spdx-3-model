@@ -3,6 +3,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 # agentMemoryStore
 
 ## Summary
+
 Indicates whether the AI agent uses persistent memory and, if so, where that memory is stored (e.g., file path, database/Vector DB URI, object store, or other addressable location).
 
 
