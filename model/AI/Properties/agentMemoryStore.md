@@ -15,5 +15,5 @@ For multiple memory backends, repeat this property once per backend.
 ## Metadata
 
 - name: agentMemoryStore
--  Nature: DataProperty
--  Range: xsd:anyURI
+- Nature: DataProperty
+- Range: xsd:anyURI
