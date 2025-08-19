@@ -3,6 +3,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 # agentMemoryMode
 
 ## Summary
+
 Describes the category of memory enabled for the agent.
 
 ## Description
