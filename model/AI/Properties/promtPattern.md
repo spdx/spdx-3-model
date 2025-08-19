@@ -7,7 +7,11 @@ Identifies the structured reasoning strategy (e.g., Chain-of-Thought, Self-Consi
 
 ## Description
 
-Prompt patterns are structured reasoning patterns that are used to make the prompts effective for the task that the Foundation Model (FM) (e.g., LLM)  is attempting to accomplish. For instance, Chain-of-thought, or checklists. A prompt can also use a non-standard pattern or simple instructions. In such cases, one can state the promptPattern as simple or no assertion. The field is a freeform string. If multiple promptPatterns are used, all the prompt patterns can be recorded.
+Prompt patterns are structured reasoning patterns that are used to make the prompts effective for the task that the Foundation Model (FM) (e.g., large language model) is attempting to accomplish. For instance, chain-of-thought, or checklists.
+
+A prompt can also use a non-standard pattern or simple instructions. In such cases, one can state the promptPattern as simple or no assertion. The field is a freeform string.
+
+If multiple promptPatterns are used, all the prompt patterns can be recorded.
 
 Examples include:
 
