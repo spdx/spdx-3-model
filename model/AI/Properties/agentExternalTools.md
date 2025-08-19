@@ -12,6 +12,7 @@ Identifies the means through which the agent extends its capabilities by calling
 If the agent does not use external tools, set the value to NONE. If it is unclear or not disclosed whether tools are used, set to NOASSERTION.
 
 ## Metadata
+
 - name: agentExternalTools
 - Nature: ObjectProperty
 - Range: /Core/DictionaryEntry
