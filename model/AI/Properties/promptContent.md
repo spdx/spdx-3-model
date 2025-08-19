@@ -3,6 +3,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 # promptContent
 
 ## Summary
+
 A link to a file with the prompt used with the Foundation Model. Provides a URI or file path to the stored prompt used for model execution or evaluation. 
 
 ## Description
