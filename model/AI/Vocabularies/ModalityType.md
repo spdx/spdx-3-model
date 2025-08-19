@@ -19,7 +19,7 @@ If the modality used by your component is not listed here, please select "other"
 ## Entries
 
 - text: Written language inputs.
-- structured: If a structured format is provided as output (e.g., JSON, CSV, XML)
+- structured: If a structured format is provided as output (e.g., JSON, CSV, XML).
 - image: Static visual content.
 - audio: Speech or sound inputs.
 - video: Moving visual content.
