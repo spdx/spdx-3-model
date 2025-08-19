@@ -3,6 +3,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 # hasRAG
 
 ## Summary
+
 Indicates whether Retrieval-Augmented Generation (RAG) is used in constructing the prompt provided to the model.
 
 ## Description
