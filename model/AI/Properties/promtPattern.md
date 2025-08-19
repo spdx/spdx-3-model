@@ -14,7 +14,9 @@ Examples include:
 - Chain-of-Thought – Sequential step-by-step reasoning.
 - Self-Consistency – Multiple reasoning paths with consensus selection.
 - Tree-of-Thought – Branching exploration of reasoning paths.
+
 ## Metadata
+
 - name: promptPattern
 - Nature: DataProperty
 - Range: xsd: string
