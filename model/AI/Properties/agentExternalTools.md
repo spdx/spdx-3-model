@@ -3,6 +3,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 # agentExternalTools
 
 ## Summary
+
 Lists the external tools or services that the AI agent invokes to accomplish actions within or outside the system.
 
 ## Description
