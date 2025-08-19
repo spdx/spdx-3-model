@@ -17,7 +17,9 @@ Indicates the types of input modalities contained in the prompt. This includes u
 - audio: Speech or sound inputs.
 - video: Moving visual content.
 - multimodal: Combination of two or more modalities.
+
 ## Metadata
+
 - name: promptModality
 - Nature: ObjectProperty
 - Range: ModalityType
