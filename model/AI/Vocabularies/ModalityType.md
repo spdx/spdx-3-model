@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Specifies the modality of the inputs or outputs used by different Foundation Model (FM) based software components like prompts and agents. 
+Specifies the modality of the inputs or outputs used by different Foundation Model (FM) based software components, like prompts and agents. 
 
 ## Description
 
@@ -18,10 +18,10 @@ If the modality used by your component is not listed here, please select "other"
 
 ## Entries
 
-- audio: Speech or sound inputs.
+- audio: Speech or sound.
 - image: Static visual content.
 - multimodal: Combination of two or more modalities.
-- structured: If a structured format is provided as output (e.g., JSON, CSV, XML).
-- text: Written language inputs.
+- structured: If the modality is provided in a structured format (e.g., JSON, CSV, XML).
+- text: Written language.
 - video: Moving visual content.
-- other: Any other modalities not mentioned. 
+- other: Any other modalities not mentioned.
