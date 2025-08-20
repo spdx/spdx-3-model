@@ -18,10 +18,13 @@ If the modality used by your component is not listed here, please select "other"
 
 ## Entries
 
+- 3D: Point clouds or 3D objects.
 - audio: Speech or sound.
+- geospatial: Maps or location data.
 - image: Static visual content.
 - multimodal: Combination of two or more modalities.
-- structured: If the modality is provided in a structured format (e.g., JSON, CSV, XML).
+- Tabular: Row–column structured data.
 - text: Written language.
+- Time-series: Data over time.
 - video: Moving visual content.
 - other: Any other modalities not mentioned.
