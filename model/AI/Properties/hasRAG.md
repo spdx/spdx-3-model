@@ -17,6 +17,7 @@ Allowed Values:
 - NOASSERTION: No statement is made regarding the use of RAG.
 
 ## Metadata
+
 - name: hasRAG
 - Nature: ObjectProperty
 - Range: /Core/PresenceType
