@@ -18,6 +18,24 @@ Metadata information that can be added to a package to describe an AI applicatio
 
 ## Properties
 
+- agentCapabilities
+	- type: xsd:string
+	- minCount: 0
+- agentExternalTools
+	- type: /Core/DictionaryEntry
+	- minCount: 0
+- agentInputModality
+	- type: ModalityType
+	- minCount: 0
+- agentMemoryMode
+	- type: xsd: anyURI
+	- minCount: 0
+- agentMemoryStore
+	- type: xsd:anyURI
+	- minCount: 0
+- agentOutputModality
+	- type: ModalityType
+	- minCount: 0
 - autonomyType
   - type: /Core/PresenceType
   - minCount: 0
@@ -29,6 +47,9 @@ Metadata information that can be added to a package to describe an AI applicatio
   - type: EnergyConsumption
   - minCount: 0
   - maxCount: 1
+- hasRAG
+	- type: /Core/PresenceType
+	- minCount: 0
 - hyperparameter
   - type: /Core/DictionaryEntry
   - minCount: 0
@@ -56,6 +77,15 @@ Metadata information that can be added to a package to describe an AI applicatio
 - modelExplainability
   - type: xsd:string
   - minCount: 0
+- promptContent
+	- type: xsd:anyURI
+	- minCount: 0
+- promptModality
+	- type: ModalityType
+	- minCount: 0
+- promptPattern
+	- type: xsd:string
+	- minCount: 0
 - safetyRiskAssessment
   - type: SafetyRiskAssessmentType
   - minCount: 0
@@ -70,40 +100,6 @@ Metadata information that can be added to a package to describe an AI applicatio
   - type: /Core/PresenceType
   - minCount: 0
   - maxCount: 1
-- promptPattern
-	- type: xsd:string
-	- minCount: 0
-- promptContent
-	- type: xsd: anyURI
-	- minCount: 0
-- promptModality
-	- type: ModalityType
-	- minCount: 0
-- agentMemoryStore
-	- type: xsd: anyURI
-	- minCount: 0
-- agentMemoryMode
-	- type: xsd: anyURI
-	- minCount: 0
-- hasRAG
-	- type: /Core/PresenceType
-	- minCount: 0
-- agentExtenalTools
-	- type: /Core/DictionaryEntry
-	- minCount: 0
-- agentInputModality
-	- type: ModalityType
-	- minCount: 0
-- agentOutputModality
-	- type: ModalityType
-	- minCount: 0
-- agentCapabilities
-	- type: xsd:string
-	- minCount: 0
-- agentExternalTools
-	- type: xsd: string
-	- minCount: 0
-
 
 ## External properties restrictions
 
