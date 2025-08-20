@@ -24,4 +24,4 @@ Examples include:
 
 - name: promptPattern
 - Nature: DataProperty
-- Range: xsd: string
+- Range: xsd:string
