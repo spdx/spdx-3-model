@@ -59,6 +59,7 @@ name completes the sentence:
 - hasExample: Every `to` Element is an example for the `from` Element (`from` hasExample `to`).
 - hasHost: The `from` Build was run on the `to` Element during a LifecycleScopeType period (e.g. the host that the build runs on).
 - hasInput: The `from` Build has each `to` Element as an input, during a LifecycleScopeType period.
+- hasInstance: The `from` SoftwareComponent has more specific instances that are the `to` Element(s).
 - hasMetadata: Every `to` Element is metadata about the `from` Element (`from` hasMetadata `to`).
 - hasOptionalComponent: Every `to` Element is an optional component of the `from` Element (`from` hasOptionalComponent `to`).
 - hasOptionalDependency: The `from` Element optionally depends on each `to` Element, during a LifecycleScopeType period.
@@ -72,7 +73,6 @@ name completes the sentence:
 - hasTestCase: Every `to` Element is a test case for the `from` Element (`from` hasTestCase `to`).
 - hasVariant: Every `to` Element is a variant the `from` Element (`from` hasVariant `to`).
 - invokedBy: The `from` Element was invoked by the `to` Agent, during a LifecycleScopeType period (for example, a Build element that describes a build step).
-- instanceOf: The `from` Element (which may be a software `Package` or `SoftwareComponent`) is an instance of the `to` SoftwareComponent.
 - modifiedBy: The `from` Element is modified by each `to` Element.
 - other: Every `to` Element is related to the `from` Element where the relationship type is not described by any of the SPDX relationship types (this relationship is directionless).
 - packagedBy: Every `to` Element is a packaged instance of the `from` Element (`from` packagedBy `to`).
