@@ -4,8 +4,10 @@
 
 For information on what can be included in an SPDX serialization and how they
 are structured, please refer to the
-[Serialization information](https://github.com/spdx/spdx-spec/blob/development/v3.0.1/docs/serializations.md)
-section of the SPDX specification.
+[Serialization information][sr-spec] section
+in the "Model and serializations" chapter of the SPDX specification.
+
+[sr-spec]: https://github.com/spdx/spdx-spec/blob/develop/docs/serializations.md#serialization-information
 
 ## Serialization formats
 
