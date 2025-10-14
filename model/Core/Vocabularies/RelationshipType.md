@@ -42,7 +42,7 @@ name completes the sentence:
 - exploitCreatedBy: The `from` Vulnerability has had an exploit created against it by each `to` Agent.
 - fixedBy: Designates a `from` Vulnerability has been fixed by the `to` Agent(s).
 - fixedIn: A `from` Vulnerability has been fixed in each `to` Element. The use of the `fixedIn` type is constrained to `VexFixedVulnAssessmentRelationship` classed relationships.
-- follows: The `to` Element succeeds the `from` Element, establishing a unidirectional sequence. This succession is defined as chronological, procedural, or logical. It is used to represent either a temporal/causal dependence (e.g., in a workflow) or a defined logical order for processing and traversal (e.g., in an ordered list).
+- follows: The `to` Element succeeds the `from` Element, establishing a unidirectional sequence. This succession is defined as chronological, procedural, or logical. It is used to represent either a temporal order (e.g., in a workflow) or a logical order for processing and traversal (e.g., in an ordered list).
 - foundBy: Designates a `from` Vulnerability was originally discovered by the `to` Agent(s).
 - generates: The `from` Element generates each `to` Element.
 - hasAddedFile: Every `to` Element is a file added to the `from` Element (`from` hasAddedFile `to`).
