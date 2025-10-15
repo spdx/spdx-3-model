@@ -39,7 +39,7 @@ name completes the sentence:
 - describes: The `from` Element describes each `to` Element. To denote the root(s) of a tree of elements in a collection, the rootElement property should be used.
 - doesNotAffect: The `from` Vulnerability has no impact on each `to` Element. The use of the `doesNotAffect` is constrained to `VexNotAffectedVulnAssessmentRelationship` classed relationships.
 - evaluatedOn: The `from` Element has been evaluated on the `to` Element(s).
-- expandsTo: The `from` Artifact expands out as an artifact described by each `to` Element.
+- expandsTo: The `from` Element expands out as an artifact described by each `to` Element.
 - exploitCreatedBy: The `from` Vulnerability has had an exploit created against it by each `to` Agent.
 - finetunedOn: The `from` Element has been finetuned on the `to` Element(s).
 - fixedBy: Designates a `from` Vulnerability has been fixed by the `to` Agent(s).
