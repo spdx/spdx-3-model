@@ -87,3 +87,4 @@ name completes the sentence:
 - trainedOn: The `from` Element has been trained on the `to` Element(s).
 - underInvestigationFor: The `from` Vulnerability impact is being investigated for each `to` Element. The use of the `underInvestigationFor` type is constrained to `VexUnderInvestigationVulnAssessmentRelationship` classed relationships.
 - usesTool: The `from` Element uses each `to` Element as a tool, during a LifecycleScopeType period.
+- validatedOn: The `from` Element has been validated on the `to` Element(s).
