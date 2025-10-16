@@ -21,7 +21,7 @@ and
 [AutomationLevel in Data Privacy Vocabulary](http://w3id.org/dpv/#AutomationLevel).
 
 Systems categorized with automation levels 0-5 are heteronomous.
-This means that while they may be fully automated, their goals and objectives
+This means that while they can be fully automated, their goals and objectives
 are set by external entities, typically human operators.
 
 A system with automation level 6 is autonomous, capable of independently define
