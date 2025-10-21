@@ -15,6 +15,16 @@ A representation of a scope/set of individual instances of a particular “conce
 
 Each individual instance of a class has an Internationalized Resource Identifier (IRI) and is asserted as a member of a particular class via a type statement.
 
+## Computer Hardware
+
+All or part of the physical components of an information system
+(Leveraged from 'hardware' definition in ISO/IEC 2382:2015 Information technology -- Vocabulary)
+
+## Computer Program
+
+Combination of computer instructions and data definitions that enable computer hardware to perform computational or control functions
+(From ISO/IEC/IEEE 24765:2017 Systems and software engineering-Vocabulary)
+
 ## Constraint
 
 An explicit conformance requirement specifying details of an SPDX-valid relationship between a property and a concept class including such details as the valid type of the property on that class, the cardinality (e.g., `0..1`, `1`, `1..*`, etc.) of the property on that class, the value of the property on that class, etc.
@@ -40,6 +50,21 @@ A specific sphere of activity or knowledge. For example, cyber security, softwar
 A class representing a concept of primary focus within a given domain.
 
 In a graph or serialized set of instance content this would be the granularity of what would be a node in the graph or a top-level object in the serialization set. This is typically similar to the scoping seen in labeled property graphs.
+
+## Firmware
+
+Computer programs and data stored in hardware - typically in read-only memory (ROM) or programmable read-only memory (PROM) - such that the programs and data cannot be dynamically written or modified during execution of the programs.
+(From https://csrc.nist.gov/glossary/term/firmware, from CNSSI 4009-2015, **leveraged** from IETF RFC 4949 Ver 2 at https://datatracker.ietf.org/doc/html/rfc4949)
+
+## Hardware
+
+The material physical components of a system.
+(From https://csrc.nist.gov/glossary/term/hardware, from CNSSI 4009-2015)
+
+## Information System
+
+An organized assembly of computing and communication resources and procedures -- i.e., equipment and services, together with their supporting infrastructure, facilities, and personnel -- that create, collect, record, process, store, transport, retrieve, display, disseminate, control, or dispose of information to accomplish a specified set of functions.
+(From https://csrc.nist.gov/glossary/term/information_system, from CNSSI 4009-2015, **leveraged** from IETF RFC 4949 Ver 2 at https://datatracker.ietf.org/doc/html/rfc4949)
 
 ## Namespace
 
@@ -101,11 +126,21 @@ A Property Shape defines the set of constraints for a given property when applie
 
 In SPDX 3.0 these shapes are expressed using the W3C SHACL language.
 
+## Software
+
+Computer programs (which are stored in and executed by computer hardware) and associated data (which also is stored in the hardware) that may be dynamically written or modified during execution.
+(From https://csrc.nist.gov/glossary/term/software, from CNSSI 4009-2015, from IETF RFC 4949 Ver 2 at https://datatracker.ietf.org/doc/html/rfc4949)
+
 ## SPDX
 
 In previous editions of the specification, SPDX meant "Software Package Data Exchange".
 
 Starting with V3.0, the scope of SPDX has expanded beyond software and now means "System Package Data Exchange".
+
+## System
+
+Any organized assembly of resources and procedures united and regulated by interaction or interdependence to accomplish a set of specific functions. Note: Systems also include specialized systems such as industrial/process controls systems, telephone switching and private branch exchange (PBX) systems, and environmental control systems.
+(From https://csrc.nist.gov/glossary/term/system, from CNSSI 4009-2015)
 
 ## Validation
 
