@@ -20,7 +20,7 @@ Each individual instance of a class has an Internationalized Resource Identifier
 All or part of the physical components of an information system
 (Leveraged from 'hardware' definition in ISO/IEC 2382:2015 Information technology -- Vocabulary)
 
-## Computer Program
+## Computer program
 
 Combination of computer instructions and data definitions that enable computer hardware to perform computational or control functions
 (From ISO/IEC/IEEE 24765:2017 Systems and software engineering-Vocabulary)
