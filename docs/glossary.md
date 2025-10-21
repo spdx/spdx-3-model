@@ -15,7 +15,7 @@ A representation of a scope/set of individual instances of a particular “conce
 
 Each individual instance of a class has an Internationalized Resource Identifier (IRI) and is asserted as a member of a particular class via a type statement.
 
-## Computer Hardware
+## Computer hardware
 
 All or part of the physical components of an information system
 (Leveraged from 'hardware' definition in ISO/IEC 2382:2015 Information technology -- Vocabulary)
