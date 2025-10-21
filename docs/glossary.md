@@ -61,7 +61,7 @@ Computer programs and data stored in hardware - typically in read-only memory (R
 The material physical components of a system.
 (From https://csrc.nist.gov/glossary/term/hardware, from CNSSI 4009-2015)
 
-## Information System
+## Information system
 
 An organized assembly of computing and communication resources and procedures -- i.e., equipment and services, together with their supporting infrastructure, facilities, and personnel -- that create, collect, record, process, store, transport, retrieve, display, disseminate, control, or dispose of information to accomplish a specified set of functions.
 (From https://csrc.nist.gov/glossary/term/information_system, from CNSSI 4009-2015, **leveraged** from IETF RFC 4949 Ver 2 at https://datatracker.ietf.org/doc/html/rfc4949)
