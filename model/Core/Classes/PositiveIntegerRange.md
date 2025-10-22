@@ -9,7 +9,7 @@ A tuple of two positive integers that define a range.
 ## Description
 
 PositiveIntegerRange is a tuple of two positive integers that define a range.
-"beginIntegerRange" must be less than or equal to "endIntegerRange".
+"beginIntegerRange" shall be less than or equal to "endIntegerRange".
 
 ## Metadata
 

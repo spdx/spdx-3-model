@@ -9,7 +9,7 @@ license is present.
 
 ## Description
 
-NoneLicense should be used if the SPDX creator determines there is no license
+NoneLicense shall be used if the SPDX creator determines there is no license
 available for this Artifact.
 
 ## Metadata

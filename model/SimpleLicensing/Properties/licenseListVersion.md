@@ -13,10 +13,10 @@ Recognizing that licenses are added to the
 subsequent version, the intent is to provide consumers with the version of the
 SPDX License List used.
 
-This anticipates that in the future, license expression might have used a
+This anticipates that in the future, license expression can used a
 version of the SPDX License List that is older than the then current one.
 
-The specified version of the SPDX License List must include all listed licenses
+The specified version of the SPDX License List shall include all listed licenses
 and exceptions referenced in the expression.
 
 ## Metadata

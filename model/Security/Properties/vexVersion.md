@@ -8,7 +8,8 @@ Specifies the version of a VEX statement.
 
 ## Description
 
-The statement version default value is zero. When any VEX-related content changes, the version must be incremented.
+The statement version default value is zero.
+When any VEX-related content changes, the version shall be incremented.
 
 ## Metadata
 

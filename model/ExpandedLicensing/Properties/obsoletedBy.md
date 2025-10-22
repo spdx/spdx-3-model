@@ -11,7 +11,7 @@ License or LicenseAddition.
 
 An obsoletedBy value for a deprecated License or LicenseAddition specifies
 the licenseId of the replacement License or LicenseAddition that is preferred
-to be used in its place. It should use the same format as specified for a
+to be used in its place. It shall use the same format as specified for a
 licenseId.
 
 The License's or LicenseAddition's comment value may include more information

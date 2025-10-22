@@ -26,11 +26,11 @@ following applies:
   objective determination;
 - the SPDX data creator has made no attempt to determine this field; or
 - the SPDX data creator has intentionally provided no information (no
-  meaning should be implied by doing so).
+  meaning shall be implied by doing so).
 
 If a copyrightText is present, but consists of solely an empty string or a
 string with no substantive content (e.g., a string that contains only
-whitespace), then this should be interpreted as equivalent to a "NOASSERTION"
+whitespace), then this shall be interpreted as equivalent to a "NOASSERTION"
 value as described above.
 
 ## Metadata

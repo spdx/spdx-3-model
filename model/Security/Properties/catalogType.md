@@ -8,7 +8,7 @@ Specifies the exploit catalog type.
 
 ## Description
 
-A catalogType is a mandatory value and must select one of the existing entries
+A catalogType is a mandatory value and shall select one of the existing entries
 in the [`ExploitCatalogType`](../Vocabularies/ExploitCatalogType.md) vocabulary.
 
 ## Metadata

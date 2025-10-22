@@ -18,7 +18,7 @@ It is intended to communicate the results of using a CVSS calculator.
 
 *Constraints*
 
-- The relationship type must be set to `hasAssessmentFor`.
+- The relationship type shall be set to `hasAssessmentFor`.
 
 *Example*
 

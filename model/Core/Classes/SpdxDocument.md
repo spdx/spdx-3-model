@@ -19,7 +19,7 @@ this SPDX content is NOT expressed using the SpdxDocument but rather using an
 associated Artifact representing a particular instance of SPDX data physical
 serialization.
 
-Any instance of serialization of SPDX data MUST NOT contain more than one
+Any instance of serialization of SPDX data shall not contain more than one
 SpdxDocument element definition.
 
 ## Metadata

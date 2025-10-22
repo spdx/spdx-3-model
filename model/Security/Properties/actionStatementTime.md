@@ -9,7 +9,7 @@ to mitigate a vulnerability.
 
 ## Description
 
-When a VEX statement communicates an affected status, the author MUST
+When a VEX statement communicates an affected status, the author shall
 include an action statement with a recommended action to help mitigate the
 vulnerability's impact. The actionStatementTime property records the time
 when the action statement was first communicated.

@@ -12,7 +12,7 @@ about the origin of the package.
 A sourceInfo records any relevant background information or additional comments
 about the origin of the package.
 
-For example, this field might include comments indicating whether the package
+For example, this field can include comments indicating whether the package
 was pulled from a source code management system or has been repackaged.
 
 The creator can provide additional information to describe any anomalies or
