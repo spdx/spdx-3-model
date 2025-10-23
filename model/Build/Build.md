@@ -48,14 +48,14 @@ the nature of these inputs are not known at the creation of an SPDX document.
 - id: https://spdx.org/rdf/3.0/terms/Build
 - name: Build
 
-## Profile Conformance
+## Profile conformance
 
 Conformance to the Build profile requires one or more instances of the Build
-class. In addition, there must be at least three instances `Relationship`s with
-type `LifecycleScopedRelationship`, where the "scope" property must be "build"
-and the "from" property must be the Build instance.
+class. In addition, there shall be at least three instances `Relationship`s with
+type `LifecycleScopedRelationship`, where the "scope" property shall be "build"
+and the "from" property shall be the Build instance.
 
-At the minimum, the Build profile must contain a `hasInput`, `hasOutput`, and
+At the minimum, the Build profile shall contain a `hasInput`, `hasOutput`, and
 `invokedBy` relationshipType. If an input is known to be a build configuration
 or a build tool, the `hasInput` relationshipType can be replaced by a
 `configures` or `usesTool` relationshipType.
@@ -88,7 +88,7 @@ or a build tool, the `hasInput` relationshipType can be replaced by a
 
 如果在创建 SPDX 文档时这些输入性质未知，`hasInput` 关系可以应用于配置文件或构建工具。
 
-## Profile Conformance @zh-Hans
+## Profile conformance @zh-Hans
 
 符合 `Build` 配置文件要求至少有一个或多个 `Build` 类的实例。此外，还必须至少有三个类型为 `LifecycleScopedRelationship` 的 `Relationship` 实例，其 “scope” 属性必须是 “build”，而 “from” 属性必须是构建实例。
 

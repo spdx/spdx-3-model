@@ -11,11 +11,11 @@ relationship.
 ## Description
 
 When stating that an element is not affected by a vulnerability, the
-VexNotAffectedVulnAssessmentRelationship must include a justification from the
+VexNotAffectedVulnAssessmentRelationship shall include a justification from the
 machine-readable labels catalog informing the reason the element is not impacted.
 
 impactStatement which is a string with English prose can be used instead or as
-complementary to the justification label, but one of both MUST be defined.
+complementary to the justification label, but one of both shall be defined.
 
 ## Metadata
 

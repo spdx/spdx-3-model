@@ -12,7 +12,7 @@ could be used during the inference.
 Notes if sensitive personal information is used in the training or inference of
 the AI models.
 
-This might include biometric data, addresses or other data that can be used to
+This can include biometric data, addresses or other data that can be used to
 infer a person's identity.
 
 Related: `hasSensitivePersonalInformation` in `/Dataset/DatasetPackage`

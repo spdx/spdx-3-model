@@ -9,12 +9,12 @@ identity or cardinality (number).
 
 ## Description
 
-NoAssertionElement should be used if
+NoAssertionElement shall be used if
 
 - the SPDX creator has attempted to but cannot reach a reasonable objective
   determination;
 - the SPDX creator has made no attempt to determine this field; or
-- the SPDX creator has intentionally provided no information (no meaning should
+- the SPDX creator has intentionally provided no information (no meaning shall
   be implied by doing so).
 
 For example, a Relationship with

@@ -9,7 +9,7 @@ cardinality (number/count) of zero.
 
 ## Description
 
-NoneElement should be used if the SPDX creator desires to assert that
+NoneElement shall be used if the SPDX creator desires to assert that
 there are NO elements for the given context of use.
 
 For example, a Relationship with

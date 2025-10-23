@@ -17,7 +17,7 @@ It is intended to communicate the results of using the CISA SSVC Calculator.
 
 *Constraints*
 
-- The relationship type must be set to hasAssessmentFor.
+- The relationship type shall be set to hasAssessmentFor.
 
 *Example*
 

@@ -22,7 +22,7 @@ Use of this property allows the creator of an ElementCollection to communicate
 to consumers their intent to adhere to the profile additional restrictions.
 
 The profileConformance has a default value of "core" if no other
-profileConformance is specified since all ElementCollections and Element must
+profileConformance is specified since all ElementCollections and Element shall
 adhere to the Core profile.
 
 ## Metadata

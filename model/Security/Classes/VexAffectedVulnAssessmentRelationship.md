@@ -16,7 +16,7 @@ vulnerability. This relationship corresponds to the VEX affected status.
 *Constraints*
 
 When linking elements using a VexAffectedVulnAssessmentRelationship, the
-following requirements must be observed:
+following requirements shall be observed:
 
 - Elements linked with a VulnVexAffectedAssessmentRelationship are constrained
   to the affects relationship type.
