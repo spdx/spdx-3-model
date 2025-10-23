@@ -12,7 +12,7 @@ A free-form text that describes what the given dataset should be used for.
 
 Some datasets are collected to be used only for particular purposes.
 
-For example, medical data collected from a specific demography might only be applicable
+For example, medical data collected from a specific demography should only be applicable
 for training machine learning models to make predictions for that demography.
 In such a case, the intendedUse field would capture this information.
 Similarly, if a dataset is collected for building a facial recognition model,

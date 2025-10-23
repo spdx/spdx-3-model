@@ -32,7 +32,7 @@ Namespace maps support a variety of relevant use cases such as:
 2. An SPDX content producer wishing to maintain consistent prefix use and
     understanding across multiple different serialization formats of the
     produced content.
-  
+
     For example, an SBOM producer wishes to share/publish the SBOM as JSON-LD
     and XML. The producer can specify the preferred prefix mappings in the
     native serialization format using information from a single NamespaceMap

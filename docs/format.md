@@ -1,5 +1,5 @@
 ---
-SPDX-FileCopyrightText: 2024 SPDX Project
+SPDX-FileCopyrightText: 2024-2025 SPDX Project
 SPDX-License-Identifier: Community-Spec-1.0
 ---
 
@@ -28,6 +28,7 @@ specifications.
   - [Individuals](#individuals)
   - [Properties](#properties)
   - [Vocabularies](#vocabularies)
+- [Verbal forms for expressions of provisions](#verbal-forms-for-expressions-of-provisions)
 - [Writing style](#writing-style)
 - [Translation](#translation)
 - [Checking if everything is ok](#checking-if-everything-is-ok)
@@ -72,9 +73,9 @@ from the location of the file:
 
 - Each element (class, datatype, individual, property, and vocabulary)
   is defined in a distinct file.
-- Model file names are case-sensitive and must be identical to the element they
+- Model file names are case-sensitive and shall be identical to the element they
   represent.
-- All model files must be located within the `model/` directory.
+- All model files shall be located within the `model/` directory.
 - Profiles should be organised into subdirectories (e.g., `Core/`, `Dataset/`).
 - Elements should be categorised by their type in subdirectories (e.g.,
   `Classes/`, `Datatypes/`, `Individuals/`, `Properties/`, `Vocabularies/`).
@@ -122,28 +123,30 @@ is the best reference.
 
 ## File content structure and formatting
 
-Each model file must adhere to a strict content structure:
+Each model file shall adhere to a strict content structure:
 
-- All files must be encoded in UTF-8.
-- Each file must start with SPDX license information:
+- All files shall be encoded in UTF-8.
+- Each file shall start with SPDX license information:
   `SPDX-License-Identifier: Community-Spec-1.0`
   and follows by one blank line.
-- The content immediately after the license information must begin with an
+- The content immediately after the license information shall begin with an
   H1 heading containing the element's name.
 - Each element type has a predefined set of [allowed H2 headings](#syntax) and
-  labeled lists that must be used to structure its content.
+  labeled lists that shall be used to structure its content.
+- Headings shall be in sentence case (i.e., only the first letter of the first
+  word is capitalized).
 
 Additionally, since MkDocs uses a strict
 [Python-Markdown](https://python-markdown.github.io/#differences),
-each model file must adhere to specific formatting guidelines:
+each model file shall adhere to specific formatting guidelines:
 
 - Blank lines:
-  - There must be a blank line before and after a heading.
-  - There must be a blank line before and after a list.
+  - There shall be a blank line before and after a heading.
+  - There shall be a blank line before and after a list.
 - Indentation:
   - Use spaces instead of tabs.
   - When a list item consists of multiple paragraphs, each subsequent paragraph
-    in a list item must be indented by 4 spaces. This applies to any
+    in a list item shall be indented by 4 spaces. This applies to any
     block-level elements nested in a list, including paragraphs, sub-lists,
     blockquotes, code blocks, etc.
 
@@ -204,7 +207,7 @@ will give this RDF graph
 
 ### Classes
 
-The name of a class must be in `UpperCamelCase` format.
+The name of a class shall be in `UpperCamelCase` format.
 
 Allowed headings:
 
@@ -212,7 +215,7 @@ Allowed headings:
 - Description
 - Metadata
   - name: \<class_name\>
-  - SubclassOf: \<class_name\> OR "none" *(Must have one if Instantiability is "Concrete")*
+  - SubclassOf: \<class_name\> OR "none" *(Shall have one if Instantiability is "Concrete")*
   - Instantiability: "Abstract" OR "Concrete" *(Default: Concrete)*
 - Properties *(Optional)*
   - \<property_name\>
@@ -273,7 +276,7 @@ A class example.
 
 ### Datatypes
 
-The name of a datatype must be in `UpperCamelCase` format.
+The name of a datatype shall be in `UpperCamelCase` format.
 
 Allowed headings:
 
@@ -312,7 +315,7 @@ A DateTime is a string representation of a specific date and time.
 
 ### Individuals
 
-The name of an individual must be in `UpperCamelCase` format.
+The name of an individual shall be in `UpperCamelCase` format.
 
 Allowed headings:
 
@@ -353,7 +356,7 @@ A named individual of Element class that representing none.
 
 ### Properties
 
-The name of a property must be in `lowerCamelCase` format.
+The name of a property shall be in `lowerCamelCase` format.
 
 Allowed headings:
 
@@ -389,7 +392,7 @@ and its calibration value as a key-value pair.
 
 ### Vocabularies
 
-The name of a vocabulary must be in `UpperCamelCase` format.
+The name of a vocabulary shall be in `UpperCamelCase` format.
 
 Allowed headings:
 
@@ -403,8 +406,8 @@ Allowed headings:
 
 Entry formatting:
 
-- Entry names must be in `lowerCamelCase` format.
-- Each entry must be written on a single line.
+- Entry names shall be in `lowerCamelCase` format.
+- Each entry shall be written on a single line.
 - Entries should be listed alphabetically whenever possible to facilitate
   review and editing, particularly for long lists.
 
@@ -433,6 +436,31 @@ RpsType specifies the type of a hand shape.
 - rock: A closed fist.
 - scissors: Two fingers extended, forming a V shape.
 ```
+
+## Verbal forms for expressions of provisions
+
+When formulating a provision, the following verbal forms shall be used to
+express the necessary level of normativity, as defined in
+*ISO/IEC Directives, Part 2 -- Principles and rules for the structure and
+drafting of ISO and IEC documents*:
+
+| Verbal forms          | Type of provision                                                                   |
+|-----------------------|-------------------------------------------------------------------------------------|
+| shall / shall not     | Requirement                                                                         |
+| should / should not   | Recommendation                                                                      |
+| may                   | Permission (do not use "can", "might", "possible", or "impossible" in this context) |
+| can / cannot          | Possibility and capability                                                          |
+| must                  | External constraint                                                                 |
+
+Equivalent phrases or expressions may be used in certain cases,
+provided they maintain the exact meaning and level of normativity established
+by these verbal forms.
+
+See the ISO/IEC Directives for definitions of [provisions][] (Clause 3.3) and
+[verbal forms for expressions of provisions][verbal] (Clause 7).
+
+[provisions]: https://www.iso.org/sites/directives/current/part2/index.xhtml#_idParaDest-9
+[verbal]: https://www.iso.org/sites/directives/current/part2/index.xhtml#_idParaDest-29
 
 ## Writing style
 
@@ -502,7 +530,7 @@ recommendations when writing paragraph text and incorporating links.
     This could include cases where URLs need to be clearly visible in both
     digital and print formats or when the URL serves as a metadata value.
 
-    The IRI field in the Metadata section MUST use a bare URL:
+    The IRI field in the Metadata section shall use a bare URL:
 
     ```markdown
     ## Metadata

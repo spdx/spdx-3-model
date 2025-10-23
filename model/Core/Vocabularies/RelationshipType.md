@@ -33,13 +33,13 @@ name completes the sentence:
 - contains: The `from` Element contains each `to` Element.
 - coordinatedBy: The `from` Vulnerability is coordinatedBy the `to` Agent(s) (vendor, researcher, or consumer agent).
 - copiedTo: The `from` Element has been copied to each `to` Element.
-- delegatedTo: The `from` Agent is delegating an action to the Agent of the `to` Relationship (which must be of type invokedBy), during a LifecycleScopeType (e.g. the `to` invokedBy Relationship is being done on behalf of `from`).
+- delegatedTo: The `from` Agent is delegating an action to the Agent of the `to` Relationship (which shall be of type invokedBy), during a LifecycleScopeType (e.g. the `to` invokedBy Relationship is being done on behalf of `from`).
 - dependsOn: The `from` Element depends on each `to` Element, during a LifecycleScopeType period.
 - descendantOf: The `from` Element is a descendant of each `to` Element.
-- describes: The `from` Element describes each `to` Element. To denote the root(s) of a tree of elements in a collection, the rootElement property should be used.
+- describes: The `from` Element describes each `to` Element. To denote the root(s) of a tree of elements in a collection, the rootElement property shall be used.
 - doesNotAffect: The `from` Vulnerability has no impact on each `to` Element. The use of the `doesNotAffect` is constrained to `VexNotAffectedVulnAssessmentRelationship` classed relationships.
 - evaluatedOn: The `from` Element has been evaluated on the `to` Element(s).
-- expandsTo: The `from` archive expands out as an artifact described by each `to` Element.
+- expandsTo: The `from` Element expands out as an artifact described by each `to` Element.
 - exploitCreatedBy: The `from` Vulnerability has had an exploit created against it by each `to` Agent.
 - finetunedOn: The `from` Element has been finetuned on the `to` Element(s).
 - fixedBy: Designates a `from` Vulnerability has been fixed by the `to` Agent(s).
@@ -81,7 +81,7 @@ name completes the sentence:
 - packagedBy: Every `to` Element is a packaged instance of the `from` Element (`from` packagedBy `to`).
 - patchedBy: Every `to` Element is a patch for the `from` Element (`from` patchedBy `to`).
 - pretrainedOn: The `from` Element has been pretrained on the `to` Element(s).
-- providesSupportFor: The `from` Agent provides support for each `to` Artifact. Must be a `SupportRelationship` type.
+- providesSupportFor: The `from` Agent provides support for each `to` Artifact. Shall be a `SupportRelationship` type.
 - publishedBy: Designates a `from` Vulnerability was made available for public use or reference by each `to` Agent.
 - reportedBy: Designates a `from` Vulnerability was first reported to a project, vendor, or tracking database for formal identification by each `to` Agent.
 - republishedBy: Designates a `from` Vulnerability's details were tracked, aggregated, and/or enriched to improve context (i.e. NVD) by each `to` Agent.
@@ -90,3 +90,4 @@ name completes the sentence:
 - trainedOn: The `from` Element has been trained on the `to` Element(s).
 - underInvestigationFor: The `from` Vulnerability impact is being investigated for each `to` Element. The use of the `underInvestigationFor` type is constrained to `VexUnderInvestigationVulnAssessmentRelationship` classed relationships.
 - usesTool: The `from` Element uses each `to` Element as a tool, during a LifecycleScopeType period.
+- validatedOn: The `from` Element has been validated on the `to` Element(s).

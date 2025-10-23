@@ -16,7 +16,7 @@ vulnerability. This relationship corresponds to the VEX affected status.
 *Constraints*
 
 When linking elements using a VexAffectedVulnAssessmentRelationship, the
-following requirements must be observed:
+following requirements shall be observed:
 
 - Elements linked with a VulnVexAffectedAssessmentRelationship are constrained
   to the affects relationship type.
@@ -33,7 +33,7 @@ following requirements must be observed:
   "security_assessedElement": "urn:npm-elliptic-6.5.2",
   "security_actionStatement": "Upgrade to version 1.4 of ACME application.",
   "suppliedBy": "urn:spdx.dev:agent-jane-doe",
-  "publishedTime": "2021-03-09T11:04:53Z"
+  "security_publishedTime": "2021-03-09T11:04:53Z"
 }
 ```
 

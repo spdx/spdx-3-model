@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Abstract ancestor class for all vulnerability assessments
+Abstract ancestor class for all vulnerability assessments.
 
 ## Description
 
