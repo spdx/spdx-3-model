@@ -81,8 +81,8 @@ name completes the sentence:
 - republishedBy: Designates a `from` Vulnerability's details were tracked, aggregated, and/or enriched to improve context (i.e. NVD) by each `to` Agent.
 - serializedInArtifact: The `from` SpdxDocument can be found in a serialized form in each `to` Artifact.
 - testedOn: The `from` Element has been tested on the `to` Element(s).
-- tracedToDetail: the `from` Element has some more detailed implementation information in each `to` Element.
+- tracedToDetail: the `from` Requirement has some more detailed implementation information in each `to` Requirement.
 - trainedOn: The `from` Element has been trained on the `to` Element(s).
 - underInvestigationFor: The `from` Vulnerability impact is being investigated for each `to` Element. The use of the `underInvestigationFor` type is constrained to `VexUnderInvestigationVulnAssessmentRelationship` classed relationships.
 - usesTool: The `from` Element uses each `to` Element as a tool, during a LifecycleScopeType period.
-- verifiedBy: The `from` Element has verification (test, review, analysis etc.) details defined in the `to` Element
+- verifiedBy: The `from` Element has verification (test, review, analysis etc.) details defined in the `to` RequirementVerification

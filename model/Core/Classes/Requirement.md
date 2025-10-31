@@ -17,7 +17,7 @@ A requirement element is a distinct article or unit defining an expectation, nee
 
 ## Properties
 
-- requirementUID
+- requirementUUID
   - type: ContentIdentifier
   - minCount: 0
   - maxCount: 1

@@ -1,10 +1,10 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# requirementUID
+# requirementUUID
 
 ## Summary
 
-Provides a unique Requirement ID.
+Provides an universally unique Requirement ID.
 
 ## Description
 
@@ -12,6 +12,6 @@ A unique ID, as used by requirements management or other lifecycle management to
 
 ## Metadata
 
-- name: requirementUID
+- name: requirementUUID
 - Nature: RequirementProperty
 - Range: ContentIdentifierType
