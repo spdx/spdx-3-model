@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Provides an universally unique Requirement ID.
+Provides a universally unique Requirement ID.
 
 ## Description
 
