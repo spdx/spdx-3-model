@@ -8,7 +8,7 @@ A distinct unit representing a requirement, as used in systems, software, and ha
 
 ## Description
 
-A requirement element is a distinct article or unit defining an expectation, need, behaviour, design intent etc. of an item that already exists or is to be created based on this requirement.
+A requirement element is a distinct unit that defines an expectation, need, behavior, or design intent of an item that either already exists or is to be created in accordance with this requirement.
 
 ## Metadata
 
