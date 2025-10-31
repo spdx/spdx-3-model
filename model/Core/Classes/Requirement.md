@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A distinct unit representing a requirement as it is used by systems, software and hardware engineering.
+A distinct unit representing a requirement, as used in systems, software, and hardware engineering.
 
 ## Description
 
