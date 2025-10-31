@@ -8,7 +8,7 @@ The product lifecycle phase, the requirement is applicable for.
 
 ## Description
 
-There are requirements that apply to the design phase of a product, that are aimed at the development, to the build environment, give instructions for the decommissioning phase etc.
+The development lifecycle stage specifies the phase or phases of a product’s lifecycle to which a given requirement applies. These may include requirements that govern the design phase, guide development activities, define constraints for the build environment, provide instructions for the decommissioning phase, etc.
 
 ## Metadata
 
