@@ -16,7 +16,7 @@ A specification type defines the nature of a specification.
 
 ## Entries
 
-- formalStandard: A formal standard is a documented specification created and ratified by a recognized standards‐development organization and published as a normative reference.
-- specifications: A specification is a detailed document (or set of documents) that describes the requirements, design, behavior, or other characteristics of a system, component, or process so that all stakeholders have a clear, unambiguous reference.
-- other: Any other Type of specification
-
+- formalStandard: A formal standard is a standard created and ratified by a recognized standards-development organization and published as a normative reference.
+- specification: A specification is a detailed document (or set of documents) that describes the requirements, design, behavior, or other characteristics of a system, component, or process so that all stakeholders have a clear, unambiguous reference.
+- standard: An agreed-upon specification established by groups or organizations that ensures uniformity, safety, and compatibility across different systems, products, and services.
+- other: Any other type of specification.
