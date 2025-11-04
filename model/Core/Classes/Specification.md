@@ -4,19 +4,16 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A specification is a detailed description of the design, requirements, or features of a product, process, or system.
-process, or system.
+A specification is a detailed description of the design, requirements,
+or features of a product, process, or system.
 
 ## Description
 
-A specification (spec) is a detailed document that outlines the 
-of the design, requirements, or features for a product, process, or system.
+A specification (spec) is a detailed document that outlines the
+design, requirements, or features for a product, process, or system.
 
-Specifications are often based on standards but provide more specific details
-for implementation.
-
-Requirements, standards, specifications and processes can be referenced in this
-class.
+Requirements, standards, specifications and processes
+can be referenced in this class.
 
 ## Metadata
 
