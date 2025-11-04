@@ -9,7 +9,7 @@ process, or system.
 
 ## Description
 
-A specification (spec) is a detailed document that outlines the exact
+A specification (spec) is a detailed document that outlines the 
 requirements for a product, process, or system.
 
 Specifications are often based on standards but provide more specific details
