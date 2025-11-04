@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A detailed document that outlines the exact requirements for a product,
+A specification is a detailed description of the design, requirements, or features of a product, process, or system.
 process, or system.
 
 ## Description
