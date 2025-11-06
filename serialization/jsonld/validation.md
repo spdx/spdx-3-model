@@ -140,6 +140,14 @@ prevents precision loss for values with many significant digits
 (over 15 digits), overcoming the limitations of the IEEE 754 double-precision
 floating-point format used by the native JSON Number type.
 
+This precision-preserving practice is adopted as a default behavior by the
+JSON serializers in some popular frameworks and libraries, such as Django,
+Ruby on Rails, and Pydantic.
+
+However, this is not a universal default. In Java, for instance, users of major
+libraries like Jackson and Gson must explicitly configure the serializer to
+treat high-precision types (like `java.math.BigDecimal`) as strings.
+
 [json-ld-data-type-conversion]: https://www.w3.org/TR/json-ld11/#conversion-of-native-data-types
 
 ## Validating with online tools
