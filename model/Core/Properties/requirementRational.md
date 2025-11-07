@@ -13,5 +13,5 @@ Additional detail used to define the reason/rational, why this requirement is th
 ## Metadata
 
 - name: requirementRational
-- Nature: RequirementProperty
+- Nature: DataProperty
 - Range: xsd:string
