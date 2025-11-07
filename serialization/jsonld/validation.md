@@ -103,7 +103,11 @@ lowercase "p."
 
 ### Decimal
 
-In JSON-LD, always enclose decimal values in quotes.
+Always enclose decimal values in quotes.
+
+Because SPDX 3 JSON is defined as a subset of JSON-LD, decimal values require
+serialization as a JSON String (i.e., enclosed in quotes) to guarantee correct
+type interpretation.
 
 If the data type is integer (e.g., `xsd:nonNegativeInteger`),
 use the number without quotes.
@@ -115,7 +119,8 @@ use the number without quotes.
 }
 ```
 
-If the data type is decimal (`xsd:decimal`), use the number with quotes.
+If the data type is decimal (`xsd:decimal`), use the number with quotes
+(string).
 
 ```json
 {
