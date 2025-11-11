@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# automationLevel
+# isoAutomationLevel
 
 ## Summary
 
@@ -18,6 +18,6 @@ assessment, regulatory compliance, and user interface design.
 
 ## Metadata
 
-- name: automationLevel
+- name: isoAutomationLevel
 - Nature: ObjectProperty
-- Range: AutomationLevel
+- Range: IsoAutomationLevel

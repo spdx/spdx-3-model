@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# AutomationLevel
+# IsoAutomationLevel
 
 ## Summary
 
@@ -8,7 +8,7 @@ Defines the level of automation a system possesses.
 
 ## Description
 
-AutomationLevel is an enumeration that categorizes a system's level of
+IsoAutomationLevel is an enumeration that categorizes a system's level of
 automation, helping to define the roles and responsibilities of both the
 human operator and the automated system.
 
@@ -29,7 +29,7 @@ and pursue its own goals.
 
 ## Metadata
 
-- name: AutomationLevel
+- name: IsoAutomationLevel
 
 ## Entries
 
