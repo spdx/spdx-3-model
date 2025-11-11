@@ -23,4 +23,4 @@ form.
 - directDownload: Dataset is publicly available and can be downloaded directly.
 - query: Dataset is publicly available, but not all at once, and can only be accessed through queries which return parts of the dataset.
 - registration: Dataset is not publicly available and an email registration is required before accessing the dataset, although without an affirmative acceptance of terms.
-- scrapingScript: Dataset provider is not making available the underlying data and the dataset must be reassembled, typically using the provided script for scraping the data.
+- scrapingScript: Dataset provider is not making available the underlying data and the dataset shall be reassembled, typically using the provided script for scraping the data.

@@ -76,17 +76,17 @@ validation.
 Serialized names take the form of either `profilename_ClassName` or
 `profilename_propertyName`.
 
-The prefix `profilename_` is derived from the name of the Profile and is always
+The prefix `profilename_` is derived from the name of the profile and is always
 written in lowercase letters.
-There is an exception for the `Core` Profile, where serialized names omit the
+There is an exception for the `Core` profile, where serialized names omit the
 prefix entirely.
 
 For example,
 
-- `dataset_datasetType` for a `datasetType` Property in the `Dataset` Profile
+- `dataset_datasetType` for a `datasetType` property in the `Dataset` profile
 - `expandedlicensing_CustomLicense` for a `CustomLicense` Class in the
-  `ExpandedLicensing` Profile
-- `Person` for a Class `Person` in the `Core` Profile (no prefix)
+  `ExpandedLicensing` profile
+- `Person` for a class `Person` in the `Core` profile (no prefix)
 
 ### Cardinality
 
@@ -97,7 +97,7 @@ JSON, regardless of the actual number of values it holds.
 
 Note that SPDX 3 may use different casing than vocabularies in previous versions.
 
-For example, in the SPDX 3.0 Software Profile, the `homePage` property uses an
+For example, in the SPDX 3.0 Software profile, the `homePage` property uses an
 uppercase "P," while SPDX 2.3 uses the DOAP `homepage` property, which has a
 lowercase "p."
 

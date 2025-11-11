@@ -12,7 +12,7 @@ invoke a build.
 configSourceDigest is the checksum of the build configuration file used by a
 builder to execute a build, according to the buildType.
 
-This Property uses the Core model's [Hash](../../Core/Classes/Hash.md) class.
+This property uses the Core model's [Hash](../../Core/Classes/Hash.md) class.
 
 ## Metadata
 

@@ -4,28 +4,28 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-The Licensing Profile defines a minimum set of license information to
+The Licensing profile defines a minimum set of license information to
 facilitate compliance with typical license use cases.
 
 ## Description
 
 The Licensing profile only contains the additional requirement that any
-Software Artifact must have a `Relationship` of type `hasConcludedLicense`.
+Software Artifact shall have a `Relationship` of type `hasConcludedLicense`.
 
-Classes and Property restrictions are defined in the SimpleLicensing Profile
-(Classes and Properties associated with
+Classes and property restrictions are defined in the SimpleLicensing profile
+(classes and properties associated with
 [license expression strings](../../annexes/spdx-license-expressions.md))
-and in the ExpandedLicensing Profile (Classes and Properties used for a
+and in the ExpandedLicensing profile (classes and properties used for a
 fully parsed syntax tree of license expressions).
 
 There are 2 relationship types related to licensing - `hasDeclaredLicense` and
 `hasConcludedLicense`.
 
 If the `hasConcludedLicense` for a Software Artifact is not the same as its
-`hasDeclaredLicense`, a written explanation SHOULD be provided in the
+`hasDeclaredLicense`, a written explanation should be provided in the
 `hasConcludedLicense` relationship `comment` field.
 
-A written explanation of a relationship to a `NoAssertionLicense` MAY be
+A written explanation of a relationship to a `NoAssertionLicense` may be
 provided in the `comment` field for the relationship.
 
 *hasDeclaredLicense*
@@ -72,7 +72,7 @@ indicates that one of the following applies:
 - the SPDX data creator has made no attempt to determine this field; or
 - the SPDX data creator has intentionally provided no information (no meaning
   should be implied by doing so).
-  
+
 If a hasDeclaredLicense relationship is not present, no assumptions can be made
 about whether or not a hasDeclaredLicense exists.
 
@@ -109,7 +109,7 @@ can be made from a missing hasConcludedLicense relationship.
 
 ## Metadata
 
-- id: https://spdx.org/rdf/3.0.1/terms/Licensing
+- id: https://spdx.org/rdf/3.1/terms/Licensing
 - name: Licensing
 
 ## Profile conformance
@@ -117,7 +117,7 @@ can be made from a missing hasConcludedLicense relationship.
 For an element collection to be conformant with this profile,
 the following has to hold:
 
-1. for every `/Software/SoftwareArtifact` there MUST exist exactly one
+1. for every `/Software/SoftwareArtifact` there shall exist exactly one
    `/Core/Relationship` of type `hasConcludedLicense` having that element as
    its `from` property and a `/SimpleLicensing/AnyLicenseInfo` as its `to`
    property.

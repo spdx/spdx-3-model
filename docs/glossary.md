@@ -1,4 +1,4 @@
-# Glossary of Terms
+# Glossary of terms
 
 ## Agent
 
@@ -19,7 +19,7 @@ Each individual instance of a class has an Internationalized Resource Identifier
 
 An explicit conformance requirement specifying details of an SPDX-valid relationship between a property and a concept class including such details as the valid type of the property on that class, the cardinality (e.g., `0..1`, `1`, `1..*`, etc.) of the property on that class, the value of the property on that class, etc.
 
-In SPDX 3.0 these constraints are expressed using the W3C SHACL language.
+In SPDX 3 these constraints are expressed using the W3C SHACL language.
 
 One example could be the requirement of a specific hash algorithm to be present.
 
@@ -35,7 +35,7 @@ A representation of a relationship between a class (definition or instance) and 
 
 A specific sphere of activity or knowledge. For example, cyber security, software, bills of material, licensing, software security, etc.
 
-## Domain Class
+## Domain class
 
 A class representing a concept of primary focus within a given domain.
 
@@ -47,9 +47,9 @@ An explicit scoping within which concept classes and properties for a given doma
 
 Each namespace typically defines its own IRI prefix utilized in the IRI IDs of all concept classes and properties defined within it.
 
-In SPDX 3.0, the "core" namespace is the scoping within which all foundational BOM concept classes and properties are defined and managed.
+In SPDX 3, the "core" namespace is the scoping within which all foundational BOM concept classes and properties are defined and managed.
 
-## Non-domain Class
+## Non-domain class
 
 A class representing a concept of secondary or tertiary focus within a given domain that is a characterization of some aspect of a domain class.
 
@@ -61,7 +61,7 @@ A representation of a relationship between a class (definition or instance) and 
 
 ## Ontology
 
-An explicit specification of concepts, terms, categories, relationships, etc. for a particular scoped domain forming a language or basis for communication and analysis of information within the scoped domain. SPDX 3.0 is an ontology targeted to support the scoped domain of bills of material.
+An explicit specification of concepts, terms, categories, relationships, etc. for a particular scoped domain forming a language or basis for communication and analysis of information within the scoped domain. SPDX 3 is an ontology targeted to support the scoped domain of bills of material.
 
 ## Profile
 
@@ -81,11 +81,11 @@ The creator of the ElementCollection can also indicate whether any of the associ
 
 A representation of a relationship between a class (definition or instance) and some descriptive characterization of the class.
 
-## Property Domain
+## Property domain
 
 The class at the root of a property relationship. In other words, the class being characterized.
 
-## Property Range
+## Property range
 
 The class or literal datatype of the value of a property relationship.
 
@@ -97,9 +97,9 @@ The process of translating an abstract logical data structure into a format that
 
 A formally defined set of constraints that explicitly specify the valid "shape" of particular data to support validation against SPDX conformance requirements.
 
-A Property Shape defines the set of constraints for a given property when applied to a particular concept class. A Node Shape defines the set of property shapes (and thus constraints) relevant for validation of instance data realization of a given concept class.
+A property shape defines the set of constraints for a given property when applied to a particular concept class. A node shape defines the set of property shapes (and thus constraints) relevant for validation of instance data realization of a given concept class.
 
-In SPDX 3.0 these shapes are expressed using the W3C SHACL language.
+In SPDX 3 these shapes are expressed using the W3C SHACL language.
 
 ## SPDX
 
@@ -111,6 +111,6 @@ Starting with V3.0, the scope of SPDX has expanded beyond software and now means
 
 The action of checking or proving that instance data content conforms to the explicit semantics (meaning) and syntax (structure of classes and properties) of the SPDX language standard.
 
-In SPDX 3.0, automated validation of RDF-based serialized content can be accomplished with various freely available SHACL validation engines such as pyshacl.
+In SPDX 3, automated validation of RDF-based serialized content can be accomplished with various freely available SHACL validation engines such as pyshacl.
 
-Custom validation engines could also implement automated validation of non-RDF-based serializations against the defined SHACL shapes within SPDX 3.0.
+Custom validation engines could also implement automated validation of non-RDF-based serializations against the defined SHACL shapes within SPDX 3.

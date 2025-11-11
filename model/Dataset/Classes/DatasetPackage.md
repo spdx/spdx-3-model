@@ -18,6 +18,9 @@ Metadata information that can be added to a dataset that may be used in a softwa
 
 ## Properties
 
+- /Core/inLanguage
+  - type: /Core/LanguageTag
+  - minCount: 0
 - anonymizationMethodUsed
   - type: xsd:string
   - minCount: 0

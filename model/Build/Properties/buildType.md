@@ -20,7 +20,7 @@ and possible with different configurations.
 If you are not using a well-known buildType, it should be namespaced to a
 domain you own to prevent conflicts with other buildType IRIs.
 
-Examples of a buildType might be:
+Examples of a buildType can be:
 
 - A GitHub action workflow
 - A step in a GitHub actions pipeline

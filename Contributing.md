@@ -1,4 +1,4 @@
-# Contributing to the SPDX 3.0 Model
+# Contributing to the SPDX 3 Model
 
 ## General
 
@@ -34,11 +34,11 @@ agreement.
 
 ## Contributing to a specific profile
 
-There are multiple profiles being developed in parallel for the SPDX 3.0 model.
+There are multiple profiles being developed in parallel for the SPDX 3 model.
 
 - During its initial phase of development, a profile working group will
   contribute changes to its own branch in this repository.
-  - For example, any changes to the "Future Profile" should be submitted as a
+  - For example, any changes to the "Future" profile should be submitted as a
     change request to the `future-profile` branch.
 - There will be at least one maintainer per profile in charge of merging any
   profile development changes to the profile-specific branch.

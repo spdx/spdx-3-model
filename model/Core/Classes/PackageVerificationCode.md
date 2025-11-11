@@ -28,10 +28,10 @@ Algorithm:
     }
 
     sort templist in ascending order by value
-    
+
     /* remove separators from ordered sequence */
     valueslist = remove "/n"s from templist
-     
+
     if valueslist is empty
        hashValue = 0
     else

@@ -4,17 +4,20 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Captures a standard that is being complied with.
+Captures a standard that an artifact is being complied with.
 
 ## Description
 
-A free-form text that captures a standard that the AI software complies with.
-
-This includes both published and unpublished standards, such as those developed
-by ISO, IEEE, and ETSI.
+A free-form text that captures a standard that an artifact complies with.
 
 The standard may, but is not necessarily required to, satisfy a legal or
 regulatory requirement.
+
+If the artifact is using a standard as a reference or guideline, but not
+necessarily compliant with it, use the `standardName` property instead.
+
+For a detailed compliance information, please consider defining
+a `Relationship` with "conformsTo" relationship type to a `Regulation`.
 
 ## Metadata
 

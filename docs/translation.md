@@ -106,7 +106,7 @@ The above model Markdown file will generate the following RDF
 (showing partial):
 
 ```ttl
-<https://spdx.org/rdf/3.0.1/terms/Core/AnnotationType> a owl:Class;
+<https://spdx.org/rdf/3.1/terms/Core/AnnotationType> a owl:Class;
     rdfs:comment "Specifies the type of an annotation."@en ;
     rdfs:comment "注釈の種類を指定します。"@ja ;
     rdfs:comment "指定注释的类型。"@zh-hans ;

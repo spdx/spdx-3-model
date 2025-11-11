@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A distinct article or unit within the digital domain.
+A distinct article or unit within the domain.
 
 ## Description
 
-An artifact is a distinct article or unit within the digital domain,
+An artifact is a distinct article or unit within the domain,
 such as an electronic file, a software package, a device or an element of data.
 
 ## Metadata
@@ -44,3 +44,6 @@ such as an electronic file, a software package, a device or an element of data.
 - supportLevel
   - type: SupportType
   - minCount: 0
+- intendedUse
+  - type: xsd:string
+  - maxCount: 1

@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-The Build Profile defines the set of information required to describe an
+The Build profile defines the set of information required to describe an
 instance of a Software Build.
 
 ## Description
@@ -37,7 +37,7 @@ In addition, the following Relationship Types may be used to describe a Build.
   parent.
 - usesTool: Describes a relationship from a Build element to a build tool.
 
-All relationships in the Build Profile are scoped to the "build"
+All relationships in the Build profile are scoped to the "build"
 LifecycleScopeType period.
 
 The `hasInput` relationship can be applied to a config file or a build tool if
@@ -45,17 +45,17 @@ the nature of these inputs are not known at the creation of an SPDX document.
 
 ## Metadata
 
-- id: https://spdx.org/rdf/3.0.1/terms/Build
+- id: https://spdx.org/rdf/3.1/terms/Build
 - name: Build
 
-## Profile Conformance
+## Profile conformance
 
 Conformance to the Build profile requires one or more instances of the Build
-class. In addition, there must be at least three instances `Relationship`s with
-type `LifecycleScopedRelationship`, where the "scope" property must be "build"
-and the "from" property must be the Build instance.
+class. In addition, there shall be at least three instances `Relationship`s with
+type `LifecycleScopedRelationship`, where the "scope" property shall be "build"
+and the "from" property shall be the Build instance.
 
-At the minimum, the Build profile must contain a `hasInput`, `hasOutput`, and
+At the minimum, the Build profile shall contain a `hasInput`, `hasOutput`, and
 `invokedBy` relationshipType. If an input is known to be a build configuration
 or a build tool, the `hasInput` relationshipType can be replaced by a
 `configures` or `usesTool` relationshipType.

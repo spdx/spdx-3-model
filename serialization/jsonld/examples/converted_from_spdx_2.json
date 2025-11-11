@@ -18,7 +18,7 @@
       "createdUsing": [
         "spdx-example:SPDXRef-Actor-LicenseFind-1.0"
       ],
-      "comment": "This is the SPDX-2.3 JSON example converted to SPDX-3.0.1. As there is currently no closure on how to treat licenses, they are omitted here for now."
+      "comment": "This is an SPDX 2.3 JSON example converted to SPDX 3.0. As there is currently no closure on how to treat licenses, they are omitted here for now."
     },
     {
       "type": "Tool",

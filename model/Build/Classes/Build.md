@@ -15,7 +15,7 @@ build's inputs, outputs, and related entities (e.g. builders, identities,
 etc.).
 
 ExternalIdentifier of type "urlScheme" may be used to identify build logs.
-In this case, the comment of the ExternalIdentifier should be "LogReference".
+In this case, the comment of the ExternalIdentifier shall be "LogReference".
 
 Note that buildStartTime and buildEndTime are optional, and may be omitted to
 simplify creating reproducible builds.
