@@ -52,10 +52,10 @@ name completes the sentence:
 - hasAddedFile: Every `to` Element is a file added to the `from` Element (`from` hasAddedFile `to`).
 - hasAssessmentFor: Relates a `from` Vulnerability and each `to` Element with a security assessment. To be used with `VulnAssessmentRelationship` types.
 - hasAssociatedVulnerability: Used to associate a `from` Artifact with each `to` Vulnerability.
-- hasConcludedLicense: The `from` SoftwareArtifact is concluded by the SPDX data creator to be governed by each `to` license.
+- hasConcludedLicense: The `from` SoftwareArtifact or SoftwareComponent is concluded by the SPDX data creator to be governed by each `to` license.
 - hasContactPoint: The `from` Artifact has each `to` Agent as a contact point. The use of `hasContactPoint` type is constrained to `ContactPointRelationship` typed relationships. The type of contact (i.e. security) may be specified using a `ContactPointRelationship` element.
 - hasDataFile: The `from` Element treats each `to` Element as a data file. A data file is an artifact that stores data required or optional for the `from` Element's functionality. A data file can be a database file, an index file, a log file, an AI model file, a calibration data file, a temporary file, a backup file, and more. For AI training dataset, test dataset, test artifact, configuration data, build input data, and build output data, please consider using the more specific relationship types: `trainedOn`, `testedOn`, `hasTest`, `configures`, `hasInput`, and `hasOutput`, respectively. This relationship does not imply dependency.
-- hasDeclaredLicense: The `from` SoftwareArtifact was discovered to actually contain each `to` license, for example as detected by use of automated tooling.
+- hasDeclaredLicense: The `from` SoftwareArtifact or SoftwareComponent was discovered to actually contain each `to` license, for example as detected by use of automated tooling.
 - hasDeletedFile: Every `to` Element is a file deleted from the `from` Element (`from` hasDeletedFile `to`).
 - hasDependencyManifest: The `from` Element has manifest files that contain dependency information in each `to` Element.
 - hasDistributionArtifact: The `from` Element is distributed as an artifact in each `to` Element (e.g. an RPM or archive file).
@@ -65,6 +65,7 @@ name completes the sentence:
 - hasExample: Every `to` Element is an example for the `from` Element (`from` hasExample `to`).
 - hasHost: The `from` Build was run on the `to` Element during a LifecycleScopeType period (e.g. the host that the build runs on).
 - hasInput: The `from` Build, DefinedProcess or Action element has each `to` Element as an input.
+- hasInstance: The `from` SoftwareComponent has more specific instances that are the `to` Element(s).
 - hasMetadata: Every `to` Element is metadata about the `from` Element (`from` hasMetadata `to`).
 - hasOptionalComponent: Every `to` Element is an optional component of the `from` Element (`from` hasOptionalComponent `to`).
 - hasOptionalDependency: The `from` Element optionally depends on each `to` Element, during a LifecycleScopeType period.
