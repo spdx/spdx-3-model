@@ -14,4 +14,4 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 - name: verificationUUID
 - Nature: DataProperty
-- Range: ExternalIdentifier
+- Range: ExternalIdentifierType
