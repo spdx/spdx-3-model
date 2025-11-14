@@ -9,19 +9,19 @@ value.
 
 ## Description
 
-NoAssertionLicense should be used if
+NoAssertionLicense shall be used if
 
 - the SPDX creator has attempted to but cannot reach a reasonable objective
   determination;
 - the SPDX creator has made no attempt to determine this field; or
-- the SPDX creator has intentionally provided no information (no meaning should
+- the SPDX creator has intentionally provided no information (no meaning shall
   be implied by doing so).
 
 ## Metadata
 
 - name: NoAssertionLicense
 - type: IndividualLicensingInfo
-- IRI: https://spdx.org/rdf/3.0.1/terms/Licensing/NoAssertion
+- IRI: https://spdx.org/rdf/3.1/terms/Licensing/NoAssertion
 
 ## Property Values
 

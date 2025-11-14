@@ -7,6 +7,10 @@ SPDX-License-Identifier: Community-Spec-1.0
 Indicates whether the system can perform a decision or action without human
 involvement or guidance.
 
+*Deprecated in SPDX 3.1.*
+Use [/Core/isoAutomationLevel](../../Core/Properties/isoAutomationLevel.md)
+instead.
+
 ## Description
 
 Indicates if the system is fully automated or a human is involved in any of the

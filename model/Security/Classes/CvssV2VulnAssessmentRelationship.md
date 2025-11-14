@@ -16,7 +16,7 @@ It is intended to communicate the results of using a CVSS calculator.
 
 *Constraints*
 
-- The relationship type must be set to `hasAssessmentFor`.
+- The relationship type shall be set to `hasAssessmentFor`.
 
 *Example*
 
@@ -48,12 +48,12 @@ It is intended to communicate the results of using a CVSS calculator.
     }
   ],
   "suppliedBy": "urn:spdx.dev:agent-my-security-vendor",
-  "publishedTime": "2023-05-06T10:06:13Z"
+  "security_publishedTime": "2023-05-06T10:06:13Z"
 },
 {
   "type": "Relationship",
-  "spdxId": "urn:spdx.dev:vulnAgentRel-1",  
-  "relationshipType": "publishedBy",  
+  "spdxId": "urn:spdx.dev:vulnAgentRel-1",
+  "relationshipType": "publishedBy",
   "from": "urn:spdx.dev:cvssv2-cve-2020-28498",
   "to": ["urn:spdx.dev:agent-snyk"],
   "startTime": "2021-03-08T16:06:50Z"

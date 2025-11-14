@@ -8,7 +8,8 @@ Provide an enumerated set of lifecycle phases that can provide context to relati
 
 ## Description
 
-This enumeration summarizes common phases when dependency and other relationships, have different implications, based on their context.  For example,  a build dependency, may have different implications than a operational dependency.
+This enumeration summarizes common phases when dependency and other relationships, have different implications, based on their context.
+For example, a build dependency, may have different implications than an operational dependency.
 
 ## Metadata
 
@@ -21,4 +22,6 @@ This enumeration summarizes common phases when dependency and other relationship
 - build: A relationship has specific context implications during an element's build phase, during development.
 - test: A relationship has specific context implications during an element's testing phase, during development.
 - runtime: A relationship has specific context implications during the execution phase of an element.
+- decommission: A relationship has specific context implications for a product's retirement and/or decommissioning.
+- update: A relationship has specific context implications for a product update.
 - other: A relationship has other specific context information necessary to capture that the above set of enumerations does not handle.

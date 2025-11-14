@@ -10,7 +10,7 @@ is affected by it.
 ## Description
 
 When an element is referenced with a VexAffectedVulnAssessmentRelationship,
-the relationship MUST include one actionStatement that SHOULD describe actions
+the relationship shall include one actionStatement that should describe actions
 to remediate or mitigate the vulnerability.
 
 ## Metadata

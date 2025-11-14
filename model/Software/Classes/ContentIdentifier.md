@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A canonical, unique, immutable identifier
+A canonical, unique, immutable identifier.
 
 ## Description
 

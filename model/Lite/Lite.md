@@ -20,29 +20,29 @@ An SPDX Lite document can also be used in parallel with other SPDX documents in 
 
 ## Metadata
 
-- id: https://spdx.org/rdf/3.0.1/terms/Lite
+- id: https://spdx.org/rdf/3.1/terms/Lite
 - name: Lite
 
 ## Profile conformance
 
 In addition to the following mandatory requirements,
 please refer to the corresponding Annex for elements
-that should be included as part of a document conforming to the Lite profile.
+that shall be included as part of a document conforming to the Lite profile.
 
 For a `/Software/Package` to be conformant with this profile, the following has to hold:
 
 1. The minCount for `copyrightText` is 1
 2. The minCount for `packageVersion` is 1
 3. The minCount for `suppliedBy` is 1
-4. At least one of `downloadLocation` or `packageUrl` must be present
+4. At least one of `downloadLocation` or `packageUrl` shall be present
 
 Additionally:
 
-1. for every `/Software/Package` there MUST exist exactly one
+1. for every `/Software/Package` there shall exist exactly one
    `/Core/Relationship` of type `hasConcludedLicense` having that element as
    its `from` property and a `/SimpleLicensing/AnyLicenseInfo` as its `to`
    property.
-2. for every `/Software/Package` there MUST exist exactly one
+2. for every `/Software/Package` there shall exist exactly one
    `/Core/Relationship` of type `hasDeclaredLicense` having that element as its
    `from` property and a `/SimpleLicensing/AnyLicenseInfo` as its `to`
    property.

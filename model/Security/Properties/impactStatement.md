@@ -13,7 +13,7 @@ justification label.
 When a VEX product element is related with a VexNotAffectedVulnAssessmentRelationship
 and a machine readable justification label is not provided, then an impactStatement
 that further explains how or why the product(s) are not affected by the vulnerability
-must be provided.
+shall be provided.
 
 ## Metadata
 

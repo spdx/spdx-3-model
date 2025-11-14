@@ -29,7 +29,7 @@ ExternalRefType specifies the type of an external reference.
 - documentation: A reference to the documentation for a package.
 - dynamicAnalysisReport: A reference to a dynamic analysis report for a package.
 - eolNotice: A reference to the End Of Sale (EOS) and/or End Of Life (EOL) information related to a package.
-- exportControlAssessment: A reference to a export control assessment for a package.
+- exportControlAssessment: A reference to an export control assessment for a package.
 - funding: A reference to funding information related to a package.
 - issueTracker: A reference to the issue tracker for a package.
 - mailingList: A reference to the mailing list used by the maintainer for a package.
@@ -62,4 +62,4 @@ ExternalRefType specifies the type of an external reference.
 - vcs: A reference to a version control system related to a software artifact.
 - vulnerabilityDisclosureReport: A reference to a Vulnerability Disclosure Report (VDR) which provides the software supplier's analysis and findings describing the impact (or lack of impact) that reported vulnerabilities have on packages or products in the supplier's SBOM as defined in [NIST SP 800-161 Cybersecurity Supply Chain Risk Management Practices for Systems and Organizations](https://csrc.nist.gov/pubs/sp/800/161/r1/final).
 - vulnerabilityExploitabilityAssessment: A reference to a Vulnerability Exploitability eXchange (VEX) statement which provides information on whether a product is impacted by a specific vulnerability in an included package and, if affected, whether there are actions recommended to remediate. See also [NTIA VEX one-page summary](https://ntia.gov/files/ntia/publications/vex_one-page_summary.pdf).
-- x509Cert: A reference to an X.509 certificate as defined in [RFC 1422](https://datatracker.ietf.org/doc/rfc1422/). The media type should be one of application/x-x509-ca-cert or application/x-x509-user-cert.
+- x509Cert: A reference to an X.509 certificate as defined in [RFC 1422](https://datatracker.ietf.org/doc/rfc1422/). The media type shall be one of application/x-x509-ca-cert or application/x-x509-user-cert.

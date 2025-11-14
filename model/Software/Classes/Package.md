@@ -12,7 +12,7 @@ software.
 A package refers to any unit of content that can be associated with a
 distribution of software.
 
-Typically, a package is composed of one or more files.  
+Typically, a package is composed of one or more files.
 
 Any of the following non-limiting examples may be (but are not required to be)
 represented in SPDX as a package:

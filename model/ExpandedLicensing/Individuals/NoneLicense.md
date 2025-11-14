@@ -9,14 +9,14 @@ license is present.
 
 ## Description
 
-NoneLicense should be used if the SPDX creator determines there is no license
+NoneLicense shall be used if the SPDX creator determines there is no license
 available for this Artifact.
 
 ## Metadata
 
 - name: NoneLicense
 - type: IndividualLicensingInfo
-- IRI: https://spdx.org/rdf/3.0.1/terms/Licensing/None
+- IRI: https://spdx.org/rdf/3.1/terms/Licensing/None
 
 ## Property Values
 

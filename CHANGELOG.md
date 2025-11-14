@@ -29,19 +29,19 @@ semantic changes to the model and may affect compatibility.
   - Corrected `actionStatement` cardinality from `0..1` to `1..1` to match its textual description.
   - Corrected `actionStatementTime` cardinality from `0..*` to `0..1` to match its textual description.
 - **Fixed:** Typo in `Core/import` property - [#847](https://github.com/spdx/spdx-3-model/pull/847)
-  - Corrected `imports` to `import` in Core Profile.
+  - Corrected `imports` to `import` in Core profile.
 - **Fixed:** Typo in `Build/parameter` property - [#836](https://github.com/spdx/spdx-3-model/pull/836)
-  - Corrected `parameters` to `parameter` in Build Profile.
+  - Corrected `parameters` to `parameter` in Build profile.
 - **Fixed:** Typo in `hasInput` and `hasOutput` entries - [#854](https://github.com/spdx/spdx-3-model/pull/854)
   - Corrected `hasInputs` to `hasInput` and `hasOutputs` to `hasOutput` in
     `Core/RelationshipType`.
 - **Fixed:** Typo in `hasPrerequisite` entry- [#817](https://github.com/spdx/spdx-3-model/pull/817)
   - Corrected the misspelling of `hasPrerequsite` to `hasPrerequisite` in
     `Core/RelationshipType`.
-- **Fixed:** Licensing relationship type names in Profile conformance - [#779](https://github.com/spdx/spdx-3-model/pull/779)
+- **Fixed:** Licensing relationship type names in profile conformance - [#779](https://github.com/spdx/spdx-3-model/pull/779)
   - Corrected `concludedLicense` to `hasConcludedLicense` and
-    `declaredLicense` to `hasDeclaredLicense` in the "Profile conformance"
-    section of AI, Dataset, Licensing, and Lite Profiles.
+    `declaredLicense` to `hasDeclaredLicense` in profile conformance
+    section of AI, Dataset, Licensing, and Lite profiles.
 - **Fixed:** `Security/actionStatement` property - [#908](https://github.com/spdx/spdx-3-model/pull/908)
   - Corrected its cardinality from `0..1` to `1..1`.
 - **Fixed:** `Security/actionStatementTime` property - [#908](https://github.com/spdx/spdx-3-model/pull/908)
