@@ -21,7 +21,7 @@ Verification typically checks if a requirement has been implemented or refined b
 ## Properties
 
 - verificationUUID
-  - type: ExternalIdentifier
+  - type: ExternalIdentifierType
   - minCount: 0
   - maxCount: 1
 - verificationMethod
