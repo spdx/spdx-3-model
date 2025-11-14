@@ -21,7 +21,7 @@ A requirement element is a distinct unit that defines an expectation, need, beha
   - type: ContentIdentifier
   - minCount: 0
   - maxCount: 1
-- devLifeCycleStage
+- devLifecycleStage
   - type: LifecycleScopeType
   - minCount: 0
   - maxCount: *
