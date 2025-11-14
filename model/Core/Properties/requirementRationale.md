@@ -8,7 +8,7 @@ Text used to define the rationale or additional information.
 
 ## Description
 
-Additional detail used to define the reason/rationale, why this requirement is there or give some additional information, needed to understand the requirement. Usually less formal than the requirement wording of the RequirementStatement.
+Additional detail used to define the reason or justification for the existence of the requirement. The rationale is usually less formal than the wording of the requirement statement itself.
 
 ## Metadata
 
