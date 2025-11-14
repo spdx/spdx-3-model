@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# devLifeCycleStage
+# devLifecycleStage
 
 ## Summary
 
@@ -12,6 +12,6 @@ The development lifecycle stage specifies the phase or phases of a product’s l
 
 ## Metadata
 
-- name: devLifeCycleStage
+- name: devLifecycleStage
 - Nature: DataProperty
 - Range: LifecycleScopeType
