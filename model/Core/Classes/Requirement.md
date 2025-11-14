@@ -18,7 +18,7 @@ A requirement element is a distinct unit that defines an expectation, need, beha
 ## Properties
 
 - requirementUUID
-  - type: Software/ContentIdentifier
+  - type: ExternalIdentifier
   - minCount: 0
   - maxCount: 1
 - devLifecycleStage
