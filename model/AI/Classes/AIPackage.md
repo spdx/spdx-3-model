@@ -18,6 +18,10 @@ Metadata information that can be added to a package to describe an AI applicatio
 
 ## Properties
 
+- /Core/isoAutomationLevel
+  - type: /Core/IsoAutomationLevel
+  - minCount: 0
+  - maxCount: 1
 - autonomyType
   - type: /Core/PresenceType
   - minCount: 0

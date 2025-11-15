@@ -101,6 +101,60 @@ For example, in the SPDX 3.0 Software profile, the `homePage` property uses an
 uppercase "P," while SPDX 2.3 uses the DOAP `homepage` property, which has a
 lowercase "p."
 
+### Decimal
+
+Always enclose decimal values in quotes.
+
+Because SPDX 3 JSON is defined as a subset of JSON-LD, decimal values require
+serialization as a JSON String (i.e., enclosed in quotes) to guarantee correct
+type interpretation.
+
+If the data type is integer (e.g., `xsd:nonNegativeInteger`),
+use the number without quotes.
+
+```json
+{
+  "type": "software_File",
+  "software_artifactSize": 112
+}
+```
+
+If the data type is decimal (`xsd:decimal`), use the number with quotes
+(string).
+
+```json
+{
+  "type": "security_CvssV2VulnAssessmentRelationship",
+  "security_score": "4.3"
+}
+```
+
+This requirement exists because, according to the W3C JSON-LD specification
+on the [conversion of native data types][json-ld-data-type-conversion]:
+
+> Numbers without fractions are converted to `xsd:integer`-typed literals,
+> numbers with fractions to `xsd:double`-typed literals
+
+This means an unquoted number with fractions will always be converted by
+the JSON-LD processor to `xsd:double`. This conversion will cause validation
+to fail if the expected type is `xsd:decimal`. Therefore, you must put quotes
+around the decimal.
+
+Treating decimal values as a JSON String (by enclosing them in quotes) also
+prevents precision loss for values with many significant digits
+(over 15 digits), overcoming the limitations of the IEEE 754 double-precision
+floating-point format used by the native JSON Number type.
+
+This precision-preserving practice is adopted as a default behavior by the
+JSON serializers in some popular frameworks and libraries, such as Django,
+Ruby on Rails, and Pydantic.
+
+However, this is not a universal default. In Java, for instance, users of major
+libraries like Jackson and Gson must explicitly configure the serializer to
+treat high-precision types (like `java.math.BigDecimal`) as strings.
+
+[json-ld-data-type-conversion]: https://www.w3.org/TR/json-ld11/#conversion-of-native-data-types
+
 ## Validating with online tools
 
 A web-based validation tool is available at <https://tools.spdx.org/>:

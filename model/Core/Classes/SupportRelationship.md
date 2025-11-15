@@ -31,7 +31,5 @@ support, and the `to` are the `Artifact` for which support is being provided.
 
 - /Core/Relationship/startTime
   - minCount: 1
-  - maxCount: 1
 - /Core/Relationship/endTime
   - minCount: 1
-  - maxCount: 1
