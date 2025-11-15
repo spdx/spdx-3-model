@@ -65,7 +65,7 @@ An SPDX serialization in JSON-LD is considered valid if it validates against
 the OWL ontology which also includes SHACL shape restrictions.
 
 Read a detailed document on how to
-[validating SPDX 3 JSON-LD documents](jsonld/validation.md), structurally and
+[validating SPDX 3 JSON documents](jsonld/validation.md), structurally and
 semantically. The document also include a few tools that are known to work.
 
 The OWL ontology is located at <https://spdx.org/rdf/3.0.1/spdx-model.ttl>.

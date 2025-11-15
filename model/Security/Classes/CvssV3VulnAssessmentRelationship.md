@@ -24,7 +24,7 @@ It is intended to communicate the results of using a CVSS calculator.
 
 ```json
 {
-  "type": "CvssV3VulnAssessmentRelationship",
+  "type": "security_CvssV3VulnAssessmentRelationship",
   "spdxId": "urn:spdx.dev:cvssv3-cve-2020-28498",
   "relationshipType": "hasAssessmentFor",
   "security_score": "6.8",
@@ -50,7 +50,7 @@ It is intended to communicate the results of using a CVSS calculator.
       "locator": "https://github.com/indutny/elliptic/commit/441b742"
     }
   ],
-  "suppliedBy": ["urn:spdx.dev:agent-my-security-vendor"],
+  "suppliedBy": "urn:spdx.dev:agent-my-security-vendor",
   "publishedTime": "2023-05-06T10:06:13Z"
 },
 {

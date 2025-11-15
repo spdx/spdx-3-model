@@ -26,13 +26,13 @@ to all restrictions defined for that profile.
 
 ## Entries
 
-- core: the element follows the Core profile specification
-- software: the element follows the Software profile specification
-- simpleLicensing: the element follows the SimpleLicensing profile specification
-- expandedLicensing: the element follows the ExpandedLicensing profile specification
-- security: the element follows the Security profile specification
-- build: the element follows the Build profile specification
-- ai: the element follows the AI profile specification
-- dataset: the element follows the Dataset profile specification
-- extension: the element follows the Extension profile specification
-- lite: the element follows the Lite profile specification
+- core: The element follows the Core profile specification.
+- software: The element follows the Software profile specification.
+- simpleLicensing: The element follows the SimpleLicensing profile specification.
+- expandedLicensing: The element follows the ExpandedLicensing profile specification.
+- security: The element follows the Security profile specification.
+- build: The element follows the Build profile specification.
+- ai: The element follows the AI profile specification.
+- dataset: The element follows the Dataset profile specification.
+- extension: The element follows the Extension profile specification.
+- lite: The element follows the Lite profile specification.

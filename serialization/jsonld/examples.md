@@ -1,4 +1,4 @@
-# JSON-LD Serialization Examples
+# SPDX 3 JSON Serialization Examples
 
 ## Agents
 
@@ -39,4 +39,4 @@
 ## Full examples
 
 - [Converted SPDX 3.0 document from SPDX 2.3 document](examples/converted_from_spdx_2.json)
-  - converted from [this file](https://github.com/spdx/spdx-spec/blob/development/v2.3.1/examples/SPDXJSONExample-v2.3.spdx.json)
+  - converted from [this file](https://github.com/spdx/spdx-spec/blob/support/2.3.1/examples/SPDXJSONExample-v2.3.spdx.json)

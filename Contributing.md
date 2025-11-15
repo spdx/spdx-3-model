@@ -16,6 +16,8 @@ datatypes, properties, and vocabularies which will be used to automatically
 create documentation, ontologies, and validation artifacts.
 These are organized by profile.
 
+Use [spec-parser][] to check if your Markdown has no errors.
+
 Please submit [a pull request][pull-requests] or [an issue][issues]
 for any suggested changes or issues you find.
 
@@ -45,10 +47,10 @@ There are multiple profiles being developed in parallel for the SPDX 3.0 model.
   profile model is ready for review.
 - Once alerted, the SPDX tech group will review and provide feedback.
 - Once profile proposals have been reviewed and approved, the profile-specific
-  branch will be merged to a general `development` branch along with the other
+  branch will be merged to a general `develop` branch along with the other
   reviewed profile models.
-- Once the profile in `development` branch is stable, its code from the
-  `development` branch will be merged to `main`.
+- Once the profile in `develop` branch is stable, its code from the
+  `develop` branch will be merged to `main`.
 
 At this point the SPDX tech team will re-evaluate the best way to continue
 updating individual profiles.
@@ -83,6 +85,7 @@ Each profile in active development phase also has their own
 | Software | [Alexios Zavras][gh-alexios] and [Gary O'Neall][gh-gary] |
 
 [format]: ./docs/format.md
+[spec-parser]: https://github.com/spdx/spec-parser/
 [translation]: ./docs/translation.md
 [spdx-tech-list]: https://lists.spdx.org/mailman/listinfo/spdx-tech
 [meetings]: https://github.com/spdx/meetings/
