@@ -8,7 +8,7 @@ A verificationRationale is supporting information that justifies the verificatio
 
 ## Description
 
-A verificationRationale is supporting information that adds more context on how  verification needs to be performed, justifies the chosen verification method, etc.
+A verificationRationale is supporting information that adds more context on how verification needs to be performed, justifies the chosen verification method, etc.
 
 ## Metadata
 
