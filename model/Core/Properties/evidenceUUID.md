@@ -14,4 +14,4 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 - name: evidenceUUID
 - Nature: DataProperty
-- Range: ExternalIdentifierType
+- Range: ExternalIdentifier
