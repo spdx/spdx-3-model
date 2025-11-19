@@ -24,7 +24,7 @@ Note: An evaluation with a `inconclusive` EvaluationResultType should have a com
   - type: EvaluationResultType
   - minCount: 1
   - maxCount: 1
-- evalutationRationale
+- evaluationRationale
   - type: xsd:string
   - minCount: 1
   - maxCount: 1
