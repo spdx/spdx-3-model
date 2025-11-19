@@ -9,8 +9,6 @@ Evaluation is an outcome considering results of a verification.
 ## Description
 
 Evaluation is the judgement, assessment or opinion regarding the compliance of a verification outcome with the expectations of this verification to meet the verification's acceptance criteria.
-
-Note: An evaluation with a `inconclusive` EvaluationResultType must have a comment on it.
  
 ## Metadata
 
