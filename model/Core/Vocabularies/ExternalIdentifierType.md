@@ -29,3 +29,4 @@ ExternalIdentifierType specifies the type of an external identifier.
 - swid: Concise Software Identification (CoSWID) tag, as defined in [RFC 9393](https://datatracker.ietf.org/doc/rfc9393/) Section 2.3.
 - urlScheme: [Uniform Resource Identifier (URI) Schemes](https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml). The scheme used in order to locate a resource.
 - verificationUUID: The UUID used by a verification management system or any other lifecycle management tool to uniquely identify a verification item. UUID, or universally unique ID, is a standard term to refer to verification items.
+- evidenceUUID: The UUID used by a reporting management system or any other lifecycle management tool to uniquely identify an evidence relationship item. UUID, or universally unique ID, is a standard term to refer to evidence items.
