@@ -33,7 +33,7 @@ Verification typically checks if a requirement has been implemented or refined b
 - verificationPostcondition
   - type: xsd:string
   - minCount: 0
-- verificationMethodRationale
+- verificationRationale
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
