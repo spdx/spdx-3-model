@@ -13,7 +13,7 @@ Assement of an Element for export control classification according to the classi
 ## Metadata
 
 - name: ExportControlClassificationAssessment
-- SubclassOf: /Core/Element
+- SubclassOf: /Core/Artifact
 - Instantiability: Concrete
 
 ## Properties
