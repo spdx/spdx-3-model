@@ -28,7 +28,7 @@ An EvaluationResult with an evaluation value of "inconclusive" should have a val
   - type: xsd:string
   - minCount: 1
   - maxCount: 1
-- evalutationBasedOn
+- evaluationBasedOn
   - type: RequirementVerification
   - minCount: 1
   - maxCount: 1
