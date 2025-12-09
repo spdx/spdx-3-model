@@ -13,7 +13,7 @@ A requirement element is a distinct unit that defines an expectation, need, beha
 ## Metadata
 
 - name: Requirement
-- SubclassOf: /Core/Element
+- SubclassOf: Element
 
 ## Properties
 
