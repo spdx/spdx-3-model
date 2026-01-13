@@ -5,7 +5,10 @@ SPDX-License-Identifier: Community-Spec-1.0
 ## Summary
 
 Describes what the given dataset should be used for.
-Deprecated in SPDX 3.1. Use Core/Artifact/intendedUse instead.
+
+*Deprecated in SPDX 3.1.*
+Use [/Core/intendedUse](../../Core/Properties/intendedUse.md) instead.
+
 ## Description
 
 A free-form text that describes what the given dataset should be used for.

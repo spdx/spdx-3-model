@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Indicates level of automation.
+ISO level of automation.
 
 ## Description
 

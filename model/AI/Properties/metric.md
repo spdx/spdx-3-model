@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Records the measurement of prediction quality of the AI model.
+Metric used to evaluate the AI model.
 
 ## Description
 
-Records the measurement with which the AI model was evaluated.
+Metric used to evaluate the AI model.
 
 This makes statements about the prediction quality including uncertainty,
 accuracy, characteristics of the tested population, quality, fairness,

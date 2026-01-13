@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Categories of confidentiality level.
+Confidentiality level.
 
 ## Description
 

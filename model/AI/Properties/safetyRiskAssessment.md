@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Records the results of general safety risk assessment of the AI system.
+Results of general safety risk assessment of the AI system.
 
 ## Description
 
-Records the results of general safety risk assessment of the AI system.
+Results of general safety risk assessment of the AI system.
 
 Using categorization according to the
 [EU general risk assessment methodology](https://ec.europa.eu/docsroom/documents/17107).

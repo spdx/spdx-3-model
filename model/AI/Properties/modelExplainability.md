@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Describes methods that can be used to explain the results from the AI model.
+Methods that can be used to explain the results from the AI model.
 
 ## Description
 

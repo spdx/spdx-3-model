@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Specifies the amount of energy consumed during inference time by an AI model
+Energy consumed during inference time by an AI model
 that is being used in the AI system.
 
 ## Description

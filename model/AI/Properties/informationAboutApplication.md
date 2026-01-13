@@ -4,8 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Provides relevant information about the AI software, not including the model
-description.
+Information about the AI software, not including the model description.
 
 ## Description
 

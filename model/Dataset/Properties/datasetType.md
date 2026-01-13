@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Describes the type of the given dataset.
+Type of data in a dataset.
 
 ## Description
 

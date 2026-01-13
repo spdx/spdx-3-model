@@ -4,8 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Records a hyperparameter used to build the AI model contained in the AI
-package.
+Hyperparameter used to build the AI model contained in the AI package.
 
 ## Description
 

@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Specifies the safety risk level.
+Safety risk level.
 
 ## Description
 

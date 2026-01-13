@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Specifies the unit in which energy is measured.
+Unit in which energy is measured.
 
 ## Description
 
