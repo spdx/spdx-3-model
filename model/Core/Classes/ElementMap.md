@@ -29,4 +29,5 @@ unique keys.
   - maxCount: 1
 - elementValue
   - type: Element
+  - minCount: 1
   - maxCount: 1
