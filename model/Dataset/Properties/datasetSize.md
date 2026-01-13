@@ -7,7 +7,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 Size of the dataset.
 
 *Deprecated in SPDX 3.1.*
-Use [artifactSize](../../Software/Properties/artifactSize.md) instead.
+Use [/Software/artifactSize](../../Software/Properties/artifactSize.md) instead.
 
 ## Description
 
