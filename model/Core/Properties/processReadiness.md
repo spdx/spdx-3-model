@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-processReadiness describes the readiness of a process. 
+processReadiness describes the readiness of a process.
 
 ## Description
 

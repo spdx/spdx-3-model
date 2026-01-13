@@ -6,6 +6,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 Describes what the given dataset should be used for.
 Deprecated in SPDX 3.1. Use Core/Artifact/intendedUse instead.
+
 ## Description
 
 A free-form text that describes what the given dataset should be used for.

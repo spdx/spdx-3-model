@@ -8,8 +8,8 @@ ResponsibilityChangeAction refers to the transfer of responsibility from one par
 
 ## Description
 
-Changes of responsibility are recorded in this process. Responsibility Change refers to the transfer of rights, responsibilities, and/or control of an asset, property, business, or entity from one party to another. This change can occur in various contexts, including real estate, business acquisitions, intellectual property, and assets. 
-The actionStartTime and actionEndTime can be the same time. 
+Changes of responsibility are recorded in this process. Responsibility Change refers to the transfer of rights, responsibilities, and/or control of an asset, property, business, or entity from one party to another. This change can occur in various contexts, including real estate, business acquisitions, intellectual property, and assets.
+The actionStartTime and actionEndTime can be the same time.
 
 ## Metadata
 

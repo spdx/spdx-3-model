@@ -33,4 +33,3 @@ A requirement element is a distinct unit that defines an expectation, need, beha
   - type: xsd:string
   - minCount: 0
   - maxCount: *
-

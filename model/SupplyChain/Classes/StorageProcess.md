@@ -21,4 +21,3 @@ A StorageProcess expresses the planned storage of product in an optionally-speci
 - plannedStorageLocation
   - type: /Core/Location
   - minCount: 0
-

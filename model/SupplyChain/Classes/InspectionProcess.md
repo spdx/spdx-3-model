@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Inspection Process defines specific various processes needed to satisfy the inspection requirements for a specific product or service. 
+Inspection Process defines specific various processes needed to satisfy the inspection requirements for a specific product or service.
 
 ## Description
 

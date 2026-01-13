@@ -8,7 +8,7 @@ The AssemblyProcess represents the process of creating a product by assembling a
 
 ## Description
 
-The AssemblyProcess refers to the systematic method of putting together different components to create a finished product. The process of assembly is part of the manufacturing process used in industries such as automotive, electronics, aerospace, and consumer goods. Assembled products may be designed to be disassembled into components. 
+The AssemblyProcess refers to the systematic method of putting together different components to create a finished product. The process of assembly is part of the manufacturing process used in industries such as automotive, electronics, aerospace, and consumer goods. Assembled products may be designed to be disassembled into components.
 
 ## Metadata
 

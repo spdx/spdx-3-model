@@ -20,4 +20,3 @@ An Organization is a group of people who work together in an organized way for a
 
 - headquartersLocation
   - type: Location
-

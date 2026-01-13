@@ -8,7 +8,7 @@ Location of a specific action.
 
 ## Description
 
-The location of an action is defined by the actionLocation. Action locations help define and validate a specific action. 
+The location of an action is defined by the actionLocation. Action locations help define and validate a specific action.
 
 ## Metadata
 
