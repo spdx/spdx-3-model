@@ -4,11 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Specifies an AI package and its associated information.
+A Package that contains AI software or an AI model.
 
 ## Description
 
-Metadata information that can be added to a package to describe an AI application or trained AI model.
+A Package that contains code or a model that provides
+artificial intelligence capabilities.
 
 ## Metadata
 
@@ -77,13 +78,5 @@ Metadata information that can be added to a package to describe an AI applicatio
 
 ## External properties restrictions
 
-- /Core/Artifact/releaseTime
-  - minCount: 1
-- /Core/Artifact/suppliedBy
-  - minCount: 1
-- /Software/Package/downloadLocation
-  - minCount: 1
-- /Software/Package/packageVersion
-  - minCount: 1
 - /Software/SoftwareArtifact/primaryPurpose
   - minCount: 1

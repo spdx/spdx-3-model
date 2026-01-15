@@ -21,6 +21,9 @@ set forth in that Annex.
 The ExpandedLicensing profile can be used to represent the complete parsed
 license expression as a combination of license objects.
 
+`customIdToUri` is deprecated. Migrate to `customIdToLicense`. `customIdToUri`
+will be removed in a future release.
+
 ## Metadata
 
 - name: LicenseExpression
@@ -38,4 +41,7 @@ license expression as a combination of license objects.
   - maxCount: 1
 - customIdToUri
   - type: /Core/DictionaryEntry
+  - minCount: 0
+- customIdToLicense
+  - type: /Core/ElementMap
   - minCount: 0
