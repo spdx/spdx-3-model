@@ -1005,7 +1005,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="PfPf3rA2bqZPrQek9LXx" name="Licensing">
-    <mxGraphModel dx="1271" dy="1972" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="0" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1592,7 +1592,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="jvcBLcdmtOIPwAJ3PkCR" name="Dataset">
-    <mxGraphModel dx="1271" dy="1972" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="0" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1771,7 +1771,7 @@
           <mxGeometry height="30" width="260" y="56" as="geometry" />
         </mxCell>
         <mxCell id="B4Z5g7sS6NZpVYw_CnZ0-3" connectable="0" parent="1" style="group" value="" vertex="1">
-          <mxGeometry height="230" width="240" x="529" y="-320" as="geometry" />
+          <mxGeometry height="230" width="240" x="529" y="-434" as="geometry" />
         </mxCell>
         <mxCell id="R-MV-kxz7xrcIz5BwruZ-1" parent="B4Z5g7sS6NZpVYw_CnZ0-3" style="shape=umlFrame;whiteSpace=wrap;html=1;width=110;height=30;strokeWidth=3;fontStyle=0;fontFamily=Verdana;fontSize=10;" value="Enumerations" vertex="1">
           <mxGeometry height="230" width="240" as="geometry" />
