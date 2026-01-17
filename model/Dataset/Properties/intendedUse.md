@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Describes what the given dataset should be used for.
+The intended use of a given dataset.
 
 *Deprecated in SPDX 3.1.*
 Use [/Core/intendedUse](../../Core/Properties/intendedUse.md) instead.
