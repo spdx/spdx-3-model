@@ -1592,7 +1592,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="jvcBLcdmtOIPwAJ3PkCR" name="Dataset">
-    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1426" dy="1972" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="0" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1634,7 +1634,7 @@
         <mxCell id="Vtgq-jyTV3dxKo35nZ68-18" parent="Vtgq-jyTV3dxKo35nZ68-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=10;" value="&lt;strike&gt;+ datasetSize: xsd:nonNegativeInteger[0..1]&lt;/strike&gt;" vertex="1">
           <mxGeometry height="30" width="372" y="266" as="geometry" />
         </mxCell>
-        <mxCell id="Vtgq-jyTV3dxKo35nZ68-15" parent="Vtgq-jyTV3dxKo35nZ68-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=10;" value="+ datasetType: DatasetType[1]" vertex="1">
+        <mxCell id="Vtgq-jyTV3dxKo35nZ68-15" parent="Vtgq-jyTV3dxKo35nZ68-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=10;" value="+ datasetType: DatasetType[1..*]" vertex="1">
           <mxGeometry height="30" width="372" y="296" as="geometry" />
         </mxCell>
         <mxCell id="Vtgq-jyTV3dxKo35nZ68-26" parent="Vtgq-jyTV3dxKo35nZ68-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=10;" value="+ datasetUpdateMechanism: xsd:string[0..1]" vertex="1">
