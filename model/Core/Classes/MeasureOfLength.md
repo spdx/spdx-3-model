@@ -15,4 +15,3 @@ The measure of length refers to the dimension of an object or space that describ
 - name: MeasureOfLength
 - SubclassOf: UnitOfMeasure
 - Instantiability: Concrete
-

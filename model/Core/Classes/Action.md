@@ -8,7 +8,7 @@ Class that describes an action that has occurred.
 
 ## Description
 
-Action defines an event that has occurred. This is an Abstract Action. 
+Action defines an event that has occurred. This is an Abstract Action.
 
 ## Metadata
 

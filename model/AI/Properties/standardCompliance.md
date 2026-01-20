@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Captures a standard that an artifact is being complied with.
+Standard that an artifact is being complied with.
 
 ## Description
 
@@ -14,7 +14,7 @@ The standard may, but is not necessarily required to, satisfy a legal or
 regulatory requirement.
 
 If the artifact is using a standard as a reference or guideline, but not
-necessarily compliant with it, use the `standardName` property instead.
+necessarily compliant with it, use the `/Core/standardName` property instead.
 
 For a detailed compliance information, please consider defining
 a `Relationship` with "conformsTo" relationship type to a `Regulation`.

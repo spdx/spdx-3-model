@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Describes the anonymization methods used.
+Anonymization methods used.
 
 ## Description
 

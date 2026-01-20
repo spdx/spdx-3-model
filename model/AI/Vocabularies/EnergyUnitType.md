@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Specifies the unit of energy consumption.
+Unit of energy consumption.
 
 ## Description
 

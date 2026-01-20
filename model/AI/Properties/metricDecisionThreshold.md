@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Captures the threshold that was used for computation of a metric described in
+Threshold that was used for computation of a metric described in
 the metric field.
 
 ## Description

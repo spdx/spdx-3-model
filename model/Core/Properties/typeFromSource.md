@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# typeFromSource 
+# typeFromSource
 
 ## Summary
 
@@ -13,6 +13,6 @@ It represents a unique or standardized value within the classification system th
 
 ## Metadata
 
-- name: typeFromSource 
+- name: typeFromSource
 - Nature: DataProperty
 - Range: xsd:string

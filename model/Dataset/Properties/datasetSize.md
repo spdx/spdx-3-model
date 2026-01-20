@@ -4,14 +4,14 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Captures the size of the dataset.
+Size of the dataset.
 
-Deprecated in SPDX 3.1.
-Use [artifactSize](../../Software/Properties/artifactSize.md) instead.
+*Deprecated in SPDX 3.1.*
+Use [/Software/artifactSize](../../Software/Properties/artifactSize.md) instead.
 
 ## Description
 
-Captures how large a dataset is.
+How large a dataset is.
 
 The size is to be measured in bytes.
 

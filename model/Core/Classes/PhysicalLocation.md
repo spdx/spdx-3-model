@@ -8,7 +8,7 @@ A physical location is a tangible, geographically identifiable place where objec
 
 ## Description
 
-A physical location is a tangible, geographically identifiable place where objects, people, or assets exist or operate. 
+A physical location is a tangible, geographically identifiable place where objects, people, or assets exist or operate.
 
 ## Metadata
 

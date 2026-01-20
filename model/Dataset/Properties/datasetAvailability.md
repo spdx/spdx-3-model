@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-The field describes the availability of a dataset.
+Availability of a dataset.
 
 ## Description
 

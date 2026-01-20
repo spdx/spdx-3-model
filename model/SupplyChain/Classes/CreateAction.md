@@ -8,7 +8,7 @@ CreationAction represents an event of product creation.
 
 ## Description
 
-CreationAction represents the lifecycle event of Product creation. A product could be manufactured, assembled, mined/extracted directly from the nature etc. 
+CreationAction represents the lifecycle event of Product creation. A product could be manufactured, assembled, mined/extracted directly from the nature etc.
 
 Relationship:
 

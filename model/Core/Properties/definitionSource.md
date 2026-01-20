@@ -8,7 +8,7 @@ It is the authoritative or credible entity, document, or body of knowledge that 
 
 ## Description
 
-It is the authoritative or credible entity, document, or body of knowledge that provides the meaning of a type, ensuring accuracy, context, and standardization. 
+It is the authoritative or credible entity, document, or body of knowledge that provides the meaning of a type, ensuring accuracy, context, and standardization.
 These are adopted to create uniformity and facilitate interoperability within industries.
 
 ## Metadata

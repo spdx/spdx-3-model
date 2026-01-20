@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Captures the domain in which the AI package can be used.
+Domain in which the AI package can be used.
 
 ## Description
 

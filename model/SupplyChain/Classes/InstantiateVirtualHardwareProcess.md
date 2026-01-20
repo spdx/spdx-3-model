@@ -15,4 +15,3 @@ InstantiateVirtualHardwareProcess is a class defining the process needed to inst
 - name: InstantiateVirtualHardwareProcess
 - SubclassOf: CreateProcess
 - Instantiability: Concrete
-

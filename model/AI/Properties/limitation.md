@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Captures a limitation of the AI software.
+Limitation of the AI software.
 
 ## Description
 

@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Products or commodities produced as a bulk unit are called bulk products. Commodities are often sold in bulk. 
+Products or commodities produced as a bulk unit are called bulk products. Commodities are often sold in bulk.
 
 ## Description
 
-Products or commodities produced as a bulk unit are called bulk products. Commodities are often sold in bulk based on a batch or bulk ID number associated with the bulk unit. 
+Products or commodities produced as a bulk unit are called bulk products. Commodities are often sold in bulk based on a batch or bulk ID number associated with the bulk unit.
 Bulk units defined in the QUDT Units standards.
 
 ## Metadata

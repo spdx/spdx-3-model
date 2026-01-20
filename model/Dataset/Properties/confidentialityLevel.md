@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Describes the confidentiality level of the data points contained in the dataset.
+Confidentiality level of the data points contained in the dataset.
 
 ## Description
 

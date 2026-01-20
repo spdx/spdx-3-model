@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Describes potentially noisy elements of the dataset.
+Potentially noisy elements of the dataset.
 
 ## Description
 

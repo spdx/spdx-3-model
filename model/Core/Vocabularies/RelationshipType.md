@@ -52,10 +52,10 @@ name completes the sentence:
 - hasAddedFile: Every `to` Element is a file added to the `from` Element (`from` hasAddedFile `to`).
 - hasAssessmentFor: Relates a `from` Vulnerability and each `to` Element with a security assessment. To be used with `VulnAssessmentRelationship` types.
 - hasAssociatedVulnerability: Used to associate a `from` Artifact with each `to` Vulnerability.
-- hasConcludedLicense: The `from` SoftwareArtifact or SoftwareComponent is concluded by the SPDX data creator to be governed by each `to` license.
+- hasConcludedLicense: The `from` SoftwareArtifact or SoftwareComponent is concluded by the SPDX data creator to be governed by each `to` AnyLicenseInfo.
 - hasContactPoint: The `from` Artifact has each `to` Agent as a contact point. The use of `hasContactPoint` type is constrained to `ContactPointRelationship` typed relationships. The type of contact (i.e. security) may be specified using a `ContactPointRelationship` element.
 - hasDataFile: The `from` Element treats each `to` Element as a data file. A data file is an artifact that stores data required or optional for the `from` Element's functionality. A data file can be a database file, an index file, a log file, an AI model file, a calibration data file, a temporary file, a backup file, and more. For AI training dataset, test dataset, test artifact, configuration data, build input data, and build output data, please consider using the more specific relationship types: `trainedOn`, `testedOn`, `hasTest`, `configures`, `hasInput`, and `hasOutput`, respectively. This relationship does not imply dependency.
-- hasDeclaredLicense: The `from` SoftwareArtifact or SoftwareComponent was discovered to actually contain each `to` license, for example as detected by use of automated tooling.
+- hasDeclaredLicense: The `from` SoftwareArtifact or SoftwareComponent was discovered to actually contain each `to` AnyLicenseInfo (for example, as detected by automated tooling).
 - hasDeletedFile: Every `to` Element is a file deleted from the `from` Element (`from` hasDeletedFile `to`).
 - hasDependencyManifest: The `from` Element has manifest files that contain dependency information in each `to` Element.
 - hasDistributionArtifact: The `from` Element is distributed as an artifact in each `to` Element (e.g. an RPM or archive file).
@@ -79,6 +79,7 @@ name completes the sentence:
 - hasTest: Every `to` Element is a test artifact for the `from` Element (`from` hasTest `to`), during a LifecycleScopeType period.
 - hasTestCase: Every `to` Element is a test case for the `from` Element (`from` hasTestCase `to`).
 - hasVariant: Every `to` Element is a variant the `from` Element (`from` hasVariant `to`).
+- implementedBy: The `from` Requirement is implemented in the `to` Element(s).
 - invokedBy: The `from` Element was invoked by the `to` Agent, during a LifecycleScopeType period (for example, a Build element that describes a build step).
 - locatedAt: `from` element located at a specific `to` location. A time period is optional.
 - modifiedBy: The `from` Element is modified by each `to` Element.
@@ -91,11 +92,13 @@ name completes the sentence:
 - publishedBy: Designates a `from` Vulnerability was made available for public use or reference by each `to` Agent.
 - reportedBy: Designates a `from` Vulnerability was first reported to a project, vendor, or tracking database for formal identification by each `to` Agent.
 - republishedBy: Designates a `from` Vulnerability's details were tracked, aggregated, and/or enriched to improve context (i.e. NVD) by each `to` Agent.
-- resolved: The `to` OutOfSpecAction is resolved in the `from` ResolutionAction
+- resolved: The `to` OutOfSpecAction is resolved in the `from` ResolutionAction.
 - runsOn: The `from` Element (the instructions) of runs on each `to` Hardware (processing element), during a LifecycleScopeType period.
 - serializedInArtifact: The `from` SpdxDocument can be found in a serialized form in each `to` Artifact.
 - testedOn: The `from` Element has been tested on the `to` Element(s).
+- tracedToDetail: the `from` Requirement is refined and further elaborated by each `to` Requirement, which contains more detailed implementation information.
 - trainedOn: The `from` Element has been trained on the `to` Element(s).
 - underInvestigationFor: The `from` Vulnerability impact is being investigated for each `to` Element. The use of the `underInvestigationFor` type is constrained to `VexUnderInvestigationVulnAssessmentRelationship` classed relationships.
 - usesTool: The `from` Element uses each `to` Element as a tool, during a LifecycleScopeType period.
 - validatedOn: The `from` Element has been validated on the `to` Element(s).
+- verifiedBy: The `from` Requirement that has verification (test, review, analysis etc.) details defined in the `to` RequirementVerification.
