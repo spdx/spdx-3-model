@@ -753,16 +753,19 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="hShc7jy5HEpamhewa6p0-68" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e1d5e7;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#9673a6;fontFamily=Verdana;fontSize=10;" value="&lt;b&gt;Requirement&lt;/b&gt;" vertex="1">
-          <mxGeometry height="100" width="300" x="610" y="-1030" as="geometry" />
+          <mxGeometry height="126" width="300" x="610" y="-1030" as="geometry" />
         </mxCell>
-        <mxCell id="hShc7jy5HEpamhewa6p0-73" parent="hShc7jy5HEpamhewa6p0-68" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=10;" value="+ requirementRationale&lt;span&gt;: xsd:string[0..*]&lt;/span&gt;" vertex="1">
+        <mxCell id="Vmcdvkw3HvGWhU8dhoAU-1" parent="hShc7jy5HEpamhewa6p0-68" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=10;" value="+ devLifecycleStage: LifecycleScopeType[0..*]" vertex="1">
           <mxGeometry height="26" width="300" y="26" as="geometry" />
         </mxCell>
-        <mxCell id="hShc7jy5HEpamhewa6p0-71" parent="hShc7jy5HEpamhewa6p0-68" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=10;" value="+ requirementStatement: xsd:&lt;span&gt;string&lt;/span&gt;[1]" vertex="1">
+        <mxCell id="hShc7jy5HEpamhewa6p0-73" parent="hShc7jy5HEpamhewa6p0-68" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=10;" value="+ requirementRationale&lt;span&gt;: xsd:string[0..*]&lt;/span&gt;" vertex="1">
           <mxGeometry height="26" width="300" y="52" as="geometry" />
         </mxCell>
+        <mxCell id="hShc7jy5HEpamhewa6p0-71" parent="hShc7jy5HEpamhewa6p0-68" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=10;" value="+ requirementStatement: xsd:&lt;span&gt;string&lt;/span&gt;[1]" vertex="1">
+          <mxGeometry height="26" width="300" y="78" as="geometry" />
+        </mxCell>
         <mxCell id="hShc7jy5HEpamhewa6p0-69" parent="hShc7jy5HEpamhewa6p0-68" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=10;" value="+&amp;nbsp;requirementUUID: ExternalIdentifier&lt;span class=&quot;blob-code-inner blob-code-marker&quot; data-code-marker=&quot;+&quot;&gt;[0..1]&lt;/span&gt;" vertex="1">
-          <mxGeometry height="22" width="300" y="78" as="geometry" />
+          <mxGeometry height="22" width="300" y="104" as="geometry" />
         </mxCell>
         <mxCell id="hShc7jy5HEpamhewa6p0-83" parent="1" style="verticalAlign=middle;align=center;overflow=fill;fontSize=10;fontFamily=Verdana;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=0;spacingTop=0;spacing=0;" value="&lt;p style=&quot;margin: 4px 0px 0px; padding-top: 10px;&quot;&gt;&lt;b&gt;&lt;font color=&quot;#000000&quot;&gt;SpecificationsType&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;" vertex="1">
           <mxGeometry height="40" width="190" x="1030" y="440" as="geometry" />
