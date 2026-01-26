@@ -17,4 +17,3 @@ that uniquely identifies an Element.
 - name: externalIdentifier
 - Nature: ObjectProperty
 - Range: ExternalIdentifier
-

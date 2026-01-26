@@ -17,15 +17,15 @@ such as an electronic file, a software package, a device or an element of data.
 - SubclassOf: Element
 - Instantiability: Abstract
 
-
 ## Properties
 
 - originatedBy
   - type: Agent
   - minCount: 0
-- suppliedBy 
+- suppliedBy
   - type: Agent
   - minCount: 0
+  - maxCount: 1
 - builtTime
   - type: DateTime
   - minCount: 0
@@ -38,6 +38,9 @@ such as an electronic file, a software package, a device or an element of data.
   - type: DateTime
   - minCount: 0
   - maxCount: 1
-- standard
+- standardName
   - type: xsd:string
-  - minCount: 0 
+  - minCount: 0
+- supportLevel
+  - type: SupportType
+  - minCount: 0

@@ -8,7 +8,7 @@ Specifies the time from which an element is applicable / valid.
 
 ## Description
 
-A startTime specifies the time from which element is applicable / valid.
+A startTime specifies the time from which an element is applicable / valid.
 
 ## Metadata
 

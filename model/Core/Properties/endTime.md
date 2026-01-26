@@ -8,11 +8,11 @@ Specifies the time from which an element is no longer applicable / valid.
 
 ## Description
 
-A endTime specifies the time from which element is no applicable / valid.
+An endTime specifies the time from which element is no longer applicable
+/ valid.
 
 ## Metadata
 
 - name: endTime
 - Nature: DataProperty
 - Range: DateTime
-

@@ -19,12 +19,12 @@ materials, or another form.
 
 This field may describe where, or in which contexts, the acknowledgements
 need to be reproduced, but it is not required to do so. The SPDX data creator
-may also explain elsewhere (such as in a licenseComment field) how they intend
-for data in this field to be used.
+may also explain elsewhere (such as in a comment field) how they intend for
+data in this field to be used.
 
-An attributionText is is not meant to include the software Package, File or
-Snippet’s actual complete license text (see concludedLicense to identify the
-corresponding license).
+An attributionText is not meant to include the software Package, File or
+Snippet's actual complete license text. Use hasConcludedLicense to identify the
+corresponding license.
 
 ## Metadata
 

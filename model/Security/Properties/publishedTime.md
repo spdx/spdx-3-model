@@ -15,4 +15,3 @@ Specifies the time when a vulnerability was first published.
 - name: publishedTime
 - Nature: DataProperty
 - Range: /Core/DateTime
-

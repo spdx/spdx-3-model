@@ -6,7 +6,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 Impact justification label to be used when linking a vulnerability to an element
 representing a VEX product with a VexNotAffectedVulnAssessmentRelationship
-relationship. 
+relationship.
 
 ## Description
 
@@ -20,6 +20,5 @@ complementary to the justification label, but one of both MUST be defined.
 ## Metadata
 
 - name: justificationType
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: VexJustificationType
-

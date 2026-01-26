@@ -9,7 +9,7 @@ A tuple of two positive integers that define a range.
 ## Description
 
 PositiveIntegerRange is a tuple of two positive integers that define a range.
-"begin" must be less than or equal to "end".
+"beginIntegerRange" must be less than or equal to "endIntegerRange".
 
 ## Metadata
 
@@ -19,12 +19,11 @@ PositiveIntegerRange is a tuple of two positive integers that define a range.
 
 ## Properties
 
-- begin
+- beginIntegerRange
   - type: xsd:positiveInteger
   - minCount: 1
   - maxCount: 1
-- end
+- endIntegerRange
   - type: xsd:positiveInteger
   - minCount: 1
   - maxCount: 1
-

@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Specifies an element contained in a piece of software where a vulnerability was
+Specifies an Element contained in a piece of software where a vulnerability was
 found.
 
 ## Description
@@ -16,4 +16,4 @@ to specify the precise location where a vulnerability was found.
 
 - name: assessedElement
 - Nature: ObjectProperty
-- Range: /Core/Element
+- Range: /Software/SoftwareArtifact

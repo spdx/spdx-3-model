@@ -15,4 +15,3 @@ A locator provides the location of an exploit catalog.
 - name: locator
 - Nature: DataProperty
 - Range: xsd:anyURI
-

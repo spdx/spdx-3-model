@@ -1,0 +1,41 @@
+{
+  "@context": "https://spdx.org/rdf/3.0.0/spdx-context.jsonld",
+  "type": "software_Package",
+  "spdxId": "https://some.namespace#SPDXRef-Package",
+  "creationInfo": {
+    "type": "CreationInfo",
+    "specVersion": "3.0.0",
+    "created": "2022-12-01T00:00:00Z",
+    "createdBy": ["https://spdx.dev/elements/3F26391C#spdx-dev"]
+  },
+  "name": "packageName",
+  "summary": "packageSummary",
+  "description": "packageDescription",
+  "comment": "packageComment",
+  "software_packageVersion": "12.2",
+  "software_downloadLocation": "https://download.com",
+  "software_packageUrl": "https://some.purl",
+  "software_homePage": "https://homepage.com",
+  "software_primaryPurpose": "source",
+  "originatedBy": ["https://some.namespace#SPDXRef-Agent-creatorName-some@mail.com"],
+  "suppliedBy": "https://some.namespace#john_smith",
+  "verifiedUsing": [
+    {
+      "type": "Hash",
+      "algorithm": "sha1",
+      "hashValue": "71c4025dd9897b364f3ebbb42c484ff43d00791c"
+    },
+    {
+      "type": "Hash",
+      "algorithm": "sha256",
+      "hashValue": "fbea580d286bbbbb41314430d58ba887716a74d7134119c5307cdc9f0c7a4299"
+    }
+  ],
+  "externalRef": [
+    {
+      "type": "ExternalRef",
+      "externalRefType": "securityFix",
+      "locator": ["https://support.com"]
+    }
+  ]
+}

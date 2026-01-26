@@ -8,10 +8,10 @@ Describes the confidentiality level of the data points contained in the dataset.
 
 ## Description
 
-ConfidentialityLevel describes the levels of confidentiality of the data points contained in the dataset.
+Describes the levels of confidentiality of the data points contained in the dataset.
 
 ## Metadata
 
 - name: confidentialityLevel
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: ConfidentialityLevelType

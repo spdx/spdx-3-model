@@ -14,5 +14,4 @@ A locator provides the location of an external reference.
 
 - name: locator
 - Nature: DataProperty
-- Range: xsd:anyURI
-
+- Range: xsd:string

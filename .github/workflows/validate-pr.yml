@@ -1,0 +1,24 @@
+# SPDX-License-Identifier: Apache-2.0
+# SPDX-FileCopyrightText: Copyright 2024 The SPDX Contributors
+
+name: validate PR
+
+on:
+  pull_request
+
+jobs:
+  doit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b # v5.3.0
+        with:
+            python-version: "3.12"
+      - name: get spec-parser
+        run: |
+          git clone --depth=1 --single-branch --branch=main https://github.com/spdx/spec-parser/ ${{ runner.temp }}/spec-parser
+          python ${{ runner.temp }}/spec-parser/main.py -h
+      - name: run spec-parser to validate
+        run: |
+          python ${{ runner.temp }}/spec-parser/main.py -n model

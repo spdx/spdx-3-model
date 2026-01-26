@@ -15,4 +15,3 @@ A subject is an Element an annotator has made an assertion about.
 - name: subject
 - Nature: ObjectProperty
 - Range: Element
-

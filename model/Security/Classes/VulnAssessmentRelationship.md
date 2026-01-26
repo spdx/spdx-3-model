@@ -20,14 +20,14 @@ assessment relationships. It factors out the common properties shared by them.
 ## Properties
 
 - assessedElement
-  - type: /Core/Element
+  - type: /Software/SoftwareArtifact
   - minCount: 0
   - maxCount: 1
 - publishedTime
   - type: /Core/DateTime
   - minCount: 0
   - maxCount: 1
-- suppliedBy
+- /Core/suppliedBy
   - type: /Core/Agent
   - minCount: 0
   - maxCount: 1
@@ -39,8 +39,3 @@ assessment relationships. It factors out the common properties shared by them.
   - type: /Core/DateTime
   - minCount: 0
   - maxCount: 1
-
-## External properties restrictions
-
-- /Core/Relationship/to
-  - minCount: 1

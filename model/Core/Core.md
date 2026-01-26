@@ -8,11 +8,12 @@ The basis for all SPDX profiles.
 
 ## Description
 
-The Core namespace defines foundational concepts serving as the basis for all SPDX-3.0 profiles.
+The Core namespace defines foundational concepts serving as the basis for all
+SPDX-3.0 profiles.
 
 ## Metadata
 
-- id: https://rdf.spdx.org/v3/Core
+- id: https://spdx.org/rdf/3.0.1/terms/Core
 - name: Core
 - minCount: 0
 - maxCount: *

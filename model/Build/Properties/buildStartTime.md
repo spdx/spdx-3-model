@@ -8,7 +8,9 @@ Property describing the start time of a build.
 
 ## Description
 
-buildStartTime is the time at which a build is triggered. The builder typically records this value.
+buildStartTime is the time at which a build is triggered.
+
+The builder typically records this value.
 
 ## Metadata
 

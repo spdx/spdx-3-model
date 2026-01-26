@@ -4,15 +4,14 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-TODO
+Timestamp of impact statement.
 
 ## Description
 
-TODO
+Specifies the time when the impact statement was recorded.
 
 ## Metadata
 
 - name: impactStatementTime
 - Nature: DataProperty
 - Range: /Core/DateTime
-

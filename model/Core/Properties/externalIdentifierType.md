@@ -13,6 +13,5 @@ An externalIdentifierType specifies the type of the external identifier.
 ## Metadata
 
 - name: externalIdentifierType
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: ExternalIdentifierType
-

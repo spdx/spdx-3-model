@@ -15,4 +15,3 @@ A locationHint provides an indication of where to retrieve an external Element.
 - name: locationHint
 - Nature: DataProperty
 - Range: xsd:anyURI
-

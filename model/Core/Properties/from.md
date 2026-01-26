@@ -15,4 +15,3 @@ This field references the Element on the left-hand side of a relationship.
 - name: from
 - Nature: ObjectProperty
 - Range: Element
-

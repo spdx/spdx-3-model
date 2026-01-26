@@ -18,4 +18,3 @@ to remediate or mitigate the vulnerability.
 - name: actionStatement
 - Nature: DataProperty
 - Range: xsd:string
-

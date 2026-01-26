@@ -15,4 +15,3 @@ A @_property@ is TODO
 - name: @_property@
 - Nature: ObjectProperty | DataProperty
 - Range: 
-
