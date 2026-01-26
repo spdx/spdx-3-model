@@ -15,3 +15,8 @@ SPDX-3.0 profiles.
 
 - id: https://spdx.org/rdf/3.0.1/terms/Core
 - name: Core
+- minCount: 0
+- maxCount: *
+- isOrdered: false
+- isUnique: true
+- isOptional: false
