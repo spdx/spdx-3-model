@@ -1,6 +1,6 @@
 # Change Log
 
-## 3.1-RC2 (TBA)
+## 3.1-dev (TBA)
 
 The SPDX 3.1 model expands beyond software to include safety, hardware, supply chain,
 operations, and more. This release candidate is for testing and validation;

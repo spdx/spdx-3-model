@@ -12,7 +12,7 @@ Reproduction involves the act of replicating or reproducing a product. This incl
 
 Relationship:
 
-For each `ReproduceAction` there is at least one `/Core/Relationship` class or subclass with the relationshipType of 'hasInput’ on the `from` and a `/Core/Element` class or subclass on the `to`.
+For each `ReproduceAction` there is at least one `/Core/Relationship` class or subclass with the relationshipType of 'hasInput’ on the from and a `/Core/Element` class or subclass on the to.
 
 ## Metadata
 
