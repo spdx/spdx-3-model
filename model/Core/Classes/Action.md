@@ -21,20 +21,20 @@ Action defines an event that has occurred. This is an Abstract Action.
 
 ## Properties
 
-- /Core/endTime
-  - type: DateTime
-  - minCount: 0
-  - maxCount: 1
-- /Core/startTime
-  - type: DateTime
-  - minCount: 0
-  - maxCount: 1
 - actionLocation
   - type: Location
   - minCount: 0
 - additionalInformation
   - type: DictionaryEntry
   - minCount: 0
+- endTime
+  - type: DateTime
+  - minCount: 0
+  - maxCount: 1
+- startTime
+  - type: DateTime
+  - minCount: 0
+  - maxCount: 1
 
 ## External properties restrictions
 
