@@ -1,6 +1,6 @@
 # Change Log
 
-## 3.1-RC1 (2026-01-24)
+## 3.1-RC2 (TBA)
 
 The SPDX 3.1 model expands beyond software to include safety, hardware, supply chain,
 operations, and more. This release candidate is for testing and validation;
@@ -59,6 +59,8 @@ semantic changes to the model and may affect compatibility.
 
 - `/AI/autonomyType` property
   - New documents should use `/Core/isoAutomationLevel` instead.
+- `/Build/buildStartTime` and `/Build/buildEndTime` properties
+  - New documents should use `/Core/startTime` and `/Core/endTime` instead.
 - `/Dataset/datasetSize` property
   - New documents should use `/Software/artifactSize` instead.
 - `/Dataset/intendedUse` property

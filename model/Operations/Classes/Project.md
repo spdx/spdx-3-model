@@ -12,6 +12,9 @@ Temporary endeavor with a beginning and an end and that must be used to create a
 
 Based on the Project Management Body of Knowledge (PMBOK), 3rd edition.
 
+`startTime` is the time at which a project starts or is planned to start.
+`endTime` is the time at which a project ends or is planned to end.
+
 ## Metadata
 
 - name: Project
@@ -20,6 +23,13 @@ Based on the Project Management Body of Knowledge (PMBOK), 3rd edition.
 
 ## Properties
 
+- /Core/endTime
+  - type: /Core/DateTime
+  - maxCount: 1
+- /Core/startTime
+  - type: /Core/DateTime
+  - minCount: 1
+  - maxCount: 1
 - projectTitle
   - type: xsd:string
   - minCount: 1
@@ -33,11 +43,4 @@ Based on the Project Management Body of Knowledge (PMBOK), 3rd edition.
 - projectOwner
   - type: /Core/Agent
   - minCount: 1
-  - maxCount: 1
-- projectStartTime
-  - type: /Core/DateTime
-  - minCount: 1
-  - maxCount: 1
-- projectEndTime
-  - type: /Core/DateTime
   - maxCount: 1

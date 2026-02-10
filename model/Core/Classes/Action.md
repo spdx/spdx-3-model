@@ -10,6 +10,9 @@ Class that describes an action that has occurred.
 
 Action defines an event that has occurred. This is an Abstract Action.
 
+`startTime` is the time at which an action starts or triggered.
+`endTime` is the time at which an action stops or finishes.
+
 ## Metadata
 
 - name: Action
@@ -18,11 +21,11 @@ Action defines an event that has occurred. This is an Abstract Action.
 
 ## Properties
 
-- actionStartTime
+- /Core/endTime
   - type: DateTime
   - minCount: 0
   - maxCount: 1
-- actionEndTime
+- /Core/startTime
   - type: DateTime
   - minCount: 0
   - maxCount: 1
@@ -32,7 +35,7 @@ Action defines an event that has occurred. This is an Abstract Action.
 - additionalInformation
   - type: DictionaryEntry
   - minCount: 0
-  
+
 ## External properties restrictions
 
 - /Core/Artifact/originatedBy

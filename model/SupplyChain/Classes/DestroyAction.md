@@ -24,9 +24,9 @@ The action of destroying an element is recorded as part of the DestroyAction. To
 
 ## External properties restrictions
 
-- /Core/Action/actionStartTime
+- /Core/Action/endTime
   - minCount: 1
-- /Core/Action/actionEndTime
+- /Core/Action/startTime
   - minCount: 1
 - /Core/Element/description
   - minCount: 1
