@@ -18,5 +18,5 @@ A ChangeProcess is a planned process causing an intentional change to a product,
 
 ## External properties restrictions
 
-- /Core/DefinedProcess/processRationale
+- /Core/DefinedProcess/rationale
   - minCount: 1
