@@ -4,12 +4,27 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Specifies the time from which an element is no longer applicable / valid.
+The point in time when an element or an action ends,
+becomes no longer applicable, or becomes no longer valid.
+
+This can also be a point in time when an element or an action
+is scheduled to end.
 
 ## Description
 
-An endTime specifies the time from which element is no longer applicable
-/ valid.
+A timestamp marking the conclusion of an action,
+the ending of an element's relevance,
+or the intended or unintended termination of either.
+
+It encompasses the moment of completion or cessation of processes,
+such as build finishes, service shutdowns, or system failures,
+as well as the point in time when an element
+or a relationship between elements becomes deprecated, expired,
+inactive, or terminated.
+
+This includes the intended point in time when a process or project
+is scheduled to end, such as a formal deadline
+or the conclusion of a maintenance period.
 
 ## Metadata
 
