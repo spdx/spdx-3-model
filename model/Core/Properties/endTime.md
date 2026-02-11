@@ -17,7 +17,7 @@ It encompasses the moment of completion or cessation of processes,
 such as build finishes, service shutdowns, or system failures,
 as well as the point in time when an element
 or a relationship between elements becomes deprecated, expired,
-inactive, or terminated.
+terminated, or inactive.
 
 ## Metadata
 
