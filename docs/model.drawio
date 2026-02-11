@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" compressed="false" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:147.0) Gecko/20100101 Firefox/147.0" version="29.3.4" pages="13">
   <diagram id="MqBy92FNWJOg9jOokCTN" name="Core">
-    <mxGraphModel dx="1463" dy="1967" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="0" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2026" dy="1967" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="0" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1531,7 +1531,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="GXGQmkwye6T6EeFXLMXb" name="Build">
-    <mxGraphModel dx="-410" dy="1967" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="0" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="372" dy="1967" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="0" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2007,7 +2007,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="PmGkmYVysXbPx0Osx-CZ" name="SupplyChain">
-    <mxGraphModel dx="636" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1199" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2427,7 +2427,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Q7SPIlGTtec_FhzwM7Dn" name="Operations">
-    <mxGraphModel dx="3186" dy="1898" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3749" dy="1898" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2516,7 +2516,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="3ZRKG9JP89sZBqJGuFcG" name="FunctionalSafety">
-    <mxGraphModel dx="636" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1199" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2556,13 +2556,6 @@
         </mxCell>
         <mxCell id="bxsdNmVcouEKbUgMBKol-11" parent="bxsdNmVcouEKbUgMBKol-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;fontFamily=Verdana;" value="+ evaluation: EvaluationResultType [1]" vertex="1">
           <mxGeometry height="30" width="280" y="60" as="geometry" />
-        </mxCell>
-        <mxCell id="bxsdNmVcouEKbUgMBKol-12" edge="1" parent="bxsdNmVcouEKbUgMBKol-10" source="bxsdNmVcouEKbUgMBKol-13" style="endArrow=classic;html=1;rounded=0;" target="bxsdNmVcouEKbUgMBKol-14" value="">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
-            <mxPoint x="350" y="70" as="sourcePoint" />
-            <mxPoint x="69" y="49" as="targetPoint" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="bxsdNmVcouEKbUgMBKol-13" parent="bxsdNmVcouEKbUgMBKol-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;fontFamily=Verdana;" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;+ evalutationBasedOn: requirementVerification [1]&amp;nbsp;&lt;/span&gt;" vertex="1">
           <mxGeometry height="30" width="280" y="90" as="geometry" />
