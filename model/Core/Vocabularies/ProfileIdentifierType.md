@@ -38,3 +38,4 @@ to all restrictions defined for that profile.
 - lite: The element follows the Lite profile specification.
 - hardware: The element follows the Hardware profile specification.
 - supplyChain: The element follows the SupplyChain profile specification.
+- operations: The element follows the Operations profile specification.
