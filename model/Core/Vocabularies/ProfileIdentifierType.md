@@ -39,3 +39,4 @@ to all restrictions defined for that profile.
 - hardware: The element follows the Hardware profile specification.
 - supplyChain: The element follows the SupplyChain profile specification.
 - operations: The element follows the Operations profile specification.
+- functionalSafety: The element follows the FunctionalSafety profile specification.
