@@ -1,10 +1,10 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# ThreatReferenceType
+# TypedReference
 
 ## Summary
 
-The reference type categorizes the different threat reference types.
+The typed reference categorizes the different threat reference types.
 
 ## Description
 
@@ -24,4 +24,3 @@ currently supported types.
 - attackTechnique: represents an attack technique (compare MITRE ATT&CK); see https://attack.mitre.org/
 - attackProcedure: represents an attack procedure
 - weakness: represents a weakness (such as CWEs) that may be exploited; see https://cwe.mitre.org/data/index.html
-
