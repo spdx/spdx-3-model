@@ -30,7 +30,7 @@ then the properties of this AbstractPackage are taken.
 The chain may continue further to more AbstractPackages,
 as long as there are "parent" AbstractPackage and no values have been specified.
 
-Every Package should be an instance of no more than one AbstractPackages.
+Every Package shall be an instance of no more than one AbstractPackage.
 
 It should be noted that this class will rarely appear in SBOMs,
 where exact Packages should be listed.
