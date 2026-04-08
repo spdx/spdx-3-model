@@ -31,9 +31,9 @@ This document visualizes all properties defined in `model/AI/Classes/Prompt.md`,
       <table style="width:100%;border-collapse:collapse;border-spacing:0 4px;">
         <tr><td style="background:#1b5e20;color:#fff;font-weight:bold;padding:5px 10px;border-radius:4px;font-family:monospace;display:block;">dataCollectionProcess : xsd:string</td></tr>
         <tr><td style="background:#1b5e20;color:#fff;font-weight:bold;padding:5px 10px;border-radius:4px;font-family:monospace;display:block;">dataPreprocessing : xsd:string</td></tr>
+        <tr><td style="background:#1b5e20;color:#fff;font-weight:bold;padding:5px 10px;border-radius:4px;font-family:monospace;display:block;">confidentialityLevel : ConfidentialityLevelType</td></tr>
         <tr><td style="background:#1b5e20;color:#fff;font-weight:bold;padding:5px 10px;border-radius:4px;font-family:monospace;display:block;">hasSensitivePersonalInformation : PresenceType</td></tr>
         <tr><td style="background:#37474f;color:#b0bec5;padding:5px 10px;border-radius:4px;font-family:monospace;display:block;">anonymizationMethodUsed : xsd:string</td></tr>
-        <tr><td style="background:#37474f;color:#b0bec5;padding:5px 10px;border-radius:4px;font-family:monospace;display:block;">confidentialityLevel : ConfidentialityLevelType</td></tr>
         <tr><td style="background:#37474f;color:#b0bec5;padding:5px 10px;border-radius:4px;font-family:monospace;display:block;">datasetAvailability : DatasetAvailabilityType</td></tr>
         <tr><td style="background:#37474f;color:#b0bec5;padding:5px 10px;border-radius:4px;font-family:monospace;display:block;">datasetNoise : xsd:string</td></tr>
         <tr><td style="background:#37474f;color:#b0bec5;padding:5px 10px;border-radius:4px;font-family:monospace;display:block;">datasetSize : xsd:nonNegativeInteger</td></tr>
@@ -49,6 +49,7 @@ This document visualizes all properties defined in `model/AI/Classes/Prompt.md`,
       <table style="width:100%;border-collapse:collapse;">
         <tr><td style="background:#1b5e20;color:#fff;font-weight:bold;padding:5px 10px;border-radius:4px;font-family:monospace;display:block;">isContextAugmented : xsd:boolean</td></tr>
         <tr><td style="background:#1b5e20;color:#fff;font-weight:bold;padding:5px 10px;border-radius:4px;font-family:monospace;display:block;">promptPattern : xsd:string</td></tr>
+        <tr><td style="background:#1b5e20;color:#fff;font-weight:bold;padding:5px 10px;border-radius:4px;font-family:monospace;display:block;">promptRole : PromptRoleType</td></tr>
         <tr><td style="background:#37474f;color:#b0bec5;padding:5px 10px;border-radius:4px;font-family:monospace;display:block;">autonomyType : AutonomyTypeType</td></tr>
         <tr><td style="background:#37474f;color:#b0bec5;padding:5px 10px;border-radius:4px;font-family:monospace;display:block;">domain : xsd:string</td></tr>
         <tr><td style="background:#37474f;color:#b0bec5;padding:5px 10px;border-radius:4px;font-family:monospace;display:block;">energyConsumption : EnergyConsumption</td></tr>
@@ -92,11 +93,13 @@ classDiagram
         +inLanguage : LanguageTag [0..*]
         +contentModality : Modality [0..*]
         +contentType : MediaType [0..*]
+        +confidentialityLevel : ConfidentialityLevelType [0..1]
         +dataCollectionProcess : xsd:string [0..1]
         +dataPreprocessing : xsd:string [0..1]
         +hasSensitivePersonalInformation : PresenceType [0..1]
         +isContextAugmented : xsd:boolean [0..1]
         +promptPattern : xsd:string [0..*]
+        +promptRole : PromptRoleType [0..1]
     }
 
     SoftwareArtifact <|-- Prompt : SubclassOf
@@ -113,9 +116,11 @@ classDiagram
 | 3 | `contentType` | `/Core` | `MediaType` | 0 | ∞ |
 | 4 | `dataCollectionProcess` | `/Dataset` | `xsd:string` | 0 | 1 |
 | 5 | `dataPreprocessing` | `/Dataset` | `xsd:string` | 0 | 1 |
-| 6 | `hasSensitivePersonalInformation` | `/Dataset` | `PresenceType` | 0 | 1 |
-| 7 | `isContextAugmented` | `/AI` | `xsd:boolean` | 0 | 1 |
-| 8 | `promptPattern` | `/AI` | `xsd:string` | 0 | ∞ |
+| 6 | `confidentialityLevel` | `/Dataset` | `ConfidentialityLevelType` | 0 | 1 |
+| 7 | `hasSensitivePersonalInformation` | `/Dataset` | `PresenceType` | 0 | 1 |
+| 8 | `isContextAugmented` | `/AI` | `xsd:boolean` | 0 | 1 |
+| 9 | `promptPattern` | `/AI` | `xsd:string` | 0 | ∞ |
+| 10 | `promptRole` | `/AI` | `PromptRoleType` | 0 | 1 |
 
 ### External Property Restrictions (inherited from `/Software/SoftwareArtifact`)
 
