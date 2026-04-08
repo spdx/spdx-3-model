@@ -2,3 +2,5 @@
 *.bkp
 *.dtmp
 *.swp
+.github/
+SPDX Prompt_Context definitions discussion.md
