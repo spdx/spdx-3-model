@@ -94,7 +94,7 @@ For example:
   - type: xsd:string
   - minCount: 0
 - promptRole
-  - type: /AI/PromptRoleType
+  - type: PromptRoleType
   - minCount: 0
   - maxCount: 1
 
