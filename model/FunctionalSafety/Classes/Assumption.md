@@ -12,7 +12,6 @@ An assumption element is a distinct unit that defines a design constraint.
 This constraint is imposed by the intended design, the requirement context, or the operational context.
 It ensures the item operates correctly within a system context.
 
-
 ## Metadata
 
 - name: Assumption
