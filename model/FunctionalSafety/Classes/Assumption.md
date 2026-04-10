@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A distinct unit representing an assumption associated with an item's use in a systems.
+A distinct unit representing a constraint associated with an item's use in a system.
 
 ## Description
 
