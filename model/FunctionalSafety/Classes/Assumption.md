@@ -19,7 +19,7 @@ It ensures the item operates correctly within a system context.
 
 ## Properties
 
-- rationale
+- /Core/rationale
   - type: xsd:string
   - minCount: 0
   - maxCount: *
