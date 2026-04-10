@@ -28,7 +28,7 @@ name completes the sentence:
 - affects: The `from` Vulnerability, Action or DefinedProcess affects each `to` Element.
 - amendedBy: The `from` Element is amended by each `to` Element.
 - ancestorOf: The `from` Element is an ancestor of each `to` Element.
-- assumes: The `from` Element assume each `to` Assumption.
+- assumes: The `from` Element assumes each `to` Assumption.
 - availableFrom: The `from` Element is available from the additional supplier described by each `to` Element.
 - configures: The `from` Element is a configuration applied to each `to` Element, during a LifecycleScopeType period.
 - conformsTo: The `from` Element conforms to each `to` Specification or Assumption.
