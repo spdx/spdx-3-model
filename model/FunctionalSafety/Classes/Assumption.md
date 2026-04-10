@@ -20,10 +20,6 @@ The `rationale` is usually less formal than the wording of the assumption statem
 
 ## Properties
 
-- devLifecycleStage
-  - type: LifecycleScopeType
-  - minCount: 0
-  - maxCount: *
 - rationale
   - type: xsd:string
   - minCount: 0
