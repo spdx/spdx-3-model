@@ -2,3 +2,4 @@
 *.bkp
 *.dtmp
 *.swp
+.github/ai-prompt-agent.agent.md
