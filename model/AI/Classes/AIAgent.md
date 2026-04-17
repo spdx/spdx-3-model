@@ -67,3 +67,4 @@ functionalities and interactions:
   - type: AutomationLevel
   - minCount: 0
   - maxCount: 1
+  
