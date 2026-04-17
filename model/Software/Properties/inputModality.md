@@ -4,12 +4,18 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Sensory type or fundamental data format used as input by a software artifact or
-a software agent.
+Fundamental data or sensory type accepted as input by a software artifact or
+agent.
 
 ## Description
 
-Input modality specifies the sensory type or fundamental data format through which a software artifact or a software agent perceives its environment.
+Specifies the fundamental type of data that a software artifact or agent
+accepts and processes as input. This includes the sensory or representational
+form of data, such as natural language text, images, audio, or structured
+records.
+
+Multiple `inputModality` values may be declared when a software artifact or
+agent processes more than one type of input.
 
 ## Metadata
 

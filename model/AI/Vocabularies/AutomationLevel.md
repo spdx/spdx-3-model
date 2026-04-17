@@ -24,8 +24,8 @@ Systems categorized with automation levels 0-5 are heteronomous.
 This means that while they can be fully automated, their goals and objectives
 are set by external entities, typically human operators.
 
-A system with automation level 6 is autonomous, capable of independently define
-and pursue its own goals.
+A system with automation level 6 is autonomous, capable of independently
+defining and pursuing its own goals without external intervention.
 
 ## Metadata
 
@@ -33,10 +33,10 @@ and pursue its own goals.
 
 ## Entries
 
-- autonomous: Level 6 - Autonomous. The system is capable of modifying its intended domain of use or its goals without external intervention, control or oversight.
-- fullAutomation: Level 5 - Full automation. The system is capable of performing its entire mission without external intervention.
-- highAutomation: Level 4 - High automation. The system performs parts of its mission without external intervention.
-- conditionalAutomation: Level 3 - Conditional automation. The system can propose strategies and then automatically execute the approved plan, with an external agent being ready to take over when necessary.
-- partialAutomation: Level 2 - Partial automation or task automation. Some sub-functions of the system are fully automated while the system remain under control of an external agent. The system can perform actions for an approved task without requiring the agent's continuous direct control.
-- assistiveAutomation: Level 1 - Assistive automation. The system assists an operator.
-- notAutomated: Level 0 - Not automated. No automation. The operator fully controls the system.
+- autonomous: Level 6 - Autonomous. The system is capable of independently modifying its intended domain of use or its goals without external intervention, control, or oversight.
+- fullAutomation: Level 5 - Full automation. The system is capable of performing its entire mission without any external intervention, from start to completion.
+- highAutomation: Level 4 - High automation. The system performs most of its mission without external intervention, but may require human oversight for exceptional conditions.
+- conditionalAutomation: Level 3 - Conditional automation. The system can propose strategies and automatically execute the approved plan, while an external agent remains ready to intervene when necessary.
+- partialAutomation: Level 2 - Partial automation. Some sub-functions of the system are fully automated while the overall system remains under the control of an external agent; the system can act on an approved task without requiring continuous direct human control.
+- assistiveAutomation: Level 1 - Assistive automation. The system assists a human operator, who retains full decision-making authority and direct control at all times.
+- notAutomated: Level 0 - Not automated. No automation. The human operator fully controls the system with no automated decision-making.

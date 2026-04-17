@@ -4,14 +4,18 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Sensory type or fundamental data format used as output by a software artifact
-or a software agent.
+Fundamental data or sensory type produced as output by a software artifact or
+agent.
 
 ## Description
 
-Output modality specifies the sensory type or fundamental data format through
-which a software artifact or a software agent presents information to a user or
-external system.
+Specifies the fundamental type of data that a software artifact or agent
+produces or emits as output. This includes the sensory or representational
+form of data, such as natural language text, images, audio, or structured
+records.
+
+Multiple `outputModality` values may be declared when a software artifact or
+agent produces more than one type of output.
 
 ## Metadata
 

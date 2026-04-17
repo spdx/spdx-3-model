@@ -4,40 +4,44 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Describes the agent’s functional capability, its purpose,
-and the tool/integration used to realize each capability.
+Describes a functional capability that the AI agent can perform.
 
 ## Description
 
-Provides a structured description of what the agent can do
-(e.g., search, web scraping, summarization, code execution),
-stating for each capability its purpose and which tool or service
-it invokes to accomplish the action.
+A free-form string that identifies and describes a specific functional
+capability of the agent—what it can do, what goal it serves, or what class
+of task it is designed to handle. Each value should capture one distinct
+capability.
 
-Use concise entries—one capability per item.
+Capabilities reflect the agent's behavioral repertoire and may include, but
+are not limited to: information retrieval, document summarization, code
+generation and execution, data analysis, planning and task decomposition,
+multi-step reasoning, multi-agent coordination, and domain-specific actions.
 
-If no capabilities are defined, may set to "NONE";
-if it is unknown or undisclosed, may set to "NOASSERTION".
-
-Recommended notation:
-`<capability>: <purpose> -> <tool references>`
+Use one `agentCapability` entry per distinct capability. Descriptions should
+be concise and human-readable. External tools or services invoked to fulfill a
+capability are recorded separately using the `agentExternalTool` property.
 
 *Examples*
 
 ```text
-search: retrieve web results -> Google Search API; SerpAPI
+web-search
 ```
 
 ```text
-web-scrape: extract page content -> Playwright crawler; internal-scraper://v1
+document-summarization: condenses retrieved documents into structured outputs
 ```
 
 ```text
-summarize: condense retrieved docs -> OpenAI API (summarize endpoint)
+code-execution: runs Python snippets in a sandboxed environment
 ```
 
 ```text
-code-execute: run Python snippets -> file:///opt/agent/sandbox; exec-service://python
+multi-step-reasoning: decomposes complex queries into sub-tasks and plans execution order
+```
+
+```text
+multi-agent-coordination: delegates sub-tasks to specialized agents and aggregates results
 ```
 
 ## Metadata

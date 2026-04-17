@@ -4,22 +4,34 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Describes an external tool or a service that an AI agent invokes to accomplish
-actions within or outside the system.
+Identifies an external tool or service that the AI agent can invoke to extend
+its capabilities.
 
 ## Description
 
-Identifies the means through which an agent extends its capabilities by
-calling external tools, APIs, or services. These tools represent actionable
-integrations that allow the agent to retrieve information, transform data,
-or execute operations not possible with its built-in model alone.
+Identifies an external tool, API, or service that the AI agent can invoke to
+perform actions beyond its built-in model. Each entry maps a short,
+human-readable tool identifier (the key) to a URI, package URL, or other
+reference that locates the tool's definition or specification (the value).
 
-Examples include general-purpose APIs (e.g., search, database lookup),
-specialized utilities (e.g., translation services), and domain-specific tools
-(e.g., medical publication query service).
+External tools enable agents to retrieve information, transform data, execute
+operations, or interact with external systems. Examples include: web search
+APIs, code execution sandboxes, database query interfaces, translation
+services, and domain-specific utilities such as medical literature search.
 
-If the agent does not use external tools, set the value to NONE.
-If it is unclear or not disclosed whether tools are used, set to NOASSERTION.
+*Examples*
+
+```text
+web-search: https://serpapi.com/
+```
+
+```text
+code-interpreter: pkg:pypi/jupyter-kernel-gateway@2.0.0
+```
+
+```text
+pubmed-query: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/
+```
 
 ## Metadata
 

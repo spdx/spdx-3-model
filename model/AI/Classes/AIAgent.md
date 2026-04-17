@@ -4,19 +4,32 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-An AI agent.
+Specifies an AI agent and its associated metadata.
 
 ## Description
 
-An AI agent is a software agent that uses artificial intelligence techniques to guide its behavior. It typically incorporates a perception-action cycle, utilizing models and heuristics to perform goal-directed activities.
+An AI agent is a software entity that uses artificial intelligence techniques
+to perceive its environment, reason about its state, and take actions to
+achieve specified goals. It typically implements a perception-action cycle
+employing AI models, heuristics, or planning algorithms to guide autonomous
+or semi-autonomous behavior.
 
-An AI agent's actions can involve varying degrees of automation or human oversight.
+AI agents may be characterized by the modalities through which they perceive
+input and produce output, the capabilities they provide, the external tools or
+services they invoke, the memory mechanisms they employ to retain information
+across interactions, and their degree of automation relative to human oversight.
 
-The following relationship types are also used to describe an AI agent's functionalities and interactions:
+The following relationship types are also used to describe an AI agent's
+functionalities and interactions:
 
-- hasPersistentMemory: Describes a relationship from the Agent to an element that functions as a persistent or long-term memory store.
-- invokedBy: Describes a relationship from any Element back to the Agent that initiated its use or execution. (e.g., a Package is invokedBy an AIAgent; an AIAgent is invokedBy a Person).
-- usesTool: Describes a relationship from the AIAgent to an Element that functions as a tool to expand the agent's capabilities.
+- hasPersistentMemory: Describes a relationship from the AIAgent to an Element
+  that serves as its persistent or long-term memory store (e.g., a database,
+  vector store, or file system that retains information across sessions).
+- invokedBy: Describes a relationship from any Element back to the Agent that
+  initiated its execution (e.g., a Package is invokedBy an AIAgent; an AIAgent
+  is invokedBy a Person).
+- usesTool: Describes a relationship from the AIAgent to an Element that the
+  agent uses as a tool to extend its capabilities.
 
 ## Metadata
 
@@ -29,10 +42,6 @@ The following relationship types are also used to describe an AI agent's functio
 - /Core/suppliedBy
   - type: /Core/Agent
   - minCount: 0
-- /Software/enabledByDefault
-  - type: xsd:boolean
-  - minCount: 0
-  - maxCount: 1
 - /Software/inputModality
   - type: /Core/Modality
   - minCount: 0
@@ -42,8 +51,17 @@ The following relationship types are also used to describe an AI agent's functio
 - agentCapability
   - type: xsd:string
   - minCount: 0
+- agentExternalTool
+  - type: /Core/DictionaryEntry
+  - minCount: 0
 - agentMemoryMode
   - type: xsd:string
+  - minCount: 0
+- agentProtocol
+  - type: /Core/DictionaryEntry
+  - minCount: 0
+- agentType
+  - type: AgentType
   - minCount: 0
 - automationLevel
   - type: AutomationLevel
