@@ -13,16 +13,11 @@ agent within a multi-agent system (MAS) or agentic workflow. It describes
 the agent's position in the task delegation hierarchy, independent of its
 capabilities or degree of automation.
 
-The vocabulary is informed by established inter-agent protocol specifications,
+AgentType is informed by established inter-agent protocol specifications,
 including Google's Agent2Agent Protocol (A2A), the Agent Network Protocol
 (ANP), the Agent Connect Protocol (AConP), the Coral Protocol, and the Agora
 meta-protocol, and is consistent with the two-dimensional taxonomy of agent
-protocols described in Yang et al. (2025), "A Survey of AI Agent Protocols,"
-arXiv:2504.16736.
-
-An agent may hold more than one role simultaneously; for example, an agent
-that receives tasks from an upstream orchestrator while itself coordinating a
-group of specialist sub-agents would declare both `worker` and `orchestrator`.
+protocols.
 
 ## Metadata
 

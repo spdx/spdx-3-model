@@ -12,8 +12,7 @@ The level of automation characterizes the degree to which an AI agent
 operates independently of human control or intervention, ranging from fully
 human-controlled systems to fully autonomous agents.
 
-This classification defines the respective roles and responsibilities of the
-human operator and the automated system. It is a critical component for risk
+This classification defines the respective roles and responsibilities of the human operator and the automated system. It is a critical component for risk
 assessment, regulatory compliance, human-machine interface design, and
 determining accountability boundaries.
 
