@@ -12,7 +12,7 @@ referenced by the Element.
 Identify the actual distribution source for the artifact (e.g., snippet, file,
 package, vulnerability) or VulnAssessmentRelationship being referenced.
 
-This might or might not be different from the originating distribution source
+This may or may not be different from the originating distribution source
 for the artifact (e.g., snippet, file, package, vulnerability) or
 VulnAssessmentRelationship.
 

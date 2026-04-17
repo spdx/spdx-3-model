@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Describes relevant information about different steps of the training process.
+Information about different steps of the training process.
 
 ## Description
 

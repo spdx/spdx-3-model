@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Captures a limitation of the AI software.
+Limitation of the AI software.
 
 ## Description
 
@@ -13,8 +13,8 @@ A free-form text that captures a limitation of the AI package
 
 Note that this is not guaranteed to be exhaustive.
 
-For instance, a limitation might be that the AI package cannot be used on
-datasets from a certain demography.
+For instance, a limitation can be that the AI package is having poor accuracy
+for a certain demography.
 
 ## Metadata
 

@@ -21,4 +21,4 @@ The specific format is one of the most commonly used ISO-8601 formats.
 
 ## Format
 
-- pattern: ^\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ$
+- pattern: ^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$

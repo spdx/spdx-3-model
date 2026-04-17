@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Describes how the dataset was collected.
+How the dataset was collected.
 
 ## Description
 

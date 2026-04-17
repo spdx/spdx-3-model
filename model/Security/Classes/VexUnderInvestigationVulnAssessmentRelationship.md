@@ -16,7 +16,7 @@ investigated. It represents the VEX under_investigation status.
 *Constraints*
 
 When linking elements using a VexUnderInvestigationVulnAssessmentRelationship
-the following requirements must be observed:
+the following requirements shall be observed:
 
 - Elements linked with a VexUnderInvestigationVulnAssessmentRelationship are
   constrained to using the underInvestigationFor relationship type.
@@ -32,7 +32,7 @@ the following requirements must be observed:
   "to": ["urn:product-acme-application-1.3"],
   "security_assessedElement": "urn:npm-elliptic-6.5.2",
   "suppliedBy": "urn:spdx.dev:agent-jane-doe",
-  "publishedTime": "2021-03-09T11:04:53Z"
+  "security_publishedTime": "2021-03-09T11:04:53Z"
 }
 ```
 

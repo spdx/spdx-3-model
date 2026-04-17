@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Describes the preprocessing steps that were applied to the raw data to create the given dataset.
+Preprocessing steps that were applied to the raw data to create the given dataset.
 
 ## Description
 

@@ -8,7 +8,7 @@ Information about the type of contact point for `ContactPointRelationship`s.
 
 ## Description
 
-Provides information about the type of contact point. For example, the `securityVulnerability` contact type might represent a type of contact to be used for reporting security vulnerabilities.
+Provides information about the type of contact point. For example, the `securityVulnerability` contact type can represent a type of contact to be used for reporting security vulnerabilities.
 
 ## Metadata
 

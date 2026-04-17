@@ -18,8 +18,9 @@ The major version number shall be incremented when incompatible changes between
 versions are made (one or more sections are created, modified or deleted).
 The minor version number shall be incremented when backwards compatible changes
 are made.
-The patch version number shall be incremented when backward compatible bug
+The optional patch version number shall be incremented when backward compatible bug
 fixes are made.
+If no patch version is present, the latest released patch version can be assumed.
 
 Here, parties exchanging information in accordance with the SPDX specification
 need to provide 100% transparency as to which SPDX specification version such
@@ -29,4 +30,4 @@ information is conforming to.
 
 - name: specVersion
 - Nature: DataProperty
-- Range: SemVer
+- Range: Version

@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Records the type of the model used in the AI software.
+Type of the model used in the AI software.
 
 ## Description
 

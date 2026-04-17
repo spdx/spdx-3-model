@@ -19,9 +19,10 @@ ExternalRefType specifies the type of an external reference.
 - altDownloadLocation: A reference to an alternative download location.
 - altWebPage: A reference to an alternative web page.
 - binaryArtifact: A reference to binary artifacts related to a package.
+- bom: A reference to a bill of materials related to a package.
 - bower: A reference to a Bower package. The package locator format, looks like `package#version`, is defined in the "install" section of [Bower API documentation](https://bower.io/docs/api/#install).
-- buildMeta: A reference build metadata related to a published package.
-- buildSystem: A reference build system used to create or publish the package.
+- buildMeta: A reference to a build metadata related to a published package.
+- buildSystem: A reference to a build system used to create or publish the package.
 - chat: A reference to the instant messaging system used by the maintainer for a package.
 - certificationReport: A reference to a certification report for a package from an accredited/independent body.
 - componentAnalysisReport: A reference to a Software Composition Analysis (SCA) report.
@@ -54,7 +55,7 @@ ExternalRefType specifies the type of an external reference.
 - securityOther: A reference to related security information of unspecified type.
 - securityPenTestReport: A reference to a [penetration test](https://en.wikipedia.org/wiki/Penetration_test) report for a package.
 - securityPolicy: A reference to instructions for reporting newly discovered security vulnerabilities for a package.
-- securityThreatModel: A reference the [security threat model](https://en.wikipedia.org/wiki/Threat_model) for a package.
+- securityThreatModel: A reference to the [security threat model](https://en.wikipedia.org/wiki/Threat_model) for a package.
 - socialMedia: A reference to a social media channel for a package.
 - sourceArtifact: A reference to an artifact containing the sources for a package.
 - staticAnalysisReport: A reference to a static analysis report for a package.
@@ -62,4 +63,4 @@ ExternalRefType specifies the type of an external reference.
 - vcs: A reference to a version control system related to a software artifact.
 - vulnerabilityDisclosureReport: A reference to a Vulnerability Disclosure Report (VDR) which provides the software supplier's analysis and findings describing the impact (or lack of impact) that reported vulnerabilities have on packages or products in the supplier's SBOM as defined in [NIST SP 800-161 Cybersecurity Supply Chain Risk Management Practices for Systems and Organizations](https://csrc.nist.gov/pubs/sp/800/161/r1/final).
 - vulnerabilityExploitabilityAssessment: A reference to a Vulnerability Exploitability eXchange (VEX) statement which provides information on whether a product is impacted by a specific vulnerability in an included package and, if affected, whether there are actions recommended to remediate. See also [NTIA VEX one-page summary](https://ntia.gov/files/ntia/publications/vex_one-page_summary.pdf).
-- x509Cert: A reference to an X.509 certificate as defined in [RFC 1422](https://datatracker.ietf.org/doc/rfc1422/). The media type should be one of application/x-x509-ca-cert or application/x-x509-user-cert.
+- x509Cert: A reference to an X.509 certificate as defined in [RFC 1422](https://datatracker.ietf.org/doc/rfc1422/). The media type shall be one of application/x-x509-ca-cert or application/x-x509-user-cert.

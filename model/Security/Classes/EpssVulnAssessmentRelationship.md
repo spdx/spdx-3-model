@@ -16,9 +16,9 @@ scores, using the Exploit Prediction Scoring System (EPSS) as defined at
 
 *Constraints*
 
-- The relationship type must be set to hasAssessmentFor.
-- The probability must be between 0 and 1.
-- The percentile must be between 0 and 1.
+- The relationship type shall be set to hasAssessmentFor.
+- The probability shall be between 0 and 1.
+- The percentile shall be between 0 and 1.
 
 *Example*
 
@@ -32,7 +32,7 @@ scores, using the Exploit Prediction Scoring System (EPSS) as defined at
   "from": "urn:spdx.dev:vuln-cve-2020-28498",
   "to": ["urn:product-acme-application-1.3"],
   "suppliedBy": "urn:spdx.dev:agent-jane-doe",
-  "publishedTime": "2023-10-05T00:00:30Z"
+  "security_publishedTime": "2023-10-05T00:00:30Z"
 }
 ```
 

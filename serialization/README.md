@@ -26,7 +26,7 @@ Current supported formats are:
 
 Examples of how to serialize the following cases:
 
-### Core and Software Profiles use cases
+### Core and Software profiles use cases
 
 - `Agent`
 - `Annotation`
@@ -50,7 +50,7 @@ Examples of how to serialize the following cases:
   - `SpdxDocument` with `NamespaceMap`
   - `SpdxDocument` with two `File`s
 
-### Licensing Profile use cases
+### Licensing profile use cases
 
 - Single `Artifact` under one `ListedLicense`
 - Single `Artifact` under one `CustomLicense`
@@ -58,7 +58,7 @@ Examples of how to serialize the following cases:
 - Single `Artifact` under license expression of `ListedLicense` and `CustomLicense`
 - Two `Artifact`s under same license expression of `ListedLicense` and `CustomLicense`
 
-### Security Profile use cases
+### Security profile use cases
 
 The following list begins with base examples and sequentially adds expositional
 elements and relationships step-by-step:

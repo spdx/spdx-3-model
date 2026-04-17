@@ -16,13 +16,13 @@ This relationship corresponds to the VEX not_affected status.
 *Constraints*
 
 When linking elements using a VexNotVulnAffectedAssessmentRelationship, the
-following requirements must be observed:
+following requirements shall be observed:
 
 - Relating elements with a VexNotAffectedVulnAssessmentRelationship is
   restricted to the doesNotAffect relationship type.
 - Both impactStatement and justificationType properties have a cardinality of
   0..1 making them optional. Nevertheless, to produce a valid VEX not_affected
-  statement, one of them MUST be defined. This is specified in the Minimum
+  statement, one of them shall be defined. This is specified in the Minimum
   Elements for VEX.
 
 *Example*
@@ -38,7 +38,7 @@ following requirements must be observed:
   "security_justificationType": "componentNotPresent",
   "security_impactStatement": "Not using this vulnerable part of this library.",
   "suppliedBy": "urn:spdx.dev:agent-jane-doe",
-  "publishedTime": "2021-03-09T11:04:53Z"
+  "security_publishedTime": "2021-03-09T11:04:53Z"
 }
 ```
 

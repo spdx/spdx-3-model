@@ -4,15 +4,16 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Describes potentially noisy elements of the dataset.
+Potentially noisy elements of the dataset.
 
 ## Description
 
-Describes what kinds of noises a dataset might encompass.
+Describes what kinds of noises a dataset can encompass.
 
-The free-form text specifies fields or samples that might be noisy.
+The free-form text specifies fields or samples that can be noisy.
 
-Alternatively, it can also be used to describe various noises that could impact the whole dataset.
+Alternatively, it can also be used to describe various noises that can
+impact the whole dataset.
 
 ## Metadata
 

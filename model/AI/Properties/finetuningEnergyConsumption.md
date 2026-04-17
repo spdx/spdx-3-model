@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Specifies the amount of energy consumed when finetuning the AI model that is
+Energy consumed when finetuning the AI model that is
 being used in the AI system.
 
 ## Description

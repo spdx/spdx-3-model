@@ -16,7 +16,7 @@ affected. It represents the VEX fixed status.
 *Constraints*
 
 When linking elements using a VexFixedVulnAssessmentRelationship, the following
-requirements must be observed:
+requirements shall be observed:
 
 - Elements linked with a VulnVexFixedAssessmentRelationship are constrained to
   using the fixedIn relationship type.
@@ -32,7 +32,7 @@ requirements must be observed:
   "to": ["urn:product-acme-application-1.3"],
   "security_assessedElement": "urn:npm-elliptic-6.5.4",
   "suppliedBy": "urn:spdx.dev:agent-jane-doe",
-  "publishedTime": "2021-03-09T11:04:53Z"
+  "security_publishedTime": "2021-03-09T11:04:53Z"
 }
 ```
 

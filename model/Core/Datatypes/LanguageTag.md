@@ -9,7 +9,7 @@ which is used to identify human languages.
 
 ## Description
 
-The language tag must be in the format as describes in the Section 2 of
+The language tag shall be in the format as describes in the Section 2 of
 [IETF RFC 5646](https://datatracker.ietf.org/doc/rfc5646/) (part of BCP 47).
 
 Each language tag is composed of one or more "subtags" separated by hyphens

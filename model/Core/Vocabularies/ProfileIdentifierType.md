@@ -36,3 +36,8 @@ to all restrictions defined for that profile.
 - dataset: The element follows the Dataset profile specification.
 - extension: The element follows the Extension profile specification.
 - lite: The element follows the Lite profile specification.
+- hardware: The element follows the Hardware profile specification.
+- supplyChain: The element follows the SupplyChain profile specification.
+- operations: The element follows the Operations profile specification.
+- functionalSafety: The element follows the FunctionalSafety profile specification.
+- service: The element follows the Service profile specification.

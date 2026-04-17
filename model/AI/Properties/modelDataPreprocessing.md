@@ -4,8 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Describes all the preprocessing steps applied to the training data before the
-model training.
+Preprocessing steps applied to the training data before the model training.
 
 ## Description
 

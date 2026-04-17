@@ -4,15 +4,15 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Standardized way of indicating the type of content of an Element or a Property.
-A String constrained to the RFC 2046 specification.
+Standardized way of indicating the type of content of an Element or a property.
+A string constrained to the RFC 2046 specification.
 
 ## Description
 
 A MediaType is a string constrained to the
 [RFC 2046 MIME Part Two: Media Types](https://datatracker.ietf.org/doc/rfc2046/).
 It provides a standardized way of indicating the type of content of an Element
-or a Property.
+or a property.
 
 *Example*
 

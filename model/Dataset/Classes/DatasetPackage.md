@@ -4,11 +4,13 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Specifies a data package and its associated information.
+A Package that contains a dataset.
 
 ## Description
 
-Metadata information that can be added to a dataset that may be used in a software or to train/test an AI package.
+A Package that contains data used for the operation, training,
+testing, evaluation, or calibration of software, hardware, or systems,
+or for reporting, documentation, reference, and archival purposes.
 
 ## Metadata
 
@@ -18,6 +20,9 @@ Metadata information that can be added to a dataset that may be used in a softwa
 
 ## Properties
 
+- /Core/inLanguage
+  - type: /Core/LanguageTag
+  - minCount: 0
 - anonymizationMethodUsed
   - type: xsd:string
   - minCount: 0
@@ -55,9 +60,6 @@ Metadata information that can be added to a dataset that may be used in a softwa
   - type: /Core/PresenceType
   - minCount: 0
   - maxCount: 1
-- inLanguage
-  - type: /Core/LanguageTag
-  - minCount: 0
 - intendedUse
   - type: xsd:string
   - minCount: 0
@@ -71,14 +73,5 @@ Metadata information that can be added to a dataset that may be used in a softwa
 
 ## External properties restrictions
 
-- /Core/Artifact/builtTime
-  - minCount: 1
-- /Core/Artifact/originatedBy
-  - minCount: 1
-  - maxCount: 1
-- /Core/Artifact/releaseTime
-  - minCount: 1
-- /Software/Package/downloadLocation
-  - minCount: 1
 - /Software/SoftwareArtifact/primaryPurpose
   - minCount: 1

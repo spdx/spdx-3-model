@@ -4,10 +4,20 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
+**DEPRECATED in SPDX 3.1.**
+Use [/Core/isoAutomationLevel](../../Core/Properties/isoAutomationLevel.md)
+instead.
+
 Indicates whether the system can perform a decision or action without human
 involvement or guidance.
 
 ## Description
+
+**NOTE:**
+This property is deprecated and only included for backward compatibility.
+New documents should use
+[/Core/isoAutomationLevel](../../Core/Properties/isoAutomationLevel.md)
+instead.
 
 Indicates if the system is fully automated or a human is involved in any of the
 decisions of the AI system.

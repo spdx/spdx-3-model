@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Indicates the type of support that is associated with an artifact.
+Type of support that is associated with an artifact.
 
 ## Description
 

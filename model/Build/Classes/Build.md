@@ -15,10 +15,14 @@ build's inputs, outputs, and related entities (e.g. builders, identities,
 etc.).
 
 ExternalIdentifier of type "urlScheme" may be used to identify build logs.
-In this case, the comment of the ExternalIdentifier should be "LogReference".
+In this case, the comment of the ExternalIdentifier shall be "LogReference".
 
-Note that buildStartTime and buildEndTime are optional, and may be omitted to
+Note that `startTime` and `endTime` are optional, and may be omitted to
 simplify creating reproducible builds.
+
+`buildStartTime` and `buildEndTime` are deprecated.
+Migrate to `startTime` and `endTime`
+`buildStartTime` and `buildEndTime` will be removed in a future release.
 
 ## Metadata
 
@@ -28,6 +32,14 @@ simplify creating reproducible builds.
 
 ## Properties
 
+- /Core/endTime
+  - type: /Core/DateTime
+  - minCount: 0
+  - maxCount: 1
+- /Core/startTime
+  - type: /Core/DateTime
+  - minCount: 0
+  - maxCount: 1
 - buildType
   - type: xsd:anyURI
   - minCount: 1
