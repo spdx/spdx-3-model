@@ -21,6 +21,8 @@ AI agents may be characterized by the modalities through which they perceive inp
 | `agentCapability` | `xsd:string` | Optional (0..*) | A functional capability the agent can perform |
 | `agentExternalTool` | `/Core/DictionaryEntry` | Optional (0..*) | An external tool or service the agent can invoke |
 | `agentMemoryMode` | `xsd:string` | Optional (0..*) | Memory category or storage mechanism used by the agent |
+| `agentProtocol` | `/Core/DictionaryEntry` | Optional (0..*) | A communication protocol supported by the agent for tool or agent interaction |
+| `agentType` | `AgentType` | Optional (0..*) | Structural role of the agent within a multi-agent system |
 | `automationLevel` | `AutomationLevel` | Optional (0..1) | Degree of automation relative to human oversight |
 
 ### Relationship types used with `AIAgent`
@@ -108,6 +110,67 @@ Multiple values may be declared when an agent employs more than one memory mecha
 
 ---
 
+### `agentProtocol`
+- **Nature:** ObjectProperty
+- **Range:** `/Core/DictionaryEntry`
+- **Cardinality:** 0..*
+
+Identifies a standardized communication protocol that the AI agent implements,
+enabling consumers, integrators, and automated tooling to determine how the
+agent can be invoked, composed, or connected within a larger system.
+
+Agent protocols fall into two broad categories:
+
+- **Context-oriented protocols** govern communication between an agent and
+  external resources (data sources, tools, services), allowing the agent to
+  acquire context through a standardized interface without per-provider
+  integration. Examples: Model Context Protocol (MCP), agents.json.
+
+- **Inter-agent protocols** govern communication between two or more agents,
+  enabling task delegation, negotiation, and collaborative problem-solving
+  across providers, frameworks, and organizational boundaries. Examples:
+  Agent2Agent (A2A), Agent Network Protocol (ANP), Agent Communication
+  Protocol (AComP), Agent Connect Protocol (AConP), Agent Interaction and
+  Transaction Protocol (AITP), Coral Protocol, Agora.
+
+Each entry maps a short, human-readable protocol identifier (the key) to the
+protocol version or a URI pointing to its specification (the value).
+
+**Examples:**
+
+| Key | Value |
+|---|---|
+| `MCP` | `1.2` |
+| `A2A` | `https://github.com/google/A2A` |
+| `ANP` | `https://www.agent-network-protocol.com/` |
+| `AConP` | `https://spec.acp.agntcy.org/` |
+
+---
+
+### `agentType`
+- **Nature:** ObjectProperty
+- **Range:** `AgentType`
+- **Cardinality:** 0..*
+
+Specifies the structural role the AI agent assumes within a multi-agent system
+(MAS) or agentic workflow. The agent type characterizes how the agent relates
+to other agents and to the overall task structure with respect to task
+initiation, delegation, coordination, and execution.
+
+This property captures a structural and architectural fact about the agent as
+deployed, and is distinct from:
+- `agentCapability` — what tasks the agent can perform;
+- `automationLevel` — degree of autonomy relative to human oversight;
+- `agentProtocol` — communication protocol(s) the agent supports.
+
+An agent may declare multiple values; for example, an agent that receives
+tasks from an upstream orchestrator while itself coordinating a group of
+specialist sub-agents would declare both `worker` and `orchestrator`.
+
+**Values:** see `AI/AgentType` vocabulary.
+
+---
+
 ### `automationLevel`
 - **Nature:** ObjectProperty
 - **Range:** `AutomationLevel`
@@ -132,6 +195,24 @@ Systems at levels 0–5 are heteronomous: their goals and objectives are set by 
 | `highAutomation` | 4 | The system performs most of its mission without external intervention, but may require human oversight for exceptional conditions |
 | `fullAutomation` | 5 | The system is capable of performing its entire mission without any external intervention, from start to completion |
 | `autonomous` | 6 | The system is capable of independently modifying its intended domain of use or its goals without external intervention, control, or oversight |
+
+---
+
+## New Vocabulary: `AI/AgentType`
+
+A controlled vocabulary that categorizes the structural role of an AI agent
+within a multi-agent system. Informed by inter-agent protocol specifications
+including A2A, ANP, AConP, the Coral Protocol, and Agora, and consistent
+with the taxonomy in Yang et al. (2025), "A Survey of AI Agent Protocols,"
+arXiv:2504.16736.
+
+An agent may hold more than one role simultaneously.
+
+| Entry | Description |
+|---|---|
+| `orchestrator` | Initiates and decomposes high-level goals into sub-tasks, delegates those sub-tasks to other agents, and aggregates their results. Controls the overall workflow and is responsible for task assignment and result synthesis. Corresponds to the client agent role in A2A and the coordinator role in the Coral Protocol |
+| `worker` | Receives a delegated task from an orchestrator or controller, executes it using its own capabilities and tools, and returns the result. Does not direct other agents in the context of the delegated task. Corresponds to the remote agent role in A2A and the invoked agent role in AConP |
+| `peer` | Participates in symmetric, decentralized multi-agent collaboration without a fixed coordinator or worker hierarchy. Any peer may initiate interactions with any other peer; protocols and task assignments are negotiated dynamically. Corresponds to agents-on-the-internet in ANP and networked LLM nodes in Agora |
 
 ---
 
