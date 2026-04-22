@@ -53,7 +53,7 @@ The following relationship types are also used to describe an AI agent's functio
 
 ## External properties restrictions
 
-- /Core/suppliedBy
+- /Core/Artifact/suppliedBy
   - type: /Core/Agent
   - minCount: 1
 - /Core/Artifact/releaseTime
