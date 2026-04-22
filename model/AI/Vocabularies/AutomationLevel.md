@@ -24,8 +24,7 @@ Systems categorized with automation levels 0-5 are heteronomous.
 This means that while they can be fully automated, their goals and objectives
 are set by external entities, typically human operators.
 
-A system with automation level 6 is autonomous, capable of independently
-defining and pursuing its own goals without external intervention.
+A system with automation level 6 is autonomous, capable of independently defining and pursuing its own goals without external intervention.
 
 ## Metadata
 
@@ -33,10 +32,10 @@ defining and pursuing its own goals without external intervention.
 
 ## Entries
 
-- autonomous: Level 6 - Autonomous. The system is capable of independently modifying its intended domain of use or its goals without external intervention, control, or oversight.
-- fullAutomation: Level 5 - Full automation. The system is capable of performing its entire mission without any external intervention, from start to completion.
-- highAutomation: Level 4 - High automation. The system performs most of its mission without external intervention, but may require human oversight for exceptional conditions.
-- conditionalAutomation: Level 3 - Conditional automation. The system can propose strategies and automatically execute the approved plan, while an external agent remains ready to intervene when necessary.
-- partialAutomation: Level 2 - Partial automation. Some sub-functions of the system are fully automated while the overall system remains under the control of an external agent; the system can act on an approved task without requiring continuous direct human control.
-- assistiveAutomation: Level 1 - Assistive automation. The system assists a human operator, who retains full decision-making authority and direct control at all times.
-- notAutomated: Level 0 - Not automated. No automation. The human operator fully controls the system with no automated decision-making.
+- autonomous: Level 6 - Autonomous. The system is capable of independently modifying its intended domain of use or its goals without external intervention, control, or oversight. An agent at this level can rewrite its own objectives, spawn sub-agents, or redefine its operational scope without human approval (e.g., self-directed goal modification or recursive self-improvement loops).
+- fullAutomation: Level 5 - The system is capable of performing its entire mission without any external intervention, from start to completion. An agent at this level runs entirely unattended across its full task lifecycle, relying on built-in circuit-breakers, rate limits, and automated guardrails rather than human checkpoints.
+- highAutomation: Level 4 - The system performs most of its mission without external intervention, but may require human oversight for exceptional conditions. An agent at this level handles routine tasks end-to-end and escalates only on anomalies or out-of-policy situations detected by automated monitors.
+- conditionalAutomation: Level 3 - The system can propose strategies and automatically execute the approved plan, while an external agent remains ready to intervene when necessary. An agent at this level selects and invokes tools autonomously but requires human review and approval before each tool call or external action is executed.
+- partialAutomation: Level 2 - Some sub-functions of the system are fully automated while the overall system remains under the control of an external agent; the system can act on an approved task without requiring continuous direct human control. An agent at this level autonomously completes sub-tasks within a human-defined plan but relies on the human operator to sequence or chain those sub-tasks together.
+- assistiveAutomation: Level 1 - The system assists a human operator, who retains full decision-making authority and direct control at all times. An agent at this level suggests completions, drafts responses, or surfaces relevant context, but the human explicitly selects and submits each action.
+- notAutomated: Level 0 - The human operator fully controls the system with no automated decision-making. No agent logic is active; the human writes every prompt, selects every tool, and manually executes every step without any automated assistance.
