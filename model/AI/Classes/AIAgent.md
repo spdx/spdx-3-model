@@ -10,8 +10,6 @@ Specifies an AI agent and its associated metadata.
 
 An AI agent is a software entity that uses artificial intelligence techniques to perceive its environment, reason about its state, and take actions to achieve specified goals. It typically implements a perception-action cycle employing AI models, heuristics, or planning algorithms to guide autonomous or semi-autonomous behavior.
 
-AI agents may be characterized by the modalities through which they perceive input and produce output, the capabilities they provide, the external tools or services they invoke, the memory mechanisms they employ to retain information across interactions, and their degree of automation relative to human oversight.
-
 The following relationship types are also used to describe an AI agent's functionalities and interactions:
 
 - hasPersistentMemory: Describes a relationship from the AIAgent to an Element that serves as its persistent or long-term memory store (e.g., a database, vector store, or file system that retains information across sessions).

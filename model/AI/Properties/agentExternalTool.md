@@ -15,9 +15,7 @@ human-readable tool identifier (the key) to a URI, package URL, or other
 reference that locates the tool's definition or specification (the value).
 
 External tools enable agents to retrieve information, transform data, execute
-operations, or interact with external systems. Examples include: web search
-APIs, code execution sandboxes, database query interfaces, translation
-services, and domain-specific utilities such as medical literature search.
+operations, or interact with external systems.
 
 *Examples*
 

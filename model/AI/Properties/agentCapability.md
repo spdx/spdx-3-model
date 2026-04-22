@@ -12,8 +12,6 @@ A free-form string that identifies and describes a specific functional capabilit
 
 Capabilities reflect the agent's behavioral repertoire and may include, but are not limited to: information retrieval, document summarization, code generation and execution, data analysis, planning and task decomposition, multi-step reasoning, multi-agent coordination, and domain-specific actions.
 
-Use one `agentCapability` entry per distinct capability. Descriptions should be concise and human-readable. External tools or services invoked to fulfill a capability are recorded separately using the `agentExternalTool` property.
-
 *Examples*
 
 ```text
