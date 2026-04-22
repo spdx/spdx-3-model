@@ -8,16 +8,9 @@ Defines the structural role of an AI agent within a multi-agent system.
 
 ## Description
 
-AgentType is an enumeration that categorizes the interaction role of an AI
-agent within a multi-agent system (MAS) or agentic workflow. It describes
-the agent's position in the task delegation hierarchy, independent of its
-capabilities or degree of automation.
+AgentType is an enumeration that categorizes the interaction role of an AI agent within a multi-agent system (MAS) or agentic workflow. It describes the agent's position in the task delegation hierarchy, independent of its capabilities or degree of automation.
 
-AgentType is informed by established inter-agent protocol specifications,
-including Google's Agent2Agent Protocol (A2A), the Agent Network Protocol
-(ANP), the Agent Connect Protocol (AConP), the Coral Protocol, and the Agora
-meta-protocol, and is consistent with the two-dimensional taxonomy of agent
-protocols.
+AgentType is informed by established inter-agent protocol specifications, including Google's Agent2Agent Protocol (A2A), the Agent Network Protocol (ANP), the Agent Connect Protocol (AConP), the Coral Protocol, and the Agora meta-protocol, and is consistent with the two-dimensional taxonomy of agent protocols.
 
 ## Metadata
 

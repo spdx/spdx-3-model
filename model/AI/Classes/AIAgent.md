@@ -35,15 +35,6 @@ functionalities and interactions:
 
 ## Properties
 
-- /Core/suppliedBy
-  - type: /Core/Agent
-  - minCount: 0
-- /Software/inputModality
-  - type: /Core/Modality
-  - minCount: 0
-- /Software/outputModality
-  - type: /Core/Modality
-  - minCount: 0
 - agentCapability
   - type: xsd:string
   - minCount: 0
@@ -63,4 +54,22 @@ functionalities and interactions:
   - type: AutomationLevel
   - minCount: 0
   - maxCount: 1
+
+## External properties restrictions
+
+- /Core/suppliedBy
+  - type: /Core/Agent
+  - minCount: 0
+- /Software/inputModality
+  - type: /Core/Modality
+  - minCount: 0
+- /Software/outputModality
+  - type: /Core/Modality
+  - minCount: 0
+- /Core/Artifact/releaseTime
+  - minCount: 1
+- /Core/Artifact/suppliedBy
+  - minCount: 1
+- /Software/Package/packageVersion
+  - minCount: 1
   
