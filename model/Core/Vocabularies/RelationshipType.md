@@ -100,6 +100,7 @@ name completes the sentence:
 - tracedToDetail: the `from` Requirement is refined and further elaborated by each `to` Requirement, which contains more detailed implementation information.
 - trainedOn: The `from` Element has been trained on the `to` Element(s).
 - underInvestigationFor: The `from` Vulnerability impact is being investigated for each `to` Element. The use of the `underInvestigationFor` type is constrained to `VexUnderInvestigationVulnAssessmentRelationship` classed relationships.
+- usesModel: The `from` Element uses each `to` /AI/AIPackage as its underlying AI model.
 - usesTool: The `from` Element uses each `to` Element as a tool, during a LifecycleScopeType period.
 - validatedOn: The `from` Element has been validated on the `to` Element(s).
 - verifiedBy: The `from` Requirement that has verification (test, review, analysis etc.) details defined in the `to` RequirementVerification.
