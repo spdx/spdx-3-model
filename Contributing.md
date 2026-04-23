@@ -78,10 +78,10 @@ Each profile in active development phase also has their own
 
 | Profile | Maintainer(s) |
 | ------- | ------------- |
-| AI | [Karen Bennet][gh-karen] and [Gopi Krishnan Rajbahadur][gh-gopi] |
+| AI | [Gopi Krishnan Rajbahadur][gh-gopi] and [Arthit Suriyawongkul][gh-arthit] |
 | Build | [Brandon Lum][gh-brandon] and [Nisha Kumar][gh-nisha] |
 | Core | [William Bartholomew][gh-william], [Gary O'Neall][gh-gary], and [Kate Stewart][gh-kate] |
-| Dataset | [Karen Bennet][gh-karen] and [Gopi Krishnan Rajbahadur][gh-gopi] |
+| Dataset | [Gopi Krishnan Rajbahadur][gh-gopi] and [Arthit Suriyawongkul][gh-arthit] |
 | FunctionalSafety | [Nicole Pappler][gh-nicole] |
 | Hardware | [Steven Carbno][gh-stevenc] and Alfred Strauch |
 | Licensing | [Steve Winslow][gh-steve] and [Alexios Zavras][gh-alexios] |
@@ -102,12 +102,12 @@ Each profile in active development phase also has their own
 [cla]: CLA.md
 [gh-adolfo]: https://github.com/puerco
 [gh-alexios]: https://github.com/zvr
+[gh-arthit]: https://github.com/bact
 [gh-brandon]: https://github.com/lumjjb
 [gh-gary]: https://github.com/goneall
 [gh-gopi]: https://github.com/rgopikrishnan91
 [gh-nicole]: https://github.com/nicpappler
 [gh-nisha]: https://github.com/nishakm
-[gh-karen]: https://github.com/bennetkl
 [gh-kate]: https://github.com/kestewart
 [gh-rose]: https://github.com/rnjudge
 [gh-steve]: https://github.com/swinslow
