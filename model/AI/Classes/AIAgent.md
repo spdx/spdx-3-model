@@ -50,9 +50,4 @@ The following relationship types are also used to describe an AI agent's functio
 - /Software/outputModality
   - type: /Core/Modality
   - minCount: 0
-
-## External properties restrictions
-
-- /Software/Package/packageVersion
-  - minCount: 1
   
