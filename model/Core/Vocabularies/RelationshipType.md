@@ -73,7 +73,7 @@ name completes the sentence:
 - hasProvidedDependency: The `from` Element has a dependency on each `to` Element, dependency is not in the distributed artifact, but assumed to be provided, during a LifecycleScopeType period.
 - hasRequirement: The `from` Element has a requirement on each `to` Element, during a LifecycleScopeType period.
 - hasResolution: The `from` ResolutionAction point to the `to` OutOfSpecAction that is addressed.
-- hasRole: The `from` Element has a role in the `to` Element.
+- hasRoleIn: The `from` Element has a role in the `to` Element. Shall be a `RoleRelationship`
 - hasSpecification: Every `to` Element is a specification for the `from` Element (`from` hasSpecification `to`), during a LifecycleScopeType period.
 - hasStaticLink: The `from` Element statically links in each `to` Element, during a LifecycleScopeType period.
 - hasTest: Every `to` Element is a test artifact for the `from` Element (`from` hasTest `to`), during a LifecycleScopeType period.
