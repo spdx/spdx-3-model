@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A string following the SemVer 2.0.0 specification with the exceptions of the patch version being optional and extensions are not supported.
+A version number following the SemVer 2.0.0 specification with the exceptions of the patch version being optional and extensions are not supported.
 
 ## Description
 
