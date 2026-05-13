@@ -70,7 +70,7 @@ name completes the sentence:
 - hasOptionalComponent: Every `to` Element is an optional component of the `from` Element (`from` hasOptionalComponent `to`).
 - hasOptionalDependency: The `from` Element optionally depends on each `to` Element, during a LifecycleScopeType period.
 - hasOutput: The `from` Build element generates each `to` Element as an output, during a LifecycleScopeType period.
-- hasPersistentMemory: The `from` Element uses each `to` Element as a persistent or long-term memory store (e.g., a database, vector store, or file system that retains information across sessions or reasoning steps).
+- hasPersistentMemory: The `from` Element uses each `to` Element as a persistent or long-term memory store (e.g., a database, vector store, or file system).
 - hasPrerequisite: The `from` Element has a prerequisite on each `to` Element, during a LifecycleScopeType period.
 - hasProvidedDependency: The `from` Element has a dependency on each `to` Element, dependency is not in the distributed artifact, but assumed to be provided, during a LifecycleScopeType period.
 - hasRequirement: The `from` Element has a requirement on each `to` Element, during a LifecycleScopeType period.
@@ -100,7 +100,7 @@ name completes the sentence:
 - tracedToDetail: the `from` Requirement is refined and further elaborated by each `to` Requirement, which contains more detailed implementation information.
 - trainedOn: The `from` Element has been trained on the `to` Element(s).
 - underInvestigationFor: The `from` Vulnerability impact is being investigated for each `to` Element. The use of the `underInvestigationFor` type is constrained to `VexUnderInvestigationVulnAssessmentRelationship` classed relationships.
-- usesModel: The `from` Element uses each `to` /AI/AIPackage as its underlying AI model.
+- usesModel: The `from` Element uses each `to` /AI/AIPackage as its AI model.
 - usesTool: The `from` Element uses each `to` Element as a tool, during a LifecycleScopeType period.
 - validatedOn: The `from` Element has been validated on the `to` Element(s).
 - verifiedBy: The `from` Requirement that has verification (test, review, analysis etc.) details defined in the `to` RequirementVerification.
