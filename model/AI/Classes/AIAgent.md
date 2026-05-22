@@ -38,7 +38,7 @@ The following relationship types are also used to describe an AI agent's functio
 - agentMemoryMode
   - type: xsd:string
   - minCount: 0
-- agentProtocol
+- agentCommunicationProtocol
   - type: /Core/DictionaryEntry
   - minCount: 0
 - agentType
