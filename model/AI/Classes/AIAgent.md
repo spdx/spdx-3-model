@@ -46,8 +46,12 @@ The following relationship types are also used to describe an AI agent's functio
   - minCount: 0
   - maxCount: 1
 - agentType
-  - type: AgentType
+  - type: xsd:string
   - minCount: 0
+- limitation
+  - type: xsd:string
+  - minCount: 0
+  - maxCount: 1
 - /Software/inputModality
   - type: /Core/Modality
   - minCount: 0
