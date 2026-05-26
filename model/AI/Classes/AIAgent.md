@@ -41,6 +41,10 @@ The following relationship types are also used to describe an AI agent's functio
 - agentCommunicationProtocol
   - type: /Core/DictionaryEntry
   - minCount: 0
+- agentTrustLevel
+  - type: AgentTrustLevel
+  - minCount: 0
+  - maxCount: 1
 - agentType
   - type: AgentType
   - minCount: 0
@@ -50,3 +54,7 @@ The following relationship types are also used to describe an AI agent's functio
 - /Software/outputModality
   - type: /Core/Modality
   - minCount: 0
+- safetyRiskAssessment
+  - type: SafetyRiskAssessmentType
+  - minCount: 0
+  - maxCount: 1
