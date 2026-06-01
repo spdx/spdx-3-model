@@ -8,7 +8,7 @@ Indicates the memory category or storage mechanism used by the AI agent.
 
 ## Description
 
-A free-form string indicating the type of memory store or storage mechanism used by the agent to retain and recall information across interactions or reasoning steps.
+A free-form string indicating the type of memory store or storage mechanism used by the agents to retain and recall information across interactions or reasoning steps.
 
 Examples of possible values:
 
