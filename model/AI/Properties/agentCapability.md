@@ -4,13 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Describes a functional capability that the AI agent can perform.
+Captures all agents used in the system and describes their functional capabilities.
 
 ## Description
 
-A free-form string that identifies and describes a specific functional capability of the agent—what it can do, what goal it serves, or what class of task it is designed to handle. Each value should capture one distinct capability.
-
-Capabilities reflect the agent's behavioral repertoire and may include, but are not limited to: information retrieval, document summarization, code generation and execution, data analysis, planning and task decomposition, multi-step reasoning, multi-agent coordination, and domain-specific actions.
+A free-form string that identifies and describes a specific functional capability of an agent used in the system, what it can do, what goal it serves, or what class of task it is designed to handle. Each value should capture one distinct capability across all agents present in the system.
 
 *Examples*
 
@@ -31,7 +29,7 @@ multi-step-reasoning: decomposes complex queries into sub-tasks and plans execut
 ```
 
 ```text
-multi-agent-coordination: delegates sub-tasks to specialized agents and aggregates results
+Orchestrator : delegates sub-tasks to specialized agents and aggregates results
 ```
 
 ## Metadata
