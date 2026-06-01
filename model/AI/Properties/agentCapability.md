@@ -13,7 +13,7 @@ A free-form string that identifies and describes a specific functional capabilit
 *Examples*
 
 ```text
-web-search
+Orchestrator : delegates sub-tasks to specialized agents and aggregates results
 ```
 
 ```text
@@ -26,10 +26,6 @@ code-execution: runs Python snippets in a sandboxed environment
 
 ```text
 multi-step-reasoning: decomposes complex queries into sub-tasks and plans execution order
-```
-
-```text
-Orchestrator : delegates sub-tasks to specialized agents and aggregates results
 ```
 
 ## Metadata
