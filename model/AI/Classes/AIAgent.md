@@ -17,6 +17,8 @@ The following relationship types are also used to describe an AI agent's functio
 - usesTool: Describes a relationship from the AIAgent to an Element that the agent uses as a tool to extend its capabilities.
 - usesModel: Describes a relationship from the AIAgent to an /AI/AIPackage that represents the underlying AI model the agent relies on (e.g., its model weights, training data, and safety assessments), enabling BOM consumers to trace from an agent to its associated model artifacts.
 
+**Diminishing delegation constraint**: When an agent uses a `delegatedTo` relationship to assign a task to a downstream agent, the downstream agent's `agentPermissionScope` values must be a subset of the delegating agent's `agentPermissionScope` values. An agent cannot grant a permission it does not itself hold.
+
 ## Metadata
 
 - name: AIAgent
@@ -46,6 +48,9 @@ The following relationship types are also used to describe an AI agent's functio
   - minCount: 0
   - maxCount: 1
 - agentType
+  - type: xsd:string
+  - minCount: 0
+- agentPermissionScope
   - type: xsd:string
   - minCount: 0
 - limitation
