@@ -30,4 +30,4 @@ information is conforming to.
 
 - name: specVersion
 - Nature: DataProperty
-- Range: Version
+- Range: VersionNumber
