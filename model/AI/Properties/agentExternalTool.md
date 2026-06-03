@@ -14,9 +14,6 @@ perform actions beyond its built-in model. Each entry maps a short,
 human-readable tool identifier (the key) to a URI, package URL, or other
 reference that locates the tool's definition or specification (the value).
 
-External tools enable agents to retrieve information, transform data, execute
-operations, or interact with external systems.
-
 *Examples*
 
 ```text
