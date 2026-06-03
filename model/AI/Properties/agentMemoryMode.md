@@ -8,23 +8,14 @@ Indicates the memory category or storage mechanism used by the AI agent.
 
 ## Description
 
-A free-form string indicating the type of memory store or storage mechanism used by the agents to retain and recall information across interactions or reasoning steps.
+Classifies how an AI agent retains and recalls information across interactions
+or reasoning steps. Multiple values may be declared when an agent employs more
+than one memory mechanism.
 
-Examples of possible values:
-
-- `episodic`: Records of past events, interactions, or task executions that provide experiential context for future reasoning.
-- `semantic`: Factual or conceptual knowledge stored in a form suitable for retrieval and inference (e.g., vector embeddings, knowledge graphs).
-- `procedural`: Encoded skills, plans, or behavioral patterns that guide the agent's execution strategy.
-- `working`: Short-lived, context-scoped information used within a single reasoning session or conversation turn.
-- `in-context`: Information retained within the active context window of the underlying language model.
-- `in-weights`: Knowledge encoded in model parameters through pretraining or fine-tuning; not updated at runtime.
-- `in-cache`: Precomputed key-value attention caches enabling efficient reuse of prior computations.
-- `external`: Information persisted in an external store (database, file system, vector store) and retrieved on demand.
-
-Multiple values may be declared when an agent employs more than one memory mechanism. Values are free-form strings; the examples above are recommended conventions.
+**Values:** see `AI/AgentMemoryMode` vocabulary.
 
 ## Metadata
 
 - name: agentMemoryMode
-- Nature: DataProperty
-- Range: xsd:string
+- Nature: ObjectProperty
+- Range: AgentMemoryMode

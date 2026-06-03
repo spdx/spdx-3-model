@@ -19,7 +19,7 @@ AI agents may be characterized by the modalities through which they perceive inp
 | `agentCapability` | `xsd:string` | Optional (0..*) | A functional capability the agent can perform |
 | `agentCommunicationProtocol` | `/Core/DictionaryEntry` | Optional (0..*) | A standardized communication protocol implemented by the agent for interacting with tools, data sources, or other agents |
 | `agentExternalTool` | `/Core/DictionaryEntry` | Optional (0..*) | An external tool or service the agent can invoke |
-| `agentMemoryMode` | `xsd:string` | Optional (0..*) | Memory category or storage mechanism used by the agent |
+| `agentMemoryMode` | `AgentMemoryMode` | Optional (0..*) | Memory category or storage mechanism used by the agent |
 | `agentPermissionScope` | `xsd:string` | Optional (0..*) | A permission granted to the AI agent |
 | `agentTrustLevel` | `AgentTrustLevel` | Optional (0..1) | Degree of external verification applied to the agent's identity, behavioral claims, and declared capabilities |
 | `agentType` | `AgentType` | Optional (0..*) | Communication and interaction role of the agent within a multi-agent system |
@@ -100,24 +100,13 @@ External tools enable agents to retrieve information, transform data, execute op
 ---
 
 ### `agentMemoryMode`
-- **Nature:** DataProperty
-- **Range:** `xsd:string`
+- **Nature:** ObjectProperty
+- **Range:** `AgentMemoryMode`
 - **Cardinality:** 0..*
 
-A free-form string indicating the type of memory store or storage mechanism used by the agent to retain and recall information across interactions or reasoning steps.
+Classifies how an AI agent retains and recalls information across interactions or reasoning steps. Multiple values may be declared when an agent employs more than one memory mechanism.
 
-Examples of possible values:
-
-- `episodic`: Records of past events, interactions, or task executions that provide experiential context for future reasoning.
-- `semantic`: Factual or conceptual knowledge stored in a form suitable for retrieval and inference (e.g., vector embeddings, knowledge graphs).
-- `procedural`: Encoded skills, plans, or behavioral patterns that guide the agent's execution strategy.
-- `working`: Short-lived, context-scoped information used within a single reasoning session or conversation turn.
-- `in-context`: Information retained within the active context window of the underlying language model.
-- `in-weights`: Knowledge encoded in model parameters through pretraining or fine-tuning; not updated at runtime.
-- `in-cache`: Precomputed key-value attention caches enabling efficient reuse of prior computations.
-- `external`: Information persisted in an external store (database, file system, vector store) and retrieved on demand.
-
-Multiple values may be declared when an agent employs more than one memory mechanism. Values are free-form strings; the examples above are recommended conventions.
+**Values:** see `AI/AgentMemoryMode` vocabulary.
 
 ---
 
@@ -248,6 +237,23 @@ An agent declares at most one trust level.
 | `selfDeclared` | Level 1 — Trust is based solely on claims made by the agent's developer or operator. No external review has been conducted. Suitable for low-stakes, sandboxed, or internal-only deployments where the declaring party is known and accountable |
 | `thirdPartyReviewed` | Level 2 — The agent has been independently reviewed or audited by a third party, but has not undergone formal certification against a recognized standard. Provides higher confidence than self-declaration for use in controlled production environments |
 | `certified` | Level 3 — The agent has been formally certified by a recognized standards or certification body against defined criteria for identity, capability accuracy, and behavioral compliance. Suitable for high-stakes deployments requiring verified accountability and regulatory alignment |
+
+---
+
+## New Vocabulary: `AI/AgentMemoryMode`
+
+A controlled vocabulary classifying how an AI agent retains and recalls information across interactions or reasoning steps. Multiple values may be declared when an agent employs more than one mechanism.
+
+| Entry | Description |
+|---|---|
+| `episodic` | Records of past events, interactions, or task executions that provide experiential context for future reasoning |
+| `semantic` | Factual or conceptual knowledge stored for retrieval and inference (e.g., vector embeddings, knowledge graphs) |
+| `procedural` | Encoded skills, plans, or behavioral patterns that guide the agent's execution strategy |
+| `working` | Short-lived, context-scoped information used within a single reasoning session or conversation turn |
+| `inContext` | Information retained within the active context window of the underlying language model |
+| `inWeights` | Knowledge encoded in model parameters through pretraining or fine-tuning; not updated at runtime |
+| `inCache` | Precomputed key-value attention caches enabling efficient reuse of prior computations |
+| `external` | Information persisted in an external store (database, file system, vector store) and retrieved on demand |
 
 ---
 
