@@ -4,16 +4,25 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Captures all agents used in the system and describes their functional capabilities.
+Describes a specific domain task or goal the agent is designed to perform,
+independent of its implementation mechanism.
 
 ## Description
 
-A free-form string that identifies and describes a specific functional capability of an agent used in the system, what it can do, what goal it serves, or what class of task it is designed to handle. Each value should capture one distinct capability across all agents present in the system.
+A free-form string that identifies a user-facing task ability of the AI agent:
+what it can accomplish for an integrator or end-user, regardless of the
+architectural pattern used to fulfill it. Each value should capture one
+distinct task or goal. This is distinct from `agentType`, which classifies the
+agent's internal action-execution mechanism.
+
+Use one `agentCapability` entry per distinct ability. Descriptions should be
+concise and human-readable. External tools or services invoked to fulfill a
+capability are recorded separately using `agentExternalTool`.
 
 *Examples*
 
 ```text
-Orchestrator : delegates sub-tasks to specialized agents and aggregates results
+web-search
 ```
 
 ```text
@@ -26,6 +35,10 @@ code-execution: runs Python snippets in a sandboxed environment
 
 ```text
 multi-step-reasoning: decomposes complex queries into sub-tasks and plans execution order
+```
+
+```text
+multi-agent-coordination: delegates sub-tasks to specialized agents and aggregates results
 ```
 
 ## Metadata
