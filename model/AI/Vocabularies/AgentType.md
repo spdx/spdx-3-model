@@ -9,9 +9,7 @@ multi-agent system or agentic workflow.
 
 ## Description
 
-AgentType is an enumeration that categorizes the structural role an AI agent
-assumes in terms of how it communicates and interacts with other agents and
-orchestration systems. 
+AgentType is an enumeration that categorizes the structural role an AI agent assumes in terms of how it communicates and interacts with other agents and orchestration systems. 
 
 ## Metadata
 
