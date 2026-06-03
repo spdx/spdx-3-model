@@ -4,15 +4,13 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Describes a specific domain task or goal the agent is designed to perform,
-independent of its implementation mechanism.
+Describes a specific domain task or goal the agent is designed to perform.
 
 ## Description
 
 A free-form string that identifies a user-facing task ability of the AI agent:
-what it can accomplish for an integrator or end-user, regardless of the
-architectural pattern used to fulfill it. Each value should capture one
-distinct task or goal.
+what it can accomplish for a system. Each value should capture one
+distinct task or goal. 
 
 *Examples*
 
@@ -39,5 +37,5 @@ multi-agent-coordination: delegates sub-tasks to specialized agents and aggregat
 ## Metadata
 
 - name: agentCapability
-- Nature: DataProperty
-- Range: xsd:string
+- Nature: ObjectProperty
+- Range: /Core/DictionaryEntry

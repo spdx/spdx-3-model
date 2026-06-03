@@ -30,7 +30,7 @@ The following relationship types are also used to describe an AI agent's functio
   - minCount: 0
   - maxCount: 1
 - agentCapability
-  - type: xsd:string
+  - type: /Core/DictionaryEntry
   - minCount: 0
 - agentExternalTool
   - type: /Core/DictionaryEntry
