@@ -9,7 +9,9 @@ multi-agent system or agentic workflow.
 
 ## Description
 
-AgentType is an enumeration that categorizes the structural role an AI agent assumes in terms of how it communicates and interacts with other agents and orchestration systems. 
+AgentType is an enumeration that categorizes the structural role an AI agent
+assumes in terms of how it communicates and interacts with other agents and
+orchestration systems.
 
 ## Metadata
 
@@ -17,6 +19,6 @@ AgentType is an enumeration that categorizes the structural role an AI agent ass
 
 ## Entries
 
-- orchestrator: The agent initiates and decomposes high-level goals into sub-tasks, delegates those sub-tasks to other agents, and aggregates their results into a final outcome. 
-- worker: The agent receives a delegated task from an orchestrator or controller, executes it using its own capabilities and tools, and returns the result. 
-- peer: The agent participates in symmetric, decentralized multi-agent collaboration without a fixed coordinator or worker hierarchy. 
+- orchestrator: The agent initiates and decomposes high-level goals into sub-tasks, delegates those sub-tasks to other agents, and aggregates their results into a final outcome.
+- worker: The agent receives a delegated task from an orchestrator or controller, executes it using its own capabilities and tools, and returns the result.
+- peer: The agent participates in symmetric, decentralized multi-agent collaboration without a fixed coordinator or worker hierarchy.
