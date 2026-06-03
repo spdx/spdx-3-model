@@ -12,17 +12,12 @@ independent of its implementation mechanism.
 A free-form string that identifies a user-facing task ability of the AI agent:
 what it can accomplish for an integrator or end-user, regardless of the
 architectural pattern used to fulfill it. Each value should capture one
-distinct task or goal. This is distinct from `agentType`, which classifies the
-agent's internal action-execution mechanism.
-
-Use one `agentCapability` entry per distinct ability. Descriptions should be
-concise and human-readable. External tools or services invoked to fulfill a
-capability are recorded separately using `agentExternalTool`.
+distinct task or goal.
 
 *Examples*
 
 ```text
-web-search
+web-search: search across web and retrieve information
 ```
 
 ```text
