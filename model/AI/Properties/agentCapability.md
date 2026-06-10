@@ -9,8 +9,7 @@ Describes a specific domain task or goal the agent is designed to perform.
 ## Description
 
 A free-form string that identifies a user-facing task ability of the AI agent:
-what it can accomplish for a system. Each value should capture one
-distinct task or goal. 
+what it can accomplish for a system.
 
 *Examples*
 
