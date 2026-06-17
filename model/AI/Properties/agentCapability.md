@@ -37,4 +37,4 @@ multi-agent-coordination: delegates sub-tasks to specialized agents and aggregat
 
 - name: agentCapability
 - Nature: ObjectProperty
-- Range: /Core/DictionaryEntry
+- Range: xsd:string

@@ -8,7 +8,7 @@ Specifies an AI agent and its associated metadata.
 
 ## Description
 
-An AI agent is a software entity that uses artificial intelligence techniques to perceive its environment, reason about its state, and take actions to achieve specified goals. It typically implements a perception-action cycle employing AI models, heuristics, or planning algorithms to guide autonomous or semi-autonomous behavior.
+An AI agent is a software entity that uses artificial intelligence techniques to perceive its environment, reason about its state, and take actions to achieve specified goals.
 
 The following relationship types are also used to describe an AI agent's functionalities and interactions:
 
@@ -30,7 +30,7 @@ The following relationship types are also used to describe an AI agent's functio
   - minCount: 0
   - maxCount: 1
 - agentCapability
-  - type: /Core/DictionaryEntry
+  - type: xsd:string
   - minCount: 0
 - agentExternalTool
   - type: /Core/DictionaryEntry
