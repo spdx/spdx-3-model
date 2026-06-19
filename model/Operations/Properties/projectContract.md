@@ -8,7 +8,7 @@ Link to the project contract.
 
 ## Description
 
-Link to the project contract.
+Link to the project contract. (Need examples)
 
 ## Metadata
 

@@ -30,6 +30,23 @@ Based on the Project Management Body of Knowledge (PMBOK), 3rd edition.
   - type: /Core/DateTime
   - minCount: 1
   - maxCount: 1
+- /Core/intendedUse
+  - type: xsd:string
+  - minCount: 0
+  - maxCount: 1
+- docUrl
+  - type: xsd:anyURI
+  - minCount: 0
+- homePageUrl
+  - type: xsd:anyURI
+  - minCount: 0
+  - maxCount: 1
+- projectIssueTrackerUrl
+  - type: xsd:anyURI
+  - minCount: 0
+- mediaChannel
+  - type: /Core/ExternalIdentifier
+  - minCount: 0
 - projectTitle
   - type: xsd:string
   - minCount: 1
