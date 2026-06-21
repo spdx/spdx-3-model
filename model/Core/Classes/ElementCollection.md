@@ -11,11 +11,15 @@ A collection of Elements, not necessarily with unifying context.
 An ElementCollection is a collection of Elements, not necessarily with unifying
 context.
 
-Note that all ElementCollections shall conform to the Core profile even if the
-Core profile is not specified in the profileConformance property.
+An ElementCollection shall conform to the Core profile, regardless of whether
+the Core profile is explicitly specified in the profileConformance property.
 
-If the profileConformance property is not provided, "core" is to be assumed as
-the default.
+If the profileConformance property is omitted, it shall be evaluated as a list
+containing the "core" profile identifier.
+
+The inclusion of a profile identifier within the profileConformance property
+shall constitute a declaration that all constituent elements conform to the
+restrictions specified by that profile.
 
 *Constraints*
 
