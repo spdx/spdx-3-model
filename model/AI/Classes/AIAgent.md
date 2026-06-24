@@ -48,9 +48,6 @@ The following relationship types are also used to describe an AI agent's functio
 - agentType
   - type: AgentType
   - minCount: 0
-- agentPermissionScope
-  - type: xsd:string
-  - minCount: 0
 - limitation
   - type: xsd:string
   - minCount: 0
