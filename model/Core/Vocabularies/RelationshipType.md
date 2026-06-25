@@ -69,7 +69,7 @@ name completes the sentence:
 - hasMetadata: Every `to` Element is metadata about the `from` Element (`from` hasMetadata `to`).
 - hasOptionalComponent: Every `to` Element is an optional component of the `from` Element (`from` hasOptionalComponent `to`).
 - hasOptionalDependency: The `from` Element optionally depends on each `to` Element, during a LifecycleScopeType period.
-- hasOutput: The `from` Build element generates each `to` Element as an output, during a LifecycleScopeType period.
+- hasOutput: The `from` Build, DefinedProcess or Action element generates each `to` Element as an output.
 - hasPersistentMemory: The `from` Element uses each `to` Element as a persistent or long-term memory store (e.g., a database, vector store, or file system).
 - hasPrerequisite: The `from` Element has a prerequisite on each `to` Element, during a LifecycleScopeType period.
 - hasProvidedDependency: The `from` Element has a dependency on each `to` Element, dependency is not in the distributed artifact, but assumed to be provided, during a LifecycleScopeType period.
