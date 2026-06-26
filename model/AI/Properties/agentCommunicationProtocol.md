@@ -13,7 +13,7 @@ Specifies the standardized communication protocol(s) that the AI agent
 implements, enabling consumers, integrators, and automated tooling to determine
 how the agent can be invoked, composed, or connected within a larger system.
 
-Each `agentCommunicationProtocol` entry references a `Specification` Element
+Each `agentCommunicationProtocol` entry references a `Specification`
 that describes the protocol. The `Specification`'s `name` identifies the
 protocol, its `externalIdentifier` (e.g., a `webpage` identifier) locates the
 protocol's authoritative definition or version.
