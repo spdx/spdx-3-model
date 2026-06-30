@@ -65,11 +65,11 @@ name completes the sentence:
 - hasEvidence: Every `to` Element is considered as evidence for the `from` Element (`from` hasEvidence `to`).
 - hasExample: Every `to` Element is an example for the `from` Element (`from` hasExample `to`).
 - hasHost: The `from` Build was run on the `to` Element during a LifecycleScopeType period (e.g. the host that the build runs on).
-- hasInput: The `from` Build, DefinedProcess or Action element has each `to` Element as an input.
+- hasInput: The `from` Action, AIPackage, Build or DefinedProcess element has each `to` Element as an input.
 - hasMetadata: Every `to` Element is metadata about the `from` Element (`from` hasMetadata `to`).
 - hasOptionalComponent: Every `to` Element is an optional component of the `from` Element (`from` hasOptionalComponent `to`).
 - hasOptionalDependency: The `from` Element optionally depends on each `to` Element, during a LifecycleScopeType period.
-- hasOutput: The `from` Build, DefinedProcess or Action element generates each `to` Element as an output.
+- hasOutput: The `from` Action, AIPackage, Build or DefinedProcess element generates each `to` Element as an output.
 - hasPrerequisite: The `from` Element has a prerequisite on each `to` Element, during a LifecycleScopeType period.
 - hasProvidedDependency: The `from` Element has a dependency on each `to` Element, dependency is not in the distributed artifact, but assumed to be provided, during a LifecycleScopeType period.
 - hasRequirement: The `from` Element has a requirement on each `to` Element, during a LifecycleScopeType period.
@@ -87,9 +87,9 @@ name completes the sentence:
 - other: Every `to` Element is related to the `from` Element where the relationship type is not described by any of the SPDX relationship types (this relationship is directionless).
 - packagedBy: Every `to` Element is a packaged instance of the `from` Element (`from` packagedBy `to`).
 - patchedBy: Every `to` Element is a patch for the `from` Element (`from` patchedBy `to`).
+- performedBy: Every `from` Action is performedBy `to` Agent.
 - pretrainedOn: The `from` Element has been pretrained on the `to` Element(s).
 - providesSupportFor: The `from` Agent provides support for each `to` Artifact. The use of the `providesSupportFor` type is constrained to `SupportRelationship` classed relationships.
-- performedBy: Every `from` Action is performedBy `to` Agent.
 - publishedBy: Designates a `from` Vulnerability was made available for public use or reference by each `to` Agent.
 - reportedBy: Designates a `from` Vulnerability was first reported to a project, vendor, or tracking database for formal identification by each `to` Agent.
 - republishedBy: Designates a `from` Vulnerability's details were tracked, aggregated, and/or enriched to improve context (i.e. NVD) by each `to` Agent.
@@ -97,7 +97,7 @@ name completes the sentence:
 - runsOn: The `from` Element (the instructions) of runs on each `to` Hardware (processing element), during a LifecycleScopeType period.
 - serializedInArtifact: The `from` SpdxDocument can be found in a serialized form in each `to` Artifact.
 - testedOn: The `from` Element has been tested on the `to` Element(s).
-- tracedToDetail: the `from` Requirement is refined and further elaborated by each `to` Requirement, which contains more detailed implementation information.
+- tracedToDetail: The `from` Requirement is refined and further elaborated by each `to` Requirement, which contains more detailed implementation information.
 - trainedOn: The `from` Element has been trained on the `to` Element(s).
 - underInvestigationFor: The `from` Vulnerability impact is being investigated for each `to` Element. The use of the `underInvestigationFor` type is constrained to `VexUnderInvestigationVulnAssessmentRelationship` classed relationships.
 - usesTool: The `from` Element uses each `to` Element as a tool, during a LifecycleScopeType period.
