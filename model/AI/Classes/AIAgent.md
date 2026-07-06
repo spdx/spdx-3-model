@@ -45,9 +45,6 @@ The following relationship types are also used to describe an AI agent's functio
   - type: AgentTrustLevel
   - minCount: 0
   - maxCount: 1
-- agentType
-  - type: AgentType
-  - minCount: 0
 - limitation
   - type: xsd:string
   - minCount: 0
