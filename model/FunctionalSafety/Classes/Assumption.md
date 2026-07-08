@@ -27,7 +27,7 @@ It ensures the item operates correctly within a system context.
   - type: xsd:string
   - minCount: 1
   - maxCount: 1
-- assumptionUUID
+- assumptionUID
   - type: /Core/ExternalIdentifier
   - minCount: 0
   - maxCount: 1

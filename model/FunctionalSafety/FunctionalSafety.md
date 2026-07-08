@@ -16,5 +16,5 @@ These artifacts include the outputs of the safety engineering phases regarding p
 
 ## Metadata
 
-- id: https://spdx.org/rdf/3.1/terms/FunctionalSafety
+- id: https://spdx.org/rdf/3/terms/FunctionalSafety
 - name: FunctionalSafety
