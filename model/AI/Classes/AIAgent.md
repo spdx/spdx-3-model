@@ -32,9 +32,6 @@ The following relationship types are also used to describe an AI agent's functio
 - agentCapability
   - type: xsd:string
   - minCount: 0
-- agentExternalTool
-  - type: /Core/DictionaryEntry
-  - minCount: 0
 - agentMemoryMode
   - type: AgentMemoryMode
   - minCount: 0
@@ -45,6 +42,9 @@ The following relationship types are also used to describe an AI agent's functio
   - type: AgentTrustLevel
   - minCount: 0
   - maxCount: 1
+- externalResources
+  - type: /Core/DictionaryEntry
+  - minCount: 0
 - limitation
   - type: xsd:string
   - minCount: 0
