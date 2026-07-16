@@ -28,6 +28,6 @@ pubmed-query: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/
 
 ## Metadata
 
-- name: externalResources
+- name: externalResource
 - Nature: ObjectProperty
 - Range: /Core/DictionaryEntry
