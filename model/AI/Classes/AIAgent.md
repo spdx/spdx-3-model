@@ -42,7 +42,7 @@ The following relationship types are also used to describe an AI agent's functio
   - type: AgentTrustLevel
   - minCount: 0
   - maxCount: 1
-- externalResources
+- externalResource
   - type: /Core/DictionaryEntry
   - minCount: 0
 - limitation
