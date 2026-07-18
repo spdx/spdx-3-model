@@ -15,8 +15,8 @@ SoftwareService represents a service based on software components offered for ac
 - provider
   - type: /Core/Agent
   - minCount: 1
-- serverAuthenticationProtocol
-  - type: AuthenticationProtocolType
+- serverKeyValidationProtocol
+  - type: KeyValidationProtocolType
   - minCount: 0
 - serviceHostingCountry
   - type: /Core/CountryCodeAlpha3
