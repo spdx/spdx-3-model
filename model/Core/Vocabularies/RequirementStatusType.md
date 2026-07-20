@@ -8,7 +8,7 @@ Provide an enumerated set of requirement statuses that can provide state to a re
 
 ## Description
 
-This enumeration summarizes common states that a requirement may pass through in it's lifecycle.  The same requirement wording may have different states depending on the context of the product it is being included in. 
+This enumeration summarizes common states that a requirement may pass through in it's lifecycle. The same requirement wording may have different states depending on the context of the product it is being included in.
 
 ## Metadata
 
