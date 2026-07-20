@@ -14,4 +14,4 @@ The status specifies the state of a requirement in its lifecycle.
 
 - name: requirementStatus
 - Nature: DataProperty
-- Range: requirementStatusType
+- Range: RequirementStatusType
