@@ -38,7 +38,7 @@ requirement statement itself.
   - type: ExternalIdentifier
   - minCount: 0
   - maxCount: 1
-- reqirementStatus
+- requirementStatus
   - type: RequirementStatusType
   - minCount: 0
   - maxCount: 1
