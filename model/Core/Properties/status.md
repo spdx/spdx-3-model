@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# status
+# requirementStatus
 
 ## Summary
 
@@ -12,6 +12,6 @@ The status specifies the state of a requirement in its lifecycle.
 
 ## Metadata
 
-- name: status
+- name: requirementStatus
 - Nature: DataProperty
 - Range: requirementStatusType
