@@ -40,5 +40,5 @@ requirement statement itself.
   - maxCount: 1
 - reqirementStatus
   - type: RequirementStatusType
-  - mincount: 0
-  - maxcount: 1
+  - minCount: 0
+  - maxCount: 1
