@@ -58,4 +58,4 @@ ExternalIdentifierType specifies the type of an external identifier.
 - swid: Concise Software Identification (CoSWID) tag, as defined in [RFC 9393](https://datatracker.ietf.org/doc/rfc9393/) Section 2.3.
 - urlScheme: [Uniform Resource Identifier (URI) Schemes](https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml). The scheme used in order to locate a resource.
 - verificationUID: The unique identifier used by a verification management system or any other lifecycle management tool to uniquely identify a verification item.
-- webpage: A Uniform Resource Locator (URL) that can be used to locate a resource, as defined in [RFC 9110](https://datatracker.ietf.org/doc/rfc9110/) Section 4.2.1 or Section 4.2.2, which may include an optional fragment identifier as specified in [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986) Section 3.5.
+- webpage: A Uniform Resource Locator (URL) that can be used to locate a resource, as defined in [RFC 9110](https://datatracker.ietf.org/doc/rfc9110/) Section 4.2.1 or Section 4.2.2. It may include an optional fragment identifier as specified in [RFC 3986](https://datatracker.ietf.org/doc/rfc3986) Section 3.5.
