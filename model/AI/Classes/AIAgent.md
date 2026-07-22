@@ -12,7 +12,6 @@ An AI agent is a software entity that uses artificial intelligence techniques to
 
 The following relationship types are also used to describe an AI agent's functionalities and interactions:
 
-- hasPersistentMemory: Describes a relationship from the AIAgent to an Element that serves as its persistent or long-term memory store (e.g., a database, vector store, or file system that retains information across sessions).
 - invokedBy: Describes a relationship from any Element back to the Agent that initiated its execution (e.g., a Package is invokedBy an AIAgent; an AIAgent is invokedBy a Person).
 - usesTool: Describes a relationship from the AIAgent to an Element that the agent uses as a tool to extend its capabilities.
 - usesModel: Describes a relationship from the AIAgent to an /AI/AIPackage that represents the underlying AI model the agent relies on (e.g., its model weights, training data, and safety assessments), enabling BOM consumers to trace from an agent to its associated model artifacts.
