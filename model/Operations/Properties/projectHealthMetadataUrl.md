@@ -8,8 +8,7 @@ Deeplink to a metadatabase that provide project health metadata.
 
 ## Description
 
-Deeplink to a metadatabase that provide project health metadata (e.g. openhub.net, oss-compass.org). 
-
+Deeplink to a metadatabase that provide project health metadata (e.g. openhub.net, oss-compass.org).
 
 ## Metadata
 
