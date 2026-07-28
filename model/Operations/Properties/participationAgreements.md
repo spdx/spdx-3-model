@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Agreements that control the participation in the project. 
+Agreements that control the participation in the project.
 
 ## Description
 
