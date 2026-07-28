@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Description of the technical scope of the contributions. 
+Description of the technical scope of the contributions.
 
 ## Description
 
-Description of the technical scope of the contributions. (used for risk assessment) 
+Description of the technical scope of the contributions. (used for risk assessment)
 
 ## Metadata
 
