@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Deeplink to a metadatabase that provide project health metadata. 
+Deeplink to a metadatabase that provide project health metadata.
 
 ## Description
 
