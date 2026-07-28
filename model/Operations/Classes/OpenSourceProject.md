@@ -8,7 +8,7 @@ Project in the Open Source Community that shares their workproducts for reuse un
 
 ## Description
 
-Project in the Open Source Community that shares their workproducts for reuse under an Open Source license. 
+Project in the Open Source Community that shares their workproducts for reuse under an Open Source license.
 
 ## Metadata
 
