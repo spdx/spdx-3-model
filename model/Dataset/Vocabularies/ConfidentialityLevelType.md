@@ -26,7 +26,7 @@ Within the context of this classification:
 ## Entries
 
 - red: Personal for named recipients only. The dataset is highly confidential and shall be shared only with named recipients.
-- amber: Limited distribution - organization and clients. The dataset shall be shared only with specific organizations and their clients on a need-to-know basis.
 - amberStrict: Limited distribution - organization only. The dataset shall be shared only with specific organizations on a need-to-know basis.
+- amber: Limited distribution - organization and clients. The dataset shall be shared only with specific organizations and their clients on a need-to-know basis.
 - green: Community wide. The dataset shall be shared only within a community of peers and partners.
 - clear: Unlimited. Subject to standard copyright rules, the dataset may be shared freely, without restriction.
