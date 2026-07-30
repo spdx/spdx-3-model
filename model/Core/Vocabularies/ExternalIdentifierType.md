@@ -49,7 +49,7 @@ ExternalIdentifierType specifies the type of an external identifier.
 - nli: [Natural Location Identifier (NLI)](https://eccma.org/enli-eccma-natural-location-identifier/) is a 14- or 15-character alphanumeric string standardized by [ISO 8000-118](https://www.iso.org/standard/85428.html) that uniquely identifies a three-dimensional geographic point location. The identifier is generated from geodetic coordinates and elevation data. For electronic storage, the `ISO.NLI:` prefix shall be retained (e.g., `ISO.NLI:41TS8M-A8ELTQ-H2`).
 - orcidid: [Open Researcher and Contributor ID (ORCID) iD](https://info.orcid.org/what-is-orcid/) is a unique identifier for authors and contributors in scholarly communication; as a subset of the International Standard Name Identifier (ISNI), it typically appears as a URI such as `https://orcid.org/0000-0002-1825-0097`.
 - other: Used when the type does not match any of the other options.
-- packageUrl: Package-URL, as defined in the corresponding [Annex](../../../annexes/pkg-url-specification.md) of this document.
+- packageUrl: Package-URL (PURL), as defined in [ECMA-427](https://ecma-international.org/publications-and-standards/standards/ecma-427/).
 - phoneNumber: Phone number; A string of decimal digits that uniquely indicates the network termination point defined in [RFC 3966](https://datatracker.ietf.org/doc/rfc3966/) Section 5.
 - requirementUID: The unique identifier used by a requirements management or any other lifecycle management tool to uniquely identify a requirement item.
 - rorid: [Research Organization Registry (ROR) identifier](https://ror.org/about/) is a unique identifier for research and funding organization, typically expressed in its preferred URI form such as `https://ror.org/02mhbdp94`.
@@ -58,4 +58,4 @@ ExternalIdentifierType specifies the type of an external identifier.
 - swid: Concise Software Identification (CoSWID) tag, as defined in [RFC 9393](https://datatracker.ietf.org/doc/rfc9393/) Section 2.3.
 - urlScheme: [Uniform Resource Identifier (URI) Schemes](https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml). The scheme used in order to locate a resource.
 - verificationUID: The unique identifier used by a verification management system or any other lifecycle management tool to uniquely identify a verification item.
-- webpage: Absolute URL that can be used to locate a resource, as defined in [RFC 7230](https://datatracker.ietf.org/doc/rfc7230/) Section 2.7.1 or Section 2.7.2.
+- webpage: A Uniform Resource Locator (URL) that can be used to locate a resource, as defined in [RFC 9110](https://datatracker.ietf.org/doc/rfc9110/) Section 4.2.1 or Section 4.2.2. It may include an optional fragment identifier as specified in [RFC 3986](https://datatracker.ietf.org/doc/rfc3986) Section 3.5.

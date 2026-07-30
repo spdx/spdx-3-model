@@ -4,11 +4,13 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-The element that has it's responsibility changed.
+The element that has its responsibility changed.
 
 ## Description
 
-The element that has it's responsibility changed. For example: "This product is associated with the change of ownership."
+The element that has its responsibility changed.
+
+For example, "This product is associated with the change of ownership."
 
 ## Metadata
 

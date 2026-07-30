@@ -4,11 +4,14 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-The location for picking up a package or item.
+A location where a package or an item will be picked up.
 
 ## Description
 
-This is the designated location for pickup of an item.
+A designated location for picking up a package or an item.
+
+For a location where an item was picked up,
+see `pickupLocation`.
 
 ## Metadata
 

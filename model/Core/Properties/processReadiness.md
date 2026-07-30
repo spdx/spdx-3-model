@@ -4,11 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-processReadiness describes the readiness of a process.
+The readiness of a process.
 
 ## Description
 
-Draft, active, obsolete or other are used to define the readiness of a proceedure.
+The readiness of a process, expressed using the ProcessReadinessType
+enumeration.
 
 ## Metadata
 

@@ -18,7 +18,7 @@ A TransportProcess is a process that will result in a change in location of a pr
 
 ## Properties
 
-- plannedTransportRoutes
+- plannedTransportRoute
   - type: xsd:string
   - minCount: 0
 - forPickupLocation
