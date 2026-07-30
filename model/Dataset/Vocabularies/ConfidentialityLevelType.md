@@ -9,7 +9,7 @@ Confidentiality level.
 ## Description
 
 Describes the different confidentiality levels as defined by the
-[Traffic Light Protocol](https://en.wikipedia.org/wiki/Traffic_Light_Protocol).
+[Traffic Light Protocol](https://www.first.org/tlp/).
 
 Within the context of this classification:
 
