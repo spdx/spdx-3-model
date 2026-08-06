@@ -37,3 +37,15 @@ a unique version string if the version field is not used.
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
+
+## SPARQL 
+
+- name_when_version
+  - message: A value for Core/name is required when a value for Core/version is present
+  - query: <<<
+        SELECT $this WHERE {
+            $this <Software/version> ?version .
+            FILTER NOT EXISTS {
+                $this <Software/name> ?name .
+            }
+        }
