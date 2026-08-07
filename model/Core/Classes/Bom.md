@@ -38,7 +38,7 @@ a unique version string if the version field is not used.
   - minCount: 0
   - maxCount: 1
 
-## SPARQL 
+## SPARQL
 
 - name_when_version
   - message: A value for Core/name is required when a value for Core/version is present
