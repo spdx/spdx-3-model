@@ -4,11 +4,13 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-The Agent who is responsible for product branding such as an OEM.
+An Agent responsible for product identification,
+such as an original equipment manufacturer (OEM).
 
 ## Description
 
-The Agent is responsible for defining the partNumber, batchNumber or serialNumber of the unit of hardware.
+An Agent responsible for defining the partNumber, batchNumber
+or serialNumber of the unit of hardware.
 
 ## Metadata
 

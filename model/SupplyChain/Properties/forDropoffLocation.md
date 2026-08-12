@@ -4,11 +4,14 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-The location that an item will be dropping off or delivered.
+A location where a package or an item will be dropped off or delivered.
 
 ## Description
 
-This is a specific location designated for dropping off or delivering an item.
+A designated location for dropping off or delivering a package or an item.
+
+For a location where an item was dropped off,
+see `dropoffLocation`.
 
 ## Metadata
 

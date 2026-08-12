@@ -21,7 +21,7 @@ image data could also be considered categorical.
 
 - audio: Data is audio based, such as a collection of music from the 80s.
 - categorical: Data that is classified into a discrete number of categories, such as the eye color of a population of people.
-- graph: Data is in the form of a graph where entries are somehow related to each other through edges, such a social network of friends.
+- graph: Data is in the form of a graph where entries are somehow related to each other through edges, such as a social network of friends.
 - image: Data is a collection of images such as pictures of animals.
 - noAssertion: Data type is not known.
 - numeric: Data consists only of numeric entries.
@@ -32,4 +32,4 @@ image data could also be considered categorical.
 - text: Data consists of unstructured text, such as a book, a Wikipedia article (without images), or a transcript.
 - timeseries: Data is recorded in an ordered sequence of timestamped entries, such as the price of a stock over the course of a day.
 - timestamp: Data is recorded with a timestamp for each entry, but not necessarily ordered or at specific intervals, such as when a taxi ride starts and ends.
-- video: Data is video based, such as a collection of movie clips featuring Tom Hanks.
+- video: Data is video based, such as a collection of movie clips.

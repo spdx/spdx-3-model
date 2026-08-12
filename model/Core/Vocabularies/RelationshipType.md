@@ -36,7 +36,7 @@ name completes the sentence:
 - coordinatedBy: The `from` /Security/Vulnerability is coordinatedBy the `to` Agent(s) (vendor, researcher, or consumer agent).
 - copiedTo: The `from` Element has been copied to each `to` Element.
 - createdBy: The `from` Action or DefinedProcess is createdBy `to` Agent(s).
-- delegatedTo: The `from` Agent is delegating an action to the Agent of the `to` Relationship (which shall be of type invokedBy), during a LifecycleScopeType (e.g. the `to` invokedBy Relationship is being done on behalf of `from`).
+- delegatedTo: The `from` Agent is delegating an action to the Agent of the `to` Relationship (which shall be of type invokedBy), during a LifecycleScopeType period (e.g. the `to` invokedBy Relationship is being done on behalf of `from`).
 - dependsOn: The `from` Element depends on each `to` Element, during a LifecycleScopeType period.
 - descendantOf: The `from` Element is a descendant of each `to` Element.
 - describes: The `from` Element describes each `to` Element. To denote the root(s) of a tree of elements in a collection, the rootElement property shall be used.
@@ -73,7 +73,7 @@ name completes the sentence:
 - hasPrerequisite: The `from` Element has a prerequisite on each `to` Element, during a LifecycleScopeType period.
 - hasProvidedDependency: The `from` Element has a dependency on each `to` Element, dependency is not in the distributed artifact, but assumed to be provided, during a LifecycleScopeType period.
 - hasRequirement: The `from` Element has a requirement on each `to` Element, during a LifecycleScopeType period.
-- hasResolution: The `from` /SupplyChain/ResolutionAction point to the `to` /SupplyChain/OutOfSpecAction that is addressed.
+- hasResolution: The `from` /SupplyChain/ResolutionAction points to the `to` /SupplyChain/OutOfSpecAction that is addressed.
 - hasRoleIn: The `from` Element has a role in the `to` Element. The use of the hasRoleIn is constrained to `RoleRelationship` classed relationships.
 - hasSpecification: Every `to` Element is a specification for the `from` Element (`from` hasSpecification `to`), during a LifecycleScopeType period.
 - hasStaticLink: The `from` Element statically links in each `to` Element, during a LifecycleScopeType period.
@@ -87,14 +87,14 @@ name completes the sentence:
 - other: Every `to` Element is related to the `from` Element where the relationship type is not described by any of the SPDX relationship types (this relationship is directionless).
 - packagedBy: Every `to` Element is a packaged instance of the `from` Element (`from` packagedBy `to`).
 - patchedBy: Every `to` Element is a patch for the `from` Element (`from` patchedBy `to`).
+- performedBy: Every `from` Action is performedBy `to` Agent.
 - pretrainedOn: The `from` Element has been pretrained on the `to` Element(s).
 - providesSupportFor: The `from` Agent provides support for each `to` Artifact. The use of the `providesSupportFor` type is constrained to `SupportRelationship` classed relationships.
-- performedBy: Every `from` Action is performedBy `to` Agent.
 - publishedBy: Designates a `from` /Security/Vulnerability was made available for public use or reference by each `to` Agent.
 - reportedBy: Designates a `from` /Security/Vulnerability was first reported to a project, vendor, or tracking database for formal identification by each `to` Agent.
 - republishedBy: Designates a `from` /Security/Vulnerability's details were tracked, aggregated, and/or enriched to improve context (i.e. NVD) by each `to` Agent.
 - resolved: The `to` /SupplyChain/OutOfSpecAction is resolved in the `from` /SupplyChain/ResolutionAction.
-- runsOn: The `from` Element (the instructions) of runs on each `to` /Hardware/Hardware (processing element), during a LifecycleScopeType period.
+- runsOn: The `from` Element (the instructions) runs on each `to` /Hardware/Hardware (processing element), during a LifecycleScopeType period.
 - serializedInArtifact: The `from` SpdxDocument can be found in a serialized form in each `to` Artifact.
 - testedOn: The `from` Element has been tested on the `to` Element(s).
 - tracedToDetail: The `from` Requirement is refined and further elaborated by each `to` Requirement, which contains more detailed implementation information.
