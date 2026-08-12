@@ -165,12 +165,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A license or addition that is not listed on the SPDX License List.
+A license or a license addition that is not listed on the SPDX License List.
 
 ## Description
 
-A SimpleLicensingText represents a License or Addition that is not listed on
-the [SPDX License List](https://spdx.org/licenses),
+A SimpleLicensingText represents a license or a license addition
+that is not listed on the [SPDX License List](https://spdx.org/licenses),
 and is therefore defined by an SPDX data creator.
 
 ## Metadata
@@ -191,16 +191,16 @@ will give this RDF graph
 (in [Turtle syntax](https://en.wikipedia.org/wiki/Turtle_(syntax))):
 
 ```ttl
-<https://spdx.org/rdf/3.1/terms/SimpleLicensing/SimpleLicensingText> a owl:Class,
+<https://spdx.org/rdf/3/terms/SimpleLicensing/SimpleLicensingText> a owl:Class,
         sh:NodeShape ;
-    rdfs:comment "A license or addition that is not listed on the SPDX License List."@en ;
-    rdfs:subClassOf <https://spdx.org/rdf/3.1/terms/Core/Element> ;
+    rdfs:comment "A license or a license addition that is not listed on the SPDX License List."@en ;
+    rdfs:subClassOf <https://spdx.org/rdf/3/terms/Core/Element> ;
     sh:nodeKind sh:IRI ;
     sh:property [ sh:datatype xsd:string ;
             sh:maxCount 1 ;
             sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:path <https://spdx.org/rdf/3.1/terms/SimpleLicensing/licenseText> ] .
+            sh:path <https://spdx.org/rdf/3/terms/SimpleLicensing/licenseText> ] .
 ```
 
 ## Syntax
@@ -310,7 +310,7 @@ A DateTime is a string representation of a specific date and time.
 
 ## Format
 
-- pattern: ^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$
+- pattern: ^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]|23:59:60)Z$
 ```
 
 ### Individuals

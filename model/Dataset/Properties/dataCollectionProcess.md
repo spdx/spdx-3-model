@@ -10,7 +10,7 @@ How the data was collected.
 
 A free-form text that describes how data was collected.
 
-Examples include the sources from which data was scrapped and
+Examples include the sources from which a dataset was scraped and
 the interview protocol that was used for data collection.
 
 ## Metadata

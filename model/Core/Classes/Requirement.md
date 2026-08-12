@@ -34,7 +34,11 @@ requirement statement itself.
   - type: xsd:string
   - minCount: 1
   - maxCount: 1
-- requirementUUID
+- requirementUID
   - type: ExternalIdentifier
+  - minCount: 0
+  - maxCount: 1
+- requirementStatus
+  - type: RequirementStatusType
   - minCount: 0
   - maxCount: 1

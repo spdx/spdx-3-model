@@ -1,17 +1,17 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# Version
+# VersionNumber
 
 ## Summary
 
-A string following the SemVer 2.0.0 specification with the exceptions of the patch version being optional and extensions are not supported.
+A version number following the SemVer 2.0.0 specification with the exceptions of the patch version being optional and extensions are not supported.
 
 ## Description
 
-A version is a string of decimal numbers and dots assigned to a specific state
+A version number is a string of decimal numbers and dots assigned to a specific state
 of software, a specification, a document, or an artifact.
 
-The SPDX Version type follows [Semantic Versioning 2.0.0](https://semver.org/)
+The SPDX VersionNumber type follows [Semantic Versioning 2.0.0](https://semver.org/)
 but differs in that the patch version is optional and
 extensions are not supported.
 
@@ -21,7 +21,7 @@ Note that this Datatype was named "SemVer" prior to the SPDX specification relea
 
 ## Metadata
 
-- name: Version
+- name: VersionNumber
 - SubclassOf: xsd:string
 
 ## Format

@@ -29,7 +29,7 @@ etc.
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
-- verificationUUID
+- verificationUID
   - type: /Core/ExternalIdentifier
   - minCount: 0
   - maxCount: 1

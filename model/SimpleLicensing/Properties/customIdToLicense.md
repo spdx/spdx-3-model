@@ -19,7 +19,7 @@ dictates any reference starting with a
 the official [SPDX License List](https://spdx.org/licenses/).
 
 The key for the ElementMap is the string used in the license expression
-and the elementValue is target Element, which must be a CustomLicense,
+and the elementValue is the target Element, which must be a CustomLicense,
 CustomLicenseAddition, or SimpleLicensingText.
 
 The key for the ElementMap shall be matched against the license expression

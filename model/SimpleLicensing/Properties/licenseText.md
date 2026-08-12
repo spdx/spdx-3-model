@@ -4,14 +4,14 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Identifies the full text of a License or Addition.
+The full plain text of a license or a license addition.
 
 ## Description
 
-A licenseText contains the plain text of the License or Addition,
+The full plain text of a license or a license addition,
 without templating or other similar markup.
 
-Users of the licenseText for a License can apply the
+Users of the licenseText for a license can apply the
 [SPDX License List Matching Guidelines](../../../annexes/license-matching-guidelines-and-templates.md)
 when comparing it to another text for matching purposes.
 

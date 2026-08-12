@@ -4,7 +4,8 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-UnitofMeasure specify information structures through industry standards for Units of Measure, Quantity Kinds, Dimensions and Data Types.
+UnitOfMeasure specify information structures through industry standards for
+Units of Measure, Quantity Kinds, Dimensions and Data Types.
 
 ## Description
 

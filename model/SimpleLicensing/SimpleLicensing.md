@@ -23,5 +23,5 @@ license expressions.
 
 ## Metadata
 
-- id: https://spdx.org/rdf/3.1/terms/SimpleLicensing
+- id: https://spdx.org/rdf/3/terms/SimpleLicensing
 - name: SimpleLicensing

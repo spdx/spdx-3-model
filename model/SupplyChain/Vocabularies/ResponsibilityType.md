@@ -4,11 +4,13 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-These categories help define sets Responsibility Type.
+Specifies the type of responsibility held over an asset, property, or entity.
 
 ## Description
 
-These categories help define sets Responsibility Type.
+ResponsibilityType categorizes the kind of authority or obligation that a
+party has over an asset, property, or legal entity in a supply chain
+context.
 
 ## Metadata
 
