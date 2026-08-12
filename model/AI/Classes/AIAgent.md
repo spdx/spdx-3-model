@@ -24,10 +24,6 @@ The following relationship types are also used to describe an AI agent's functio
 
 ## Properties
 
-- /Core/isoAutomationLevel
-  - type: /Core/IsoAutomationLevel
-  - minCount: 0
-  - maxCount: 1
 - agentCapability
   - type: xsd:string
   - minCount: 0
