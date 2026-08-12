@@ -14,9 +14,6 @@ Any additional providers can use a relationship of relationship type availableFr
 
 ## Properties
 
-- provider
-  - type: /Core/Agent
-  - minCount: 1
 - serverKeyValidationProtocol
   - type: KeyValidationProtocolType
   - minCount: 0
