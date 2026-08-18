@@ -8,7 +8,7 @@ A string constrained to the ISO 3166-1 alpha-3 three-letter uppercase format.
 
 ## Description
 
-The value shall be an uppercase three-letter country code assigned by [ISO 3166-1 alpha-3](https://www.iso.org/obp/ui/#iso:std:iso:3166:-1) at the time the SPDX element is created.
+The value shall be an uppercase three-letter country code assigned by [ISO 3166-1 alpha-3](https://www.iso.org/obp/ui/#iso:std:iso:3166:-1) at the time the SPDX element containing this data type is created.
 
 The pattern constraint validates only the lexical form; it does not establish that the value is an assigned ISO 3166-1 alpha-3 code. Implementations should validate values against the applicable ISO code list.
 
