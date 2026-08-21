@@ -10,7 +10,7 @@ Provides functional safety context for an existing lifecycle-scoped relationship
 
 SafetyContextRelationship provides functional safety context for a relationship
 between SPDX elements. It enables an existing relationship, such as a dependency
-or requirement relationship, to carry a safety integrity level without adding a
+or requirement relationship, to carry a safety integrity level leveraging the existing
 new relationship type for each safety-related use case.
 
 SafetyContextRelationship inherits lifecycle scope from
