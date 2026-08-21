@@ -18,7 +18,7 @@ includes labels used by ISO 26262 ASIL, IEC 61508 SIL, and aviation DAL.
 
 ## Entries
 
-- qm: Quality management level under ISO 26262.
+- qm: Quality management level.
 - asilA: Automotive Safety Integrity Level A under ISO 26262.
 - asilB: Automotive Safety Integrity Level B under ISO 26262.
 - asilC: Automotive Safety Integrity Level C under ISO 26262.
