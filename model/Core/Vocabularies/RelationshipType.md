@@ -81,6 +81,7 @@ name completes the sentence:
 - hasTestCase: Every `to` Element is a test case for the `from` Element (`from` hasTestCase `to`).
 - hasVariant: Every `to` Element is a variant the `from` Element (`from` hasVariant `to`).
 - implementedBy: The `from` Requirement is implemented in the `to` Element(s).
+- investigatedBy: The `from` Element is investigated by each `to` Element, such as a /FunctionalSafety/ChangeImpactAnalysis, Action, DefinedProcess, or Agent.
 - invokedBy: The `from` Element was invoked by the `to` Agent, during a LifecycleScopeType period (for example, a /Build/Build element that describes a build step).
 - locatedAt: `from` Element located at a specific `to` Location. A time period is optional.
 - modifiedBy: The `from` Element is modified by each `to` Element.
