@@ -17,8 +17,9 @@ provenance details of the product and/or
 its composition, licensing information, known quality or security issues, etc.
 
 The `version` property is an optional human readable hint for different versions of a BOM
-representing the same basic `Bundle` of elements provided by the same BOM
-`creationInfo` `createdBy` `Agent` with a BOM of the same `name`.
+representing the same basic `Bundle` of elements
+provided by the same creator (same `Agent` in BOM's `creationInfo.createdBy`)
+with a BOM of the same `name`.
 To accurately represent changes or updates to a BOM, a `Relationship`
 should be created from the updated BOM to the original BOM with the `amendedBy`
 relationship type.
