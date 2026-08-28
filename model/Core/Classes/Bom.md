@@ -20,9 +20,11 @@ The `version` property is an optional human readable hint for different versions
 representing the same basic `Bundle` of elements
 provided by the same creator (same `Agent` in BOM's `creationInfo.createdBy`)
 with a BOM of the same `name`.
+
 To accurately represent changes or updates to a BOM, a `Relationship`
 should be created from the updated BOM to the original BOM with the `amendedBy`
 relationship type.
+
 Since the `spdxId` must be unique for each version of a given BOM, it can be considered
 a unique version string if the version field is not used.
 
