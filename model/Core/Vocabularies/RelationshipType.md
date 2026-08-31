@@ -9,15 +9,10 @@ Information about the relationship between two Elements.
 ## Description
 
 Provides information about the relationship between two Elements.
+
 For example, you can represent a relationship between two different Files,
 between a Package and a File, between two Packages, or between one SpdxDocument
 and another SpdxDocument.
-
-Relationship names should be descriptive enough to easily deduce the correct direction
-from their name. The best way to do this is to make sure that the relationship
-name completes the sentence:
-
-`from` (is) (a) `RELATIONSHIP` `to`
 
 ## Metadata
 
