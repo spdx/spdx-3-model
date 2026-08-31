@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Identifies the nature of the contactPointRelationship.
+Identifies the nature of the `ContactPointRelationship`.
 
 ## Description
 
@@ -14,4 +14,4 @@ Identifies the role of the Artifact to the contact point.
 
 - name: contactType
 - Nature: ObjectProperty
-- Range: ContactPointRelationshipType
+- Range: ContactType
