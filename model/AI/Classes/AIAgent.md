@@ -27,11 +27,11 @@ The following relationship types are also used to describe an AI agent's functio
 - agentCapability
   - type: xsd:string
   - minCount: 0
-- agentMemoryMode
-  - type: AgentMemoryMode
-  - minCount: 0
 - agentCommunicationProtocol
   - type: /Core/Specification
+  - minCount: 0
+- agentMemoryMode
+  - type: AgentMemoryMode
   - minCount: 0
 - agentTrustLevel
   - type: AgentTrustLevel
