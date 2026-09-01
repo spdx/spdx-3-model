@@ -8,7 +8,7 @@ Specifies an AI agent and its associated metadata.
 
 ## Description
 
-An AI agent is a software entity that uses artificial intelligence techniques to perceive its environment, reason about its state, and take actions to achieve specified goals.
+An AI agent is a software entity that uses artificial intelligence techniques to perceive its environment, reason about its state, use available tools, and take actions to achieve specified goals.
 
 The following relationship types are also used to describe an AI agent's functionalities and interactions:
 
