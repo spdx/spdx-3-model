@@ -24,6 +24,12 @@ The following relationship types are also used to describe an AI agent's functio
 
 ## Properties
 
+- /Software/inputModality
+  - type: /Core/Modality
+  - minCount: 0
+- /Software/outputModality
+  - type: /Core/Modality
+  - minCount: 0
 - agentCapability
   - type: xsd:string
   - minCount: 0
@@ -44,12 +50,6 @@ The following relationship types are also used to describe an AI agent's functio
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
-- /Software/inputModality
-  - type: /Core/Modality
-  - minCount: 0
-- /Software/outputModality
-  - type: /Core/Modality
-  - minCount: 0
 - safetyRiskAssessment
   - type: SafetyRiskAssessmentType
   - minCount: 0
