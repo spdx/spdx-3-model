@@ -22,8 +22,8 @@ can point to a CVE, FAA report, CAPA record, QMS record, Jira issue,
 ServiceNow ticket, or other externally managed record without duplicating that
 system's contents in SPDX.
 
-A ChangeTrigger can be linked to the resulting ChangeImpactAnalysis using a
-/Core/Relationship with relationshipType investigatedBy.
+A ChangeImpactAnalysis can be linked to the ChangeTrigger that caused it using
+a /Core/Relationship with relationshipType causedBy.
 
 ## Metadata
 

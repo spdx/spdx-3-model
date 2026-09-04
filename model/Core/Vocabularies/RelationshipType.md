@@ -30,6 +30,7 @@ name completes the sentence:
 - ancestorOf: The `from` Element is an ancestor of each `to` Element.
 - assumes: The `from` Element assumes each `to` /FunctionalSafety/Assumption.
 - availableFrom: The `from` Element is available from the additional supplier described by each `to` Element.
+- causedBy: The `from` Element exists or occurred because of each `to` Element. For example, a /FunctionalSafety/ChangeImpactAnalysis can be caused by a /FunctionalSafety/ChangeTrigger.
 - configures: The `from` Element is a configuration applied to each `to` Element, during a LifecycleScopeType period.
 - conformsTo: The `from` Element conforms to each `to` /FunctionalSafety/Assumption or Specification.
 - contains: The `from` Element contains each `to` Element.
@@ -81,7 +82,6 @@ name completes the sentence:
 - hasTestCase: Every `to` Element is a test case for the `from` Element (`from` hasTestCase `to`).
 - hasVariant: Every `to` Element is a variant the `from` Element (`from` hasVariant `to`).
 - implementedBy: The `from` Requirement is implemented in the `to` Element(s).
-- investigatedBy: The `from` Element is investigated by each `to` Element, such as a /FunctionalSafety/ChangeImpactAnalysis, Action, DefinedProcess, or Agent.
 - invokedBy: The `from` Element was invoked by the `to` Agent, during a LifecycleScopeType period (for example, a /Build/Build element that describes a build step).
 - locatedAt: `from` Element located at a specific `to` Location. A time period is optional.
 - modifiedBy: The `from` Element is modified by each `to` Element.
