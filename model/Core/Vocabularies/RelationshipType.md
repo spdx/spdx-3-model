@@ -30,7 +30,6 @@ name completes the sentence:
 - ancestorOf: The `from` Element is an ancestor of each `to` Element.
 - assumes: The `from` Element assumes each `to` /FunctionalSafety/Assumption.
 - availableFrom: The `from` Element is available from the additional supplier described by each `to` Element.
-- causedBy: The `from` Element exists or occurred because of each `to` Element. For example, a /FunctionalSafety/ChangeImpactAnalysis can be caused by a /FunctionalSafety/ChangeTrigger.
 - configures: The `from` Element is a configuration applied to each `to` Element, during a LifecycleScopeType period.
 - conformsTo: The `from` Element conforms to each `to` /FunctionalSafety/Assumption or Specification.
 - contains: The `from` Element contains each `to` Element.

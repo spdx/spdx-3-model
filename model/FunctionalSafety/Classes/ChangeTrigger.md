@@ -10,7 +10,7 @@ analysis.
 ## Description
 
 ChangeTrigger represents the information, event, report, or external record
-that causes a functional safety change impact analysis to be performed.
+that initiates a functional safety change impact analysis.
 
 A ChangeTrigger can represent a vulnerability, field incident, lab finding,
 customer report, regulatory event, configuration change, environmental change,
@@ -22,8 +22,9 @@ can point to a CVE, FAA report, CAPA record, QMS record, Jira issue,
 ServiceNow ticket, or other externally managed record without duplicating that
 system's contents in SPDX.
 
-A ChangeImpactAnalysis can be linked to the ChangeTrigger that caused it using
-a /Core/Relationship with relationshipType causedBy.
+A ChangeImpactAnalysis can be linked to the ChangeTrigger using a
+/Core/Relationship. The relationship type for connecting a trigger and its
+analysis is intentionally left to the relationship vocabulary discussion.
 
 ## Metadata
 

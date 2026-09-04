@@ -28,9 +28,9 @@ lab findings, customer reports, regulatory events, configuration changes,
 environmental changes, or business decisions.
 
 The ChangeImpactAnalysis can be connected to the ChangeTrigger using a Core
-Relationship with relationshipType causedBy. This expresses that the change
-impact analysis exists because of that trigger without putting the trigger
-directly on RequirementVerification.
+Relationship. The specific relationshipType for connecting the trigger and
+analysis should be selected through the Core relationship vocabulary discussion
+rather than fixed by RequirementVerification.
 
 ChangeImpactAnalysis documents the analysis of the trigger against the safety
 lifecycle. It can reference the process used for the impact analysis, communicate
@@ -44,15 +44,16 @@ A RequirementVerification with verificationMethod set to assessment can
 describe how an affected requirement is reassessed or reverified after the
 ChangeImpactAnalysis identifies that verification is needed.
 
-When a verification or assessment has been completed, the resulting
-EvaluationResult records the outcome using EvaluationResultType values. An
-inconclusive result should be used when the evaluation was performed but cannot
-be clearly classified as pass or fail. Evidence can be linked using
-EvidenceRelationship. A Core Bundle can carry the change impact
-delta, such as the ChangeTrigger, ChangeImpactAnalysis, old requirement, revised
-requirement, relationship between them, affected validation or test elements,
-verification, result, and evidence. Elements that have not changed can be
-referenced from the prior model rather than retransmitted.
+The impactAnalysisStatus value can communicate that the analysis is pending
+before the engineering conclusion is ready. When a verification or assessment
+has been completed, the resulting EvaluationResult records the outcome using
+EvaluationResultType values. An inconclusive result should be used when the
+evaluation was performed but cannot be clearly classified as pass or fail.
+Evidence can be linked using EvidenceRelationship. A Core Bundle can carry the
+change impact delta, such as the ChangeTrigger, ChangeImpactAnalysis, old
+requirement, revised requirement, relationship between them, affected validation
+or test elements, verification, result, and evidence. Elements that have not
+changed can be referenced from the prior model rather than retransmitted.
 
 For CVE-driven change analysis, the Security profile should continue to represent
 vulnerability and VEX status. FunctionalSafety adds the safety context and
