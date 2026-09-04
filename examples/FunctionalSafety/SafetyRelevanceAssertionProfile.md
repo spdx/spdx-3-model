@@ -9,20 +9,21 @@ Each example uses the same graph shape:
 
 - a Core Bundle carries the delta or change record;
 - ChangeTrigger records the source, reason, event, report, or external record
-  that caused the safety-relevant review;
-- a Core Relationship with relationshipType causedBy links the
-  ChangeImpactAnalysis to the ChangeTrigger;
+  that initiates the safety-relevant review;
+- a Core Relationship links the ChangeImpactAnalysis to the ChangeTrigger. The
+  examples use relationshipType other as a placeholder until the trigger-analysis
+  relationship term is finalized;
 - ChangeImpactAnalysis records the impact-analysis status, impact level,
   approval, and the SPDX elements that are impacted, added, or removed from the
   analyzed safety context;
 - RequirementVerification, EvaluationResult, and EvidenceRelationship are reused
   when downstream verification, result, and evidence need to be communicated.
 
-When the work is still being prepared or reviewed, use impactAnalysisStatus on
-ChangeImpactAnalysis. Do not use EvaluationResult with an inconclusive value to
-mean "not started". Use an inconclusive EvaluationResult only when an evaluation
-was performed but cannot be clearly classified as pass or fail, and include a
-comment or rationale.
+When the work is still waiting on evidence, a decision, or a test rerun, use
+impactAnalysisStatus with a pending value on ChangeImpactAnalysis. Do not use
+EvaluationResult with an inconclusive value to mean "not started". Use an
+inconclusive EvaluationResult only when an evaluation was performed but cannot
+be clearly classified as pass or fail, and include a comment or rationale.
 
 SPDX elements are not edited in place. If a requirement, validation, test,
 design artifact, or other work product changes, create a new SPDX element and
@@ -50,7 +51,7 @@ analysis, requirement revision, verification result, and evidence.
     "rootElement": ["urn:spdx.dev:srap-ex1-change-impact-analysis"],
     "element": [
       "urn:spdx.dev:srap-ex1-change-trigger",
-      "urn:spdx.dev:srap-ex1-caused-by",
+      "urn:spdx.dev:srap-ex1-trigger-analysis-link",
       "urn:spdx.dev:srap-ex1-change-impact-analysis",
       "urn:spdx.dev:req-brake-response-40ms",
       "urn:spdx.dev:req-brake-response-30ms",
@@ -76,8 +77,8 @@ analysis, requirement revision, verification result, and evidence.
   },
   {
     "type": "Relationship",
-    "spdxId": "urn:spdx.dev:srap-ex1-caused-by",
-    "relationshipType": "causedBy",
+    "spdxId": "urn:spdx.dev:srap-ex1-trigger-analysis-link",
+    "relationshipType": "other",
     "from": "urn:spdx.dev:srap-ex1-change-impact-analysis",
     "to": ["urn:spdx.dev:srap-ex1-change-trigger"]
   },
@@ -165,7 +166,7 @@ be evaluated for safety relevance without duplicating the Security/VEX layer.
       "urn:spdx.dev:vex-under-investigation-cve-2024-9999",
       "urn:spdx.dev:safety-context-openssl-sr12",
       "urn:spdx.dev:srap-ex2-change-trigger",
-      "urn:spdx.dev:srap-ex2-caused-by",
+      "urn:spdx.dev:srap-ex2-trigger-analysis-link",
       "urn:spdx.dev:srap-ex2-change-impact-analysis",
       "urn:spdx.dev:srap-ex2-verification",
       "urn:spdx.dev:srap-ex2-verified-by",
@@ -216,8 +217,8 @@ be evaluated for safety relevance without duplicating the Security/VEX layer.
   },
   {
     "type": "Relationship",
-    "spdxId": "urn:spdx.dev:srap-ex2-caused-by",
-    "relationshipType": "causedBy",
+    "spdxId": "urn:spdx.dev:srap-ex2-trigger-analysis-link",
+    "relationshipType": "other",
     "from": "urn:spdx.dev:srap-ex2-change-impact-analysis",
     "to": ["urn:spdx.dev:srap-ex2-change-trigger"]
   },
@@ -226,7 +227,7 @@ be evaluated for safety relevance without duplicating the Security/VEX layer.
     "spdxId": "urn:spdx.dev:srap-ex2-change-impact-analysis",
     "name": "Change impact analysis for CVE-2024-9999",
     "impactAnalysisProcess": ["urn:spdx.dev:sop-change-impact-analysis"],
-    "impactAnalysisStatus": "reviewable",
+    "impactAnalysisStatus": "pending",
     "impactLevel": "high",
     "impactedElement": [
       "pkg:generic/openssl@3.0.8",
@@ -284,7 +285,7 @@ affected, and the resulting design or validation updates.
     "rootElement": ["urn:spdx.dev:srap-ex3-change-impact-analysis"],
     "element": [
       "urn:spdx.dev:srap-ex3-change-trigger",
-      "urn:spdx.dev:srap-ex3-caused-by",
+      "urn:spdx.dev:srap-ex3-trigger-analysis-link",
       "urn:spdx.dev:srap-ex3-change-impact-analysis",
       "urn:spdx.dev:req-dose-confirmation-v1",
       "urn:spdx.dev:req-dose-confirmation-v2",
@@ -309,8 +310,8 @@ affected, and the resulting design or validation updates.
   },
   {
     "type": "Relationship",
-    "spdxId": "urn:spdx.dev:srap-ex3-caused-by",
-    "relationshipType": "causedBy",
+    "spdxId": "urn:spdx.dev:srap-ex3-trigger-analysis-link",
+    "relationshipType": "other",
     "from": "urn:spdx.dev:srap-ex3-change-impact-analysis",
     "to": ["urn:spdx.dev:srap-ex3-change-trigger"]
   },
@@ -379,7 +380,7 @@ result, and evidence so downstream consumers can see why no action was taken.
     "rootElement": ["urn:spdx.dev:srap-ex4-change-impact-analysis"],
     "element": [
       "urn:spdx.dev:srap-ex4-change-trigger",
-      "urn:spdx.dev:srap-ex4-caused-by",
+      "urn:spdx.dev:srap-ex4-trigger-analysis-link",
       "urn:spdx.dev:srap-ex4-change-impact-analysis",
       "urn:spdx.dev:srap-ex4-verification",
       "urn:spdx.dev:srap-ex4-verified-by",
@@ -402,8 +403,8 @@ result, and evidence so downstream consumers can see why no action was taken.
   },
   {
     "type": "Relationship",
-    "spdxId": "urn:spdx.dev:srap-ex4-caused-by",
-    "relationshipType": "causedBy",
+    "spdxId": "urn:spdx.dev:srap-ex4-trigger-analysis-link",
+    "relationshipType": "other",
     "from": "urn:spdx.dev:srap-ex4-change-impact-analysis",
     "to": ["urn:spdx.dev:srap-ex4-change-trigger"]
   },
@@ -463,7 +464,7 @@ test elements, and the failed assessment result that justifies the change.
     "rootElement": ["urn:spdx.dev:srap-ex5-change-impact-analysis"],
     "element": [
       "urn:spdx.dev:srap-ex5-change-trigger",
-      "urn:spdx.dev:srap-ex5-caused-by",
+      "urn:spdx.dev:srap-ex5-trigger-analysis-link",
       "urn:spdx.dev:srap-ex5-change-impact-analysis",
       "urn:spdx.dev:req-occlusion-detect-v1",
       "urn:spdx.dev:req-occlusion-detect-v2",
@@ -488,8 +489,8 @@ test elements, and the failed assessment result that justifies the change.
   },
   {
     "type": "Relationship",
-    "spdxId": "urn:spdx.dev:srap-ex5-caused-by",
-    "relationshipType": "causedBy",
+    "spdxId": "urn:spdx.dev:srap-ex5-trigger-analysis-link",
+    "relationshipType": "other",
     "from": "urn:spdx.dev:srap-ex5-change-impact-analysis",
     "to": ["urn:spdx.dev:srap-ex5-change-trigger"]
   },
@@ -538,7 +539,7 @@ test elements, and the failed assessment result that justifies the change.
 ## Example 6: Validation test failure
 
 A validation run fails after a regression signal. SRAP communicates that the
-test failure caused a change impact analysis, which then identifies the
+test failure triggers a change impact analysis, which then identifies the
 affected validation and the new rerun or corrective verification.
 
 ```json
@@ -551,7 +552,7 @@ affected validation and the new rerun or corrective verification.
     "rootElement": ["urn:spdx.dev:srap-ex6-change-impact-analysis"],
     "element": [
       "urn:spdx.dev:srap-ex6-change-trigger",
-      "urn:spdx.dev:srap-ex6-caused-by",
+      "urn:spdx.dev:srap-ex6-trigger-analysis-link",
       "urn:spdx.dev:srap-ex6-change-impact-analysis",
       "urn:spdx.dev:srap-ex6-verification",
       "urn:spdx.dev:srap-ex6-evaluation",
@@ -572,8 +573,8 @@ affected validation and the new rerun or corrective verification.
   },
   {
     "type": "Relationship",
-    "spdxId": "urn:spdx.dev:srap-ex6-caused-by",
-    "relationshipType": "causedBy",
+    "spdxId": "urn:spdx.dev:srap-ex6-trigger-analysis-link",
+    "relationshipType": "other",
     "from": "urn:spdx.dev:srap-ex6-change-impact-analysis",
     "to": ["urn:spdx.dev:srap-ex6-change-trigger"]
   },
@@ -629,7 +630,7 @@ product-line requirement revision.
     "rootElement": ["urn:spdx.dev:srap-ex7-change-impact-analysis"],
     "element": [
       "urn:spdx.dev:srap-ex7-change-trigger",
-      "urn:spdx.dev:srap-ex7-caused-by",
+      "urn:spdx.dev:srap-ex7-trigger-analysis-link",
       "urn:spdx.dev:srap-ex7-change-impact-analysis",
       "urn:spdx.dev:srap-ex7-safety-context",
       "urn:spdx.dev:srap-ex7-verification",
@@ -652,8 +653,8 @@ product-line requirement revision.
   },
   {
     "type": "Relationship",
-    "spdxId": "urn:spdx.dev:srap-ex7-caused-by",
-    "relationshipType": "causedBy",
+    "spdxId": "urn:spdx.dev:srap-ex7-trigger-analysis-link",
+    "relationshipType": "other",
     "from": "urn:spdx.dev:srap-ex7-change-impact-analysis",
     "to": ["urn:spdx.dev:srap-ex7-change-trigger"]
   },
@@ -717,7 +718,7 @@ inconclusive evaluation that needs follow-up.
     "rootElement": ["urn:spdx.dev:srap-ex8-change-impact-analysis"],
     "element": [
       "urn:spdx.dev:srap-ex8-change-trigger",
-      "urn:spdx.dev:srap-ex8-caused-by",
+      "urn:spdx.dev:srap-ex8-trigger-analysis-link",
       "urn:spdx.dev:srap-ex8-change-impact-analysis",
       "urn:spdx.dev:srap-ex8-assumption",
       "urn:spdx.dev:srap-ex8-verification",
@@ -740,8 +741,8 @@ inconclusive evaluation that needs follow-up.
   },
   {
     "type": "Relationship",
-    "spdxId": "urn:spdx.dev:srap-ex8-caused-by",
-    "relationshipType": "causedBy",
+    "spdxId": "urn:spdx.dev:srap-ex8-trigger-analysis-link",
+    "relationshipType": "other",
     "from": "urn:spdx.dev:srap-ex8-change-impact-analysis",
     "to": ["urn:spdx.dev:srap-ex8-change-trigger"]
   },
@@ -749,7 +750,7 @@ inconclusive evaluation that needs follow-up.
     "type": "functionalSafety_ChangeImpactAnalysis",
     "spdxId": "urn:spdx.dev:srap-ex8-change-impact-analysis",
     "name": "Change impact analysis for ENV-2026-044",
-    "impactAnalysisStatus": "reviewable",
+    "impactAnalysisStatus": "pending",
     "impactLevel": "high",
     "impactedElement": ["urn:spdx.dev:assumption-emi-envelope", "urn:spdx.dev:test-emi-susceptibility"],
     "addedElement": ["urn:spdx.dev:srap-ex8-assumption", "urn:spdx.dev:test-emi-site-condition"],
@@ -802,7 +803,7 @@ which design and verification elements were reviewed or added.
     "rootElement": ["urn:spdx.dev:srap-ex9-change-impact-analysis"],
     "element": [
       "urn:spdx.dev:srap-ex9-change-trigger",
-      "urn:spdx.dev:srap-ex9-caused-by",
+      "urn:spdx.dev:srap-ex9-trigger-analysis-link",
       "urn:spdx.dev:srap-ex9-change-impact-analysis",
       "urn:spdx.dev:srap-ex9-verification",
       "urn:spdx.dev:srap-ex9-evaluation",
@@ -824,8 +825,8 @@ which design and verification elements were reviewed or added.
   },
   {
     "type": "Relationship",
-    "spdxId": "urn:spdx.dev:srap-ex9-caused-by",
-    "relationshipType": "causedBy",
+    "spdxId": "urn:spdx.dev:srap-ex9-trigger-analysis-link",
+    "relationshipType": "other",
     "from": "urn:spdx.dev:srap-ex9-change-impact-analysis",
     "to": ["urn:spdx.dev:srap-ex9-change-trigger"]
   },
@@ -880,7 +881,7 @@ reviewed.
     "rootElement": ["urn:spdx.dev:srap-ex10-change-impact-analysis"],
     "element": [
       "urn:spdx.dev:srap-ex10-change-trigger",
-      "urn:spdx.dev:srap-ex10-caused-by",
+      "urn:spdx.dev:srap-ex10-trigger-analysis-link",
       "urn:spdx.dev:srap-ex10-change-impact-analysis",
       "urn:spdx.dev:req-sbom-safety-trace-v1",
       "urn:spdx.dev:req-sbom-safety-trace-v2",
@@ -905,8 +906,8 @@ reviewed.
   },
   {
     "type": "Relationship",
-    "spdxId": "urn:spdx.dev:srap-ex10-caused-by",
-    "relationshipType": "causedBy",
+    "spdxId": "urn:spdx.dev:srap-ex10-trigger-analysis-link",
+    "relationshipType": "other",
     "from": "urn:spdx.dev:srap-ex10-change-impact-analysis",
     "to": ["urn:spdx.dev:srap-ex10-change-trigger"]
   },
