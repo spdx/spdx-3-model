@@ -29,5 +29,5 @@ Model Tuning stage defined in ISO/IEC 5338.
 ## Metadata
 
 - name: AIFinetuningProcess
-- subclassOf: AITrainingProcess
-- instantiability: Concrete
+- SubclassOf: AITrainingProcess
+- Instantiability: Concrete

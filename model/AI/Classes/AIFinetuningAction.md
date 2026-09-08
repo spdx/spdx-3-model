@@ -32,5 +32,5 @@ Model Tuning activities specified in ISO/IEC 5338.
 ## Metadata
 
 - name: AIFinetuningAction
-- subclassOf: AITrainingAction
-- instantiability: Concrete
+- SubclassOf: AITrainingAction
+- Instantiability: Concrete

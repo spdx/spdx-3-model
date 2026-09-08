@@ -27,5 +27,5 @@ Model Implementation stage defined in ISO/IEC 5338.
 ## Metadata
 
 - name: AITrainingProcess
-- subclassOf: /Core/DefinedProcess
-- instantiability: Concrete
+- SubclassOf: /Core/DefinedProcess
+- Instantiability: Concrete

@@ -29,5 +29,5 @@ Model Implementation activities specified in ISO/IEC 5338.
 ## Metadata
 
 - name: AITrainingAction
-- subclassOf: /Core/Action
-- instantiability: Concrete
+- SubclassOf: /Core/Action
+- Instantiability: Concrete
