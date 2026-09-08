@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# forDropoffLocation
+# plannedDropoffLocation
 
 ## Summary
 
@@ -15,6 +15,6 @@ see `dropoffLocation`.
 
 ## Metadata
 
-- name: forDropoffLocation
+- name: plannedDropoffLocation
 - Nature: ObjectProperty
 - Range: /Core/Location

@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# forPickupLocation
+# plannedPickupLocation
 
 ## Summary
 
@@ -15,6 +15,6 @@ see `pickupLocation`.
 
 ## Metadata
 
-- name: forPickupLocation
+- name: plannedPickupLocation
 - Nature: ObjectProperty
 - Range: /Core/Location
