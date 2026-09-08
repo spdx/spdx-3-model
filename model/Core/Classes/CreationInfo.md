@@ -23,7 +23,7 @@ doing so supports reproducible builds.
 ## Properties
 
 - specVersion
-  - type: SemVer
+  - type: VersionNumber
   - minCount: 1
   - maxCount: 1
 - comment

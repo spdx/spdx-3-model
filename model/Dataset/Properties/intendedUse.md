@@ -4,12 +4,18 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-The intended use of a given dataset.
-
-*Deprecated in SPDX 3.1.*
+**DEPRECATED in SPDX 3.1.**
 Use [/Core/intendedUse](../../Core/Properties/intendedUse.md) instead.
 
+The intended use of a given dataset.
+
 ## Description
+
+**NOTE:**
+This property is deprecated and only included for backward compatibility.
+New documents should use
+[/Core/intendedUse](../../Core/Properties/intendedUse.md)
+instead.
 
 A free-form text that describes what the given dataset should be used for.
 

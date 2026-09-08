@@ -13,5 +13,5 @@ Weight to express relevance in de minimis consideration.
 ## Metadata
 
 - name: weight
-- Nature: ObjectProperty
+- Nature: DataProperty
 - Range: xsd:positiveInteger

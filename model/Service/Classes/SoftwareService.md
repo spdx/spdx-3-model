@@ -9,12 +9,12 @@ Software provided as a service over a network.
 ## Description
 
 SoftwareService represents a service based on software components offered for access online over a network.
+The primary provider of the SoftwareService is the /Core/suppliedBy.
+Any additional providers can use a relationship of relationship type availableFrom.
+The `serviceHostingCountry` can be used to capture any countries from which the service is provided.
 
 ## Properties
 
-- provider
-  - type: /Core/Agent
-  - minCount: 1
 - serverAuthenticationProtocol
   - type: AuthenticationProtocolType
   - minCount: 0
@@ -25,5 +25,5 @@ SoftwareService represents a service based on software components offered for ac
 ## Metadata
 
 - name: SoftwareService
-- SubclassOf: /Core/Element
+- SubclassOf: /Core/Artifact
 - Instantiability: Concrete

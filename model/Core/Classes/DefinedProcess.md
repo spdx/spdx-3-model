@@ -18,15 +18,15 @@ Processes are composed of systematic task(s) required to achieve a goal.
 
 ## Properties
 
-- processVersion
-  - type: xsd:string
-  - minCount: 1
-  - maxCount: 1
-- processRationale
-  - type: xsd:string
-  - minCount: 0
-  - maxCount: 1
 - processReadiness
   - type: ProcessReadinessType
   - minCount: 0
+  - maxCount: 1
+- rationale
+  - type: xsd:string
+  - minCount: 0
+  - maxCount: 1
+- version
+  - type: xsd:string
+  - minCount: 1
   - maxCount: 1

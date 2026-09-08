@@ -1,4 +1,4 @@
-# Contributing to the SPDX 3 Model
+# Contributing to the SPDX 3 model
 
 ## General
 
@@ -16,7 +16,9 @@ datatypes, properties, and vocabularies which will be used to automatically
 create documentation, ontologies, and validation artifacts.
 These are organized by profile.
 
-Use [spec-parser][] to check if your Markdown has no errors.
+Use [spec-parser][] to validate your Markdown for errors.
+For instructions on integrating it with MkDocs to generate and test your
+specification HTML, refer to the [build guide][build].
 
 Please submit [a pull request][pull-requests] or [an issue][issues]
 for any suggested changes or issues you find.
@@ -62,7 +64,7 @@ This method of development was agreed upon by the SPDX Tech team on 2023-01-17.
 Translations of model descriptions are welcome.
 Please see [translation.md][translation] for details.
 
-## Profile Maintainers
+## Profile maintainers
 
 In accordance with the development model described above,
 each profile has at least one maintainer in charge of merging profile-specific
@@ -75,32 +77,41 @@ Each profile in active development phase also has their own
 [regular meeting time](https://github.com/spdx/meetings#sub-groups-for-specific-topics).
 
 | Profile | Maintainer(s) |
-| ----------- | ----------- |
-| AI | [Karen Bennet][gh-karen] and [Gopi Krishnan Rajbahadur][gh-gopi] |
-| Dataset | [Karen Bennet][gh-karen] and [Gopi Krishnan Rajbahadur][gh-gopi] |
+| ------- | ------------- |
+| AI | [Gopi Krishnan Rajbahadur][gh-gopi] and [Arthit Suriyawongkul][gh-arthit] |
 | Build | [Brandon Lum][gh-brandon] and [Nisha Kumar][gh-nisha] |
 | Core | [William Bartholomew][gh-william], [Gary O'Neall][gh-gary], and [Kate Stewart][gh-kate] |
+| Dataset | [Gopi Krishnan Rajbahadur][gh-gopi] and [Arthit Suriyawongkul][gh-arthit] |
+| FunctionalSafety | [Nicole Pappler][gh-nicole] |
+| Hardware | [Steven Carbno][gh-stevenc] and Alfred Strauch |
 | Licensing | [Steve Winslow][gh-steve] and [Alexios Zavras][gh-alexios] |
+| Operations | [Ummo Schwarting][gh-ummo] |
 | Security | [Thomas Steenbergen][gh-thomas], [Adolfo García Veytia][gh-adolfo], and [Rose Judge][gh-rose] |
+| Service | [Gary O'Neall][gh-gary] |
 | Software | [Alexios Zavras][gh-alexios] and [Gary O'Neall][gh-gary] |
+| SupplyChain | [Steven Carbno][gh-stevenc] and Alfred Strauch |
 
 [format]: ./docs/format.md
 [spec-parser]: https://github.com/spdx/spec-parser/
+[build]: https://github.com/spdx/spdx-spec/blob/develop/build.md
 [translation]: ./docs/translation.md
 [spdx-tech-list]: https://lists.spdx.org/mailman/listinfo/spdx-tech
 [meetings]: https://github.com/spdx/meetings/
 [issues]: https://github.com/spdx/spdx-3-model/issues/
 [pull-requests]: https://github.com/spdx/spdx-3-model/pulls/
 [cla]: CLA.md
-[gh-karen]: https://github.com/bk
-[gh-gopi]: https://github.com/rgopikrishnan91
-[gh-brandon]: https://github.com/lumjjb
-[gh-nisha]: https://github.com/nishakm
-[gh-william]: https://github.com/iamwillbar
-[gh-gary]: https://github.com/goneall
-[gh-kate]: https://github.com/kestewart
-[gh-steve]: https://github.com/swinslow
-[gh-alexios]: https://github.com/zvr
-[gh-thomas]: https://github.com/tsteenbe
 [gh-adolfo]: https://github.com/puerco
+[gh-alexios]: https://github.com/zvr
+[gh-arthit]: https://github.com/bact
+[gh-brandon]: https://github.com/lumjjb
+[gh-gary]: https://github.com/goneall
+[gh-gopi]: https://github.com/rgopikrishnan91
+[gh-nicole]: https://github.com/nicpappler
+[gh-nisha]: https://github.com/nishakm
+[gh-kate]: https://github.com/kestewart
 [gh-rose]: https://github.com/rnjudge
+[gh-steve]: https://github.com/swinslow
+[gh-stevenc]: https://github.com/stevenc-stb
+[gh-thomas]: https://github.com/tsteenbe
+[gh-ummo]: https://github.com/umm0
+[gh-william]: https://github.com/iamwillbar

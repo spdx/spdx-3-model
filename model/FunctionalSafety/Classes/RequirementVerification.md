@@ -13,6 +13,10 @@ With this class it is possible to identify verification items, such as testcases
 
 Verification typically checks if a requirement has been implemented or refined by more details correctly by a subsequent work product (like a technical specification needs to be verified if it correctly refines a functional specification, or that code correctly implements the state machine defined in a software component design requirement).
 
+A `rationale` is supporting information that adds more context on how
+verification needs to be performed, justifies the chosen verification method,
+etc.
+
 ## Metadata
 
 - name: RequirementVerification
@@ -21,7 +25,11 @@ Verification typically checks if a requirement has been implemented or refined b
 
 ## Properties
 
-- verificationUUID
+- /Core/rationale
+  - type: xsd:string
+  - minCount: 0
+  - maxCount: 1
+- verificationUID
   - type: /Core/ExternalIdentifier
   - minCount: 0
   - maxCount: 1
@@ -34,7 +42,3 @@ Verification typically checks if a requirement has been implemented or refined b
 - verificationPostcondition
   - type: xsd:string
   - minCount: 0
-- verificationRationale
-  - type: xsd:string
-  - minCount: 0
-  - maxCount: 1

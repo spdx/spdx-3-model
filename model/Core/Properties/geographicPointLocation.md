@@ -4,11 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-This is a set of point coordinates as defined in by the GPS standard.
+A set of geographic point location coordinates.
 
 ## Description
 
-GPL coordinates are defined in the format Standard: ISO 6709:2022
+Geographic point location coordinates expressed in the format defined by
+ISO 6709:2022.
 
 ## Metadata
 

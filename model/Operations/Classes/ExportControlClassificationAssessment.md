@@ -4,11 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Assement of an Element for export control classification.
+Assessment of an Element for export control classification.
 
 ## Description
 
-Assement of an Element for export control classification according to the classification schema of one or multiple contries.
+Assessment of an Element for export control classification
+according to the classification schema of one or multiple countries.
 
 ## Metadata
 
@@ -31,6 +32,6 @@ Assement of an Element for export control classification according to the classi
 - assessmentResult
   - type: ExportControlClassification
   - minCount: 1
-- assessmentTimestamp
+- assessmentTime
   - type: /Core/DateTime
   - maxCount: 1

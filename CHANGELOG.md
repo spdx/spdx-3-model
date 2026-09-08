@@ -1,21 +1,85 @@
-# Change Log
+# Change log
 
-## Post-3.0.1 (2025-04-24)
+## 3.1-dev (TBA)
+
+The SPDX 3.1 model expands beyond software to include safety, hardware,
+supply chain, operations, and more.
+This release candidate is for testing and validation;
+it may contain changes that could be modified or reverted before the
+final release.
+
+Release notes for the 3.1-RC1 model, detailing all changes from 3.0.1
+through 3.1-RC1, are available at:
+<https://github.com/spdx/spdx-3-model/releases/tag/3.1-rc1>.
 
 ### Changes since 3.0.1
 
-Items marked 'Removed' or 'Fixed' indicate potential
+The following list covers general updates and potential breaking changes.
+Deprecations are listed in a separate section below.
+For profile-specific additions,
+please refer to the relevant profile documentation.
+
+This release also significantly expands and modifies the vocabulary.
+For instance, `/Core/RelationshipType` has grown from 59 to 76 entries,
+and several element types were revised to allow for more flexible usage across
+different profiles.
+
+Items marked 'Changed', 'Removed' or 'Fixed' indicate potential
 semantic changes to the model and may affect compatibility.
 
-- **Added:** `/Software/artifactSize` property - [#966](https://github.com/spdx/spdx-3-model/pull/966)
-  - A property identifying the size of a software artifact, in bytes.
-- **Improved:** `/Security/*VulnAssessmentRelationship` examples - [#994](https://github.com/spdx/spdx-3-model/pull/994)
-  - Corrected values in examples within the JSON-LD examples section.
-- **Clarified:** Serialization and validation documents - [#1019](https://github.com/spdx/spdx-3-model/pull/1019)
+- **Changed:** Standardized RDF IRIs to use two-level versioning (major.minor)
+  instead of three-level (major.minor.patch) -
+  [#1046](https://github.com/spdx/spdx-3-model/issues/1046)
+  - Previous: `https://spdx.org/rdf/x.y.z/terms/...`
+  - New: `https://spdx.org/rdf/x.y/terms/...`
+- **Changed:** Relax property and relationship requirements of `/AI/AIPackage`
+  and `/Dataset/DatasetPackage` classes -
+  [#1158](https://github.com/spdx/spdx-3-model/pull/1158)
+- **Added:** `/Core/ElementMap` class and `/Core/elementValue`
+  property - [#969](https://github.com/spdx/spdx-3-model/pull/969)
+  - A class and a property used for implementing mapping a string key to
+    an Element.
+- **Added:** `/Core/inLanguage` property -
+  [#1066](https://github.com/spdx/spdx-3-model/pull/1066),
+  [#1124](https://github.com/spdx/spdx-3-model/pull/1124)
+  - A human language used within the content of an Element or a property.
+- **Added:** `/Core/intendedUse` property -
+  [#1109](https://github.com/spdx/spdx-3-model/pull/1109/)
+  - How or for what item or artifact is meant to be used for.
+- **Added:** `/Core/isoAutomationLevel` property -
+  [#1064](https://github.com/spdx/spdx-3-model/pull/1064)
+  - A spectrum of system automation capability.
+- **Added:** `/SimpleLicensing/customIdToLicense` property -
+  [#969](https://github.com/spdx/spdx-3-model/pull/969)
+  - Maps custom licensing string to the corresponding licensing Element.
+- **Added:** `/Software/artifactSize` property -
+  [#966](https://github.com/spdx/spdx-3-model/pull/966)
+  - Size of a software artifact, in bytes.
+- **Clarified:** Serialization and validation documents -
+  [#1019](https://github.com/spdx/spdx-3-model/pull/1019)
   - Use "SPDX 3 JSON" name (instead of "SPDX 3 JSON-LD").
-- Fixed general typos and formatting issues.
+- Fixed typos, formatting issues, and broken examples; updated reference links.
+
+### Deprecations since 3.0.1
+
+- `/AI/autonomyType` property
+  - New documents should use `/Core/isoAutomationLevel` instead.
+- `/Build/buildStartTime` and `/Build/buildEndTime` properties
+  - New documents should use `/Core/startTime` and `/Core/endTime` instead.
+- `/Dataset/datasetSize` property
+  - New documents should use `/Software/artifactSize` instead.
+- `/Dataset/intendedUse` property
+  - New documents should use `/Core/intendedUse` instead.
+- `/SimpleLicensing/customIdToUri` property
+  - New documents should use `/SimpleLicensing/customIdToLicense` instead.
 
 ## 3.0.1 (2024-12-10)
+
+This patch release includes fixes for issues found in the 3.0.0 release.
+
+The version 3.0.1 model release notes,
+with full change records from 3.0 to 3.0.1, are available at:
+<https://github.com/spdx/spdx-3-model/releases/tag/3.0.1>.
 
 ### Changes since 3.0
 
@@ -77,12 +141,6 @@ semantic changes to the model and may affect compatibility.
   - Add `Core/IndividualElement` class
     to the Core diagram - [#941](https://github.com/spdx/spdx-3-model/pull/941)
 - Fixed general typos and formatting issues.
-
-### Release notes
-
-The version 3.0.1 model release notes,
-with full change records from 3.0 to 3.0.1, are available at:
-<https://github.com/spdx/spdx-3-model/releases/tag/3.0.1>.
 
 ## 3.0 (2024-04-15)
 

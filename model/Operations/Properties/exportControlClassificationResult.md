@@ -13,5 +13,5 @@ Provides the result of an export control assessment.
 ## Metadata
 
 - name: exportControlClassificationResult
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: ExportControlClassification

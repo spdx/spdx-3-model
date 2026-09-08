@@ -13,5 +13,5 @@ This is the first date associated to a specific product release.
 ## Metadata
 
 - name: releaseDate
-- Nature: ObjectProperty
+- Nature: DataProperty
 - Range: /Core/DateTime

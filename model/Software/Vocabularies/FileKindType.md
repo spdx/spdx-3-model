@@ -8,9 +8,9 @@ Enumeration of the different kinds of SPDX file.
 
 ## Description
 
-An SPDX file may represent a file on disk or a directory of files.
+An SPDX File can represent a regular file, a directory of zero or more Files, or a symbolic link to a File.
 
-In the future, this may be extended to other kinds (e.g. network based files).
+In the future, this can be extended to other kinds (e.g. network based files).
 
 ## Metadata
 
@@ -20,3 +20,4 @@ In the future, this may be extended to other kinds (e.g. network based files).
 
 - file: The file represents a single file (default).
 - directory: The file represents a directory and all content stored in that directory.
+- symlink: This file represents a symbolic link (soft link).

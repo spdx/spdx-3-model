@@ -14,7 +14,7 @@ and I have the right to submit it under the open source license indicated in the
 or
 
 (b) The contribution is based upon previous work that,
-to the best  of my knowledge,
+to the best of my knowledge,
 is covered under an appropriate open source license
 and I have the right under that license to submit that work with modifications,
 whether created in whole or in part by me,

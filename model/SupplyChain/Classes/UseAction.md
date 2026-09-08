@@ -24,5 +24,5 @@ For each `UseAction` there is at least one `/Core/Relationship` class or subclas
 
 ## External properties restrictions
 
-- /Core/Action/actionStartTime
+- /Core/Action/startTime
   - minCount: 1

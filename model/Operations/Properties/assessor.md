@@ -13,5 +13,5 @@ An entity providing an assessment.
 ## Metadata
 
 - name: assessor
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: /Core/Agent
