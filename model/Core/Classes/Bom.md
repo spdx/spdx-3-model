@@ -17,7 +17,7 @@ provenance details of the product and/or
 its composition, licensing information, known quality or security issues, etc.
 
 The `version` property is an optional human readable hint for different versions of a BOM
-representing the same basic `Bundle` of elements
+representing the same overall system
 provided by the same creator (same `Agent` in BOM's `creationInfo.createdBy`)
 with a BOM of the same `name`.
 
