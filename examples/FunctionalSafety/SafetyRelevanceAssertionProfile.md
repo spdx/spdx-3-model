@@ -20,7 +20,7 @@ Each example uses the same graph shape:
   when downstream verification, result, and evidence need to be communicated.
 
 When the work is still waiting on evidence, a decision, or a test rerun, use
-impactAnalysisStatus with a pending value on ChangeImpactAnalysis. Do not use
+impactAnalysisStatus with a draft value on ChangeImpactAnalysis. Do not use
 EvaluationResult with an inconclusive value to mean "not started". Use an
 inconclusive EvaluationResult only when an evaluation was performed but cannot
 be clearly classified as pass or fail, and include a comment or rationale.
@@ -227,7 +227,7 @@ be evaluated for safety relevance without duplicating the Security/VEX layer.
     "spdxId": "urn:spdx.dev:srap-ex2-change-impact-analysis",
     "name": "Change impact analysis for CVE-2024-9999",
     "impactAnalysisProcess": ["urn:spdx.dev:sop-change-impact-analysis"],
-    "impactAnalysisStatus": "pending",
+    "impactAnalysisStatus": "draft",
     "impactLevel": "high",
     "impactedElement": [
       "pkg:generic/openssl@3.0.8",
@@ -750,7 +750,7 @@ inconclusive evaluation that needs follow-up.
     "type": "functionalSafety_ChangeImpactAnalysis",
     "spdxId": "urn:spdx.dev:srap-ex8-change-impact-analysis",
     "name": "Change impact analysis for ENV-2026-044",
-    "impactAnalysisStatus": "pending",
+    "impactAnalysisStatus": "draft",
     "impactLevel": "high",
     "impactedElement": ["urn:spdx.dev:assumption-emi-envelope", "urn:spdx.dev:test-emi-susceptibility"],
     "addedElement": ["urn:spdx.dev:srap-ex8-assumption", "urn:spdx.dev:test-emi-site-condition"],
