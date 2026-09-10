@@ -12,7 +12,7 @@ Tests are processes based on requirements. The process's requirements are met by
 
 Relationship:
 
-For each `TestProcess` there is at least one `/Core/Relationship` class or subclass with the relationshipType of 'contains’ on the from and a `Requirements` class or subclass on the to.
+For each `TestProcess` there is at least one `/Core/Relationship` class or subclass with the relationshipType of 'contains’ on the from and a `/Core/Requirement` class or subclass on the to.
 
 ## Metadata
 
