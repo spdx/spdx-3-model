@@ -8,9 +8,9 @@ Identifies the lifecycle status of a functional safety change impact analysis.
 
 ## Description
 
-impactAnalysisStatus identifies whether a ChangeImpactAnalysis is pending
-additional information, still being developed, is ready for review, has been
-completed, has been approved, or has been superseded.
+impactAnalysisStatus identifies whether a ChangeImpactAnalysis is still being
+developed, is ready for review, has been completed, has been approved, or has
+been superseded.
 
 This allows an SPDX document to communicate intermediate versions of a change
 impact analysis before the analysis is fully complete.

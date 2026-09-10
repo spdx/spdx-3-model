@@ -44,16 +44,16 @@ A RequirementVerification with verificationMethod set to assessment can
 describe how an affected requirement is reassessed or reverified after the
 ChangeImpactAnalysis identifies that verification is needed.
 
-The impactAnalysisStatus value can communicate that the analysis is pending
-before the engineering conclusion is ready. When a verification or assessment
-has been completed, the resulting EvaluationResult records the outcome using
-EvaluationResultType values. An inconclusive result should be used when the
-evaluation was performed but cannot be clearly classified as pass or fail.
-Evidence can be linked using EvidenceRelationship. A Core Bundle can carry the
-change impact delta, such as the ChangeTrigger, ChangeImpactAnalysis, old
-requirement, revised requirement, relationship between them, affected validation
-or test elements, verification, result, and evidence. Elements that have not
-changed can be referenced from the prior model rather than retransmitted.
+The impactAnalysisStatus value can communicate draft work before the engineering
+conclusion is ready. When a verification or assessment has been completed, the
+resulting EvaluationResult records the outcome using EvaluationResultType
+values. An inconclusive result should be used when the evaluation was performed
+but cannot be clearly classified as pass or fail. Evidence can be linked using
+EvidenceRelationship. A Core Bundle can carry the change impact delta, such as
+the ChangeTrigger, ChangeImpactAnalysis, old requirement, revised requirement,
+relationship between them, affected validation or test elements, verification,
+result, and evidence. Elements that have not changed can be referenced from the
+prior model rather than retransmitted.
 
 For CVE-driven change analysis, the Security profile should continue to represent
 vulnerability and VEX status. FunctionalSafety adds the safety context and
