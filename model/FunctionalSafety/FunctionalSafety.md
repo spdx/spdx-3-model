@@ -14,7 +14,7 @@ to each other that are part of a safety related system's safety conformance docu
 
 These artifacts include the outputs of the safety engineering phases regarding planning, requirements analysis, system/software architecture, implementation, safety analysis and the verification tasks. The artifacts can be used to compile a standardized safety case document.
 
-## Safety Relevance Assertion Profile
+## Safety Relevance Assertion 
 
 The FunctionalSafety profile can represent a Safety Relevance Assertion Profile
 (SRAP) as a change impact delta without introducing a dedicated SRAPAssessment
