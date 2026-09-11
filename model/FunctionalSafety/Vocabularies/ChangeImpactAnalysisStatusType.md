@@ -9,8 +9,8 @@ Specifies the lifecycle status of a functional safety change impact analysis.
 ## Description
 
 ChangeImpactAnalysisStatusType provides common values for communicating whether
-a ChangeImpactAnalysis is still being developed, ready for review, complete,
-approved, or superseded.
+a ChangeImpactAnalysis is still in progress, complete, or represented by another
+status value.
 
 ## Metadata
 

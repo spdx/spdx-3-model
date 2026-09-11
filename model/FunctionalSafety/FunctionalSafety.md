@@ -16,9 +16,9 @@ These artifacts include the outputs of the safety engineering phases regarding p
 
 ## Safety Relevance Assertion
 
-The FunctionalSafety profile can represent a Safety Relevance Assertion Profile
-(SRAP) as a change impact delta without introducing a dedicated SRAPAssessment
-class.
+The FunctionalSafety profile can represent a Safety Relevance Assertion use case
+as a change impact delta without introducing a dedicated SRAPAssessment class or
+separate safety profile.
 
 When new information may require safety-relevant review, ChangeTrigger
 identifies the source, reason, event, report, or external record that initiates
@@ -44,9 +44,9 @@ A RequirementVerification with verificationMethod set to assessment can
 describe how an affected requirement is reassessed or reverified after the
 ChangeImpactAnalysis identifies that verification is needed.
 
-The impactAnalysisStatus value can communicate draft work before the engineering
-conclusion is ready. When a verification or assessment has been completed, the
-resulting EvaluationResult records the outcome using EvaluationResultType
+The impactAnalysisStatus value can communicate in-progress work before the
+engineering conclusion is ready. When a verification or assessment has been
+completed, the resulting EvaluationResult records the outcome using EvaluationResultType
 values. An inconclusive result should be used when the evaluation was performed
 but cannot be clearly classified as pass or fail. Evidence can be linked using
 EvidenceRelationship. A Core Bundle can carry the change impact delta, such as
