@@ -14,11 +14,11 @@ to each other that are part of a safety related system's safety conformance docu
 
 These artifacts include the outputs of the safety engineering phases regarding planning, requirements analysis, system/software architecture, implementation, safety analysis and the verification tasks. The artifacts can be used to compile a standardized safety case document.
 
-## Safety Relevance Assertion
+## Safety Relevance Assertion Capability
 
-The FunctionalSafety profile can represent a Safety Relevance Assertion use case
-as a change impact delta without introducing a dedicated SRAPAssessment class or
-separate safety profile.
+The FunctionalSafety profile can represent the Safety Relevance Assertion
+Capability (SRAC) as a change impact delta without introducing a dedicated
+assessment class or separate safety profile.
 
 When new information may require safety-relevant review, ChangeTrigger
 identifies the source, reason, event, report, or external record that initiates
