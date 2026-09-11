@@ -29,6 +29,10 @@ A hardware artifact is a distinct unit related to hardware.
   - type: xsd:string
   - minCount: 1
   - maxCount: 1
+- modelNumber
+  - type: xsd:string
+  - minCount: 0
+  - maxCount: 1
 - releaseDate
   - type: /Core/DateTime
   - maxCount: 1

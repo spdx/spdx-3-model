@@ -8,7 +8,7 @@ Product Part Number as defined by OEM.
 
 ## Description
 
-Product Part Number as defined by manufacturer. Can be used for an SKU.
+Product Part Number as defined by manufacturer. This the full product variant identifier. Can be used for an SKU.
 
 ## Metadata
 
