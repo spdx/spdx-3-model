@@ -65,8 +65,7 @@ name completes the sentence:
 - hasEvidence: Every `to` Element is considered as evidence for the `from` Element (`from` hasEvidence `to`).
 - hasExample: Every `to` Element is an example for the `from` Element (`from` hasExample `to`).
 - hasHost: The `from` /Build/Build was run on the `to` Element during a LifecycleScopeType period (e.g. the host that the build runs on).
-<<<<<<< HEAD
-- hasInput: The `from` /Build/Build, DefinedProcess or Action element has each `to` Element as an input.
+- hasInput: The `from` Element has each `to` Element as an input.
 - hasInstall: The `from` Element has each `to` Artifact installed (placed into position for use) into it during a LifecycleScopeType period. To express the Agent doing the install, link this relationship as the `from` in `performedBy`.
 - hasInput: The `from` element has each `to` Element as an input.
 - hasMetadata: Every `to` Element is metadata about the `from` Element (`from` hasMetadata `to`).
