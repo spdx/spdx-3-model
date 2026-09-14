@@ -64,4 +64,3 @@ where exact Packages should be listed.
 
 - /Core/Element/name
   - minCount: 1
-
