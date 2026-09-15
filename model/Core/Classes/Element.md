@@ -24,10 +24,6 @@ and inter-relatable content objects.
 
 ## Properties
 
-- additionalInformation
-  - type: DictionaryEntry
-- additionalInformationSpecification
-  - type: Specification
 - spdxId
   - type: xsd:anyURI
   - minCount: 1
