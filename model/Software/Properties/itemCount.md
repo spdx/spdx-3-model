@@ -10,7 +10,7 @@ Number of discrete constituent items within a software artifact.
 
 itemCount property records the total number of discrete constituent items
 contained within a software artifact. These items may include, but are not
-limited to, images, records, data samples, or files.
+limited to, images, records, video frames, data samples, or files.
 
 The count shall represent logical items regardless of physical representation.
 Constituent items can be stored within a database, embedded in a container
@@ -19,6 +19,11 @@ format, or represented as encoded binaries within a single file.
 The unit of count is not encoded within this property.
 If the unit of count is not apparent from the context,
 the unit shall be specified in the `description` property of the element.
+
+The itemCount can exceed the number of "contains" relationships associated with
+the Element. In such cases, itemCount represents the actual total count,
+indicating that one or more constituent items are omitted from explicit
+description.
 
 ## Metadata
 
