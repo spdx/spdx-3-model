@@ -15,8 +15,8 @@ The `serviceHostingCountry` can be used to capture any countries from which the 
 
 ## Properties
 
-- serverAuthenticationProtocol
-  - type: AuthenticationProtocolType
+- serverKeyValidationProtocol
+  - type: KeyValidationProtocolType
   - minCount: 0
 - serviceHostingCountry
   - type: /Core/CountryCodeAlpha3
