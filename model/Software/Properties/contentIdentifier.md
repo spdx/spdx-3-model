@@ -17,5 +17,5 @@ It may be used for verifying its identity and/or integrity.
 ## Metadata
 
 - name: contentIdentifier
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: ContentIdentifier
