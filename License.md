@@ -14,13 +14,13 @@
 
 **2.1.1.	As a Result of Contributions.**
 
-**2.1.1.1.	As a Result of Contributions to Draft Specifications.**  Contributor grants Licensee a non-sublicensable, perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable (except as expressly stated in this License) license to its Necessary Claims in 1) Contributor’s Contributions and 2) to the Draft Specification that is within Scope as of the date of that Contribution, in both cases for Licensee’s Implementation of the Draft Specification, except for those patent claims excluded by Contributor under Section 3.  
+**2.1.1.1.	As a Result of Contributions to Draft Specifications.**  Contributor grants Licensee a non-sublicensable, perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable (except as expressly stated in this License) license to its Necessary Claims in 1) Contributor’s Contributions and 2) to the Draft Specification that is within Scope as of the date of that Contribution, in both cases for Licensee’s Implementation of the Draft Specification, except for those patent claims excluded by Contributor under Section 3.
 
-**2.1.1.2.	For Approved Specifications.**  Contributor grants Licensee a non-sublicensable, perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable (except as expressly stated in this License) license to its Necessary Claims included the Approved Specification that are within Scope for Licensee’s Implementation of the Approved Specification, except for those patent claims excluded by Contributor under Section 3.
+**2.1.1.2.	For Approved Specifications.**  Contributor grants Licensee a non-sublicensable, perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable (except as expressly stated in this License) license to its Necessary Claims included in the Approved Specification that are within Scope for Licensee’s Implementation of the Approved Specification, except for those patent claims excluded by Contributor under Section 3.
 
 **2.1.2.	Patent Grant from Licensee.**  Licensee grants each other Licensee a non-sublicensable, perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable (except as expressly stated in this License) license to its Necessary Claims for its Implementation, except for those patent claims excluded under Section 3.
 
-**2.1.3.	Licensee Acceptance.**  The patent grants set forth in Section 2.1 extend only to Licensees that have indicated their agreement to this License as follows: 
+**2.1.3.	Licensee Acceptance.**  The patent grants set forth in Section 2.1 extend only to Licensees that have indicated their agreement to this License as follows:
 
 **2.1.3.1.	Source Code Distributions.**  For distribution in source code, by including this License in the root directory of the source code with the Implementation;
 
@@ -34,11 +34,11 @@
 
 **2.2.	Patent Licensing Commitment.**  In addition to the rights granted in Section 2.1, Contributor agrees to grant everyone a no charge, royalty-free license on reasonable and non-discriminatory terms to Contributor’s Necessary Claims that are within Scope for:
 1) Implementations of a Draft Specification, where such license applies only to those Necessary Claims infringed by implementing Contributor's Contribution(s) included in that Draft Specification, and
-2) Implementations of the Approved Specification. 
+2) Implementations of the Approved Specification.
 
 This patent licensing commitment does not apply to those claims subject to Contributor’s Exclusion Notice under Section 3.
 
-**2.3.	Effect of Withdrawal.**  Contributor may withdraw from the Working Group by issuing a pull request or commit providing notice of withdrawal to the Working Group repository’s Notices.md file.  All of Contributor’s existing commitments and obligations with respect to the Working Group up to the date of that withdrawal notice will remain in effect, but no new obligations will be incurred. 
+**2.3.	Effect of Withdrawal.**  Contributor may withdraw from the Working Group by issuing a pull request or commit providing notice of withdrawal to the Working Group repository’s Notices.md file.  All of Contributor’s existing commitments and obligations with respect to the Working Group up to the date of that withdrawal notice will remain in effect, but no new obligations will be incurred.
 
 **2.4.	Binding Encumbrance.**  This License is binding on any future owner, assignee, or party who has been given the right to enforce any Necessary Claims against third parties.
 
@@ -74,7 +74,7 @@ This patent licensing commitment does not apply to those claims subject to Contr
 
 **9.5.	Control.**  “Control” means direct or indirect control of more than 50% of the voting power to elect directors of that corporation, or for any other entity, the power to direct management of such entity.
 
-**9.6.	Draft Specification.**  “Draft Specification” means all versions of the material (except an Approved Specification) developed by this Working Group for the purpose of creating, commenting on, revising, updating, modifying, or adding to any document that is to be considered for inclusion in the Approved Specification. 
+**9.6.	Draft Specification.**  “Draft Specification” means all versions of the material (except an Approved Specification) developed by this Working Group for the purpose of creating, commenting on, revising, updating, modifying, or adding to any document that is to be considered for inclusion in the Approved Specification.
 
 **9.7.	Exclusion Notice.**  “Exclusion Notice” means a written notice made by making a pull request or commit to the repository’s Notices.md file that identifies patents that Contributor is excluding from its patent licensing commitments under this License.  The Exclusion Notice for issued patents and published applications must include the Draft Specification’s name, patent number(s) or title and application number(s), as the case may be, for each of the issued patent(s) or pending patent application(s) that the Contributor is excluding from the royalty-free licensing commitment set forth in this License.  If an issued patent or pending patent application that may contain Necessary Claims is not set forth in the Exclusion Notice, those Necessary Claims shall continue to be subject to the licensing commitments under this License.  The Exclusion Notice for unpublished patent applications must provide either: (i) the text of the filed application; or (ii) identification of the specific part(s) of the Draft Specification whose implementation makes the excluded claim a Necessary Claim.  If (ii) is chosen, the effect of the exclusion will be limited to the identified part(s) of the Draft Specification.
 
