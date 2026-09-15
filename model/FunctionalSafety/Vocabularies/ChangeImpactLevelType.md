@@ -14,6 +14,8 @@ impact determined by a ChangeImpactAnalysis.
 
 The impact level can be used to communicate the expected verification response
 without embedding organization-specific change-control rules in SPDX.
+If no assertion is made about impact level, the optional impactLevel property
+can be omitted.
 
 ## Metadata
 
@@ -27,4 +29,3 @@ without embedding organization-specific change-control rules in SPDX.
 - high: Broad safety-relevant impact was identified.
 - critical: Critical safety-relevant impact was identified.
 - other: The impact level is not represented by another value in this vocabulary.
-- noAssertion: No assertion is made about the impact level.

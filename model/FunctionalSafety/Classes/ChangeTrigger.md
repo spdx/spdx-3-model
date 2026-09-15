@@ -23,8 +23,8 @@ ServiceNow ticket, or other externally managed record without duplicating that
 system's contents in SPDX.
 
 A ChangeImpactAnalysis can be linked to the ChangeTrigger using a
-/Core/Relationship. The relationship type for connecting a trigger and its
-analysis is intentionally left to the relationship vocabulary discussion.
+/Core/Relationship with relationshipType `hasInput`, from the
+ChangeImpactAnalysis to the ChangeTrigger.
 
 ## Metadata
 

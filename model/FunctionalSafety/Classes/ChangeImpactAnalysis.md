@@ -11,11 +11,10 @@ Describes a functional safety change impact analysis.
 ChangeImpactAnalysis represents the documented analysis of a change trigger
 against safety-relevant SPDX elements.
 
-A ChangeImpactAnalysis can be linked to the ChangeTrigger using a
-/Core/Relationship. This keeps the source or reason for the change separate
-from the analysis that determines impact. The relationship type for connecting
-a trigger and its analysis is intentionally left to the relationship vocabulary
-discussion.
+A ChangeImpactAnalysis can be linked to one or more ChangeTrigger elements
+using a /Core/Relationship with relationshipType `hasInput`, from the
+ChangeImpactAnalysis to each ChangeTrigger. This keeps the source or reason
+for the change separate from the analysis that determines impact.
 
 The analysis can reference the process or specification used to perform the
 impact analysis, communicate its current status, indicate its impact level,
@@ -28,6 +27,10 @@ safety analyses, code, documents, or any other SPDX element relevant to the
 safety lifecycle. Detailed engineering, quality-system, or regulatory records
 can remain in their authoritative systems while SPDX communicates the
 machine-readable change impact graph.
+
+Element-level decisions, including per-element decision state, rationale,
+lifecycle reruns, and closure evidence, can be represented separately when a
+more detailed decision record is needed.
 
 ## Metadata
 

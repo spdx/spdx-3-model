@@ -8,8 +8,9 @@ Identifies the lifecycle status of a functional safety change impact analysis.
 
 ## Description
 
-impactAnalysisStatus identifies whether a ChangeImpactAnalysis is still in
-progress, has been completed, or uses another lifecycle status.
+impactAnalysisStatus identifies whether a ChangeImpactAnalysis is new, still
+in progress, complete, a duplicate of another analysis, or uses another
+lifecycle status.
 
 This allows an SPDX document to communicate intermediate versions of a change
 impact analysis before the analysis is fully complete.

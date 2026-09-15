@@ -18,7 +18,7 @@ These artifacts include the outputs of the safety engineering phases regarding p
 
 The FunctionalSafety profile can represent the Safety Relevance Assertion
 Capability (SRAC) as a change impact delta without introducing a dedicated
-assessment class or separate safety profile.
+SRAC-specific assessment class or separate safety profile.
 
 When new information may require safety-relevant review, ChangeTrigger
 identifies the source, reason, event, report, or external record that initiates
@@ -27,10 +27,11 @@ externalIdentifier values for external records such as CVEs, field incidents,
 lab findings, customer reports, regulatory events, configuration changes,
 environmental changes, or business decisions.
 
-The ChangeImpactAnalysis can be connected to the ChangeTrigger using a Core
-Relationship. The specific relationshipType for connecting the trigger and
-analysis should be selected through the Core relationship vocabulary discussion
-rather than fixed by RequirementVerification.
+A ChangeImpactAnalysis can be connected to the ChangeTrigger using a Core
+Relationship with relationshipType `hasInput`, from the ChangeImpactAnalysis
+to the ChangeTrigger. This treats the trigger as input to the analysis while
+keeping the source or reason for the change separate from the analysis that
+determines impact.
 
 ChangeImpactAnalysis documents the analysis of the trigger against the safety
 lifecycle. It can reference the process used for the impact analysis, communicate
@@ -39,6 +40,9 @@ elements that were considered, added, or removed from the analyzed context by
 the analysis.
 These elements can include requirements, validations, tests, design artifacts,
 safety analyses, code, documents, or other safety-lifecycle elements.
+Element-level decisions, including per-element decision state, rationale,
+lifecycle reruns, and closure evidence, can be modeled separately if a more
+detailed decision record is needed.
 
 A RequirementVerification with verificationMethod set to assessment can
 describe how an affected requirement is reassessed or reverified after the
