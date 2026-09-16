@@ -17,7 +17,7 @@ This property is deprecated and only included for backward compatibility.
 New documents should use
 a [/Core/Relationship](../../Core/Classes/Relationship.md)
 with "conformsTo" relationship type to
-a [/Core/Regulation](../../Core/Classes/Regulation.md)
+a [/Core/Specification](../../Core/Classes/Specification.md)
 instead.
 
 A free-form textual description that captures a standard with which the
