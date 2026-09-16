@@ -16,7 +16,7 @@ This property does not imply that the artifact complies with the standard.
 For compliance with a standard, use
 a [Relationship](../Classes/Relationship.md)
 with "conformsTo" relationship type to
-a [Regulation](../Classes/Regulation.md)
+a [Specification](../Classes/Specification.md)
 instead.
 
 ## Metadata
