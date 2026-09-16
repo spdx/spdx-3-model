@@ -5,7 +5,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 ## Summary
 
 **DEPRECATED in SPDX 3.1.**
-Use [/Core/Relationship](../../Core/Classes/Regulation.md)
+Use [/Core/Relationship](../../Core/Classes/Relationship.md)
 with "conformsTo" relationship type instead.
 
 A standard with which the artifact complies.
