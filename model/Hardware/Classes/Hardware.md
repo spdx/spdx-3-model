@@ -42,11 +42,6 @@ A hardware artifact is a distinct unit related to hardware.
   - type: /Core/DefinedType
 - category
   - type: /Core/DefinedType
-- additionalInformationSpecification
-  - type: /Core/Specification
-- additionalInformation
-  - type: /Core/DictionaryEntry
-  - minCount: 0
 
 ## External properties restrictions
 
