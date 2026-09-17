@@ -23,6 +23,14 @@ This entity captures the natural language expression of the Need via the stateme
 - statement
   - type: xsd:string
   - minCount: 1
+- status
+  - type: StatusType
+  - minCount: 0
+  - maxCount: 1
+- priority
+  - type: /Core/DefinedType
+  - minCount: 0
+  - maxCount: 1
 
 ## External properties restrictions
 
