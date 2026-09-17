@@ -67,7 +67,7 @@ name completes the sentence:
 - hasHost: The `from` /Build/Build was run on the `to` Element during a LifecycleScopeType period (e.g. the host that the build runs on).
 - hasInput: The `from` /Build/Build, DefinedProcess or Action element has each `to` Element as an input.
 - hasMetadata: Every `to` Element is metadata about the `from` Element (`from` hasMetadata `to`).
-- hasNeed: The `from` Role has the `to` /FunctionalSafety/Need.
+- hasNeed: The `from` Element has the `to` /FunctionalSafety/Need.
 - hasOptionalComponent: Every `to` Element is an optional component of the `from` Element (`from` hasOptionalComponent `to`).
 - hasOptionalDependency: The `from` Element optionally depends on each `to` Element, during a LifecycleScopeType period.
 - hasOutput: The `from` /Build/Build, DefinedProcess or Action element generates each `to` Element as an output.
