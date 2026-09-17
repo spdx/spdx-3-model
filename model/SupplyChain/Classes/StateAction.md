@@ -10,7 +10,7 @@ This is the state of an affected Element at a specific moment in time.
 
 The state of a specific Element is defined, measured or observed in this class at a specific moment in time.
 
-The StateAction is defined by the method used by the DefinedStateProcess to
+The StateAction is defined by the method used by the StateProcess to
 produce an outcome.
 
 ## Metadata
@@ -26,6 +26,6 @@ produce an outcome.
   - minCount: 1
   - maxCount: 1
 - decisionProcess
-  - type: DefinedStateProcess
+  - type: StateProcess
   - minCount: 1
   - maxCount: 1
