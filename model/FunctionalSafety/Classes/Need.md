@@ -20,7 +20,7 @@ This entity captures the natural language expression of the Need via the need pr
 
 ## Properties
 
-- statement
+- need
   - type: xsd:string
   - minCount: 1
 - status
