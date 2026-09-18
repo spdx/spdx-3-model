@@ -74,7 +74,7 @@ analysis, requirement revision, verification result, and evidence.
       "identifierLocator": ["https://qms.example.invalid/vehicle-dynamics/VD-2026-040"],
       "issuingAuthority": "Example Mobility Safety Engineering"
     }],
-    "rationale": "New vehicle dynamics data shows the previous braking response threshold is no longer sufficient for this product context."
+    "description": "New vehicle dynamics data shows the previous braking response threshold is no longer sufficient for this product context."
   },
   {
     "type": "Relationship",
@@ -295,7 +295,7 @@ affected, and the resulting design or validation updates.
       "identifierLocator": ["https://servicenow.example.invalid/incident/INC-2026-0821"],
       "issuingAuthority": "Example Service Operations"
     }],
-    "rationale": "A deployed system reported delayed confirmation of a safety command."
+    "description": "A deployed system reported delayed confirmation of a safety command."
   },
   {
     "type": "Relationship",
@@ -388,7 +388,7 @@ result, and evidence so downstream consumers can see why no action was taken.
       "identifierLocator": ["https://qms.example.invalid/capa/CAPA-2026-0134"],
       "issuingAuthority": "Example Hospital Quality System"
     }],
-    "rationale": "A customer reported confusing alarm wording during routine operation."
+    "description": "A customer reported confusing alarm wording during routine operation."
   },
   {
     "type": "Relationship",
@@ -474,7 +474,7 @@ test elements, and the failed assessment result that justifies the change.
       "identifierLocator": ["https://qms.example.invalid/lab/LAB-2026-077"],
       "issuingAuthority": "Example Reliability Lab"
     }],
-    "rationale": "Bench testing found an occlusion detection edge case under a new waveform."
+    "description": "Bench testing found an occlusion detection edge case under a new waveform."
   },
   {
     "type": "Relationship",
@@ -558,7 +558,7 @@ affected validation and the new rerun or corrective verification.
       "identifier": "VAL-FAIL-2026-019",
       "identifierLocator": ["https://validation.example.invalid/runs/VAL-FAIL-2026-019"]
     }],
-    "rationale": "The latest validation run failed after a regression in the watchdog timeout path."
+    "description": "The latest validation run failed after a regression in the watchdog timeout path."
   },
   {
     "type": "Relationship",
@@ -638,7 +638,7 @@ product-line requirement revision.
       "identifierLocator": ["https://config.example.invalid/changes/CFG-2026-310"],
       "issuingAuthority": "Example Device Operations"
     }],
-    "rationale": "A deployed site changed a runtime dosing threshold within an approved configuration range."
+    "description": "A deployed site changed a runtime dosing threshold within an approved configuration range."
   },
   {
     "type": "Relationship",
@@ -726,7 +726,7 @@ inconclusive evaluation that needs follow-up.
       "identifierLocator": ["https://qms.example.invalid/environment/ENV-2026-044"],
       "issuingAuthority": "Example Site Reliability Team"
     }],
-    "rationale": "A deployment environment reports higher EMI than the original validation envelope."
+    "description": "A deployment environment reports higher EMI than the original validation envelope."
   },
   {
     "type": "Relationship",
@@ -810,7 +810,7 @@ which design and verification elements were reviewed or added.
       "identifierLocator": ["https://supplier.example.invalid/pcn/PCN-2026-051"],
       "issuingAuthority": "Example Sensor Supplier"
     }],
-    "rationale": "A pressure sensor supplier changed an internal component used by a safety-related measurement path."
+    "description": "A pressure sensor supplier changed an internal component used by a safety-related measurement path."
   },
   {
     "type": "Relationship",
@@ -891,7 +891,7 @@ reviewed.
       "identifierLocator": ["https://regulator.example.invalid/bulletins/REG-2026-014"],
       "issuingAuthority": "Example Safety Regulator"
     }],
-    "rationale": "A safety bulletin introduces a new traceability expectation for software components used in safety functions."
+    "description": "A safety bulletin introduces a new traceability expectation for software components used in safety functions."
   },
   {
     "type": "Relationship",
