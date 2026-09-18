@@ -14,6 +14,15 @@ to each other that are part of a safety related system's safety conformance docu
 
 These artifacts include the outputs of the safety engineering phases regarding planning, requirements analysis, system/software architecture, implementation, safety analysis and the verification tasks. The artifacts can be used to compile a standardized safety case document.
 
+## Change Impact Analysis
+
+The FunctionalSafety profile includes terms for representing safety-related
+change impact analysis. A ChangeImpactAnalysis can identify the analysis
+process, status, impact category, and SPDX elements affected by the analysis.
+
+Usage guidance and worked examples for applying these terms are documented
+separately from this profile overview.
+
 ## Metadata
 
 - id: https://spdx.org/rdf/3/terms/FunctionalSafety
