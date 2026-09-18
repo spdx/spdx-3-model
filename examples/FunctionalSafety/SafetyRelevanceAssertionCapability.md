@@ -8,12 +8,13 @@ SRAC is a usage pattern. It does not require a dedicated SRAC-specific
 assessment class. Each example uses the same graph shape:
 
 - a Core Bundle carries the delta or change record;
-- ChangeTrigger records the source, reason, event, report, or external record
-  that initiates the safety-relevant review;
-- a Core Relationship links the ChangeImpactAnalysis to the ChangeTrigger using
-  relationshipType hasInput, from the ChangeImpactAnalysis to the
-  ChangeTrigger;
-- ChangeImpactAnalysis records the impact-analysis status, impact level,
+- ChangeTrigger, or another source Artifact such as /Security/Vulnerability,
+  records the source, reason, event, report, or external record that initiates
+  the safety-relevant review;
+- a Core Relationship links the ChangeImpactAnalysis to the source using
+  relationshipType hasInput, from the ChangeImpactAnalysis to the source
+  element;
+- ChangeImpactAnalysis records the impact-analysis status, impact category,
   approval, and the SPDX elements that are impacted, added, or removed from the
   analyzed safety context;
 - RequirementVerification, EvaluationResult, and EvidenceRelationship are reused
@@ -88,7 +89,7 @@ analysis, requirement revision, verification result, and evidence.
     "name": "Change impact analysis for VD-2026-040",
     "impactAnalysisProcess": ["urn:spdx.dev:sop-change-impact-analysis"],
     "impactAnalysisStatus": "complete",
-    "impactLevel": "medium",
+    "impactLevel": "safetyImpact",
     "approvedBy": ["urn:spdx.dev:agent-safety-review-board"],
     "impactedElement": ["urn:spdx.dev:test-brake-response-t001"],
     "removedElement": ["urn:spdx.dev:req-brake-response-40ms"],
@@ -150,8 +151,9 @@ analysis, requirement revision, verification result, and evidence.
 ## Example 2: CVE in a safety-relevant component
 
 The Security profile carries the vulnerability and VEX status. FunctionalSafety
-adds the safety context and the SRAC change impact analysis so the same CVE can
-be evaluated for safety relevance without duplicating the Security/VEX layer.
+adds the safety context and the SRAC change impact analysis so the existing
+Security vulnerability can be used as input to the safety analysis without
+duplicating the Security/VEX layer.
 
 ```json
 [
@@ -165,7 +167,6 @@ be evaluated for safety relevance without duplicating the Security/VEX layer.
       "urn:spdx.dev:vuln-cve-2024-9999",
       "urn:spdx.dev:vex-under-investigation-cve-2024-9999",
       "urn:spdx.dev:safety-context-openssl-sr12",
-      "urn:spdx.dev:srac-ex2-change-trigger",
       "urn:spdx.dev:srac-ex2-trigger-analysis-link",
       "urn:spdx.dev:srac-ex2-change-impact-analysis",
       "urn:spdx.dev:srac-ex2-verification",
@@ -204,23 +205,11 @@ be evaluated for safety relevance without duplicating the Security/VEX layer.
     "safetyIntegrityLevel": "sil2"
   },
   {
-    "type": "functionalSafety_ChangeTrigger",
-    "spdxId": "urn:spdx.dev:srac-ex2-change-trigger",
-    "name": "CVE-2024-9999 safety relevance review",
-    "externalIdentifier": [{
-      "type": "ExternalIdentifier",
-      "externalIdentifierType": "cve",
-      "identifier": "CVE-2024-9999",
-      "identifierLocator": ["https://www.cve.org/CVERecord?id=CVE-2024-9999"]
-    }],
-    "rationale": "The vulnerable component appears in a runtime path mapped to a SIL-2 therapy command requirement."
-  },
-  {
     "type": "Relationship",
     "spdxId": "urn:spdx.dev:srac-ex2-trigger-analysis-link",
     "relationshipType": "hasInput",
     "from": "urn:spdx.dev:srac-ex2-change-impact-analysis",
-    "to": ["urn:spdx.dev:srac-ex2-change-trigger"]
+    "to": ["urn:spdx.dev:vuln-cve-2024-9999"]
   },
   {
     "type": "functionalSafety_ChangeImpactAnalysis",
@@ -228,7 +217,7 @@ be evaluated for safety relevance without duplicating the Security/VEX layer.
     "name": "Change impact analysis for CVE-2024-9999",
     "impactAnalysisProcess": ["urn:spdx.dev:sop-change-impact-analysis"],
     "impactAnalysisStatus": "inProgress",
-    "impactLevel": "high",
+    "impactLevel": "safetyAndSecurityImpact",
     "impactedElement": [
       "pkg:generic/openssl@3.0.8",
       "urn:spdx.dev:req-sr12-therapy-command-transport",
@@ -320,7 +309,7 @@ affected, and the resulting design or validation updates.
     "spdxId": "urn:spdx.dev:srac-ex3-change-impact-analysis",
     "name": "Change impact analysis for INC-2026-0821",
     "impactAnalysisStatus": "complete",
-    "impactLevel": "critical",
+    "impactLevel": "safetyImpact",
     "impactedElement": ["urn:spdx.dev:req-dose-confirmation-v1", "urn:spdx.dev:test-dose-confirmation"],
     "removedElement": ["urn:spdx.dev:req-dose-confirmation-v1"],
     "addedElement": ["urn:spdx.dev:req-dose-confirmation-v2", "urn:spdx.dev:test-dose-confirmation-regression"],
@@ -413,7 +402,7 @@ result, and evidence so downstream consumers can see why no action was taken.
     "spdxId": "urn:spdx.dev:srac-ex4-change-impact-analysis",
     "name": "Change impact analysis for CAPA-2026-0134",
     "impactAnalysisStatus": "complete",
-    "impactLevel": "none",
+    "impactLevel": "noCriticalImpact",
     "impactedElement": ["urn:spdx.dev:req-alarm-message-clarity", "urn:spdx.dev:user-manual-alarm-section"],
     "rationale": "The report was reviewed and does not change safety requirements, design, or validation."
   },
@@ -499,7 +488,7 @@ test elements, and the failed assessment result that justifies the change.
     "spdxId": "urn:spdx.dev:srac-ex5-change-impact-analysis",
     "name": "Change impact analysis for LAB-2026-077",
     "impactAnalysisStatus": "complete",
-    "impactLevel": "high",
+    "impactLevel": "safetyImpact",
     "impactedElement": ["urn:spdx.dev:hazard-occlusion", "urn:spdx.dev:test-occlusion-detection"],
     "removedElement": ["urn:spdx.dev:req-occlusion-detect-v1"],
     "addedElement": ["urn:spdx.dev:req-occlusion-detect-v2", "urn:spdx.dev:test-occlusion-edge-waveform"],
@@ -583,7 +572,7 @@ affected validation and the new rerun or corrective verification.
     "spdxId": "urn:spdx.dev:srac-ex6-change-impact-analysis",
     "name": "Change impact analysis for VAL-FAIL-2026-019",
     "impactAnalysisStatus": "complete",
-    "impactLevel": "medium",
+    "impactLevel": "safetyImpact",
     "impactedElement": ["urn:spdx.dev:test-watchdog-timeout", "urn:spdx.dev:req-watchdog-timeout"],
     "removedElement": ["urn:spdx.dev:evaluation-watchdog-timeout-pass-2026-08"],
     "addedElement": ["urn:spdx.dev:verification-watchdog-timeout-rerun"],
@@ -663,7 +652,7 @@ product-line requirement revision.
     "spdxId": "urn:spdx.dev:srac-ex7-change-impact-analysis",
     "name": "Change impact analysis for CFG-2026-310",
     "impactAnalysisStatus": "complete",
-    "impactLevel": "low",
+    "impactLevel": "noCriticalImpact",
     "impactedElement": ["urn:spdx.dev:req-dose-threshold-runtime", "urn:spdx.dev:config-dose-threshold"],
     "addedElement": ["urn:spdx.dev:srac-ex7-safety-context"],
     "rationale": "The configuration remains within the validated range, but the site-specific safety context is recorded."
@@ -751,7 +740,7 @@ inconclusive evaluation that needs follow-up.
     "spdxId": "urn:spdx.dev:srac-ex8-change-impact-analysis",
     "name": "Change impact analysis for ENV-2026-044",
     "impactAnalysisStatus": "inProgress",
-    "impactLevel": "high",
+    "impactLevel": "safetyImpact",
     "impactedElement": ["urn:spdx.dev:assumption-emi-envelope", "urn:spdx.dev:test-emi-susceptibility"],
     "addedElement": ["urn:spdx.dev:srac-ex8-assumption", "urn:spdx.dev:test-emi-site-condition"],
     "rationale": "The environment may exceed the original assumption, so a revised assumption and site-condition test are needed."
@@ -835,7 +824,7 @@ which design and verification elements were reviewed or added.
     "spdxId": "urn:spdx.dev:srac-ex9-change-impact-analysis",
     "name": "Change impact analysis for PCN-2026-051",
     "impactAnalysisStatus": "complete",
-    "impactLevel": "low",
+    "impactLevel": "qualityImpact",
     "impactedElement": ["urn:spdx.dev:design-pressure-sensor-path", "urn:spdx.dev:test-pressure-sensor-accuracy"],
     "addedElement": ["urn:spdx.dev:verification-supplier-equivalence-PCN-2026-051"],
     "rationale": "The supplier evidence supports equivalence, but the affected sensor path is recorded for traceability."
@@ -916,7 +905,7 @@ reviewed.
     "spdxId": "urn:spdx.dev:srac-ex10-change-impact-analysis",
     "name": "Change impact analysis for REG-2026-014",
     "impactAnalysisStatus": "inProgress",
-    "impactLevel": "high",
+    "impactLevel": "safetyImpact",
     "impactedElement": ["urn:spdx.dev:req-sbom-safety-trace-v1", "urn:spdx.dev:safety-case-index"],
     "removedElement": ["urn:spdx.dev:req-sbom-safety-trace-v1"],
     "addedElement": ["urn:spdx.dev:req-sbom-safety-trace-v2", "urn:spdx.dev:verification-regulatory-traceability"],
