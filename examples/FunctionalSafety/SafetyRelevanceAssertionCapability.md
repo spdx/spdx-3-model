@@ -15,8 +15,8 @@ assessment class. Each example uses the same graph shape:
   relationshipType hasInput, from the ChangeImpactAnalysis to the source
   element;
 - ChangeImpactAnalysis records the impact-analysis status, impact category,
-  approval, and the SPDX elements that are impacted, added, or removed from the
-  analyzed safety context;
+  and the SPDX elements that are impacted, added, or removed from the analyzed
+  safety context;
 - RequirementVerification, EvaluationResult, and EvidenceRelationship are reused
   when downstream verification, result, and evidence need to be communicated.
 
@@ -90,7 +90,6 @@ analysis, requirement revision, verification result, and evidence.
     "impactAnalysisProcess": ["urn:spdx.dev:sop-change-impact-analysis"],
     "impactAnalysisStatus": "complete",
     "impactLevel": "safetyImpact",
-    "approvedBy": ["urn:spdx.dev:agent-safety-review-board"],
     "impactedElement": ["urn:spdx.dev:test-brake-response-t001"],
     "removedElement": ["urn:spdx.dev:req-brake-response-40ms"],
     "addedElement": ["urn:spdx.dev:req-brake-response-30ms"],
