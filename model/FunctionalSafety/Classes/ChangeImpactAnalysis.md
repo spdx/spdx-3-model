@@ -18,9 +18,8 @@ for the change separate from the analysis that determines impact.
 
 The analysis can reference the process or specification used to perform the
 impact analysis, communicate its current status, indicate its impact category,
-identify the agent that approved it, and identify elements that were impacted,
-added, removed from the analyzed context, verified again, or otherwise
-reviewed.
+and identify elements that were impacted, added, removed from the analyzed
+context, verified again, or otherwise reviewed.
 
 The affected elements can be requirements, validations, tests, design artifacts,
 safety analyses, code, documents, or any other SPDX element relevant to the
@@ -52,9 +51,6 @@ represented separately when a more detailed decision record is needed.
   - type: ChangeImpactLevelType
   - minCount: 0
   - maxCount: 1
-- approvedBy
-  - type: /Core/Agent
-  - minCount: 0
 - impactedElement
   - type: /Core/Element
   - minCount: 0

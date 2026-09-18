@@ -18,8 +18,7 @@ These artifacts include the outputs of the safety engineering phases regarding p
 
 The FunctionalSafety profile includes terms for representing safety-related
 change impact analysis. A ChangeImpactAnalysis can identify the analysis
-process, status, impact category, approval, and SPDX elements affected by the
-analysis.
+process, status, impact category, and SPDX elements affected by the analysis.
 
 Usage guidance and worked examples for applying these terms are documented
 separately from this profile overview.

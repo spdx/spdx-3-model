@@ -10,8 +10,8 @@ Specifies the lifecycle status of a functional safety change impact analysis.
 
 ChangeImpactAnalysisStatusType provides common values for communicating whether
 a ChangeImpactAnalysis has been opened, is still in progress, is complete, has
-been rejected or stopped, is a duplicate of another analysis, or is represented
-by another status value.
+been stopped, is a duplicate of another analysis, or is represented by another
+status value.
 
 ## Metadata
 
@@ -22,7 +22,6 @@ by another status value.
 - new: The change impact analysis has been opened, but substantive analysis work has not yet started.
 - inProgress: The change impact analysis is being prepared, waiting on evidence, a decision, a test rerun, or other information, and is not complete.
 - complete: The change impact analysis has documented its conclusions.
-- rejected: The change impact analysis was reviewed and rejected.
 - stopped: The change impact analysis was intentionally stopped before completion.
 - duplicate: The change impact analysis is closed because another change impact analysis covers the same trigger or scope.
 - other: The change impact analysis status is not represented by another value in this vocabulary.
