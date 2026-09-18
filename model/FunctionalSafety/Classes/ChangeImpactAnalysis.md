@@ -17,7 +17,7 @@ ChangeImpactAnalysis to each ChangeTrigger. This keeps the source or reason
 for the change separate from the analysis that determines impact.
 
 The analysis can reference the process or specification used to perform the
-impact analysis, communicate its current status, indicate its impact level,
+impact analysis, communicate its current status, indicate its impact category,
 identify the agent that approved it, and identify elements that were impacted,
 added, removed from the analyzed context, verified again, or otherwise
 reviewed.
@@ -28,9 +28,10 @@ safety lifecycle. Detailed engineering, quality-system, or regulatory records
 can remain in their authoritative systems while SPDX communicates the
 machine-readable change impact graph.
 
-Element-level decisions, including per-element decision state, rationale,
-lifecycle reruns, and closure evidence, can be represented separately when a
-more detailed decision record is needed.
+The /Core/rationale property describes the overall reason, scope, or conclusion
+for the ChangeImpactAnalysis. Element-level decisions, including per-element
+decision state, rationale, lifecycle reruns, and closure evidence, can be
+represented separately when a more detailed decision record is needed.
 
 ## Metadata
 
