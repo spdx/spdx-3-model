@@ -66,6 +66,7 @@ name completes the sentence:
 - hasExample: Every `to` Element is an example for the `from` Element (`from` hasExample `to`).
 - hasHost: The `from` /Build/Build was run on the `to` Element during a LifecycleScopeType period (e.g. the host that the build runs on).
 - hasInput: The `from` /Build/Build, DefinedProcess or Action element has each `to` Element as an input.
+- hasInstall: The `from` Element has each `to` Artifact installed (placed into position for use) into it during a LifecycleScopeType period. To express the Agent doing the install, link this relationship as the `from` in `performedBy`.
 - hasMetadata: Every `to` Element is metadata about the `from` Element (`from` hasMetadata `to`).
 - hasOptionalComponent: Every `to` Element is an optional component of the `from` Element (`from` hasOptionalComponent `to`).
 - hasOptionalDependency: The `from` Element optionally depends on each `to` Element, during a LifecycleScopeType period.
@@ -79,6 +80,7 @@ name completes the sentence:
 - hasStaticLink: The `from` Element statically links in each `to` Element, during a LifecycleScopeType period.
 - hasTest: Every `to` Element is a test artifact for the `from` Element (`from` hasTest `to`), during a LifecycleScopeType period.
 - hasTestCase: Every `to` Element is a test case for the `from` Element (`from` hasTestCase `to`).
+- hasUninstall: The `from` Element has each `to` Artifact uninstalled (removed from position for use) from it during a LifecycleScopeType period. To express the Agent doing the uninstall, link this relationship as the `from` in `performedBy`.
 - hasVariant: Every `to` Element is a variant the `from` Element (`from` hasVariant `to`).
 - implementedBy: The `from` Requirement is implemented in the `to` Element(s).
 - invokedBy: The `from` Element was invoked by the `to` Agent, during a LifecycleScopeType period (for example, a /Build/Build element that describes a build step).
@@ -87,7 +89,7 @@ name completes the sentence:
 - other: Every `to` Element is related to the `from` Element where the relationship type is not described by any of the SPDX relationship types (this relationship is directionless).
 - packagedBy: Every `to` Element is a packaged instance of the `from` Element (`from` packagedBy `to`).
 - patchedBy: Every `to` Element is a patch for the `from` Element (`from` patchedBy `to`).
-- performedBy: Every `from` Action is performedBy `to` Agent.
+- performedBy: Every `from` Action, or Relationship of type hasInstall or hasUninstall, is performed by `to` Agent.
 - pretrainedOn: The `from` Element has been pretrained on the `to` Element(s).
 - providesSupportFor: The `from` Agent provides support for each `to` Artifact. The use of the `providesSupportFor` type is constrained to `SupportRelationship` classed relationships.
 - publishedBy: Designates a `from` /Security/Vulnerability was made available for public use or reference by each `to` Agent.
