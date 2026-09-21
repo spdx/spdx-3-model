@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" compressed="false" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:147.0) Gecko/20100101 Firefox/147.0" version="29.3.4" pages="13">
+<mxfile host="app.diagrams.net" compressed="false" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:147.0) Gecko/20100101 Firefox/147.0" pages="13">
   <diagram id="MqBy92FNWJOg9jOokCTN" name="Core">
     <mxGraphModel dx="2026" dy="1967" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="0" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1674,7 +1674,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="L82DZidMtc7JshnkpAnJ" name="AI">
-    <mxGraphModel dx="1364" dy="1967" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="0" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="808" dy="1566" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="0" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1778,6 +1778,23 @@
         </mxCell>
         <mxCell id="dsSG6QulHxbMFe98Yzap-1" parent="B4Z5g7sS6NZpVYw_CnZ0-3" style="verticalAlign=top;align=left;overflow=fill;fontSize=10;fontFamily=Verdana;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontStyle=0" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center; padding-top: 10px;&quot;&gt;&lt;b&gt;EnergyUnitType&lt;/b&gt;&lt;/p&gt;" vertex="1">
           <mxGeometry height="40" width="190" x="21" y="70" as="geometry" />
+        </mxCell>
+        <object label="/Core/Artifact" description="set of related components that are combined into a single distributable item" description_source="ISO/IEC/IEEE 24765:2017" id="yG0_Oxp2U50ixGFw9Yu6-1">
+          <mxCell parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#82b366;fontFamily=Verdana;fontSize=10;" vertex="1">
+            <mxGeometry height="52" width="244" x="532.28" y="-1120" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="yG0_Oxp2U50ixGFw9Yu6-5" edge="1" parent="1" source="yG0_Oxp2U50ixGFw9Yu6-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" target="yG0_Oxp2U50ixGFw9Yu6-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yG0_Oxp2U50ixGFw9Yu6-2" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#f5f5f5;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#666666;fontFamily=Verdana;fontSize=10;fontColor=#333333;" value="InteractionTemplate" vertex="1">
+          <mxGeometry height="86" width="244" x="532.28" y="-1000" as="geometry" />
+        </mxCell>
+        <mxCell id="yG0_Oxp2U50ixGFw9Yu6-3" parent="yG0_Oxp2U50ixGFw9Yu6-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontColor=#000000;fontFamily=Verdana;fontSize=10;" value="+ interactionTemplateString:&amp;nbsp;xsd:string[0..1]]" vertex="1">
+          <mxGeometry height="30" width="244" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="yG0_Oxp2U50ixGFw9Yu6-4" parent="yG0_Oxp2U50ixGFw9Yu6-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontColor=#000000;fontFamily=Verdana;fontSize=10;" value="+ interactionTemplateDictionary: DictionaryEntry[0..*]" vertex="1">
+          <mxGeometry height="30" width="244" y="56" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
@@ -2107,7 +2124,7 @@
         <mxCell id="Gllw5IAAax8XE4wCEWVt-9" parent="8_UPuNKhLgLkakI1TAIx-102" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontFamily=Verdana;fontSize=10;" value="+ currentState: State[1]" vertex="1">
           <mxGeometry height="26" width="290" y="26" as="geometry" />
         </mxCell>
-        <mxCell id="Gllw5IAAax8XE4wCEWVt-10" parent="8_UPuNKhLgLkakI1TAIx-102" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontFamily=Verdana;fontSize=10;fontStyle=0" value="+ decisionProcess: DefinedStateProcess[1]" vertex="1">
+        <mxCell id="Gllw5IAAax8XE4wCEWVt-10" parent="8_UPuNKhLgLkakI1TAIx-102" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontFamily=Verdana;fontSize=10;fontStyle=0" value="+ decisionProcess: StateProcess[1]" vertex="1">
           <mxGeometry height="26" width="290" y="52" as="geometry" />
         </mxCell>
         <mxCell id="8_UPuNKhLgLkakI1TAIx-105" edge="1" parent="1" source="8_UPuNKhLgLkakI1TAIx-106" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;endArrow=block;endFill=0;" target="8_UPuNKhLgLkakI1TAIx-84">
@@ -2417,7 +2434,7 @@
         <mxCell id="Gllw5IAAax8XE4wCEWVt-6" parent="1" style="swimlane;fontStyle=3;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e1d5e7;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#9673a6;fontFamily=Verdana;fontSize=10;" value="/Core/Artifact " vertex="1">
           <mxGeometry height="56" width="122" x="923" y="305" as="geometry" />
         </mxCell>
-        <mxCell id="Gllw5IAAax8XE4wCEWVt-11" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=10;" value="&lt;b&gt;DefinedStateProcess&lt;/b&gt;" vertex="1">
+        <mxCell id="Gllw5IAAax8XE4wCEWVt-11" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=10;" value="&lt;b&gt;StateProcess&lt;/b&gt;" vertex="1">
           <mxGeometry height="52" width="274" x="1390" y="1120" as="geometry" />
         </mxCell>
         <mxCell id="Gllw5IAAax8XE4wCEWVt-12" parent="Gllw5IAAax8XE4wCEWVt-11" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontFamily=Verdana;fontSize=10;" value="+ validState: State[1..*]" vertex="1">

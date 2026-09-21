@@ -15,5 +15,5 @@ convention.
 ## Metadata
 
 - name: requirementUID
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: ExternalIdentifier

@@ -14,5 +14,5 @@ enumeration.
 ## Metadata
 
 - name: processReadiness
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: ProcessReadinessType
