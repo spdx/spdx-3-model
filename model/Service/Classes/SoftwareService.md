@@ -25,8 +25,6 @@ Future SPDX versions may define optional Service profile classes and properties 
   - type: /Core/DictionaryEntry
 - /Core/additionalInformationSpecification
   - type: /Core/Specification
-- serverAuthenticationProtocol
-  - type: AuthenticationProtocolType
 - serverKeyValidationProtocol
   - type: KeyValidationProtocolType
   - minCount: 0
