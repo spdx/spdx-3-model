@@ -13,5 +13,5 @@ The development lifecycle stage specifies the phase or phases of a product’s l
 ## Metadata
 
 - name: devLifecycleStage
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: LifecycleScopeType
