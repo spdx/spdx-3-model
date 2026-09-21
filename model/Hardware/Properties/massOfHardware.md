@@ -13,5 +13,5 @@ This property specifies the mass of a physical hardware element. The value must 
 ## Metadata
 
 - name: massOfHardware
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: /Core/UnitOfMeasure
