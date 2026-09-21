@@ -9,7 +9,8 @@ Describes a relationship between one or more elements.
 ## Description
 
 A Relationship is a grouping of characteristics unique to an assertion
-that one Element is related to one or more other Elements in some way.
+that one Element is related to one or more other Elements in some way,
+as defined by the `relationshipType` property.
 
 To explicitly assert that no such relationships exist, the `to` property
 shall contain the NoneElement individual and no other elements.
@@ -24,7 +25,7 @@ NoAssertionElement individual.
 A relationship can be either directional or non-directional (directionless).
 For a directional relationship,
 the direction of a relationship is always from the `from` Element to the
-`to` Element, as defined by the `relationshipType` property.
+`to` Element.
 
 A relationship can be temporally scoped by using the optional `startTime` and
 `endTime` properties.
