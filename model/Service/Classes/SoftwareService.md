@@ -15,6 +15,10 @@ The `serviceHostingCountry` can be used to capture any countries from which the 
 
 ## Properties
 
+- /Core/additionalInformation
+  - type: /Core/DictionaryEntry
+- /Core/additionalInformationSpecification
+  - type: /Core/Specification
 - serverAuthenticationProtocol
   - type: AuthenticationProtocolType
   - minCount: 0

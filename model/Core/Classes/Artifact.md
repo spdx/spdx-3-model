@@ -20,10 +20,6 @@ a hardware device, an action, or a defined process.
 
 ## Properties
 
-- additionalInformation
-  - type: DictionaryEntry
-- additionalInformationSpecification
-  - type: Specification
 - originatedBy
   - type: Agent
   - minCount: 0
