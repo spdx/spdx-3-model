@@ -21,8 +21,8 @@ Future SPDX versions may define optional Service profile classes and properties 
 
 ## Properties
 
-- serverAuthenticationProtocol
-  - type: AuthenticationProtocolType
+- serverKeyValidationProtocol
+  - type: KeyValidationProtocolType
   - minCount: 0
 - serviceHostingCountry
   - type: /Core/CountryCodeAlpha3
