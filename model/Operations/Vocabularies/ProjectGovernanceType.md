@@ -16,5 +16,5 @@ Describes the different `ProjectGovernanceType` of data within a given project.
 
 ## Entries
 
-- OpenSource: Project in the Open Source Community that shares their work products for reuse under an Open Source license.
-- ClosedSource: Project operating in a closed source context.
+- openSource: Project in the Open Source Community that shares their work products for reuse under an Open Source license.
+- closedSource: Project operating in a closed source context.
