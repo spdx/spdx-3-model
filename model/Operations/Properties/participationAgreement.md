@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# participationAgreements
+# participationAgreement
 
 ## Summary
 
@@ -12,6 +12,6 @@ Agreements that control the participation in the project, e.g. DCO, CLA, Committ
 
 ## Metadata
 
-- name: participationAgreements
+- name: participationAgreement
 - Nature: DataProperty
 - Range: /Core/Specification
