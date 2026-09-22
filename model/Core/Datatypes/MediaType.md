@@ -9,15 +9,22 @@ A string constrained to the RFC 2046 specification.
 
 ## Description
 
-A MediaType is a string constrained to the
-[RFC 2046 MIME Part Two: Media Types](https://datatracker.ietf.org/doc/rfc2046/).
-It provides a standardized way of indicating the type of content of an Element
-or a property.
+A MediaType provides a standardized way of indicating the type of content of
+an Element or a property.
 
-When media type parameters are present, whitespace shall not occur adjacent to
-semicolons (`;`) or equals signs (`=`).
-Where possible without altering semantics, whitespace within quoted parameter
-values should also be omitted.
+The string shall be constrained to
+[RFC 2046 MIME Part Two: Media Types](https://datatracker.ietf.org/doc/rfc2046/)
+and shall be normalized in accordance with the
+[WHATWG MIME Sniffing standard](https://mimesniff.spec.whatwg.org/#parsing-a-mime-type).
+The following formatting constraints apply:
+
+- The top-level type and subtype shall be represented in ASCII lowercase.
+- When one or more media type parameters are present, whitespace characters
+  shall not occur adjacent to the semicolon (`;`) delimiter or the equals
+  sign (`=`).
+- Parameter values shall not be enclosed in quotation marks (`"`)
+  unless the value is an empty string or the value contains characters outside
+  the standard HTTP token code point set.
 
 *Example*
 
