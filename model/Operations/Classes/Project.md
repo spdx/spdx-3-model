@@ -49,8 +49,8 @@ Based on the Project Management Body of Knowledge (PMBOK), 3rd edition.
 - participationAgreements
   - type: /Core/Specification
   - maxCount: 1
-- projectType
-  - type: ProjectType
+- governanceType
+  - type: ProjectGovernanceType
   - maxCount: 1
 - projectUrl
   - type: xsd:anyURI
