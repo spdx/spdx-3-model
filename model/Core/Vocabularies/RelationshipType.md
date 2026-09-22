@@ -67,7 +67,6 @@ name completes the sentence:
 - hasHost: The `from` /Build/Build was run on the `to` Element during a LifecycleScopeType period (e.g. the host that the build runs on).
 - hasInput: The `from` Element has each `to` Element as an input.
 - hasInstall: The `from` Element has each `to` Artifact installed (placed into position for use) into it during a LifecycleScopeType period. To express the Agent doing the install, link this relationship as the `from` in `performedBy`.
-- hasInput: The `from` element has each `to` Element as an input.
 - hasMetadata: Every `to` Element is metadata about the `from` Element (`from` hasMetadata `to`).
 - hasOptionalComponent: Every `to` Element is an optional component of the `from` Element (`from` hasOptionalComponent `to`).
 - hasOptionalDependency: The `from` Element optionally depends on each `to` Element, during a LifecycleScopeType period.
@@ -397,18 +396,6 @@ name completes the sentence:
             FILTER NOT EXISTS { $this rdf:type <Core/LifecycleScopedRelationship> }
         }
 
-- hasInput_from
-  - message: When relationship is hasInput, from must be a Build, DefinedProcess, or Action
-  - query: <<<
-
-        SELECT $this WHERE {
-            $this <Core/relationshipType> <Core/RelationshipType/hasInput> .
-            $this <Core/from> ?from .
-            FILTER NOT EXISTS { ?from rdf:type/rdfs:subClassOf* <Build/Build> }
-            FILTER NOT EXISTS { ?from rdf:type/rdfs:subClassOf* <Core/DefinedProcess> }
-            FILTER NOT EXISTS { ?from rdf:type/rdfs:subClassOf* <Core/Action> }
-        }
-
 - hasOptionalDependency_type
   - message: When relationship is hasOptionalDependency, class must be LifecycleScopedRelationship
   - query: <<<
@@ -416,18 +403,6 @@ name completes the sentence:
         SELECT $this WHERE {
             $this <Core/relationshipType> <Core/RelationshipType/hasOptionalDependency> .
             FILTER NOT EXISTS { $this rdf:type <Core/LifecycleScopedRelationship> }
-        }
-
-- hasOutput_from
-  - message: When relationship is hasOutput, from must be a Build, DefinedProcess, or Action
-  - query: <<<
-
-        SELECT $this WHERE {
-            $this <Core/relationshipType> <Core/RelationshipType/hasOutput> .
-            $this <Core/from> ?from .
-            FILTER NOT EXISTS { ?from rdf:type/rdfs:subClassOf* <Build/Build> }
-            FILTER NOT EXISTS { ?from rdf:type/rdfs:subClassOf* <Core/DefinedProcess> }
-            FILTER NOT EXISTS { ?from rdf:type/rdfs:subClassOf* <Core/Action> }
         }
 
 - hasPrerequisite_type
