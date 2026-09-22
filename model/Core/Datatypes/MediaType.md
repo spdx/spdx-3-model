@@ -35,4 +35,4 @@ A list of all possible media types is available at
 
 ## Format
 
-- pattern: ^[^\/]+\/[^\/]+$
+- pattern: ^[^/;\s]+/[^/;\s]+(\s*;.*)?$
