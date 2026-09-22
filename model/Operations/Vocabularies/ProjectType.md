@@ -8,14 +8,13 @@ Enumeration of Project types.
 
 ## Description
 
-Describes the different Projecttypes of data within a given project. 
+Describes the different Projecttypes of data within a given project.
 
 ## Metadata
 
 - name: ProjectType
 
 ## Entries
-
 
 - OpenSource: Project in the Open Source Community that shares their workproducts for reuse under an Open Source license.
 - ClosedSource: Project operating in a closed source context.
