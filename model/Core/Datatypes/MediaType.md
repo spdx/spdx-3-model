@@ -14,8 +14,10 @@ A MediaType is a string constrained to the
 It provides a standardized way of indicating the type of content of an Element
 or a property.
 
-When parameters are present, whitespace shall not occur adjacent to semicolons
-(`;`) or equals signs (`=`).
+When media type parameters are present, whitespace shall not occur adjacent to
+semicolons (`;`) or equals signs (`=`).
+Where possible without altering semantics, whitespace within quoted parameter
+values should also be omitted.
 
 *Example*
 
@@ -27,6 +29,7 @@ When parameters are present, whitespace shall not occur adjacent to semicolons
 - `text/csv;charset=UTF-8`
 - `text/javascript`
 - `text/spdx`
+- `video/mp4;codecs="avc1.4d401e,mp4a.40.2";profiles="isom,iso2"`
 
 A list of all possible media types is available at
 [IANA Protocol Registries](https://www.iana.org/assignments/media-types/media-types.xhtml).
