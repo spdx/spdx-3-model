@@ -408,6 +408,25 @@ name completes the sentence:
             FILTER NOT EXISTS { ?from rdf:type/rdfs:subClassOf* <Core/Action> }
         }
 
+- hasInstall_to
+  - message: When relationship is hasInstall, to must be an Artifact
+  - query: <<<
+
+        SELECT $this WHERE {
+            $this <Core/relationshipType> <Core/RelationshipType/hasInstall> .
+            $this <Core/to> ?to .
+            FILTER NOT EXISTS { ?to rdf:type/rdfs:subClassOf* <Core/Artifact> }
+        }
+
+- hasInstall_type
+  - message: When relationship is hasInstall, class must be LifecycleScopedRelationship
+  - query: <<<
+
+        SELECT $this WHERE {
+            $this <Core/relationshipType> <Core/RelationshipType/hasInstall> .
+            FILTER NOT EXISTS { $this rdf:type <Core/LifecycleScopedRelationship> }
+        }
+
 - hasOptionalDependency_type
   - message: When relationship is hasOptionalDependency, class must be LifecycleScopedRelationship
   - query: <<<
@@ -512,6 +531,25 @@ name completes the sentence:
             FILTER NOT EXISTS { $this rdf:type <Core/LifecycleScopedRelationship> }
         }
 
+- hasUninstall_to
+  - message: When relationship is hasUninstall, to must be an Artifact
+  - query: <<<
+
+        SELECT $this WHERE {
+            $this <Core/relationshipType> <Core/RelationshipType/hasUninstall> .
+            $this <Core/to> ?to .
+            FILTER NOT EXISTS { ?to rdf:type/rdfs:subClassOf* <Core/Artifact> }
+        }
+
+- hasUninstall_type
+  - message: When relationship is hasUninstall, class must be LifecycleScopedRelationship
+  - query: <<<
+
+        SELECT $this WHERE {
+            $this <Core/relationshipType> <Core/RelationshipType/hasUninstall> .
+            FILTER NOT EXISTS { $this rdf:type <Core/LifecycleScopedRelationship> }
+        }
+
 - implementedBy_from
   - message: When relationship is implementedBy, from must be a Requirement
   - query: <<<
@@ -542,13 +580,15 @@ name completes the sentence:
         }
 
 - performedBy_from
-  - message: When relationship is performedBy, from must be an Action
+  - message: When relationship is performedBy, from must be an Action or a Relationship of type hasInstall or hasUninstall
   - query: <<<
 
         SELECT $this WHERE {
             $this <Core/relationshipType> <Core/RelationshipType/performedBy> .
             $this <Core/from> ?from .
             FILTER NOT EXISTS { ?from rdf:type/rdfs:subClassOf* <Core/Action> }
+            FILTER NOT EXISTS { ?from <Core/relationshipType> <Core/RelationshipType/hasInstall> }
+            FILTER NOT EXISTS { ?from <Core/relationshipType> <Core/RelationshipType/hasUninstall> }
         }
 
 - performedBy_to
