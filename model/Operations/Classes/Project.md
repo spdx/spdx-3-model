@@ -46,9 +46,8 @@ Based on the Project Management Body of Knowledge (PMBOK), 3rd edition.
 - projectCharter
   - type: /Core/ExternalRef
   - maxCount: 1
-- participationAgreements
+- participationAgreement
   - type: /Core/Specification
-  - maxCount: 1
 - governanceType
   - type: ProjectGovernanceType
   - maxCount: 1
