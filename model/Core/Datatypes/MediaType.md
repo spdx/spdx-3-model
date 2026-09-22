@@ -14,6 +14,9 @@ A MediaType is a string constrained to the
 It provides a standardized way of indicating the type of content of an Element
 or a property.
 
+When parameters are present, whitespace shall not occur adjacent to semicolons
+(`;`) or equals signs (`=`).
+
 *Example*
 
 - `application/java-archive`
@@ -35,4 +38,4 @@ A list of all possible media types is available at
 
 ## Format
 
-- pattern: ^[^/;\s]+/[^/;\s]+(\s*;.*)?$
+- pattern: ^[^/;\s]+/[^/;\s]+(;[^=;\s]+=("[^"]*"|[^;\s]+))*$
