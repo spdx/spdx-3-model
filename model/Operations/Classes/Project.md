@@ -30,6 +30,11 @@ Based on the Project Management Body of Knowledge (PMBOK), 3rd edition.
   - type: /Core/DateTime
   - minCount: 1
   - maxCount: 1
+- contributionProcess
+  - type: /Core/DefinedProcess
+- technicalScope
+  - type: xsd:string
+  - maxCount: 1
 - projectTitle
   - type: xsd:string
   - minCount: 1
@@ -37,6 +42,18 @@ Based on the Project Management Body of Knowledge (PMBOK), 3rd edition.
 - projectContract
   - type: xsd:anyURI
   - minCount: 1
+  - maxCount: 1
+- projectCharter
+  - type: /Core/ExternalRef
+  - maxCount: 1
+- participationAgreements
+  - type: /Core/Specification
+  - maxCount: 1
+- projectType
+  - type: ProjectType
+  - maxCount: 1
+- projectUrl
+  - type: xsd:anyURI
   - maxCount: 1
 - projectSponsor
   - type: /Core/Agent
