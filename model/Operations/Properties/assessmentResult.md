@@ -8,7 +8,7 @@ The list of the multiple ExportControlClassification.
 
 ## Description
 
-This captures the list of all of the ExportControlClassifications for this ExportControlClassificationAssessment. 
+This captures the list of all of the ExportControlClassifications for this ExportControlClassificationAssessment.
 
 ## Metadata
 
