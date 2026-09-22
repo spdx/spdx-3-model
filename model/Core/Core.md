@@ -13,5 +13,5 @@ SPDX 3 profiles.
 
 ## Metadata
 
-- id: https://spdx.org/rdf/3.1/terms/Core
+- id: https://spdx.org/rdf/3/terms/Core
 - name: Core

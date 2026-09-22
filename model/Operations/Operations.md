@@ -18,5 +18,5 @@ The Operations assessment descriptions are patterns for business relevant assess
 
 ## Metadata
 
-- id: https://spdx.org/rdf/3.1/terms/Operations
+- id: https://spdx.org/rdf/3/terms/Operations
 - name: Operations

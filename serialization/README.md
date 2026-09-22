@@ -20,7 +20,7 @@ The specification and examples are numbered for easier referencing
 
 Current supported formats are:
 
-- [JSON-LD](jsonld.md)
+- [SPDX 3 JSON](https://github.com/spdx/spdx-spec/blob/develop/docs/serializations.md#serialization-in-spdx-3-json)
 
 ## Use cases
 

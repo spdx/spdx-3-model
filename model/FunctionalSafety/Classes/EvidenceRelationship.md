@@ -18,7 +18,7 @@ EvidenceRelationship defines the association between pieces of evidence and Eval
 
 ## Properties
 
-- evidenceUUID
+- evidenceUID
   - type: /Core/ExternalIdentifier
   - minCount: 0
   - maxCount: 1

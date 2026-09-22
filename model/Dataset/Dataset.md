@@ -14,5 +14,5 @@ preparation process, its characteristics, and its access methods.
 
 ## Metadata
 
-- id: https://spdx.org/rdf/3.1/terms/Dataset
+- id: https://spdx.org/rdf/3/terms/Dataset
 - name: Dataset

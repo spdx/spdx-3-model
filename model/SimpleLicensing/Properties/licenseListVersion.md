@@ -23,4 +23,4 @@ and exceptions referenced in the expression.
 
 - name: licenseListVersion
 - Nature: DataProperty
-- Range: /Core/Version
+- Range: /Core/VersionNumber

@@ -1,11 +1,16 @@
-# Change Log
+# Change log
 
 ## 3.1-dev (TBA)
 
-The SPDX 3.1 model expands beyond software to include safety, hardware, supply chain,
-operations, and more. This release candidate is for testing and validation;
+The SPDX 3.1 model expands beyond software to include safety, hardware,
+supply chain, operations, and more.
+This release candidate is for testing and validation;
 it may contain changes that could be modified or reverted before the
 final release.
+
+Release notes for the 3.1-RC1 model, detailing all changes from 3.0.1
+through 3.1-RC1, are available at:
+<https://github.com/spdx/spdx-3-model/releases/tag/3.1-rc1>.
 
 ### Changes since 3.0.1
 
@@ -68,13 +73,13 @@ semantic changes to the model and may affect compatibility.
 - `/SimpleLicensing/customIdToUri` property
   - New documents should use `/SimpleLicensing/customIdToLicense` instead.
 
-### Release notes
-
-Release notes for the 3.1-RC1 model, detailing all changes from 3.0.1
-through 3.1-RC1, are available at:
-<https://github.com/spdx/spdx-3-model/releases/tag/3.1-rc1>.
-
 ## 3.0.1 (2024-12-10)
+
+This patch release includes fixes for issues found in the 3.0.0 release.
+
+The version 3.0.1 model release notes,
+with full change records from 3.0 to 3.0.1, are available at:
+<https://github.com/spdx/spdx-3-model/releases/tag/3.0.1>.
 
 ### Changes since 3.0
 
@@ -136,12 +141,6 @@ semantic changes to the model and may affect compatibility.
   - Add `Core/IndividualElement` class
     to the Core diagram - [#941](https://github.com/spdx/spdx-3-model/pull/941)
 - Fixed general typos and formatting issues.
-
-### Release notes
-
-The version 3.0.1 model release notes,
-with full change records from 3.0 to 3.0.1, are available at:
-<https://github.com/spdx/spdx-3-model/releases/tag/3.0.1>.
 
 ## 3.0 (2024-04-15)
 

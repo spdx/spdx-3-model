@@ -8,8 +8,16 @@ Confidentiality level.
 
 ## Description
 
-Describes the different confidentiality levels as given by the
-[Traffic Light Protocol](https://en.wikipedia.org/wiki/Traffic_Light_Protocol).
+Describes the different confidentiality levels as defined by the
+[Traffic Light Protocol](https://www.first.org/tlp/).
+
+Within the context of this classification:
+
+- a community is a group sharing common goals, practices, and informal trust
+  relationships.
+- an organization is a group sharing a common affiliation by formal membership
+  and bound by common policies established by the organization.
+- clients are persons or entities receiving services from an organization.
 
 ## Metadata
 
@@ -17,7 +25,8 @@ Describes the different confidentiality levels as given by the
 
 ## Entries
 
-- red: Data points in the dataset are highly confidential and can only be shared with named recipients.
-- amber: Data points in the dataset can be shared only with specific organizations and their clients on a need to know basis.
-- green: Dataset can be shared within a community of peers and partners.
-- clear: Dataset may be distributed freely, without restriction.
+- red: For named recipients only. The dataset is highly confidential and shall be shared only with named recipients.
+- amberStrict: Limited distribution - organization only. The dataset shall be shared only with specific organizations on a need-to-know basis.
+- amber: Limited distribution - organization and clients. The dataset shall be shared only with specific organizations and their clients on a need-to-know basis.
+- green: Community wide. The dataset shall be shared only within a community of peers and partners.
+- clear: Unlimited. Subject to standard copyright rules, the dataset may be shared freely, without restriction.

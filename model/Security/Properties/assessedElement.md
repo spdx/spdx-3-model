@@ -4,16 +4,15 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Specifies an Element contained in a piece of software where a vulnerability was
-found.
+Specifies an Element where a vulnerability was found.
 
 ## Description
 
-Specifies subpackages, files or snippets referenced by a security assessment
+Specifies components, subpackages, files or snippets referenced by a security assessment
 to specify the precise location where a vulnerability was found.
 
 ## Metadata
 
 - name: assessedElement
 - Nature: ObjectProperty
-- Range: /Software/SoftwareArtifact
+- Range: /Core/Artifact

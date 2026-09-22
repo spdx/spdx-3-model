@@ -40,3 +40,7 @@ such as a package, a file, or a snippet.
   - type: xsd:nonNegativeInteger
   - minCount: 0
   - maxCount: 1
+- downloadLocation
+  - type: xsd:anyURI
+  - minCount: 0
+  - maxCount: 1

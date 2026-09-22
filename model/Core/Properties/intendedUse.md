@@ -4,11 +4,13 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-The intendedUse property is designed to capture a summary of how or for what item or artifact is meant to be used for.
+A statement of how, or for what purpose, an item or artifact is intended
+to be used.
 
 ## Description
 
-The intendedUse field allows users to enter a free-form textual description outlining the scope and boundaries of appropriate or intended applications for the item or artifact.
+A free-form textual description outlining the scope and boundaries of
+appropriate or intended applications for the item or artifact.
 
 ## Metadata
 

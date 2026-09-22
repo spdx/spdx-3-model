@@ -18,27 +18,28 @@ Classes and property restrictions are defined in the SimpleLicensing profile
 and in the ExpandedLicensing profile (classes and properties used for a
 fully parsed syntax tree of license expressions).
 
-There are 2 relationship types related to licensing - `hasDeclaredLicense` and
-`hasConcludedLicense`.
+There are 2 relationship types related to licensing -
+`hasDeclaredLicense` and `hasConcludedLicense`:
 
-If the `hasConcludedLicense` for a Software Artifact is not the same as its
-`hasDeclaredLicense`, a written explanation should be provided in the
-`hasConcludedLicense` relationship `comment` field.
-
-A written explanation of a relationship to a `NoAssertionLicense` may be
-provided in the `comment` field for the relationship.
+- Their `from` property shall reference an Artifact object.
+- Their `to` property shall reference an AnyLicenseInfo object.
+- If the `to` of an Artifact's `hasConcludedLicense` is not the same as
+  the `to` of its `hasDeclaredLicense`, a written explanation should be
+  provided in the `comment` field of the `hasConcludedLicense` relationship.
+- A written explanation of a relationship to a `NoAssertionLicense` may be
+  provided in the `comment` field for the relationship.
 
 *hasDeclaredLicense*
 
 A hasDeclaredLicense identifies the license information actually found in the
-Software Artifact, for example as detected by use of automated tooling.
+Artifact, for example as detected by use of automated tooling.
 
-This field is not intended to capture license information obtained from an
+This relationship is not intended to capture license information obtained from an
 external source, such as a package's website. Such information can be
-included, as needed, in the hasConcludedLicense field.
+included, as needed, in the hasConcludedLicense relationship.
 
 A hasDeclaredLicense may be expressed differently in practice for different
-types of Software Artifacts. For example:
+types of Artifacts. For example:
 
 - for Packages,
   it would include license info for the Package as a
@@ -69,7 +70,7 @@ indicates that one of the following applies:
 
 - the SPDX data creator has attempted to but cannot reach a reasonable
   objective determination;
-- the SPDX data creator has made no attempt to determine this field; or
+- the SPDX data creator has made no attempt to determine this relationship; or
 - the SPDX data creator has intentionally provided no information (no meaning
   should be implied by doing so).
 
@@ -83,20 +84,20 @@ can be made from a missing hasDeclaredLicense relationship.
 *hasConcludedLicense*
 
 A hasConcludedLicense is the license identified by the SPDX data creator,
-based on analyzing the license information in the Software Artifact
+based on analyzing the license information in the Artifact
 and other information to arrive at a reasonably objective
-conclusion as to what license governs the Software Artifact.
+conclusion as to what license governs the Artifact.
 
 A hasConcludedLicense relationship to NoneLicense indicates that the
 SPDX data creator has looked and did not find any license information for this
-Software Artifact.
+Artifact.
 
 A hasConcludedLicense relationship to NoAssertionLicense
 indicates that one of the following applies:
 
 - the SPDX data creator has attempted to but cannot reach a reasonable
   objective determination;
-- the SPDX data creator has made no attempt to determine this field; or
+- the SPDX data creator has made no attempt to determine this relationship; or
 - the SPDX data creator has intentionally provided no information (no
   meaning should be implied by doing so).
 
@@ -109,7 +110,7 @@ can be made from a missing hasConcludedLicense relationship.
 
 ## Metadata
 
-- id: https://spdx.org/rdf/3.1/terms/Licensing
+- id: https://spdx.org/rdf/3/terms/Licensing
 - name: Licensing
 
 ## Profile conformance

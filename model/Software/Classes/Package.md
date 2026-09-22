@@ -34,8 +34,8 @@ Note that some of these could be represented in SPDX as a file as well.
 
 ## Properties
 
-- downloadLocation
-  - type: xsd:anyURI
+- /Core/version
+  - type: xsd:string
   - minCount: 0
   - maxCount: 1
 - homePage
