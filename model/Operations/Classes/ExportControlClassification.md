@@ -8,7 +8,7 @@ The Element for export control classification.
 
 ## Description
 
-The result of the export control classification assessment, including exporting country, weight and comment. 
+The result of the export control classification assessment, including exporting country, weight and comment.
 
 ## Metadata
 
