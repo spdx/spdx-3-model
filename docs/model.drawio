@@ -779,10 +779,10 @@
         <mxCell id="PofOxnF-CW4KD8vPHSOS-1" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e1d5e7;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#9673a6;fontFamily=Verdana;fontSize=10;" value="ContactPointRelationship" vertex="1">
           <mxGeometry height="52" width="280" x="1140" y="-720" as="geometry" />
         </mxCell>
-        <mxCell id="PofOxnF-CW4KD8vPHSOS-2" parent="PofOxnF-CW4KD8vPHSOS-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontFamily=Verdana;fontSize=10;" value="+ contactType: ContactPointRelationshipType[0..1]" vertex="1">
+        <mxCell id="PofOxnF-CW4KD8vPHSOS-2" parent="PofOxnF-CW4KD8vPHSOS-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontFamily=Verdana;fontSize=10;" value="+ contactType: ContactType[0..1]" vertex="1">
           <mxGeometry height="26" width="280" y="26" as="geometry" />
         </mxCell>
-        <mxCell id="PofOxnF-CW4KD8vPHSOS-6" parent="1" style="verticalAlign=middle;align=center;overflow=fill;fontSize=10;fontFamily=Verdana;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=0;spacingTop=0;spacing=0;" value="&lt;div style=&quot;padding-top: 10px;&quot;&gt;&lt;b&gt;ContactPointRelationshipType&lt;/b&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="PofOxnF-CW4KD8vPHSOS-6" parent="1" style="verticalAlign=middle;align=center;overflow=fill;fontSize=10;fontFamily=Verdana;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=0;spacingTop=0;spacing=0;" value="&lt;div style=&quot;padding-top: 10px;&quot;&gt;&lt;b&gt;ContactType&lt;/b&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="40" width="190" x="820" y="240" as="geometry" />
         </mxCell>
         <mxCell id="wYsk6JeOdhdEHs1t8gUx-3" edge="1" parent="1" source="wYsk6JeOdhdEHs1t8gUx-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" target="PneUqTGE2ykhamjTnd7t-29">

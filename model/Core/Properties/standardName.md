@@ -4,17 +4,20 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-The name of a relevant standard that may apply to an artifact.
+The name of a standard applicable to an artifact.
 
 ## Description
 
-Various standards may be relevant or useful to capture for specific artifacts.
+A standard applicable as a reference or guideline for the
+design, implementation, production, or evaluation of the artifact.
 
-This does not imply that the artifact is compliant with the standard,
-but rather that the standard is used as a reference or guideline for
-the design, implementation, production, or evaluation of the artifact.
+This property does not imply that the artifact complies with the standard.
 
-For compliance with a standard, use the `standardCompliance` property instead.
+For compliance with a standard, use
+a [Relationship](../Classes/Relationship.md)
+with "conformsTo" relationship type to
+a [Specification](../Classes/Specification.md)
+instead.
 
 ## Metadata
 
