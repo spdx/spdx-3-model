@@ -18,4 +18,4 @@ AnnotationType specifies the type of an annotation.
 
 - other: Used to store extra information about an Element which is not part of a review (e.g. extra information provided during the creation of the Element).
 - review: Used when someone reviews the Element.
-- healthMetadata: Used when someone documents the health metadata the Element.
+- healthMetadata: Used when someone documents the health metadata of the Element.
