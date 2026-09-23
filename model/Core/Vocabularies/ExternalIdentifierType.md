@@ -53,6 +53,7 @@ ExternalIdentifierType specifies the type of an external identifier.
 - other: Used when the type does not match any of the other options.
 - packageUrl: Package-URL (PURL), as defined in [ECMA-427](https://ecma-international.org/publications-and-standards/standards/ecma-427/).
 - phoneNumber: Phone number; A string of decimal digits that uniquely indicates the network termination point defined in [RFC 3966](https://datatracker.ietf.org/doc/rfc3966/) Section 5.
+- rdfiri [RDF IRI](https://www.w3.org/TR/rdf11-concepts/#section-IRIs) An additional RDF IRI by which the element may be know, outside of SPDX. This is for reference only, and cannot be used to link elements together in SPDX.
 - requirementUID: The unique identifier used by a requirements management or any other lifecycle management tool to uniquely identify a requirement item.
 - rorid: [Research Organization Registry (ROR) identifier](https://ror.org/about/) is a unique identifier for research and funding organization, typically expressed in its preferred URI form such as `https://ror.org/02mhbdp94`.
 - securityOther: Used when there is a security related identifier of unspecified type.
