@@ -6,9 +6,15 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 Unit in which energy is measured.
 
+**DEPRECATED in SPDX 3.1.**
+Use `/Core/unitQUDT` instead.
+
 ## Description
 
 Provides the unit information of the energy.
+
+This property is deprecated.
+Use `/Core/unitQUDT` instead.
 
 ## Metadata
 
