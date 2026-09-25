@@ -45,6 +45,9 @@ elements, decisions, verification, results, and evidence.
 
 The examples below omit some organization-specific records, such as detailed
 QMS workflow data, when those records remain authoritative outside SPDX.
+Examples 2 through 10 also reference requirements, tests, reports, and other
+elements that are assumed to exist in the product's SPDX safety model. Example
+1 is fully self-contained.
 
 ## Example 1: Product-line requirement value change
 
@@ -449,7 +452,7 @@ affected, and the resulting design or validation updates.
     "type": "functionalSafety_ChangeImpactAnalysis",
     "spdxId": "urn:spdx.dev:srac-ex3-change-impact-analysis",
     "name": "Change impact analysis for INC-2026-0821",
-    "impactAnalysisStatus": "complete",
+    "impactAnalysisStatus": "inProgress",
     "impactLevel": "safetyImpact",
     "impactedElement": ["urn:spdx.dev:req-dose-confirmation-v1", "urn:spdx.dev:test-dose-confirmation"],
     "removedElement": ["urn:spdx.dev:req-dose-confirmation-v1"],
@@ -660,7 +663,7 @@ test elements, and the failed assessment result that justifies the change.
     "type": "functionalSafety_ChangeImpactAnalysis",
     "spdxId": "urn:spdx.dev:srac-ex5-change-impact-analysis",
     "name": "Change impact analysis for LAB-2026-077",
-    "impactAnalysisStatus": "complete",
+    "impactAnalysisStatus": "inProgress",
     "impactLevel": "safetyImpact",
     "impactedElement": ["urn:spdx.dev:hazard-occlusion", "urn:spdx.dev:test-occlusion-detection"],
     "removedElement": ["urn:spdx.dev:req-occlusion-detect-v1"],
@@ -744,7 +747,7 @@ affected validation and the new rerun or corrective verification.
     "type": "functionalSafety_ChangeImpactAnalysis",
     "spdxId": "urn:spdx.dev:srac-ex6-change-impact-analysis",
     "name": "Change impact analysis for VAL-FAIL-2026-019",
-    "impactAnalysisStatus": "complete",
+    "impactAnalysisStatus": "inProgress",
     "impactLevel": "safetyImpact",
     "impactedElement": ["urn:spdx.dev:test-watchdog-timeout", "urn:spdx.dev:req-watchdog-timeout"],
     "removedElement": ["urn:spdx.dev:evaluation-watchdog-timeout-pass-2026-08"],
