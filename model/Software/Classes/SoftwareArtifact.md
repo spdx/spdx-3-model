@@ -26,6 +26,10 @@ such as a package, a file, or a snippet.
 - additionalPurpose
   - type: SoftwarePurpose
   - minCount: 0
+- copyrightText
+  - type: xsd:string
+  - minCount: 0
+  - maxCount: 1
 - attributionText
   - type: xsd:string
   - minCount: 0
@@ -40,10 +44,6 @@ such as a package, a file, or a snippet.
 - contentIdentifier
   - type: ContentIdentifier
   - minCount: 0
-- copyrightText
-  - type: xsd:string
-  - minCount: 0
-  - maxCount: 1
 - downloadLocation
   - type: xsd:anyURI
   - minCount: 0
