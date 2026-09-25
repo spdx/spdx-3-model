@@ -13,5 +13,5 @@ Process description and how-to for contributors to support efficient handling of
 ## Metadata
 
 - name: contributionProcess
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: /Core/DefinedProcess
