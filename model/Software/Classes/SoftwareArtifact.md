@@ -40,6 +40,10 @@ such as a package, a file, or a snippet.
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
+- downloadLocation
+  - type: xsd:anyURI
+  - minCount: 0
+  - maxCount: 1
 - itemCount
   - type: xsd:nonNegativeInteger
   - minCount: 0
@@ -50,9 +54,5 @@ such as a package, a file, or a snippet.
   - maxCount: 1
 - tokenCount
   - type: xsd:nonNegativeInteger
-  - minCount: 0
-  - maxCount: 1
-- downloadLocation
-  - type: xsd:anyURI
   - minCount: 0
   - maxCount: 1
