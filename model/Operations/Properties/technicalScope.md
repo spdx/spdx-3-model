@@ -8,7 +8,8 @@ Description of the technical scope of the contributions.
 
 ## Description
 
-Description of the technical scope of the contributions that the project accept. (used for risk assessment)
+Description of the technical scope of the contributions that the project accept
+(used for risk assessment).
 
 ## Metadata
 
