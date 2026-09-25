@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Identifies the lifecycle status of a functional safety change impact analysis.
+Identifies the lifecycle status of a functional safety system impact analysis.
 
 ## Description
 
-impactAnalysisStatus identifies whether a ChangeImpactAnalysis is new, still
+impactAnalysisStatus identifies whether a SystemImpactAnalysis is new, still
 in progress, complete, intentionally stopped before completion, a duplicate of
 another analysis, or uses another lifecycle status.
 
@@ -19,4 +19,4 @@ impact analysis before the analysis is fully complete.
 
 - name: impactAnalysisStatus
 - Nature: ObjectProperty
-- Range: ChangeImpactAnalysisStatusType
+- Range: SystemImpactAnalysisStatusType

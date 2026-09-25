@@ -1,16 +1,16 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# ChangeImpactLevelType
+# SystemImpactLevelType
 
 ## Summary
 
-Specifies the assessed impact category from a functional safety change impact
+Specifies the assessed impact category from a functional safety system impact
 analysis.
 
 ## Description
 
-ChangeImpactLevelType provides common values for communicating the category of
-impact determined by a ChangeImpactAnalysis.
+SystemImpactLevelType provides common values for communicating the category of
+impact determined by a SystemImpactAnalysis.
 
 The impact category can be used to communicate the expected verification response
 without embedding organization-specific change-control rules in SPDX.
@@ -19,7 +19,7 @@ can be omitted.
 
 ## Metadata
 
-- name: ChangeImpactLevelType
+- name: SystemImpactLevelType
 
 ## Entries
 

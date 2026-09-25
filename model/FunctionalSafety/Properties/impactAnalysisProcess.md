@@ -5,12 +5,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 ## Summary
 
 Identifies the process, procedure, or specification used for a functional safety
-change impact analysis.
+system impact analysis.
 
 ## Description
 
 impactAnalysisProcess identifies the process, procedure, specification, plan, or
-other SPDX element used to perform a ChangeImpactAnalysis.
+other SPDX element used to perform a SystemImpactAnalysis.
 
 The referenced element can be a /Core/DefinedProcess, /Core/Specification,
 safety plan, quality-system procedure, regulatory procedure, or another element

@@ -4,13 +4,13 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Identifies an SPDX element added as a result of a functional safety change
+Identifies an SPDX element added as a result of a functional safety system
 impact analysis.
 
 ## Description
 
 addedElement identifies an SPDX element introduced as a result of a functional
-safety change impact analysis.
+safety system impact analysis.
 
 ## Metadata
 

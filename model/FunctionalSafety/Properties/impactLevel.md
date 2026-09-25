@@ -4,13 +4,13 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Identifies the assessed impact category from a functional safety change impact
+Identifies the assessed impact category from a functional safety system impact
 analysis.
 
 ## Description
 
 impactLevel identifies the assessed impact category resulting from a
-ChangeImpactAnalysis.
+SystemImpactAnalysis.
 
 The impact level can help communicate the expected verification response
 without embedding organization-specific change-control rules in SPDX.
@@ -19,4 +19,4 @@ without embedding organization-specific change-control rules in SPDX.
 
 - name: impactLevel
 - Nature: ObjectProperty
-- Range: ChangeImpactLevelType
+- Range: SystemImpactLevelType
