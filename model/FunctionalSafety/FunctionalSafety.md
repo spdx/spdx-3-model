@@ -14,7 +14,7 @@ to each other that are part of a safety related system's safety conformance docu
 
 These artifacts include the outputs of the safety engineering phases regarding planning, requirements analysis, system/software architecture, implementation, safety analysis and the verification tasks. The artifacts can be used to compile a standardized safety case document.
 
-## Change Impact Analysis
+## Change impact analysis
 
 The FunctionalSafety profile includes terms for representing safety-related
 change impact analysis. A ChangeImpactAnalysis can identify the analysis
