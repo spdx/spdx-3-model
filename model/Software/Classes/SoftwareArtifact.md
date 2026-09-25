@@ -19,6 +19,10 @@ such as a package, a file, or a snippet.
 
 ## Properties
 
+- primaryPurpose
+  - type: SoftwarePurpose
+  - minCount: 0
+  - maxCount: 1
 - additionalPurpose
   - type: SoftwarePurpose
   - minCount: 0
@@ -46,10 +50,6 @@ such as a package, a file, or a snippet.
   - maxCount: 1
 - itemCount
   - type: xsd:nonNegativeInteger
-  - minCount: 0
-  - maxCount: 1
-- primaryPurpose
-  - type: SoftwarePurpose
   - minCount: 0
   - maxCount: 1
 - tokenCount
