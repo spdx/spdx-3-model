@@ -27,6 +27,15 @@ safety lifecycle. Detailed engineering, quality-system, or regulatory records
 can remain in their authoritative systems while SPDX communicates the
 machine-readable change impact graph.
 
+When the analysis requires downstream verification, the verification work can
+be represented with RequirementVerification, EvaluationResult, and
+EvidenceRelationship elements. A newly required verification can be listed as an
+addedElement so the analysis communicates both the affected element and the
+follow-up verification that must be completed. A ChangeImpactAnalysis should use
+the `complete` status only when required downstream verification, evidence, and
+decisions are represented, or when the analysis rationale explains why no
+downstream work is required.
+
 The /Core/rationale property describes the overall reason, scope, or conclusion
 for the ChangeImpactAnalysis. When a more detailed decision record is needed,
 each per-element decision can be linked from the analysis with a /Core/Relationship
