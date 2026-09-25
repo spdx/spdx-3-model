@@ -61,9 +61,11 @@ analysis, requirement revision, verification result, and evidence.
       "urn:spdx.dev:srac-ex1-requirement-decision",
       "urn:spdx.dev:srac-ex1-decision-input",
       "urn:spdx.dev:agent-safety-review-board",
+      "urn:spdx.dev:sop-change-impact-analysis",
       "urn:spdx.dev:req-brake-response-40ms",
       "urn:spdx.dev:req-brake-response-30ms",
       "urn:spdx.dev:srac-ex1-amended-by",
+      "urn:spdx.dev:test-brake-response-t001",
       "urn:spdx.dev:srac-ex1-verification",
       "urn:spdx.dev:srac-ex1-verified-by",
       "urn:spdx.dev:srac-ex1-evaluation",
@@ -97,10 +99,22 @@ analysis, requirement revision, verification result, and evidence.
     "impactAnalysisProcess": ["urn:spdx.dev:sop-change-impact-analysis"],
     "impactAnalysisStatus": "complete",
     "impactLevel": "safetyImpact",
-    "impactedElement": ["urn:spdx.dev:test-brake-response-t001"],
+    "impactedElement": ["urn:spdx.dev:req-brake-response-40ms", "urn:spdx.dev:test-brake-response-t001"],
     "removedElement": ["urn:spdx.dev:req-brake-response-40ms"],
     "addedElement": ["urn:spdx.dev:req-brake-response-30ms"],
     "rationale": "The active product context changes from a 40 ms requirement to a 30 ms requirement and requires revalidation."
+  },
+  {
+    "type": "Specification",
+    "spdxId": "urn:spdx.dev:sop-change-impact-analysis",
+    "name": "Change impact analysis procedure",
+    "externalIdentifier": [{
+      "type": "ExternalIdentifier",
+      "externalIdentifierType": "other",
+      "identifier": "SOP-CHANGE-IMPACT-ANALYSIS",
+      "identifierLocator": ["https://qms.example.invalid/sop/SOP-CHANGE-IMPACT-ANALYSIS"],
+      "issuingAuthority": "Example Mobility Safety Engineering"
+    }]
   },
   {
     "type": "Relationship",
@@ -143,6 +157,12 @@ analysis, requirement revision, verification result, and evidence.
     "requirementUID": {"type": "ExternalIdentifier", "externalIdentifierType": "requirementUID", "identifier": "SR-BRAKE-030"},
     "requirementStatement": "The braking command response shall complete within 30 ms.",
     "requirementStatus": "reviewable"
+  },
+  {
+    "type": "IndividualElement",
+    "spdxId": "urn:spdx.dev:test-brake-response-t001",
+    "name": "Brake response validation test T-001",
+    "description": "Validation test used to assess the braking command response threshold."
   },
   {
     "type": "Relationship",
@@ -405,6 +425,10 @@ result, and evidence so downstream consumers can see why no action was taken.
       "urn:spdx.dev:srac-ex4-change-trigger",
       "urn:spdx.dev:srac-ex4-trigger-analysis-link",
       "urn:spdx.dev:srac-ex4-change-impact-analysis",
+      "urn:spdx.dev:srac-ex4-analysis-decision-output",
+      "urn:spdx.dev:srac-ex4-no-action-decision",
+      "urn:spdx.dev:srac-ex4-decision-input",
+      "urn:spdx.dev:agent-safety-review-board",
       "urn:spdx.dev:srac-ex4-verification",
       "urn:spdx.dev:srac-ex4-verified-by",
       "urn:spdx.dev:srac-ex4-evaluation",
@@ -439,6 +463,34 @@ result, and evidence so downstream consumers can see why no action was taken.
     "impactLevel": "noCriticalImpact",
     "impactedElement": ["urn:spdx.dev:req-alarm-message-clarity", "urn:spdx.dev:user-manual-alarm-section"],
     "rationale": "The report was reviewed and does not change safety requirements, design, or validation."
+  },
+  {
+    "type": "Relationship",
+    "spdxId": "urn:spdx.dev:srac-ex4-analysis-decision-output",
+    "relationshipType": "hasOutput",
+    "from": "urn:spdx.dev:srac-ex4-change-impact-analysis",
+    "to": ["urn:spdx.dev:srac-ex4-no-action-decision"]
+  },
+  {
+    "type": "Decision",
+    "spdxId": "urn:spdx.dev:srac-ex4-no-action-decision",
+    "name": "No-action decision for alarm wording report",
+    "originatedBy": ["urn:spdx.dev:agent-safety-review-board"],
+    "decisionType": "noAction",
+    "decisionStatus": "recorded",
+    "rationale": "No safety requirement, design, or validation change is required for the reviewed report."
+  },
+  {
+    "type": "Relationship",
+    "spdxId": "urn:spdx.dev:srac-ex4-decision-input",
+    "relationshipType": "hasInput",
+    "from": "urn:spdx.dev:srac-ex4-no-action-decision",
+    "to": ["urn:spdx.dev:req-alarm-message-clarity"]
+  },
+  {
+    "type": "Agent",
+    "spdxId": "urn:spdx.dev:agent-safety-review-board",
+    "name": "Safety review board"
   },
   {
     "type": "functionalSafety_RequirementVerification",
