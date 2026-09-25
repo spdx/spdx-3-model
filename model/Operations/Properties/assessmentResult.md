@@ -8,7 +8,7 @@ The ExportControlClassification for the assessment.
 
 ## Description
 
-The ExportControlClassifications for this ExportControlClassificationAssessment.
+The ExportControlClassification for this ExportControlClassificationAssessment.
 
 ## Metadata
 
