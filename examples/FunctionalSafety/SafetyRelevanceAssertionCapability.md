@@ -28,11 +28,20 @@ impactAnalysisStatus with an inProgress value on ChangeImpactAnalysis. Do not
 use EvaluationResult with an inconclusive value to mean "not started". Use an
 inconclusive EvaluationResult only when an evaluation was performed but cannot
 be clearly classified as pass or fail, and include a comment or rationale.
+Use impactAnalysisStatus with a complete value only after the analysis has
+recorded its conclusion and any required downstream verification, evidence, or
+per-element Decision records have been represented, or the rationale explains
+why no downstream work is required.
 
 SPDX elements are not edited in place. If a requirement, validation, test,
 design artifact, or other work product changes, create a new SPDX element and
 link the old element to the new element with a relationship such as amendedBy
 when that relationship is appropriate.
+
+When publishing the SRAC change record, use a Core Bundle to collect the
+analysis graph. The Bundle rootElement can point to the ChangeImpactAnalysis so
+consumers can enter the graph at the analysis and follow the trigger, affected
+elements, decisions, verification, results, and evidence.
 
 The examples below omit some organization-specific records, such as detailed
 QMS workflow data, when those records remain authoritative outside SPDX.
