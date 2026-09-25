@@ -13,5 +13,5 @@ Agreements that control the participation in the project, e.g. DCO, CLA, Committ
 ## Metadata
 
 - name: participationAgreement
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: /Core/Specification
