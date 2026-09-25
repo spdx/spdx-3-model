@@ -28,9 +28,11 @@ can remain in their authoritative systems while SPDX communicates the
 machine-readable change impact graph.
 
 The /Core/rationale property describes the overall reason, scope, or conclusion
-for the ChangeImpactAnalysis. Element-level decisions, including per-element
-decision state, rationale, lifecycle reruns, and closure evidence, can be
-represented separately when a more detailed decision record is needed.
+for the ChangeImpactAnalysis. When a more detailed decision record is needed,
+each per-element decision can be linked from the analysis with a /Core/Relationship
+using relationshipType `hasOutput`, such as `ChangeImpactAnalysis hasOutput Decision`.
+The Decision can then use `hasInput` to identify the specific impacted, added, or
+removed Element it decides on.
 
 If a ChangeImpactAnalysis uses the `duplicate` status, that status describes
 the lifecycle state of the analysis itself. A separate decision record, when
