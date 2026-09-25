@@ -4,21 +4,20 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Identifies the source or reason that initiates a functional safety system impact
-analysis.
+Identifies the source that starts a functional safety system impact analysis.
 
 ## Description
 
 AnalysisTrigger represents the information, event, report, or external record
-that initiates a functional safety system impact analysis.
+that starts a functional safety SystemImpactAnalysis.
 
 An AnalysisTrigger can represent a field incident, lab finding, customer report,
 regulatory event, configuration change, environmental change, business decision,
 or other source that may require safety-relevant review.
 
-An AnalysisTrigger does not assert that a change is required. It identifies the
-source that starts an analysis to determine whether affected elements need to be
-added, removed, revised, verified, or left unchanged.
+An AnalysisTrigger does not assert that a change is required. It records why a
+SystemImpactAnalysis is opened so the analysis can determine whether affected
+elements need to be added, removed, revised, verified, or left unchanged.
 
 When the source is already represented by a more specific SPDX Artifact, that
 existing element can be used as input to the SystemImpactAnalysis. For example,
