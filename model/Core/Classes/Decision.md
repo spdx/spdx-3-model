@@ -14,9 +14,12 @@ communicate an outcome such as approving, rejecting, deferring, requesting a
 change, recording no action, or closing a work item.
 
 Decision is modeled as an Action so existing Relationship entries can describe
-its context. Use `hasInput` relationships from the Decision to the Element or
-Elements considered when making the decision, such as a change impact analysis,
-evidence, requirement, vulnerability, ticket, or other record. Use `hasOutput`
+its context. A process or analysis that produces a Decision can link to it using
+`hasOutput`; for example, a ChangeImpactAnalysis can use
+`ChangeImpactAnalysis hasOutput Decision` to record that the analysis produced
+one or more decisions. Use `hasInput` relationships from the Decision to the
+specific Element or Elements the decision applies to, such as a requirement,
+vulnerability, evidence record, ticket, or other record. Use `hasOutput`
 relationships from the Decision to any Element produced by the decision, such
 as a follow-up work item, closure record, revised requirement, or evidence
 artifact.
