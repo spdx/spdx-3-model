@@ -13,8 +13,8 @@ impactedElement identifies an SPDX element that is within the scope of a
 functional safety system impact analysis.
 
 The element may or may not ultimately require a change. More specific
-properties such as addedElement or removedElement can be used when the analysis
-outcome is known.
+properties such as addedElement, modifiedElement, or removedElement can be used
+when the analysis outcome is known.
 
 ## Metadata
 

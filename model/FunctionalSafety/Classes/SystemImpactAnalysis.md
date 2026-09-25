@@ -18,8 +18,8 @@ for the analysis separate from the analysis that determines impact.
 
 The analysis can reference the process or specification used to perform the
 impact analysis, communicate its current status, indicate its impact category,
-and identify elements that were impacted, added, removed from the analyzed
-context, verified again, or otherwise reviewed.
+and identify elements that were impacted, added, modified, removed from the
+analyzed context, verified again, or otherwise reviewed.
 
 The analysis may determine that no actual change is required. In that case, the
 analysis can record its impact category, rationale, affected elements, and
@@ -44,8 +44,8 @@ The /Core/rationale property describes the overall reason, scope, or conclusion
 for the SystemImpactAnalysis. When a more detailed decision record is needed,
 each per-element decision can be linked from the analysis with a /Core/Relationship
 using relationshipType `hasOutput`, such as `SystemImpactAnalysis hasOutput Decision`.
-The Decision can then use `hasInput` to identify the specific impacted, added, or
-removed Element it decides on.
+The Decision can then use `hasInput` to identify the specific impacted, added,
+modified, or removed Element it decides on.
 
 If a SystemImpactAnalysis uses the `duplicate` status, that status describes
 the lifecycle state of the analysis itself. A separate decision record, when
@@ -75,6 +75,9 @@ duplicate and can link to the analysis that already covers the trigger or scope.
   - type: /Core/Element
   - minCount: 0
 - addedElement
+  - type: /Core/Element
+  - minCount: 0
+- modifiedElement
   - type: /Core/Element
   - minCount: 0
 - removedElement
