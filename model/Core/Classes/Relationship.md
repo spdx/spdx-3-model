@@ -23,9 +23,6 @@ existence of such relationships, the `to` property shall contain the
 NoAssertionElement individual.
 
 A relationship can be either directional or non-directional (directionless).
-For a directional relationship,
-the direction of a relationship is always from the `from` Element to the
-`to` Element.
 
 A relationship can be temporally scoped by using the optional `startTime` and
 `endTime` properties.
