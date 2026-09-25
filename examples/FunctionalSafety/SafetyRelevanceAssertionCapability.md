@@ -32,8 +32,7 @@ be clearly classified as pass or fail, and include a comment or rationale.
 SPDX elements are not edited in place. If a requirement, validation, test,
 design artifact, or other work product changes, create a new SPDX element and
 link the old element to the new element with a relationship such as amendedBy
-when that relationship is appropriate. The prior model can remain referenced
-instead of being retransmitted.
+when that relationship is appropriate.
 
 The examples below omit some organization-specific records, such as detailed
 QMS workflow data, when those records remain authoritative outside SPDX.
@@ -43,7 +42,7 @@ QMS workflow data, when those records remain authoritative outside SPDX.
 A product-line safety requirement is tightened for a deployed product context.
 The previous requirement remains historically valid, the revised requirement is
 created as a new element, and the delta Bundle communicates the trigger, impact
-analysis, requirement revision, verification result, and evidence.
+analysis, requirement revision, verification results, and evidence.
 
 ```json
 [
@@ -51,7 +50,7 @@ analysis, requirement revision, verification result, and evidence.
     "type": "Bundle",
     "spdxId": "urn:spdx.dev:srac-ex1-bundle",
     "name": "SRAC change record for vehicle dynamics data VD-2026-040",
-    "profileConformance": ["core", "functionalSafety"],
+    "profileConformance": ["core", "software", "functionalSafety"],
     "rootElement": ["urn:spdx.dev:srac-ex1-change-impact-analysis"],
     "element": [
       "urn:spdx.dev:srac-ex1-change-trigger",
@@ -66,10 +65,18 @@ analysis, requirement revision, verification result, and evidence.
       "urn:spdx.dev:req-brake-response-30ms",
       "urn:spdx.dev:srac-ex1-amended-by",
       "urn:spdx.dev:test-brake-response-t001",
+      "urn:spdx.dev:test-brake-response-t002",
+      "urn:spdx.dev:test-brake-response-t003",
       "urn:spdx.dev:srac-ex1-verification",
       "urn:spdx.dev:srac-ex1-verified-by",
       "urn:spdx.dev:srac-ex1-evaluation",
-      "urn:spdx.dev:srac-ex1-evidence"
+      "urn:spdx.dev:srac-ex1-evidence",
+      "urn:spdx.dev:vehicle-dynamics-report-VD-2026-040",
+      "urn:spdx.dev:srac-ex1-verification-30ms",
+      "urn:spdx.dev:srac-ex1-verified-by-30ms",
+      "urn:spdx.dev:srac-ex1-evaluation-30ms",
+      "urn:spdx.dev:srac-ex1-evidence-30ms",
+      "urn:spdx.dev:brake-response-test-report-30ms"
     ]
   },
   {
@@ -99,10 +106,10 @@ analysis, requirement revision, verification result, and evidence.
     "impactAnalysisProcess": ["urn:spdx.dev:sop-change-impact-analysis"],
     "impactAnalysisStatus": "complete",
     "impactLevel": "safetyImpact",
-    "impactedElement": ["urn:spdx.dev:req-brake-response-40ms", "urn:spdx.dev:test-brake-response-t001"],
-    "removedElement": ["urn:spdx.dev:req-brake-response-40ms"],
-    "addedElement": ["urn:spdx.dev:req-brake-response-30ms"],
-    "rationale": "The active product context changes from a 40 ms requirement to a 30 ms requirement and requires revalidation."
+    "impactedElement": ["urn:spdx.dev:req-brake-response-40ms", "urn:spdx.dev:test-brake-response-t001", "urn:spdx.dev:test-brake-response-t002"],
+    "removedElement": ["urn:spdx.dev:req-brake-response-40ms", "urn:spdx.dev:test-brake-response-t002"],
+    "addedElement": ["urn:spdx.dev:req-brake-response-30ms", "urn:spdx.dev:test-brake-response-t003", "urn:spdx.dev:srac-ex1-verification-30ms"],
+    "rationale": "The active product context changes from a 40 ms requirement to a 30 ms requirement. The new requirement is verified before this analysis is closed."
   },
   {
     "type": "Specification",
@@ -130,7 +137,7 @@ analysis, requirement revision, verification result, and evidence.
     "originatedBy": ["urn:spdx.dev:agent-safety-review-board"],
     "decisionType": "approve",
     "decisionStatus": "recorded",
-    "rationale": "Approve adding the 30 ms requirement for this product context and rerun the linked verification."
+    "rationale": "Approve adding the 30 ms requirement for this product context after the linked verification rerun passes."
   },
   {
     "type": "Relationship",
@@ -159,10 +166,25 @@ analysis, requirement revision, verification result, and evidence.
     "requirementStatus": "reviewable"
   },
   {
-    "type": "IndividualElement",
+    "type": "software_File",
     "spdxId": "urn:spdx.dev:test-brake-response-t001",
     "name": "Brake response validation test T-001",
-    "description": "Validation test used to assess the braking command response threshold."
+    "software_primaryPurpose": "test",
+    "description": "Existing validation test rerun against the 30 ms braking command response threshold."
+  },
+  {
+    "type": "software_File",
+    "spdxId": "urn:spdx.dev:test-brake-response-t002",
+    "name": "Brake response validation test T-002",
+    "software_primaryPurpose": "test",
+    "description": "Previous validation test retired for this product context."
+  },
+  {
+    "type": "software_File",
+    "spdxId": "urn:spdx.dev:test-brake-response-t003",
+    "name": "Brake response validation test T-003",
+    "software_primaryPurpose": "test",
+    "description": "New validation test added for the 30 ms braking command response threshold."
   },
   {
     "type": "Relationship",
@@ -198,6 +220,62 @@ analysis, requirement revision, verification result, and evidence.
     "from": "urn:spdx.dev:srac-ex1-evaluation",
     "to": ["urn:spdx.dev:vehicle-dynamics-report-VD-2026-040"],
     "evidenceCategory": "report"
+  },
+  {
+    "type": "software_File",
+    "spdxId": "urn:spdx.dev:vehicle-dynamics-report-VD-2026-040",
+    "name": "Vehicle dynamics report VD-2026-040",
+    "software_primaryPurpose": "evidence",
+    "description": "QMS report that triggered the braking response requirement reassessment.",
+    "externalIdentifier": [{
+      "type": "ExternalIdentifier",
+      "externalIdentifierType": "other",
+      "identifier": "VD-2026-040",
+      "identifierLocator": ["https://qms.example.invalid/vehicle-dynamics/VD-2026-040"],
+      "issuingAuthority": "Example Mobility Safety Engineering"
+    }]
+  },
+  {
+    "type": "functionalSafety_RequirementVerification",
+    "spdxId": "urn:spdx.dev:srac-ex1-verification-30ms",
+    "verificationMethod": "assessment",
+    "rationale": "Rerun T-001 and run T-003 against the new 30 ms requirement."
+  },
+  {
+    "type": "Relationship",
+    "spdxId": "urn:spdx.dev:srac-ex1-verified-by-30ms",
+    "relationshipType": "verifiedBy",
+    "from": "urn:spdx.dev:req-brake-response-30ms",
+    "to": ["urn:spdx.dev:srac-ex1-verification-30ms"]
+  },
+  {
+    "type": "functionalSafety_EvaluationResult",
+    "spdxId": "urn:spdx.dev:srac-ex1-evaluation-30ms",
+    "evaluation": "pass",
+    "evaluationBasedOn": "urn:spdx.dev:srac-ex1-verification-30ms",
+    "rationale": "The 30 ms requirement is met by the rerun validation evidence."
+  },
+  {
+    "type": "functionalSafety_EvidenceRelationship",
+    "spdxId": "urn:spdx.dev:srac-ex1-evidence-30ms",
+    "relationshipType": "hasEvidence",
+    "from": "urn:spdx.dev:srac-ex1-evaluation-30ms",
+    "to": ["urn:spdx.dev:brake-response-test-report-30ms"],
+    "evidenceCategory": "test"
+  },
+  {
+    "type": "software_File",
+    "spdxId": "urn:spdx.dev:brake-response-test-report-30ms",
+    "name": "Brake response 30 ms test report",
+    "software_primaryPurpose": "evidence",
+    "description": "Report showing T-001 and T-003 passed against the 30 ms requirement.",
+    "externalIdentifier": [{
+      "type": "ExternalIdentifier",
+      "externalIdentifierType": "evidenceUID",
+      "identifier": "BRK-30MS-TEST-REPORT-2026-09",
+      "identifierLocator": ["https://qms.example.invalid/test-reports/BRK-30MS-TEST-REPORT-2026-09"],
+      "issuingAuthority": "Example Mobility Safety Engineering"
+    }]
   }
 ]
 ```
