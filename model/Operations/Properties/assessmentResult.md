@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-The list of the multiple ExportControlClassification.
+The ExportControlClassification for the assessment.
 
 ## Description
 
-This captures the list of all of the ExportControlClassifications for this ExportControlClassificationAssessment.
+The ExportControlClassifications for this ExportControlClassificationAssessment.
 
 ## Metadata
 
