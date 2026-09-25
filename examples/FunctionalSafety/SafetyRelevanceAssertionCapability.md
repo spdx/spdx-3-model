@@ -17,6 +17,9 @@ assessment class. Each example uses the same graph shape:
 - ChangeImpactAnalysis records the impact-analysis status, impact category,
   and the SPDX elements that are impacted, added, or removed from the analyzed
   safety context;
+- when per-element decisions are represented, the ChangeImpactAnalysis can use
+  relationshipType hasOutput to link to each Decision, and each Decision can use
+  relationshipType hasInput to identify the specific Element it decides on;
 - RequirementVerification, EvaluationResult, and EvidenceRelationship are reused
   when downstream verification, result, and evidence need to be communicated.
 
@@ -54,6 +57,10 @@ analysis, requirement revision, verification result, and evidence.
       "urn:spdx.dev:srac-ex1-change-trigger",
       "urn:spdx.dev:srac-ex1-trigger-analysis-link",
       "urn:spdx.dev:srac-ex1-change-impact-analysis",
+      "urn:spdx.dev:srac-ex1-analysis-decision-output",
+      "urn:spdx.dev:srac-ex1-requirement-decision",
+      "urn:spdx.dev:srac-ex1-decision-input",
+      "urn:spdx.dev:agent-safety-review-board",
       "urn:spdx.dev:req-brake-response-40ms",
       "urn:spdx.dev:req-brake-response-30ms",
       "urn:spdx.dev:srac-ex1-amended-by",
@@ -94,6 +101,34 @@ analysis, requirement revision, verification result, and evidence.
     "removedElement": ["urn:spdx.dev:req-brake-response-40ms"],
     "addedElement": ["urn:spdx.dev:req-brake-response-30ms"],
     "rationale": "The active product context changes from a 40 ms requirement to a 30 ms requirement and requires revalidation."
+  },
+  {
+    "type": "Relationship",
+    "spdxId": "urn:spdx.dev:srac-ex1-analysis-decision-output",
+    "relationshipType": "hasOutput",
+    "from": "urn:spdx.dev:srac-ex1-change-impact-analysis",
+    "to": ["urn:spdx.dev:srac-ex1-requirement-decision"]
+  },
+  {
+    "type": "Decision",
+    "spdxId": "urn:spdx.dev:srac-ex1-requirement-decision",
+    "name": "Decision for 30 ms braking response requirement",
+    "originatedBy": ["urn:spdx.dev:agent-safety-review-board"],
+    "decisionType": "approve",
+    "decisionStatus": "recorded",
+    "rationale": "Approve adding the 30 ms requirement for this product context and rerun the linked verification."
+  },
+  {
+    "type": "Relationship",
+    "spdxId": "urn:spdx.dev:srac-ex1-decision-input",
+    "relationshipType": "hasInput",
+    "from": "urn:spdx.dev:srac-ex1-requirement-decision",
+    "to": ["urn:spdx.dev:req-brake-response-30ms"]
+  },
+  {
+    "type": "Agent",
+    "spdxId": "urn:spdx.dev:agent-safety-review-board",
+    "name": "Safety review board"
   },
   {
     "type": "Requirement",
