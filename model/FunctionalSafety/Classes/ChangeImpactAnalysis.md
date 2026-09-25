@@ -32,6 +32,11 @@ for the ChangeImpactAnalysis. Element-level decisions, including per-element
 decision state, rationale, lifecycle reruns, and closure evidence, can be
 represented separately when a more detailed decision record is needed.
 
+If a ChangeImpactAnalysis uses the `duplicate` status, that status describes
+the lifecycle state of the analysis itself. A separate decision record, when
+used, can capture the agent or process decision that closed the analysis as a
+duplicate and can link to the analysis that already covers the trigger or scope.
+
 ## Metadata
 
 - name: ChangeImpactAnalysis

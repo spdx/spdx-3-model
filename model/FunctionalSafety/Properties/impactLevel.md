@@ -18,5 +18,5 @@ without embedding organization-specific change-control rules in SPDX.
 ## Metadata
 
 - name: impactLevel
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: ChangeImpactLevelType
