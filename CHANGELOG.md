@@ -53,12 +53,19 @@ minor version from namespace IRIs ([#1277]).
     and is not referenced elsewhere in the model.
 - Updated `/Core/DefinedProcess`, `/Hardware/Hardware`,
   `/Hardware/ProductSpecification`, and `/Software/Package` to use
-  a generic `version` property (not a specific `xxxVersion`) ([#1265])
-  - *Non-breaking change*, as `/Core/DefinedProcess` and Hardware classes
-    were introduced in the 3.1-RC1 and was never part of an official
-    release. For `/Software/Package`, the `/Software/packageVersion` is
+  a generic `/Core/version` property (not a specific `xxxVersion`) ([#1265])
+  - *Non-breaking change*, as `/Core/DefinedProcess` and Hardware classes were
+    introduced in the 3.1-RC1 and was never part of an official release.
+    For `/Software/Package`, the `/Software/packageVersion` is
     still available, but deprecated.
-- Removed the minor version in namespace IRIs ([#1277])
+- Make term IRIs stable across SPDX 3 versions by removing the minor version
+  from the base IRI ([#1277])
+  - 3.0.1: `https://spdx.org/rdf/3.0.1/terms/...`
+  - New: `https://spdx.org/rdf/3/terms/...`
+- Revised LanguageTag pattern to allow irregular ("i-") tags ([#1438])
+- Renamed `/Software/artifactSize` to `/Software/byteSize` ([#1463])
+  - *Non-breaking change*, as `/Software/artifactSize` was
+    introduced in the 3.1-RC1 and was never part of an official release.
 
 ### Deprecated
 
@@ -99,6 +106,8 @@ minor version from namespace IRIs ([#1277]).
 [#1265]: https://github.com/spdx/spdx-3-model/pull/1265
 [#1277]: https://github.com/spdx/spdx-3-model/pull/1277
 [#1283]: https://github.com/spdx/spdx-3-model/pull/1283
+[#1438] https://github.com/spdx/spdx-3-model/pull/1438
+[#1463]: https://github.com/spdx/spdx-3-model/pull/1463
 
 ## [3.1-RC1] - 2026-01-24
 
@@ -118,35 +127,35 @@ different profiles.
 
 ### Added
 
-- FunctionalSafety profile
-- Hardware profile
-- Operations profile
-- Service profile
-- SupplyChain profile
-- `/Core/ElementMap` class and `/Core/elementValue` property ([#969][])
+- FunctionalSafety namespace and profile - ([#1178])
+- Hardware namespace and profile - ([#1076])
+- Operations namespace and profile - ([#1172])
+- Service namespace and profile - ([#973])
+- SupplyChain namespace and profile - ([#1076])
+- `/Core/ElementMap` class and `/Core/elementValue` property ([#969])
   - A class and a property used for implementing mapping a string key to
     an Element.
-- `/Core/inLanguage` property ([#1066][], [#1124][])
+- `/Core/inLanguage` property ([#1066], [#1124])
   - A human language used within the content of an Element or a property.
-- `/Core/intendedUse` property ([#1109][])
+- `/Core/intendedUse` property ([#1109])
   - How or for what item or artifact is meant to be used for.
-- `/Core/isoAutomationLevel` property ([#1064][])
+- `/Core/isoAutomationLevel` property ([#1064])
   - A spectrum of system automation capability.
-- `/SimpleLicensing/customIdToLicense` property ([#969][])
+- `/SimpleLicensing/customIdToLicense` property ([#969])
   - Maps custom licensing string to the corresponding licensing Element.
-- `/Software/artifactSize` property ([#966][])
+- `/Software/artifactSize` property ([#966])
   - Size of a software artifact, in bytes.
 
 ### Changed
 
 - Use "SPDX 3 JSON" name (instead of "SPDX 3 JSON-LD")
-  for serialization format ([#1019][])
+  for serialization format ([#1019])
 - Standardized RDF IRIs to use two-level versioning (major.minor)
-  instead of three-level (major.minor.patch) ([#1046][])
+  instead of three-level (major.minor.patch) ([#1046])
   - Previous: `https://spdx.org/rdf/x.y.z/terms/...`
   - New: `https://spdx.org/rdf/x.y/terms/...`
 - Relax property and relationship requirements of `/AI/AIPackage`
-  and `/Dataset/DatasetPackage` classes ([#1158][])
+  and `/Dataset/DatasetPackage` classes ([#1158])
 
 ### Deprecated
 
@@ -165,13 +174,17 @@ different profiles.
 
 [#966]: https://github.com/spdx/spdx-3-model/pull/966
 [#969]: https://github.com/spdx/spdx-3-model/pull/969
+[#973]: https://github.com/spdx/spdx-3-model/pull/973
 [#1019]: https://github.com/spdx/spdx-3-model/pull/1019
 [#1046]: https://github.com/spdx/spdx-3-model/issues/1046
 [#1064]: https://github.com/spdx/spdx-3-model/pull/1064
 [#1066]: https://github.com/spdx/spdx-3-model/pull/1066
+[#1172]: https://github.com/spdx/spdx-3-model/pull/1172
+[#1076]: https://github.com/spdx/spdx-3-model/pull/1076
 [#1109]: https://github.com/spdx/spdx-3-model/pull/1109
 [#1124]: https://github.com/spdx/spdx-3-model/pull/1124
 [#1158]: https://github.com/spdx/spdx-3-model/pull/1158
+[#1178]: https://github.com/spdx/spdx-3-model/pull/1178
 
 ## [3.0.1] - 2024-12-12
 
@@ -189,69 +202,69 @@ Key changes:
 
 ### Added
 
-- `adler32` entry to `/Core/HashAlgorithm` vocabulary ([#826][])
+- `adler32` entry to `/Core/HashAlgorithm` vocabulary ([#826])
   - Reintroduced the Adler-32 checksum, previously available in SPDX 2.3.
-- `/Core/SpdxOrganization` individual ([#880][])
+- `/Core/SpdxOrganization` individual ([#880])
   - An `SpdxOrganization` individual, a `Organization` representing the SPDX
     Project, is added. It is by definition the creator of all Element type
     individuals defined by the SPDX Project.
-- `/Core/IndividualElement` class ([#937][])
+- `/Core/IndividualElement` class ([#937])
   - A concrete subclass of Element used by Individuals in the Core profile.
 
 ### Changed
 
-- Clarified `/AI/autonomyType` property ([#741][])
+- Clarified `/AI/autonomyType` property ([#741])
   - Specified the meaning of `yes`, `no`, and `noAssertion` values in the
     `/AI/autonomyType` property description.
-- Clarified `/Build/buildType` property ([#875][])
+- Clarified `/Build/buildType` property ([#875])
   - Its intent is added: "The buildType is used to interpret the meaning of
     other build parameters by defining the 'type' of build...".
-- Clarified `hasDataFile` entry in `/Core/RelationshipType` ([#815][])
+- Clarified `hasDataFile` entry in `/Core/RelationshipType` ([#815])
   - Its description is enhanced with examples and counter-examples.
-- Clarified `/Core/packageVerificationCodeExcludedFile` property ([#913][])
+- Clarified `/Core/packageVerificationCodeExcludedFile` property ([#913])
   - Its description is now stating that every filename is preceded with a `./`.
 - Improved JSON-LD examples.
   - All JSON-LD examples in the "Syntax" section of class descriptions are now
-    validated ([#794][])
+    validated ([#794])
   - Added JSON-LD examples for `/AI/EnergyConsumption` and
-    `/AI/EnergyConsumptionDescription` ([#780][])
+    `/AI/EnergyConsumptionDescription` ([#780])
 - Updated model diagrams.
-  - Used updated names and specified XSD datatypes ([#852][])
-  - Removed all named individuals ([#884][])
+  - Used updated names and specified XSD datatypes ([#852])
+  - Removed all named individuals ([#884])
   - Adjusted layout to also fit printed format and removed all vocabulary
-    entries ([#935][])
-  - Add `/Core/IndividualElement` class to the Core diagram ([#941][])
+    entries ([#935])
+  - Add `/Core/IndividualElement` class to the Core diagram ([#941])
 
 ### Removed
 
-- `/Software/contentType` property ([#789][])
+- `/Software/contentType` property ([#789])
   - The `/Core/contentType` property in intended for `/Software/File`.
 
 ### Fixed
 
 - Cardinalities in `/Security/VexAffectedVulnAssessmentRelationship` class
-  ([#908][])
+  ([#908])
   - Corrected `actionStatement` cardinality from `0..1` to `1..1`
     to match its textual description.
   - Corrected `actionStatementTime` cardinality from `0..*` to `0..1`
     to match its textual description.
-- Typo in `Core/import` property ([#847][])
+- Typo in `Core/import` property ([#847])
   - Corrected `imports` to `import` in Core profile.
-- Typo in `/Build/parameter` property ([#836][])
+- Typo in `/Build/parameter` property ([#836])
   - Corrected `parameters` to `parameter` in Build profile.
-- Typo in `hasInput` and `hasOutput` entries ([#854][])
+- Typo in `hasInput` and `hasOutput` entries ([#854])
   - Corrected `hasInputs` to `hasInput` and `hasOutputs` to `hasOutput` in
     `/Core/RelationshipType`.
-- Typo in `hasPrerequisite` entry ([#817][])
+- Typo in `hasPrerequisite` entry ([#817])
   - Corrected the misspelling of `hasPrerequsite` to `hasPrerequisite` in
     `/Core/RelationshipType`.
-- Licensing relationship type names in profile conformance ([#779][])
+- Licensing relationship type names in profile conformance ([#779])
   - Corrected `concludedLicense` to `hasConcludedLicense` and
     `declaredLicense` to `hasDeclaredLicense` in profile conformance
     section of AI, Dataset, Licensing, and Lite profiles.
-- `/Security/actionStatement` property ([#908][])
+- `/Security/actionStatement` property ([#908])
   - Corrected its cardinality from `0..1` to `1..1`.
-- `/Security/actionStatementTime` property ([#908][])
+- `/Security/actionStatementTime` property ([#908])
   - Corrected its cardinality from `0..*` to `0..1`.
 - Fixed general typos and formatting issues.
 
