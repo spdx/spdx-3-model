@@ -8,23 +8,23 @@ SRAC is a usage pattern. It does not require a dedicated SRAC-specific
 assessment class. Each example uses the same graph shape:
 
 - a Core Bundle carries the delta or change record;
-- ChangeTrigger, or another source Artifact such as /Security/Vulnerability,
+- AnalysisTrigger, or another source Artifact such as /Security/Vulnerability,
   records the source, reason, event, report, or external record that initiates
   the safety-relevant review;
-- a Core Relationship links the ChangeImpactAnalysis to the source using
-  relationshipType hasInput, from the ChangeImpactAnalysis to the source
+- a Core Relationship links the SystemImpactAnalysis to the source using
+  relationshipType hasInput, from the SystemImpactAnalysis to the source
   element;
-- ChangeImpactAnalysis records the impact-analysis status, impact category,
+- SystemImpactAnalysis records the analysis status, impact category,
   and the SPDX elements that are impacted, added, or removed from the analyzed
   safety context;
-- when per-element decisions are represented, the ChangeImpactAnalysis can use
+- when per-element decisions are represented, the SystemImpactAnalysis can use
   relationshipType hasOutput to link to each Decision, and each Decision can use
   relationshipType hasInput to identify the specific Element it decides on;
 - RequirementVerification, EvaluationResult, and EvidenceRelationship are reused
   when downstream verification, result, and evidence need to be communicated.
 
 When the work is still waiting on evidence, a decision, or a test rerun, use
-impactAnalysisStatus with an inProgress value on ChangeImpactAnalysis. Do not
+impactAnalysisStatus with an inProgress value on SystemImpactAnalysis. Do not
 use EvaluationResult with an inconclusive value to mean "not started". Use an
 inconclusive EvaluationResult only when an evaluation was performed but cannot
 be clearly classified as pass or fail, and include a comment or rationale.
@@ -39,7 +39,7 @@ link the old element to the new element with a relationship such as amendedBy
 when that relationship is appropriate.
 
 When publishing the SRAC change record, use a Core Bundle to collect the
-analysis graph. The Bundle rootElement can point to the ChangeImpactAnalysis so
+analysis graph. The Bundle rootElement can point to the SystemImpactAnalysis so
 consumers can enter the graph at the analysis and follow the trigger, affected
 elements, decisions, verification, results, and evidence.
 
@@ -63,16 +63,16 @@ analysis, requirement revision, verification results, and evidence.
     "spdxId": "urn:spdx.dev:srac-ex1-bundle",
     "name": "SRAC change record for vehicle dynamics data VD-2026-040",
     "profileConformance": ["core", "software", "functionalSafety"],
-    "rootElement": ["urn:spdx.dev:srac-ex1-change-impact-analysis"],
+    "rootElement": ["urn:spdx.dev:srac-ex1-system-impact-analysis"],
     "element": [
       "urn:spdx.dev:srac-ex1-change-trigger",
       "urn:spdx.dev:srac-ex1-trigger-analysis-link",
-      "urn:spdx.dev:srac-ex1-change-impact-analysis",
+      "urn:spdx.dev:srac-ex1-system-impact-analysis",
       "urn:spdx.dev:srac-ex1-analysis-decision-output",
       "urn:spdx.dev:srac-ex1-requirement-decision",
       "urn:spdx.dev:srac-ex1-decision-input",
       "urn:spdx.dev:agent-safety-review-board",
-      "urn:spdx.dev:sop-change-impact-analysis",
+      "urn:spdx.dev:sop-system-impact-analysis",
       "urn:spdx.dev:req-brake-response-40ms",
       "urn:spdx.dev:req-brake-response-30ms",
       "urn:spdx.dev:srac-ex1-amended-by",
@@ -92,7 +92,7 @@ analysis, requirement revision, verification results, and evidence.
     ]
   },
   {
-    "type": "functionalsafety_ChangeTrigger",
+    "type": "functionalsafety_AnalysisTrigger",
     "spdxId": "urn:spdx.dev:srac-ex1-change-trigger",
     "name": "Vehicle dynamics data VD-2026-040",
     "externalIdentifier": [{
@@ -108,14 +108,14 @@ analysis, requirement revision, verification results, and evidence.
     "type": "Relationship",
     "spdxId": "urn:spdx.dev:srac-ex1-trigger-analysis-link",
     "relationshipType": "hasInput",
-    "from": "urn:spdx.dev:srac-ex1-change-impact-analysis",
+    "from": "urn:spdx.dev:srac-ex1-system-impact-analysis",
     "to": ["urn:spdx.dev:srac-ex1-change-trigger"]
   },
   {
-    "type": "functionalsafety_ChangeImpactAnalysis",
-    "spdxId": "urn:spdx.dev:srac-ex1-change-impact-analysis",
-    "name": "Change impact analysis for VD-2026-040",
-    "functionalsafety_impactAnalysisProcess": ["urn:spdx.dev:sop-change-impact-analysis"],
+    "type": "functionalsafety_SystemImpactAnalysis",
+    "spdxId": "urn:spdx.dev:srac-ex1-system-impact-analysis",
+    "name": "System impact analysis for VD-2026-040",
+    "functionalsafety_impactAnalysisProcess": ["urn:spdx.dev:sop-system-impact-analysis"],
     "functionalsafety_impactAnalysisStatus": "complete",
     "functionalsafety_impactLevel": "safetyImpact",
     "functionalsafety_impactedElement": ["urn:spdx.dev:req-brake-response-40ms", "urn:spdx.dev:test-brake-response-t001", "urn:spdx.dev:test-brake-response-t002"],
@@ -125,13 +125,13 @@ analysis, requirement revision, verification results, and evidence.
   },
   {
     "type": "Specification",
-    "spdxId": "urn:spdx.dev:sop-change-impact-analysis",
-    "name": "Change impact analysis procedure",
+    "spdxId": "urn:spdx.dev:sop-system-impact-analysis",
+    "name": "System impact analysis procedure",
     "externalIdentifier": [{
       "type": "ExternalIdentifier",
       "externalIdentifierType": "other",
-      "identifier": "SOP-CHANGE-IMPACT-ANALYSIS",
-      "identifierLocator": ["https://qms.example.invalid/sop/SOP-CHANGE-IMPACT-ANALYSIS"],
+      "identifier": "SOP-system-impact-analysis",
+      "identifierLocator": ["https://qms.example.invalid/sop/SOP-system-impact-analysis"],
       "issuingAuthority": "Example Mobility Safety Engineering"
     }]
   },
@@ -139,7 +139,7 @@ analysis, requirement revision, verification results, and evidence.
     "type": "Relationship",
     "spdxId": "urn:spdx.dev:srac-ex1-analysis-decision-output",
     "relationshipType": "hasOutput",
-    "from": "urn:spdx.dev:srac-ex1-change-impact-analysis",
+    "from": "urn:spdx.dev:srac-ex1-system-impact-analysis",
     "to": ["urn:spdx.dev:srac-ex1-requirement-decision"]
   },
   {
@@ -295,7 +295,7 @@ analysis, requirement revision, verification results, and evidence.
 ## Example 2: CVE in a safety-relevant component
 
 The Security profile carries the vulnerability and VEX status. FunctionalSafety
-adds the safety context and the SRAC change impact analysis so the existing
+adds the safety context and the SRAC system impact analysis so the existing
 Security vulnerability can be used as input to the safety analysis without
 duplicating the Security/VEX layer.
 
@@ -306,13 +306,13 @@ duplicating the Security/VEX layer.
     "spdxId": "urn:spdx.dev:srac-ex2-bundle",
     "name": "SRAC change record for CVE-2024-9999",
     "profileConformance": ["core", "security", "functionalSafety"],
-    "rootElement": ["urn:spdx.dev:srac-ex2-change-impact-analysis"],
+    "rootElement": ["urn:spdx.dev:srac-ex2-system-impact-analysis"],
     "element": [
       "urn:spdx.dev:vuln-cve-2024-9999",
       "urn:spdx.dev:vex-under-investigation-cve-2024-9999",
       "urn:spdx.dev:safety-context-openssl-sr12",
       "urn:spdx.dev:srac-ex2-trigger-analysis-link",
-      "urn:spdx.dev:srac-ex2-change-impact-analysis",
+      "urn:spdx.dev:srac-ex2-system-impact-analysis",
       "urn:spdx.dev:srac-ex2-verification",
       "urn:spdx.dev:srac-ex2-verified-by",
       "urn:spdx.dev:srac-ex2-evaluation",
@@ -352,14 +352,14 @@ duplicating the Security/VEX layer.
     "type": "Relationship",
     "spdxId": "urn:spdx.dev:srac-ex2-trigger-analysis-link",
     "relationshipType": "hasInput",
-    "from": "urn:spdx.dev:srac-ex2-change-impact-analysis",
+    "from": "urn:spdx.dev:srac-ex2-system-impact-analysis",
     "to": ["urn:spdx.dev:vuln-cve-2024-9999"]
   },
   {
-    "type": "functionalsafety_ChangeImpactAnalysis",
-    "spdxId": "urn:spdx.dev:srac-ex2-change-impact-analysis",
-    "name": "Change impact analysis for CVE-2024-9999",
-    "functionalsafety_impactAnalysisProcess": ["urn:spdx.dev:sop-change-impact-analysis"],
+    "type": "functionalsafety_SystemImpactAnalysis",
+    "spdxId": "urn:spdx.dev:srac-ex2-system-impact-analysis",
+    "name": "System impact analysis for CVE-2024-9999",
+    "functionalsafety_impactAnalysisProcess": ["urn:spdx.dev:sop-system-impact-analysis"],
     "functionalsafety_impactAnalysisStatus": "inProgress",
     "functionalsafety_impactLevel": "safetyAndSecurityImpact",
     "functionalsafety_impactedElement": [
@@ -415,11 +415,11 @@ affected, and the resulting design or validation updates.
     "spdxId": "urn:spdx.dev:srac-ex3-bundle",
     "name": "SRAC change record for field incident INC-2026-0821",
     "profileConformance": ["core", "functionalSafety"],
-    "rootElement": ["urn:spdx.dev:srac-ex3-change-impact-analysis"],
+    "rootElement": ["urn:spdx.dev:srac-ex3-system-impact-analysis"],
     "element": [
       "urn:spdx.dev:srac-ex3-change-trigger",
       "urn:spdx.dev:srac-ex3-trigger-analysis-link",
-      "urn:spdx.dev:srac-ex3-change-impact-analysis",
+      "urn:spdx.dev:srac-ex3-system-impact-analysis",
       "urn:spdx.dev:req-dose-confirmation-v1",
       "urn:spdx.dev:req-dose-confirmation-v2",
       "urn:spdx.dev:srac-ex3-amended-by",
@@ -432,7 +432,7 @@ affected, and the resulting design or validation updates.
     ]
   },
   {
-    "type": "functionalsafety_ChangeTrigger",
+    "type": "functionalsafety_AnalysisTrigger",
     "spdxId": "urn:spdx.dev:srac-ex3-change-trigger",
     "name": "Field incident INC-2026-0821",
     "externalIdentifier": [{
@@ -448,13 +448,13 @@ affected, and the resulting design or validation updates.
     "type": "Relationship",
     "spdxId": "urn:spdx.dev:srac-ex3-trigger-analysis-link",
     "relationshipType": "hasInput",
-    "from": "urn:spdx.dev:srac-ex3-change-impact-analysis",
+    "from": "urn:spdx.dev:srac-ex3-system-impact-analysis",
     "to": ["urn:spdx.dev:srac-ex3-change-trigger"]
   },
   {
-    "type": "functionalsafety_ChangeImpactAnalysis",
-    "spdxId": "urn:spdx.dev:srac-ex3-change-impact-analysis",
-    "name": "Change impact analysis for INC-2026-0821",
+    "type": "functionalsafety_SystemImpactAnalysis",
+    "spdxId": "urn:spdx.dev:srac-ex3-system-impact-analysis",
+    "name": "System impact analysis for INC-2026-0821",
     "functionalsafety_impactAnalysisStatus": "inProgress",
     "functionalsafety_impactLevel": "safetyImpact",
     "functionalsafety_impactedElement": ["urn:spdx.dev:req-dose-confirmation-v1", "urn:spdx.dev:test-dose-confirmation"],
@@ -533,11 +533,11 @@ result, and evidence so downstream consumers can see why no action was taken.
     "spdxId": "urn:spdx.dev:srac-ex4-bundle",
     "name": "SRAC change record for hospital report CAPA-2026-0134",
     "profileConformance": ["core", "functionalSafety"],
-    "rootElement": ["urn:spdx.dev:srac-ex4-change-impact-analysis"],
+    "rootElement": ["urn:spdx.dev:srac-ex4-system-impact-analysis"],
     "element": [
       "urn:spdx.dev:srac-ex4-change-trigger",
       "urn:spdx.dev:srac-ex4-trigger-analysis-link",
-      "urn:spdx.dev:srac-ex4-change-impact-analysis",
+      "urn:spdx.dev:srac-ex4-system-impact-analysis",
       "urn:spdx.dev:srac-ex4-analysis-decision-output",
       "urn:spdx.dev:srac-ex4-no-action-decision",
       "urn:spdx.dev:srac-ex4-decision-input",
@@ -549,7 +549,7 @@ result, and evidence so downstream consumers can see why no action was taken.
     ]
   },
   {
-    "type": "functionalsafety_ChangeTrigger",
+    "type": "functionalsafety_AnalysisTrigger",
     "spdxId": "urn:spdx.dev:srac-ex4-change-trigger",
     "name": "Hospital report CAPA-2026-0134",
     "externalIdentifier": [{
@@ -565,13 +565,13 @@ result, and evidence so downstream consumers can see why no action was taken.
     "type": "Relationship",
     "spdxId": "urn:spdx.dev:srac-ex4-trigger-analysis-link",
     "relationshipType": "hasInput",
-    "from": "urn:spdx.dev:srac-ex4-change-impact-analysis",
+    "from": "urn:spdx.dev:srac-ex4-system-impact-analysis",
     "to": ["urn:spdx.dev:srac-ex4-change-trigger"]
   },
   {
-    "type": "functionalsafety_ChangeImpactAnalysis",
-    "spdxId": "urn:spdx.dev:srac-ex4-change-impact-analysis",
-    "name": "Change impact analysis for CAPA-2026-0134",
+    "type": "functionalsafety_SystemImpactAnalysis",
+    "spdxId": "urn:spdx.dev:srac-ex4-system-impact-analysis",
+    "name": "System impact analysis for CAPA-2026-0134",
     "functionalsafety_impactAnalysisStatus": "complete",
     "functionalsafety_impactLevel": "noCriticalImpact",
     "functionalsafety_impactedElement": ["urn:spdx.dev:req-alarm-message-clarity", "urn:spdx.dev:user-manual-alarm-section"],
@@ -581,7 +581,7 @@ result, and evidence so downstream consumers can see why no action was taken.
     "type": "Relationship",
     "spdxId": "urn:spdx.dev:srac-ex4-analysis-decision-output",
     "relationshipType": "hasOutput",
-    "from": "urn:spdx.dev:srac-ex4-change-impact-analysis",
+    "from": "urn:spdx.dev:srac-ex4-system-impact-analysis",
     "to": ["urn:spdx.dev:srac-ex4-no-action-decision"]
   },
   {
@@ -649,11 +649,11 @@ test elements, and the failed assessment result that justifies the change.
     "spdxId": "urn:spdx.dev:srac-ex5-bundle",
     "name": "SRAC change record for lab finding LAB-2026-077",
     "profileConformance": ["core", "functionalSafety"],
-    "rootElement": ["urn:spdx.dev:srac-ex5-change-impact-analysis"],
+    "rootElement": ["urn:spdx.dev:srac-ex5-system-impact-analysis"],
     "element": [
       "urn:spdx.dev:srac-ex5-change-trigger",
       "urn:spdx.dev:srac-ex5-trigger-analysis-link",
-      "urn:spdx.dev:srac-ex5-change-impact-analysis",
+      "urn:spdx.dev:srac-ex5-system-impact-analysis",
       "urn:spdx.dev:req-occlusion-detect-v1",
       "urn:spdx.dev:req-occlusion-detect-v2",
       "urn:spdx.dev:srac-ex5-amended-by",
@@ -666,7 +666,7 @@ test elements, and the failed assessment result that justifies the change.
     ]
   },
   {
-    "type": "functionalsafety_ChangeTrigger",
+    "type": "functionalsafety_AnalysisTrigger",
     "spdxId": "urn:spdx.dev:srac-ex5-change-trigger",
     "name": "Lab finding LAB-2026-077",
     "externalIdentifier": [{
@@ -682,13 +682,13 @@ test elements, and the failed assessment result that justifies the change.
     "type": "Relationship",
     "spdxId": "urn:spdx.dev:srac-ex5-trigger-analysis-link",
     "relationshipType": "hasInput",
-    "from": "urn:spdx.dev:srac-ex5-change-impact-analysis",
+    "from": "urn:spdx.dev:srac-ex5-system-impact-analysis",
     "to": ["urn:spdx.dev:srac-ex5-change-trigger"]
   },
   {
-    "type": "functionalsafety_ChangeImpactAnalysis",
-    "spdxId": "urn:spdx.dev:srac-ex5-change-impact-analysis",
-    "name": "Change impact analysis for LAB-2026-077",
+    "type": "functionalsafety_SystemImpactAnalysis",
+    "spdxId": "urn:spdx.dev:srac-ex5-system-impact-analysis",
+    "name": "System impact analysis for LAB-2026-077",
     "functionalsafety_impactAnalysisStatus": "inProgress",
     "functionalsafety_impactLevel": "safetyImpact",
     "functionalsafety_impactedElement": ["urn:spdx.dev:hazard-occlusion", "urn:spdx.dev:req-occlusion-detect-v1", "urn:spdx.dev:test-occlusion-detection"],
@@ -750,7 +750,7 @@ test elements, and the failed assessment result that justifies the change.
 ## Example 6: Validation test failure
 
 A validation run fails after a regression signal. SRAC communicates that the
-test failure triggers a change impact analysis, which then identifies the
+test failure triggers a system impact analysis, which then identifies the
 affected validation and the new rerun or corrective verification.
 
 ```json
@@ -760,11 +760,11 @@ affected validation and the new rerun or corrective verification.
     "spdxId": "urn:spdx.dev:srac-ex6-bundle",
     "name": "SRAC change record for validation failure VAL-FAIL-2026-019",
     "profileConformance": ["core", "functionalSafety"],
-    "rootElement": ["urn:spdx.dev:srac-ex6-change-impact-analysis"],
+    "rootElement": ["urn:spdx.dev:srac-ex6-system-impact-analysis"],
     "element": [
       "urn:spdx.dev:srac-ex6-change-trigger",
       "urn:spdx.dev:srac-ex6-trigger-analysis-link",
-      "urn:spdx.dev:srac-ex6-change-impact-analysis",
+      "urn:spdx.dev:srac-ex6-system-impact-analysis",
       "urn:spdx.dev:srac-ex6-verification",
       "urn:spdx.dev:srac-ex6-verified-by",
       "urn:spdx.dev:srac-ex6-evaluation",
@@ -772,7 +772,7 @@ affected validation and the new rerun or corrective verification.
     ]
   },
   {
-    "type": "functionalsafety_ChangeTrigger",
+    "type": "functionalsafety_AnalysisTrigger",
     "spdxId": "urn:spdx.dev:srac-ex6-change-trigger",
     "name": "Validation failure VAL-FAIL-2026-019",
     "externalIdentifier": [{
@@ -787,13 +787,13 @@ affected validation and the new rerun or corrective verification.
     "type": "Relationship",
     "spdxId": "urn:spdx.dev:srac-ex6-trigger-analysis-link",
     "relationshipType": "hasInput",
-    "from": "urn:spdx.dev:srac-ex6-change-impact-analysis",
+    "from": "urn:spdx.dev:srac-ex6-system-impact-analysis",
     "to": ["urn:spdx.dev:srac-ex6-change-trigger"]
   },
   {
-    "type": "functionalsafety_ChangeImpactAnalysis",
-    "spdxId": "urn:spdx.dev:srac-ex6-change-impact-analysis",
-    "name": "Change impact analysis for VAL-FAIL-2026-019",
+    "type": "functionalsafety_SystemImpactAnalysis",
+    "spdxId": "urn:spdx.dev:srac-ex6-system-impact-analysis",
+    "name": "System impact analysis for VAL-FAIL-2026-019",
     "functionalsafety_impactAnalysisStatus": "inProgress",
     "functionalsafety_impactLevel": "safetyImpact",
     "functionalsafety_impactedElement": ["urn:spdx.dev:test-watchdog-timeout", "urn:spdx.dev:req-watchdog-timeout"],
@@ -846,11 +846,11 @@ product-line requirement revision.
     "spdxId": "urn:spdx.dev:srac-ex7-bundle",
     "name": "SRAC change record for deployed configuration CFG-2026-310",
     "profileConformance": ["core", "functionalSafety"],
-    "rootElement": ["urn:spdx.dev:srac-ex7-change-impact-analysis"],
+    "rootElement": ["urn:spdx.dev:srac-ex7-system-impact-analysis"],
     "element": [
       "urn:spdx.dev:srac-ex7-change-trigger",
       "urn:spdx.dev:srac-ex7-trigger-analysis-link",
-      "urn:spdx.dev:srac-ex7-change-impact-analysis",
+      "urn:spdx.dev:srac-ex7-system-impact-analysis",
       "urn:spdx.dev:srac-ex7-safety-context",
       "urn:spdx.dev:srac-ex7-verification",
       "urn:spdx.dev:srac-ex7-verified-by",
@@ -859,7 +859,7 @@ product-line requirement revision.
     ]
   },
   {
-    "type": "functionalsafety_ChangeTrigger",
+    "type": "functionalsafety_AnalysisTrigger",
     "spdxId": "urn:spdx.dev:srac-ex7-change-trigger",
     "name": "Site configuration change CFG-2026-310",
     "externalIdentifier": [{
@@ -875,13 +875,13 @@ product-line requirement revision.
     "type": "Relationship",
     "spdxId": "urn:spdx.dev:srac-ex7-trigger-analysis-link",
     "relationshipType": "hasInput",
-    "from": "urn:spdx.dev:srac-ex7-change-impact-analysis",
+    "from": "urn:spdx.dev:srac-ex7-system-impact-analysis",
     "to": ["urn:spdx.dev:srac-ex7-change-trigger"]
   },
   {
-    "type": "functionalsafety_ChangeImpactAnalysis",
-    "spdxId": "urn:spdx.dev:srac-ex7-change-impact-analysis",
-    "name": "Change impact analysis for CFG-2026-310",
+    "type": "functionalsafety_SystemImpactAnalysis",
+    "spdxId": "urn:spdx.dev:srac-ex7-system-impact-analysis",
+    "name": "System impact analysis for CFG-2026-310",
     "functionalsafety_impactAnalysisStatus": "complete",
     "functionalsafety_impactLevel": "noCriticalImpact",
     "functionalsafety_impactedElement": ["urn:spdx.dev:req-dose-threshold-runtime", "urn:spdx.dev:config-dose-threshold"],
@@ -942,11 +942,11 @@ inconclusive evaluation that needs follow-up.
     "spdxId": "urn:spdx.dev:srac-ex8-bundle",
     "name": "SRAC change record for environmental report ENV-2026-044",
     "profileConformance": ["core", "functionalSafety"],
-    "rootElement": ["urn:spdx.dev:srac-ex8-change-impact-analysis"],
+    "rootElement": ["urn:spdx.dev:srac-ex8-system-impact-analysis"],
     "element": [
       "urn:spdx.dev:srac-ex8-change-trigger",
       "urn:spdx.dev:srac-ex8-trigger-analysis-link",
-      "urn:spdx.dev:srac-ex8-change-impact-analysis",
+      "urn:spdx.dev:srac-ex8-system-impact-analysis",
       "urn:spdx.dev:srac-ex8-assumption",
       "urn:spdx.dev:srac-ex8-verification",
       "urn:spdx.dev:srac-ex8-verified-by",
@@ -955,7 +955,7 @@ inconclusive evaluation that needs follow-up.
     ]
   },
   {
-    "type": "functionalsafety_ChangeTrigger",
+    "type": "functionalsafety_AnalysisTrigger",
     "spdxId": "urn:spdx.dev:srac-ex8-change-trigger",
     "name": "Environmental report ENV-2026-044",
     "externalIdentifier": [{
@@ -971,13 +971,13 @@ inconclusive evaluation that needs follow-up.
     "type": "Relationship",
     "spdxId": "urn:spdx.dev:srac-ex8-trigger-analysis-link",
     "relationshipType": "hasInput",
-    "from": "urn:spdx.dev:srac-ex8-change-impact-analysis",
+    "from": "urn:spdx.dev:srac-ex8-system-impact-analysis",
     "to": ["urn:spdx.dev:srac-ex8-change-trigger"]
   },
   {
-    "type": "functionalsafety_ChangeImpactAnalysis",
-    "spdxId": "urn:spdx.dev:srac-ex8-change-impact-analysis",
-    "name": "Change impact analysis for ENV-2026-044",
+    "type": "functionalsafety_SystemImpactAnalysis",
+    "spdxId": "urn:spdx.dev:srac-ex8-system-impact-analysis",
+    "name": "System impact analysis for ENV-2026-044",
     "functionalsafety_impactAnalysisStatus": "inProgress",
     "functionalsafety_impactLevel": "safetyImpact",
     "functionalsafety_impactedElement": ["urn:spdx.dev:assumption-emi-envelope", "urn:spdx.dev:test-emi-susceptibility"],
@@ -1035,11 +1035,11 @@ which design and verification elements were reviewed or added.
     "spdxId": "urn:spdx.dev:srac-ex9-bundle",
     "name": "SRAC change record for supplier notice PCN-2026-051",
     "profileConformance": ["core", "functionalSafety"],
-    "rootElement": ["urn:spdx.dev:srac-ex9-change-impact-analysis"],
+    "rootElement": ["urn:spdx.dev:srac-ex9-system-impact-analysis"],
     "element": [
       "urn:spdx.dev:srac-ex9-change-trigger",
       "urn:spdx.dev:srac-ex9-trigger-analysis-link",
-      "urn:spdx.dev:srac-ex9-change-impact-analysis",
+      "urn:spdx.dev:srac-ex9-system-impact-analysis",
       "urn:spdx.dev:srac-ex9-verification",
       "urn:spdx.dev:srac-ex9-verified-by",
       "urn:spdx.dev:srac-ex9-evaluation",
@@ -1047,7 +1047,7 @@ which design and verification elements were reviewed or added.
     ]
   },
   {
-    "type": "functionalsafety_ChangeTrigger",
+    "type": "functionalsafety_AnalysisTrigger",
     "spdxId": "urn:spdx.dev:srac-ex9-change-trigger",
     "name": "Supplier part change notice PCN-2026-051",
     "externalIdentifier": [{
@@ -1063,13 +1063,13 @@ which design and verification elements were reviewed or added.
     "type": "Relationship",
     "spdxId": "urn:spdx.dev:srac-ex9-trigger-analysis-link",
     "relationshipType": "hasInput",
-    "from": "urn:spdx.dev:srac-ex9-change-impact-analysis",
+    "from": "urn:spdx.dev:srac-ex9-system-impact-analysis",
     "to": ["urn:spdx.dev:srac-ex9-change-trigger"]
   },
   {
-    "type": "functionalsafety_ChangeImpactAnalysis",
-    "spdxId": "urn:spdx.dev:srac-ex9-change-impact-analysis",
-    "name": "Change impact analysis for PCN-2026-051",
+    "type": "functionalsafety_SystemImpactAnalysis",
+    "spdxId": "urn:spdx.dev:srac-ex9-system-impact-analysis",
+    "name": "System impact analysis for PCN-2026-051",
     "functionalsafety_impactAnalysisStatus": "complete",
     "functionalsafety_impactLevel": "qualityImpact",
     "functionalsafety_impactedElement": ["urn:spdx.dev:design-pressure-sensor-path", "urn:spdx.dev:test-pressure-sensor-accuracy"],
@@ -1110,7 +1110,7 @@ which design and verification elements were reviewed or added.
 ## Example 10: Regulatory or safety bulletin
 
 A regulator or safety bulletin introduces a new safety-case expectation. SRAC
-communicates the bulletin as the trigger, the change impact analysis, and any
+communicates the bulletin as the trigger, the system impact analysis, and any
 new requirement, verification, or evidence needed to show the safety case was
 reviewed.
 
@@ -1121,11 +1121,11 @@ reviewed.
     "spdxId": "urn:spdx.dev:srac-ex10-bundle",
     "name": "SRAC change record for regulatory bulletin REG-2026-014",
     "profileConformance": ["core", "functionalSafety"],
-    "rootElement": ["urn:spdx.dev:srac-ex10-change-impact-analysis"],
+    "rootElement": ["urn:spdx.dev:srac-ex10-system-impact-analysis"],
     "element": [
       "urn:spdx.dev:srac-ex10-change-trigger",
       "urn:spdx.dev:srac-ex10-trigger-analysis-link",
-      "urn:spdx.dev:srac-ex10-change-impact-analysis",
+      "urn:spdx.dev:srac-ex10-system-impact-analysis",
       "urn:spdx.dev:req-sbom-safety-trace-v1",
       "urn:spdx.dev:req-sbom-safety-trace-v2",
       "urn:spdx.dev:srac-ex10-amended-by",
@@ -1136,7 +1136,7 @@ reviewed.
     ]
   },
   {
-    "type": "functionalsafety_ChangeTrigger",
+    "type": "functionalsafety_AnalysisTrigger",
     "spdxId": "urn:spdx.dev:srac-ex10-change-trigger",
     "name": "Regulatory bulletin REG-2026-014",
     "externalIdentifier": [{
@@ -1152,13 +1152,13 @@ reviewed.
     "type": "Relationship",
     "spdxId": "urn:spdx.dev:srac-ex10-trigger-analysis-link",
     "relationshipType": "hasInput",
-    "from": "urn:spdx.dev:srac-ex10-change-impact-analysis",
+    "from": "urn:spdx.dev:srac-ex10-system-impact-analysis",
     "to": ["urn:spdx.dev:srac-ex10-change-trigger"]
   },
   {
-    "type": "functionalsafety_ChangeImpactAnalysis",
-    "spdxId": "urn:spdx.dev:srac-ex10-change-impact-analysis",
-    "name": "Change impact analysis for REG-2026-014",
+    "type": "functionalsafety_SystemImpactAnalysis",
+    "spdxId": "urn:spdx.dev:srac-ex10-system-impact-analysis",
+    "name": "System impact analysis for REG-2026-014",
     "functionalsafety_impactAnalysisStatus": "inProgress",
     "functionalsafety_impactLevel": "safetyImpact",
     "functionalsafety_impactedElement": ["urn:spdx.dev:req-sbom-safety-trace-v1", "urn:spdx.dev:safety-case-index"],
