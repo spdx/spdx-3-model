@@ -68,6 +68,7 @@ name completes the sentence:
 - hasInput: The `from` Element has each `to` Element as an input.
 - hasInstall: The `from` Element has each `to` Artifact installed (placed into position for use) into it during a LifecycleScopeType period. To express the Agent doing the install, link this relationship as the `from` in `performedBy`.
 - hasMetadata: Every `to` Element is metadata about the `from` Element (`from` hasMetadata `to`).
+- hasNeed: The `from` Element has the `to` /FunctionalSafety/Need.
 - hasOptionalComponent: Every `to` Element is an optional component of the `from` Element (`from` hasOptionalComponent `to`).
 - hasOptionalDependency: The `from` Element optionally depends on each `to` Element, during a LifecycleScopeType period.
 - hasOutput: The `from` Element generates each `to` Element as an output.
@@ -83,6 +84,7 @@ name completes the sentence:
 - hasUninstall: The `from` Element has each `to` Artifact uninstalled (removed from position for use) from it during a LifecycleScopeType period. To express the Agent doing the uninstall, link this relationship as the `from` in `performedBy`.
 - hasVariant: Every `to` Element is a variant the `from` Element (`from` hasVariant `to`).
 - implementedBy: The `from` Requirement is implemented in the `to` Element(s).
+- isQualifiedFor: The `from` Agent is qualified for or can provided the `to` Role.
 - invokedBy: The `from` Element was invoked by the `to` Agent, during a LifecycleScopeType period (for example, a /Build/Build element that describes a build step).
 - locatedAt: `from` Element located at a specific `to` Location. A time period is optional.
 - modifiedBy: The `from` Element is modified by each `to` Element.
@@ -97,6 +99,7 @@ name completes the sentence:
 - republishedBy: Designates a `from` /Security/Vulnerability's details were tracked, aggregated, and/or enriched to improve context (i.e. NVD) by each `to` Agent.
 - resolved: The `to` /SupplyChain/OutOfSpecAction is resolved in the `from` /SupplyChain/ResolutionAction.
 - runsOn: The `from` Element (the instructions) runs on each `to` /Hardware/Hardware (processing element), during a LifecycleScopeType period.
+- satisfies: The `from` Requirement satisfies `to` /FunctionalSafety/Need. Note: The Requirement is not generally intended to singularly satisfy a particular Need. It is more likely that a set of higher level Requirements is required to achieve a reasonable satisfaction of an expressed /FunctionalSafety/Need.
 - serializedInArtifact: The `from` SpdxDocument can be found in a serialized form in each `to` Artifact.
 - testedOn: The `from` Element has been tested on the `to` Element(s).
 - tracedToDetail: The `from` Requirement is refined and further elaborated by each `to` Requirement, which contains more detailed implementation information.
