@@ -9,7 +9,7 @@ Size of a software artifact in bytes.
 ## Description
 
 byteSize records the size in bytes of a software artifact,
-such as a file, package, or dataset.
+such as a file, software package, or dataset.
 
 The value shall be a non-negative integer.
 
