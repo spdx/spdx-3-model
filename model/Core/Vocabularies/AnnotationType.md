@@ -18,3 +18,4 @@ AnnotationType specifies the type of an annotation.
 
 - other: Used to store extra information about an Element which is not part of a review (e.g. extra information provided during the creation of the Element).
 - review: Used when someone reviews the Element.
+- quality: Used when someone annotation the quality of the Element.
