@@ -16,8 +16,8 @@ or closing a work item.
 
 Decision is modeled as an Action so existing Relationship entries can describe
 its context. A process or analysis that produces a Decision can link to it using
-`hasOutput`; for example, a ChangeImpactAnalysis can use
-`ChangeImpactAnalysis hasOutput Decision` to record that the analysis produced
+`hasOutput`; for example, a SystemImpactAnalysis can use
+`SystemImpactAnalysis hasOutput Decision` to record that the analysis produced
 one or more decisions. Use `hasInput` relationships from the Decision to the
 specific Element or Elements the decision applies to, such as a requirement,
 vulnerability, evidence record, ticket, or other record. Use `hasOutput`
