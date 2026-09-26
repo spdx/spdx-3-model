@@ -21,19 +21,44 @@ This release candidate is for testing and validation;
 it may contain changes that could be modified or reverted before the
 final release.
 
-One of the major changes in this release candidate is the removal of
-minor version from namespace IRIs ([#1277]).
+Changes in this release candidate includes the stabilization of term IRIs,
+the addition of `/Core/Role` class, the addition of more regulatory and
+business operation-oriented identifier types, the refinement of the
+FunctionalSafety, Operations, and SupplyChain profiles, and introduction of
+SPARQL constraints for validating relationship types.
 
 ### Added
 
-- `doi`, `eli`, `isni`, and other intellectual property/regulatory identifiers
-  to `/Core/ExternalIdentifierType` vocabulary ([#1187])
-- `bom` entry to `/Core/ExternalRefType` vocabulary ([#1201])
+- Documentation on SPDX 3 JSON signing and attestation ([#1435])
 - Guidelines for creating an spdxId for an SPDX document (informative)
   ([#1215])
+- Tenancy modeling guidance for `/Service/SoftwareService` ([#1454])
+- SPARQL constraints for validating `from` and `to` types of
+  relationship types ([#1425])
+- `doi`, `eli`, `isni`, and other intellectual property/regulatory identifiers
+  to `/Core/ExternalIdentifierType` vocabulary ([#1187])
+- `iban`, `vatNumber`, and `eori` entries to `/Core/ExternalIdentifierType`
+  vocabulary ([#1420])
+- `bom` entry to `/Core/ExternalRefType` vocabulary ([#1201])
+- `operations`, `functionalSafety`, and `service` entries to
+  `/Core/ProfileIdentifierType` vocabulary ([#1226])
+- `amberStrict` entry to `/Dataset/ConfidentialityLevelType` vocabulary,
+  following Traffic Light Protocol 2.0 ([#1419])
+- `symlink` entry to `/Software/FileKindType` vocabulary ([#1254])
+- `assumes` relationship type ([#1251])
+- `hasInstall` and `hasUninstall` relationship types ([#1297])
 - `/Core/rationale` property ([#1218])
-- Role ([#1221])
-- "symlink" entry to FileKindType vocabulary ([#1254])
+- `/Core/Role` class ([#1221])
+- `/Core/requirementStatus` property and `/Core/RequirementStatusType`
+  vocabulary ([#1413])
+- `/Core/version` property to `/Core/Bom` ([#1427]) and `/Core/Tool` ([#1304])
+- `/AI/InteractionTemplate` class ([#1280])
+- `/FunctionalSafety/Assumption` class ([#1241])
+- `/FunctionalSafety/SafetyContextRelationship` class,
+  `/FunctionalSafety/safetyIntegrityLevel` property, and
+  `/FunctionalSafety/SafetyIntegrityLevelType` vocabulary ([#1436])
+- `/Service/serviceHostingCountry` property to `/Service/SoftwareService`
+  ([#1433])
 
 ### Changed
 
@@ -62,6 +87,71 @@ minor version from namespace IRIs ([#1277]).
   from the base IRI ([#1277])
   - 3.0.1: `https://spdx.org/rdf/3.0.1/terms/...`
   - New: `https://spdx.org/rdf/3/terms/...`
+- Generalized `from` of `hasConcludedLicense` and `hasDeclaredLicense`
+  relationship types from `/Software/SoftwareArtifact` to `/Core/Artifact`
+  ([#1122])
+- Generalized range of `/Security/assessedElement` from
+  `/Software/SoftwareArtifact` to `/Core/Artifact` ([#1281])
+- Moved `/Software/downloadLocation` from `/Software/Package` to
+  `/Software/SoftwareArtifact` ([#1292])
+  - *Non-breaking change*, as `/Software/Package` inherits it.
+- Clarified that declaring a profile in `/Core/profileConformance` of an
+  `/Core/ElementCollection` claims that all its elements conform to that
+  profile; defaults to `core` if absent ([#1298])
+- Clarified that `/SimpleLicensing/customIdToLicense` keys are matched
+  case-insensitively ([#1240])
+- `/Core/CountryCodeAlpha3` values must be uppercase ([#1429])
+- `conformsTo` relationship type can now point to a
+  `/FunctionalSafety/Assumption`
+  ([#1251])
+- Renamed `/Core/ContactPointRelationshipType` to `/Core/ContactType`
+  ([#1271])
+  - *Non-breaking change*, as this vocabulary was introduced in the 3.1-RC1
+    and was never part of an official release.
+- Renamed `/Core/requirementUUID` to `/Core/requirementUID`,
+  `/FunctionalSafety/evidenceUUID` to `/FunctionalSafety/evidenceUID`, and
+  `/FunctionalSafety/verificationUUID` to `/FunctionalSafety/verificationUID`
+  ([#1276])
+  - *Non-breaking change*, as these properties were introduced in the 3.1-RC1
+    and were never part of an official release.
+- Changed `/Service/SoftwareService` to be a subclass of `/Core/Artifact`
+  ([#1411])
+  - *Non-breaking change*, as this class was introduced in the 3.1-RC1
+    and was never part of an official release.
+- Renamed `/Service/AuthenticationProtocolType` to
+  `/Service/KeyValidationProtocolType` and
+  `/Service/serverAuthenticationProtocol` to
+  `/Service/serverKeyValidationProtocol` ([#1412])
+  - *Non-breaking change*, as this vocabulary and property were introduced
+    in the 3.1-RC1 and were never part of an official release.
+- Renamed `/SupplyChain/DefinedStateProcess` to `/SupplyChain/StateProcess`
+  ([#1445])
+  - *Non-breaking change*, as this class was introduced in the 3.1-RC1
+    and was never part of an official release.
+- Renamed `/SupplyChain/plannedTransportRoutes` to
+  `/SupplyChain/plannedTransportRoute` ([#1404])
+  - *Non-breaking change*, as this property was introduced in the 3.1-RC1
+    and was never part of an official release.
+- Renamed SupplyChain properties to be more specific ([#1449])
+  - `current` to `currentResponsibleAgent`
+  - `previous` to `previousResponsibleAgent`
+  - `plannedCurrent` to `plannedCurrentResponsibleAgent`
+  - `plannedPrevious` to `plannedPreviousResponsibleAgent`
+  - `forPickupLocation` to `plannedPickupLocation`
+  - `forDropoffLocation` to `plannedDropoffLocation`
+  - *Non-breaking change*, as these properties were introduced in the 3.1-RC1
+    and were never part of an official release.
+- Renamed `obsolete` entry to `obsoleted` in `/Core/ProcessReadinessType`
+  ([#1405])
+  - *Non-breaking change*, as this vocabulary was introduced in the 3.1-RC1
+    and was never part of an official release.
+- Redefined `/Core/postalName` as name of the addressee ([#1405])
+  - *Non-breaking change*, as this property was introduced in the 3.1-RC1
+    and was never part of an official release.
+- Redefined `/Core/UnitOfMeasure` as a quantity paired with a QUDT unit
+  ([#1439])
+  - *Non-breaking change*, as this class was introduced in the 3.1-RC1
+    and was never part of an official release.
 - Revised LanguageTag pattern to allow irregular ("i-") tags ([#1438])
 - Renamed `/Software/artifactSize` to `/Software/byteSize` ([#1463])
   - *Non-breaking change*, as `/Software/artifactSize` was
@@ -71,6 +161,9 @@ minor version from namespace IRIs ([#1277]).
 
 - `/Build/buildStartTime` and `/Build/buildEndTime` properties ([#1217])
   - New documents should use `/Core/startTime` and `/Core/endTime` instead.
+- `/AI/standardCompliance` property ([#1456])
+  - New documents should use a `/Core/Relationship` with `conformsTo`
+    relationship type to a `/Core/Specification` instead.
 
 ### Removed
 
@@ -87,11 +180,25 @@ minor version from namespace IRIs ([#1277]).
   - *Non-breaking change*, as these properties were introduced in the 3.1-RC1
     and were never part of an official release.
   - Replaced with `/Core/rationale` property.
+- `/Service/provider` property ([#1411])
+  - *Non-breaking change*, as this property was introduced in the 3.1-RC1
+    and was never part of an official release.
+  - Use `/Core/suppliedBy` for the primary provider and
+    `availableFrom` relationship type for additional providers.
+- `/Core/MeasureOfLength`, `/Core/MeasureOfMass`, and `/Hardware/mass`
+  ([#1439])
+  - *Non-breaking change*, as these were introduced in the 3.1-RC1
+    and were never part of an official release.
+  - Use `/Core/UnitOfMeasure` with a QUDT unit instead.
 
 ### Fixed
 
+- Corrected `Nature` of many properties (DataProperty/ObjectProperty)
+  ([#1448], [#1451])
+- Added missing `Instantiability` to `/Core/Requirement` ([#1450])
 - Fixed typos, formatting issues, and broken examples; updated reference links.
 
+[#1122]: https://github.com/spdx/spdx-3-model/pull/1122
 [#1187]: https://github.com/spdx/spdx-3-model/pull/1187
 [#1201]: https://github.com/spdx/spdx-3-model/pull/1201
 [#1213]: https://github.com/spdx/spdx-3-model/pull/1213
@@ -100,13 +207,46 @@ minor version from namespace IRIs ([#1277]).
 [#1218]: https://github.com/spdx/spdx-3-model/pull/1218
 [#1219]: https://github.com/spdx/spdx-3-model/pull/1219
 [#1221]: https://github.com/spdx/spdx-3-model/pull/1221
+[#1226]: https://github.com/spdx/spdx-3-model/pull/1226
 [#1234]: https://github.com/spdx/spdx-3-model/pull/1234
+[#1240]: https://github.com/spdx/spdx-3-model/pull/1240
+[#1241]: https://github.com/spdx/spdx-3-model/pull/1241
 [#1245]: https://github.com/spdx/spdx-3-model/pull/1245
+[#1251]: https://github.com/spdx/spdx-3-model/pull/1251
 [#1254]: https://github.com/spdx/spdx-3-model/pull/1254
 [#1265]: https://github.com/spdx/spdx-3-model/pull/1265
+[#1271]: https://github.com/spdx/spdx-3-model/pull/1271
+[#1276]: https://github.com/spdx/spdx-3-model/pull/1276
 [#1277]: https://github.com/spdx/spdx-3-model/pull/1277
+[#1280]: https://github.com/spdx/spdx-3-model/pull/1280
+[#1281]: https://github.com/spdx/spdx-3-model/pull/1281
 [#1283]: https://github.com/spdx/spdx-3-model/pull/1283
-[#1438] https://github.com/spdx/spdx-3-model/pull/1438
+[#1292]: https://github.com/spdx/spdx-3-model/pull/1292
+[#1297]: https://github.com/spdx/spdx-3-model/pull/1297
+[#1298]: https://github.com/spdx/spdx-3-model/pull/1298
+[#1304]: https://github.com/spdx/spdx-3-model/pull/1304
+[#1404]: https://github.com/spdx/spdx-3-model/pull/1404
+[#1405]: https://github.com/spdx/spdx-3-model/pull/1405
+[#1411]: https://github.com/spdx/spdx-3-model/pull/1411
+[#1412]: https://github.com/spdx/spdx-3-model/pull/1412
+[#1413]: https://github.com/spdx/spdx-3-model/pull/1413
+[#1419]: https://github.com/spdx/spdx-3-model/pull/1419
+[#1420]: https://github.com/spdx/spdx-3-model/pull/1420
+[#1425]: https://github.com/spdx/spdx-3-model/pull/1425
+[#1427]: https://github.com/spdx/spdx-3-model/pull/1427
+[#1429]: https://github.com/spdx/spdx-3-model/pull/1429
+[#1433]: https://github.com/spdx/spdx-3-model/pull/1433
+[#1435]: https://github.com/spdx/spdx-3-model/pull/1435
+[#1436]: https://github.com/spdx/spdx-3-model/pull/1436
+[#1438]: https://github.com/spdx/spdx-3-model/pull/1438
+[#1439]: https://github.com/spdx/spdx-3-model/pull/1439
+[#1445]: https://github.com/spdx/spdx-3-model/pull/1445
+[#1448]: https://github.com/spdx/spdx-3-model/pull/1448
+[#1449]: https://github.com/spdx/spdx-3-model/pull/1449
+[#1450]: https://github.com/spdx/spdx-3-model/pull/1450
+[#1451]: https://github.com/spdx/spdx-3-model/pull/1451
+[#1454]: https://github.com/spdx/spdx-3-model/pull/1454
+[#1456]: https://github.com/spdx/spdx-3-model/pull/1456
 [#1463]: https://github.com/spdx/spdx-3-model/pull/1463
 
 ## [3.1-RC1] - 2026-01-24
