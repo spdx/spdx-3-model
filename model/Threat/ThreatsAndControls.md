@@ -23,7 +23,6 @@ TODO:
 - id: https://spdx.org/rdf/3.1/terms/ThreatsAndControls
 - name: ThreatsAndControls
 
-
 ## Profile conformance (see Licensing as reference)
 
 For an element collection to be conformant with this profile,

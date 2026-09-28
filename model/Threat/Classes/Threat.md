@@ -32,7 +32,7 @@ Based on a Threat regarded as an impact potential, Risks can be concluded. A ris
 the context of a selected and concrete Asset. This implies that one Threat can be evaluated to multiple Risks with
 different impact and likelihood depending on the target asset.
 
-E.g. the loss of confidential data (Threat) is evaluated as critical risk on the database storing secrets, while the 
+E.g. the loss of confidential data (Threat) is evaluated as critical risk on the database storing secrets, while the
 Risk is moderate on the database storing audit logs (with given policies controlling the allowed content).
 
 ## Metadata

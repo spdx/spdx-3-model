@@ -11,6 +11,7 @@ Expression of a system, product, function, or process ability to achieve a speci
 A capability may be a function unique to an asset, established by several assets, or shared by different assets.
 
 Examples:
+
 - Access Control System
   - Authentication
   - Authorization

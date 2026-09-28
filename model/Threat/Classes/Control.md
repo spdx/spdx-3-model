@@ -35,7 +35,7 @@ a ReferenceRelationship with relationship type 'establishedBy'.
   - type: Assessment
   - minCount: 0
 - type
-  - type: ControlType 
+  - type: ControlType
   - minCount: 0
 - attribution
   - type: ControlAttribution
