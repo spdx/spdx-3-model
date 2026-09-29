@@ -19,6 +19,10 @@ such as a package, a file, or a snippet.
 
 ## Properties
 
+- /Core/additionalInformation
+  - type: /Core/DictionaryEntry
+- /Core/additionalInformationSpecification
+  - type: /Core/Specification
 - primaryPurpose
   - type: SoftwarePurpose
   - minCount: 0
