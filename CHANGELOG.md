@@ -246,6 +246,7 @@ SPARQL constraints for validating relationship types.
 [#1449]: https://github.com/spdx/spdx-3-model/pull/1449
 [#1450]: https://github.com/spdx/spdx-3-model/pull/1450
 [#1451]: https://github.com/spdx/spdx-3-model/pull/1451
+[#1453]: https://github.com/spdx/spdx-3-model/pull/1453
 [#1454]: https://github.com/spdx/spdx-3-model/pull/1454
 [#1456]: https://github.com/spdx/spdx-3-model/pull/1456
 [#1463]: https://github.com/spdx/spdx-3-model/pull/1463
@@ -268,24 +269,24 @@ different profiles.
 
 ### Added
 
-- FunctionalSafety namespace and profile - ([#1178])
-- Hardware namespace and profile - ([#1076])
-- Operations namespace and profile - ([#1172])
-- Service namespace and profile - ([#973])
-- SupplyChain namespace and profile - ([#1076])
+- `/Software/artifactSize` property ([#966])
+  - Size of a software artifact, in bytes.
 - `/Core/ElementMap` class and `/Core/elementValue` property ([#969])
   - A class and a property used for implementing mapping a string key to
     an Element.
-- `/Core/inLanguage` property ([#1066], [#1124])
-  - A human language used within the content of an Element or a property.
-- `/Core/intendedUse` property ([#1109])
-  - How or for what item or artifact is meant to be used for.
-- `/Core/isoAutomationLevel` property ([#1064])
-  - A spectrum of system automation capability.
 - `/SimpleLicensing/customIdToLicense` property ([#969])
   - Maps custom licensing string to the corresponding licensing Element.
-- `/Software/artifactSize` property ([#966])
-  - Size of a software artifact, in bytes.
+- Service namespace and profile - ([#973])
+- `/Core/isoAutomationLevel` property ([#1064])
+  - A spectrum of system automation capability.
+- `/Core/inLanguage` property ([#1066], [#1124])
+  - A human language used within the content of an Element or a property.
+- Hardware namespace and profile - ([#1076])
+- SupplyChain namespace and profile - ([#1076])
+- `/Core/intendedUse` property ([#1109])
+  - How or for what item or artifact is meant to be used for.
+- Operations namespace and profile - ([#1172])
+- FunctionalSafety namespace and profile - ([#1178])
 
 ### Changed
 
@@ -357,18 +358,18 @@ Key changes:
 - Clarified `/AI/autonomyType` property ([#741])
   - Specified the meaning of `yes`, `no`, and `noAssertion` values in the
     `/AI/autonomyType` property description.
-- Clarified `/Build/buildType` property ([#875])
-  - Its intent is added: "The buildType is used to interpret the meaning of
-    other build parameters by defining the 'type' of build...".
-- Clarified `hasDataFile` entry in `/Core/RelationshipType` ([#815])
-  - Its description is enhanced with examples and counter-examples.
-- Clarified `/Core/packageVerificationCodeExcludedFile` property ([#913])
-  - Its description is now stating that every filename is preceded with a `./`.
 - Improved JSON-LD examples.
   - All JSON-LD examples in the "Syntax" section of class descriptions are now
     validated ([#794])
   - Added JSON-LD examples for `/AI/EnergyConsumption` and
     `/AI/EnergyConsumptionDescription` ([#780])
+- Clarified `hasDataFile` entry in `/Core/RelationshipType` ([#815])
+  - Its description is enhanced with examples and counter-examples.
+- Clarified `/Build/buildType` property ([#875])
+  - Its intent is added: "The buildType is used to interpret the meaning of
+    other build parameters by defining the 'type' of build...".
+- Clarified `/Core/packageVerificationCodeExcludedFile` property ([#913])
+  - Its description is now stating that every filename is preceded with a `./`.
 - Updated model diagrams.
   - Used updated names and specified XSD datatypes ([#852])
   - Removed all named individuals ([#884])
@@ -383,28 +384,28 @@ Key changes:
 
 ### Fixed
 
+- Licensing relationship type names in profile conformance ([#779])
+  - Corrected `concludedLicense` to `hasConcludedLicense` and
+    `declaredLicense` to `hasDeclaredLicense` in profile conformance
+    section of AI, Dataset, Licensing, and Lite profiles.
+- Typo in `hasPrerequisite` entry ([#817])
+  - Corrected the misspelling of `hasPrerequsite` to `hasPrerequisite` in
+    `/Core/RelationshipType`.
+- Typo in `/Build/parameter` property ([#836])
+  - Corrected `parameters` to `parameter` in Build profile.
+- Typo in `Core/import` property ([#847])
+  - Corrected `imports` to `import` in Core profile.
+- Typo in `hasInput` and `hasOutput` entries ([#854])
+  - Corrected `hasInputs` to `hasInput` and `hasOutputs` to `hasOutput` in
+    `/Core/RelationshipType`.
+- `/Security/actionStatement` property ([#908])
+  - Corrected its cardinality from `0..1` to `1..1`.
 - Cardinalities in `/Security/VexAffectedVulnAssessmentRelationship` class
   ([#908])
   - Corrected `actionStatement` cardinality from `0..1` to `1..1`
     to match its textual description.
   - Corrected `actionStatementTime` cardinality from `0..*` to `0..1`
     to match its textual description.
-- Typo in `Core/import` property ([#847])
-  - Corrected `imports` to `import` in Core profile.
-- Typo in `/Build/parameter` property ([#836])
-  - Corrected `parameters` to `parameter` in Build profile.
-- Typo in `hasInput` and `hasOutput` entries ([#854])
-  - Corrected `hasInputs` to `hasInput` and `hasOutputs` to `hasOutput` in
-    `/Core/RelationshipType`.
-- Typo in `hasPrerequisite` entry ([#817])
-  - Corrected the misspelling of `hasPrerequsite` to `hasPrerequisite` in
-    `/Core/RelationshipType`.
-- Licensing relationship type names in profile conformance ([#779])
-  - Corrected `concludedLicense` to `hasConcludedLicense` and
-    `declaredLicense` to `hasDeclaredLicense` in profile conformance
-    section of AI, Dataset, Licensing, and Lite profiles.
-- `/Security/actionStatement` property ([#908])
-  - Corrected its cardinality from `0..1` to `1..1`.
 - `/Security/actionStatementTime` property ([#908])
   - Corrected its cardinality from `0..*` to `0..1`.
 - Fixed general typos and formatting issues.
