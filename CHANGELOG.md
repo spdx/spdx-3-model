@@ -29,39 +29,42 @@ SPARQL constraints for validating relationship types.
 
 ### Added
 
-- Documentation on SPDX 3 JSON signing and attestation ([#1435])
-- Guidelines for creating an spdxId for an SPDX document (informative)
-  ([#1215])
-- Tenancy modeling guidance for `/Service/SoftwareService` ([#1454])
-- SPARQL constraints for validating `from` and `to` types of
-  relationship types ([#1425])
 - `doi`, `eli`, `isni`, and other intellectual property/regulatory identifiers
   to `/Core/ExternalIdentifierType` vocabulary ([#1187])
-- `iban`, `vatNumber`, and `eori` entries to `/Core/ExternalIdentifierType`
-  vocabulary ([#1420])
 - `bom` entry to `/Core/ExternalRefType` vocabulary ([#1201])
-- `operations`, `functionalSafety`, and `service` entries to
-  `/Core/ProfileIdentifierType` vocabulary ([#1226])
-- `amberStrict` entry to `/Dataset/ConfidentialityLevelType` vocabulary,
-  following Traffic Light Protocol 2.0 ([#1419])
-- `symlink` entry to `/Software/FileKindType` vocabulary ([#1254])
-- `assumes` relationship type ([#1251])
-- `hasInstall` and `hasUninstall` relationship types ([#1297])
+- Guidelines for creating an spdxId for an SPDX document (informative)
+  ([#1215])
 - `/Core/rationale` property ([#1218])
 - `/Core/Role` class ([#1221])
+- `operations`, `functionalSafety`, and `service` entries to
+  `/Core/ProfileIdentifierType` vocabulary ([#1226])
+- `/FunctionalSafety/Assumption` class ([#1241])
+- `assumes` relationship type ([#1251])
+- `symlink` entry to `/Software/FileKindType` vocabulary ([#1254])
+- `/AI/InteractionTemplate` class ([#1280])
+- `hasInstall` and `hasUninstall` relationship types ([#1297])
+- `/Core/version` property to `/Core/Tool` ([#1304]) and `/Core/Bom` ([#1427])
 - `/Core/requirementStatus` property and `/Core/RequirementStatusType`
   vocabulary ([#1413])
-- `/Core/version` property to `/Core/Bom` ([#1427]) and `/Core/Tool` ([#1304])
-- `/AI/InteractionTemplate` class ([#1280])
-- `/FunctionalSafety/Assumption` class ([#1241])
+- `amberStrict` entry to `/Dataset/ConfidentialityLevelType` vocabulary,
+  following Traffic Light Protocol 2.0 ([#1419])
+- `iban`, `vatNumber`, and `eori` entries to `/Core/ExternalIdentifierType`
+  vocabulary ([#1420])
+- SPARQL constraints for validating `from` and `to` types of
+  relationship types ([#1425])
+- `/Service/serviceHostingCountry` property to `/Service/SoftwareService`
+  ([#1433])
+- Documentation on SPDX 3 JSON signing and attestation ([#1435])
 - `/FunctionalSafety/SafetyContextRelationship` class,
   `/FunctionalSafety/safetyIntegrityLevel` property, and
   `/FunctionalSafety/SafetyIntegrityLevelType` vocabulary ([#1436])
-- `/Service/serviceHostingCountry` property to `/Service/SoftwareService`
-  ([#1433])
+- Tenancy modeling guidance for `/Service/SoftwareService` ([#1454])
 
 ### Changed
 
+- Generalized `from` of `hasConcludedLicense` and `hasDeclaredLicense`
+  relationship types from `/Software/SoftwareArtifact` to `/Core/Artifact`
+  ([#1122])
 - Refined `/Core/DateTime` datatype pattern ([#1213], [#1245])
   - Replaced `\d` with `[0-9]` to ensure intended behavior and improve
     regex portability.
@@ -76,6 +79,11 @@ SPARQL constraints for validating relationship types.
   - *Non-breaking change*, as the type is used only for internal versioning
     (`/Core/specVersion`, `/SimpleLicensing/licenseListVersion`)
     and is not referenced elsewhere in the model.
+- Clarified that `/SimpleLicensing/customIdToLicense` keys are matched
+  case-insensitively ([#1240])
+- `conformsTo` relationship type can now point to a
+  `/FunctionalSafety/Assumption`
+  ([#1251])
 - Updated `/Core/DefinedProcess`, `/Hardware/Hardware`,
   `/Hardware/ProductSpecification`, and `/Software/Package` to use
   a generic `/Core/version` property (not a specific `xxxVersion`) ([#1265])
@@ -83,27 +91,6 @@ SPARQL constraints for validating relationship types.
     introduced in the 3.1-RC1 and was never part of an official release.
     For `/Software/Package`, the `/Software/packageVersion` is
     still available, but deprecated.
-- Make term IRIs stable across SPDX 3 versions by removing the minor version
-  from the base IRI ([#1277])
-  - 3.0.1: `https://spdx.org/rdf/3.0.1/terms/...`
-  - New: `https://spdx.org/rdf/3/terms/...`
-- Generalized `from` of `hasConcludedLicense` and `hasDeclaredLicense`
-  relationship types from `/Software/SoftwareArtifact` to `/Core/Artifact`
-  ([#1122])
-- Generalized range of `/Security/assessedElement` from
-  `/Software/SoftwareArtifact` to `/Core/Artifact` ([#1281])
-- Moved `/Software/downloadLocation` from `/Software/Package` to
-  `/Software/SoftwareArtifact` ([#1292])
-  - *Non-breaking change*, as `/Software/Package` inherits it.
-- Clarified that declaring a profile in `/Core/profileConformance` of an
-  `/Core/ElementCollection` claims that all its elements conform to that
-  profile; defaults to `core` if absent ([#1298])
-- Clarified that `/SimpleLicensing/customIdToLicense` keys are matched
-  case-insensitively ([#1240])
-- `/Core/CountryCodeAlpha3` values must be uppercase ([#1429])
-- `conformsTo` relationship type can now point to a
-  `/FunctionalSafety/Assumption`
-  ([#1251])
 - Renamed `/Core/ContactPointRelationshipType` to `/Core/ContactType`
   ([#1271])
   - *Non-breaking change*, as this vocabulary was introduced in the 3.1-RC1
@@ -114,6 +101,29 @@ SPARQL constraints for validating relationship types.
   ([#1276])
   - *Non-breaking change*, as these properties were introduced in the 3.1-RC1
     and were never part of an official release.
+- Make term IRIs stable across SPDX 3 versions by removing the minor version
+  from the base IRI ([#1277])
+  - 3.0.1: `https://spdx.org/rdf/3.0.1/terms/...`
+  - New: `https://spdx.org/rdf/3/terms/...`
+- Generalized range of `/Security/assessedElement` from
+  `/Software/SoftwareArtifact` to `/Core/Artifact` ([#1281])
+- Moved `/Software/downloadLocation` from `/Software/Package` to
+  `/Software/SoftwareArtifact` ([#1292])
+  - *Non-breaking change*, as `/Software/Package` inherits it.
+- Clarified that declaring a profile in `/Core/profileConformance` of an
+  `/Core/ElementCollection` claims that all its elements conform to that
+  profile; defaults to `core` if absent ([#1298])
+- Renamed `/SupplyChain/plannedTransportRoutes` to
+  `/SupplyChain/plannedTransportRoute` ([#1404])
+  - *Non-breaking change*, as this property was introduced in the 3.1-RC1
+    and was never part of an official release.
+- Renamed `obsolete` entry to `obsoleted` in `/Core/ProcessReadinessType`
+  ([#1405])
+  - *Non-breaking change*, as this vocabulary was introduced in the 3.1-RC1
+    and was never part of an official release.
+- Redefined `/Core/postalName` as name of the addressee ([#1405])
+  - *Non-breaking change*, as this property was introduced in the 3.1-RC1
+    and was never part of an official release.
 - Changed `/Service/SoftwareService` to be a subclass of `/Core/Artifact`
   ([#1411])
   - *Non-breaking change*, as this class was introduced in the 3.1-RC1
@@ -124,13 +134,15 @@ SPARQL constraints for validating relationship types.
   `/Service/serverKeyValidationProtocol` ([#1412])
   - *Non-breaking change*, as this vocabulary and property were introduced
     in the 3.1-RC1 and were never part of an official release.
+- `/Core/CountryCodeAlpha3` values must be uppercase ([#1429])
+- Revised LanguageTag pattern to allow irregular ("i-") tags ([#1438])
+- Redefined `/Core/UnitOfMeasure` as a quantity paired with a QUDT unit
+  ([#1439])
+  - *Non-breaking change*, as this class was introduced in the 3.1-RC1
+    and was never part of an official release.
 - Renamed `/SupplyChain/DefinedStateProcess` to `/SupplyChain/StateProcess`
   ([#1445])
   - *Non-breaking change*, as this class was introduced in the 3.1-RC1
-    and was never part of an official release.
-- Renamed `/SupplyChain/plannedTransportRoutes` to
-  `/SupplyChain/plannedTransportRoute` ([#1404])
-  - *Non-breaking change*, as this property was introduced in the 3.1-RC1
     and was never part of an official release.
 - Renamed SupplyChain properties to be more specific ([#1449])
   - `current` to `currentResponsibleAgent`
@@ -141,18 +153,7 @@ SPARQL constraints for validating relationship types.
   - `forDropoffLocation` to `plannedDropoffLocation`
   - *Non-breaking change*, as these properties were introduced in the 3.1-RC1
     and were never part of an official release.
-- Renamed `obsolete` entry to `obsoleted` in `/Core/ProcessReadinessType`
-  ([#1405])
-  - *Non-breaking change*, as this vocabulary was introduced in the 3.1-RC1
-    and was never part of an official release.
-- Redefined `/Core/postalName` as name of the addressee ([#1405])
-  - *Non-breaking change*, as this property was introduced in the 3.1-RC1
-    and was never part of an official release.
-- Redefined `/Core/UnitOfMeasure` as a quantity paired with a QUDT unit
-  ([#1439])
-  - *Non-breaking change*, as this class was introduced in the 3.1-RC1
-    and was never part of an official release.
-- Revised LanguageTag pattern to allow irregular ("i-") tags ([#1438])
+- Extended `hasInput` and `hasOutput` descriptions ([#1453])
 - Renamed `/Software/artifactSize` to `/Software/byteSize` ([#1463])
   - *Non-breaking change*, as `/Software/artifactSize` was
     introduced in the 3.1-RC1 and was never part of an official release.
