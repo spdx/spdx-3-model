@@ -33,14 +33,26 @@ such as a package, a file, or a snippet.
 - attributionText
   - type: xsd:string
   - minCount: 0
-- contentIdentifier
-  - type: ContentIdentifier
-  - minCount: 0
 - byteSize
   - type: xsd:nonNegativeInteger
   - minCount: 0
   - maxCount: 1
+- contentDuration
+  - type: xsd:duration
+  - minCount: 0
+  - maxCount: 1
+- contentIdentifier
+  - type: ContentIdentifier
+  - minCount: 0
 - downloadLocation
   - type: xsd:anyURI
+  - minCount: 0
+  - maxCount: 1
+- itemCount
+  - type: xsd:nonNegativeInteger
+  - minCount: 0
+  - maxCount: 1
+- tokenCount
+  - type: xsd:nonNegativeInteger
   - minCount: 0
   - maxCount: 1
