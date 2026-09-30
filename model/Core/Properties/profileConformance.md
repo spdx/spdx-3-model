@@ -18,8 +18,8 @@ collection as well as the collection itself.
 Conformance to a profile requires adherence to the additional restrictions
 specified in the corresponding profile documentation.
 
-Use of this property allows the creator of an ElementCollection to communicate
-to consumers their intent to adhere to the profile additional restrictions.
+This property enables the creator of an ElementCollection to declare
+an intent to adhere to the restrictions specified for that profile.
 
 The profileConformance has a default value of "core" if no other
 profileConformance is specified since all ElementCollections and Elements shall
