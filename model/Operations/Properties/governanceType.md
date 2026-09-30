@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Governance Type of the project.
+Governance type of the project.
 
 ## Description
 
