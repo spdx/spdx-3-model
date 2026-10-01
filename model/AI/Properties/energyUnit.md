@@ -14,7 +14,8 @@ Use `/Core/unitQUDT` instead.
 Provides the unit information of the energy.
 
 This property is deprecated.
-Use `/Core/unitQUDT` instead.
+Use `/Core/unitQUDT` with value such as `<http://qudt.org/vocab/unit/KiloW-HR>`
+instead.
 
 ## Metadata
 
