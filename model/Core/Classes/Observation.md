@@ -44,7 +44,7 @@ the tool that performed the observation.
   - minCount: 0
   - maxCount: 1
 - observedProperty
-  - type: anyURI
+  - type: xsd:anyURI
   - minCount: 1
   - maxCount: 1
 - observedValue

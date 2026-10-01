@@ -21,4 +21,4 @@ The QUDT ontology and specifications are available at <https://www.qudt.org/>.
 
 - name: observedProperty
 - Nature: DataProperty
-- Range: anyURI
+- Range: xsd:anyURI
