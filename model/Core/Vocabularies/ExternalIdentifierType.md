@@ -57,7 +57,7 @@ ExternalIdentifierType specifies the type of an external identifier.
 - requirementUID: The unique identifier used by a requirements management or any other lifecycle management tool to uniquely identify a requirement item.
 - rorid: [Research Organization Registry (ROR) identifier](https://ror.org/about/) is a unique identifier for research and funding organization, typically expressed in its preferred URI form such as `https://ror.org/02mhbdp94`.
 - securityOther: Used when there is a security related identifier of unspecified type.
-- sku: Stock Keeping Unit (SKU), Created by a retailer or distributor for tracking sales and inventory.
+- sku: Stock Keeping Unit (SKU) identifier, assigned by an organization to track sales and inventory for a specific product or service offering.
 - swhid: SoftWare Hash IDentifier, a persistent intrinsic identifier for digital artifacts, such as files, trees (also known as directories or folders), commits, and other objects typically found in version control systems. The format of the identifiers is defined in the [SWHID specification](https://www.swhid.org/swhid-specification/v1.2/) ([ISO/IEC 18670](https://www.iso.org/standard/89985.html)). They typically look like `swh:1:cnt:94a9ed024d3859793618152ea559a168bbcbb5e2`.
 - swid: Concise Software Identification (CoSWID) tag, as defined in [RFC 9393](https://datatracker.ietf.org/doc/rfc9393/) Section 2.3.
 - urlScheme: [Uniform Resource Identifier (URI) Schemes](https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml). The scheme used in order to locate a resource.
