@@ -12,6 +12,15 @@ A HashAlgorithm is a mathematical algorithm that maps data of arbitrary size to
 a bit string (the hash) and is a one-way function, that is, a function which is
 practically infeasible to invert.
 
+**Note**
+Inclusion in this vocabulary does not imply suitability for cryptographic integrity verification.
+
+For cryptographic integrity, producers should provide at least one SHA-256 or stronger hash. Consumers may reject verification when only weaker algorithms are provided.
+
+MD2, MD4, MD5, and SHA-1 are not collision resistant and should not be used for cryptographic integrity. Adler-32 is a non-cryptographic checksum intended only to detect accidental corruption. MD6 is experimental and non-standardized and should not be used for new integrity information.
+
+Dilithium and FALCON are signature algorithms, and Kyber is a key-encapsulation mechanism; they are not hash algorithms.
+
 ## Metadata
 
 - name: HashAlgorithm
@@ -31,7 +40,7 @@ practically infeasible to invert.
 - md5: MD5 message-digest algorithm, as defined in [RFC 1321](https://datatracker.ietf.org/doc/rfc1321/).
 - md6: [MD6 hash function](https://people.csail.mit.edu/rivest/pubs/RABCx08.pdf)
 - other: any hashing algorithm that does not exist in this list of entries
-- sha1: SHA-1, a secure hashing algorithm, as defined in [RFC 3174](https://datatracker.ietf.org/doc/rfc3174/).
+- sha1: SHA-1, a hashing algorithm, as defined in [RFC 3174](https://datatracker.ietf.org/doc/rfc3174/).
 - sha224: SHA-2 with a digest length of 224, as defined in [RFC 3874](https://datatracker.ietf.org/doc/rfc3874/).
 - sha256: SHA-2 with a digest length of 256, as defined in [RFC 6234](https://datatracker.ietf.org/doc/rfc6234/).
 - sha384: SHA-2 with a digest length of 384, as defined in [RFC 6234](https://datatracker.ietf.org/doc/rfc6234/).
