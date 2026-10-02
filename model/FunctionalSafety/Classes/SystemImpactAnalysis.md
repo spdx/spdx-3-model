@@ -17,12 +17,12 @@ SystemImpactAnalysis to each AnalysisTrigger. This keeps the source or reason
 for the analysis separate from the analysis that determines impact.
 
 The analysis can reference the process or specification used to perform the
-impact analysis, communicate its current status, indicate its impact category,
-and identify elements that were impacted, added, modified, removed from the
-analyzed context, verified again, or otherwise reviewed.
+impact analysis, communicate its current status, indicate its impact category
+or categories, and identify elements that were impacted, added, modified,
+removed from the analyzed context, verified again, or otherwise reviewed.
 
 The analysis may determine that no actual change is required. In that case, the
-analysis can record its impact category, rationale, affected elements, and
+analysis can record its impact categories, rationale, affected elements, and
 completion status without adding or removing elements.
 
 The affected elements can be requirements, validations, tests, design artifacts,
@@ -70,7 +70,6 @@ duplicate and can link to the analysis that already covers the trigger or scope.
 - impactLevel
   - type: SystemImpactLevelType
   - minCount: 0
-  - maxCount: 1
 - impactedElement
   - type: /Core/Element
   - minCount: 0
