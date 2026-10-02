@@ -14,9 +14,9 @@ assessment class. Each example uses the same graph shape:
 - a Core Relationship links the SystemImpactAnalysis to the source using
   relationshipType hasInput, from the SystemImpactAnalysis to the source
   element;
-- SystemImpactAnalysis records the analysis status, impact category,
-  and the SPDX elements that are impacted, added, or removed from the analyzed
-  safety context;
+- SystemImpactAnalysis records the analysis status, one or more impact
+  categories, and the SPDX elements that are impacted, added, modified, or
+  removed from the analyzed safety context;
 - when per-element decisions are represented, the SystemImpactAnalysis can use
   relationshipType hasOutput to link to each Decision, and each Decision can use
   relationshipType hasInput to identify the specific Element it decides on;
@@ -209,7 +209,7 @@ analysis, requirement revision, verification results, and evidence.
     "type": "functionalsafety_RequirementVerification",
     "spdxId": "urn:spdx.dev:srac-ex1-verification",
     "functionalsafety_verificationMethod": ["assessment"],
-    "rationale": "Assess the previous threshold against the new product-line dynamics data."
+    "rationale": "Assessment is selected because the new product-line dynamics data must be compared with the previous 40 ms threshold to determine whether it remains adequate."
   },
   {
     "type": "Relationship",
@@ -251,7 +251,7 @@ analysis, requirement revision, verification results, and evidence.
     "type": "functionalsafety_RequirementVerification",
     "spdxId": "urn:spdx.dev:srac-ex1-verification-30ms",
     "functionalsafety_verificationMethod": ["test"],
-    "rationale": "Rerun T-001 and run T-003 against the new 30 ms requirement."
+    "rationale": "Testing is selected because the 30 ms response requirement is quantitative and directly measurable; T-001 provides regression coverage and T-003 validates the tightened threshold."
   },
   {
     "type": "Relationship",
@@ -374,7 +374,7 @@ duplicating the Security/VEX layer.
     "type": "functionalsafety_RequirementVerification",
     "spdxId": "urn:spdx.dev:srac-ex2-verification",
     "functionalsafety_verificationMethod": ["assessment"],
-    "rationale": "Assess whether the CVE affects the SIL-2 therapy command transport requirement."
+    "rationale": "Assessment is selected because vulnerability applicability must be evaluated against the SIL-2 therapy command transport requirement before a safety-impact conclusion can be made."
   },
   {
     "type": "Relationship",
@@ -480,7 +480,7 @@ affected, and the resulting design or validation updates.
     "type": "functionalsafety_RequirementVerification",
     "spdxId": "urn:spdx.dev:srac-ex3-verification",
     "functionalsafety_verificationMethod": ["assessment"],
-    "rationale": "Assess the field incident against the existing dose confirmation requirement and linked validation."
+    "rationale": "Assessment is selected to compare the observed field failure mode with the existing dose-confirmation requirement and its linked validation coverage."
   },
   {
     "type": "Relationship",
@@ -508,7 +508,7 @@ affected, and the resulting design or validation updates.
     "type": "functionalsafety_RequirementVerification",
     "spdxId": "urn:spdx.dev:srac-ex3-followup-verification",
     "functionalsafety_verificationMethod": ["test"],
-    "rationale": "Run regression validation against the revised dose confirmation requirement before closing the analysis."
+    "rationale": "Testing is selected because the revised dose-confirmation behavior must be exercised under the observed delayed-confirmation failure condition before the analysis can close."
   },
   {
     "type": "Relationship",
@@ -609,7 +609,7 @@ result, and evidence so downstream consumers can see why no action was taken.
     "type": "functionalsafety_RequirementVerification",
     "spdxId": "urn:spdx.dev:srac-ex4-verification",
     "functionalsafety_verificationMethod": ["assessment"],
-    "rationale": "Assess whether the reported alarm wording creates a safety requirement or validation change."
+    "rationale": "Assessment is selected because engineering review of the reported alarm wording can determine whether existing safety requirements or validation coverage must change."
   },
   {
     "type": "Relationship",
@@ -707,7 +707,7 @@ test elements, and the failed assessment result that justifies the change.
     "type": "functionalsafety_RequirementVerification",
     "spdxId": "urn:spdx.dev:srac-ex5-verification",
     "functionalsafety_verificationMethod": ["assessment"],
-    "rationale": "Assess the current occlusion detection requirement against the lab waveform finding."
+    "rationale": "Assessment is selected to compare the observed lab waveform with the scope and assumptions of the current occlusion-detection requirement."
   },
   {
     "type": "Relationship",
@@ -735,7 +735,7 @@ test elements, and the failed assessment result that justifies the change.
     "type": "functionalsafety_RequirementVerification",
     "spdxId": "urn:spdx.dev:srac-ex5-followup-verification",
     "functionalsafety_verificationMethod": ["test"],
-    "rationale": "Run the targeted edge-waveform validation against the revised occlusion detection requirement before closing the analysis."
+    "rationale": "Testing is selected because the revised occlusion-detection requirement must be exercised directly with the edge waveform that exposed the coverage gap."
   },
   {
     "type": "Relationship",
@@ -805,7 +805,7 @@ affected validation and the new rerun or corrective verification.
     "type": "functionalsafety_RequirementVerification",
     "spdxId": "urn:spdx.dev:srac-ex6-verification",
     "functionalsafety_verificationMethod": ["test"],
-    "rationale": "Rerun watchdog timeout validation on the affected build."
+    "rationale": "Testing is selected because the affected build can directly demonstrate whether the watchdog timeout requirement remains satisfied."
   },
   {
     "type": "Relationship",
@@ -901,7 +901,7 @@ product-line requirement revision.
     "type": "functionalsafety_RequirementVerification",
     "spdxId": "urn:spdx.dev:srac-ex7-verification",
     "functionalsafety_verificationMethod": ["assessment"],
-    "rationale": "Assess whether the deployed threshold remains within the validated safety envelope."
+    "rationale": "Assessment is selected because the configured threshold can be compared with the documented validated safety envelope without executing a new test."
   },
   {
     "type": "Relationship",
@@ -994,7 +994,7 @@ inconclusive evaluation that needs follow-up.
     "type": "functionalsafety_RequirementVerification",
     "spdxId": "urn:spdx.dev:srac-ex8-verification",
     "functionalsafety_verificationMethod": ["analysis"],
-    "rationale": "Analyze whether the reported EMI environment affects the safety case."
+    "rationale": "Analysis is selected because the reported EMI environment must be mapped against the assumptions and limits of the existing safety case."
   },
   {
     "type": "Relationship",
@@ -1080,7 +1080,7 @@ which design and verification elements were reviewed or added.
     "type": "functionalsafety_RequirementVerification",
     "spdxId": "urn:spdx.dev:srac-ex9-verification",
     "functionalsafety_verificationMethod": ["analysis"],
-    "rationale": "Assess supplier equivalence data against the pressure-sensor safety requirement."
+    "rationale": "Analysis is selected because supplier equivalence evidence must be compared with the pressure-sensor safety requirement and its acceptance criteria."
   },
   {
     "type": "Relationship",
@@ -1177,7 +1177,7 @@ reviewed.
     "type": "functionalsafety_RequirementVerification",
     "spdxId": "urn:spdx.dev:srac-ex10-verification",
     "functionalsafety_verificationMethod": ["assessment"],
-    "rationale": "Assess current safety traceability against the new regulatory bulletin."
+    "rationale": "Assessment is selected because the new regulatory bulletin must be compared with existing safety-traceability requirements and safety-case coverage."
   },
   {
     "type": "Relationship",
