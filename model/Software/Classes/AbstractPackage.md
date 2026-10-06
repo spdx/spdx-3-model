@@ -25,10 +25,7 @@ might be different.
 The precedence rule is that every attribute of a more specific entity
 overwrites attribute values of a more general entity.
 This way, property values of a Package are always valid;
-if they do not exist and the package is an instanceOf an AbstractPackage,
-then the properties of this AbstractPackage are taken.
-The chain may continue further to more AbstractPackages,
-as long as there are "parent" AbstractPackage and no values have been specified.
+
 
 A Package shall have no more than one `hasInstance` relationship from `AbstractPackage` Elements.
 
