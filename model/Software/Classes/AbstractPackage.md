@@ -26,7 +26,6 @@ The precedence rule is that every attribute of a more specific entity
 overwrites attribute values of a more general entity.
 This way, property values of a Package are always valid;
 
-
 A Package shall have no more than one `hasInstance` relationship from `AbstractPackage` Elements.
 
 It should be noted that this class will rarely appear in SBOMs,
