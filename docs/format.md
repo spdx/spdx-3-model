@@ -112,12 +112,20 @@ is the best reference.
 
 ## Naming convention
 
-- Use the singular form (e.g., use `import` and not `imports`).
+- Use the singular form (e.g., use `element` instead of `elements`).
   (See discussion in [Issue 226][issue-226])
 - Use `UpperCamelCase` format for the names of classes, datatypes, individuals,
   and vocabularies.
 - Use `lowerCamelCase` format for the names of properties and
   vocabulary entries.
+- Relationship type names should be descriptive enough to easily deduce the
+  correct direction from their name.
+  - Often, this can be achieved by using verbs or verb phrases.
+    In that case, use singular verbal form (e.g., use `generates` instead of
+    `generate`).
+  - The best way to do this is to make sure that the relationship type name
+    completes the sentence:
+    `from` (is) (a) `relationshipType` `to`
 
 [issue-226]: https://github.com/spdx/spdx-3-model/issues/226
 
