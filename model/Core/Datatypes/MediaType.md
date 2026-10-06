@@ -12,8 +12,8 @@ A string constrained to the RFC 2046 specification.
 A MediaType provides a standardized way of indicating the type of content of
 an Element or a property.
 
-The string shall be constrained to
-[RFC 2046 MIME Part Two: Media Types](https://datatracker.ietf.org/doc/rfc2046/)
+The string shall be constrained to Section 5.1 of
+[RFC 2045 Multipurpose Internet Mail Extensions (MIME) Part One: Format of Internet Message Bodies](https://datatracker.ietf.org/doc/rfc2045/),
 and shall be normalized in accordance with the
 [WHATWG MIME Sniffing standard](https://mimesniff.spec.whatwg.org/#parsing-a-mime-type).
 The following formatting constraints apply:
