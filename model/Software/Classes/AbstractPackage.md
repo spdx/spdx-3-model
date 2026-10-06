@@ -36,6 +36,7 @@ where exact Packages should be listed.
 
 - name: AbstractPackage
 - SubclassOf: /Core/Element
+- Instantiability: Concrete
 
 ## Properties
 
