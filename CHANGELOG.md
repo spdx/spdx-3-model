@@ -59,6 +59,7 @@ SPARQL constraints for validating relationship types.
   `/FunctionalSafety/safetyIntegrityLevel` property, and
   `/FunctionalSafety/SafetyIntegrityLevelType` vocabulary ([#1436])
 - Tenancy modeling guidance for `/Service/SoftwareService` ([#1454])
+- `spdx2iri` to `/Core/ExternalIdentifierType` vocabulary ([#1464])
 
 ### Changed
 
