@@ -25,8 +25,7 @@ might be different.
 The precedence rule is that every attribute of a more specific entity
 overwrites attribute values of a more general entity.
 This way, property values of a Package are always valid;
-if they do not exist and the package is an instanceOf an AbstractPackage,
-then the properties of this AbstractPackage are taken.
+When an AbstractPackage is related to a Package via hasInstance, the AbstractPackage’s properties serve only as annotations—they provide additional context or metadata but do not set or update the property values on the Package. If a Package does not define a particular property, the AbstractPackage’s value may be used as an annotation, but it does not become the Package’s own property. This annotation behavior extends recursively through chains of AbstractPackages, always respecting the precedence of more specific entities.
 The chain may continue further to more AbstractPackages,
 as long as there are "parent" AbstractPackage and no values have been specified.
 
@@ -39,6 +38,7 @@ where exact Packages should be listed.
 
 - name: AbstractPackage
 - SubclassOf: /Core/Element
+- Instantiability: Concrete
 
 ## Properties
 
