@@ -97,6 +97,7 @@ name completes the sentence:
 - runsOn: The `from` Element (the instructions) of runs on each `to` /Hardware/Hardware (processing element), during a LifecycleScopeType period.
 - serializedInArtifact: The `from` SpdxDocument can be found in a serialized form in each `to` Artifact.
 - testedOn: The `from` Element has been tested on the `to` Element(s).
+- toolsAvailable: The `from` /AI/AIAgent has each `to` Element available for use as a tool, during a LifecycleScopeType period.
 - tracedToDetail: The `from` Requirement is refined and further elaborated by each `to` Requirement, which contains more detailed implementation information.
 - trainedOn: The `from` Element has been trained on the `to` Element(s).
 - underInvestigationFor: The `from` /Security/Vulnerability impact is being investigated for each `to` Element. The use of the `underInvestigationFor` type is constrained to `/Security/VexUnderInvestigationVulnAssessmentRelationship` classed relationships.
