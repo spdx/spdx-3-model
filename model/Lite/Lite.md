@@ -22,6 +22,7 @@ An SPDX Lite document can also be used in parallel with other SPDX documents in 
 
 - id: https://spdx.org/rdf/3/terms/Lite
 - name: Lite
+- preferredNamespacePrefix: spdx3lt
 
 ## Profile conformance
 
