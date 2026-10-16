@@ -4,12 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Describes a functional safety system impact analysis.
+Describes a system impact analysis.
 
 ## Description
 
 SystemImpactAnalysis represents the documented analysis of one or more analysis
-triggers against safety-relevant SPDX elements.
+triggers against SPDX elements.
 
 A SystemImpactAnalysis can be linked to one or more AnalysisTrigger elements
 using a /Core/Relationship with relationshipType `hasInput`, from the
@@ -26,9 +26,9 @@ analysis can record its impact categories, rationale, affected elements, and
 completion status without adding or removing elements.
 
 The affected elements can be requirements, validations, tests, design artifacts,
-safety analyses, code, documents, or any other SPDX element relevant to the
-safety lifecycle. Detailed engineering, quality-system, or regulatory records
-can remain in their authoritative systems while SPDX communicates the
+analyses, code, documents, or any other SPDX element relevant to the system
+lifecycle. Detailed engineering, quality-system, or regulatory records can
+remain in their authoritative systems while SPDX communicates the
 machine-readable system impact graph.
 
 When the analysis requires downstream verification, the verification work can
