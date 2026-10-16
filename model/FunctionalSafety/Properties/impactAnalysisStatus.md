@@ -19,4 +19,4 @@ impact analysis before the analysis is fully complete.
 
 - name: impactAnalysisStatus
 - Nature: ObjectProperty
-- Range: SystemImpactAnalysisStatusType
+- Range: SystemImpactAnalysisStatus
