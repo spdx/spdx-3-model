@@ -4,8 +4,8 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Identifies the process, procedure, or specification used for a functional safety
-system impact analysis.
+Identifies the process, procedure, or specification used for a system impact
+analysis.
 
 ## Description
 
