@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Specifies the lifecycle status of a functional safety system impact analysis.
+Specifies the lifecycle status of a system impact analysis.
 
 ## Description
 
