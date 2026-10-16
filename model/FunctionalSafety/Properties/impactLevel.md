@@ -19,4 +19,4 @@ without embedding organization-specific change-control rules in SPDX.
 
 - name: impactLevel
 - Nature: ObjectProperty
-- Range: SystemImpactLevelType
+- Range: SystemImpactLevel
