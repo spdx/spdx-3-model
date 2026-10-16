@@ -26,7 +26,6 @@ can be omitted.
 - noCriticalImpact: No critical safety, security, quality, availability, or customer-satisfaction impact was identified.
 - safetyImpact: A safety-relevant impact was identified.
 - securityImpact: A security-relevant impact was identified.
-- safetyAndSecurityImpact: Both safety-relevant and security-relevant impacts were identified.
 - qualityImpact: A quality impact was identified.
 - availabilityImpact: An availability impact was identified.
 - customerSatisfactionImpact: A customer-satisfaction impact was identified.
