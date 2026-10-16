@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Identifies the lifecycle status of a functional safety system impact analysis.
+Identifies the lifecycle status of a system impact analysis.
 
 ## Description
 
@@ -12,7 +12,7 @@ impactAnalysisStatus identifies whether a SystemImpactAnalysis is new, still
 in progress, complete, intentionally stopped before completion, a duplicate of
 another analysis, or uses another lifecycle status.
 
-This allows an SPDX document to communicate intermediate versions of a change
+This allows an SPDX document to communicate intermediate versions of a system
 impact analysis before the analysis is fully complete.
 
 ## Metadata
