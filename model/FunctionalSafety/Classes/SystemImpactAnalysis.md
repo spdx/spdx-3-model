@@ -64,11 +64,11 @@ duplicate and can link to the analysis that already covers the trigger or scope.
   - type: /Core/Element
   - minCount: 0
 - impactAnalysisStatus
-  - type: SystemImpactAnalysisStatusType
+  - type: SystemImpactAnalysisStatus
   - minCount: 0
   - maxCount: 1
 - impactLevel
-  - type: SystemImpactLevelType
+  - type: SystemImpactLevel
   - minCount: 0
 - impactedElement
   - type: /Core/Element
