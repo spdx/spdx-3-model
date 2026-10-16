@@ -38,6 +38,12 @@ design artifact, or other work product changes, create a new SPDX element and
 link the old element to the new element with a relationship such as amendedBy
 when that relationship is appropriate.
 
+Use impactedElement for elements within the analysis scope. Use addedElement for
+newly introduced SPDX elements, modifiedElement for elements whose represented
+work product changes, and removedElement for elements that no longer apply in
+the analyzed context. These properties can be combined when, for example, a
+modified work product is represented by a replacement SPDX element.
+
 When publishing the SRAC change record, use a Core Bundle to collect the
 analysis graph. The Bundle rootElement can point to the SystemImpactAnalysis so
 consumers can enter the graph at the analysis and follow the trigger, affected
