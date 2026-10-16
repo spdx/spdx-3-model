@@ -4,8 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Identifies the assessed impact category from a functional safety system impact
-analysis.
+Identifies the assessed impact category from a system impact analysis.
 
 ## Description
 
