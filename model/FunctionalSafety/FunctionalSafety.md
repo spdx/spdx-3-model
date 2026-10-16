@@ -12,11 +12,11 @@ sharing information about artifacts created, verified and maintained during the 
 The FunctionalSafety profile's namespace defines a set of concepts and data elements related to artifacts and their dependencies or links
 to each other that are part of a safety related system's safety conformance documentation.
 
-These artifacts include the outputs of the safety engineering phases regarding planning, requirements analysis, system/software architecture, implementation, safety analysis and the verification tasks. The artifacts can be used to compile a standardized safety case document.
+These artifacts include the outputs of engineering phases regarding planning, requirements analysis, system/software architecture, implementation, system analysis and verification tasks. The artifacts can be used to compile a standardized assurance case document.
 
 ## System impact analysis
 
-The FunctionalSafety profile includes terms for representing safety-related
+The FunctionalSafety profile includes terms for representing
 system impact analysis. A SystemImpactAnalysis can identify the analysis
 process, status, impact category, and SPDX elements affected by the analysis.
 
