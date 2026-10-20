@@ -25,3 +25,4 @@ license expressions.
 
 - id: https://spdx.org/rdf/3/terms/SimpleLicensing
 - name: SimpleLicensing
+- preferredNamespacePrefix: spdx3sl

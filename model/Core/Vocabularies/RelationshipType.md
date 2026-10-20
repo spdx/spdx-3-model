@@ -17,6 +17,7 @@ and another SpdxDocument.
 ## Metadata
 
 - name: RelationshipType
+- preferredNamespacePrefix: spdx3rel
 
 ## Entries
 

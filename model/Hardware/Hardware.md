@@ -15,3 +15,4 @@ Hardware is any product, real or virtual. A product is tangible and is the resul
 
 - id: https://spdx.org/rdf/3/terms/Hardware
 - name: Hardware
+- preferredNamespacePrefix: spdx3hw

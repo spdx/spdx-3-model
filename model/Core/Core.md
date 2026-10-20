@@ -15,3 +15,4 @@ SPDX 3 profiles.
 
 - id: https://spdx.org/rdf/3/terms/Core
 - name: Core
+- preferredNamespacePrefix: spdx3c

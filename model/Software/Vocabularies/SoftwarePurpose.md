@@ -20,6 +20,7 @@ conclusions about the context in which the Element exists.
 ## Metadata
 
 - name: SoftwarePurpose
+- preferredNamespacePrefix: spdx3swp
 
 ## Entries
 
