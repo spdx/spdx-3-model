@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Specifies an Element as subject of an assessment.
+The ExportControlClassification for the assessment.
 
 ## Description
 
-Specifies an Element as subject of an assessment.
+The ExportControlClassification for this ExportControlClassificationAssessment.
 
 ## Metadata
 

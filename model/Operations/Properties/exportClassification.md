@@ -8,7 +8,7 @@ Expression for the export control classification.
 
 ## Description
 
-Expression for the export control classification, e.g. "EAR99".
+Expression for the export control classification, e.g. "EAR99", "3A001", "8A002".
 
 ## Metadata
 
