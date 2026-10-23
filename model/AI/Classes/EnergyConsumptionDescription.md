@@ -7,6 +7,9 @@ SPDX-License-Identifier: Community-Spec-1.0
 The class that helps note down the quantity of energy consumption and the unit
 used for measurement.
 
+**DEPRECATED in SPDX 3.1.**
+Use `/Core/Observation` instead.
+
 ## Description
 
 This class is designed to store energy consumption data, including the quantity
