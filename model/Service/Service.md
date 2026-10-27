@@ -14,3 +14,4 @@ The profile captures software as a service related information.
 
 - id: https://spdx.org/rdf/3/terms/Service
 - name: Service
+- preferredNamespacePrefix: spdx3sv

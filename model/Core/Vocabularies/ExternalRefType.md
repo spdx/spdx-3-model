@@ -13,6 +13,7 @@ The type of external reference.
 ## Metadata
 
 - name: ExternalRefType
+- preferredNamespacePrefix: spdx3erf
 
 ## Entries
 
