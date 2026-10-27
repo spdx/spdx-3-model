@@ -39,8 +39,8 @@ quantity kind that the entry specializes:
   `/Core/ObservablePropertyType/energyConsumption`, and
   `legacyInferenceEnergyConsumption` specializes
   `inferenceEnergyConsumption`.
-- `trainingComputeOperations` specializes
-  `/Core/ObservablePropertyType/computeOperations`.
+- `trainingComputeOperationCount` specializes
+  `/Core/ObservablePropertyType/computeOperationCount`.
 - `inferenceCount` specializes the QUDT quantity kind
   <http://qudt.org/vocab/quantitykind/Count>.
 - `inferenceLatency` and `trainingDuration` specialize the QUDT quantity kind
@@ -66,6 +66,6 @@ Removed from PR #1246 because spec-parser main rejects them.
 - inferenceEnergyConsumption: Energy consumed by the model to perform inference.
 - inferenceLatency: Time from the receipt of an inference request to the delivery of its complete response.
 - legacyInferenceEnergyConsumption: Energy consumed during inference, with an unknown reference quantity; migrated from the deprecated inferenceEnergyConsumption property.
-- trainingComputeOperations: Number of arithmetic operations performed to train the model.
+- trainingComputeOperationCount: Number of arithmetic operations performed to train the model.
 - trainingDuration: Elapsed time taken to train the model.
 - trainingEnergyConsumption: Energy consumed to train the model.

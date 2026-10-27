@@ -26,6 +26,13 @@ An observation using one of these entries should identify the procedure
 using the `/Core/observationProcedure` property or a `usesTool` relationship,
 since counts produced by different procedures are not comparable.
 
+An observation of one of these entries covers all the content of its subject.
+When the size of each modality of a dataset is needed (for example, the
+duration of its audio and the duration of its video), the content of each
+modality should be described by its own `DatasetPackage`, with its own
+observations, and the whole dataset should be linked to each of them using
+a `contains` relationship.
+
 `contentDuration` specializes the QUDT quantity kind
 <http://qudt.org/vocab/quantitykind/Time>, and its unit shall be a unit of
 time.
@@ -50,7 +57,7 @@ Removed from PR #1246 because spec-parser main rejects them.
 
 - characterCount: Number of characters; Unicode code points, unless the observation procedure states otherwise.
 - contentDuration: Playback duration of time-based content, such as audio or video.
-- imageCount: Number of distinct images.
+- imageCount: Number of still pictures, such as photographs, illustrations, or drawings; not container images or disk images, and not frames of a video.
 - lineCount: Number of lines, as delimited by the procedure identified in the observation.
 - recordCount: Number of records, rows, or instances.
 - tokenCount: Number of tokens, as produced by the tokenizer identified in the observation.

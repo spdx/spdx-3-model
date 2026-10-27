@@ -82,8 +82,8 @@ The following are recorded using existing properties and relationships:
   the `observationProcedure` property.
 
 This class aligns with the observation concept of the W3C Semantic Sensor
-Network Ontology (SOSA/SSN) and ISO 19156 (Observations, measurements and
-samples).
+Network Ontology (SOSA/SSN) and ISO 19156:2023 (Observations, measurements
+and samples).
 
 ## Metadata
 

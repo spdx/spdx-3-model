@@ -24,7 +24,7 @@ value.
 ## Entries
 
 - calculated: The result was derived by a defined calculation from measured inputs about the subject, possibly combined with published coefficients such as emission factors or global warming potentials.
-- declared: The result is stated by a third party, such as in a model card, a datasheet, or a supplier declaration, without a known method.
+- declared: The result is taken from a statement by another party, such as a model card, a datasheet, or a supplier declaration, and the method used to obtain it is not known.
 - estimated: The result was derived from proxies, nominal or datasheet values, or assumptions, rather than from measured inputs about the subject.
 - measured: The result was obtained by direct reading of an instrument, a counter, or a system that observed the subject (for example, a power meter, hardware energy counters, or a tokenizer run over a dataset).
 - other: The result was obtained in another way, described in the observation procedure.

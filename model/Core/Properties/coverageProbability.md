@@ -17,7 +17,7 @@ The value shall be greater than 0 and less than or equal to 1.
 It shall only be given together with both bounds.
 If it is absent, the bounds are the plausible minimum and maximum.
 
-This property aligns with the coverage probability defined in JCGM 100
+This property aligns with the coverage probability defined in JCGM 100:2008
 (Guide to the Expression of Uncertainty in Measurement).
 
 ## Metadata

@@ -22,7 +22,7 @@ and the thing counted is identified by the observed property.
 Uncertainty and ranges:
 
 - `standardUncertainty` is one standard deviation of the value
-  (standard uncertainty as defined in JCGM 100, Guide to the Expression of
+  (standard uncertainty as defined in JCGM 100:2008, Guide to the Expression of
   Uncertainty in Measurement).
   It is not a ± bound.
 - `lowerBound` and `upperBound` give a range, for example for an estimate or

@@ -27,7 +27,7 @@ The unit determines how the quantity is read:
 
 The quantity shall not be negative.
 
-This property aligns with the standard uncertainty defined in JCGM 100
+This property aligns with the standard uncertainty defined in JCGM 100:2008
 (Guide to the Expression of Uncertainty in Measurement) and with the
 `qudt:standardUncertainty` property of QUDT.
 
