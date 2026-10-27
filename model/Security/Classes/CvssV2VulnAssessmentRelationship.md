@@ -26,7 +26,7 @@ It is intended to communicate the results of using a CVSS calculator.
   "spdxId": "urn:spdx.dev:cvssv2-cve-2020-28498",
   "relationshipType": "hasAssessmentFor",
   "security_score": "4.3",
-  "security_vectorString": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
+  "security_vectorString": "CVSS:2.0/AV:N/AC:M/Au:N/C:P/I:N/A:N",
   "from": "urn:spdx.dev:vuln-cve-2020-28498",
   "to": ["urn:product-acme-application-1.3"],
   "security_assessedElement": "urn:npm-elliptic-6.5.2",
