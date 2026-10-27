@@ -4,15 +4,15 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Quantitative result of the Observation.
+Numeric result of a Measurement.
 
 ## Description
 
-The `observedValue` property represents the resulting quantitative data of
-an `Observation`.
+The `observedValue` property gives the result of a `Measurement` as
+a quantity and a QUDT unit.
+The unit shall have the same dimension as the observed property.
 
-It operates in conjunction with the `observedProperty` property,
-which specifies the characteristic being measured.
+It may be absent if both `lowerBound` and `upperBound` are given.
 
 ## Metadata
 

@@ -14,8 +14,9 @@ Use `/Core/unitQUDT` instead.
 Provides the unit information of the energy.
 
 This property is deprecated.
-Use `/Core/unitQUDT` with value such as `<http://qudt.org/vocab/unit/KiloW-HR>`
-instead.
+Use `/Core/unitQUDT` instead.
+`kilowattHour` corresponds to <http://qudt.org/vocab/unit/KiloW-HR>,
+and `megajoule` to <http://qudt.org/vocab/unit/MegaJ>.
 
 ## Metadata
 

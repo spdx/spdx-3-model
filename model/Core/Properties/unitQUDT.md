@@ -8,10 +8,6 @@ Measurement unit defined in accordance with the QUDT (Quantity, Unit,
 Dimension, and Type) ontologies, applicable to measurement criteria based
 on product type, region, and use.
 
-Measurement unit defined in accordance with the QUDT (Quantity, Unit,
-Dimension, and Type) ontologies, applicable to measurement criteria based on
-product type, region, and use.
-
 ## Description
 
 This property specifies a measurement unit conforming to the QUDT

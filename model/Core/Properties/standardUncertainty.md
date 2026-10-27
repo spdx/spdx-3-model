@@ -4,26 +4,35 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Absolute standard uncertainty of the observation.
+Standard uncertainty of the value of a Measurement.
 
 ## Description
 
-The `standardUncertainty` property captures the statistical dispersion or absolute error bound associated with an observed value.
+The `standardUncertainty` property gives the standard uncertainty of
+the `observedValue` of a `Measurement`: an estimate of one standard deviation
+of the value.
+It is not a ± bound; a range is given using `lowerBound` and `upperBound`.
 
-For example, a `standardUncertainty` value of `0.5` alongside an observed value of 181 kilometers indicates an absolute uncertainty of ±0.5 kilometers.
+The unit determines how the quantity is read:
 
-**The value of this property shall be a non-negative decimal.**
+- If the unit is the unit of the `observedValue`, the uncertainty is absolute.
+  For example, an uncertainty of 0.5 <http://qudt.org/vocab/unit/KiloM> for
+  a value of 181 <http://qudt.org/vocab/unit/KiloM>.
+- If the unit is <http://qudt.org/vocab/unit/PERCENT>, the uncertainty is
+  relative to the value.
+  For example, an uncertainty of 5 <http://qudt.org/vocab/unit/PERCENT> for
+  a value of 36.5 <http://qudt.org/vocab/unit/MegaW-HR> means one standard
+  deviation of 1.825 MW·h.
+  A relative uncertainty cannot be used for a value of zero.
 
-Authors should utilize this property when the uncertainty is a fixed constant,
-and use `relativeStandardUncertainty` when the uncertainty scales
-proportionally with the measured value.
+The quantity shall not be negative.
 
-This property conceptually aligns with the `qudt:standardUncertainty`
-property defined in the QUDT ontology, as well as the ISO/IEC Guide 98-3
-(Guide to the Expression of Uncertainty in Measurement).
+This property aligns with the standard uncertainty defined in JCGM 100
+(Guide to the Expression of Uncertainty in Measurement) and with the
+`qudt:standardUncertainty` property of QUDT.
 
 ## Metadata
 
 - name: standardUncertainty
-- Nature: DataProperty
-- Range: xsd:decimal
+- Nature: ObjectProperty
+- Range: UnitOfMeasure

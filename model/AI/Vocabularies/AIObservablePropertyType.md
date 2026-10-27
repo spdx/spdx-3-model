@@ -24,9 +24,10 @@ The stage-specific entries of this vocabulary are intended for observations
 whose subject is an `AIPackage`, for example to record values declared
 in a model card.
 
-Observations of inference energy consumption whose subject is not an
-`AIInferenceAction` shall state what the value is per, using the
-reference quantity of the observation (for example, per 1000 tokens).
+A `/Core/Measurement` of inference energy consumption whose subject is not
+an `AIInferenceAction` shall state what the value is per, using the
+`/Core/referenceQuantity` and `/Core/referenceProperty` properties
+(for example, per 1000 tokens).
 `legacyInferenceEnergyConsumption` shall be used only for values migrated
 from the deprecated `inferenceEnergyConsumption` property, where that is not known.
 

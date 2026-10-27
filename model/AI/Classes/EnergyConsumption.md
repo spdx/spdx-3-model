@@ -8,7 +8,7 @@ A class for describing the energy consumption incurred by an AI model in
 different stages of its lifecycle.
 
 **DEPRECATED in SPDX 3.1.**
-Use `/Core/Observation` instead.
+Use `/Core/Measurement` instead.
 
 ## Description
 
@@ -16,7 +16,9 @@ A class to denote the known or estimated energy consumption of an AI model
 during its training, fine-tuning, and inference stages.
 
 This class is deprecated.
-Use `/Core/Observation` with appropriate `Action` or `DefinedProcess` instead.
+Use a `/Core/Measurement` for each value instead.
+See `trainingEnergyConsumption`, `finetuningEnergyConsumption`, and
+`inferenceEnergyConsumption` for how each value is recorded.
 
 *Example*
 

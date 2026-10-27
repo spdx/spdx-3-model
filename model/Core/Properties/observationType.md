@@ -4,17 +4,14 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Categorization of the methodological nature of an Observation.
+How the result of an Observation was obtained.
 
 ## Description
 
-The `observationType` property indicates the method by which a quantitative
-value was derived. This property shall reference a valid entry from the
-`ObservationType` enumeration.
-
-The application of this property enables
-systems and auditors to determine whether a metric was derived via direct
-physical measurement, algorithmic calculation, estimation, or simulation.
+The `observationType` property states whether the result of an
+`Observation` was measured, calculated, estimated, simulated, or declared.
+This lets consumers and auditors tell direct measurements from derived or
+approximate values.
 
 ## Metadata
 

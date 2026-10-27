@@ -12,7 +12,7 @@ the content of a dataset or other artifact.
 The `DatasetObservablePropertyType` vocabulary provides identifiers for
 measures of the size of content, other than its size in bytes.
 The size in bytes shall be recorded using the `/Software/byteSize` property
-instead of an `Observation`.
+instead of a `/Core/Observation`.
 
 The IRI of an entry of this vocabulary may be used as the value of
 the `/Core/observedProperty` property of a `/Core/Observation`.
