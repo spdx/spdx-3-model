@@ -28,8 +28,14 @@ are recorded using a `/Core/Measurement` whose `subject` is the action.
 Since the action gives the stage of the lifecycle, the generic entries of
 `/Core/ObservablePropertyType` (such as `energyConsumption`) may be used.
 
-This class aligns conceptually with the physical execution of the
-Model Tuning activities specified in ISO/IEC 5338.
+In terms of ISO/IEC 5338:2023, this class records a performance of
+transfer learning (6.4.9.4) in the design and development stage,
+or of retraining as part of the maintenance process (6.4.16)
+in the operation and monitoring stage (Figure 3).
+The base model is the reused system element that is adapted, and the output
+is the adapted element (ISO/IEC/IEEE 15288:2023, 6.4.7.3 b 1).
+It does not record the model tuning activity of ISO/IEC 5338:2023
+(6.4.9.3 c); see `AIFinetuningProcess`.
 
 ## Metadata
 

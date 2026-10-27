@@ -29,6 +29,17 @@ A required threshold, such as a maximum energy per 1000 tokens, is not an
 Observation: it is a `/Core/Requirement` whose subject is the process,
 and a Measurement that shows it is met may be linked as evidence.
 
+In terms of ISO/IEC 5338:2023, this class describes how a model is deployed
+to be used in the operation process (6.4.15), or run to test it in the
+verification (6.4.11) or continuous validation (6.4.14) processes.
+These processes take place in the operation and monitoring,
+verification and validation, and continuous validation stages,
+respectively (Figure 3).
+That document notes that a model can be deployed in a different format from
+the one in which it was developed, and in batch or continuous mode
+(6.4.12.3, 6.4.15.3); such choices should be stated in the process
+description.
+
 *Example*
 
 A benchmark run of a model is measured: it consumed 4.2 kW·h of energy in

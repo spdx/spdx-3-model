@@ -27,8 +27,21 @@ A required threshold, such as a maximum energy, is not an Observation:
 it is a `/Core/Requirement` whose subject is the process, and
 a Measurement that shows it is met may be linked as evidence.
 
-This class aligns conceptually with the planned methodology for the
-Model Tuning stage defined in ISO/IEC 5338.
+In terms of ISO/IEC 5338:2023, finetuning is a form of transfer learning,
+in which an existing machine learning model is the starting point for
+further training (6.4.9.4), as part of the implementation process
+in the design and development stage.
+When a deployed model is finetuned to keep it performing as required,
+it is retraining as part of the maintenance process (6.4.16)
+in the operation and monitoring stage (Figure 3).
+This class does not correspond to the model tuning activity of
+ISO/IEC 5338:2023 (6.4.9.3 c), which is the search for the hyperparameters
+that give the best performance on validation data.
+
+The base model is a reused system element that is adapted, so the
+implementation strategy should determine its source and suitability
+(ISO/IEC/IEEE 15288:2023, 6.4.7.3 a 1 and b 1;
+ISO/IEC/IEEE 12207:2017, 6.4.7.3 a 1 ii).
 
 ## Metadata
 

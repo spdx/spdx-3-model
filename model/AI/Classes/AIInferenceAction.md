@@ -26,6 +26,17 @@ Since the action gives the stage of the lifecycle, the generic entries of
 A value per inference can be derived by dividing by a Measurement of
 `/AI/AIObservablePropertyType/inferenceCount` on the same action.
 
+In terms of ISO/IEC 5338:2023, this class records a period of use of the
+model in the operation process (6.4.15), or a run of the model to test it,
+such as a benchmark, in the verification (6.4.11) or continuous validation
+(6.4.14) processes.
+These processes take place in the operation and monitoring,
+verification and validation, and continuous validation stages,
+respectively (Figure 3).
+Measurements of the action can record the computing resources and power
+used (6.4.15.3), and the performance that the continuous validation process
+monitors over time (6.4.14.3).
+
 See `AIInferenceProcess` for an example.
 
 ## Metadata
