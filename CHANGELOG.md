@@ -52,7 +52,7 @@ semantic changes to the model and may affect compatibility.
 - **Added:** `/SimpleLicensing/customIdToLicense` property -
   [#969](https://github.com/spdx/spdx-3-model/pull/969)
   - Maps custom licensing string to the corresponding licensing Element.
-- **Added:** `/Software/artifactSize` property -
+- **Added:** `/Software/byteSize` property -
   [#966](https://github.com/spdx/spdx-3-model/pull/966)
   - Size of a software artifact, in bytes.
 - **Clarified:** Serialization and validation documents -
@@ -67,7 +67,7 @@ semantic changes to the model and may affect compatibility.
 - `/Build/buildStartTime` and `/Build/buildEndTime` properties
   - New documents should use `/Core/startTime` and `/Core/endTime` instead.
 - `/Dataset/datasetSize` property
-  - New documents should use `/Software/artifactSize` instead.
+  - New documents should use `/Software/byteSize` instead.
 - `/Dataset/intendedUse` property
   - New documents should use `/Core/intendedUse` instead.
 - `/SimpleLicensing/customIdToUri` property

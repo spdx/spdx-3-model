@@ -954,7 +954,7 @@
         <mxCell id="7DISiVoImGJ0uII-rwSE-161" parent="7DISiVoImGJ0uII-rwSE-156" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=10;" value="+ attributionText: xsd:string[0..*]" vertex="1">
           <mxGeometry height="30" width="250" y="138" as="geometry" />
         </mxCell>
-        <mxCell id="AZ4OQVOChgzR9cSBYCJS-1" parent="7DISiVoImGJ0uII-rwSE-156" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=10;" value="+&amp;nbsp;artifactSize: xsd:nonNegativeInteger[0..1]" vertex="1">
+        <mxCell id="AZ4OQVOChgzR9cSBYCJS-1" parent="7DISiVoImGJ0uII-rwSE-156" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=10;" value="+&amp;nbsp;byteSize: xsd:nonNegativeInteger[0..1]" vertex="1">
           <mxGeometry height="30" width="250" y="168" as="geometry" />
         </mxCell>
         <object label="ContentIdentifier" description="An unambiguously named collection of structured information having a common set of attributes." description_source="ISO 8571-1:1988" id="qa495wKtx2_exXzPlYNV-1">
