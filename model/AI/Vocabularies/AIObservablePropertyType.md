@@ -31,29 +31,41 @@ an `AIInferenceAction` shall state what the value is per, using the
 `legacyInferenceEnergyConsumption` shall be used only for values migrated
 from the deprecated `inferenceEnergyConsumption` property, where that is not known.
 
-Each entry is a QUDT quantity kind that is a specialization (`skos:broader`)
-of a QUDT quantity kind or of an entry of `/Core/ObservablePropertyType`.
+The unit of the observed value shall have the same dimension as the
+quantity kind that the entry specializes:
+
+- `finetuningEnergyConsumption`, `inferenceEnergyConsumption`, and
+  `trainingEnergyConsumption` specialize
+  `/Core/ObservablePropertyType/energyConsumption`, and
+  `legacyInferenceEnergyConsumption` specializes
+  `inferenceEnergyConsumption`.
+- `trainingComputeOperations` specializes
+  `/Core/ObservablePropertyType/computeOperations`.
+- `inferenceCount` specializes the QUDT quantity kind
+  <http://qudt.org/vocab/quantitykind/Count>.
+- `inferenceLatency` and `trainingDuration` specialize the QUDT quantity kind
+  <http://qudt.org/vocab/quantitykind/Time>.
+
+<!--
+TODO: When spec-parser supports vocabulary entry attributes, add back:
+- in Metadata: `- entryType: http://qudt.org/schema/qudt/QuantityKind`
+  (emitted as rdf:type of each entry);
+- under each entry: `  - broader: <IRI or /Namespace/Vocabulary/entry>`
+  (emitted as skos:broader), using the quantity kinds listed above.
+Removed from PR #1246 because spec-parser main rejects them.
+-->
 
 ## Metadata
 
 - name: AIObservablePropertyType
-- entryType: http://qudt.org/schema/qudt/QuantityKind
 
 ## Entries
 
 - finetuningEnergyConsumption: Energy consumed to finetune the model.
-  - broader: /Core/ObservablePropertyType/energyConsumption
 - inferenceCount: Number of inferences performed by the model.
-  - broader: http://qudt.org/vocab/quantitykind/Count
 - inferenceEnergyConsumption: Energy consumed by the model to perform inference.
-  - broader: /Core/ObservablePropertyType/energyConsumption
 - inferenceLatency: Time from the receipt of an inference request to the delivery of its complete response.
-  - broader: http://qudt.org/vocab/quantitykind/Time
 - legacyInferenceEnergyConsumption: Energy consumed during inference, with an unknown reference quantity; migrated from the deprecated inferenceEnergyConsumption property.
-  - broader: /AI/AIObservablePropertyType/inferenceEnergyConsumption
 - trainingComputeOperations: Number of arithmetic operations performed to train the model.
-  - broader: /Core/ObservablePropertyType/computeOperations
 - trainingDuration: Elapsed time taken to train the model.
-  - broader: http://qudt.org/vocab/quantitykind/Time
 - trainingEnergyConsumption: Energy consumed to train the model.
-  - broader: /Core/ObservablePropertyType/energyConsumption
