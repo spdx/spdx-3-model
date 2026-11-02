@@ -8,8 +8,8 @@ Allows to reference concepts not part of the SPDX document to associate Threats 
 
 ## Description
 
-A Threat or Control may be associated to one or more TypedReferences of different types. The ReferenceType defines the
-currently supported types. I.e. you may reference concepts of an ontology.
+A Threat or Control may be associated to one or more ConceptReferences of different types. The ConceptType defines the
+supported types. I.e. you may reference concepts of an ontology.
 
 ## Metadata
 
@@ -19,7 +19,7 @@ currently supported types. I.e. you may reference concepts of an ontology.
 
 ## Properties
 
-- context
+- conceptType
   - type: ConceptType
   - minCount: 1
 
