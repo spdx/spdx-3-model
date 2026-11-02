@@ -4,25 +4,25 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Describes one a profile which the creator of this ElementCollection intends to
-conform to.
+Identifies a profile to which the creator of this ElementCollection intends to
+conform.
 
 ## Description
 
-Describes a profile to which the creator of this ElementCollection intends to
+Identifies a profile to which the creator of this ElementCollection intends to
 conform.
 
-The profileConformance will apply to all Elements contained within the
+The profileConformance shall apply to all Elements contained within the
 collection as well as the collection itself.
 
-Conformance to a profile is defined by the additional restrictions documented
-in the profile specific documentation and schema files.
+Conformance to a profile requires adherence to the additional restrictions
+specified in the corresponding profile documentation.
 
-Use of this property allows the creator of an ElementCollection to communicate
-to consumers their intent to adhere to the profile additional restrictions.
+This property enables the creator of an ElementCollection to declare
+an intent to adhere to the restrictions specified for that profile.
 
 The profileConformance has a default value of "core" if no other
-profileConformance is specified since all ElementCollections and Element shall
+profileConformance is specified since all ElementCollections and Elements shall
 adhere to the Core profile.
 
 ## Metadata
