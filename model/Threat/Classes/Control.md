@@ -34,9 +34,9 @@ a ConceptRelationship with relationship type 'establishedBy'.
 - genericProtection
   - type: Assessment
   - minCount: 0
-- type
+- controlType
   - type: ControlType
   - minCount: 0
-- attribution
-  - type: ControlAttribution
+- protectionCategory
+  - type: ProtectionCategory
   - minCount: 0

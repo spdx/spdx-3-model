@@ -13,5 +13,5 @@ Different assessments performed.
 ## Metadata
 
 - name: assessments
-- Nature: ObjectProperty|DataProperty
+- Nature: ObjectProperty
 - Range: Assessment
