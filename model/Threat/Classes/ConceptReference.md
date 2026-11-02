@@ -22,4 +22,3 @@ supported types. I.e. you may reference concepts of an ontology.
 - conceptType
   - type: ConceptType
   - minCount: 1
-

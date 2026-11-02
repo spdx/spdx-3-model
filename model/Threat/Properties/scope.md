@@ -8,7 +8,7 @@ The scope limits the reference of a ConceptRelationship.
 
 ## Description
 
-
+The scope limits the reference of a ConceptRelationship.
 
 ## Metadata
 

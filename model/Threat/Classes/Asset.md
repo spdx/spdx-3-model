@@ -14,7 +14,7 @@ trademark, copyright, patent, intellectual
 property, image, or reputation).
 
 Assets can be linked to existing elements in an SPDX document. I.e. an SBOM may be linked to an asset using
-a ReferenceRelationship with relationship type 'constitutedBy'.
+a ConceptRelationship with relationship type 'constitutedBy'.
 
 ## Metadata
 
@@ -27,4 +27,3 @@ a ReferenceRelationship with relationship type 'constitutedBy'.
 - genericDemand
   - type: Assessment
   - minCount: 0
-

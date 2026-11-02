@@ -53,4 +53,3 @@ See https://cwe.mitre.org/data/xsd/cwe_schema_v7.2.xsd or https://capec.mitre.or
   - type: Level
   - minCount: 0
   - maxCount: 1
-

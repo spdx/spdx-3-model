@@ -21,7 +21,7 @@ A Control can be described by concepts intending to establish protection:
 * Defense Techniques.
 
 Controls can be linked to existing elements in an SPDX document. I.e. an SBOM may be linked to a Control using
-a ReferenceRelationship with relationship type 'establishedBy'.
+a ConceptRelationship with relationship type 'establishedBy'.
 
 ## Metadata
 
@@ -40,4 +40,3 @@ a ReferenceRelationship with relationship type 'establishedBy'.
 - attribution
   - type: ControlAttribution
   - minCount: 0
-

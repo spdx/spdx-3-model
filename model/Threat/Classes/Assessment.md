@@ -13,4 +13,3 @@ Documentation of the evaluation of given criteria for a given subject.
 - name: Assessment
 - SubclassOf: /Core/Element
 - Instantiability: Abstract
-

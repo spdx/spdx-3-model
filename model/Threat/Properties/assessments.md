@@ -1,17 +1,17 @@
 SPDX-License-Identifier: Community-Spec-1.0.
 
-# xxx
+# assessments
 
 ## Summary
 
-
+Different assessments performed.
 
 ## Description
 
-
+Different assessments performed.
 
 ## Metadata
 
-- name: xxx
+- name: assessments
 - Nature: ObjectProperty|DataProperty
-- Range: yyy
+- Range: Assessment

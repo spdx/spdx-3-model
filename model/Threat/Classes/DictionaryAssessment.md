@@ -22,4 +22,3 @@ Assessment using a custom specification and metrics.
 - specification
   - type: Specification
   - minCount: 1
-

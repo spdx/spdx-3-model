@@ -20,7 +20,7 @@ Examples:
 - Public Key Infrastructure
 
 Capabilities can be linked to existing elements in an SPDX document. I.e. a Bundle may be linked to a capability using
-a ReferenceRelationship with relationship type 'constitutedBy'.
+a ConceptRelationship with relationship type 'constitutedBy'.
 
 ## Metadata
 
@@ -33,4 +33,3 @@ a ReferenceRelationship with relationship type 'constitutedBy'.
 - genericDemand
   - type: Assessment
   - minCount: 0
-

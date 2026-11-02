@@ -16,11 +16,11 @@ protected resources.
 In SPDX a Threat element is linked to different other elements to describe the Threat.
 As such the Threat is expressed by other existing concepts such as:
 
-* Weaknesses,
-* Attack Patterns,
-* Attack Techniques,
-* Attack Procedures,
-* Attack Paths.
+- Weaknesses,
+-Attack Patterns,
+-Attack Techniques,
+-Attack Procedures,
+-Attack Paths.
 
 A Threat may also be expressed by a need to protect. I.e. a threat can be inversely described by concepts intending to
 establish protection from a threat.
