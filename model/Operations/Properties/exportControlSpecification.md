@@ -13,5 +13,5 @@ Specification basis for the export control classification.
 ## Metadata
 
 - name: exportControlSpecification
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: /Core/Specification

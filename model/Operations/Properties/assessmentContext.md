@@ -13,5 +13,5 @@ Sets the context for an assessment by specifying the related project.
 ## Metadata
 
 - name: assessmentContext
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: Project

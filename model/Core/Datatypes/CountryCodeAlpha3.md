@@ -4,13 +4,13 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A string constrained to the ISO 3166-1 alpha-3 three-letter format.
+A string constrained to the ISO 3166-1 alpha-3 three-letter uppercase format.
 
 ## Description
 
-The string shall be in the [ISO 3166-1 alpha-3](https://www.iso.org/obp/ui/#iso:std:iso:3166:-1) three-letter format.
+The value shall be an uppercase three-letter country code assigned by [ISO 3166-1 alpha-3](https://www.iso.org/obp/ui/#iso:std:iso:3166:-1) at the time the SPDX element containing this data type is created.
 
-See the [ISO 3166-1 alpha-3 Wikipedia page](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) for more information.
+The pattern constraint validates only the lexical form; it does not establish that the value is an assigned ISO 3166-1 alpha-3 code. Implementations should validate values against the applicable ISO code list.
 
 ## Metadata
 

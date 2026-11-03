@@ -17,7 +17,8 @@ or a property.
 *Example*
 
 - `application/java-archive`
-- `application/vcard+json`
+- `application/spdx+json`
+- `application/spdx3+json`
 - `application/vnd.oasis.opendocument.text`
 - `image/avif`
 - `text/csv;charset=UTF-8`

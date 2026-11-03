@@ -8,7 +8,7 @@ The name of the recipient expressed in text.
 
 ## Description
 
-A postal name refers to the official name of a city, town, or locality as recognized by a postal system for mail delivery purposes. It ensures accurate addressing and routing of mail.
+postalName is a property that specifies the name of the organization, entity, or addressee to which mail or deliveries should be directed.
 
 ## Metadata
 

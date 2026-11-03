@@ -45,7 +45,7 @@ the nature of these inputs are not known at the creation of an SPDX document.
 
 ## Metadata
 
-- id: https://spdx.org/rdf/3.1/terms/Build
+- id: https://spdx.org/rdf/3/terms/Build
 - name: Build
 
 ## Profile conformance

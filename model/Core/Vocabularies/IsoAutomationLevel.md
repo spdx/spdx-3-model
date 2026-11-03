@@ -24,8 +24,8 @@ Systems categorized with automation levels 0-5 are heteronomous.
 This means that while they can be fully automated, their goals and objectives
 are set by external entities, typically human operators.
 
-A system with automation level 6 is autonomous, capable of independently define
-and pursue its own goals.
+A system with automation level 6 is autonomous, possessing the capability to
+independently define and pursue its own goals.
 
 ## Metadata
 

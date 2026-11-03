@@ -4,30 +4,22 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Provides a place for the SPDX data creator to record the Package-URL string
-(in accordance with the Package-URL specification) for a software Package.
+Provides a place for the SPDX data creator to record the Package-URL
+for a software Package.
 
 ## Description
 
-A Package-URL (commonly pronounced and referred to as "PURL") is an attempt to standardize package representations
-in order to reliably identify and locate software packages.
-A packageUrl is a URL string which represents a package in a
-mostly universal and uniform way across programming languages, package
-managers, packaging conventions, tools, APIs and databases.
+A packageUrl property specifies a Package-URL (PURL).
+The PURL shall be a valid Uniform Resource Identifier (URI) and
+Uniform Resource Locator (URL) that identifies a software package independent
+of its ecosystem or distribution channel, in accordance with
+[ECMA-427](https://ecma-international.org/publications-and-standards/standards/ecma-427/).
 
-A packageUrl is composed of seven components:
+The PURL contains a type component that defines the ecosystem-specific
+structure and semantics for the remaining PURL components.
 
-```text
-scheme:type/namespace/name@version?qualifiers#subpath
-```
-
-The definition for each component can be found in the corresponding
-[Annex](../../../annexes/pkg-url-specification.md) of this document.
-Known type definitions can be found in the
-Package-URL [type definitions](https://github.com/package-url/purl-spec/blob/main/types/README.md).
-
-Components are designed such that they form a hierarchy from the most
-significant on the left to the least significant components on the right.
+The registered PURL type definitions are maintained in the Package-URL type
+registry available at <https://packageurl.org/docs/purl/purl-types>.
 
 ## Metadata
 

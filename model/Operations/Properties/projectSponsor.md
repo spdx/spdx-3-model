@@ -13,5 +13,5 @@ Sponsor of the project.
 ## Metadata
 
 - name: projectSponsor
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: /Core/Agent

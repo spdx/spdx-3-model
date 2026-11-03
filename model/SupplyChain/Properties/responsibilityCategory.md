@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Requirements can be categorized into various types based on their focus, purpose, and scope.
+responsibilityCategory classifies the nature or domain of a responsibility transfer.
 
 ## Description
 
-Requirements can be categorized into various types based on their focus, purpose, and scope. This helps in organizing them more effectively for analysis, validation, and implementation.
+This property categorizes responsibility changes based on the type of rights, responsibilities, or control being transferred.
 
 ## Metadata
 

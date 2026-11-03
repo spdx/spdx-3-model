@@ -16,8 +16,39 @@ This could include details of the content and composition of the product,
 provenance details of the product and/or
 its composition, licensing information, known quality or security issues, etc.
 
+The `version` property is an optional human readable hint for different versions of a BOM
+representing the same overall system
+provided by the same creator (same `Agent` in BOM's `creationInfo.createdBy`)
+with a BOM of the same `name`.
+
+To accurately represent changes or updates to a BOM, a `Relationship`
+should be created from the updated BOM to the original BOM with the `amendedBy`
+relationship type.
+
+Since the `spdxId` must be unique for each version of a given BOM, it can be considered
+a unique version string if the version field is not used.
+
 ## Metadata
 
 - name: Bom
 - SubclassOf: Bundle
 - Instantiability: Concrete
+
+## Properties
+
+- /Core/version
+  - type: xsd:string
+  - minCount: 0
+  - maxCount: 1
+
+## SPARQL
+
+- name_when_version
+  - message: A value for Core/name is required when a value for Core/version is present
+  - query: <<<
+        SELECT $this WHERE {
+            $this <Software/version> ?version .
+            FILTER NOT EXISTS {
+                $this <Software/name> ?name .
+            }
+        }

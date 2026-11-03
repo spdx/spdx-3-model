@@ -4,12 +4,16 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-EvaluationResultType describes the outcome of an evaluation or verification process with.
+Specifies the outcome of an evaluation or verification process.
 
 ## Description
 
-EvaluationResultType describes the outcome of an evaluation or verification process with.
-This classification helps to clearly communicate the status of an evaluation, ensuring transparency about when results are definitive and when more information is needed before making decisions.
+EvaluationResultType categorizes whether a requirement or condition was met,
+not met, or could not be clearly determined.
+
+This classification helps to communicate the status of an evaluation clearly,
+so it is transparent when a result is definitive and when more information
+is needed before a decision can be made.
 
 ## Metadata
 

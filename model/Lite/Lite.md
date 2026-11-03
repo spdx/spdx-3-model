@@ -20,7 +20,7 @@ An SPDX Lite document can also be used in parallel with other SPDX documents in 
 
 ## Metadata
 
-- id: https://spdx.org/rdf/3.1/terms/Lite
+- id: https://spdx.org/rdf/3/terms/Lite
 - name: Lite
 
 ## Profile conformance

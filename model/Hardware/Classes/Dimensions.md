@@ -18,14 +18,14 @@ Dimensions generally refer to measurable extents or attributes that define the s
 ## Properties
 
 - xAxisLength
-  - type: /Core/MeasureOfLength
+  - type: /Core/UnitOfMeasure
   - minCount: 1
   - maxCount: 1
 - yAxisLength
-  - type: /Core/MeasureOfLength
+  - type: /Core/UnitOfMeasure
   - minCount: 1
   - maxCount: 1
 - zAxisLength
-  - type: /Core/MeasureOfLength
+  - type: /Core/UnitOfMeasure
   - minCount: 1
   - maxCount: 1

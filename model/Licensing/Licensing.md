@@ -110,7 +110,7 @@ can be made from a missing hasConcludedLicense relationship.
 
 ## Metadata
 
-- id: https://spdx.org/rdf/3.1/terms/Licensing
+- id: https://spdx.org/rdf/3/terms/Licensing
 - name: Licensing
 
 ## Profile conformance

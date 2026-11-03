@@ -13,5 +13,5 @@ Specifies an Element as subject of an assessment.
 ## Metadata
 
 - name: assessmentResult
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: ExportControlClassification

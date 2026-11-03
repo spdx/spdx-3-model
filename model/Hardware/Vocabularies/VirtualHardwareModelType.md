@@ -4,11 +4,13 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-VirtualHardwareModelType sets the VirtualHardware Model Type.
+Specifies the type of simulation model used to represent virtual hardware.
 
 ## Description
 
-VirtualHardwareModelType sets the VirtualHardware set the simulation process.
+VirtualHardwareModelType categorizes the level of fidelity at which virtual
+hardware is simulated, such as at the level of its function or its
+cycle-accurate timing.
 
 ## Metadata
 

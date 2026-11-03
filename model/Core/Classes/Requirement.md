@@ -19,6 +19,7 @@ requirement statement itself.
 
 - name: Requirement
 - SubclassOf: Element
+- Instantiability: Concrete
 
 ## Properties
 
@@ -36,5 +37,9 @@ requirement statement itself.
   - maxCount: 1
 - requirementUID
   - type: ExternalIdentifier
+  - minCount: 0
+  - maxCount: 1
+- requirementStatus
+  - type: RequirementStatusType
   - minCount: 0
   - maxCount: 1

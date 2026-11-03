@@ -23,5 +23,5 @@ with the W3C pointer method vocabulary.
 ## Metadata
 
 - name: lineRange
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: /Core/PositiveIntegerRange

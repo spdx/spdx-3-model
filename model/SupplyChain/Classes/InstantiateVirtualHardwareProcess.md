@@ -8,7 +8,8 @@ Class that describes an InstantiateVirtualHardwareProcess that is used to define
 
 ## Description
 
-InstantiateVirtualHardwareProcess is a class defining the process needed to instantiate an 'VirtualHardware' defined by running software package(s).
+InstantiateVirtualHardwareProcess is a class defining the process needed to
+instantiate a 'VirtualHardware' defined by running software package(s).
 
 ## Metadata
 
