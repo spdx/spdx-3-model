@@ -20,3 +20,4 @@ The Operations assessment descriptions are patterns for business relevant assess
 
 - id: https://spdx.org/rdf/3/terms/Operations
 - name: Operations
+- preferredNamespacePrefix: spdx3op

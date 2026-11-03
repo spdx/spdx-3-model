@@ -17,3 +17,4 @@ development process, such as software packages, models, and datasets.
 
 - id: https://spdx.org/rdf/3/terms/AI
 - name: AI
+- preferredNamespacePrefix: spdx3ai

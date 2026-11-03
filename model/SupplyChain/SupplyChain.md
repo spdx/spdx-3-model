@@ -23,3 +23,4 @@ The term “goods” is a common way of referring to artifacts within many commu
 
 - id: https://spdx.org/rdf/3/terms/SupplyChain
 - name: SupplyChain
+- preferredNamespacePrefix: spdx3sp

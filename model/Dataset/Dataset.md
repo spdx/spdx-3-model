@@ -16,3 +16,4 @@ preparation process, its characteristics, and its access methods.
 
 - id: https://spdx.org/rdf/3/terms/Dataset
 - name: Dataset
+- preferredNamespacePrefix: spdx3ds

@@ -112,6 +112,7 @@ can be made from a missing hasConcludedLicense relationship.
 
 - id: https://spdx.org/rdf/3/terms/Licensing
 - name: Licensing
+- preferredNamespacePrefix: spdx3l
 
 ## Profile conformance
 
