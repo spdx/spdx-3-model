@@ -4,12 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Identifies an SPDX element added as a result of a system impact analysis.
+Identifies an SPDX element added by a system change under analysis.
 
 ## Description
 
-addedElement identifies an SPDX element introduced as a result of a system
-impact analysis.
+addedElement identifies an SPDX element introduced by an actual or proposed
+system change assessed by a SystemChangeImpactAnalysis.
 
 ## Metadata
 
