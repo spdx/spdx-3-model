@@ -4,17 +4,16 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Specifies the assessed impact category from a system impact analysis.
+Specifies an assessed impact category from a system impact analysis.
 
 ## Description
 
 SystemImpactLevel provides common values for communicating the category of
-impact determined by a SystemImpactAnalysis.
+impact determined by a SystemImpactAnalysis or SystemChangeImpactAnalysis.
 
-The impact category can be used to communicate the expected verification response
-without embedding organization-specific change-control rules in SPDX.
-If no assertion is made about impact, the optional impactLevel property
-can be omitted.
+The impact category communicates the assessed result. It does not prescribe an
+organization-specific change-control or verification response. If no impact
+category is asserted, the optional impactLevel property can be omitted.
 
 ## Metadata
 
