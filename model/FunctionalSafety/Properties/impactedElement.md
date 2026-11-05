@@ -4,16 +4,13 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Identifies an SPDX element considered by a system impact analysis.
+Identifies an SPDX element considered in a system change impact analysis.
 
 ## Description
 
-impactedElement identifies an SPDX element that is within the scope of a
-system impact analysis.
-
-The element may or may not ultimately require a change. More specific
-properties such as addedElement, modifiedElement, or removedElement can be used
-when the analysis outcome is known.
+impactedElement identifies an existing or proposed SPDX element considered
+when assessing the impact of system changes in a SystemChangeImpactAnalysis.
+The element may or may not itself be added, modified, or removed.
 
 ## Metadata
 
