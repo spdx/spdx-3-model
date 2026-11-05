@@ -4,18 +4,18 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Identifies an SPDX element removed from the analyzed context by a system impact
-analysis.
+Identifies an SPDX element removed by a system change under analysis.
 
 ## Description
 
-removedElement identifies an SPDX element that no longer applies in the
-analyzed context as a result of a system impact analysis.
+removedElement identifies an existing SPDX element that an actual or proposed
+system change assessed by a SystemChangeImpactAnalysis removes from the
+analyzed system context.
 
 The removed element may remain historically valid in a prior model or release.
 Use a relationship such as amendedBy between the old element and a replacement
-element when the system impact analysis results in a revised requirement,
-validation, test, design artifact, or other SPDX element.
+element when the system change results in a revised requirement, validation,
+test, design artifact, or other SPDX element.
 
 ## Metadata
 
