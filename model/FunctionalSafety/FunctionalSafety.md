@@ -16,9 +16,11 @@ These artifacts include the outputs of engineering phases regarding planning, re
 
 ## System impact analysis
 
-The FunctionalSafety profile includes terms for representing
-system impact analysis. A SystemImpactAnalysis can identify the analysis
-process, status, impact category, and SPDX elements affected by the analysis.
+The FunctionalSafety profile includes separate terms for assessing the impact
+of analysis triggers and the impact of system changes. SystemImpactAnalysis
+documents an assessment of one or more triggers and may conclude that no
+change is required. SystemChangeImpactAnalysis documents the impact of one or
+more added, modified, or removed system elements.
 
 Usage guidance and worked examples for applying these terms are documented
 separately from this profile overview.
