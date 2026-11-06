@@ -11,6 +11,8 @@ Represents a certificate, (typically X.509 v3 ITU-T) that binds a public key to 
 This element describes a specific Certificate.
 An certificate is a standardized document (often using the X.509 v3 ITU-T format) that binds a public key to an identity (user, service, device, or organization) using a signature from a trusted Certificate Authority (CA).
 
+a fingerprint of a certificate can be stored in the verifiedUsing property. 
+
 ## Metadata
 
 - name: Certificate
