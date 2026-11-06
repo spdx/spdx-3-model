@@ -9,7 +9,6 @@ SignatureAnnotation represents a cryptographic signature associated with a Eleme
 ## Description
 
 SignatureAnnotation captures metadata about a cryptographic signature applied to software, documents, or other elements. This annotation enables verification that the signed content has not been modified since signing and confirms the identity of the signer.
-
 A fingerprint of a certificate can be stored in the verifiedUsing property.
 
 ## Metadata
