@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Product Part Number as defined by OEM.
+Part Number is a unique identifier assigned by a manufacturer to a specific product, part, or component.
 
 ## Description
 
-Product Part Number as defined by manufacturer. Can be used for an SKU.
+Part Number is a unique identifier assigned by a manufacturer to a specific product, part, or component. It represents the full product variant identifier that distinguishing one model or configuration from another and is typically used in conjunction with a serialNumber to uniquely identify an individual instance of that product.
 
 ## Metadata
 
