@@ -1,18 +1,18 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# KeyFormatEnum
+# serializeFormatEnum
 
 ## Summary
 
-The Format of the encodedKey.
+The Format of the serializedencoding.
 
 ## Description
 
-A KeyFormatEnum categorizes encodedKey format keys. These types help ensure correct handling encodedKey. 
+A serializeormatEnum categorizes serializedencoding format. These types help ensure correct handling serializedencoding. 
 
 ## Metadata
 
-- name: KeyTypeEnum
+- name: serializeFormatEnum
 
 ## Entries
 
