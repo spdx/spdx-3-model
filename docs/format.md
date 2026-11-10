@@ -348,26 +348,26 @@ change in later versions.
 ```markdown
 SPDX-License-Identifier: Community-Spec-1.0
 
-# NoneElement
+# UnknownAgent
 
 ## Summary
 
-A named individual example.
+Unknown agent.
 
 ## Description
 
-A named individual of Element class that representing none.
+A named individual of Agent class that representing unknown agent.
 
 ## Metadata
 
-- name: NoneElement
-- type: Element
-- specVersion: 3.0.1
-- created: 2024-11-22T03:00:01Z
+- name: UnknownAgent
+- type: Agent
+- specVersion: 1.0
+- created: 1999-12-31T23:59:59Z
 
 ## Property Values
 
-- name: "NONE"
+- name: "WHO"
 ```
 
 ### Properties
