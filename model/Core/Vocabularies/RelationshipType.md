@@ -211,7 +211,7 @@ and another SpdxDocument.
         }
 
 - dependsOn_type
-  - message: When relationship id dependsOn, class must be LifecycleScopedRelationship
+  - message: When relationship is dependsOn, class must be LifecycleScopedRelationship
   - query: <<<
 
         SELECT $this WHERE {
