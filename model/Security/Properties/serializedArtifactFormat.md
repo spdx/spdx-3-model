@@ -14,4 +14,4 @@ The serializedArtifactFormat property specifies the format in which the Cryptogr
 
 - name: serializedArtifactFormat
 - Nature: ObjectProperty
-- Range: serializedFormatEnum
+- Range: SerializedFormatEnum
