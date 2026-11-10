@@ -26,6 +26,6 @@ A cryptographic artifact is any concrete piece of data that embodies or supports
   - minCount: 0
   - maxCount: 1
 - serializedArtifactFormat
-  - type: serializedFormatEnum
+  - type: SerializedFormatEnum
   - minCount: 0
   - maxCount: 1
