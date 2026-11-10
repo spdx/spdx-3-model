@@ -26,7 +26,8 @@ Action defines an event that has occurred. This is an Abstract Action.
   - minCount: 0
 - additionalInformation
   - type: DictionaryEntry
-  - minCount: 0
+- additionalInformationSpecification
+  - type: Specification
 - endTime
   - type: DateTime
   - minCount: 0

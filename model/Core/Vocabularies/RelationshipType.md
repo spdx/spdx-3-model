@@ -9,15 +9,10 @@ Information about the relationship between two Elements.
 ## Description
 
 Provides information about the relationship between two Elements.
+
 For example, you can represent a relationship between two different Files,
 between a Package and a File, between two Packages, or between one SpdxDocument
 and another SpdxDocument.
-
-Relationship names should be descriptive enough to easily deduce the correct direction
-from their name. The best way to do this is to make sure that the relationship
-name completes the sentence:
-
-`from` (is) (a) `RELATIONSHIP` `to`
 
 ## Metadata
 
@@ -48,6 +43,7 @@ name completes the sentence:
 - fixedBy: Designates a `from` /Security/Vulnerability has been fixed by the `to` Agent(s).
 - fixedIn: A `from` /Security/Vulnerability has been fixed in each `to` Element. The use of the `fixedIn` type is constrained to `/Security/VexFixedVulnAssessmentRelationship` classed relationships.
 - follows: The `to` Element succeeds the `from` Element, establishing a unidirectional sequence. This succession is defined as chronological, procedural, or logical. It is used to represent either a temporal order (e.g., in a workflow) or a logical order for processing and traversal (e.g., in an ordered list).
+- followsProcess: The `from` Action is carried out in accordance with each `to` DefinedProcess.
 - foundBy: Designates a `from` /Security/Vulnerability was originally discovered by the `to` Agent(s).
 - generates: The `from` Element generates each `to` Element.
 - hasAddedFile: Every `to` Element is a file added to the `from` Element (`from` hasAddedFile `to`).
@@ -67,6 +63,7 @@ name completes the sentence:
 - hasHost: The `from` /Build/Build was run on the `to` Element during a LifecycleScopeType period (e.g. the host that the build runs on).
 - hasInput: The `from` Element has each `to` Element as an input.
 - hasInstall: The `from` Element has each `to` Artifact installed (placed into position for use) into it during a LifecycleScopeType period. To express the Agent doing the install, link this relationship as the `from` in `performedBy`.
+- hasInstance: The `from` Software/GenericPackage has more specific instances that are the `to` Element(s).
 - hasMetadata: Every `to` Element is metadata about the `from` Element (`from` hasMetadata `to`).
 - hasOptionalComponent: Every `to` Element is an optional component of the `from` Element (`from` hasOptionalComponent `to`).
 - hasOptionalDependency: The `from` Element optionally depends on each `to` Element, during a LifecycleScopeType period.
@@ -396,6 +393,37 @@ name completes the sentence:
             FILTER NOT EXISTS { $this rdf:type <Core/LifecycleScopedRelationship> }
         }
 
+- hasInput_from
+  - message: When relationship is hasInput, from must be a Build, DefinedProcess, or Action
+  - query: <<<
+
+        SELECT $this WHERE {
+            $this <Core/relationshipType> <Core/RelationshipType/hasInput> .
+            $this <Core/from> ?from .
+            FILTER NOT EXISTS { ?from rdf:type/rdfs:subClassOf* <Build/Build> }
+            FILTER NOT EXISTS { ?from rdf:type/rdfs:subClassOf* <Core/DefinedProcess> }
+            FILTER NOT EXISTS { ?from rdf:type/rdfs:subClassOf* <Core/Action> }
+        }
+
+- hasInstall_to
+  - message: When relationship is hasInstall, to must be an Artifact
+  - query: <<<
+
+        SELECT $this WHERE {
+            $this <Core/relationshipType> <Core/RelationshipType/hasInstall> .
+            $this <Core/to> ?to .
+            FILTER NOT EXISTS { ?to rdf:type/rdfs:subClassOf* <Core/Artifact> }
+        }
+
+- hasInstall_type
+  - message: When relationship is hasInstall, class must be LifecycleScopedRelationship
+  - query: <<<
+
+        SELECT $this WHERE {
+            $this <Core/relationshipType> <Core/RelationshipType/hasInstall> .
+            FILTER NOT EXISTS { $this rdf:type <Core/LifecycleScopedRelationship> }
+        }
+
 - hasOptionalDependency_type
   - message: When relationship is hasOptionalDependency, class must be LifecycleScopedRelationship
   - query: <<<
@@ -488,6 +516,25 @@ name completes the sentence:
             FILTER NOT EXISTS { $this rdf:type <Core/LifecycleScopedRelationship> }
         }
 
+- hasUninstall_to
+  - message: When relationship is hasUninstall, to must be an Artifact
+  - query: <<<
+
+        SELECT $this WHERE {
+            $this <Core/relationshipType> <Core/RelationshipType/hasUninstall> .
+            $this <Core/to> ?to .
+            FILTER NOT EXISTS { ?to rdf:type/rdfs:subClassOf* <Core/Artifact> }
+        }
+
+- hasUninstall_type
+  - message: When relationship is hasUninstall, class must be LifecycleScopedRelationship
+  - query: <<<
+
+        SELECT $this WHERE {
+            $this <Core/relationshipType> <Core/RelationshipType/hasUninstall> .
+            FILTER NOT EXISTS { $this rdf:type <Core/LifecycleScopedRelationship> }
+        }
+
 - implementedBy_from
   - message: When relationship is implementedBy, from must be a Requirement
   - query: <<<
@@ -518,13 +565,15 @@ name completes the sentence:
         }
 
 - performedBy_from
-  - message: When relationship is performedBy, from must be an Action
+  - message: When relationship is performedBy, from must be an Action or a Relationship of type hasInstall or hasUninstall
   - query: <<<
 
         SELECT $this WHERE {
             $this <Core/relationshipType> <Core/RelationshipType/performedBy> .
             $this <Core/from> ?from .
             FILTER NOT EXISTS { ?from rdf:type/rdfs:subClassOf* <Core/Action> }
+            FILTER NOT EXISTS { ?from <Core/relationshipType> <Core/RelationshipType/hasInstall> }
+            FILTER NOT EXISTS { ?from <Core/relationshipType> <Core/RelationshipType/hasUninstall> }
         }
 
 - performedBy_to

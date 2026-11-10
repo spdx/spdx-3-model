@@ -9,7 +9,8 @@ A distinct article or unit within the domain.
 ## Description
 
 An artifact is a distinct article or unit within the domain,
-such as an electronic file, a software package, a software service, a device or an element of data.
+such as an electronic file, a software package, a software service,
+a hardware device, an action, or a defined process.
 
 ## Metadata
 
