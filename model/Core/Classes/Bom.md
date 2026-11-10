@@ -47,8 +47,8 @@ a unique version string if the version field is not used.
   - message: A value for Core/name is required when a value for Core/version is present
   - query: <<<
         SELECT $this WHERE {
-            $this <Software/version> ?version .
+            $this <Core/version> ?version .
             FILTER NOT EXISTS {
-                $this <Software/name> ?name .
+                $this <Core/name> ?name .
             }
         }
