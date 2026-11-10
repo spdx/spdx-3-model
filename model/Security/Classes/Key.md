@@ -26,6 +26,10 @@ This element describes a specific cryptographic key, identifying its type and as
   - type: KeyTypeEnum
   - minCount: 1
   - maxCount: 1
+- pem
+  - type: xsd:string
+  - minCount: 0
+  - maxCount: 1
 - parameter
   - type: /Core/DictionaryEntry
   - minCount: 0
