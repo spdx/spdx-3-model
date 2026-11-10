@@ -19,6 +19,8 @@ List, as well as individuals defined in the specification.
 - name: SpdxOrganization
 - type: Organization
 - IRI: https://spdx.org/
+- specVersion: 3.0.1
+- created: 2024-11-22T03:00:01Z
 
 ## Property Values
 

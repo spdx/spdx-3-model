@@ -29,6 +29,8 @@ no assertion is being made about any potential descendants of Element1.
 
 - name: NoAssertionElement
 - type: IndividualElement
+- specVersion: 3.0.1
+- created: 2024-11-22T03:00:01Z
 
 ## Property Values
 

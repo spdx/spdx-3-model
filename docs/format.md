@@ -333,33 +333,41 @@ Allowed headings:
   - name: \<individual_name\>
   - type: \<class_name\>
   - IRI: \<IRI\>
+  - specVersion: \<version\>
+  - created: \<dateTime\>
 - Property Values
   - \<property_name\>: \<property_value\>
   - ...
+
+`specVersion` and `created` are required. They give the `specVersion` and
+`created` of the individual's `CreationInfo` as first released, and shall not
+change in later versions.
 
 #### Individual example
 
 ```markdown
 SPDX-License-Identifier: Community-Spec-1.0
 
-# NoneElement
+# UnknownAgent
 
 ## Summary
 
-A named individual example.
+Unknown agent.
 
 ## Description
 
-A named individual of Element class that representing none.
+A named individual of Agent class that representing unknown agent.
 
 ## Metadata
 
-- name: NoneElement
-- type: Element
+- name: UnknownAgent
+- type: Agent
+- specVersion: 1.0
+- created: 1999-12-31T23:59:59Z
 
 ## Property Values
 
-- name: "NONE"
+- name: "WHO"
 ```
 
 ### Properties
