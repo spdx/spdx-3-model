@@ -4,14 +4,14 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-The serializedArtifactFormat property indicates the format of the cryptographic artifact. 
+The serializedArtifactFormat property indicates the serialization format of a CryptographyArtifact.
 
 ## Description
 
-The serializedArtifactFormat property indicates the format of the cryptographic artifact. 
+The serializedArtifactFormat property specifies the format in which the CryptographyArtifact is serialized. Its value is expected to be one of the values defined by the serializedFormatEnum range.
 
 ## Metadata
 
 - name: serializedArtifactFormat
 - Nature: ObjectProperty
-- Range: serializeFormatEnum
+- Range: serializedFormatEnum
