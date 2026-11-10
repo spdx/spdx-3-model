@@ -1,18 +1,18 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# serializeFormatEnum
+# serializedFormatEnum
 
 ## Summary
 
-The Format of the serializedencoding.
+The Format of the serializedFormatEnum.
 
 ## Description
 
-A serializeormatEnum categorizes serializedencoding format. These types help ensure correct handling serializedencoding. 
+A serializedFormatEnum categorizes serializedFormatEnum format. These types help ensure correct handling serializedArtifact. 
 
 ## Metadata
 
-- name: serializeFormatEnum
+- name: serializedFormatEnum
 
 ## Entries
 
