@@ -21,11 +21,11 @@ A cryptographic artifact is any concrete piece of data that embodies or supports
 - sourceElement
   - type: /Core/Element
   - minCount: 0
-- encodedKey 
+- serializedArtifact 
   - type: xsd:string
   - minCount: 0
   - maxCount: 1
-- encodedKeyFormat  
+- serializedArtifactFormat  
   - type: serializeFormatEnum
   - minCount: 0
   - maxCount: 1
