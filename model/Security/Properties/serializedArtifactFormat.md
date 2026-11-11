@@ -8,7 +8,7 @@ The serializedArtifactFormat property indicates the serialization format of a Cr
 
 ## Description
 
-The serializedArtifactFormat property specifies the format in which the CryptographyArtifact is serialized. Its value is expected to be one of the values defined by the serializedFormatEnum range.
+The serializedArtifactFormat property specifies the format in which the CryptographyArtifact is serialized. Its value is expected to be one of the values defined by the SerializedFormatEnum range.
 
 ## Metadata
 
