@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Specified the time and date when a vulnerability was withdrawn.
+Specifies the time and date when a vulnerability was withdrawn.
 
 ## Description
 
-Specified the time and date when a vulnerability was withdrawn.
+Specifies the time and date when a vulnerability was withdrawn.
 
 ## Metadata
 
