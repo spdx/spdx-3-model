@@ -8,7 +8,7 @@ Defines the classification of a cryptographic key.
 
 ## Description
 
-This enumeration lists of cryptographic key types, distinguishing between symmetric and asymmetric key types and indicating the key's role within a cryptographic system.
+This enumeration lists cryptographic key types, distinguishing between symmetric and asymmetric key types and indicating the key's role within a cryptographic system.
 
 ## Metadata
 
