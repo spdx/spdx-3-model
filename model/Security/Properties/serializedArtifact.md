@@ -4,7 +4,9 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-serializedArtifact is the serialized CryptographyArtifact. This to put the PEM or DER serialized key or certificate.
+## Summary
+
+serializedArtifact is the serialized CryptographyArtifact. It is used to store the PEM- or DER-encoded form of a key or certificate.
 
 ## Description
 
