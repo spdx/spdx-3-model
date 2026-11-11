@@ -13,5 +13,5 @@ The signatureTime property records the exact date and time when the signature wa
 ## Metadata
 
 - name: signatureTime
-- Nature: ObjectProperty
+- Nature: DataProperty
 - Range: /Core/DateTime
