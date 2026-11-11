@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-SignatureAnnotation represents a cryptographic signature associated with a Element providing verification information about the authenticity and integrity of signed content.
+SignatureAnnotation represents a cryptographic signature associated with an Element providing verification information about the authenticity and integrity of signed content.
 
 ## Description
 
