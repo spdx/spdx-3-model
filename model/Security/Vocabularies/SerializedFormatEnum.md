@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-The Format of the SerializedFormatEnum.
+Enumeration of serialization formats for cryptographic artifacts.
 
 ## Description
 
-A SerializedFormatEnum categorizes SerializedFormatEnum format. These types help ensure correct handling serializedArtifact.
+A SerializedFormatEnum value describes the serialization format of a CryptographyArtifact, such as PEM or DER. These values help systems correctly parse and handle serializedArtifact content.
 
 ## Metadata
 
