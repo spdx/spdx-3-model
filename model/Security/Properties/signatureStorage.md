@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A reference to a object that contains the cryptographic signature data.
+A reference to an object that contains the cryptographic signature data.
 
 ## Description
 
