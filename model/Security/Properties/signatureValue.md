@@ -8,7 +8,7 @@ The actual cryptographic signature data generated during the signing process.
 
 ## Description
 
-The signatureValue property contains the cryptographic signature bytes that were produced when the content was signed. This value is generated using a signing algorithm applied to the data being signed, typically creating a hash of the content that is then encrypted with the signer's private key.
+The signatureValue property contains the cryptographic signature bytes that were produced when the content was signed. This value is generated using a signature algorithm applied to the data being signed or to a hash of that data, depending on the signature scheme.
 
 The signature value enables verification that the content has not been altered since signing and confirms the identity of the signer. When a verifier has access to the signer's public key and the original unsigned content, they can recompute what the signature value should be and compare it against the stored value to confirm authenticity.
 
