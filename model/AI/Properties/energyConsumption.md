@@ -6,6 +6,9 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 Energy consumption incurred by an AI model.
 
+**DEPRECATED in SPDX 3.1.**
+Use `/Core/Measurement` instead.
+
 ## Description
 
 Energy consumption of an AI model, either known or estimated.
@@ -14,6 +17,11 @@ In the absence of direct measurements, an SPDX data creator may choose to
 estimate the energy consumption based on information about computational
 resources (e.g., number of floating-point operations), training time, and other
 relevant training details.
+
+This property is deprecated.
+Use a `/Core/Measurement` for each value instead.
+See `trainingEnergyConsumption`, `finetuningEnergyConsumption`, and
+`inferenceEnergyConsumption` for how each value is recorded.
 
 ## Metadata
 
