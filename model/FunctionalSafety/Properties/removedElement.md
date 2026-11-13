@@ -9,8 +9,8 @@ Identifies an SPDX element removed by a system change under analysis.
 ## Description
 
 removedElement identifies an existing SPDX element that an actual or proposed
-system change assessed by a SystemChangeImpactAnalysis removes from the
-analyzed system context.
+system change documented by a SystemChangeAccomplishmentSummary removes from
+the analyzed system context.
 
 The removed element may remain historically valid in a prior model or release.
 Use a relationship such as amendedBy between the old element and a replacement

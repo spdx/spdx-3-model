@@ -28,14 +28,14 @@ The /Core/rationale property, when used, explains the basis for the analysis
 conclusion.
 
 A SystemImpactAnalysis may conclude that no change is required. If the analysis
-leads to changes that require a separate assessment, a
-SystemChangeImpactAnalysis can be linked as an output using a
+leads to changes that require a separate accomplishment summary, a
+SystemChangeAccomplishmentSummary can be linked as an output using a
 /Core/Relationship with relationshipType hasOutput. Not every
-SystemImpactAnalysis requires a SystemChangeImpactAnalysis.
+SystemImpactAnalysis requires a SystemChangeAccomplishmentSummary.
 
 SystemImpactAnalysis assesses the effect of a trigger or source. It does not
-describe the impact of specific added, modified, or removed system elements;
-those changes are represented by SystemChangeImpactAnalysis.
+describe the accomplishment and supporting evidence for specific system
+changes; those are documented by SystemChangeAccomplishmentSummary.
 
 ## Metadata
 

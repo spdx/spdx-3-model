@@ -9,7 +9,7 @@ Identifies the assessed impact category from an impact analysis.
 ## Description
 
 impactLevel identifies the assessed impact category resulting from a
-SystemImpactAnalysis or SystemChangeImpactAnalysis.
+SystemImpactAnalysis or a SystemChangeAccomplishmentSummary.
 
 The impact category can help communicate the assessed result without embedding
 organization-specific change-control rules in SPDX. If no impact category is

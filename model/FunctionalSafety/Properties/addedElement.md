@@ -9,7 +9,7 @@ Identifies an SPDX element added by a system change under analysis.
 ## Description
 
 addedElement identifies an SPDX element introduced by an actual or proposed
-system change assessed by a SystemChangeImpactAnalysis.
+system change documented by a SystemChangeAccomplishmentSummary.
 
 ## Metadata
 

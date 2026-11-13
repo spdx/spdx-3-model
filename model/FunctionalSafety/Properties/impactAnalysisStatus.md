@@ -4,12 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Identifies the lifecycle status of an impact analysis.
+Identifies the lifecycle status of an impact analysis or change summary.
 
 ## Description
 
 impactAnalysisStatus identifies the lifecycle state of a
-SystemImpactAnalysis or SystemChangeImpactAnalysis.
+SystemImpactAnalysis or SystemChangeAccomplishmentSummary.
 
 ## Metadata
 

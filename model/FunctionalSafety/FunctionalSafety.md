@@ -17,10 +17,10 @@ These artifacts include the outputs of engineering phases regarding planning, re
 ## System impact analysis
 
 The FunctionalSafety profile includes separate terms for assessing the impact
-of analysis triggers and the impact of system changes. SystemImpactAnalysis
-documents an assessment of one or more triggers and may conclude that no
-change is required. SystemChangeImpactAnalysis documents the impact of one or
-more added, modified, or removed system elements.
+of analysis triggers and documenting the accomplishment of system changes.
+SystemImpactAnalysis documents an assessment of one or more triggers and may
+conclude that no change is required. SystemChangeAccomplishmentSummary
+documents a system change and its supporting assurance evidence.
 
 Usage guidance and worked examples for applying these terms are documented
 separately from this profile overview.

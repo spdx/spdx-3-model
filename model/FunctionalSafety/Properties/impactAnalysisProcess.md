@@ -9,12 +9,12 @@ Identifies the process, procedure, or specification used for an impact analysis.
 ## Description
 
 impactAnalysisProcess identifies the process, procedure, specification, plan,
-or other SPDX element used to perform a SystemImpactAnalysis or
-SystemChangeImpactAnalysis.
+or other SPDX element used to perform a SystemImpactAnalysis or document a
+SystemChangeAccomplishmentSummary.
 
 The referenced element can be a /Core/DefinedProcess, /Core/Specification,
 safety plan, quality-system procedure, regulatory procedure, or another
-element that describes how the analysis is performed.
+element that describes how the analysis or change documentation is performed.
 
 ## Metadata
 

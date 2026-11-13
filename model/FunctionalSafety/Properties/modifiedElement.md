@@ -9,7 +9,7 @@ Identifies an SPDX element modified by a system change under analysis.
 ## Description
 
 modifiedElement identifies an existing SPDX element modified by an actual or
-proposed system change assessed by a SystemChangeImpactAnalysis.
+proposed system change documented by a SystemChangeAccomplishmentSummary.
 
 When a modification is represented by a replacement SPDX element, the prior
 element can be listed as modifiedElement, the replacement can be listed as
