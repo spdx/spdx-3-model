@@ -25,6 +25,7 @@ Element1 has no descendants.
 - type: IndividualElement
 - specVersion: 3.0.1
 - created: 2024-11-22T03:00:01Z
+- createdBy: /Core/SpdxOrganization
 
 ## Property Values
 

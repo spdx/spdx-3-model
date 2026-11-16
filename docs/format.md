@@ -335,13 +335,16 @@ Allowed headings:
   - IRI: \<IRI\>
   - specVersion: \<version\>
   - created: \<dateTime\>
+  - createdBy: \<individual_reference\>
 - Property Values
   - \<property_name\>: \<property_value\>
   - ...
 
-`specVersion` and `created` are required. They give the `specVersion` and
-`created` of the individual's `CreationInfo` as first released, and shall not
-change in later versions.
+`specVersion`, `created` and `createdBy` are required. They give the
+`specVersion`, `created` and `createdBy` of the individual's `CreationInfo` as
+first released, and shall not change in later versions.
+`createdBy` refers to an individual of an `Agent` class, written as
+`/<namespace>/<individual_name>`, for example `/Core/SpdxOrganization`.
 
 #### Individual example
 
@@ -364,6 +367,7 @@ A named individual of Agent class that representing unknown agent.
 - type: Agent
 - specVersion: 1.0
 - created: 1999-12-31T23:59:59Z
+- createdBy: /Core/SpdxOrganization
 
 ## Property Values
 
