@@ -9,6 +9,7 @@ Levels are metric values.
 ## Description
 
 Metrics using Level as value type allow the evaluation according to predefined values. See Entries section for details.
+The exact semantics of the levels low, medium, and high is dependent on the property measured.
 
 ## Metadata
 

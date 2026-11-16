@@ -4,11 +4,12 @@ SPDX-License-Identifier: Community-Spec-1.0.
 
 ## Summary
 
-Generic protection demand of an asset or capability. 
+Generic protection demand of an asset or capability. The genericDemand is a quantification
+of protection requirement.
 
 ## Description
 
-Default conclusion of a protection demand of an asset or capability.
+Default conclusion of a protection demand of an asset or capability. The protection demand concludes from assumptions, stakeholder needs, and security requirements.
 
 ## Metadata
 
@@ -18,14 +19,3 @@ Default conclusion of a protection demand of an asset or capability.
 
 
 NOTE (required definition):
-
-
-demand
-requirement for functionality (3.15)
-ISO 11863:2011(en), 3.8 
-
-and ...
-
-demand
-stated requirement (3.1.9) for a service (3.5.14) or a product (3.5.12) to be delivered
-ISO 41011:2024(en), 3.1.3 
