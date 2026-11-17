@@ -79,7 +79,7 @@ and another SpdxDocument.
 - hasTestCase: Every `to` Element is a test case for the `from` Element (`from` hasTestCase `to`).
 - hasUninstall: The `from` Element has each `to` Artifact uninstalled (removed from position for use) from it during a LifecycleScopeType period. To express the Agent doing the uninstall, link this relationship as the `from` in `performedBy`.
 - hasVariant: Every `to` Element is a variant the `from` Element (`from` hasVariant `to`).
-- implementedBy: The `from` Requirement is implemented in the `to` Element(s).
+- implementedBy: Each `to` Element contains or represents an implementation of the `from` Requirement (`from` implementedBy `to`).
 - invokedBy: The `from` Element was invoked by the `to` Agent, during a LifecycleScopeType period (for example, a /Build/Build element that describes a build step).
 - locatedAt: `from` Element located at a specific `to` Location. A time period is optional.
 - modifiedBy: The `from` Element is modified by each `to` Element.
