@@ -12,15 +12,6 @@ A HashAlgorithm is a mathematical algorithm that maps data of arbitrary size to
 a bit string (the hash) and is a one-way function, that is, a function which is
 practically infeasible to invert.
 
-**Note**
-Inclusion in this vocabulary does not imply suitability for cryptographic integrity verification.
-
-For cryptographic integrity, producers should provide at least one SHA-256 or stronger hash. Consumers may reject verification when only weaker algorithms are provided.
-
-MD2, MD4, MD5, and SHA-1 are not collision resistant and should not be used for cryptographic integrity. Adler-32 is a non-cryptographic checksum intended only to detect accidental corruption. MD6 is experimental and non-standardized and should not be used for new integrity information.
-
-Dilithium, Kyber, and FALCON are post-quantum cryptographic algorithms rather than hash algorithms. These entries are deprecated and should not be used in new SPDX documents; they are planned for removal in a future SPDX release.
-
 ## Metadata
 
 - name: HashAlgorithm
