@@ -23,6 +23,7 @@ specifications.
 - [File content structure and formatting](#file-content-structure-and-formatting)
   - [Model file example](#model-file-example)
 - [Syntax](#syntax)
+  - [Model element references](#model-element-references)
   - [Classes](#classes)
   - [Datatypes](#datatypes)
   - [Individuals](#individuals)
@@ -212,6 +213,23 @@ will give this RDF graph
 ```
 
 ## Syntax
+
+### Model element references
+
+References to model elements in metadata and labeled lists are resolved relative
+to the profile containing the referring file.
+
+A reference to an element in the same profile shall use the unqualified element
+name. For example, a Core model file refers to `DictionaryEntry`.
+
+A reference to an element in another profile shall be qualified with a leading
+slash, the profile name, and the element name. For example, a Dataset model file
+refers to `/Core/DictionaryEntry`.
+
+Where a reference identifies a property owned by a class, the qualified form
+also includes the class name, for example `/Core/Element/name`.
+
+XML Schema datatypes use their `xsd:`-qualified names, such as `xsd:string`.
 
 ### Classes
 
