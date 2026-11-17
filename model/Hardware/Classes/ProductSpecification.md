@@ -4,11 +4,13 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A product specification (product spec) is a detailed document that outlines the technical, functional, and design requirements of a product.
+A document that defines requirements for a hardware product.
 
 ## Description
 
-A product specification (product spec) is a detailed document that outlines the technical, functional, and design requirements of a product. It serves as a guide for engineers, designers, and manufacturers to ensure the final product meets expectations.
+A ProductSpecification represents a document that defines the technical, functional, and design requirements for a hardware product. It can identify the applicable product by part number, record the specification version, and describe hazards associated with the product.
+
+Product specifications provide requirements and constraints used by engineers, designers, manufacturers, and other parties throughout the product lifecycle.
 
 ## Metadata
 

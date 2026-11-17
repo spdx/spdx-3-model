@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Specifies an Element as subject of an assessment.
+Identifies the Element that is the subject of an assessment.
 
 ## Description
 
-Specifies an Element as subject of an assessment.
+The assessedElement property identifies the SPDX Element evaluated by an assessment. The assessment result applies to the identified Element.
 
 ## Metadata
 
