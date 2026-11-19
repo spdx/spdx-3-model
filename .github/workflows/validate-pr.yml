@@ -23,3 +23,8 @@ jobs:
       - name: Run spec-parser to validate
         run: |
           python ${{ runner.temp }}/spec-parser/main.py --verbose --no-output model
+      - name: Check individuals' CreationInfo against releases
+        run: |
+          pip install -r ${{ runner.temp }}/spec-parser/requirements.txt
+          python ${{ runner.temp }}/spec-parser/main.py -r -R ${{ runner.temp }}/rdf model
+          python .github/scripts/check_creationinfo.py ${{ runner.temp }}/rdf/spdx-model.ttl
