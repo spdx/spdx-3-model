@@ -18,6 +18,6 @@ cycle-accurate timing.
 
 ## Entries
 
-- function: Simulation the function of the hardware.
-- cycle: Simulation architectures with precise cycle-level accuracy.
+- function: Simulates the function of the hardware.
+- cycle: Simulates architectures with precise cycle-level accuracy.
 - other: All other simulation types.

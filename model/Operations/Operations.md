@@ -8,7 +8,7 @@ The Operations profile defines fields for describing the business context of the
 
 ## Description
 
-The intention of the Operations profile is to provide a common base rather for alignment of tool and infrastructure interfaces and development than for exchanging the data between organizations along the software supply chain. In a first phase it shall focus on business operations. The managed information is expected to be mainly kept within the organizations but in some cases might also be necessary input for processing and determining relevant parameters for the later exchange in the supply chain (e.g. Export Control Classification Number).
+The intention of the Operations profile is to provide a common base for aligning tool and infrastructure interfaces during development, rather than for exchanging data between organizations along the software supply chain. In a first phase it shall focus on business operations. The managed information is expected to be mainly kept within the organizations but in some cases might also be necessary input for processing and determining relevant parameters for the later exchange in the supply chain (e.g. Export Control Classification Number).
 
 The information about an Element shall describe facts about the distribution and business context of the Element brought into the market, that could consist of several deliverables. The relation between Element and Deliverable targets can be one to many.
 
