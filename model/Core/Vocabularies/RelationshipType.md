@@ -25,10 +25,11 @@ name completes the sentence:
 
 ## Entries
 
-- affects: The `from` /Security/Vulnerability, Action or DefinedProcess affects each `to` Element.
+- affects: The `from` /Security/Vulnerability, Action or DefinedProcess affects each `to` Element
 - amendedBy: The `from` Element is amended by each `to` Element.
 - ancestorOf: The `from` Element is an ancestor of each `to` Element.
 - assumes: The `from` Element assumes each `to` /FunctionalSafety/Assumption.
+- associatedWith: the from /FunctionalSafety/Need associated with to Requirement. Note: The Requirement is not generally intended to singularly satisfy a particular Need. It is more likely that a set of higher level Requirements is required to achieve a reasonable satisfaction of an expressed /FunctionalSafety/Need.
 - availableFrom: The `from` Element is available from the additional supplier described by each `to` Element.
 - configures: The `from` Element is a configuration applied to each `to` Element, during a LifecycleScopeType period.
 - conformsTo: The `from` Element conforms to each `to` /FunctionalSafety/Assumption or Specification.
@@ -97,7 +98,6 @@ name completes the sentence:
 - republishedBy: Designates a `from` /Security/Vulnerability's details were tracked, aggregated, and/or enriched to improve context (i.e. NVD) by each `to` Agent.
 - resolved: The `to` /SupplyChain/OutOfSpecAction is resolved in the `from` /SupplyChain/ResolutionAction.
 - runsOn: The `from` Element (the instructions) runs on each `to` /Hardware/Hardware (processing element), during a LifecycleScopeType period.
-- basedOn: The `to` Requirement is based on `from` /FunctionalSafety/Need . Note: The Requirement is not generally intended to singularly satisfy a particular Need. It is more likely that a set of higher level Requirements is required to achieve a reasonable satisfaction of an expressed /FunctionalSafety/Need.
 - serializedInArtifact: The `from` SpdxDocument can be found in a serialized form in each `to` Artifact.
 - testedOn: The `from` Element has been tested on the `to` Element(s).
 - tracedToDetail: The `from` Requirement is refined and further elaborated by each `to` Requirement, which contains more detailed implementation information.
