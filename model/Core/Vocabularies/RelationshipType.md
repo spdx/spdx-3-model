@@ -28,7 +28,7 @@ name completes the sentence:
 - affects: The `from` /Security/Vulnerability, Action or DefinedProcess affects each `to` Element.
 - amendedBy: The `from` Element is amended by each `to` Element.
 - ancestorOf: The `from` Element is an ancestor of each `to` Element.
-- associatedWith: the from /FunctionalSafety/Need associated with to Requirement. Note: The Requirement is not generally intended to singularly satisfy a particular Need. It is more likely that a set of higher level Requirements is required to achieve a reasonable satisfaction of an expressed /FunctionalSafety/Need.
+- associatedWith: the `from` /FunctionalSafety/Need or FunctionalSafety/Assumption is associated with `to` Requirement. Note: The Requirement is not generally intended to singularly satisfy a particular Need. It is more likely that a set of higher level Requirements is required to achieve a reasonable satisfaction of an expressed /FunctionalSafety/Need.
 - assumes: The `from` Element assumes each `to` /FunctionalSafety/Assumption.
 - availableFrom: The `from` Element is available from the additional supplier described by each `to` Element.
 - configures: The `from` Element is a configuration applied to each `to` Element, during a LifecycleScopeType period.
