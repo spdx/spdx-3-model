@@ -115,7 +115,7 @@ use the number without quotes.
 ```json
 {
   "type": "software_File",
-  "software_artifactSize": 112
+  "software_byteSize": 112
 }
 ```
 
