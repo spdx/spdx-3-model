@@ -19,6 +19,7 @@ requirement statement itself.
 
 - name: Requirement
 - SubclassOf: Element
+- Instantiability: Concrete
 
 ## Properties
 

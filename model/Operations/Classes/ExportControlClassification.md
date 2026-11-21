@@ -4,12 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Assessment of an Element for export control classification.
+The Element for export control classification.
 
 ## Description
 
-Assessment of an Element for export control classification
-according to the classification schema of one or multiple countries.
+The result of the export control classification assessment, including exporting country, weight and comment.
 
 ## Metadata
 

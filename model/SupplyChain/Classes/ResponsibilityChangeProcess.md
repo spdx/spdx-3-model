@@ -18,11 +18,11 @@ The process changes of responsibility are recorded in this process. Responsibili
 
 ## Properties
 
-- plannedCurrent
+- plannedCurrentResponsibleAgent
   - type: /Core/Agent
   - minCount: 0
   - maxCount: 1
-- plannedPrevious
+- plannedPreviousResponsibleAgent
   - type: /Core/Agent
   - minCount: 0
   - maxCount: 1

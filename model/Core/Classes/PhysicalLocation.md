@@ -10,6 +10,9 @@ A physical location is a tangible, geographically identifiable place where objec
 
 A physical location is a tangible, geographically identifiable place where objects, people, or assets exist or operate.
 
+At least one of country, city, streetAddress, geographicPointLocation, or name
+shall be provided.
+
 ## Metadata
 
 - name: PhysicalLocation
@@ -53,3 +56,16 @@ A physical location is a tangible, geographically identifiable place where objec
 - geographicPointLocation
   - type: xsd:string
   - minCount: 0
+
+## SPARQL
+
+- at_least_one_location_property
+  - message: At least one of Core/country, Core/city, Core/streetAddress, Core/geographicPointLocation, or Core/name is required
+  - query: <<<
+        SELECT $this WHERE {
+            FILTER NOT EXISTS { $this <Core/country> ?country . }
+            FILTER NOT EXISTS { $this <Core/city> ?city . }
+            FILTER NOT EXISTS { $this <Core/streetAddress> ?streetAddress . }
+            FILTER NOT EXISTS { $this <Core/geographicPointLocation> ?point . }
+            FILTER NOT EXISTS { $this <Core/name> ?name . }
+        }

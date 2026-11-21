@@ -20,11 +20,11 @@ The `startTime` and `endTime` can be the same time.
 
 ## Properties
 
-- current
+- currentResponsibleAgent
   - type: /Core/Agent
   - minCount: 1
   - maxCount: 1
-- previous
+- previousResponsibleAgent
   - type: /Core/Agent
   - minCount: 0
   - maxCount: 1

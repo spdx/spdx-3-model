@@ -4,11 +4,17 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-A contact point from an Artifact to an Agent.
+Provide context for a contact point relationship from an Artifact to an Agent.
 
 ## Description
 
-Specifies a point of contact specific to an Artifact. For example, a software package may have a security contact point that researchers should use for reporting security vulnerabilities. This relationship is restricted to using the `hasContactPoint` relationship type.
+Defines a specific contact point relationship linking an Artifact to an Agent.
+
+For example, a software package (Artifact) may designate a security
+vulnerability contact point (Agent) as the official channel for researchers
+to report security vulnerabilities.
+
+This relationship is restricted to the `hasContactPoint` relationship type.
 
 ## Metadata
 
@@ -19,6 +25,6 @@ Specifies a point of contact specific to an Artifact. For example, a software pa
 ## Properties
 
 - contactType
-  - type: ContactPointRelationshipType
+  - type: ContactType
   - minCount: 1
   - maxCount: 1
