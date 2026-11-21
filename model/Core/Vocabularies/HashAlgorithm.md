@@ -12,6 +12,10 @@ A HashAlgorithm is a mathematical algorithm that maps data of arbitrary size to
 a bit string (the hash) and is a one-way function, that is, a function which is
 practically infeasible to invert.
 
+The entries `crystalsDilithium`, `crystalsKyber`, and `falcon` are deprecated.
+They name signature and key-encapsulation algorithms, which do not produce a
+hash value, and are only included for backward compatibility.
+
 ## Metadata
 
 - name: HashAlgorithm
@@ -23,9 +27,9 @@ practically infeasible to invert.
 - blake2b384: BLAKE2b algorithm with a digest size of 384, as defined in [RFC 7693](https://datatracker.ietf.org/doc/rfc7693/) Section 4.
 - blake2b512: BLAKE2b algorithm with a digest size of 512, as defined in [RFC 7693](https://datatracker.ietf.org/doc/rfc7693/) Section 4.
 - blake3: [BLAKE3](https://github.com/BLAKE3-team/BLAKE3-specs/blob/master/blake3.pdf)
-- crystalsDilithium: [Dilithium](https://pq-crystals.org/dilithium/)
-- crystalsKyber: [Kyber](https://pq-crystals.org/kyber/)
-- falcon: [FALCON](https://falcon-sign.info/falcon.pdf)
+- crystalsDilithium: **DEPRECATED in SPDX 3.1.** [Dilithium](https://pq-crystals.org/dilithium/), standardized as ML-DSA in [FIPS 204](https://csrc.nist.gov/pubs/fips/204/final), is a digital signature algorithm, not a hash algorithm. It is kept only for backward compatibility and shall not be used in new documents.
+- crystalsKyber: **DEPRECATED in SPDX 3.1.** [Kyber](https://pq-crystals.org/kyber/), standardized as ML-KEM in [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final), is a key-encapsulation mechanism, not a hash algorithm. It is kept only for backward compatibility and shall not be used in new documents.
+- falcon: **DEPRECATED in SPDX 3.1.** [FALCON](https://falcon-sign.info/falcon.pdf) is a digital signature algorithm, not a hash algorithm. It is kept only for backward compatibility and shall not be used in new documents.
 - md2: MD2 message-digest algorithm, as defined in [RFC 1319](https://datatracker.ietf.org/doc/rfc1319/).
 - md4: MD4 message-digest algorithm, as defined in [RFC 1186](https://datatracker.ietf.org/doc/rfc1186/).
 - md5: MD5 message-digest algorithm, as defined in [RFC 1321](https://datatracker.ietf.org/doc/rfc1321/).

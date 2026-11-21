@@ -72,6 +72,9 @@ semantic changes to the model and may affect compatibility.
   - New documents should use `/Core/intendedUse` instead.
 - `/SimpleLicensing/customIdToUri` property
   - New documents should use `/SimpleLicensing/customIdToLicense` instead.
+- `/Core/HashAlgorithm` entries `crystalsDilithium`, `crystalsKyber`, and `falcon`
+  - These are signature and key-encapsulation algorithms, not hash algorithms.
+    New documents should not use them as a `/Core/Hash` algorithm.
 
 ## 3.0.1 (2024-12-10)
 
