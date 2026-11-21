@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-The relative importance or urgency assigned `to` a Need or Requirement of the `from` Element.
+The relative importance or urgency assigned `to` a Need.
 
 ## Description
 
