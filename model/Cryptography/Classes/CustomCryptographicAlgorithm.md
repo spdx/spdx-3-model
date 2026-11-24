@@ -13,7 +13,7 @@ The class that represents a cryptographic algorithm that is `NOT` found in the S
 This class is commonly used with the following relationships:
 
 - providesAlgorithm: The `from` Element providesAlgorithm `to` CryptographicAlgorithm during a LifecycleScopeType.
-- usedAlgorithm: The `from` Element usedAlgorithm `to` CryptographicAlgorithm during a LifecycleScopeType.
+- usesAlgorithm: The `from` Element uses the `to` CryptographicAlgorithm during a LifecycleScopedRelationship.
 - supportsAlgorithm: The `from` Element supportsAlgorithm `to` CryptographicAlgorithm during LifecycleScopeType.
 
 ## Metadata
