@@ -20,4 +20,3 @@ This class is commonly used with the following relationships:
 - name: CryptographicAlgorithm
 - SubclassOf: /Core/Element
 - Instantiability: Abstract
-
