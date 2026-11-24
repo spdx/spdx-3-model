@@ -14,7 +14,7 @@ It supports the representation of cryptographic algorithms listed in the SPDX Cr
 
 In addition to algorithms, the profile describes concrete cryptographic artifacts such as cryptographic keys and certificates, including key type information, certificate identities, validity periods, certificate extensions, and certificate lifecycle-state annotations. It also supports metadata about cryptographic signatures, including signature algorithm, signature value or storage location, signer information, signing keys, verification keys, signature time, and signature format.
 
-When combined with SPDX relationships such as `supportsAlgorithm`, `usedAlgorithm`, and `providesAlgorithm`, the profile can express which algorithms a system supports, uses, or provides. This enables Cryptographic Bill of Materials (CBOM) generation, cryptographic conformance assessment, dependency analysis, and supply-chain transparency for cryptographic components, policies, and implementations.
+When combined with SPDX relationships such as `supportsAlgorithm`, `usesAlgorithm`, and `providesAlgorithm`, the profile can express which algorithms a system supports, uses, or provides. This enables Cryptographic Bill of Materials (CBOM) generation, cryptographic conformance assessment, dependency analysis, and supply-chain transparency for cryptographic components, policies, and implementations.
 
 ## Metadata
 
