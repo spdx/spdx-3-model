@@ -12,6 +12,7 @@ Maps parameter positions in a Cryptographic Algorithm Expression to parameter na
 A parameter value at position N after the algorithm identifier is interpreted as the value of the parameter assigned to position N. Each dictionary entry maps a parameter position to a parameter name.
 
 Entry rules:
+
 - Dictionary keys MUST be positive integers.
 - Dictionary keys MUST start at 1.
 - Dictionary keys MUST be consecutive, with no gaps.
@@ -23,4 +24,3 @@ Entry rules:
 - name: grammarExpressionReference
 - Nature: ObjectProperty
 - Range: /Core/DictionaryEntry
-
