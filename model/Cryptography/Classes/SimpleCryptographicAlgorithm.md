@@ -11,6 +11,7 @@ The class that represents a cryptographic algorithm.
 SimpleCryptographicAlgorithm is an abstract class that defines a cryptographic algorithm used in SPDX documents.
 
 This class is commonly used with the following relationships:
+
 - providesAlgorithm: The `from` Element providesAlgorithm `to` CryptographicAlgorithm during a LifecycleScopedRelationship.
 - usedAlgorithm: The `from` Element usedAlgorithm `to` CryptographicAlgorithm during a LifecycleScopedRelationship.
 - supportsAlgorithm: The `from` Element supportsAlgorithm `to` CryptographicAlgorithm during a LifecycleScopedRelationship.
