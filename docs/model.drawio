@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" compressed="false" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:147.0) Gecko/20100101 Firefox/147.0" pages="13">
+<mxfile host="app.diagrams.net" compressed="false" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:147.0) Gecko/20100101 Firefox/147.0" pages="14">
   <diagram id="MqBy92FNWJOg9jOokCTN" name="Core">
     <mxGraphModel dx="2026" dy="1967" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="0" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -2624,6 +2624,109 @@
             <mxPoint x="420" y="605" as="sourcePoint" />
             <mxPoint x="485" y="200" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="unX6QojHIlrif3MODPMH" name="Cryptography">
+    <mxGraphModel dx="1414" dy="729" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FLJn6uq5eaMT_xafCvY0-1" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;width=100;height=30;strokeWidth=3;fontFamily=Verdana;fontSize=10;" value="Cryptography profile" vertex="1">
+          <mxGeometry height="750" width="810" x="50" y="230" as="geometry" />
+        </mxCell>
+        <object label="/Core/Element" description="static representation of a part of the universe of discourse that may be identified and characterised by its behaviour and attribute." description_source="ISO 15531-1:2004" id="KwUb_a4aH877hpuzopzJ-2">
+          <mxCell parent="1" style="swimlane;fontStyle=3;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e1d5e7;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#9673a6;fontFamily=Verdana;fontSize=10;" vertex="1">
+            <mxGeometry height="52" width="184.03" x="422.98" y="160" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="KwUb_a4aH877hpuzopzJ-3" edge="1" parent="1" source="KwUb_a4aH877hpuzopzJ-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" target="KwUb_a4aH877hpuzopzJ-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KwUb_a4aH877hpuzopzJ-4" parent="1" style="swimlane;fontStyle=3;childLayout=stackLayout;horizontal=1;startSize=16;fillColor=#e1d5e7;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#9673a6;fontFamily=Verdana;fontSize=10;" value="SimpleCryptographicAlgorithm" vertex="1">
+          <mxGeometry height="256" width="330" x="480" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="KwUb_a4aH877hpuzopzJ-5" parent="KwUb_a4aH877hpuzopzJ-4" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;fontFamily=Verdana;" value="+ /Core/Element/name: xsd:string[1]" vertex="1">
+          <mxGeometry height="30" width="330" y="16" as="geometry" />
+        </mxCell>
+        <mxCell id="KwUb_a4aH877hpuzopzJ-6" parent="KwUb_a4aH877hpuzopzJ-4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;fontFamily=Verdana;" value="+ cryptoClass: cryptoClassType[1]" vertex="1">
+          <mxGeometry height="30" width="330" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="KwUb_a4aH877hpuzopzJ-7" parent="KwUb_a4aH877hpuzopzJ-4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;fontFamily=Verdana;" value="+ cryptoSubClass: cryptoSubClassType[0..1]" vertex="1">
+          <mxGeometry height="30" width="330" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="KwUb_a4aH877hpuzopzJ-8" parent="KwUb_a4aH877hpuzopzJ-4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;fontFamily=Verdana;" value="+&amp;nbsp;grammarExpressionReference: /Core/DictionaryEntry[0..*]" vertex="1">
+          <mxGeometry height="30" width="330" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="KwUb_a4aH877hpuzopzJ-9" parent="KwUb_a4aH877hpuzopzJ-4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;fontFamily=Verdana;" value="+ parameter: /Core/DictionaryEntry [0..*]" vertex="1">
+          <mxGeometry height="30" width="330" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="KwUb_a4aH877hpuzopzJ-10" parent="KwUb_a4aH877hpuzopzJ-4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;fontFamily=Verdana;" value="+ pqcClass: pqcClassType[0..1]" vertex="1">
+          <mxGeometry height="30" width="330" y="166" as="geometry" />
+        </mxCell>
+        <mxCell id="KwUb_a4aH877hpuzopzJ-11" parent="KwUb_a4aH877hpuzopzJ-4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;fontFamily=Verdana;" value="+ reference: xsd:anyURI[1..*]" vertex="1">
+          <mxGeometry height="30" width="330" y="196" as="geometry" />
+        </mxCell>
+        <mxCell id="KwUb_a4aH877hpuzopzJ-12" parent="KwUb_a4aH877hpuzopzJ-4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;fontFamily=Verdana;" value="+ specifiedkeySize:&amp;nbsp; /Core/PositiveIntegerRange [0..*]" vertex="1">
+          <mxGeometry height="30" width="330" y="226" as="geometry" />
+        </mxCell>
+        <mxCell id="KwUb_a4aH877hpuzopzJ-13" edge="1" parent="1" source="KwUb_a4aH877hpuzopzJ-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" target="KwUb_a4aH877hpuzopzJ-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="832" y="1090" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KwUb_a4aH877hpuzopzJ-14" edge="1" parent="1" source="KwUb_a4aH877hpuzopzJ-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" target="KwUb_a4aH877hpuzopzJ-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KwUb_a4aH877hpuzopzJ-15" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=16;fillColor=#e1d5e7;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#9673a6;fontSize=10;fontFamily=Verdana;" value="ListedCryptographicAlgorithm" vertex="1">
+          <mxGeometry height="46" width="300" x="307.01" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="KwUb_a4aH877hpuzopzJ-16" parent="KwUb_a4aH877hpuzopzJ-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;fontFamily=Verdana;" value="+ cryptographicExpressionListVersion: xsd:string[1]&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="300" y="16" as="geometry" />
+        </mxCell>
+        <mxCell id="KwUb_a4aH877hpuzopzJ-17" edge="1" parent="1" source="KwUb_a4aH877hpuzopzJ-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" target="KwUb_a4aH877hpuzopzJ-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KwUb_a4aH877hpuzopzJ-18" parent="1" style="swimlane;fontStyle=3;childLayout=stackLayout;horizontal=1;startSize=16;fillColor=#e1d5e7;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#9673a6;fontFamily=Verdana;fontSize=10;" value="CryptographicAlgorithm" vertex="1">
+          <mxGeometry height="42" width="250" x="390" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="KwUb_a4aH877hpuzopzJ-19" edge="1" parent="1" source="KwUb_a4aH877hpuzopzJ-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" target="KwUb_a4aH877hpuzopzJ-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KwUb_a4aH877hpuzopzJ-20" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e1d5e7;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#9673a6;fontFamily=Verdana;fontSize=10;" value="CryptographicAlgorithmExpression" vertex="1">
+          <mxGeometry height="80" width="280" x="80" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="KwUb_a4aH877hpuzopzJ-21" parent="KwUb_a4aH877hpuzopzJ-20" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Verdana;fontSize=10;" value="+cryptographicAlgorithmExpression: xsd:string[1]" vertex="1">
+          <mxGeometry height="28" width="280" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="KwUb_a4aH877hpuzopzJ-22" parent="KwUb_a4aH877hpuzopzJ-20" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Verdana;fontSize=10;" value="+cryptographicExpressionListVersion: xsd:string[1]" vertex="1">
+          <mxGeometry height="26" width="280" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="KwUb_a4aH877hpuzopzJ-23" edge="1" parent="1" source="KwUb_a4aH877hpuzopzJ-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=block;endFill=0;" target="KwUb_a4aH877hpuzopzJ-18">
+          <mxGeometry relative="1" x="0.4314" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="376" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KwUb_a4aH877hpuzopzJ-24" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e1d5e7;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#9673a6;fontFamily=Verdana;fontSize=10;" value="DisjunctiveCryptographicSet" vertex="1">
+          <mxGeometry height="54" width="230" x="80" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="KwUb_a4aH877hpuzopzJ-25" parent="KwUb_a4aH877hpuzopzJ-24" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Verdana;fontSize=10;" value="+member: CryptographicAlgorithm[2..*]" vertex="1">
+          <mxGeometry height="28" width="230" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="KwUb_a4aH877hpuzopzJ-26" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e1d5e7;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#9673a6;fontFamily=Verdana;fontSize=10;" value="ConjunctiveCryptographicSet" vertex="1">
+          <mxGeometry height="54" width="230" x="80" y="266" as="geometry" />
+        </mxCell>
+        <mxCell id="KwUb_a4aH877hpuzopzJ-27" parent="KwUb_a4aH877hpuzopzJ-26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Verdana;fontSize=10;" value="+member: CryptographicAlgorithm[2..*]" vertex="1">
+          <mxGeometry height="28" width="230" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="KwUb_a4aH877hpuzopzJ-28" edge="1" parent="1" source="KwUb_a4aH877hpuzopzJ-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.021;entryY=-0.009;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=0;" target="KwUb_a4aH877hpuzopzJ-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KwUb_a4aH877hpuzopzJ-29" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=16;fillColor=#e1d5e7;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#9673a6;fontFamily=Verdana;fontSize=10;" value="CustomCryptographicAlgorithm" vertex="1">
+          <mxGeometry height="42" width="220" x="620" y="910" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
