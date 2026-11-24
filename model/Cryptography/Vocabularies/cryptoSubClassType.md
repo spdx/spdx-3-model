@@ -37,4 +37,3 @@ Specifies the type of a cryptographic sub-algorithm.
 - keyBased: KDF that derives keys from existing cryptographic keying material, such as a master secret, shared secret, or session key, rather than a password.
 - trueRandomNumberGenerator: An algorithm that derives randomness from a physical entropy source, such as hardware noise, ring oscillators, thermal effects, or quantum sources, and is not seed-reproducible.
 - deterministicRandomBitGenerator: A deterministic, seed-based algorithm that produces cryptographically secure pseudo-random output.
-
