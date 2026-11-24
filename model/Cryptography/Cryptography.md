@@ -20,5 +20,3 @@ When combined with SPDX relationships such as `supportsAlgorithm`, `usedAlgorith
 
 - id: https://spdx.org/rdf/3/terms/Cryptography
 - name: Cryptography
-
-
