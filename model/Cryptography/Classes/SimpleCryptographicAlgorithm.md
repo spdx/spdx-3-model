@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-The class that represents a cryptographic algorithm. 
+The class that represents a cryptographic algorithm.
 
 ## Description
 
