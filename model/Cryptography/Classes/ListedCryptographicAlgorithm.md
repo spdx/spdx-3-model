@@ -4,7 +4,7 @@ SPDX-License-Identifier: Community-Spec-1.0
 
 ## Summary
 
-Represents the cryptographic algorithm that is found in the cryptographic algorithm list. 
+Represents the cryptographic algorithm that is found in the cryptographic algorithm list.
 
 ## Description
 
@@ -26,4 +26,3 @@ This class is commonly used with the following relationships:
   - type: xsd:string
   - minCount: 1
   - maxCount: 1
-
