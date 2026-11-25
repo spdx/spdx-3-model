@@ -28,6 +28,8 @@ or agent at inference time — for example, the system prompt, the user prompt,
 context history (including past prompts, outputs, and other session data that
 may be compressed or windowed), and relevant grounding documents — that
 influences the AI system's outputs and behaviour.
+The prompt is a component of this context. External supporting content may be
+added directly to the prompt or supplied separately within the context.
 
 Properties and relationship types can be used for describing the prompt.
 For example:
@@ -49,9 +51,11 @@ For example:
 - The `/Dataset/confidentialityLevel` property can be used to record the
   confidentiality of the prompt, for example when a system prompt is a
   proprietary trade secret.
-- When `isContextAugmented` is set to `true`, a Relationship of type `usesTool`
-  can be optionally used to describe the context augmentation mechanism or tool
-  employed (e.g., referencing a retrieval-augmented generation tool).
+- The `isPromptAugmented` property indicates whether this prompt is
+  automatically augmented with external supporting content. When it is `true`,
+  a Relationship of type `usesTool` can optionally identify the tool used
+  to augment the prompt
+  (e.g., a retrieval-augmented generation tool).
 
 ## Metadata
 
@@ -86,7 +90,7 @@ For example:
   - type: /Dataset/ConfidentialityLevelType
   - minCount: 0
   - maxCount: 1
-- isContextAugmented
+- isPromptAugmented
   - type: xsd:boolean
   - minCount: 0
   - maxCount: 1
