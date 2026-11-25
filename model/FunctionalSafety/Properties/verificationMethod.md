@@ -13,5 +13,5 @@ verificationMethod refers to the specific approach used to confirm that a (lower
 ## Metadata
 
 - name: verificationMethod
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: VerificationType

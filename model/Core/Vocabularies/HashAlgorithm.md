@@ -31,7 +31,7 @@ practically infeasible to invert.
 - md5: MD5 message-digest algorithm, as defined in [RFC 1321](https://datatracker.ietf.org/doc/rfc1321/).
 - md6: [MD6 hash function](https://people.csail.mit.edu/rivest/pubs/RABCx08.pdf)
 - other: any hashing algorithm that does not exist in this list of entries
-- sha1: SHA-1, a secure hashing algorithm, as defined in [RFC 3174](https://datatracker.ietf.org/doc/rfc3174/).
+- sha1: The SHA-1 digest algorithm, as defined in [RFC 3174](https://datatracker.ietf.org/doc/rfc3174/).
 - sha224: SHA-2 with a digest length of 224, as defined in [RFC 3874](https://datatracker.ietf.org/doc/rfc3874/).
 - sha256: SHA-2 with a digest length of 256, as defined in [RFC 6234](https://datatracker.ietf.org/doc/rfc6234/).
 - sha384: SHA-2 with a digest length of 384, as defined in [RFC 6234](https://datatracker.ietf.org/doc/rfc6234/).

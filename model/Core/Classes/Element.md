@@ -12,9 +12,13 @@ An Element is a representation of a fundamental concept either directly inherent
 to the Bill of Materials (BOM) domain or indirectly related to the BOM domain
 and necessary for contextually characterizing BOM concepts and relationships.
 
-Within SPDX 3 structure this is the base class acting as a consistent,
+Within the SPDX 3 structure, this is the base class that acts as a consistent,
 unifying, and interoperable foundation for all explicit
 and inter-relatable content objects.
+
+An Element may have one or more names.
+If a primary name is specified, it shall be recorded using the `name` property.
+Any additional names shall be recorded using the `additionalName` property.
 
 ## Metadata
 
@@ -31,6 +35,8 @@ and inter-relatable content objects.
 - name
   - type: xsd:string
   - maxCount: 1
+- additionalName
+  - type: xsd:string
 - summary
   - type: xsd:string
   - maxCount: 1

@@ -13,5 +13,5 @@ Evaluation is the judgement, assessment or opinion regarding the compliance of a
 ## Metadata
 
 - name: evaluation
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: EvaluationResultType

@@ -15,7 +15,7 @@ This relationship corresponds to the VEX not_affected status.
 
 *Constraints*
 
-When linking elements using a VexNotVulnAffectedAssessmentRelationship, the
+When linking elements using a VexNotAffectedVulnAssessmentRelationship, the
 following requirements shall be observed:
 
 - Relating elements with a VexNotAffectedVulnAssessmentRelationship is

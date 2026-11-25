@@ -19,7 +19,7 @@ A PhysicalHardware artifact describes a distinct physical unit.
 ## Properties
 
 - massOfHardware
-  - type: /Core/MeasureOfMass
+  - type: /Core/UnitOfMeasure
   - minCount: 0
   - maxCount: 1
 - dimensions

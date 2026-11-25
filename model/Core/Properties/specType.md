@@ -13,5 +13,5 @@ A specification type defines the nature of a specification.
 ## Metadata
 
 - name: specType
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: SpecificationType

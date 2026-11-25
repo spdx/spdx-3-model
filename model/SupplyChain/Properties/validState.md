@@ -4,11 +4,11 @@ SPDX-License-Identifier: Community-Spec-1.0.
 
 ## Summary
 
-The valid state for DefinedStateProcess.
+The valid state for StateProcess.
 
 ## Description
 
-The valid state for DefinedStateProcess.
+The valid state for StateProcess.
 
 ## Metadata
 

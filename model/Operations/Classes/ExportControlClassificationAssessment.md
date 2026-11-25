@@ -29,7 +29,7 @@ according to the classification schema of one or multiple countries.
 - assessmentContext
   - type: Project
   - maxCount: 1
-- assessmentResult
+- exportControlClassificationResult
   - type: ExportControlClassification
   - minCount: 1
 - assessmentTime

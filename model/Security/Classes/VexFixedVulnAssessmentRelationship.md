@@ -18,7 +18,7 @@ affected. It represents the VEX fixed status.
 When linking elements using a VexFixedVulnAssessmentRelationship, the following
 requirements shall be observed:
 
-- Elements linked with a VulnVexFixedAssessmentRelationship are constrained to
+- Elements linked with a VexFixedVulnAssessmentRelationship are constrained to
   using the fixedIn relationship type.
 
 *Example*

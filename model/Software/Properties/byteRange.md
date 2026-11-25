@@ -20,5 +20,5 @@ vocabulary.
 ## Metadata
 
 - name: byteRange
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: /Core/PositiveIntegerRange

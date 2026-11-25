@@ -27,7 +27,7 @@ It is intended to communicate the results of using a CVSS calculator.
   "relationshipType": "hasAssessmentFor",
   "security_severity": "critical",
   "security_score": "10.0",
-  "security_vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:N/SA:N",
+  "security_vectorString": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
   "from": "urn:spdx.dev:vuln-cve-2021-44228",
   "to": ["urn:product-acme-application-1.3"],
   "security_assessedElement": "urn:apache-log4j-2.14.1",

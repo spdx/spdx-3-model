@@ -13,5 +13,5 @@ Agent responsible for the project.
 ## Metadata
 
 - name: projectOwner
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: /Core/Agent

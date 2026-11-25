@@ -18,6 +18,10 @@ Processes are composed of systematic task(s) required to achieve a goal.
 
 ## Properties
 
+- additionalInformation
+  - type: DictionaryEntry
+- additionalInformationSpecification
+  - type: Specification
 - processReadiness
   - type: ProcessReadinessType
   - minCount: 0

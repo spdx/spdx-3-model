@@ -23,6 +23,7 @@ specifications.
 - [File content structure and formatting](#file-content-structure-and-formatting)
   - [Model file example](#model-file-example)
 - [Syntax](#syntax)
+  - [Model element references](#model-element-references)
   - [Classes](#classes)
   - [Datatypes](#datatypes)
   - [Individuals](#individuals)
@@ -112,12 +113,20 @@ is the best reference.
 
 ## Naming convention
 
-- Use the singular form (e.g., use `import` and not `imports`).
+- Use the singular form (e.g., use `element` instead of `elements`).
   (See discussion in [Issue 226][issue-226])
 - Use `UpperCamelCase` format for the names of classes, datatypes, individuals,
   and vocabularies.
 - Use `lowerCamelCase` format for the names of properties and
   vocabulary entries.
+- Relationship type names should be descriptive enough to easily deduce the
+  correct direction from their name.
+  - Often, this can be achieved by using verbs or verb phrases.
+    In that case, use singular verbal form (e.g., use `generates` instead of
+    `generate`).
+  - The best way to do this is to make sure that the relationship type name
+    completes the sentence:
+    `from` (is) (a) `relationshipType` `to`
 
 [issue-226]: https://github.com/spdx/spdx-3-model/issues/226
 
@@ -204,6 +213,23 @@ will give this RDF graph
 ```
 
 ## Syntax
+
+### Model element references
+
+References to model elements in metadata and labeled lists are resolved relative
+to the profile containing the referring file.
+
+A reference to an element in the same profile shall use the unqualified element
+name. For example, a Core model file refers to `DictionaryEntry`.
+
+A reference to an element in another profile shall be qualified with a leading
+slash, the profile name, and the element name. For example, a Dataset model file
+refers to `/Core/DictionaryEntry`.
+
+Where a reference identifies a property owned by a class, the qualified form
+also includes the class name, for example `/Core/Element/name`.
+
+XML Schema datatypes use their `xsd:`-qualified names, such as `xsd:string`.
 
 ### Classes
 

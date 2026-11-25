@@ -14,4 +14,4 @@ This is how the currentState of an affected Element is found.
 
 - name: decisionProcess
 - Nature: ObjectProperty
-- Range: DefinedStateProcess
+- Range: StateProcess

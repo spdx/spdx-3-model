@@ -13,5 +13,5 @@ Information related to virtual hardware simulation modelling process.
 ## Metadata
 
 - name: virtualHardwareModel
-- Nature: DataProperty
+- Nature: ObjectProperty
 - Range: VirtualHardwareModelType
