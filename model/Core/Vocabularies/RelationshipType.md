@@ -23,6 +23,7 @@ and another SpdxDocument.
 - affects: The `from` /Security/Vulnerability, Action or DefinedProcess affects each `to` Element.
 - amendedBy: The `from` Element is amended by each `to` Element.
 - ancestorOf: The `from` Element is an ancestor of each `to` Element.
+- associatedWith: the `from` /FunctionalSafety/Need or /FunctionalSafety/Assumption is associated with `to` Requirement. Note: The Requirement is not generally intended to singularly satisfy a particular Need. It is more likely that a set of higher level Requirements is required to achieve a reasonable satisfaction of an expressed /FunctionalSafety/Need.
 - assumes: The `from` Element assumes each `to` /FunctionalSafety/Assumption.
 - availableFrom: The `from` Element is available from the additional supplier described by each `to` Element.
 - configures: The `from` Element is a configuration applied to each `to` Element, during a LifecycleScopeType period.
@@ -65,6 +66,7 @@ and another SpdxDocument.
 - hasInstall: The `from` Element has each `to` Artifact installed (placed into position for use) into it during a LifecycleScopeType period. To express the Agent doing the install, link this relationship as the `from` in `performedBy`.
 - hasInstance: The `from` Software/GenericPackage has more specific instances that are the `to` Element(s).
 - hasMetadata: Every `to` Element is metadata about the `from` Element (`from` hasMetadata `to`).
+- hasNeed: The `from` Element has the `to` /FunctionalSafety/Need.
 - hasOptionalComponent: Every `to` Element is an optional component of the `from` Element (`from` hasOptionalComponent `to`).
 - hasOptionalDependency: The `from` Element optionally depends on each `to` Element, during a LifecycleScopeType period.
 - hasOutput: The `from` Element generates each `to` Element as an output.
@@ -80,6 +82,7 @@ and another SpdxDocument.
 - hasUninstall: The `from` Element has each `to` Artifact uninstalled (removed from position for use) from it during a LifecycleScopeType period. To express the Agent doing the uninstall, link this relationship as the `from` in `performedBy`.
 - hasVariant: Every `to` Element is a variant the `from` Element (`from` hasVariant `to`).
 - implementedBy: The `from` Requirement is implemented in the `to` Element(s).
+- isQualifiedFor: The `from` Element is qualified for or can provided the `to` Role.
 - invokedBy: The `from` Element was invoked by the `to` Agent, during a LifecycleScopeType period (for example, a /Build/Build element that describes a build step).
 - locatedAt: `from` Element located at a specific `to` Location. A time period is optional.
 - modifiedBy: The `from` Element is modified by each `to` Element.
