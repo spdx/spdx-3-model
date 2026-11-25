@@ -85,7 +85,8 @@ and another SpdxDocument.
 - modifiedBy: The `from` Element is modified by each `to` Element.
 - other: Every `to` Element is related to the `from` Element where the relationship type is not described by any of the SPDX relationship types (this relationship is directionless).
 - packagedBy: Every `to` Element is a packaged instance of the `from` Element (`from` packagedBy `to`).
-- patchedBy: Every `to` Element is a patch for the `from` Element (`from` patchedBy `to`).
+- patchFor: The `from` Element is a patch that can be applied to each `to` Element. It does not state whether the patch has been applied; use `patchedBy` for a patch that has been applied.
+- patchedBy: Every `to` Element is a patch that has been applied to the `from` Element (`from` patchedBy `to`).
 - performedBy: Every `from` Action, or Relationship of type hasInstall or hasUninstall, is performed by `to` Agent.
 - pretrainedOn: The `from` Element has been pretrained on the `to` Element(s).
 - providesSupportFor: The `from` Agent provides support for each `to` Artifact. The use of the `providesSupportFor` type is constrained to `SupportRelationship` classed relationships.
