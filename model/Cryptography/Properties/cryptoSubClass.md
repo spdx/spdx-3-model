@@ -14,4 +14,4 @@ The sub-classification of a cryptographic algorithm, specifying its fundamental 
 
 - name: cryptoSubClass
 - Nature: ObjectProperty
-- Range: cryptoSubClassType
+- Range: CryptoSubClassType
