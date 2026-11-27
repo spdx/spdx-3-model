@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# pqcClassType
+# PqcClassType
 
 ## Summary
 
@@ -12,7 +12,7 @@ Specifies the type of a post-quantum cryptographic algorithm.
 
 ## Metadata
 
-- name: pqcClassType
+- name: PqcClassType
 
 ## Entries
 
