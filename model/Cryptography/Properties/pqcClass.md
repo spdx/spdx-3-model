@@ -14,4 +14,4 @@ The mathematical family whose hard problem provides the security of a post-quant
 
 - name: pqcClass
 - Nature: ObjectProperty
-- Range: pqcClassType
+- Range: PqcClassType
