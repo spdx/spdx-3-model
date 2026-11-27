@@ -25,11 +25,11 @@ This class is commonly used with the following relationships:
 ## Properties
 
 - cryptoClass
-  - type: cryptoClassType
+  - type: CryptoClassType
   - minCount: 1
   - maxCount: 1
 - cryptoSubClass
-  - type: cryptoSubClassType
+  - type: CryptoSubClassType
   - minCount: 0
   - maxCount: 1
 - grammarExpressionReference
@@ -38,7 +38,7 @@ This class is commonly used with the following relationships:
 - parameter
   - type: /Core/DictionaryEntry
 - pqcClass
-  - type: pqcClassType
+  - type: PqcClassType
   - minCount: 0
   - maxCount: 1
 - reference
