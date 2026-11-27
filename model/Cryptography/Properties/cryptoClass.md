@@ -14,4 +14,4 @@ The classification of a cryptographic algorithm, specifying its fundamental type
 
 - name: cryptoClass
 - Nature: ObjectProperty
-- Range: cryptoClassType
+- Range: CryptoClassType
