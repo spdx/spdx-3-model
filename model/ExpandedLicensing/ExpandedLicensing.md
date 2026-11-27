@@ -16,3 +16,4 @@ in object form.
 
 - id: https://spdx.org/rdf/3/terms/ExpandedLicensing
 - name: ExpandedLicensing
+- preferredNamespacePrefix: spdx3el

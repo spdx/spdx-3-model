@@ -18,3 +18,4 @@ The Service profile applies to services accessed over a network rather than soft
 
 - id: https://spdx.org/rdf/3/terms/Service
 - name: Service
+- preferredNamespacePrefix: spdx3sv

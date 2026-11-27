@@ -15,3 +15,4 @@ base for all defined extension subclasses.
 
 - id: https://spdx.org/rdf/3/terms/Extension
 - name: Extension
+- preferredNamespacePrefix: spdx3ex

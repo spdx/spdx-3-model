@@ -13,6 +13,7 @@ ExternalIdentifierType specifies the type of an external identifier.
 ## Metadata
 
 - name: ExternalIdentifierType
+- preferredNamespacePrefix: spdx3eid
 
 ## Entries
 

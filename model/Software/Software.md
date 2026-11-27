@@ -14,3 +14,4 @@ The Software namespace defines concepts related to software artifacts.
 
 - id: https://spdx.org/rdf/3/terms/Software
 - name: Software
+- preferredNamespacePrefix: spdx3sw
