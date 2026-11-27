@@ -1,6 +1,6 @@
 SPDX-License-Identifier: Community-Spec-1.0
 
-# cryptoSubClassType
+# CryptoSubClassType
 
 ## Summary
 
@@ -12,7 +12,7 @@ Specifies the type of a cryptographic sub-algorithm.
 
 ## Metadata
 
-- name: cryptoSubClassType
+- name: CryptoSubClassType
 
 ## Entries
 
