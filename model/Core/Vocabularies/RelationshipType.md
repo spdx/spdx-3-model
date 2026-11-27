@@ -88,6 +88,7 @@ and another SpdxDocument.
 - patchedBy: Every `to` Element is a patch for the `from` Element (`from` patchedBy `to`).
 - performedBy: Every `from` Action, or Relationship of type hasInstall or hasUninstall, is performed by `to` Agent.
 - pretrainedOn: The `from` Element has been pretrained on the `to` Element(s).
+- providesAlgorithm: The `from` Element provides Algorithm `to` CryptographicAlgorithm during a LifecycleScopedRelationship. The `from` must provide all valid branches that is defined in the `to` CryptographicAlgorithm.
 - providesSupportFor: The `from` Agent provides support for each `to` Artifact. The use of the `providesSupportFor` type is constrained to `SupportRelationship` classed relationships.
 - publishedBy: Designates a `from` /Security/Vulnerability was made available for public use or reference by each `to` Agent.
 - reportedBy: Designates a `from` /Security/Vulnerability was first reported to a project, vendor, or tracking database for formal identification by each `to` Agent.
@@ -95,11 +96,13 @@ and another SpdxDocument.
 - resolved: The `to` /SupplyChain/OutOfSpecAction is resolved in the `from` /SupplyChain/ResolutionAction.
 - runsOn: The `from` Element (the instructions) runs on each `to` /Hardware/Hardware (processing element), during a LifecycleScopeType period.
 - serializedInArtifact: The `from` SpdxDocument can be found in a serialized form in each `to` Artifact.
+- supportsAlgorithm: The `from` Element supportsAlgorithm `to` CryptographicAlgorithm during a LifecycleScopedRelationship. The `from` must support all valid branches that is defined in the `to` CryptographicAlgorithm.
 - testedOn: The `from` Element has been tested on the `to` Element(s).
 - toolsAvailable: The `from` /AI/AIAgent has each `to` Element available for use as a tool, during a LifecycleScopeType period.
 - tracedToDetail: The `from` Requirement is refined and further elaborated by each `to` Requirement, which contains more detailed implementation information.
 - trainedOn: The `from` Element has been trained on the `to` Element(s).
 - underInvestigationFor: The `from` /Security/Vulnerability impact is being investigated for each `to` Element. The use of the `underInvestigationFor` type is constrained to `/Security/VexUnderInvestigationVulnAssessmentRelationship` classed relationships.
+- usesAlgorithm: The `from` Element uses the `to` CryptographicAlgorithm during a LifecycleScopedRelationship.
 - usesModel: The `from` /AI/AIAgent uses each `to` /AI/AIPackage as a model.
 - usesTool: The `from` Element uses each `to` Element as a tool, during a LifecycleScopeType period.
 - validatedOn: The `from` Element has been validated on the `to` Element(s).
